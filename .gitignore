@@ -40,3 +40,4 @@ Thumbs.db
 ###########
 dev/*
 node_modules/*
+sites/assets/files/*
