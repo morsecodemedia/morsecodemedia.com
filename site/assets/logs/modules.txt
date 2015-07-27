@@ -11,3 +11,13 @@
 2015-07-20 21:39:51	guest	http://www.morsecodemedia.bmorse/mcm-admin/login/	Installed module 'InputfieldIcon'
 2015-07-20 21:39:52	guest	http://www.morsecodemedia.bmorse/mcm-admin/login/	Saved module info cache
 2015-07-20 21:39:52	guest	http://www.morsecodemedia.bmorse/mcm-admin/login/	Saved module 'SystemUpdater' config data
+2015-07-20 23:52:11	bmorse	http://www.morsecodemedia.bmorse/mcm-admin/module/	Saved module 'FieldtypeRepeater' config data
+2015-07-20 23:52:11	bmorse	http://www.morsecodemedia.bmorse/mcm-admin/module/	Installed module 'InputfieldRepeater'
+2015-07-20 23:52:11	bmorse	http://www.morsecodemedia.bmorse/mcm-admin/module/	Installed module 'FieldtypeRepeater'
+2015-07-20 23:52:13	bmorse	http://www.morsecodemedia.bmorse/mcm-admin/module/	Saved module info cache
+2015-07-20 23:52:16	bmorse	http://www.morsecodemedia.bmorse/mcm-admin/module/edit?name=name	Saved module 'FieldtypeRepeater' config data
+2015-07-23 22:44:49	bmorse	http://www.morsecodemedia.bmorse/mcm-admin/module/	Installed module 'PagePathHistory'
+2015-07-23 22:44:50	bmorse	http://www.morsecodemedia.bmorse/mcm-admin/module/	Saved module info cache
+2015-07-23 22:44:53	bmorse	http://www.morsecodemedia.bmorse/mcm-admin/module/edit?name=name	Saved module 'PagePathHistory' config data
+2015-07-23 22:45:37	bmorse	http://www.morsecodemedia.bmorse/mcm-admin/module/	Installed module 'ProcessForgotPassword'
+2015-07-23 22:45:38	bmorse	http://www.morsecodemedia.bmorse/mcm-admin/module/	Saved module info cache
