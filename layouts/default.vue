@@ -19,16 +19,16 @@
     grid-auto-rows: 75px;
     grid-auto-flow: dense;
     a {
-      > div.case-study {
+      .case-study {
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         position: relative;
-        > img {
+        img {
           object-fit: cover;
           width: 100%;
-          height: 100%;
+          max-height: 100%;
           -webkit-transition: all 0.35s;
           transition: all 0.35s;
         }
@@ -102,10 +102,7 @@
         }
       }
     }
-    .big {
-      grid-column: span 2;
-      grid-row: span 2;
-    }
+
   }
   .link-bar {
     background: white;
@@ -129,6 +126,10 @@
             cursor: pointer;
             text-decoration: underline;
           }
+          &.disabled {
+            color: #999;
+            pointer-events: none;
+          }
         }
       }
     }
@@ -148,20 +149,10 @@
   }
 
   @media (min-width: 1200px) {
-    .case-studies {
-      .horizontal {
-        grid-column: span 1;
-        grid-row: span 1;
-      }
-    }
+
   }
 
   @media (min-width: 910px) and (max-width: 1214px) {
-    .case-studies {
-      .horizontal {
-        grid-column: span 2;
-        grid-row: span 1;
-      }
-    }
+
   }
 </style>

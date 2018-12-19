@@ -6,10 +6,9 @@
       v-for="(cs, index) in featuredCaseStudies"
       v-if="index < 5"
       :key="index"
-      :index="index"
       :to="'/case-studies/' + cs.title | lowerKebab">
       <div
-        :class="(index === 0) ? 'big' : (index === 4) ? 'horizontal' : ''"
+        :class="(index === 0) ? 'horizontal' : (index === 4) ? 'horizontal' : ''"
         class="case-study">
         <img
           :src="cs.previewImg"

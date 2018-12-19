@@ -2,13 +2,11 @@
   <section>
     <nav class="case-studies-filter">
       <ul>
-        <li @click="filterCaseStudiesByCategory('all')">All Projects</li>
-        <li @click="filterCaseStudiesByCategory('alexa-skills')">Alexa Skills</li>
-        <li @click="filterCaseStudiesByCategory('conference-panels')">Conference Panels</li>
-        <li @click="filterCaseStudiesByCategory('email-campaigns')">Email Campaigns</li>
-        <li @click="filterCaseStudiesByCategory('ipad-presentations')">iPad Presentations</li>
-        <li @click="filterCaseStudiesByCategory('mobile-apps')">Mobile Apps</li>
-        <li @click="filterCaseStudiesByCategory('websites')">Websites</li>
+        <li @click="activeCaseStudyCategory = 'all'">All Projects</li>
+        <li
+          v-for="(cat, index) in activeCategories"
+          :key="index"
+          @click="activeCaseStudyCategory = cat.toLowerCase().replace(/\s/g, '-')">{{ cat }}</li>
       </ul>
     </nav>
     <article
@@ -19,7 +17,7 @@
         :key="index"
         :to="'/case-studies/' + cs.title | lowerKebab">
         <div
-          :class="(index === 0) ? 'big' : (index === 4) ? 'horizontal' : ''"
+          :class="(index === 0) ? 'horizontal' : (index === 4) ? 'horizontal' : ''"
           class="case-study">
           <img
             :src="cs.previewImg"
@@ -44,7 +42,8 @@
     },
     data() {
       return {
-        caseStudies: config.caseStudies
+        caseStudies: config.caseStudies,
+        activeCaseStudyCategory: 'all'
       }
     },
     computed : {
@@ -64,16 +63,25 @@
         activeProjects.sort((a,b) => {
           return b.yearStart - a.yearStart
         })
-        return activeProjects.concat(sortedCaseStudies)
-      }
-    },
-    methods : {
-      filterCaseStudiesByCategory(cat) {
-        if (cat === 'all') {
-          return allCaseStudies()
+        let totalProjects = activeProjects.concat(sortedCaseStudies)
+        if (this.activeCaseStudyCategory !== 'all') {
+          return totalProjects
+            .filter(caseStudy => {
+              return caseStudy.category.toLowerCase().replace(/\s/g, '-') === this.activeCaseStudyCategory
+            })
         } else {
-          return allCaseStudies().filter(caseStudy => caseStudy.category === cat.toLowerCase().reaplce(/\s]/g, '-'))
+          return totalProjects
         }
+      },
+      activeCategories() {
+        return this.caseStudies
+          .filter(caseStudy => caseStudy.active)
+          .reduce((acc, csReduce) => {
+            if (acc.indexOf(csReduce.category) === -1) {
+              acc.push(csReduce.category)
+            }
+            return acc
+          }, [])
       }
     }
   }
