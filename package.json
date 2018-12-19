@@ -1,0 +1,30 @@
+{
+  "name": "morsecodemedia.com",
+  "version": "2018-12-06",
+  "description": "morsecodemedia.com - the portfolio of Brandon G. Morse",
+  "author": "Brandon Morse",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "node-sass": "^4.10.0",
+    "nuxt": "^2.0.0",
+    "sass-loader": "^7.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^5.0.1",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-prettier": "2.6.2",
+    "eslint-plugin-vue": "^4.0.0",
+    "nodemon": "^1.11.0"
+  }
+}

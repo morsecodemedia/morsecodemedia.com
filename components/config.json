@@ -1,0 +1,405 @@
+{
+  "homepageHero": {
+    "heroDescriptor": "award-winning developer",
+    "heroName": "Brandon Morse",
+    "heroStatement": "I have a passion to innovate and develop digital experiences.",
+    "heroImages": []
+  },
+  "about": {
+    "headshot": "https://www.morsecodemedia.com/site/assets/files/1016/bmorse-headshot-1.jpg",
+    "aboutQuote": "Pushing the digital envelope, my analytical and creative thinking drives me to bridge the gap between client fantasies and digital realities to bring incredible interactive experiences to life.",
+    "trackRecordQuote": "With over 13 years of experience, I have demonstrated success in communicating technical/complex information in understandable language to non-technical and technical personnel; plan and execute presentations, write proposals, system documentation and client reference materials."
+  },
+  "services": [
+    {
+      "title": "Web Development",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque inventore ullam ipsam eaque odio omnis voluptatum accusantium, totam quas, amet ipsa. Consequuntur excepturi ea aliquam repellat accusantium quisquam alias labore!"
+    },
+    {
+      "title": "Voice Assistants",
+      "description": "Want to know about local school closings, have Alexa control your smart home, or even tell you horrible Dad jokes? If you have an idea for a custom Alexa skill, I can help bring that idea to reality and get it published to the Amazon marketplace."
+    },
+    {
+      "title": "Consultation",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque inventore ullam ipsam eaque odio omnis voluptatum accusantium, totam quas, amet ipsa. Consequuntur excepturi ea aliquam repellat accusantium quisquam alias labore!"
+    },
+    {
+      "title": "Touch Panels",
+      "description": "Are you in need of an touch screen presentation for your store front or conference booth? I can help you engage your customers with an interactive touch panel experience."
+    },
+    {
+      "title": "Email Marketing",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque inventore ullam ipsam eaque odio omnis voluptatum accusantium, totam quas, amet ipsa. Consequuntur excepturi ea aliquam repellat accusantium quisquam alias labore!"
+    },{
+      "title": "Hire Me",
+      "description": "Looking for a website? Need an engaging email to drive customers to your site? Just asking for advice? I can't wait to tackle whatever challenge you are having."
+    }
+  ],
+  "caseStudies": [
+    {
+      "title": "Wal-Mart Baby Subscription Box",
+      "description": "Subscription box website for baby products for new and expecting mothers.",
+      "url": "https://babybox.walmart.com/",
+      "yearStart": "2014",
+      "yearEnd": "2014",
+      "brandLogo": "https://www.fillmurray.com/75/75",
+      "previewImg": "https://www.morsecodemedia.com/site/assets/files/1023/babybox-responsive-website-1.jpg",
+      "gallery": [],
+      "needsPassword": false,
+      "category": "",
+      "active": true
+    },
+    {
+      "title": "Wal-Mart Beauty Subscription Box",
+      "description": "Subscription box website for beauty products for women of all ages.",
+      "url": "https://beautybox.walmart.com/",
+      "yearStart": "2014",
+      "yearEnd": "2014",
+      "brandLogo": "https://www.fillmurray.com/75/75",
+      "previewImg": "https://www.fillmurray.com/500/500",
+      "gallery": [],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": true
+    },
+    {
+      "title": "PA Travel",
+      "description": "Pennsylvania Travel is a travel agency for unique global vacation deals.",
+      "url": "http://patravel.com/",
+      "yearStart": "2012",
+      "yearEnd": "2015",
+      "brandLogo": "https://www.fillmurray.com/75/75",
+      "previewImg": "https://www.fillmurray.com/500/500",
+      "gallery": [],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": true
+    },
+    {
+      "title": "USA Rugby League",
+      "description": "The official website of the US Association of Rugby League.",
+      "url": "http://www.usarl.org/",
+      "yearStart": "2012",
+      "yearEnd": "2016",
+      "brandLogo": "https://www.fillmurray.com/75/75",
+      "previewImg": "https://www.fillmurray.com/500/500",
+      "gallery": [],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": true
+    },
+    {
+      "title": "Tunnell Consulting",
+      "description": "A global pharmaceutical and biotechnology consulting company.",
+      "url": "http://www.tunnellconsulting.com/",
+      "yearStart": "2015",
+      "yearEnd": "2015",
+      "brandLogo": "https://www.fillmurray.com/75/75",
+      "previewImg": "https://www.morsecodemedia.com/site/assets/files/1104/tunnell-consulting-responsive-website-3.jpg",
+      "gallery": [],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": true
+    },
+    {
+      "title": "Xiaflex.com",
+      "description": "Dual indication website for HCPs and Patients.",
+      "url": "https://www.xiaflex.com/",
+      "yearStart": "2015",
+      "yearEnd": "",
+      "brandLogo": "https://www.fillmurray.com/75/75",
+      "previewImg": "https://www.fillmurray.com/500/500",
+      "needsPassword": true,
+      "gallery": [],
+      "category": "Websites",
+      "active": true
+    },
+    {
+      "title": "Merion Commercial Reality",
+      "description": "Commercial real estate services and solutions.",
+      "url": "http://www.merioncommercial.com/",
+      "yearStart": "2015",
+      "yearEnd": "2015",
+      "brandLogo": "https://www.fillmurray.com/75/75",
+      "previewImg": "https://www.fillmurray.com/500/500",
+      "gallery": [],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": true
+    },
+    {
+      "title": "Radicava.com",
+      "description": "A branded website for Radicava®. Radicava® (edaravone) is the only FDA-approved treatment option for amyotrophic lateral sclerosis (ALS) in the last 20 years.",
+      "url": "https://www.radicava.com/",
+      "yearStart": "2016",
+      "yearEnd": "",
+
+      "brandLogo": "https://www.fillmurray.com/75/75",
+      "previewImg": "https://www.fillmurray.com/500/500",
+      "needsPassword": true,
+      "gallery": [],
+      "category": "Websites",
+      "active": true
+    },
+    {
+      "title": "Endo Men's Health",
+      "description": "A landing page to engage urologists to help shape awareness of men's health",
+      "url": "https://endomenshealth.com/",
+      "yearStart": "2018",
+      "yearEnd": "",
+      "brandLogo": "https://www.fillmurray.com/75/75",
+      "previewImg": "https://www.fillmurray.com/500/500",
+      "needsPassword": true,
+      "gallery": [],
+      "category": "Websites",
+      "active": true
+    },
+    {
+      "title": "iPipeline",
+      "description": "iPipeline is a technology provider of SaaS solutions that drives straight-through processing for the insurance and financial services industry.",
+      "url": "https://www.ipipeline.com/",
+      "yearStart": "2014",
+      "yearEnd": "2014",
+      "brandLogo": "https://www.fillmurray.com/75/75",
+      "previewImg": "https://www.morsecodemedia.com/site/assets/files/1141/ipipeline-3.jpg",
+      "gallery": [],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": true
+    },
+    {
+      "title": "GeoBlue Travel Health Insurance (Desktop)",
+      "description": "",
+      "url": "https://www.geobluetravelinsurance.com/",
+      "yearStart": "2012",
+      "yearEnd": "2012",
+      "brandLogo": "https://www.fillmurray.com/75/75",
+      "previewImg": "https://www.morsecodemedia.com/site/assets/files/1025/geoblue-desktop-2.jpg",
+      "gallery": [],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": true
+    },
+    {
+      "title": "GeoBlue Travel Health Insurance (Mobile)",
+      "description": "",
+      "url": "https://www.geobluetravelinsurance.com/mobile/index-2.cfm",
+      "yearStart": "2015",
+      "yearEnd": "2015",
+      "brandLogo": "https://www.fillmurray.com/75/75",
+      "previewImg": "https://www.fillmurray.com/500/500",
+      "gallery": [],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": true
+    },
+    {
+      "title": "EPP Website",
+      "description": "",
+      "url": "http://epp.com/",
+      "yearStart": "2014",
+      "yearEnd": "2015",
+      "brandLogo": "https://www.fillmurray.com/75/75",
+      "previewImg": "https://www.morsecodemedia.com/site/assets/files/1024/epp-responsive-website-1.jpg",
+      "gallery": [],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": true
+    },
+    {
+      "title": "Xiaflex for DC 2018 Conference Panel",
+      "description": "",
+      "url": "",
+      "yearStart": "2018",
+      "yearEnd": "2018",
+      "brandLogo": "https://www.fillmurray.com/75/75",
+      "previewImg": "https://www.fillmurray.com/500/500",
+      "gallery": [],
+      "needsPassword": true,
+      "category": "Conference Panels",
+      "active": true
+    },
+    {
+      "title": "Xiaflex for DC 2017 Conference Panel",
+      "description": "",
+      "url": "",
+      "yearStart": "2017",
+      "yearEnd": "2017",
+      "brandLogo": "https://www.fillmurray.com/75/75",
+      "previewImg": "https://www.fillmurray.com/500/500",
+      "gallery": [],
+      "needsPassword": true,
+      "category": "Conference Panels",
+      "active": true
+    },
+    {
+      "title": "HQBlitz.com",
+      "description": "",
+      "url": "",
+      "yearStart": "2018",
+      "yearEnd": "2018",
+      "brandLogo": "https://www.fillmurray.com/75/75",
+      "previewImg": "https://www.fillmurray.com/500/500",
+      "gallery": [],
+      "needsPassword": true,
+      "category": "Websites",
+      "active": true
+    },
+    {
+      "title": "Belbuca.com",
+      "description": "",
+      "url": "",
+      "yearStart": "2015",
+      "yearEnd": "2016",
+      "brandLogo": "https://www.fillmurray.com/75/75",
+      "previewImg": "https://www.fillmurray.com/500/500",
+      "gallery": [],
+      "needsPassword": true,
+      "category": "Websites",
+      "active": false
+    },
+    {
+      "title": "ALSFRS-R Interactive Human Body Detail Aid",
+      "description": "",
+      "url": "",
+      "yearStart": "2016",
+      "yearEnd": "2016",
+      "brandLogo": "https://www.fillmurray.com/75/75",
+      "previewImg": "https://www.fillmurray.com/500/500",
+      "gallery": [],
+      "needsPassword": true,
+      "category": "iPad Presentations",
+      "active": true
+    },
+    {
+      "title": "GSW Speak People Alexa Skill",
+      "description": "",
+      "url": "",
+      "yearStart": "2018",
+      "yearEnd": "2018",
+      "brandLogo": "https://www.fillmurray.com/75/75",
+      "previewImg": "https://www.fillmurray.com/500/500",
+      "gallery": [],
+      "needsPassword": false,
+      "category": "Alexa Skills",
+      "active": true
+    },
+    {
+      "title": "IKEA Emails",
+      "description": "",
+      "url": "",
+      "yearStart": "2010",
+      "yearEnd": "2010",
+      "brandLogo": "https://www.fillmurray.com/75/75",
+      "previewImg": "https://www.fillmurray.com/500/500",
+      "gallery": [],
+      "needsPassword": false,
+      "category": "Email Campaigns",
+      "active": false
+    },
+    {
+      "title": "Jakfri Emails",
+      "description": "",
+      "url": "",
+      "yearStart": "2018",
+      "yearEnd": "2018",
+      "brandLogo": "https://www.fillmurray.com/75/75",
+      "previewImg": "https://www.fillmurray.com/500/500",
+      "gallery": [],
+      "needsPassword": true,
+      "category": "Email Campaigns",
+      "active": false
+    },
+    {
+      "title": "Radicava Emails",
+      "description": "",
+      "url": "",
+      "yearStart": "2016",
+      "yearEnd": "",
+      "brandLogo": "https://www.fillmurray.com/75/75",
+      "previewImg": "https://www.fillmurray.com/500/500",
+      "gallery": [],
+      "needsPassword": true,
+      "category": "Email Campaigns",
+      "active": false
+    },
+    {
+      "title": "Aerie MyInsights Dashboard",
+      "description": "",
+      "url": "",
+      "yearStart": "2018",
+      "yearEnd": "",
+      "brandLogo": "https://www.fillmurray.com/75/75",
+      "previewImg": "https://www.fillmurray.com/500/500",
+      "needsPassword": true,
+      "gallery": [],
+      "category": "iPad Presentation",
+      "active": false
+    },
+    {
+      "title": "Sinus Surgery Options",
+      "description": "",
+      "url": "",
+      "yearStart": "2012",
+      "yearEnd": "2014",
+      "brandLogo": "https://www.fillmurray.com/75/75",
+      "previewImg": "https://www.fillmurray.com/500/500",
+      "needsPassword": false,
+      "gallery": [],
+      "category": "Websites",
+      "active": false
+    },
+    {
+      "title": "Joe Hand Promotions",
+      "description": "",
+      "url": "",
+      "yearStart": "2013",
+      "yearEnd": "2016",
+      "brandLogo": "https://www.fillmurray.com/75/75",
+      "previewImg": "https://www.fillmurray.com/500/500",
+      "needsPassword": false,
+      "gallery": [],
+      "category": "Websites",
+      "active": false
+    },
+    {
+      "title": "Secant Medical",
+      "description": "",
+      "url": "",
+      "yearStart": "2012",
+      "yearEnd": "2014",
+      "brandLogo": "https://www.fillmurray.com/75/75",
+      "previewImg": "https://www.fillmurray.com/500/500",
+      "needsPassword": false,
+      "gallery": [],
+      "category": "Websites",
+      "active": false
+    },
+    {
+      "title": "Quench Online",
+      "description": "",
+      "url": "",
+      "yearStart": "2012",
+      "yearEnd": "2014",
+      "brandLogo": "https://www.fillmurray.com/75/75",
+      "previewImg": "https://www.fillmurray.com/500/500",
+      "needsPassword": false,
+      "gallery": [],
+      "category": "Websites",
+      "active": false
+    },
+    {
+      "title": "XTRA Kickstarts",
+      "description": "",
+      "url": "",
+      "yearStart": "2018",
+      "yearEnd": "2018",
+      "brandLogo": "https://www.fillmurray.com/75/75",
+      "previewImg": "https://www.fillmurray.com/500/500",
+      "needsPassword": true,
+      "gallery": [],
+      "category": "Websites",
+      "active": false
+    }
+  ]
+}
