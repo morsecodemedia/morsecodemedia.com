@@ -5,6 +5,13 @@
 </template>
 
 <style lang="scss">
+  * {
+    font-family: 'Muli', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+  }
+
   .case-studies {
     display: grid;
     grid-gap: 5px;
@@ -117,7 +124,11 @@
         li {
           display: inline-block;
           margin: 0 5px;
-          padding: 0 10px;
+          padding: 20px 10px;
+          &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+          }
         }
       }
     }

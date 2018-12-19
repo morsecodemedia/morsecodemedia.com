@@ -36,10 +36,5 @@ export default {
 </script>
 
 <style>
-  * {
-    font-family: 'Muli', sans-serif;
-    font-size: 22px;
-    margin: 0;
-    padding: 0;
-  }
+
 </style>

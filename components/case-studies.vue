@@ -2,12 +2,13 @@
   <section>
     <nav class="case-studies-filter">
       <ul>
-        <li>Alexa Skills</li>
-        <li>Conference Panels</li>
-        <li>Email Campaigns</li>
-        <li>iPad Presentations</li>
-        <li>Mobile Apps</li>
-        <li>Websites</li>
+        <li @click="filterCaseStudiesByCategory('all')">All Projects</li>
+        <li @click="filterCaseStudiesByCategory('alexa-skills')">Alexa Skills</li>
+        <li @click="filterCaseStudiesByCategory('conference-panels')">Conference Panels</li>
+        <li @click="filterCaseStudiesByCategory('email-campaigns')">Email Campaigns</li>
+        <li @click="filterCaseStudiesByCategory('ipad-presentations')">iPad Presentations</li>
+        <li @click="filterCaseStudiesByCategory('mobile-apps')">Mobile Apps</li>
+        <li @click="filterCaseStudiesByCategory('websites')">Websites</li>
       </ul>
     </nav>
     <article
@@ -64,6 +65,15 @@
           return b.yearStart - a.yearStart
         })
         return activeProjects.concat(sortedCaseStudies)
+      }
+    },
+    methods : {
+      filterCaseStudiesByCategory(cat) {
+        if (cat === 'all') {
+          return allCaseStudies()
+        } else {
+          return allCaseStudies().filter(caseStudy => caseStudy.category === cat.toLowerCase().reaplce(/\s]/g, '-'))
+        }
       }
     }
   }

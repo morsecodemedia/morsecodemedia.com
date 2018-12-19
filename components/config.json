@@ -46,7 +46,7 @@
       "previewImg": "https://www.morsecodemedia.com/site/assets/files/1023/babybox-responsive-website-1.jpg",
       "gallery": [],
       "needsPassword": false,
-      "category": "",
+      "category": "Websites",
       "active": true
     },
     {
@@ -333,7 +333,7 @@
       "previewImg": "https://www.fillmurray.com/500/500",
       "needsPassword": true,
       "gallery": [],
-      "category": "iPad Presentation",
+      "category": "iPad Presentations",
       "active": false
     },
     {
