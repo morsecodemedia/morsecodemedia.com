@@ -19,16 +19,16 @@
     grid-auto-rows: 75px;
     grid-auto-flow: dense;
     a {
+      display: flex;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
       .case-study {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        position: relative;
+
         img {
           object-fit: cover;
+          height: 100%;
           width: 100%;
-          max-height: 100%;
           -webkit-transition: all 0.35s;
           transition: all 0.35s;
         }
@@ -62,7 +62,6 @@
             -webkit-transform: translate3d(0,-100%,0);
             transform: translate3d(0,-100%,0);
           }
-          a,
           p {
             color: #FFF;
             padding: 1em 0;
@@ -91,7 +90,6 @@
             filter: brightness(0.6);
             -webkit-filter: brightness(0.6);
           }
-          a,
           p,
           h3 {
             opacity: 1;
