@@ -19,11 +19,33 @@
     grid-auto-rows: 75px;
     grid-auto-flow: dense;
     a {
-      display: flex;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-      .case-study {
+      &.case-study {
+        display: flex;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        grid-column: span 1;
+        grid-row: span 1;
+        &.double {
+          grid-column: span 2;
+          grid-row: span 2;
+        }
+        &.horizontal {
+          grid-column: span 2;
+          grid-row: span 1;
+        }
+        &.vertical {
+          grid-column: span 1;
+          grid-row: span 2;
+        }
+        &.landscape {
+          grid-column: span 4;
+          grid-row: span 1;
+        }
+        &.skyscraper {
+          grid-column: span 1;
+          grid-row: span 4;
+        }
         img {
           object-fit: cover;
           height: 100%;

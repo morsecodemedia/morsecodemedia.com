@@ -15,16 +15,14 @@
       <nuxt-link
         v-for="(cs, index) in allCaseStudies"
         :key="index"
-        :to="'/case-studies/' + cs.title | lowerKebab">
-        <div
-          :class="(index === 0) ? 'big' : (index === 4) ? 'horizontal' : ''"
-          class="case-study">
-          <img
-            :src="cs.previewImg"
-            role="presentation">
-          <div class="overlay">
-            <h3>{{ cs.title }}</h3>
-          </div>
+        :to="'/case-studies/' + cs.title | lowerKebab"
+        :class="(index === 0) ? 'double' : (index % 2) ? 'horizontal' : (index % 3) ? 'vertical' : (index % 5) ? 'landscape' : (index % 7) ? 'skyscraper' : ''"
+        class="case-study">
+        <img
+          :src="cs.previewImg"
+          role="presentation">
+        <div class="overlay">
+          <h3>{{ cs.title }}</h3>
         </div>
       </nuxt-link>
     </article>
@@ -88,20 +86,5 @@
 </script>
 
 <style lang="scss">
-  .case-study {
-    grid-column: span 1;
-    grid-row: span 1;
-    &.big {
-      grid-column: span 2;
-      grid-row: span 2;
-    }
-    &.horizontal {
-      grid-column: span 2;
-      grid-row: span 1;
-    }
-    &.vertical {
-      grid-column: span 1;
-      grid-row: span 2;
-    }
-  }
+
 </style>

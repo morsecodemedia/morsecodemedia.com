@@ -6,16 +6,14 @@
       v-for="(cs, index) in featuredCaseStudies"
       v-if="index < 5"
       :key="index"
-      :to="'/case-studies/' + cs.title | lowerKebab">
-      <div
-        :class="(index === 0) ? 'horizontal' : (index === 4) ? 'horizontal' : ''"
-        class="case-study">
-        <img
-          :src="cs.previewImg"
-          role="presentation">
-        <div class="overlay">
-          <h3>{{ cs.title }}</h3>
-        </div>
+      :to="'/case-studies/' + cs.title | lowerKebab"
+      :class="(index === 0) ? 'horizontal' : (index === 4) ? 'horizontal' : ''"
+      class="case-study">
+      <img
+        :src="cs.previewImg"
+        role="presentation">
+      <div class="overlay">
+        <h3>{{ cs.title }}</h3>
       </div>
     </nuxt-link>
   </section>
