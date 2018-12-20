@@ -16,7 +16,11 @@
         v-for="(cs, index) in allCaseStudies"
         :key="index"
         :to="'/case-studies/' + cs.title | lowerKebab"
-        :class="(index === 0) ? 'double' : (index % 2) ? 'horizontal' : (index % 3) ? 'vertical' : (index % 5) ? 'landscape' : (index % 7) ? 'skyscraper' : ''"
+        :class="(index === 0) ? 'double' :
+        (index % 2) ? 'horizontal' :
+        (index % 3) ? 'vertical' :
+        (index % 5) ? 'landscape' :
+        (index % 7) ? 'skyscraper' : ''"
         class="case-study">
         <img
           :src="cs.previewImg"
@@ -44,7 +48,7 @@
         activeCaseStudyCategory: 'all'
       }
     },
-    computed : {
+    computed: {
       allCaseStudies() {
         let activeProjects = this.caseStudies
           .filter(caseStudy => caseStudy.yearEnd === '' && caseStudy.active)
@@ -80,11 +84,36 @@
             }
             return acc
           }, [])
+      },
+      caseStudiesCount() {
+        return this.allCaseStudies.length
       }
     }
   }
 </script>
 
 <style lang="scss">
+  // NOTES
+  // (colxrow)
+  // regular: 1x1
+  // double: 2x2
+  // horizontal: 2x1
+  // vertical: 1x2
+  // landscape: 4x1
+  // skyscraper: 1x4
+  // 1:
+  //   1 landscape
+  // 2:
+  //   2 double
+  //   2 horizontal
+  // 3:
+  //   1 double, 2 horizontal
+  //   1 double, 2 vertical
+  //   2 double, 1 landscape
+  // 4:
+  //   1 double, 1 vertical, 2 regular
+  //   2 double, 2 landscape
+  //   4 regular
+  //   1 vertical, 3 horizontal
 
 </style>
