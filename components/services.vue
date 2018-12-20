@@ -58,8 +58,6 @@
   @media (min-width: 992px) {
     .services {
       grid-template-columns: repeat(3, 1fr);
-      article {
-      }
     }
   }
   @media (min-width: 1200px) {

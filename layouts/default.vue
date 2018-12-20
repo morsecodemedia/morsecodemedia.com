@@ -24,7 +24,6 @@
       position: relative;
       overflow: hidden;
       .case-study {
-
         img {
           object-fit: cover;
           height: 100%;

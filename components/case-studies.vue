@@ -17,7 +17,7 @@
         :key="index"
         :to="'/case-studies/' + cs.title | lowerKebab">
         <div
-          :class="(index === 0) ? 'horizontal' : (index === 4) ? 'horizontal' : ''"
+          :class="(index === 0) ? 'big' : (index === 4) ? 'horizontal' : ''"
           class="case-study">
           <img
             :src="cs.previewImg"
@@ -88,5 +88,20 @@
 </script>
 
 <style lang="scss">
-
+  .case-study {
+    grid-column: span 1;
+    grid-row: span 1;
+    &.big {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    &.horizontal {
+      grid-column: span 2;
+      grid-row: span 1;
+    }
+    &.vertical {
+      grid-column: span 1;
+      grid-row: span 2;
+    }
+  }
 </style>
