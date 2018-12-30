@@ -23,7 +23,7 @@
         (index % 7) ? 'skyscraper' : ''"
         class="case-study">
         <img
-          :src="cs.previewImg"
+          :src="(cs.previewImg !== '') ? cs.previewImg : 'https://www.fillmurray.com/500/500'"
           role="presentation">
         <div class="overlay">
           <h3>{{ cs.title }}</h3>
