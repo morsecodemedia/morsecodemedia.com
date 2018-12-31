@@ -15,8 +15,8 @@
   .case-studies {
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(153px, 1fr));
-    grid-auto-rows: 75px;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    grid-auto-rows: 150px;
     grid-auto-flow: dense;
     a {
       &.case-study {
@@ -26,26 +26,7 @@
         overflow: hidden;
         grid-column: span 1;
         grid-row: span 1;
-        &.double {
-          grid-column: span 2;
-          grid-row: span 2;
-        }
-        &.horizontal {
-          grid-column: span 2;
-          grid-row: span 1;
-        }
-        &.vertical {
-          grid-column: span 1;
-          grid-row: span 2;
-        }
-        &.landscape {
-          grid-column: span 4;
-          grid-row: span 1;
-        }
-        &.skyscraper {
-          grid-column: span 1;
-          grid-row: span 4;
-        }
+
         img {
           object-fit: cover;
           height: 100%;
@@ -157,6 +138,30 @@
     .case-studies {
       grid-template-columns: repeat(auto-fit, minmax(253px, 1fr));
       grid-auto-rows: 126px;
+      a {
+        &.case-study {
+          &.double {
+            grid-column: span 1;
+            grid-row: span 1;
+          }
+          &.horizontal {
+            grid-column: span 1;
+            grid-row: span 1;
+          }
+          &.landscape {
+            grid-column: span 1;
+            grid-row: span 1;
+          }
+          &.vertical {
+            grid-column: span 1;
+            grid-row: span 1;
+          }
+          &.skyscraper {
+            grid-column: span 1;
+            grid-row: span 1;
+          }
+        }
+      }
     }
   }
 
@@ -164,6 +169,61 @@
     .case-studies {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       grid-auto-rows: 250px;
+      a {
+        &.case-study {
+          &.double {
+            grid-column: span 2;
+            grid-row: span 2;
+          }
+          &.horizontal {
+            grid-column: span 2;
+            grid-row: span 1;
+          }
+          &.landscape {
+            grid-column: span 4;
+            grid-row: span 1;
+          }
+          &.vertical {
+            grid-column: span 1;
+            grid-row: span 1;
+          }
+          &.skyscraper {
+            grid-column: span 1;
+            grid-row: span 1;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .case-studies {
+      grid-template-columns: repeat(auto-fit, minmax(243px, 1fr));
+      grid-auto-rows: 250px;
+      a {
+        &.case-study {
+          &.double {
+            grid-column: span 2;
+            grid-row: span 2;
+          }
+          &.horizontal {
+            grid-column: span 2;
+            grid-row: span 1;
+          }
+          &.landscape {
+            grid-column: span 4;
+            grid-row: span 1;
+          }
+          &.vertical {
+            grid-column: span 1;
+            grid-row: span 2;
+          }
+          &.skyscraper {
+            grid-column: span 1;
+            grid-row: span 4;
+          }
+        }
+      }
     }
   }
 
