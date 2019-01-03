@@ -7,10 +7,10 @@
       v-if="index < 5"
       :key="index"
       :to="'/case-studies/' + cs.title | lowerKebab"
-      :class="(index === 0) ? 'horizontal' : (index === 4) ? 'horizontal' : ''"
+      :class="(index === 0) ? 'double' : (index === 3) ? 'vertical' : (index === 4) ? 'horizontal' : ''"
       class="case-study">
       <img
-        :src="cs.previewImg"
+        :src="(cs.previewImg !== '') ? cs.previewImg : 'https://www.fillmurray.com/500/500'"
         role="presentation">
       <div class="overlay">
         <h3>{{ cs.title }}</h3>

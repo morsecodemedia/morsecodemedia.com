@@ -39,6 +39,10 @@
 
 <style lang="scss" scoped>
   header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
     background: #222;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -138,13 +142,4 @@
       }
     }
   }
-
-
-
-
-
-
-
-
-
 </style>
