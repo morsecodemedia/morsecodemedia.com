@@ -46,13 +46,13 @@
       toggleMenu: function() {
         document.querySelector('.menu-btn').addEventListener('click', function() {
         if ( document.querySelector('.menu-icon').classList.contains('open') ) {
-          document.querySelector('.menu-icon').classList.remove('open');
-          document.querySelector('.main-nav').classList.remove('open');
-          document.querySelector('.menu-label').innerHTML = 'menu';
+          document.querySelector('.menu-icon').classList.remove('open')
+          document.querySelector('.main-nav').classList.remove('open')
+          document.querySelector('.menu-label').innerHTML = 'menu'
         } else {
-          document.querySelector('.menu-icon').classList.add('open');
-          document.querySelector('.main-nav').classList.add('open');
-          document.querySelector('.menu-label').innerHTML = 'close';
+          document.querySelector('.menu-icon').classList.add('open')
+          document.querySelector('.main-nav').classList.add('open')
+          document.querySelector('.menu-label').innerHTML = 'close'
         }
       });
       }
@@ -187,8 +187,10 @@
             color: white;
             font-size: 32px;
             text-decoration: none;
+            text-transform: uppercase;
             &:hover {
-
+              cursor: pointer;
+              text-decoration: underline;
             }
           }
         }

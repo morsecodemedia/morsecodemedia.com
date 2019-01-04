@@ -41,7 +41,20 @@
     data() {
       return {
         caseStudies: config.caseStudies,
-        activeCaseStudyCategory: 'all'
+        activeCaseStudyCategory: 'all',
+        threeUpClasses: ['double-3', 'horizontal-3', 'vertical-3'],
+        threeUpDensity: 0.5,
+        fourUpClasses: ['double-4','horizontal-4','landscape-4','vertical-4'],
+        fourUpDensity: 0.5,
+        fiveUpClasses: ['double-5','horizontal-5','landscape-5','vertical-5'],
+        fiveUpDensity: 0.8,
+        specialOffset: {
+          'double': 3,
+          'horizontal': 1,
+          'landscape': 3,
+          'vertical': 1,
+          'regular': 0
+        }
       }
     },
     computed: {
@@ -85,69 +98,129 @@
         return this.filteredCaseStudies.length
       },
       filteredCaseStudiesClasses() {
-        let classArray = [];
+        let classArray = []
+        let threeUpSpecialNum = Math.round(this.caseStudiesCount / 3 * this.threeUpDensity)
+        let fourUpSpecialNum = Math.round(this.caseStudiesCount / 4 * this.fourUpDensity)
+        let fiveUpSpecialNum = Math.round(this.caseStudiesCount / 5 * this.fiveUpDensity)
+        let threeUpSpecialClasses = []
+        let fourUpSpecialClasses = []
+        let fiveUpSpecialClasses = []
+
+        let threeUpCountOffset = 0
+        for (let counter = 0; counter < threeUpSpecialNum; ++counter) {
+          let special = this.threeUpClasses[Math.floor(this.threeUpClasses.length * Math.random())]
+          let specialPrefix = special.split('-')[0]
+          threeUpCountOffset += this.specialOffset[specialPrefix]
+          threeUpSpecialClasses.push(special)
+        }
+
+        let fourUpCountOffset = 0
+        for (let counter = 0; counter < fourUpSpecialNum; ++counter) {
+          let special = this.fourUpClasses[Math.floor(this.fourUpClasses.length * Math.random())]
+          let specialPrefix = special.split('-')[0]
+          fourUpCountOffset += this.specialOffset[specialPrefix]
+          fourUpSpecialClasses.push(special)
+        }
+
+        let fiveUpCountOffset = 0
+        for (let counter = 0; counter < fiveUpSpecialNum; ++counter) {
+          let special = this.fiveUpClasses[Math.floor(this.fiveUpClasses.length * Math.random())]
+          let specialPrefix = special.split('-')[0]
+          fiveUpCountOffset += this.specialOffset[specialPrefix]
+          fiveUpSpecialClasses.push(special)
+        }
+
+        let threeUpOffset = (this.caseStudiesCount + threeUpCountOffset) % 3
+        let fourUpOffset = (this.caseStudiesCount + fourUpCountOffset) % 4
+        let fiveUpOffset = (this.caseStudiesCount + fiveUpCountOffset) % 5
+
+        switch (threeUpOffset) {
+          case 2:
+            threeUpSpecialClasses.push('horizontal-3')
+            break
+          case 1:
+            threeUpSpecialClasses.push('horizontal-3')
+            threeUpSpecialClasses.push('vertical-3')
+            break
+        }
+
+        switch (fourUpOffset) {
+          case 3:
+            fourUpSpecialClasses.push('horizontal-4')
+            break
+          case 2:
+            fourUpSpecialClasses.push('horizontal-4')
+            fourUpSpecialClasses.push('vertical-4')
+            break
+          case 1:
+            fourUpSpecialClasses.push('double-4')
+            break
+        }
+
+        switch (fiveUpOffset) {
+          case 4:
+            fiveUpSpecialClasses.push('horizontal-5')
+            break
+          case 3:
+            fiveUpSpecialClasses.push('horizontal-5')
+            fiveUpSpecialClasses.push('vertical-5')
+            break
+          case 2:
+            fiveUpSpecialClasses.push('double-5')
+            break
+          case 1:
+            fiveUpSpecialClasses.push('double-5')
+            fiveUpSpecialClasses.push('horizontal-5')
+            break
+        }
+
+        for (let i = 0; i < this.caseStudiesCount; ++i) {
+          threeUpSpecialClasses[i] = (threeUpSpecialClasses[i]) ? threeUpSpecialClasses[i] : 'regular-3'
+          fourUpSpecialClasses[i] = (fourUpSpecialClasses[i]) ? fourUpSpecialClasses[i] : 'regular-4'
+          fiveUpSpecialClasses[i] = (fiveUpSpecialClasses[i]) ? fiveUpSpecialClasses[i] : 'regular-5'
+        }
+
+        this.shuffleArray(threeUpSpecialClasses)
+        this.shuffleArray(fourUpSpecialClasses)
+        this.shuffleArray(fiveUpSpecialClasses)
+
+        threeUpSpecialClasses.push(threeUpSpecialClasses.splice(threeUpSpecialClasses.indexOf('regular-3'), 1))
+        threeUpSpecialClasses.push(threeUpSpecialClasses.splice(threeUpSpecialClasses.indexOf('regular-3'), 1))
+        threeUpSpecialClasses.push(threeUpSpecialClasses.splice(threeUpSpecialClasses.indexOf('regular-3'), 1))
+
+        fourUpSpecialClasses.push(fourUpSpecialClasses.splice(fourUpSpecialClasses.indexOf('regular-4'), 1))
+        fourUpSpecialClasses.push(fourUpSpecialClasses.splice(fourUpSpecialClasses.indexOf('regular-4'), 1))
+        fourUpSpecialClasses.push(fourUpSpecialClasses.splice(fourUpSpecialClasses.indexOf('regular-4'), 1))
+        fourUpSpecialClasses.push(fourUpSpecialClasses.splice(fourUpSpecialClasses.indexOf('regular-4'), 1))
+
+        fiveUpSpecialClasses.push(fiveUpSpecialClasses.splice(fiveUpSpecialClasses.indexOf('regular-5'), 1))
+        fiveUpSpecialClasses.push(fiveUpSpecialClasses.splice(fiveUpSpecialClasses.indexOf('regular-5'), 1))
+        fiveUpSpecialClasses.push(fiveUpSpecialClasses.splice(fiveUpSpecialClasses.indexOf('regular-5'), 1))
+        fiveUpSpecialClasses.push(fiveUpSpecialClasses.splice(fiveUpSpecialClasses.indexOf('regular-5'), 1))
+        fiveUpSpecialClasses.push(fiveUpSpecialClasses.splice(fiveUpSpecialClasses.indexOf('regular-5'), 1))
+
         for (let i = 0; i < this.caseStudiesCount; ++i) {
           classArray[i] = ''
-          // 1 up
           classArray[i] += ' regular-1'
-          // 2 up
           classArray[i] += ' regular-2'
-          // 3 up
-          classArray[i] += ' regular-3'
-          classArray[i] += ' double-3'
-          // 4 up
-          classArray[i] += ' regular-4'
-          classArray[i] += ' double-4'
-          // 5 up
-          classArray[i] += ' regular-5'
-          classArray[i] += ' double-5'
+          classArray[i] += ' ' + threeUpSpecialClasses[i]
+          classArray[i] += ' ' + fourUpSpecialClasses[i]
+          classArray[i] += ' ' + fiveUpSpecialClasses[i]
         }
         return classArray
+      }
+    },
+    methods: {
+      shuffleArray: function(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
       }
     }
   }
 </script>
 
 <style lang="scss">
-  // NOTES
-  // (index === 0) ? 'double' :
-  // (index % 2) ? 'horizontal' :
-  // (index % 3) ? 'vertical' :
-  // (index % 5) ? 'landscape' :
 
-  // (colxrow)
-  // regular: 1x1
-  // double: 2x2
-  // horizontal: 2x1
-  // vertical: 1x2
-  // landscape: 4x1
-  // 1:
-  //   1 landscape
-  // 2:
-  //   2 double
-  //   2 horizontal
-  // 3:
-  //   1 double, 2 horizontal
-  //   1 double, 2 vertical
-  //   2 double, 1 landscape
-  // 4:
-  //   1 double, 1 vertical, 2 regular
-  //   2 double, 2 landscape
-  //   4 regular
-  //   1 vertical, 3 horizontal
-
-  // data property = define for each pick size the special layout options
-  // optional = add weighting to those
-
-  // define density for special layout options per pick size
-
-  // calculate number of special layouts based on density and number of rows
-
-  // calculate cells used based on grid count and special layouts
-
-  // calculate remainder/mod pick size
-
-  // adjust special layout array to reach remainder=0
-
-  // randomly apply special layout array to grid array
 </style>

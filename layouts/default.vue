@@ -15,8 +15,6 @@
   .case-studies {
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(auto-fit, 1fr);
-    grid-auto-rows: 150px;
     grid-auto-flow: dense;
     a {
       &.case-study {
@@ -106,90 +104,11 @@
       }
     }
   }
-  @media (min-width: 576px) {
-    .case-studies {
-      grid-template-columns: repeat(auto-fit, 1fr);
-      grid-auto-rows: 126px;
-      a {
-        &.case-study {
-          &.double {
-            grid-column: span 1;
-            grid-row: span 1;
-          }
-          &.horizontal {
-            grid-column: span 1;
-            grid-row: span 1;
-          }
-          &.landscape {
-            grid-column: span 1;
-            grid-row: span 1;
-          }
-          &.vertical {
-            grid-column: span 1;
-            grid-row: span 1;
-          }
-          &.skyscraper {
-            grid-column: span 1;
-            grid-row: span 1;
-          }
-        }
-      }
-    }
-  }
-
-  @media (min-width: 768px) {
-    .case-studies {
-      grid-template-columns: repeat(auto-fit, 1fr);
-      grid-auto-rows: 250px;
-      a {
-        &.case-study {
-          &.double {
-            grid-column: span 2;
-            grid-row: span 2;
-          }
-          &.horizontal {
-            grid-column: span 2;
-            grid-row: span 1;
-          }
-          &.landscape {
-            grid-column: span 4;
-            grid-row: span 1;
-          }
-          &.vertical {
-            grid-column: span 1;
-            grid-row: span 1;
-          }
-          &.skyscraper {
-            grid-column: span 1;
-            grid-row: span 1;
-          }
-        }
-      }
-    }
-  }
 
   @media (min-width: 992px) {
     .case-studies {
-      grid-template-columns: repeat(auto-fit, 1fr);
-      grid-auto-rows: 250px;
       a {
         &.case-study {
-          &.horizontal {
-            grid-column: span 2;
-            grid-row: span 1;
-          }
-          &.landscape {
-            grid-column: span 4;
-            grid-row: span 1;
-          }
-          &.vertical {
-            grid-column: span 1;
-            grid-row: span 2;
-          }
-          &.skyscraper {
-            grid-column: span 1;
-            grid-row: span 4;
-          }
           .overlay {
             position: absolute;
             overflow: hidden;
@@ -264,12 +183,20 @@
     }
   }
   @media (max-width: 514px) { // 1 up
+    .case-studies {
+      grid-template-columns: 1fr;
+      grid-auto-rows: 150px;
+    }
     .regular-1 {
       grid-column: span 1;
       grid-row: span 1;
     }
   }
   @media (min-width: 515px) and (max-width: 767px) { // 2 up
+    .case-studies {
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 250px;
+    }
     .regular-2 {
       grid-column: span 1;
       grid-row: span 1;
@@ -280,6 +207,10 @@
     }
   }
   @media (min-width: 768px) and (max-width: 991px) { // 3 up
+    .case-studies {
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 250px;
+    }
     .regular-3 {
       grid-column: span 1;
       grid-row: span 1;
@@ -288,8 +219,24 @@
       grid-column: span 2;
       grid-row: span 2;
     }
+    .horizontal-3 {
+      grid-column: span 2;
+      grid-row: span 1;
+    }
+    .landscape-3 {
+      grid-column: span 4;
+      grid-row: span 1;
+    }
+    .vertical-3 {
+      grid-column: span 1;
+      grid-row: span 2;
+    }
   }
   @media (min-width: 992px) and (max-width: 1200px) { // 4 up
+    .case-studies {
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 250px;
+    }
     .regular-4 {
       grid-column: span 1;
       grid-row: span 1;
@@ -298,15 +245,43 @@
       grid-column: span 2;
       grid-row: span 2;
     }
+    .horizontal-4 {
+      grid-column: span 2;
+      grid-row: span 1;
+    }
+    .landscape-4 {
+      grid-column: span 4;
+      grid-row: span 1;
+    }
+    .vertical-4 {
+      grid-column: span 1;
+      grid-row: span 2;
+    }
   }
 
   @media (min-width: 1200px) { // 5 up
+    .case-studies {
+      grid-template-columns: repeat(5, 1fr);
+      grid-auto-rows: 300px;
+    }
     .regular-5 {
       grid-column: span 1;
       grid-row: span 1;
     }
     .double-5 {
       grid-column: span 2;
+      grid-row: span 2;
+    }
+    .horizontal-5 {
+      grid-column: span 2;
+      grid-row: span 1;
+    }
+    .landscape-5 {
+      grid-column: span 4;
+      grid-row: span 1;
+    }
+    .vertical-5 {
+      grid-column: span 1;
       grid-row: span 2;
     }
   }
