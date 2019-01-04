@@ -15,7 +15,7 @@
   .case-studies {
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    grid-template-columns: repeat(auto-fit, 1fr);
     grid-auto-rows: 150px;
     grid-auto-flow: dense;
     a {
@@ -24,8 +24,6 @@
         text-align: center;
         position: relative;
         overflow: hidden;
-        grid-column: span 1;
-        grid-row: span 1;
 
         img {
           object-fit: cover;
@@ -42,63 +40,37 @@
           left: 10%;
           top: 10%;
           border-bottom: 1px solid #FFF;
-          border-top: 1px solid #FFF;
-          -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-          transition: opacity 0.35s, transform 0.35s;
-          -webkit-transform: scale(0,1);
-          -ms-transform: scale(0,1);
-          transform: scale(0,1);
-          h3 {
-            text-transform: uppercase;
-            text-align: center;
-            position: relative;
-            justify-self: center;
-            font-size: 22px;
-            background-color: transparent;
-            color: #FFF;
-            padding: 1em 0;
-            opacity: 0;
-            filter: alpha(opacity=0);
-            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-            transition: opacity 0.35s, transform 0.35s;
-            -webkit-transform: translate3d(0,-100%,0);
-            transform: translate3d(0,-100%,0);
-          }
-          p {
-            color: #FFF;
-            padding: 1em 0;
-            opacity: 0;
-            filter: alpha(opacity=0);
-            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-            transition: opacity 0.35s, transform 0.35s;
-            -webkit-transform: translate3d(0,100%,0);
-            transform: translate3d(0,100%,0);
-          }
+          opacity: 1;
+          filter: alpha(opacity=100);
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
-        &:hover {
-          cursor: pointer;
-          .overlay {
-            opacity: 1;
-            filter: alpha(opacity=100);
-            -webkit-transform: scale(1);
-            -ms-transform: scale(1);
-            transform: scale(1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-          img {
-            filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
-            filter: brightness(0.6);
-            -webkit-filter: brightness(0.6);
-          }
-          p,
-          h3 {
-            opacity: 1;
-            filter: alpha(opacity=100);
-            -webkit-transform: translate3d(0,0,0);
-            transform: translate3d(0,0,0);
-          }
+        h3 {
+          text-transform: uppercase;
+          text-align: center;
+          position: relative;
+          justify-self: center;
+          font-size: 22px;
+          background-color: transparent;
+          color: #FFF;
+          padding: 1em 0;
+        }
+        p {
+          color: #FFF;
+          padding: 1em 0;
+        }
+        p,
+        h3 {
+          opacity: 1;
+          filter: alpha(opacity=100);
+          -webkit-transform: translate3d(0,0,0);
+          transform: translate3d(0,0,0);
+        }
+        img {
+          filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+          filter: brightness(0.6);
+          -webkit-filter: brightness(0.6);
         }
       }
     }
@@ -136,7 +108,7 @@
   }
   @media (min-width: 576px) {
     .case-studies {
-      grid-template-columns: repeat(auto-fit, minmax(253px, 1fr));
+      grid-template-columns: repeat(auto-fit, 1fr);
       grid-auto-rows: 126px;
       a {
         &.case-study {
@@ -167,7 +139,7 @@
 
   @media (min-width: 768px) {
     .case-studies {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, 1fr);
       grid-auto-rows: 250px;
       a {
         &.case-study {
@@ -198,14 +170,10 @@
 
   @media (min-width: 992px) {
     .case-studies {
-      grid-template-columns: repeat(auto-fit, minmax(243px, 1fr));
+      grid-template-columns: repeat(auto-fit, 1fr);
       grid-auto-rows: 250px;
       a {
         &.case-study {
-          &.double {
-            grid-column: span 2;
-            grid-row: span 2;
-          }
           &.horizontal {
             grid-column: span 2;
             grid-row: span 1;
@@ -222,16 +190,125 @@
             grid-column: span 1;
             grid-row: span 4;
           }
+          .overlay {
+            position: absolute;
+            overflow: hidden;
+            width: 80%;
+            height: 80%;
+            left: 10%;
+            top: 10%;
+            border-bottom: 1px solid #FFF;
+            border-top: 1px solid #FFF;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+            -webkit-transform: scale(0,1);
+            -ms-transform: scale(0,1);
+            transform: scale(0,1);
+            h3 {
+              text-transform: uppercase;
+              text-align: center;
+              position: relative;
+              justify-self: center;
+              font-size: 22px;
+              background-color: transparent;
+              color: #FFF;
+              padding: 1em 0;
+              opacity: 0;
+              filter: alpha(opacity=0);
+              -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+              transition: opacity 0.35s, transform 0.35s;
+              -webkit-transform: translate3d(0,-100%,0);
+              transform: translate3d(0,-100%,0);
+            }
+            p {
+              color: #FFF;
+              padding: 1em 0;
+              opacity: 0;
+              filter: alpha(opacity=0);
+              -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+              transition: opacity 0.35s, transform 0.35s;
+              -webkit-transform: translate3d(0,100%,0);
+              transform: translate3d(0,100%,0);
+            }
+          }
+          img {
+            filter: none;
+          }
+          &:hover {
+            cursor: pointer;
+            .overlay {
+              opacity: 1;
+              filter: alpha(opacity=100);
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            img {
+              filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+              filter: brightness(0.6);
+              -webkit-filter: brightness(0.6);
+            }
+            p,
+            h3 {
+              opacity: 1;
+              filter: alpha(opacity=100);
+              -webkit-transform: translate3d(0,0,0);
+              transform: translate3d(0,0,0);
+            }
+          }
         }
       }
     }
   }
-
-  @media (min-width: 1200px) {
-
+  @media (max-width: 514px) { // 1 up
+    .regular-1 {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+  }
+  @media (min-width: 515px) and (max-width: 767px) { // 2 up
+    .regular-2 {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+    .double-2 {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) { // 3 up
+    .regular-3 {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+    .double-3 {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1200px) { // 4 up
+    .regular-4 {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+    .double-4 {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
   }
 
-  @media (min-width: 910px) and (max-width: 1214px) {
-
+  @media (min-width: 1200px) { // 5 up
+    .regular-5 {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+    .double-5 {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
   }
+
 </style>

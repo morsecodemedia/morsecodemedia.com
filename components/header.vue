@@ -1,24 +1,47 @@
 <template>
-  <header>
-    <div class="logo">
-      <a href="/">&lt;morsecodemedia&gt;</a>
-    </div>
-    <div
-      class="menu-btn"
-      @click="toggleMenu">
-      <div class="menu-icon">
-        <span />
-        <span />
-        <span />
-        <span />
+  <section>
+    <header>
+      <div class="logo">
+        <a href="/">&lt;morsecodemedia&gt;</a>
       </div>
-      <div class="menu-label">Menu</div>
-    </div>
-  </header>
+      <div
+        class="menu-btn"
+        @click="toggleMenu">
+        <div class="menu-icon">
+          <span />
+          <span />
+          <span />
+          <span />
+        </div>
+        <div class="menu-label">Menu</div>
+      </div>
+    </header>
+    <nav
+      v-if="navigation.length > 0"
+      class="main-nav">
+      <ul>
+        <li
+          v-for="nav in navigation"
+          :key="nav.index">
+          <a
+            :href="nav.url">
+            {{ nav.text }}
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </section>
 </template>
 
 <script>
+  import config from '~/components/config.json'
+
   export default {
+    data() {
+      return {
+        navigation: config.navigation
+      }
+    },
     methods: {
       toggleMenu: function() {
         document.querySelector('.menu-btn').addEventListener('click', function() {
@@ -140,6 +163,17 @@
         text-transform: uppercase;
         pointer-events: none;
       }
+    }
+  }
+  .main-nav {
+    display: none;
+    position: sticky;
+    height: 100vh;
+    width: 100vw;
+    align-content: center;
+    justify-content: center;
+    &.open {
+      display: block;
     }
   }
 </style>
