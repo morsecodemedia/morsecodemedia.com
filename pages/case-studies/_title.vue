@@ -15,9 +15,9 @@
       <div
         :class="(cs.needsPassword) ? 'show' : ''"
         class="password-overlay">
-        <p>Due to blah blah blah, you need a password to view this case study. <span
+        <p>Due to contractual restrictions, I am obligated to inform you that the work for this project was done while working for an pharmaceutical advertising agency. <span
           class="btn"
-          @click="showCaseStudy">Click here</span> to request permission to view this project.</p>
+          @click="showCaseStudy">Click here</span> to confirm that you want to view this project.</p>
       </div>
     </div>
     <siteFooter />
@@ -75,14 +75,50 @@
     &.show {
       display: flex;
     }
-    .btn {
-      display: inline-block;
-      background: red;
-      padding: 10px;
-      text-align: center;
-      color: white;
-      border-radius: 5px;
-      cursor: pointer;
+    p {
+      width: 80vw;
+      .btn {
+        display: flex;
+        background: red;
+        padding: 10px;
+        margin: 10px 0;
+        justify-self: center;
+        align-self: center;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        &:before {
+          content: "\A";
+          white-space: pre;
+        }
+        &:after {
+          content: "\A";
+          white-space: pre;
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    .password-overlay {
+      p {
+        width: 50vw;
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .password-overlay {
+      p {
+        width: 50vw;
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .password-overlay {
+      p {
+        width: 30vw;
+      }
     }
   }
 </style>

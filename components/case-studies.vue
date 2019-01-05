@@ -184,20 +184,17 @@
         this.shuffleArray(fourUpSpecialClasses)
         this.shuffleArray(fiveUpSpecialClasses)
 
-        threeUpSpecialClasses.push(threeUpSpecialClasses.splice(threeUpSpecialClasses.indexOf('regular-3'), 1))
-        threeUpSpecialClasses.push(threeUpSpecialClasses.splice(threeUpSpecialClasses.indexOf('regular-3'), 1))
-        threeUpSpecialClasses.push(threeUpSpecialClasses.splice(threeUpSpecialClasses.indexOf('regular-3'), 1))
+        for (let i = 0; i < 3; ++i) {
+          threeUpSpecialClasses.push(threeUpSpecialClasses.splice(threeUpSpecialClasses.indexOf('regular-3'), 1))
+        }
 
-        fourUpSpecialClasses.push(fourUpSpecialClasses.splice(fourUpSpecialClasses.indexOf('regular-4'), 1))
-        fourUpSpecialClasses.push(fourUpSpecialClasses.splice(fourUpSpecialClasses.indexOf('regular-4'), 1))
-        fourUpSpecialClasses.push(fourUpSpecialClasses.splice(fourUpSpecialClasses.indexOf('regular-4'), 1))
-        fourUpSpecialClasses.push(fourUpSpecialClasses.splice(fourUpSpecialClasses.indexOf('regular-4'), 1))
+        for (let i = 0; i < 4; ++i) {
+          fourUpSpecialClasses.push(fourUpSpecialClasses.splice(fourUpSpecialClasses.indexOf('regular-4'), 1))
+        }
 
-        fiveUpSpecialClasses.push(fiveUpSpecialClasses.splice(fiveUpSpecialClasses.indexOf('regular-5'), 1))
-        fiveUpSpecialClasses.push(fiveUpSpecialClasses.splice(fiveUpSpecialClasses.indexOf('regular-5'), 1))
-        fiveUpSpecialClasses.push(fiveUpSpecialClasses.splice(fiveUpSpecialClasses.indexOf('regular-5'), 1))
-        fiveUpSpecialClasses.push(fiveUpSpecialClasses.splice(fiveUpSpecialClasses.indexOf('regular-5'), 1))
-        fiveUpSpecialClasses.push(fiveUpSpecialClasses.splice(fiveUpSpecialClasses.indexOf('regular-5'), 1))
+        for (let i = 0; i < 5; ++i) {
+          fiveUpSpecialClasses.push(fiveUpSpecialClasses.splice(fiveUpSpecialClasses.indexOf('regular-5'), 1))
+        }
 
         for (let i = 0; i < this.caseStudiesCount; ++i) {
           classArray[i] = ''

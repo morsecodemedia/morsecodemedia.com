@@ -22,7 +22,6 @@
         text-align: center;
         position: relative;
         overflow: hidden;
-
         img {
           object-fit: cover;
           height: 100%;
@@ -37,6 +36,7 @@
           height: 80%;
           left: 10%;
           top: 10%;
+          border-top: 1px solid #FFF;
           border-bottom: 1px solid #FFF;
           opacity: 1;
           filter: alpha(opacity=100);
