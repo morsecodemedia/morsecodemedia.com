@@ -7,10 +7,18 @@
       <div>
         <p><img :src="(cs.brandLogo !== '') ? cs.brandLogo : 'https://www.fillmurray.com/75/75'"></p>
         <p>Title: {{ cs.title }}</p>
-        <p>Description: {{ cs.description }}</p>
+        <p>Overview: {{ cs.overview }}</p>
         <p>Link: <a
           :href="cs.url">{{ cs.url }}</a></p>
         <p>Worked on Project: {{ cs.yearStart }} - <span v-if="cs.yearEnd !== ''">{{ cs.yearEnd }}</span><span v-else>Present</span></p>
+        <p>Challenge: {{ cs.challenge }}</p>
+        <p>Solution: {{ cs.solution }}</p>
+        <p>Results: {{ cs.results }}</p>
+        <div
+          v-for="(img, index) in cs.gallery"
+          :key="index">
+          <img :src="img">
+        </div>
       </div>
       <div
         :class="(cs.needsPassword) ? 'show' : ''"
@@ -20,6 +28,8 @@
           @click="showCaseStudy">Click here</span> to confirm that you want to view this project.</p>
       </div>
     </div>
+    <nuxt-link
+      :to="'/case-studies/'">Back To Case Studies</nuxt-link>
     <siteFooter />
   </section>
 </template>

@@ -29,8 +29,67 @@
   },
   "about": {
     "headshot": "https://www.morsecodemedia.com/site/assets/files/1016/bmorse-headshot-1.jpg",
-    "aboutQuote": "Pushing the digital envelope, my analytical and creative thinking drives me to bridge the gap between client fantasies and digital realities to bring incredible interactive experiences to life.",
-    "trackRecordQuote": "With over 13 years of experience, I have demonstrated success in communicating technical/complex information in understandable language to non-technical and technical personnel; plan and execute presentations, write proposals, system documentation and client reference materials."
+    "aboutQuote": "Bringing beautifully designed experiences to life through coding, testing, and just the right amount of technical magic.",
+    "trackRecordQuote": "With over 15 years of experience, I have demonstrated success in communicating technical/complex information in understandable language to non-technical and technical personnel; plan and execute presentations, write proposals, system documentation and client reference materials.",
+    "overview": "My name is Brandon Morse. I am a New Jersey-based, award-winning, developer with a passion to innovate and to create a better web. Pushing the digital envelope, my analytical and creative thinking drives me to bridge the gap between client fantasies and digital realities to bring incredible interactive experiences to life.",
+    "certifications": [
+      {
+        "certification": "Custom Lightbox Ads Badge Certification",
+        "organization": "DoubleClick",
+        "organizationLogo": "",
+        "certificationStart": "March 2016",
+        "certificationEnd": ""
+      },
+      {
+        "certification": "Dynamic Creative Badge Certification",
+        "organization": "DoubleClick",
+        "organizationLogo": "",
+        "certificationStart": "March 2016",
+        "certificationEnd": ""
+      },
+      {
+        "certification": "VPAID Badge Certification",
+        "organization": "DoubleClick",
+        "organizationLogo": "",
+        "certificationStart": "March 2016",
+        "certificationEnd": ""
+      },
+      {
+        "certification": "YouTube Masthead Badge Certification",
+        "organization": "DoubleClick",
+        "organizationLogo": "",
+        "certificationStart": "March 2016",
+        "certificationEnd": ""
+      },
+      {
+        "certification": "HTML5 Studio Certification",
+        "organization": "DoubleClick",
+        "organizationLogo": "",
+        "certificationStart": "February 2016",
+        "certificationEnd": ""
+      },
+      {
+        "certification": "Veeva MyInsights",
+        "organization": "Veeva",
+        "organizationLogo": "",
+        "certificationStart": "May 2017",
+        "certificationEnd": "May 2018"
+      },
+      {
+        "certification": "Inbound Certification",
+        "organization": "HubSpot",
+        "organizationLogo": "",
+        "certificationStart": "February 2015",
+        "certificationEnd": "March 2016"
+      },
+      {
+        "certification": "HubSpot Design Certification",
+        "organization": "HubSpot",
+        "organizationLogo": "",
+        "certificationStart": "January 2015",
+        "certificationEnd": "February 2016"
+      }
+    ]
   },
   "services": [
     {
@@ -60,92 +119,105 @@
   "caseStudies": [
     {
       "title": "Wal-Mart Baby Subscription Box",
-      "description": "Subscription box website for baby products for new and expecting mothers.",
       "url": "https://babybox.walmart.com/",
       "yearStart": "2014",
       "yearEnd": "2014",
       "brandLogo": "",
       "previewImg": "https://www.morsecodemedia.com/site/assets/files/1023/babybox-responsive-website-1.jpg",
       "gallery": [],
-      "overview": "",
+      "overview": "Subscription box website for baby products for new and expecting mothers.",
       "challenge": "",
       "solution": "",
       "results": "",
       "needsPassword": false,
       "category": "Websites",
-      "active": true
+      "active": true,
+      "awards": []
     },
     {
       "title": "Wal-Mart Beauty Subscription Box",
-      "description": "Subscription box website for beauty products for women of all ages.",
       "url": "https://beautybox.walmart.com/",
       "yearStart": "2014",
       "yearEnd": "2014",
       "brandLogo": "",
       "previewImg": "",
       "gallery": [],
-      "overview": "",
+      "overview": "Subscription box website for beauty products for women of all ages.",
       "challenge": "",
       "solution": "",
       "results": "",
       "needsPassword": false,
       "category": "Websites",
-      "active": true
+      "active": true,
+      "awards": []
     },
     {
       "title": "PA Travel",
-      "description": "Pennsylvania Travel is a travel agency for unique global vacation deals.",
       "url": "http://patravel.com/",
       "yearStart": "2012",
       "yearEnd": "2015",
       "brandLogo": "",
       "previewImg": "",
       "gallery": [],
-      "overview": "",
-      "challenge": "",
-      "solution": "",
-      "results": "",
+      "overview": "Pennsylvania Travel is a travel agency for unique global vacation deals.",
+      "challenge": "- Site was not responsive. - 3rd Party feed that is scraped on page load is providing 95% of the content on the site. - Due to vacation offers being provided from 3rd party feed, site does not have a robust search - Users must 'drill down' to a specific pairing to see offers. - Custom CMS was antiquated and confusing to navigate around. - Call-tracking was only able to display two numbers: the default or Google AdWords specific numbers. - Social strategy consisted of weekly blog posts, however the CMS did not have a section to manage articles.",
+      "solution": "- Moved from custom CMS to ProcessWire CMS. - Built blog system into the CMS. - Continued to use the 3rd-party service to scrap various XML feeds. This time, instead of scraping the feeds at load-time, we created a cronjob to run three-times-a-week and pull all data into the CMS. - Created the ability to manage call-tracking phone numbers in the CMS.",
+      "results": "- Client is able to manage 100% of the content displayed on the site, despite the original source of the data. - With all data in the CMS, site is now able to have a more robust search integrated throughout the site. - Weekly blog articles are able to be managed through the CMS. - Landing pages with call tracking have the ability to display an unlimited set of numbers.",
       "needsPassword": false,
       "category": "Websites",
-      "active": true
+      "active": true,
+      "awards": []
     },
     {
       "title": "USA Rugby League",
-      "description": "The official website of the US Association of Rugby League.",
       "url": "http://www.usarl.org/",
       "yearStart": "2012",
       "yearEnd": "2016",
       "brandLogo": "",
       "previewImg": "",
       "gallery": [],
-      "overview": "",
+      "overview": "The official website of the US Association of Rugby League.",
       "challenge": "",
       "solution": "",
       "results": "",
       "needsPassword": false,
       "category": "Websites",
-      "active": true
+      "active": true,
+      "awards": []
     },
     {
       "title": "Tunnell Consulting",
-      "description": "A global pharmaceutical and biotechnology consulting company.",
       "url": "http://www.tunnellconsulting.com/",
       "yearStart": "2015",
       "yearEnd": "2015",
       "brandLogo": "",
       "previewImg": "https://www.morsecodemedia.com/site/assets/files/1104/tunnell-consulting-responsive-website-3.jpg",
-      "gallery": [],
-      "overview": "",
-      "challenge": "",
-      "solution": "",
-      "results": "",
+      "gallery": [
+        "https://www.morsecodemedia.com/site/assets/files/1104/tunnell-consulting-responsive-website-1.jpg",
+        "https://www.morsecodemedia.com/site/assets/files/1104/tunnell-consulting-responsive-website-2.jpg"
+      ],
+      "overview": "A global pharmaceutical and biotechnology consulting company.",
+      "challenge": "Tunnell engaged us to update their website to a modernized and responsive design. Their updated web presence was to communicate Tunnell's story in a way that conveys the impact their services have on the life sciences industry at large. In addition, the website was meant to draw new organizational talent and communicate Tunnell's evolving services.",
+      "solution": "Before approaching the website redesign, we developed buyer personas, a positioning statement, and a Brand Playbook that worked to inform the website architecture and user experience. The homepage story and internal pages were heavily based on feedback received in the client and customer interviews that made up the Brand Playbook.",
+      "results": "We created a fresh, modern design that is simple to use and easy to navigate. With an emphasis placed on SEO and responsive design, the new website is set to perform and behave significantly better across all devices. It tells the Tunnell story effectively, positioning them as a professional and reputable consulting firm within the life sciences industry.",
       "needsPassword": false,
       "category": "Websites",
-      "active": true
+      "active": true,
+      "awards": [
+        {
+          "award": "Davey Silver Award",
+          "organization": "Davey Awards",
+          "year": "2015"
+        },
+        {
+          "award": "W3 Silver Award",
+          "organization": "W3 Awards",
+          "year": "2015"
+        }
+      ]
     },
     {
-      "title": "Xiaflex.com",
-      "description": "Dual indication website for HCPs and Patients.",
+      "title": "Xiaflex for Dupuytren's Contracture",
       "url": "https://www.xiaflex.com/",
       "yearStart": "2015",
       "yearEnd": "",
@@ -158,46 +230,68 @@
       "solution": "",
       "results": "",
       "category": "Websites",
-      "active": true
+      "active": true,
+      "awards": []
+    },
+    {
+      "title": "Xiaflex for Peyronie's Disease",
+      "url": "https://www.xiaflex.com/",
+      "yearStart": "2015",
+      "yearEnd": "",
+      "brandLogo": "",
+      "previewImg": "",
+      "needsPassword": true,
+      "gallery": [],
+      "overview": "Dual indication website for HCPs and Patients.",
+      "challenge": "",
+      "solution": "",
+      "results": "",
+      "category": "Websites",
+      "active": true,
+      "awards": []
     },
     {
       "title": "Merion Commercial Reality",
-      "description": "Commercial real estate services and solutions.",
       "url": "http://www.merioncommercial.com/",
       "yearStart": "2015",
       "yearEnd": "2015",
       "brandLogo": "",
       "previewImg": "",
       "gallery": [],
-      "overview": "",
-      "challenge": "",
-      "solution": "",
+      "overview": "Commercial real estate services and solutions.",
+      "challenge": "Client doesn't have an online presence.",
+      "solution": "Developed a small, responsive, brochure site that highlights the client's services and some various properties.",
       "results": "",
       "needsPassword": false,
       "category": "Websites",
-      "active": true
+      "active": true,
+      "awards": []
     },
     {
       "title": "Radicava.com",
-      "description": "A branded website for Radicava®. Radicava® (edaravone) is the only FDA-approved treatment option for amyotrophic lateral sclerosis (ALS) in the last 20 years.",
       "url": "https://www.radicava.com/",
       "yearStart": "2016",
       "yearEnd": "",
-
       "brandLogo": "",
       "previewImg": "",
       "needsPassword": true,
       "gallery": [],
-      "overview": "",
+      "overview": "A branded website for Radicava®. Radicava® (edaravone) is the only FDA-approved treatment option for amyotrophic lateral sclerosis (ALS) in the last 20 years.",
       "challenge": "",
       "solution": "",
       "results": "",
       "category": "Websites",
-      "active": true
+      "active": true,
+      "awards": [
+        {
+          "award": "Creative Excellence Award for Healthcare Professional Website",
+          "organization": "The RX Club",
+          "year": "2017"
+        }
+      ]
     },
     {
       "title": "Endo Men's Health",
-      "description": "A landing page to engage urologists to help shape awareness of men's health",
       "url": "https://endomenshealth.com/",
       "yearStart": "2018",
       "yearEnd": "",
@@ -205,50 +299,70 @@
       "previewImg": "",
       "needsPassword": true,
       "gallery": [],
-      "overview": "",
+      "overview": "A landing page to engage urologists to help shape awareness of men's health",
       "challenge": "",
       "solution": "",
       "results": "",
       "category": "Websites",
-      "active": true
+      "active": true,
+      "awards": []
     },
     {
-      "title": "iPipeline",
-      "description": "iPipeline is a technology provider of SaaS solutions that drives straight-through processing for the insurance and financial services industry.",
+      "title": "iPipeline.com",
       "url": "https://www.ipipeline.com/",
       "yearStart": "2014",
       "yearEnd": "2014",
       "brandLogo": "",
       "previewImg": "https://www.morsecodemedia.com/site/assets/files/1141/ipipeline-3.jpg",
       "gallery": [],
-      "overview": "",
-      "challenge": "",
-      "solution": "",
-      "results": "",
+      "overview": "iPipeline is a technology provider of SaaS solutions that drives straight-through processing for the insurance and financial services industry.",
+      "challenge": "iPipeline, a B2B technology provider offering web-based software tools that streamline processing for the insurance industry, hired us to modernize their brand, create a responsive website or multiple platforms, and enhance their offline collateral.",
+      "solution": "We conducted a series of interviews to create a brand playbook that established a positioning statement, brand identity and creative mood boards to communicate the brand's message. A website 'proof of concept' was delivered to present content drivers, user experience, responsive design and a grey box prototype. The website was developed using the ExpressionEngine CMS and launched with multiple languages.",
+      "results": "The website hosts a blog, news, webinars, events and a careers portal, as well as a series of 'explanamation' videos to help guide users to their product offerings. The end result is a website that is modern and fresh, works seamlessly across multiple screen sizes or devices and that weill help iPipeline's new brand stand out within its industry with content marketing.",
       "needsPassword": false,
       "category": "Websites",
-      "active": true
+      "active": true,
+      "awards": [
+        {
+          "award": "Summit International Leader Award",
+          "organization": "Summit International Awards",
+          "year": "2014"
+        },
+        {
+          "award": "Communicator Award of Distinction",
+          "organization": "Communicator Awards",
+          "year": "2015"
+        }
+      ]
     },
     {
       "title": "GeoBlue Travel Health Insurance (Desktop)",
-      "description": "",
       "url": "https://www.geobluetravelinsurance.com/",
       "yearStart": "2012",
       "yearEnd": "2012",
       "brandLogo": "",
       "previewImg": "https://www.morsecodemedia.com/site/assets/files/1025/geoblue-desktop-2.jpg",
-      "gallery": [],
+      "gallery": [
+        "https://www.morsecodemedia.com/site/assets/files/1025/geoblue-desktop-1.jpg",
+        "https://www.morsecodemedia.com/site/assets/files/1025/geoblue-desktop-3.jpg"
+      ],
       "overview": "",
-      "challenge": "",
-      "solution": "",
-      "results": "",
+      "challenge": "GeoBlue (a Blue Cross Blue Shield affiliated brand) is a leader in the travel health insurance industry. We were hired by GeoBlue to develop an all-new website experience that seamlessly integrated with their complex back-end quoting tool; and upon launch, build out a digital strategy to support the site.",
+      "solution": "We utilized a persona based methodology to identify content drivers that would inform the strategy for both web experience and online marketing plan. Additionally, the website launch was supported by an advertising campaign alerting their broker network of the new members tools and online resources.",
+      "results": "A silver winner at the 2013 W3 Awards, the GeoBlue travel health insurance website has recorded increased conversion rates through the introduction of 'Find your Plan' and Dynamic Quoting results features. Content Marketing through organic traffic (SEO) and targeted PPC campaigns have generated over 20,000 visitors a month.",
       "needsPassword": false,
       "category": "Websites",
-      "active": true
+      "active": true,
+      "awards": [
+        {
+          "award": "W3 Silver Award",
+          "organization": "W3 Awards",
+          "year": "2013"
+        }
+      ]
     },
     {
       "title": "GeoBlue Travel Health Insurance (Mobile)",
-      "description": "",
       "url": "https://www.geobluetravelinsurance.com/mobile/index-2.cfm",
       "yearStart": "2015",
       "yearEnd": "2015",
@@ -261,28 +375,38 @@
       "results": "",
       "needsPassword": false,
       "category": "Websites",
-      "active": true
+      "active": true,
+      "awards": []
     },
     {
-      "title": "EPP Website",
-      "description": "",
+      "title": "EPP.com",
       "url": "http://epp.com/",
       "yearStart": "2014",
       "yearEnd": "2015",
       "brandLogo": "",
       "previewImg": "https://www.morsecodemedia.com/site/assets/files/1024/epp-responsive-website-1.jpg",
-      "gallery": [],
+      "gallery": [
+        "https://www.morsecodemedia.com/site/assets/files/1024/epp-responsive-website-2.jpg",
+        "https://www.morsecodemedia.com/site/assets/files/1024/epp-responsive-website-3.jpg",
+        "https://www.morsecodemedia.com/site/assets/files/1024/epp-responsive-website-4-1.jpg"
+      ],
       "overview": "",
-      "challenge": "",
-      "solution": "",
-      "results": "",
+      "challenge": "ARPRO® is JSP International's brand name for a premium Expanded Polypropylene (EPP) product. EPP is an impact energy management material with a unique combination of properties including energy absorption, structural strength, low weight, chemical resistance, and both thermal and acoustical insulation. While ARPRO® is the leading brand of EPP, there are many generic offerings, making it difficult for ARPRO® to rank organically for non-branded keywords and attributes of EPP.",
+      "solution": "We collaborated with JSP to create personas around potential customers that would not be familiar with ARPRO®. Then crafted an interactive experience and content targeted towards those users, around EPP and other keywords identified in the persona exercise; allowing ARPRO® to compete with organic rankings against “generic” EPP products.",
+      "results": "EPP has been well-received and achieved page one rankings for core keywords and increased website visit duration by 190%. Bounce rate was decreased by 19% and is now acting as an effective lead generation website.",
       "needsPassword": false,
       "category": "Websites",
-      "active": true
+      "active": true,
+      "awards": [
+        {
+          "award": "W3 Silver Award",
+          "organization": "W3 Awards",
+          "year": "2014"
+        }
+      ]
     },
     {
       "title": "Xiaflex for DC 2018 Conference Panel",
-      "description": "",
       "url": "",
       "yearStart": "2018",
       "yearEnd": "2018",
@@ -295,11 +419,11 @@
       "results": "",
       "needsPassword": true,
       "category": "Conference Panels",
-      "active": true
+      "active": true,
+      "awards": []
     },
     {
       "title": "Xiaflex for DC 2017 Conference Panel",
-      "description": "",
       "url": "",
       "yearStart": "2017",
       "yearEnd": "2017",
@@ -312,11 +436,11 @@
       "results": "",
       "needsPassword": true,
       "category": "Conference Panels",
-      "active": true
+      "active": true,
+      "awards": []
     },
     {
       "title": "HQBlitz.com",
-      "description": "",
       "url": "",
       "yearStart": "2018",
       "yearEnd": "2018",
@@ -329,11 +453,11 @@
       "results": "",
       "needsPassword": true,
       "category": "Websites",
-      "active": true
+      "active": true,
+      "awards": []
     },
     {
       "title": "Belbuca.com",
-      "description": "",
       "url": "",
       "yearStart": "2015",
       "yearEnd": "2016",
@@ -346,11 +470,11 @@
       "results": "",
       "needsPassword": true,
       "category": "Websites",
-      "active": false
+      "active": false,
+      "awards": []
     },
     {
       "title": "ALSFRS-R Interactive Human Body Detail Aid",
-      "description": "",
       "url": "",
       "yearStart": "2016",
       "yearEnd": "2016",
@@ -363,11 +487,11 @@
       "results": "",
       "needsPassword": true,
       "category": "iPad Presentations",
-      "active": true
+      "active": true,
+      "awards": []
     },
     {
       "title": "GSW Speak People Alexa Skill",
-      "description": "",
       "url": "https://www.amazon.com/morsecodemedia-Speak-People/dp/B07JJ1D2LW/",
       "yearStart": "2018",
       "yearEnd": "2018",
@@ -380,11 +504,11 @@
       "results": "",
       "needsPassword": false,
       "category": "Alexa Skills",
-      "active": true
+      "active": true,
+      "awards": []
     },
     {
       "title": "Atlantic County Attractions Alexa Skill",
-      "description": "",
       "url": "https://www.amazon.com/morsecodemedia-Atlantic-County-Attractions/dp/B074TPLK6R/",
       "yearStart": "2018",
       "yearEnd": "2017",
@@ -397,11 +521,11 @@
       "results": "",
       "needsPassword": false,
       "category": "Alexa Skills",
-      "active": true
+      "active": true,
+      "awards": []
     },
     {
       "title": "IKEA Emails",
-      "description": "",
       "url": "",
       "yearStart": "2010",
       "yearEnd": "2010",
@@ -414,11 +538,11 @@
       "results": "",
       "needsPassword": false,
       "category": "Email Campaigns",
-      "active": false
+      "active": false,
+      "awards": []
     },
     {
       "title": "Jakfri Emails",
-      "description": "",
       "url": "",
       "yearStart": "2018",
       "yearEnd": "2018",
@@ -431,11 +555,11 @@
       "results": "",
       "needsPassword": true,
       "category": "Email Campaigns",
-      "active": false
+      "active": false,
+      "awards": []
     },
     {
       "title": "Radicava Emails",
-      "description": "",
       "url": "",
       "yearStart": "2016",
       "yearEnd": "",
@@ -448,11 +572,11 @@
       "results": "",
       "needsPassword": true,
       "category": "Email Campaigns",
-      "active": false
+      "active": false,
+      "awards": []
     },
     {
       "title": "Aerie MyInsights Dashboard",
-      "description": "",
       "url": "",
       "yearStart": "2018",
       "yearEnd": "",
@@ -465,11 +589,11 @@
       "solution": "",
       "results": "",
       "category": "iPad Presentations",
-      "active": false
+      "active": false,
+      "awards": []
     },
     {
       "title": "Sinus Surgery Options",
-      "description": "",
       "url": "",
       "yearStart": "2012",
       "yearEnd": "2014",
@@ -482,11 +606,11 @@
       "solution": "",
       "results": "",
       "category": "Websites",
-      "active": false
+      "active": false,
+      "awards": []
     },
     {
       "title": "Joe Hand Promotions",
-      "description": "",
       "url": "",
       "yearStart": "2013",
       "yearEnd": "2016",
@@ -499,11 +623,11 @@
       "solution": "",
       "results": "",
       "category": "Websites",
-      "active": false
+      "active": false,
+      "awards": []
     },
     {
       "title": "Secant Medical",
-      "description": "",
       "url": "",
       "yearStart": "2012",
       "yearEnd": "2014",
@@ -516,11 +640,11 @@
       "solution": "",
       "results": "",
       "category": "Websites",
-      "active": false
+      "active": false,
+      "awards": []
     },
     {
       "title": "Quench Online",
-      "description": "",
       "url": "",
       "yearStart": "2012",
       "yearEnd": "2014",
@@ -533,12 +657,12 @@
       "solution": "",
       "results": "",
       "category": "Websites",
-      "active": false
+      "active": false,
+      "awards": []
     },
     {
-      "title": "XTRA Kickstarts",
-      "description": "",
-      "url": "",
+      "title": "XTRA Kick-starts",
+      "url": "http://www.xtra-kickstarts.com/",
       "yearStart": "2018",
       "yearEnd": "2018",
       "brandLogo": "",
@@ -549,8 +673,9 @@
       "challenge": "",
       "solution": "",
       "results": "",
-      "category": "Websites",
-      "active": false
+      "category": "iPad Presentations",
+      "active": true,
+      "awards": []
     }
   ]
 }

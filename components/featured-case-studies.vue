@@ -4,7 +4,6 @@
     class="case-studies">
     <nuxt-link
       v-for="(cs, index) in featuredCaseStudies"
-      v-if="index < 5"
       :key="index"
       :to="'/case-studies/' + cs.title | lowerKebab"
       :class="(index === 0) ? 'double' : (index === 3) ? 'vertical' : (index === 4) ? 'horizontal' : ''"
