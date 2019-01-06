@@ -89,6 +89,28 @@
         "certificationStart": "January 2015",
         "certificationEnd": "February 2016"
       }
+    ],
+    "socialMedia": [
+      {
+        "url": "https://www.linkedin.com/in/brandonmorse",
+        "title": "LinkedIn"
+      },
+      {
+        "url": "https://github.com/morsecodemedia",
+        "title": "GitHub"
+      },
+      {
+        "url": "",
+        "title": "GitLab"
+      },
+      {
+        "url": "",
+        "title": "CodePen"
+      },
+      {
+        "url": "https://stackoverflow.com/users/1857186/morsecodemedia",
+        "title": "StackOverflow"
+      }
     ]
   },
   "services": [
