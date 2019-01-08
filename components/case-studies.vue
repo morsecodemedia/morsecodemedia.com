@@ -19,7 +19,7 @@
         :class="filteredCaseStudiesClasses[index]"
         class="case-study">
         <img
-          :src="(cs.previewImg !== '') ? cs.previewImg : 'https://www.fillmurray.com/500/500'"
+          :src="(cs.gallery.length) ? cs.gallery[Math.floor(Math.random()*cs.gallery.length)] : 'https://www.fillmurray.com/500/500'"
           role="presentation">
         <div class="overlay">
           <h3>{{ cs.title }}</h3>

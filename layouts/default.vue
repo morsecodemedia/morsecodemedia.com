@@ -14,7 +14,7 @@
 
   .case-studies {
     display: grid;
-    grid-gap: 5px;
+    grid-gap: 10px;
     grid-auto-flow: dense;
     a {
       &.case-study {
