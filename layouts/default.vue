@@ -205,6 +205,10 @@
       grid-column: span 2;
       grid-row: span 2;
     }
+    .horizontal-2 {
+      grid-column: span 2;
+      grid-row: span 1;
+    }
   }
   @media (min-width: 768px) and (max-width: 991px) { // 3 up
     .case-studies {

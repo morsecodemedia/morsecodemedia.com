@@ -50,7 +50,8 @@
         class="password-overlay">
         <p>Due to contractual restrictions, I am obligated to inform you that the work for this project was done while working for an pharmaceutical advertising agency. <span
           class="btn"
-          @click="showCaseStudy">Click here</span> to confirm that you want to view this project.</p>
+          @click="showCaseStudy">Click here</span> to confirm that you want to view this project. Otherwise, <nuxt-link
+          :to="'/case-studies/'">click here</nuxt-link> to go back to the case study listings.</p>
       </div>
     </div>
     <nuxt-link
@@ -87,7 +88,7 @@
         let images = this.activeCaseStudy[0].gallery || []
         let returnArray = []
         for (var i=0; i < Math.max(description.length, images.length); ++i) {
-          if (description[i]) {
+          if (description[i] && description[i].description !== '') {
             returnArray.push({
               'type': 'description',
               'title': description[i].title,
@@ -135,13 +136,15 @@
       width: 80vw;
       .btn {
         display: flex;
-        background: red;
+        background: greenyellow;
         padding: 10px;
         margin: 10px 0;
         justify-self: center;
         align-self: center;
-        color: white;
+        color: black;
+        text-align: center;
         border-radius: 5px;
+        text-transform: uppercase;
         cursor: pointer;
         &:before {
           content: "\A";
@@ -152,6 +155,10 @@
           white-space: pre;
         }
       }
+      a {
+        color: red;
+        text-decoration: underline;
+      }
     }
   }
 
@@ -159,7 +166,6 @@
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-auto-rows: 1fr;
-    // grid-gap: 15px;
     div {
       grid-column: span 1;
       grid-row: span 1;
@@ -179,7 +185,7 @@
         padding: 0 20px;
       }
       img {
-        object-fit: cover;
+        object-fit: contain;
         object-position: center center;
         height: 100%;
       }

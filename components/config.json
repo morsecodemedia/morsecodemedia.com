@@ -233,7 +233,9 @@
       "yearStart": "2012",
       "yearEnd": "2015",
       "brandLogo": "",
-      "gallery": [],
+      "gallery": [
+        "/web-patravel/patravel-homepage-desktop-01.jpg"
+      ],
       "overview" : "Pennsylvania Travel is a travel agency for unique global vacation deals.",
       "description": [
         {
@@ -330,7 +332,9 @@
       "yearEnd": "",
       "brandLogo": "",
       "needsPassword": true,
-      "gallery": [],
+      "gallery": [
+        "/web-xiaflex-dc/hcp/xiaflex-dc-homepage-desktop-01.jpg"
+      ],
       "overview" : "Website for both HCPs and Patients to learn about Dupuytren's Contracture and the Xiaflex, the only FDA-approved non-surgical option, for treatment.",
       "description": [
         {
@@ -357,7 +361,9 @@
       "yearEnd": "",
       "brandLogo": "",
       "needsPassword": true,
-      "gallery": [],
+      "gallery": [
+        "/web-xiaflex-pd/hcp/xiaflex-pd-homepage-desktop-01.jpg"
+      ],
       "overview" : "Website for both HCPs and Patients to learn about Peyronie's Disease and the Xiaflex, the only FDA-approved non-surgical option, for treatment.",
       "description": [
         {
@@ -383,7 +389,11 @@
       "yearStart": "2015",
       "yearEnd": "2015",
       "brandLogo": "",
-      "gallery": [],
+      "gallery": [
+        "/web-merion-commercial/merion-commercial-homepage-desktop-01.jpg",
+        "/web-merion-commercial/merion-commercial-homepage-mobile-01.jpg",
+        "/web-merion-commercial/merion-commercial-clients-desktop-01.jpg"
+      ],
       "overview" : "Commercial real estate services and solutions.",
       "description": [
         {
@@ -411,7 +421,9 @@
       "yearEnd": "",
       "brandLogo": "",
       "needsPassword": true,
-      "gallery": [],
+      "gallery": [
+        "/web-radicava/patient/radicava-homepage-desktop-01.jpg"
+      ],
       "overview" : "A branded website for Radicava®. Radicava® (edaravone) is the only FDA-approved treatment option for amyotrophic lateral sclerosis (ALS) in the last 20 years.",
       "description": [
         {
@@ -444,7 +456,10 @@
       "yearEnd": "",
       "brandLogo": "",
       "needsPassword": true,
-      "gallery": [],
+      "gallery": [
+        "/web-endomenshealth/endomenshealth-01.jpg",
+        "/web-endomenshealth/endomenshealth-02.jpg"
+      ],
       "overview" : "A landing page to engage urologists to help shape awareness of men's health.",
       "description": [
         {
@@ -610,7 +625,9 @@
       "yearStart": "2018",
       "yearEnd": "2018",
       "brandLogo": "",
-      "gallery": [],
+      "gallery": [
+        "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-01.jpg"
+      ],
       "overview" : "",
       "description": [
         {
@@ -1016,7 +1033,13 @@
       "yearEnd": "2018",
       "brandLogo": "",
       "needsPassword": true,
-      "gallery": [],
+      "gallery": [
+        "/ipad-xtra-kickstarts/xtra-kickstarts-01.jpg",
+        "/ipad-xtra-kickstarts/xtra-kickstarts-02.jpg",
+        "/ipad-xtra-kickstarts/xtra-kickstarts-03.jpg",
+        "/ipad-xtra-kickstarts/xtra-kickstarts-04.jpg",
+        "/ipad-xtra-kickstarts/xtra-kickstarts-05.jpg"
+      ],
       "overview" : "",
       "description": [
         {

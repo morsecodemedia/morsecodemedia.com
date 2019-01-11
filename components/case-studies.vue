@@ -99,12 +99,22 @@
       },
       filteredCaseStudiesClasses() {
         let classArray = []
+        let twoUpSpecialNum = Math.round(this.caseStudiesCount / 3 * this.twoUpDensity)
         let threeUpSpecialNum = Math.round(this.caseStudiesCount / 3 * this.threeUpDensity)
         let fourUpSpecialNum = Math.round(this.caseStudiesCount / 4 * this.fourUpDensity)
         let fiveUpSpecialNum = Math.round(this.caseStudiesCount / 5 * this.fiveUpDensity)
+        let twoUpSpecialClasses = []
         let threeUpSpecialClasses = []
         let fourUpSpecialClasses = []
         let fiveUpSpecialClasses = []
+
+        let twoUpCountOffset = 0
+        for (let counter = 0; counter < twoUpSpecialNum; ++counter) {
+          let special = this.twoUpClasses[Math.floor(this.twoUpClasses.length * Math.random())]
+          let specialPrefix = special.split('-')[0]
+          twoUpCountOffset += this.specialOffset[specialPrefix]
+          twoUpSpecialClasses.push(special)
+        }
 
         let threeUpCountOffset = 0
         for (let counter = 0; counter < threeUpSpecialNum; ++counter) {
@@ -130,9 +140,16 @@
           fiveUpSpecialClasses.push(special)
         }
 
+        let twoUpOffset = (this.caseStudiesCount + twoUpCountOffset) % 2
         let threeUpOffset = (this.caseStudiesCount + threeUpCountOffset) % 3
         let fourUpOffset = (this.caseStudiesCount + fourUpCountOffset) % 4
         let fiveUpOffset = (this.caseStudiesCount + fiveUpCountOffset) % 5
+
+        switch (twoUpOffset) {
+          case 1:
+            twoUpSpecialClasses.push('horizontal-2')
+            break
+        }
 
         switch (threeUpOffset) {
           case 2:
@@ -175,14 +192,20 @@
         }
 
         for (let i = 0; i < this.caseStudiesCount; ++i) {
+          twoUpSpecialClasses[i] = (twoUpSpecialClasses[i]) ? twoUpSpecialClasses[i] : 'regular-2'
           threeUpSpecialClasses[i] = (threeUpSpecialClasses[i]) ? threeUpSpecialClasses[i] : 'regular-3'
           fourUpSpecialClasses[i] = (fourUpSpecialClasses[i]) ? fourUpSpecialClasses[i] : 'regular-4'
           fiveUpSpecialClasses[i] = (fiveUpSpecialClasses[i]) ? fiveUpSpecialClasses[i] : 'regular-5'
         }
 
+        this.shuffleArray(twoUpSpecialClasses)
         this.shuffleArray(threeUpSpecialClasses)
         this.shuffleArray(fourUpSpecialClasses)
         this.shuffleArray(fiveUpSpecialClasses)
+
+        for (let i = 0; i < 2; ++i) {
+          twoUpSpecialClasses.push(twoUpSpecialClasses.splice(twoUpSpecialClasses.indexOf('regular-2'), 1))
+        }
 
         for (let i = 0; i < 3; ++i) {
           threeUpSpecialClasses.push(threeUpSpecialClasses.splice(threeUpSpecialClasses.indexOf('regular-3'), 1))
@@ -195,14 +218,35 @@
         for (let i = 0; i < 5; ++i) {
           fiveUpSpecialClasses.push(fiveUpSpecialClasses.splice(fiveUpSpecialClasses.indexOf('regular-5'), 1))
         }
-
-        for (let i = 0; i < this.caseStudiesCount; ++i) {
-          classArray[i] = ''
-          classArray[i] += ' regular-1'
-          classArray[i] += ' regular-2'
-          classArray[i] += ' ' + threeUpSpecialClasses[i]
-          classArray[i] += ' ' + fourUpSpecialClasses[i]
-          classArray[i] += ' ' + fiveUpSpecialClasses[i]
+        if (this.caseStudiesCount === 1) {
+          classArray[0] = 'landscape-3 landscape-4 landscape-5'
+        } else if (this.caseStudiesCount === 2) {
+          classArray[0] = 'horizontal-3 horizontal-4 regular-5'
+          classArray[1] = 'regular-3 horizontal-4 landscape-5'
+        } else if (this.caseStudiesCount === 3) {
+          classArray[0] = 'regular-4 horizontal-5'
+          classArray[1] = 'horizontal-4 regular-5'
+          classArray[2] = 'regular-4 horizontal-5'
+        } else if (this.caseStudiesCount === 4) {
+          classArray[0] = 'double-4 horizontal-5'
+          classArray[1] = 'horizontal-4 regular-5'
+          classArray[2] = 'vertical-4 regular-5'
+          classArray[3] = 'landscape-4 vertical-5'
+        } else if (this.caseStudiesCount === 5) {
+          classArray[0] = 'double-4 double-5'
+          classArray[1] = 'horizontal-4 regular-5'
+          classArray[2] = 'vertical-4 regular-5'
+          classArray[3] = 'landscape-4 vertical-5'
+          classArray[4] = 'regular-4 horizontal-5'
+        } else {
+          for (let i = 0; i < this.caseStudiesCount; ++i) {
+            classArray[i] = ''
+            classArray[i] += ' regular-1'
+            classArray[i] += ' ' + twoUpSpecialClasses[i]
+            classArray[i] += ' ' + threeUpSpecialClasses[i]
+            classArray[i] += ' ' + fourUpSpecialClasses[i]
+            classArray[i] += ' ' + fiveUpSpecialClasses[i]
+          }
         }
         return classArray
       }
