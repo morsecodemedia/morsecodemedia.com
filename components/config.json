@@ -644,7 +644,7 @@
         }
       ],
       "needsPassword": true,
-      "category": "Conference Panels",
+      "category": "test",
       "active": true,
       "awards": []
     },
@@ -1055,7 +1055,7 @@
           "description": ""
         }
       ],
-      "category": "iPad Presentations",
+      "category": "test",
       "active": true,
       "awards": []
     }

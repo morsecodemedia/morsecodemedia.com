@@ -5,8 +5,7 @@
       <ul
         v-if="config.about.socialMedia.length">
         <li
-          v-for="(sm, index) in config.about.socialMedia"
-          v-if="sm.url"
+          v-for="(sm, index) in config.about.socialMedia.filter((sm)=>sm.url)"
           :key="index">
           <a
             :href="sm.url"

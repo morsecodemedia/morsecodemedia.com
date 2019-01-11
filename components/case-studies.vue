@@ -10,38 +10,31 @@
       </ul>
     </nav>
     <article
-      v-if="caseStudies"
+      v-if="filteredCaseStudies.length > 0 && displayCaseStudies"
       class="case-studies">
-      <nuxt-link
-        v-for="(cs, index) in filteredCaseStudies"
-        :key="index"
-        :to="'/case-studies/' + cs.title | lowerKebab"
-        :class="filteredCaseStudiesClasses[index]"
-        class="case-study">
-        <img
-          :src="(cs.gallery.length) ? cs.gallery[Math.floor(Math.random()*cs.gallery.length)] : 'https://www.fillmurray.com/500/500'"
-          role="presentation">
-        <div class="overlay">
-          <h3>{{ cs.title }}</h3>
-        </div>
-      </nuxt-link>
+      <caseStudyListing
+        v-for="(cs, i) in filteredCaseStudies"
+        :key="i"
+        :style-classes="filteredCaseStudiesClasses[i]"
+        :cs="cs" />
     </article>
   </section>
 </template>
 
 <script>
   import config from '~/components/config.json'
-
+  import caseStudyListing from '~/components/case-study-listing'
   export default {
-    filters: {
-      lowerKebab: function(term) {
-        return term.toLowerCase().replace(/[.\s]/g, '-').replace(/[&#,+()$~%'":*?<>{}]/g, '' )
-      }
+    components: {
+      caseStudyListing
     },
     data() {
       return {
+        displayCaseStudies: false,
         caseStudies: config.caseStudies,
         activeCaseStudyCategory: 'all',
+        twoUpClasses: ['horizontal-2'],
+        twoUpDensity: 0.6,
         threeUpClasses: ['double-3', 'horizontal-3', 'vertical-3'],
         threeUpDensity: 0.5,
         fourUpClasses: ['double-4','horizontal-4','landscape-4','vertical-4'],
@@ -75,6 +68,10 @@
           return b.yearStart - a.yearStart
         })
         let totalProjects = activeProjects.concat(sortedCaseStudies)
+        totalProjects = totalProjects.map(cs => {
+          cs.img = (cs.gallery && cs.gallery.length) ? cs.gallery[Math.floor(Math.random()*cs.gallery.length)] : 'https://www.fillmurray.com/500/500'
+          return cs
+        })
         if (this.activeCaseStudyCategory !== 'all') {
           return totalProjects
             .filter(caseStudy => {
@@ -99,7 +96,7 @@
       },
       filteredCaseStudiesClasses() {
         let classArray = []
-        let twoUpSpecialNum = Math.round(this.caseStudiesCount / 3 * this.twoUpDensity)
+        let twoUpSpecialNum = Math.round(this.caseStudiesCount / 2 * this.twoUpDensity)
         let threeUpSpecialNum = Math.round(this.caseStudiesCount / 3 * this.threeUpDensity)
         let fourUpSpecialNum = Math.round(this.caseStudiesCount / 4 * this.fourUpDensity)
         let fiveUpSpecialNum = Math.round(this.caseStudiesCount / 5 * this.fiveUpDensity)
@@ -250,6 +247,9 @@
         }
         return classArray
       }
+    },
+    mounted() {
+      this.displayCaseStudies = true
     },
     methods: {
       shuffleArray: function(array) {

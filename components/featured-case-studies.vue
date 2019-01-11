@@ -3,8 +3,7 @@
     v-if="caseStudies"
     class="case-studies">
     <nuxt-link
-      v-for="(cs, index) in featuredCaseStudies"
-      v-if="index < 5"
+      v-for="(cs, index) in featuredCaseStudies.splice(0,5)"
       :key="index"
       :to="'/case-studies/' + cs.title | lowerKebab"
       :class="(index === 0) ? 'regular-1 regular-2 double-3 double-4 double-5' : (index === 2) ? 'vertical-4' : (index === 3) ? 'regular-1 horizonal-2 regular-3 regular-4 vertical-5' : (index === 4) ? 'regular-1 horizontal-2 horizontal-3 landscape-4 horizontal-5' : 'regular-1 regular-2 regular-3 regular-4 regular-5'"
