@@ -262,7 +262,11 @@
       "yearStart": "2012",
       "yearEnd": "2016",
       "brandLogo": "",
-      "gallery": [],
+      "gallery": [
+        "/web-usarl/usarl-homepage-desktop-01.jpg",
+        "/web-usarl/usarl-clubs-desktop-01.jpg",
+        "/web-usarl/usarl-conference-listings-desktop-01.jpg"
+      ],
       "overview" : "The official website of the US Association of Rugby League.",
       "description": [
         {
@@ -626,7 +630,8 @@
       "yearEnd": "2018",
       "brandLogo": "",
       "gallery": [
-        "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-01.jpg"
+        "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-01.jpg",
+        "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-02.jpg"
       ],
       "overview" : "",
       "description": [
@@ -644,7 +649,7 @@
         }
       ],
       "needsPassword": true,
-      "category": "Conference Panels",
+      "category": "Conference Pieces",
       "active": true,
       "awards": []
     },
@@ -671,7 +676,7 @@
         }
       ],
       "needsPassword": true,
-      "category": "Conference Panels",
+      "category": "Conference Pieces",
       "active": true,
       "awards": []
     },
@@ -1055,7 +1060,7 @@
           "description": ""
         }
       ],
-      "category": "Conference Panels",
+      "category": "Conference Pieces",
       "active": true,
       "awards": []
     },
