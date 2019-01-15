@@ -644,7 +644,7 @@
         }
       ],
       "needsPassword": true,
-      "category": "test",
+      "category": "Conference Panels",
       "active": true,
       "awards": []
     },
@@ -655,7 +655,7 @@
       "yearEnd": "2017",
       "brandLogo": "",
       "gallery": [],
-      "overview" : "",
+      "overview" : "A touchscreen expereience for the 2017 ASSH Conference. This conference panel showcases procedure videos, treatment efficacy and patient profiles of those treated with Xiaflex for Dupuytren's contracture.",
       "description": [
         {
           "title": "challenge",
@@ -914,7 +914,7 @@
           "description": ""
         }
       ],
-      "category": "iPad Presentations",
+      "category": "Reporting Dashboards",
       "active": false,
       "awards": []
     },
@@ -1055,7 +1055,34 @@
           "description": ""
         }
       ],
-      "category": "test",
+      "category": "Conference Panels",
+      "active": true,
+      "awards": []
+    },
+    {
+      "title": "Endo Video Library",
+      "url": "",
+      "yearStart": "",
+      "yearEnd": "2018",
+      "brandLogo": "",
+      "needsPassword": true,
+      "gallery": [],
+      "overview" : "",
+      "description": [
+        {
+          "title": "challenge",
+          "description": ""
+        },
+        {
+          "title": "solution",
+          "description": ""
+        },
+        {
+          "title": "results",
+          "description": ""
+        }
+      ],
+      "category": "Native Apps",
       "active": true,
       "awards": []
     }
