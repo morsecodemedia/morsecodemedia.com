@@ -15,7 +15,7 @@
       class="case-studies">
       <caseStudyListing
         v-for="(cs, i) in filteredCaseStudies"
-        :key="i"
+        :key="cs.id"
         :style-classes="filteredCaseStudiesClasses[i]"
         :cs="cs" />
     </article>
@@ -223,6 +223,7 @@
         for (let i = 0; i < 5; ++i) {
           fiveUpSpecialClasses.push(fiveUpSpecialClasses.splice(fiveUpSpecialClasses.indexOf('regular-5'), 1))
         }
+
         if (this.caseStudiesCount === 1) {
           classArray[0] = 'landscape-3 landscape-4 landscape-5'
         } else if (this.caseStudiesCount === 2) {

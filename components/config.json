@@ -172,6 +172,7 @@
   ],
   "caseStudies": [
     {
+      "id": "wal001",
       "title": "Walmart Baby Subscription Box",
       "url": "https://babybox.walmart.com/",
       "yearStart": "2014",
@@ -201,6 +202,7 @@
       "awards": []
     },
     {
+      "id": "wal002",
       "title": "Walmart Beauty Subscription Box",
       "url": "https://beautybox.walmart.com/",
       "yearStart": "2014",
@@ -228,6 +230,7 @@
       "awards": []
     },
     {
+      "id": "pat001",
       "title": "PA Travel",
       "url": "http://patravel.com/",
       "yearStart": "2012",
@@ -257,6 +260,7 @@
       "awards": []
     },
     {
+      "id": "usarl001",
       "title": "USA Rugby League",
       "url": "http://www.usarl.org/",
       "yearStart": "2012",
@@ -288,6 +292,7 @@
       "awards": []
     },
     {
+      "id": "tnl001",
       "title": "Tunnell Consulting",
       "url": "http://www.tunnellconsulting.com/",
       "yearStart": "2015",
@@ -330,6 +335,7 @@
       ]
     },
     {
+      "id": "xdc001",
       "title": "Xiaflex for Dupuytren's Contracture",
       "url": "https://dupuytrens-contracture.xiaflex.com/",
       "yearStart": "2015",
@@ -359,6 +365,7 @@
       "awards": []
     },
     {
+      "id": "xpd001",
       "title": "Xiaflex for Peyronie's Disease",
       "url": "https://peyronies-disease.xiaflex.com/",
       "yearStart": "2015",
@@ -388,6 +395,7 @@
       "awards": []
     },
     {
+      "id": "mcr001",
       "title": "Merion Commercial Reality",
       "url": "http://www.merioncommercial.com/",
       "yearStart": "2015",
@@ -419,6 +427,7 @@
       "awards": []
     },
     {
+      "id": "rad001",
       "title": "Radicava.com",
       "url": "https://www.radicava.com/",
       "yearStart": "2016",
@@ -454,6 +463,7 @@
       ]
     },
     {
+      "id": "emh001",
       "title": "Endo Men's Health",
       "url": "https://endomenshealth.com/",
       "yearStart": "2018",
@@ -484,6 +494,7 @@
       "awards": []
     },
     {
+      "id": "ipl001",
       "title": "iPipeline.com",
       "url": "https://www.ipipeline.com/",
       "yearStart": "2014",
@@ -522,6 +533,7 @@
       ]
     },
     {
+      "id": "hth001",
       "title": "GeoBlue Travel Health Insurance (Desktop)",
       "url": "https://www.geobluetravelinsurance.com/",
       "yearStart": "2012",
@@ -559,6 +571,7 @@
       ]
     },
     {
+      "id": "hth002",
       "title": "GeoBlue Travel Health Insurance (Mobile)",
       "url": "https://www.geobluetravelinsurance.com/mobile/index-2.cfm",
       "yearStart": "2015",
@@ -590,6 +603,7 @@
       "awards": []
     },
     {
+      "id": "jsp001",
       "title": "EPP.com",
       "url": "http://epp.com/",
       "yearStart": "2014",
@@ -628,6 +642,7 @@
       ]
     },
     {
+      "id": "xdc002",
       "title": "Xiaflex for DC 2018 Conference Panel",
       "url": "",
       "yearStart": "2018",
@@ -658,6 +673,7 @@
       "awards": []
     },
     {
+      "id": "xdc003",
       "title": "Xiaflex for DC 2017 Conference Panel",
       "url": "",
       "yearStart": "2017",
@@ -685,6 +701,7 @@
       "awards": []
     },
     {
+      "id": "rad002",
       "title": "HQBlitz.com",
       "url": "",
       "yearStart": "2018",
@@ -712,6 +729,7 @@
       "awards": []
     },
     {
+      "id": "belb001",
       "title": "Belbuca.com",
       "url": "",
       "yearStart": "2015",
@@ -739,6 +757,7 @@
       "awards": []
     },
     {
+      "id": "rad003",
       "title": "ALSFRS-R Interactive Human Body Detail Aid",
       "url": "",
       "yearStart": "2016",
@@ -766,6 +785,7 @@
       "awards": []
     },
     {
+      "id": "alexa001",
       "title": "GSW Speak People Alexa Skill",
       "url": "https://www.amazon.com/morsecodemedia-Speak-People/dp/B07JJ1D2LW/",
       "yearStart": "2018",
@@ -793,6 +813,7 @@
       "awards": []
     },
     {
+      "id": "alexa002",
       "title": "Atlantic County Attractions Alexa Skill",
       "url": "https://www.amazon.com/morsecodemedia-Atlantic-County-Attractions/dp/B074TPLK6R/",
       "yearStart": "2018",
@@ -820,6 +841,7 @@
       "awards": []
     },
     {
+      "id": "ikea001",
       "title": "IKEA Emails",
       "url": "",
       "yearStart": "2010",
@@ -847,6 +869,7 @@
       "awards": []
     },
     {
+      "id": "jakfri001",
       "title": "Jakfri Emails",
       "url": "",
       "yearStart": "2018",
@@ -874,6 +897,7 @@
       "awards": []
     },
     {
+      "id": "rad004",
       "title": "Radicava Emails",
       "url": "",
       "yearStart": "2016",
@@ -901,6 +925,7 @@
       "awards": []
     },
     {
+      "id": "aerie001",
       "title": "Aerie MyInsights Dashboard",
       "url": "",
       "yearStart": "2018",
@@ -928,6 +953,7 @@
       "awards": []
     },
     {
+      "id": "ent001",
       "title": "Sinus Surgery Options",
       "url": "",
       "yearStart": "2012",
@@ -955,6 +981,7 @@
       "awards": []
     },
     {
+      "id": "jhp001",
       "title": "Joe Hand Promotions",
       "url": "",
       "yearStart": "2013",
@@ -982,6 +1009,7 @@
       "awards": []
     },
     {
+      "id": "sct001",
       "title": "Secant Medical",
       "url": "",
       "yearStart": "2012",
@@ -1009,6 +1037,7 @@
       "awards": []
     },
     {
+      "id": "que001",
       "title": "Quench Online",
       "url": "",
       "yearStart": "2012",
@@ -1036,6 +1065,7 @@
       "awards": []
     },
     {
+      "id": "xdc004",
       "title": "XTRA Kick-starts",
       "url": "http://www.xtra-kickstarts.com/",
       "yearStart": "2018",
@@ -1069,6 +1099,7 @@
       "awards": []
     },
     {
+      "id": "endo001",
       "title": "Endo Video Library",
       "url": "",
       "yearStart": "",

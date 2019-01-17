@@ -33,6 +33,7 @@
       cs: {
         type: Object,
         required: true,
+        twoWay: true,
         default: () => {}
       },
       styleClasses: {
