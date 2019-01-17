@@ -19,6 +19,9 @@
       caseStudiesIntro,
       caseStudies,
       siteFooter
+    },
+    metaInfo: {
+      title: 'Case Studies'
     }
   }
 </script>

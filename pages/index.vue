@@ -12,6 +12,11 @@
 </template>
 
 <script>
+import Vue from 'vue'
+import Meta from 'vue-meta'
+
+Vue.use(Meta)
+
 import siteHeader from '~/components/header.vue'
 import heroHome from '~/components/hero-home.vue'
 import aboutHome from '~/components/about-home.vue'
@@ -31,6 +36,14 @@ export default {
     featuredCaseStudies,
     linkBarCaseStudies,
     siteFooter
+  },
+  metaInfo: {
+    title: 'The Porfolio of Brandon Morse',
+    titleTemplate: '%s | morsecodemedia',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+    ]
   }
 }
 </script>

@@ -2,6 +2,7 @@
   <section>
     <nav class="case-studies-filter">
       <ul>
+        <li @click="showPwdProjects = !showPwdProjects">(L)</li>
         <li @click="activeCaseStudyCategory = 'all'">All Projects</li>
         <li
           v-for="(cat, index) in activeCategories"
@@ -30,6 +31,7 @@
     },
     data() {
       return {
+        showPwdProjects: false,
         displayCaseStudies: false,
         caseStudies: config.caseStudies,
         activeCaseStudyCategory: 'all',
@@ -54,8 +56,12 @@
       filteredCaseStudies() {
         let activeProjects = this.caseStudies
           .filter(caseStudy => caseStudy.yearEnd === '' && caseStudy.active)
+          .filter(caseStudy => this.showPwdProjects || !caseStudy.needsPassword)
+          .filter(caseStudy => caseStudy.gallery.length > 0)
         let sortedCaseStudies = this.caseStudies
           .filter(caseStudy => caseStudy.yearEnd !== '' && caseStudy.active)
+          .filter(caseStudy => this.showPwdProjects || !caseStudy.needsPassword)
+          .filter(caseStudy => caseStudy.gallery.length > 0)
           .sort((a, b) => {
             let yearEndCompare = b.yearEnd - a.yearEnd
             if (yearEndCompare === 0) {
@@ -84,6 +90,8 @@
       activeCategories() {
         return this.caseStudies
           .filter(caseStudy => caseStudy.active)
+          .filter(caseStudy => this.showPwdProjects || !caseStudy.needsPassword)
+          .filter(caseStudy => caseStudy.gallery.length > 0)
           .reduce((acc, csReduce) => {
             if (acc.indexOf(csReduce.category) === -1) {
               acc.push(csReduce.category)
