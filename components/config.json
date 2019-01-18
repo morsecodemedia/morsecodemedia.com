@@ -177,7 +177,7 @@
       "url": "https://babybox.walmart.com/",
       "yearStart": "2014",
       "yearEnd": "2014",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "gallery": [
         "https://www.morsecodemedia.com/site/assets/files/1023/babybox-responsive-website-1.jpg"
       ],
@@ -207,7 +207,7 @@
       "url": "https://beautybox.walmart.com/",
       "yearStart": "2014",
       "yearEnd": "2014",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "gallery": [],
       "overview" : "Subscription box website for beauty products for women of all ages.",
       "description": [
@@ -235,7 +235,7 @@
       "url": "http://patravel.com/",
       "yearStart": "2012",
       "yearEnd": "2015",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "gallery": [
         "/web-patravel/patravel-homepage-desktop-01.jpg"
       ],
@@ -265,7 +265,7 @@
       "url": "http://www.usarl.org/",
       "yearStart": "2012",
       "yearEnd": "2016",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "gallery": [
         "/web-usarl/usarl-homepage-desktop-01.jpg",
         "/web-usarl/usarl-clubs-desktop-01.jpg",
@@ -297,7 +297,7 @@
       "url": "http://www.tunnellconsulting.com/",
       "yearStart": "2015",
       "yearEnd": "2015",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "gallery": [
         "https://www.morsecodemedia.com/site/assets/files/1104/tunnell-consulting-responsive-website-1.jpg",
         "https://www.morsecodemedia.com/site/assets/files/1104/tunnell-consulting-responsive-website-2.jpg",
@@ -340,7 +340,7 @@
       "url": "https://dupuytrens-contracture.xiaflex.com/",
       "yearStart": "2015",
       "yearEnd": "",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "needsPassword": true,
       "gallery": [
         "/web-xiaflex-dc/hcp/xiaflex-dc-homepage-desktop-01.jpg"
@@ -370,7 +370,7 @@
       "url": "https://peyronies-disease.xiaflex.com/",
       "yearStart": "2015",
       "yearEnd": "",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "needsPassword": true,
       "gallery": [
         "/web-xiaflex-pd/hcp/xiaflex-pd-homepage-desktop-01.jpg"
@@ -400,7 +400,7 @@
       "url": "http://www.merioncommercial.com/",
       "yearStart": "2015",
       "yearEnd": "2015",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "gallery": [
         "/web-merion-commercial/merion-commercial-homepage-desktop-01.jpg",
         "/web-merion-commercial/merion-commercial-homepage-mobile-01.jpg",
@@ -432,7 +432,7 @@
       "url": "https://www.radicava.com/",
       "yearStart": "2016",
       "yearEnd": "",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "needsPassword": true,
       "gallery": [
         "/web-radicava/patient/radicava-homepage-desktop-01.jpg"
@@ -468,8 +468,16 @@
       "url": "https://endomenshealth.com/",
       "yearStart": "2018",
       "yearEnd": "",
-      "brandLogo": "",
-      "needsPassword": true,
+      "brandColors": {
+        "color1": "#f0b433",
+        "color2": "#435564",
+        "color3": "#efefef"
+      },
+      "insitu": {
+        "img": "/web-endomenshealth/endomenshealth-insitu-01.png",
+        "color1": "#435564",
+        "color2": "#efefef"
+      },
       "gallery": [
         "/web-endomenshealth/endomenshealth-desktop-01.jpg",
         "/web-endomenshealth/endomenshealth-mobile-01.jpg"
@@ -478,18 +486,25 @@
       "description": [
         {
           "title": "challenge",
-          "description": ""
+          "description": "asdf",
+          "bgColor": "#435564",
+          "fontColor": "#FFFFFF"
         },
         {
           "title": "solution",
-          "description": ""
+          "description": "adsf",
+          "bgColor": "#f0b433",
+          "fontColor": "#000000"
         },
         {
           "title": "results",
-          "description": ""
+          "description": "asdf",
+          "bgColor": "#efefef",
+          "fontColor": "#000000"
         }
       ],
       "category": "Websites",
+      "needsPassword": true,
       "active": true,
       "awards": []
     },
@@ -499,7 +514,7 @@
       "url": "https://www.ipipeline.com/",
       "yearStart": "2014",
       "yearEnd": "2014",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "gallery": ["https://www.morsecodemedia.com/site/assets/files/1141/ipipeline-3.jpg"],
       "overview" : "iPipeline is a technology provider of SaaS solutions that drives straight-through processing for the insurance and financial services industry.",
       "description": [
@@ -538,7 +553,7 @@
       "url": "https://www.geobluetravelinsurance.com/",
       "yearStart": "2012",
       "yearEnd": "2012",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "gallery": [
         "https://www.morsecodemedia.com/site/assets/files/1025/geoblue-desktop-1.jpg",
         "https://www.morsecodemedia.com/site/assets/files/1025/geoblue-desktop-2.jpg",
@@ -576,7 +591,7 @@
       "url": "https://www.geobluetravelinsurance.com/mobile/index-2.cfm",
       "yearStart": "2015",
       "yearEnd": "2015",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "gallery": [
         "/web-geoblue/web-geoblue-travel-insurance-multi-trip-mobile-01.jpg",
         "/web-geoblue/web-geoblue-travel-insurance-homepage-mobile-01.jpg",
@@ -608,7 +623,7 @@
       "url": "http://epp.com/",
       "yearStart": "2014",
       "yearEnd": "2015",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "gallery": [
         "https://www.morsecodemedia.com/site/assets/files/1024/epp-responsive-website-1.jpg",
         "https://www.morsecodemedia.com/site/assets/files/1024/epp-responsive-website-2.jpg",
@@ -647,7 +662,7 @@
       "url": "",
       "yearStart": "2018",
       "yearEnd": "2018",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "gallery": [
         "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-01.jpg",
         "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-02.jpg"
@@ -678,7 +693,7 @@
       "url": "",
       "yearStart": "2017",
       "yearEnd": "2017",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "gallery": [],
       "overview" : "A touchscreen expereience for the 2017 ASSH Conference. This conference panel showcases procedure videos, treatment efficacy and patient profiles of those treated with Xiaflex for Dupuytren's contracture.",
       "description": [
@@ -706,7 +721,7 @@
       "url": "",
       "yearStart": "2018",
       "yearEnd": "2018",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "gallery": [],
       "overview" : "",
       "description": [
@@ -734,7 +749,7 @@
       "url": "",
       "yearStart": "2015",
       "yearEnd": "2016",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "gallery": [],
       "overview" : "",
       "description": [
@@ -762,7 +777,7 @@
       "url": "",
       "yearStart": "2016",
       "yearEnd": "2016",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "gallery": [],
       "overview" : "",
       "description": [
@@ -790,7 +805,7 @@
       "url": "https://www.amazon.com/morsecodemedia-Speak-People/dp/B07JJ1D2LW/",
       "yearStart": "2018",
       "yearEnd": "2018",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "gallery": [],
       "overview" : "",
       "description": [
@@ -818,7 +833,7 @@
       "url": "https://www.amazon.com/morsecodemedia-Atlantic-County-Attractions/dp/B074TPLK6R/",
       "yearStart": "2018",
       "yearEnd": "2017",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "gallery": [],
       "overview" : "",
       "description": [
@@ -846,7 +861,7 @@
       "url": "",
       "yearStart": "2010",
       "yearEnd": "2010",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "gallery": [],
       "overview" : "",
       "description": [
@@ -874,7 +889,7 @@
       "url": "",
       "yearStart": "2018",
       "yearEnd": "2018",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "gallery": [],
       "overview" : "",
       "description": [
@@ -902,7 +917,7 @@
       "url": "",
       "yearStart": "2016",
       "yearEnd": "",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "gallery": [],
       "overview" : "",
       "description": [
@@ -930,7 +945,7 @@
       "url": "",
       "yearStart": "2018",
       "yearEnd": "",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "needsPassword": true,
       "gallery": [],
       "overview" : "",
@@ -958,7 +973,7 @@
       "url": "",
       "yearStart": "2012",
       "yearEnd": "2014",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "needsPassword": false,
       "gallery": [],
       "overview" : "",
@@ -986,7 +1001,7 @@
       "url": "",
       "yearStart": "2013",
       "yearEnd": "2016",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "needsPassword": false,
       "gallery": [],
       "overview" : "",
@@ -1014,7 +1029,7 @@
       "url": "",
       "yearStart": "2012",
       "yearEnd": "2014",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "needsPassword": false,
       "gallery": [],
       "overview" : "",
@@ -1042,7 +1057,7 @@
       "url": "",
       "yearStart": "2012",
       "yearEnd": "2014",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "needsPassword": false,
       "gallery": [],
       "overview" : "",
@@ -1070,7 +1085,7 @@
       "url": "http://www.xtra-kickstarts.com/",
       "yearStart": "2018",
       "yearEnd": "2018",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "needsPassword": true,
       "gallery": [
         "/ipad-xtra-kickstarts/xtra-kickstarts-01.jpg",
@@ -1104,7 +1119,7 @@
       "url": "",
       "yearStart": "",
       "yearEnd": "2018",
-      "brandLogo": "",
+      "insitu": { "img": "", "color1": "", "color2": "" },
       "needsPassword": true,
       "gallery": [
         "/native-endo-video-library/native-endo-video-library-video-listing-01.jpg",

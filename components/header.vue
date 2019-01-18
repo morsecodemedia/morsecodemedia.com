@@ -2,7 +2,9 @@
   <header>
     <div class="masthead">
       <div class="logo">
-        <a href="/">&lt;morsecodemedia&gt;</a>
+        <a
+          href="/"
+          @contextmenu="openMenu">&lt;morsecodemedia&gt;</a>
       </div>
       <div
         class="menu-btn"
@@ -30,6 +32,18 @@
         </li>
       </ul>
     </nav>
+    <nav
+      v-el="right"
+      v-if="viewMenu"
+      id="right-click-menu"
+      tabindex="-1"
+      class="hidden-menu"
+      @click="closeMenu">
+      <ul>
+        <li @click="showPwdProjects = !showPwdProjects">Toggle Hidden Case Studies</li>
+        <li>Download PDF Resume</li>
+      </ul>
+    </nav>
   </header>
 </template>
 
@@ -39,6 +53,9 @@
   export default {
     data() {
       return {
+        viewMenu: false,
+        top: '0px',
+        left: '0px',
         navigation: config.navigation
       }
     },
@@ -55,6 +72,25 @@
             document.querySelector('.menu-label').innerHTML = 'close'
           }
         })
+      },
+      setMenu: function(top, left) {
+        largestHeight = window.innerHeight - this.$$.right.offsetHeight - 25
+        largestWidth = window.innerWidth - this.$$.right.offsetWidth - 25
+        if (top > largestHeight) top = largestHeight
+        if (left > largestWidth) left = largestWidth
+        this.top = top + 'px'
+        this.left = left + 'px'
+      },
+      closeMenu: function() {
+        this.viewMenu = false
+      },
+      openMenu: function(e) {
+        this.viewMenu = true
+        Vue.nextTick(function() {
+          this.$$.right.focus()
+          this.setMenu(e.y, e.x)
+        }.bind(this))
+        e.preventDefault()
       }
     }
   }
@@ -80,6 +116,12 @@
         grid-area: logo;
         padding: 10px;
         align-self: center;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
         & > a,
         & > a:visited,
         & > a:hover {
@@ -163,6 +205,12 @@
           margin-top: 30px;
           text-transform: uppercase;
           pointer-events: none;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
         }
       }
     }
@@ -196,6 +244,36 @@
         }
       }
     }
+    .hidden-menu {
+      background: #222;
+      border: 1px solid #BDBDBD;
+      box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+      display: block;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      z-index: 9999;
+      width: 250px;
+      li {
+        border-bottom: 1px solid #E0E0E0;
+        display: block;
+        color: white;
+        font-size: 12px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 10px 0px;
+        width: 100%;
+        &:last-child {
+          border-bottom: none;
+        }
+        &:hover {
+          background: #1E88E5;
+          color: #FAFAFA;
+          cursor: pointer;
+        }
+      }
+    }
   }
-
 </style>

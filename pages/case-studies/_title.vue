@@ -6,7 +6,6 @@
       :key="index">
       <div>
         <div class="case-study-intro">
-          <img :src="(cs.brandLogo !== '') ? cs.brandLogo : 'https://www.fillmurray.com/75/75'">
           <h1>{{ cs.title }}</h1>
           <h2>{{ cs.overview }}</h2>
           <p>Link: <a
@@ -17,7 +16,8 @@
         <div class="description-container">
           <div
             v-for="(des, index) in activeDescription"
-            :key="index">
+            :key="index"
+            :style="{color: des.fontColor, 'background-color': des.bgColor}">
 
             <h3
               v-if="des.type === 'description' && des.title">{{ des.title }} </h3>
@@ -33,7 +33,7 @@
 
         <div
           v-if="cs.awards.length"
-          clas="case-study-awards">
+          class="case-study-awards">
           <h3>Awards</h3>
           <ul>
             <li
@@ -42,6 +42,14 @@
               {{ award.year }} {{ award.award }} from {{ award.organization }}
             </li>
           </ul>
+        </div>
+
+        <div
+          v-if="cs.insitu.img.length"
+          :style="{background: 'linear-gradient' + '(45deg, ' + cs.insitu.color1 + ' 0%, ' + cs.insitu.color2 + ' 100%)'}"
+          class="case-study-insitu">
+          <img
+            :src="cs.insitu.img">
         </div>
       </div>
 
@@ -92,7 +100,9 @@
             returnArray.push({
               'type': 'description',
               'title': description[i].title,
-              'description': description[i].description
+              'description': description[i].description,
+              'fontColor': description[i].fontColor,
+              'bgColor': description[i].bgColor
               })
           }
           if (images[i]) {
@@ -119,7 +129,7 @@
 <style lang="scss" scoped>
   .password-overlay {
     display: none;
-    position: absolute;
+    position: fixed;
     height: 100vh;
     width: 100vw;
     align-items: center;
@@ -161,7 +171,13 @@
       }
     }
   }
-
+  .case-study-intro {
+    height: 100vh;
+    width: 100vw;
+    // display: flex;
+    // align-content: center;
+    // justify-content: center;
+  }
   .description-container {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -189,6 +205,15 @@
         object-position: center center;
         height: 100%;
       }
+    }
+  }
+  .case-study-insitu {
+    padding: 75px 0;
+    justify-items: center;
+    display: flex;
+    justify-content: center;
+    img {
+      object-fit: contain;
     }
   }
 
