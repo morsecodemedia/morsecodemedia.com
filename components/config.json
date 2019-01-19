@@ -553,7 +553,11 @@
       "url": "https://www.geobluetravelinsurance.com/",
       "yearStart": "2012",
       "yearEnd": "2012",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "#00aedb",
+        "color2": "#c2e6e1"
+      },
       "gallery": [
         "https://www.morsecodemedia.com/site/assets/files/1025/geoblue-desktop-1.jpg",
         "https://www.morsecodemedia.com/site/assets/files/1025/geoblue-desktop-2.jpg",
@@ -563,15 +567,21 @@
       "description": [
         {
           "title": "challenge",
-          "description": "GeoBlue (a Blue Cross Blue Shield affiliated brand) is a leader in the travel health insurance industry. We were hired by GeoBlue to develop an all-new website experience that seamlessly integrated with their complex back-end quoting tool; and upon launch, build out a digital strategy to support the site."
+          "description": "GeoBlue (a Blue Cross Blue Shield affiliated brand) is a leader in the travel health insurance industry. We were hired by GeoBlue to develop an all-new website experience that seamlessly integrated with their complex back-end quoting tool; and upon launch, build out a digital strategy to support the site.",
+          "bgColor": "#00aedb",
+          "fontColor": "#FFFFFF"
         },
         {
           "title": "solution",
-          "description": "We utilized a persona based methodology to identify content drivers that would inform the strategy for both web experience and online marketing plan. Additionally, the website launch was supported by an advertising campaign alerting their broker network of the new members tools and online resources."
+          "description": "We utilized a persona based methodology to identify content drivers that would inform the strategy for both web experience and online marketing plan. Additionally, the website launch was supported by an advertising campaign alerting their broker network of the new members tools and online resources.",
+          "bgColor": "#00a0af",
+          "fontColor": "#FFFFFF"
         },
         {
           "title": "results",
-          "description": "A silver winner at the 2013 W3 Awards, the GeoBlue travel health insurance website has recorded increased conversion rates through the introduction of 'Find your Plan' and Dynamic Quoting results features. Content Marketing through organic traffic (SEO) and targeted PPC campaigns have generated over 20,000 visitors a month."
+          "description": "A silver winner at the 2013 W3 Awards, the GeoBlue travel health insurance website has recorded increased conversion rates through the introduction of 'Find your Plan' and Dynamic Quoting results features. Content Marketing through organic traffic (SEO) and targeted PPC campaigns have generated over 20,000 visitors a month.",
+          "bgColor": "#c2e6e1",
+          "fontColor": "#0c95b9"
         }
       ],
       "needsPassword": false,
@@ -591,7 +601,11 @@
       "url": "https://www.geobluetravelinsurance.com/mobile/index-2.cfm",
       "yearStart": "2015",
       "yearEnd": "2015",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "#00aedb",
+        "color2": "#c2e6e1"
+      },
       "gallery": [
         "/web-geoblue/web-geoblue-travel-insurance-multi-trip-mobile-01.jpg",
         "/web-geoblue/web-geoblue-travel-insurance-homepage-mobile-01.jpg",
@@ -601,15 +615,21 @@
       "description": [
         {
           "title": "challenge",
-          "description": ""
+          "description": "",
+          "bgColor": "#00aedb",
+          "fontColor": "#FFFFFF"
         },
         {
           "title": "solution",
-          "description": ""
+          "description": "",
+          "bgColor": "#00a0af",
+          "fontColor": "#FFFFFF"
         },
         {
           "title": "results",
-          "description": ""
+          "description": "",
+          "bgColor": "#c2e6e1",
+          "fontColor": "#0c95b9"
         }
       ],
       "needsPassword": false,
