@@ -177,7 +177,11 @@
       "url": "https://babybox.walmart.com/",
       "yearStart": "2014",
       "yearEnd": "2014",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
       "gallery": [
         "https://www.morsecodemedia.com/site/assets/files/1023/babybox-responsive-website-1.jpg"
       ],
@@ -185,15 +189,21 @@
       "description": [
         {
           "title": "challenge",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "solution",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "results",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         }
       ],
       "needsPassword": false,
@@ -207,21 +217,31 @@
       "url": "https://beautybox.walmart.com/",
       "yearStart": "2014",
       "yearEnd": "2014",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
       "gallery": [],
       "overview" : "Subscription box website for beauty products for women of all ages.",
       "description": [
         {
           "title": "challenge",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "solution",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "results",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         }
       ],
       "needsPassword": false,
@@ -235,7 +255,11 @@
       "url": "http://patravel.com/",
       "yearStart": "2012",
       "yearEnd": "2015",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "#19AFE1",
+        "color2": "#00539A"
+      },
       "gallery": [
         "/web-patravel/patravel-homepage-desktop-01.jpg"
       ],
@@ -243,15 +267,21 @@
       "description": [
         {
           "title": "challenge",
-          "description": "<ul> <li>Site was not responsive.</li> <li>3rd Party feed that is scraped on page load is providing 95% of the content on the site.</li> <li>Due to vacation offers being provided from 3rd party feed, site does not have a robust search</li> <li>Users must 'drill down' to a specific pairing to see offers.</li> <li>Custom CMS was antiquated and confusing to navigate around.</li> <li>Call-tracking was only able to display two numbers: the default or Google AdWords specific numbers.</li> <li>Social strategy consisted of weekly blog posts, however the CMS did not have a section to manage articles.</li> </ul>"
+          "description": "<ul> <li>Site was not responsive.</li> <li>3rd Party feed that is scraped on page load is providing 95% of the content on the site.</li> <li>Due to vacation offers being provided from 3rd party feed, site does not have a robust search</li> <li>Users must 'drill down' to a specific pairing to see offers.</li> <li>Custom CMS was antiquated and confusing to navigate around.</li> <li>Call-tracking was only able to display two numbers: the default or Google AdWords specific numbers.</li> <li>Social strategy consisted of weekly blog posts, however the CMS did not have a section to manage articles.</li> </ul>",
+          "bgColor": "#19AFE1",
+          "fontColor": "#FFFFFF"
         },
         {
           "title": "solution",
-          "description": "- Moved from custom CMS to ProcessWire CMS. - Built blog system into the CMS. - Continued to use the 3rd-party service to scrap various XML feeds. This time, instead of scraping the feeds at load-time, we created a cronjob to run three-times-a-week and pull all data into the CMS. - Created the ability to manage call-tracking phone numbers in the CMS."
+          "description": "- Moved from custom CMS to ProcessWire CMS. - Built blog system into the CMS. - Continued to use the 3rd-party service to scrap various XML feeds. This time, instead of scraping the feeds at load-time, we created a cronjob to run three-times-a-week and pull all data into the CMS. - Created the ability to manage call-tracking phone numbers in the CMS.",
+          "bgColor": "#FFFFFF",
+          "fontColor": "#222222"
         },
         {
           "title": "results",
-          "description": "- Client is able to manage 100% of the content displayed on the site, despite the original source of the data. - With all data in the CMS, site is now able to have a more robust search integrated throughout the site. - Weekly blog articles are able to be managed through the CMS. - Landing pages with call tracking have the ability to display an unlimited set of numbers."
+          "description": "- Client is able to manage 100% of the content displayed on the site, despite the original source of the data. - With all data in the CMS, site is now able to have a more robust search integrated throughout the site. - Weekly blog articles are able to be managed through the CMS. - Landing pages with call tracking have the ability to display an unlimited set of numbers.",
+          "bgColor": "#00539A",
+          "fontColor": "#FFFFFF"
         }
       ],
       "needsPassword": false,
@@ -265,7 +295,11 @@
       "url": "http://www.usarl.org/",
       "yearStart": "2012",
       "yearEnd": "2016",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "#1A1B69",
+        "color2": "#FFFFFF"
+      },
       "gallery": [
         "/web-usarl/usarl-homepage-desktop-01.jpg",
         "/web-usarl/usarl-clubs-desktop-01.jpg",
@@ -275,15 +309,21 @@
       "description": [
         {
           "title": "challenge",
-          "description": ""
+          "description": "This is the Challenge",
+          "bgColor": "#1A1B69",
+          "fontColor": "#FFFFFF"
         },
         {
           "title": "solution",
-          "description": ""
+          "description": "This is the Solution",
+          "bgColor": "#E5002E",
+          "fontColor": "#FFFFFF"
         },
         {
           "title": "results",
-          "description": ""
+          "description": "This is the Result",
+          "bgColor": "#FFFFFF",
+          "fontColor": "#444444"
         }
       ],
       "needsPassword": false,
@@ -297,7 +337,11 @@
       "url": "http://www.tunnellconsulting.com/",
       "yearStart": "2015",
       "yearEnd": "2015",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
       "gallery": [
         "https://www.morsecodemedia.com/site/assets/files/1104/tunnell-consulting-responsive-website-1.jpg",
         "https://www.morsecodemedia.com/site/assets/files/1104/tunnell-consulting-responsive-website-2.jpg",
@@ -307,15 +351,21 @@
       "description": [
         {
           "title": "challenge",
-          "description": "Tunnell engaged us to update their website to a modernized and responsive design. Their updated web presence was to communicate Tunnell's story in a way that conveys the impact their services have on the life sciences industry at large. In addition, the website was meant to draw new organizational talent and communicate Tunnell's evolving services."
+          "description": "Tunnell engaged us to update their website to a modernized and responsive design. Their updated web presence was to communicate Tunnell's story in a way that conveys the impact their services have on the life sciences industry at large. In addition, the website was meant to draw new organizational talent and communicate Tunnell's evolving services.",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
         "title": "solution",
-        "description": "Before approaching the website redesign, we developed buyer personas, a positioning statement, and a Brand Playbook that worked to inform the website architecture and user experience. The homepage story and internal pages were heavily based on feedback received in the client and customer interviews that made up the Brand Playbook."
+        "description": "Before approaching the website redesign, we developed buyer personas, a positioning statement, and a Brand Playbook that worked to inform the website architecture and user experience. The homepage story and internal pages were heavily based on feedback received in the client and customer interviews that made up the Brand Playbook.",
+        "bgColor": "",
+        "fontColor": ""
         },
         {
           "title": "results",
-          "description": "We created a fresh, modern design that is simple to use and easy to navigate. With an emphasis placed on SEO and responsive design, the new website is set to perform and behave significantly better across all devices. It tells the Tunnell story effectively, positioning them as a professional and reputable consulting firm within the life sciences industry."
+          "description": "We created a fresh, modern design that is simple to use and easy to navigate. With an emphasis placed on SEO and responsive design, the new website is set to perform and behave significantly better across all devices. It tells the Tunnell story effectively, positioning them as a professional and reputable consulting firm within the life sciences industry.",
+          "bgColor": "",
+          "fontColor": ""
         }
       ],
       "needsPassword": false,
@@ -340,7 +390,11 @@
       "url": "https://dupuytrens-contracture.xiaflex.com/",
       "yearStart": "2015",
       "yearEnd": "",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
       "needsPassword": true,
       "gallery": [
         "/web-xiaflex-dc/hcp/xiaflex-dc-homepage-desktop-01.jpg"
@@ -349,15 +403,21 @@
       "description": [
         {
           "title": "challenge",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "solution",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "results",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         }
       ],
       "category": "Websites",
@@ -370,7 +430,11 @@
       "url": "https://peyronies-disease.xiaflex.com/",
       "yearStart": "2015",
       "yearEnd": "",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
       "needsPassword": true,
       "gallery": [
         "/web-xiaflex-pd/hcp/xiaflex-pd-homepage-desktop-01.jpg"
@@ -379,15 +443,21 @@
       "description": [
         {
           "title": "challenge",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "solution",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "results",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         }
       ],
       "category": "Websites",
@@ -400,7 +470,11 @@
       "url": "http://www.merioncommercial.com/",
       "yearStart": "2015",
       "yearEnd": "2015",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
       "gallery": [
         "/web-merion-commercial/merion-commercial-homepage-desktop-01.jpg",
         "/web-merion-commercial/merion-commercial-homepage-mobile-01.jpg",
@@ -410,15 +484,21 @@
       "description": [
         {
           "title": "challenge",
-          "description": "Client doesn't have an online presence."
+          "description": "Client doesn't have an online presence.",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "solution",
-          "description": "Developed a small, responsive, brochure site that highlights the client's services and some various properties."
+          "description": "Developed a small, responsive, brochure site that highlights the client's services and some various properties.",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "results",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         }
       ],
       "needsPassword": false,
@@ -432,7 +512,11 @@
       "url": "https://www.radicava.com/",
       "yearStart": "2016",
       "yearEnd": "",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
       "needsPassword": true,
       "gallery": [
         "/web-radicava/patient/radicava-homepage-desktop-01.jpg"
@@ -441,15 +525,21 @@
       "description": [
         {
           "title": "challenge",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "solution",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "results",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         }
       ],
       "category": "Websites",
@@ -514,21 +604,31 @@
       "url": "https://www.ipipeline.com/",
       "yearStart": "2014",
       "yearEnd": "2014",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
       "gallery": ["https://www.morsecodemedia.com/site/assets/files/1141/ipipeline-3.jpg"],
       "overview" : "iPipeline is a technology provider of SaaS solutions that drives straight-through processing for the insurance and financial services industry.",
       "description": [
         {
           "title": "challenge",
-          "description": "iPipeline, a B2B technology provider offering web-based software tools that streamline processing for the insurance industry, hired us to modernize their brand, create a responsive website or multiple platforms, and enhance their offline collateral."
+          "description": "iPipeline, a B2B technology provider offering web-based software tools that streamline processing for the insurance industry, hired us to modernize their brand, create a responsive website or multiple platforms, and enhance their offline collateral.",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "solution",
-          "description": "We conducted a series of interviews to create a brand playbook that established a positioning statement, brand identity and creative mood boards to communicate the brand's message. A website 'proof of concept' was delivered to present content drivers, user experience, responsive design and a grey box prototype. The website was developed using the ExpressionEngine CMS and launched with multiple languages."
+          "description": "We conducted a series of interviews to create a brand playbook that established a positioning statement, brand identity and creative mood boards to communicate the brand's message. A website 'proof of concept' was delivered to present content drivers, user experience, responsive design and a grey box prototype. The website was developed using the ExpressionEngine CMS and launched with multiple languages.",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "results",
-          "description": "The website hosts a blog, news, webinars, events and a careers portal, as well as a series of 'explanamation' videos to help guide users to their product offerings. The end result is a website that is modern and fresh, works seamlessly across multiple screen sizes or devices and that weill help iPipeline's new brand stand out within its industry with content marketing."
+          "description": "The website hosts a blog, news, webinars, events and a careers portal, as well as a series of 'explanamation' videos to help guide users to their product offerings. The end result is a website that is modern and fresh, works seamlessly across multiple screen sizes or devices and that weill help iPipeline's new brand stand out within its industry with content marketing.",
+          "bgColor": "",
+          "fontColor": ""
         }
       ],
       "needsPassword": false,
@@ -643,7 +743,11 @@
       "url": "http://epp.com/",
       "yearStart": "2014",
       "yearEnd": "2015",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
       "gallery": [
         "https://www.morsecodemedia.com/site/assets/files/1024/epp-responsive-website-1.jpg",
         "https://www.morsecodemedia.com/site/assets/files/1024/epp-responsive-website-2.jpg",
@@ -654,15 +758,21 @@
       "description": [
         {
           "title": "challenge",
-          "description": "ARPRO® is JSP International's brand name for a premium Expanded Polypropylene (EPP) product. EPP is an impact energy management material with a unique combination of properties including energy absorption, structural strength, low weight, chemical resistance, and both thermal and acoustical insulation. While ARPRO® is the leading brand of EPP, there are many generic offerings, making it difficult for ARPRO® to rank organically for non-branded keywords and attributes of EPP."
+          "description": "ARPRO® is JSP International's brand name for a premium Expanded Polypropylene (EPP) product. EPP is an impact energy management material with a unique combination of properties including energy absorption, structural strength, low weight, chemical resistance, and both thermal and acoustical insulation. While ARPRO® is the leading brand of EPP, there are many generic offerings, making it difficult for ARPRO® to rank organically for non-branded keywords and attributes of EPP.",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "solution",
-          "description": "We collaborated with JSP to create personas around potential customers that would not be familiar with ARPRO®. Then crafted an interactive experience and content targeted towards those users, around EPP and other keywords identified in the persona exercise; allowing ARPRO® to compete with organic rankings against “generic” EPP products."
+          "description": "We collaborated with JSP to create personas around potential customers that would not be familiar with ARPRO®. Then crafted an interactive experience and content targeted towards those users, around EPP and other keywords identified in the persona exercise; allowing ARPRO® to compete with organic rankings against “generic” EPP products.",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "results",
-          "description": "EPP has been well-received and achieved page one rankings for core keywords and increased website visit duration by 190%. Bounce rate was decreased by 19% and is now acting as an effective lead generation website."
+          "description": "EPP has been well-received and achieved page one rankings for core keywords and increased website visit duration by 190%. Bounce rate was decreased by 19% and is now acting as an effective lead generation website.",
+          "bgColor": "",
+          "fontColor": ""
         }
       ],
       "needsPassword": false,
@@ -682,7 +792,11 @@
       "url": "",
       "yearStart": "2018",
       "yearEnd": "2018",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
       "gallery": [
         "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-01.jpg",
         "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-02.jpg"
@@ -691,15 +805,21 @@
       "description": [
         {
           "title": "challenge",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "solution",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "results",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         }
       ],
       "needsPassword": true,
@@ -713,21 +833,31 @@
       "url": "",
       "yearStart": "2017",
       "yearEnd": "2017",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
       "gallery": [],
       "overview" : "A touchscreen expereience for the 2017 ASSH Conference. This conference panel showcases procedure videos, treatment efficacy and patient profiles of those treated with Xiaflex for Dupuytren's contracture.",
       "description": [
         {
           "title": "challenge",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "solution",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "results",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         }
       ],
       "needsPassword": true,
@@ -741,21 +871,31 @@
       "url": "",
       "yearStart": "2018",
       "yearEnd": "2018",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
       "gallery": [],
       "overview" : "",
       "description": [
         {
           "title": "challenge",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "solution",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "results",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         }
       ],
       "needsPassword": true,
@@ -769,21 +909,31 @@
       "url": "",
       "yearStart": "2015",
       "yearEnd": "2016",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
       "gallery": [],
       "overview" : "",
       "description": [
         {
           "title": "challenge",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "solution",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "results",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         }
       ],
       "needsPassword": true,
@@ -797,21 +947,31 @@
       "url": "",
       "yearStart": "2016",
       "yearEnd": "2016",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
       "gallery": [],
       "overview" : "",
       "description": [
         {
           "title": "challenge",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "solution",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "results",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         }
       ],
       "needsPassword": true,
@@ -825,21 +985,31 @@
       "url": "https://www.amazon.com/morsecodemedia-Speak-People/dp/B07JJ1D2LW/",
       "yearStart": "2018",
       "yearEnd": "2018",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
       "gallery": [],
       "overview" : "",
       "description": [
         {
           "title": "challenge",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "solution",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "results",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         }
       ],
       "needsPassword": false,
@@ -853,21 +1023,31 @@
       "url": "https://www.amazon.com/morsecodemedia-Atlantic-County-Attractions/dp/B074TPLK6R/",
       "yearStart": "2018",
       "yearEnd": "2017",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
       "gallery": [],
       "overview" : "",
       "description": [
         {
           "title": "challenge",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "solution",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "results",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         }
       ],
       "needsPassword": false,
@@ -881,21 +1061,31 @@
       "url": "",
       "yearStart": "2010",
       "yearEnd": "2010",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
       "gallery": [],
       "overview" : "",
       "description": [
         {
           "title": "challenge",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "solution",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "results",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         }
       ],
       "needsPassword": false,
@@ -909,21 +1099,31 @@
       "url": "",
       "yearStart": "2018",
       "yearEnd": "2018",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
       "gallery": [],
       "overview" : "",
       "description": [
         {
           "title": "challenge",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "solution",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "results",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         }
       ],
       "needsPassword": true,
@@ -937,21 +1137,31 @@
       "url": "",
       "yearStart": "2016",
       "yearEnd": "",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
       "gallery": [],
       "overview" : "",
       "description": [
         {
           "title": "challenge",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "solution",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "results",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         }
       ],
       "needsPassword": true,
@@ -965,22 +1175,32 @@
       "url": "",
       "yearStart": "2018",
       "yearEnd": "",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
       "needsPassword": true,
       "gallery": [],
       "overview" : "",
       "description": [
         {
           "title": "challenge",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "solution",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "results",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         }
       ],
       "category": "Reporting Dashboards",
@@ -993,22 +1213,32 @@
       "url": "",
       "yearStart": "2012",
       "yearEnd": "2014",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
       "needsPassword": false,
       "gallery": [],
       "overview" : "",
       "description": [
         {
           "title": "challenge",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "solution",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "results",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         }
       ],
       "category": "Websites",
@@ -1021,22 +1251,32 @@
       "url": "",
       "yearStart": "2013",
       "yearEnd": "2016",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
       "needsPassword": false,
       "gallery": [],
       "overview" : "",
       "description": [
         {
           "title": "challenge",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "solution",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "results",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         }
       ],
       "category": "Websites",
@@ -1049,22 +1289,32 @@
       "url": "",
       "yearStart": "2012",
       "yearEnd": "2014",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
       "needsPassword": false,
       "gallery": [],
       "overview" : "",
       "description": [
         {
           "title": "challenge",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "solution",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "results",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         }
       ],
       "category": "Websites",
@@ -1077,22 +1327,32 @@
       "url": "",
       "yearStart": "2012",
       "yearEnd": "2014",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
       "needsPassword": false,
       "gallery": [],
       "overview" : "",
       "description": [
         {
           "title": "challenge",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "solution",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "results",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         }
       ],
       "category": "Websites",
@@ -1105,7 +1365,11 @@
       "url": "http://www.xtra-kickstarts.com/",
       "yearStart": "2018",
       "yearEnd": "2018",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
       "needsPassword": true,
       "gallery": [
         "/ipad-xtra-kickstarts/xtra-kickstarts-01.jpg",
@@ -1118,15 +1382,21 @@
       "description": [
         {
           "title": "challenge",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "solution",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "results",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         }
       ],
       "category": "Conference Pieces",
@@ -1139,7 +1409,11 @@
       "url": "",
       "yearStart": "",
       "yearEnd": "2018",
-      "insitu": { "img": "", "color1": "", "color2": "" },
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
       "needsPassword": true,
       "gallery": [
         "/native-endo-video-library/native-endo-video-library-video-listing-01.jpg",
@@ -1149,15 +1423,21 @@
       "description": [
         {
           "title": "challenge",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "solution",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         },
         {
           "title": "results",
-          "description": ""
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
         }
       ],
       "category": "Native Apps",
