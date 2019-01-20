@@ -2,7 +2,7 @@
   <section>
     <nav class="case-studies-filter">
       <ul>
-        <li>(L)</li>
+        <li @click="showPwdProjects = !showPwdProjects">(L)</li>
         <li @click="activeCaseStudyCategory = 'all'">All Projects</li>
         <li
           v-for="(cat, index) in activeCategories"

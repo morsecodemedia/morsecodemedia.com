@@ -189,21 +189,21 @@
       "description": [
         {
           "title": "challenge",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a challenge",
+          "bgColor": "#FDB72B",
+          "fontColor": "#FFFFFF"
         },
         {
           "title": "solution",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a solution",
+          "bgColor": "#FFFFFF",
+          "fontColor": "#0076BE"
         },
         {
           "title": "results",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a result",
+          "bgColor": "#0076BE",
+          "fontColor": "#FDB72B"
         }
       ],
       "needsPassword": false,
@@ -227,21 +227,21 @@
       "description": [
         {
           "title": "challenge",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a challenge",
+          "bgColor": "#FDB72B",
+          "fontColor": "#FFFFFF"
         },
         {
           "title": "solution",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a solution",
+          "bgColor": "#FFFFFF",
+          "fontColor": "#0076BE"
         },
         {
           "title": "results",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a result",
+          "bgColor": "#0076BE",
+          "fontColor": "#FDB72B"
         }
       ],
       "needsPassword": false,
@@ -352,20 +352,20 @@
         {
           "title": "challenge",
           "description": "Tunnell engaged us to update their website to a modernized and responsive design. Their updated web presence was to communicate Tunnell's story in a way that conveys the impact their services have on the life sciences industry at large. In addition, the website was meant to draw new organizational talent and communicate Tunnell's evolving services.",
-          "bgColor": "",
-          "fontColor": ""
+          "bgColor": "#254e99",
+          "fontColor": "#FFFFFF"
         },
         {
         "title": "solution",
         "description": "Before approaching the website redesign, we developed buyer personas, a positioning statement, and a Brand Playbook that worked to inform the website architecture and user experience. The homepage story and internal pages were heavily based on feedback received in the client and customer interviews that made up the Brand Playbook.",
-        "bgColor": "",
-        "fontColor": ""
+        "bgColor": "#099ed6",
+        "fontColor": "#FFFFFF"
         },
         {
           "title": "results",
           "description": "We created a fresh, modern design that is simple to use and easy to navigate. With an emphasis placed on SEO and responsive design, the new website is set to perform and behave significantly better across all devices. It tells the Tunnell story effectively, positioning them as a professional and reputable consulting firm within the life sciences industry.",
-          "bgColor": "",
-          "fontColor": ""
+          "bgColor": "#FFFFFF",
+          "fontColor": "#092e6e"
         }
       ],
       "needsPassword": false,
@@ -403,21 +403,21 @@
       "description": [
         {
           "title": "challenge",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a challenge",
+          "bgColor": "#eb5903",
+          "fontColor": "#FFFFFF"
         },
         {
           "title": "solution",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a solution",
+          "bgColor": "#002e5d",
+          "fontColor": "#FFFFFF"
         },
         {
           "title": "results",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a result",
+          "bgColor": "#ebebeb",
+          "fontColor": "#585757"
         }
       ],
       "category": "Websites",
@@ -443,21 +443,21 @@
       "description": [
         {
           "title": "challenge",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a challenge",
+          "bgColor": "#002e5d",
+          "fontColor": "#FFFFFF"
         },
         {
           "title": "solution",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a solution",
+          "bgColor": "#818181",
+          "fontColor": "#FFFFFF"
         },
         {
           "title": "results",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a result",
+          "bgColor": "#FFFFFF",
+          "fontColor": "#002e5d"
         }
       ],
       "category": "Websites",
@@ -485,20 +485,20 @@
         {
           "title": "challenge",
           "description": "Client doesn't have an online presence.",
-          "bgColor": "",
-          "fontColor": ""
+          "bgColor": "#093956",
+          "fontColor": "#FFFFFF"
         },
         {
           "title": "solution",
           "description": "Developed a small, responsive, brochure site that highlights the client's services and some various properties.",
-          "bgColor": "",
-          "fontColor": ""
+          "bgColor": "#064870",
+          "fontColor": "#FFFFFF"
         },
         {
           "title": "results",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "these are some results",
+          "bgColor": "#0669A5",
+          "fontColor": "#FFFFFF"
         }
       ],
       "needsPassword": false,
@@ -525,21 +525,21 @@
       "description": [
         {
           "title": "challenge",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a challenge",
+          "bgColor": "#d6d6d6",
+          "fontColor": "#3c5daa"
         },
         {
           "title": "solution",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a solution",
+          "bgColor": "#d9deed",
+          "fontColor": "#484848"
         },
         {
           "title": "results",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a result",
+          "bgColor": "#6a86c2",
+          "fontColor": "#FFFFFF"
         }
       ],
       "category": "Websites",
@@ -805,21 +805,21 @@
       "description": [
         {
           "title": "challenge",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a challenge",
+          "bgColor": "#eb5903",
+          "fontColor": "#FFFFFF"
         },
         {
           "title": "solution",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a solution",
+          "bgColor": "#002e5d",
+          "fontColor": "#FFFFFF"
         },
         {
           "title": "results",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a result",
+          "bgColor": "#ebebeb",
+          "fontColor": "#585757"
         }
       ],
       "needsPassword": true,
@@ -843,21 +843,21 @@
       "description": [
         {
           "title": "challenge",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a challenge",
+          "bgColor": "#eb5903",
+          "fontColor": "#FFFFFF"
         },
         {
           "title": "solution",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a solution",
+          "bgColor": "#002e5d",
+          "fontColor": "#FFFFFF"
         },
         {
           "title": "results",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a result",
+          "bgColor": "#ebebeb",
+          "fontColor": "#585757"
         }
       ],
       "needsPassword": true,
@@ -881,21 +881,21 @@
       "description": [
         {
           "title": "challenge",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a challenge",
+          "bgColor": "#d6d6d6",
+          "fontColor": "#3c5daa"
         },
         {
           "title": "solution",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a solution",
+          "bgColor": "#d9deed",
+          "fontColor": "#484848"
         },
         {
           "title": "results",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a result",
+          "bgColor": "#6a86c2",
+          "fontColor": "#FFFFFF"
         }
       ],
       "needsPassword": true,
@@ -903,44 +903,7 @@
       "active": true,
       "awards": []
     },
-    {
-      "id": "belb001",
-      "title": "Belbuca.com",
-      "url": "",
-      "yearStart": "2015",
-      "yearEnd": "2016",
-      "insitu": {
-        "img": "",
-        "color1": "",
-        "color2": ""
-      },
-      "gallery": [],
-      "overview" : "",
-      "description": [
-        {
-          "title": "challenge",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
-        },
-        {
-          "title": "solution",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
-        },
-        {
-          "title": "results",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
-        }
-      ],
-      "needsPassword": true,
-      "category": "Websites",
-      "active": false,
-      "awards": []
-    },
+
     {
       "id": "rad003",
       "title": "ALSFRS-R Interactive Human Body Detail Aid",
@@ -957,21 +920,21 @@
       "description": [
         {
           "title": "challenge",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a challenge",
+          "bgColor": "#d6d6d6",
+          "fontColor": "#3c5daa"
         },
         {
           "title": "solution",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a solution",
+          "bgColor": "#d9deed",
+          "fontColor": "#484848"
         },
         {
           "title": "results",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a result",
+          "bgColor": "#6a86c2",
+          "fontColor": "#FFFFFF"
         }
       ],
       "needsPassword": true,
@@ -1147,21 +1110,21 @@
       "description": [
         {
           "title": "challenge",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a challenge",
+          "bgColor": "#d6d6d6",
+          "fontColor": "#3c5daa"
         },
         {
           "title": "solution",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a solution",
+          "bgColor": "#d9deed",
+          "fontColor": "#484848"
         },
         {
           "title": "results",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a result",
+          "bgColor": "#6a86c2",
+          "fontColor": "#FFFFFF"
         }
       ],
       "needsPassword": true,
@@ -1284,82 +1247,6 @@
       "awards": []
     },
     {
-      "id": "sct001",
-      "title": "Secant Medical",
-      "url": "",
-      "yearStart": "2012",
-      "yearEnd": "2014",
-      "insitu": {
-        "img": "",
-        "color1": "",
-        "color2": ""
-      },
-      "needsPassword": false,
-      "gallery": [],
-      "overview" : "",
-      "description": [
-        {
-          "title": "challenge",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
-        },
-        {
-          "title": "solution",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
-        },
-        {
-          "title": "results",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
-        }
-      ],
-      "category": "Websites",
-      "active": false,
-      "awards": []
-    },
-    {
-      "id": "que001",
-      "title": "Quench Online",
-      "url": "",
-      "yearStart": "2012",
-      "yearEnd": "2014",
-      "insitu": {
-        "img": "",
-        "color1": "",
-        "color2": ""
-      },
-      "needsPassword": false,
-      "gallery": [],
-      "overview" : "",
-      "description": [
-        {
-          "title": "challenge",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
-        },
-        {
-          "title": "solution",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
-        },
-        {
-          "title": "results",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
-        }
-      ],
-      "category": "Websites",
-      "active": false,
-      "awards": []
-    },
-    {
       "id": "xdc004",
       "title": "XTRA Kick-starts",
       "url": "http://www.xtra-kickstarts.com/",
@@ -1367,8 +1254,8 @@
       "yearEnd": "2018",
       "insitu": {
         "img": "",
-        "color1": "",
-        "color2": ""
+        "color1": "#eb5903",
+        "color2": "#FFFFFF"
       },
       "needsPassword": true,
       "gallery": [
@@ -1382,21 +1269,21 @@
       "description": [
         {
           "title": "challenge",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a challenge",
+          "bgColor": "#eb5903",
+          "fontColor": "#FFFFFF"
         },
         {
           "title": "solution",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a solution",
+          "bgColor": "#002e5d",
+          "fontColor": "#FFFFFF"
         },
         {
           "title": "results",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "this is a result",
+          "bgColor": "#ebebeb",
+          "fontColor": "#585757"
         }
       ],
       "category": "Conference Pieces",
