@@ -296,34 +296,39 @@
       "yearStart": "2012",
       "yearEnd": "2016",
       "insitu": {
-        "img": "",
-        "color1": "#1A1B69",
-        "color2": "#FFFFFF"
+        "img": "/web-usarl/usarl-insitu-01.png",
+        "color1": "#E5002E",
+        "color2": "#1A1B69"
       },
       "gallery": [
         "/web-usarl/usarl-homepage-desktop-01.jpg",
         "/web-usarl/usarl-clubs-desktop-01.jpg",
         "/web-usarl/usarl-conference-listings-desktop-01.jpg"
       ],
-      "overview" : "The official website of the US Association of Rugby League.",
+      "overview": {
+        "description": "The official website of the US Association of Rugby League.",
+        "bgColor": "#1A1B69",
+        "titleColor": "#E5002E",
+        "descriptionColor": "#FFFFFF"
+      },
       "description": [
         {
           "title": "challenge",
           "description": "This is the Challenge",
-          "bgColor": "#1A1B69",
+          "bgColor": "#E5002E",
           "fontColor": "#FFFFFF"
         },
         {
           "title": "solution",
           "description": "This is the Solution",
-          "bgColor": "#E5002E",
-          "fontColor": "#FFFFFF"
+          "bgColor": "#FFFFFF",
+          "fontColor": "#444444"
         },
         {
           "title": "results",
           "description": "This is the Result",
-          "bgColor": "#FFFFFF",
-          "fontColor": "#444444"
+          "bgColor": "#1A1B69",
+          "fontColor": "#FFFFFF"
         }
       ],
       "needsPassword": false,
@@ -572,19 +577,24 @@
         "/web-endomenshealth/endomenshealth-desktop-01.jpg",
         "/web-endomenshealth/endomenshealth-mobile-01.jpg"
       ],
-      "overview" : "A landing page to engage urologists to help shape awareness of men's health.",
+      "overview": {
+        "description": "A landing page to engage urologists to help shape awareness of men's health.",
+        "bgColor": "#435564",
+        "titleColor": "#f0b433",
+        "descriptionColor": "#FFFFFF"
+      },
       "description": [
         {
           "title": "challenge",
           "description": "asdf",
-          "bgColor": "#435564",
-          "fontColor": "#FFFFFF"
+          "bgColor": "#f0b433",
+          "fontColor": "#000000"
         },
         {
           "title": "solution",
           "description": "adsf",
-          "bgColor": "#f0b433",
-          "fontColor": "#000000"
+          "bgColor": "#435564",
+          "fontColor": "#FFFFFF"
         },
         {
           "title": "results",

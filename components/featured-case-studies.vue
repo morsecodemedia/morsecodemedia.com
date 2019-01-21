@@ -29,15 +29,20 @@
     },
     data() {
       return {
-        caseStudies: config.caseStudies
+        caseStudies: config.caseStudies,
+        showPwdProjects: false
       }
     },
     computed : {
       featuredCaseStudies() {
         let activeProjects = this.caseStudies
-          .filter(caseStudy => !caseStudy.needsPassword && caseStudy.yearEnd === '' && caseStudy.active)
+          .filter(caseStudy => caseStudy.yearEnd === '' && caseStudy.active)
+          .filter(caseStudy => this.showPwdProjects || !caseStudy.needsPassword)
+          .filter(caseStudy => caseStudy.gallery.length > 0)
         let sortedCaseStudies = this.caseStudies
-          .filter(caseStudy => !caseStudy.needsPassword && caseStudy.yearEnd !== '' && caseStudy.active)
+          .filter(caseStudy => caseStudy.yearEnd !== '' && caseStudy.active)
+          .filter(caseStudy => this.showPwdProjects || !caseStudy.needsPassword)
+          .filter(caseStudy => caseStudy.gallery.length > 0)
           .sort((a, b) => {
             let yearEndCompare = b.yearEnd - a.yearEnd
             if (yearEndCompare === 0) {

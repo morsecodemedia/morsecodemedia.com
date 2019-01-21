@@ -5,12 +5,35 @@
       v-for="(cs, index) in activeCaseStudy"
       :key="index">
       <div>
-        <div class="case-study-intro">
-          <h1>{{ cs.title }}</h1>
-          <h2>{{ cs.overview }}</h2>
-          <p>Link: <a
-            :href="cs.url">{{ cs.url }}</a></p>
-          <p>Worked on Project: {{ cs.yearStart }} - <span v-if="cs.yearEnd !== ''">{{ cs.yearEnd }}</span><span v-else>Present</span></p>
+        <div
+          :style="{'background-color': cs.overview.bgColor}"
+          class="case-study-intro">
+          <div class="case-study-intro-copy">
+            <h1 :style="{color: cs.overview.titleColor}">{{ cs.title }}</h1>
+            <h2 :style="{color: cs.overview.descriptionColor}">{{ cs.overview.description }}</h2>
+            <p><a
+              :style="{color: cs.overview.titleColor}"
+              :href="cs.url">{{ cs.url }}</a></p>
+            <p
+              :style="{color: cs.overview.descriptionColor}"
+              class="case-study-meta">
+              {{ cs.category }} //
+              {{ cs.yearStart }} - <span
+                v-if="cs.yearEnd !== ''"
+                :style="{color: cs.overview.descriptionColor}">{{ cs.yearEnd }}</span><span
+                  v-else
+                  :style="{color: cs.overview.descriptionColor}">Present</span>
+            </p>
+            <div class="scroll-downs">
+              <div
+                :style="{border: '2px ' + 'solid ' + cs.overview.titleColor}"
+                class="mousey">
+                <div
+                  :style="{'background-color': cs.overview.titleColor}"
+                  class="scroller"/>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="description-container">
@@ -46,7 +69,7 @@
 
         <div
           v-if="cs.insitu.img.length"
-          :style="{background: 'linear-gradient' + '(45deg, ' + cs.insitu.color1 + ' 0%, ' + cs.insitu.color2 + ' 100%)'}"
+          :style="{background: 'linear-gradient' + '(135deg, ' + cs.insitu.color1 + ' 0%, ' + cs.insitu.color2 + ' 100%)'}"
           class="case-study-insitu">
           <img
             :src="cs.insitu.img">
@@ -64,6 +87,7 @@
     </div>
     <nuxt-link
       :to="'/case-studies/'">Back To Case Studies</nuxt-link>
+    <div @click="nextCaseStudy"> Next &raquo; </div>
     <siteFooter />
   </section>
 </template>
@@ -121,6 +145,10 @@
         for (var i=0; i < overlay.length; ++i) {
           overlay[i].classList.remove('show')
         }
+      },
+      nextCaseStudy: function() {
+        router.go(1)
+        next()
       }
     }
   }
@@ -174,9 +202,64 @@
   .case-study-intro {
     height: 100vh;
     width: 100vw;
-    // display: flex;
-    // align-content: center;
-    // justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .case-study-intro-copy {
+      text-align: center;
+      padding: 0 40px;
+      h1 {
+        font-size: 72px;
+        margin-bottom: 25px;
+      }
+      h2 {
+        font-size: 48px;
+        margin-bottom: 25px;
+      }
+      p {
+        margin-bottom: 25px;
+        &.case-study-meta {
+          font-size: 14px;
+          opacity: .5;
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .scroll-downs {
+      width: 34px;
+      height: 55px;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      bottom: -650px;
+      right: 0px;
+      .mousey {
+        width: 3px;
+        padding: 10px 15px;
+        height: 35px;
+        border-radius: 25px;
+        opacity: 0.75;
+        box-sizing: content-box;
+        .scroller {
+          width: 3px;
+          height: 10px;
+          border-radius: 25%;
+          animation-name: scroll;
+          animation-duration: 2.2s;
+          animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+          animation-iteration-count: infinite;
+        }
+      }
+    }
+
+    @keyframes scroll {
+      0% { opacity: 0; }
+      10% { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(15px); opacity: 0;}
+    }
   }
   .description-container {
     display: grid;
