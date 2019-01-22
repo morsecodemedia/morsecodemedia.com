@@ -31,7 +31,44 @@
     "headshot": "https://www.morsecodemedia.com/site/assets/files/1016/bmorse-headshot-1.jpg",
     "aboutQuote": "Bringing beautifully designed experiences to life through coding, testing, and just the right amount of technical magic.",
     "trackRecordQuote": "With over 15 years of experience, I have demonstrated success in communicating technical/complex information in understandable language to non-technical and technical personnel; plan and execute presentations, write proposals, system documentation and client reference materials.",
-    "overview": "My name is Brandon Morse. I am a New Jersey-based, award-winning, developer with a passion to innovate and to create a better web. Pushing the digital envelope, my analytical and creative thinking drives me to bridge the gap between client fantasies and digital realities to bring incredible interactive experiences to life.",
+    "overview": "My name is Brandon Morse. I am a New Jersey-based, developer with a passion to innovate and to create a better web. I've worked with many great clients, such as: Walmart, Ikea, Lenovo, The Children's Hospital of Philadelphia, and more! Pushing the digital envelope, my analytical and creative thinking drives me to bridge the gap between client fantasies and digital realities to bring incredible interactive experiences to life.",
+    "workHistory": [
+      {
+        "company": "GSW Advertising",
+        "location": "Newtown, PA",
+        "title": "Lead Architect",
+        "yearStart": "2018",
+        "yearEnd": ""
+      },
+      {
+        "company": "GSW Advertising",
+        "location": "Newtown, PA",
+        "title": "Associate Technology Director",
+        "yearStart": "2016",
+        "yearEnd": "2018"
+      },
+      {
+        "company": "inVentiv Creative Studios",
+        "location": "Newtown, PA",
+        "title": "Technology Manager",
+        "yearStart": "2015",
+        "yearEnd": "2016"
+      },
+      {
+        "company": "allwebcafe",
+        "location": "Berwyn, PA",
+        "title": "Director of Technology and Development",
+        "yearStart": "2014",
+        "yearEnd": "2015"
+      },
+      {
+        "company": "allwebcafe",
+        "location": "Berwyn, PA",
+        "title": "Senior Web Developer",
+        "yearStart": "2012",
+        "yearEnd": "2014"
+      }
+    ],
     "certifications": [
       {
         "certification": "Custom Lightbox Ads Badge Certification",
@@ -115,6 +152,33 @@
         "url": "https://stackoverflow.com/users/1857186/morsecodemedia",
         "title": "StackOverflow"
       }
+    ],
+    "awards": [
+      {
+        "award": "W3 Silver Awards",
+        "organization": "W3 Awards",
+        "count": "3"
+      },
+      {
+        "award": "Davey Silver Award",
+        "organization": "Davey Awards",
+        "count": "1"
+      },
+      {
+        "award": "Creative Excellence Award for Healthcare Professional Website",
+        "organization": "The RX Club",
+        "count": "1"
+      },
+      {
+        "award": "Summit International Leader Award",
+        "organization": "Summit International Awards",
+        "count": "1"
+      },
+      {
+        "award": "Communicator Award of Distinction",
+        "organization": "Communicator Awards",
+        "count": "1"
+      }
     ]
   },
   "services": [
@@ -138,7 +202,7 @@
       "title": "Email Marketing",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque inventore ullam ipsam eaque odio omnis voluptatum accusantium, totam quas, amet ipsa. Consequuntur excepturi ea aliquam repellat accusantium quisquam alias labore!"
     },{
-      "title": "Hire Me",
+      "title": "Let's Work Together",
       "description": "Looking for a website? Need an engaging email to drive customers to your site? Just asking for advice? I can't wait to tackle whatever challenge you are having."
     }
   ],

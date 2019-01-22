@@ -5,7 +5,10 @@
       class="headshot"
       role="presentation">
     <blockquote class="intro-quote">
-      <p>{{ quote }}</p>
+      <p>
+        {{ quote }}
+        <nuxt-link :to="'/about/'">More about me &raquo;</nuxt-link>
+      </p>
     </blockquote>
   </section>
 </template>
