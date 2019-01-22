@@ -344,15 +344,20 @@
       "yearEnd": "2015",
       "insitu": {
         "img": "",
-        "color1": "",
-        "color2": ""
+        "color1": "#254e99",
+        "color2": "#099ed6"
       },
       "gallery": [
         "https://www.morsecodemedia.com/site/assets/files/1104/tunnell-consulting-responsive-website-1.jpg",
         "https://www.morsecodemedia.com/site/assets/files/1104/tunnell-consulting-responsive-website-2.jpg",
         "https://www.morsecodemedia.com/site/assets/files/1104/tunnell-consulting-responsive-website-3.jpg"
       ],
-      "overview" : "A global pharmaceutical and biotechnology consulting company.",
+      "overview": {
+        "description": "A global pharmaceutical and biotechnology consulting company.",
+        "bgColor": "#099ed6",
+        "titleColor": "#FFFFFF",
+        "descriptionColor": "#092e6e"
+      },
       "description": [
         {
           "title": "challenge",
@@ -476,16 +481,21 @@
       "yearStart": "2015",
       "yearEnd": "2015",
       "insitu": {
-        "img": "",
-        "color1": "",
-        "color2": ""
+        "img": "/web-merion-commercial/merion-commercial-insitu-01.png",
+        "color1": "#093956",
+        "color2": "#0669A5"
       },
       "gallery": [
         "/web-merion-commercial/merion-commercial-homepage-desktop-01.jpg",
         "/web-merion-commercial/merion-commercial-homepage-mobile-01.jpg",
         "/web-merion-commercial/merion-commercial-clients-desktop-01.jpg"
       ],
-      "overview" : "Commercial real estate services and solutions.",
+      "overview": {
+        "description": "Commercial real estate services and solutions.",
+        "bgColor": "#064870",
+        "titleColor": "#FFFFFF",
+        "descriptionColor": "#edc315"
+      },
       "description": [
         {
           "title": "challenge",
@@ -526,7 +536,7 @@
       "gallery": [
         "/web-radicava/patient/radicava-homepage-desktop-01.jpg"
       ],
-      "overview" : "A branded website for Radicava®. Radicava® (edaravone) is the only FDA-approved treatment option for amyotrophic lateral sclerosis (ALS) in the last 20 years.",
+      "overview" : "A branded website for Radicava<sup>&reg</sup>. Radicava<sup>&reg</sup> (edaravone) is the only FDA-approved treatment option for amyotrophic lateral sclerosis (ALS) in the last 20 years.",
       "description": [
         {
           "title": "challenge",
@@ -673,7 +683,12 @@
         "https://www.morsecodemedia.com/site/assets/files/1025/geoblue-desktop-2.jpg",
         "https://www.morsecodemedia.com/site/assets/files/1025/geoblue-desktop-3.jpg"
       ],
-      "overview" : "",
+      "overview": {
+        "description": "",
+        "bgColor": "#c2e6e1",
+        "titleColor": "#00aedb",
+        "descriptionColor": "#00a0af"
+      },
       "description": [
         {
           "title": "challenge",
@@ -721,23 +736,28 @@
         "/web-geoblue/web-geoblue-travel-insurance-homepage-mobile-01.jpg",
         "/web-geoblue/web-geoblue-travel-insurance-expat-mobile-01.jpg"
       ],
-      "overview" : "",
+      "overview": {
+        "description": "",
+        "bgColor": "#c2e6e1",
+        "titleColor": "#00aedb",
+        "descriptionColor": "#00a0af"
+      },
       "description": [
         {
           "title": "challenge",
-          "description": "",
+          "description": "this is a challenge",
           "bgColor": "#00aedb",
           "fontColor": "#FFFFFF"
         },
         {
           "title": "solution",
-          "description": "",
+          "description": "this is a solution",
           "bgColor": "#00a0af",
           "fontColor": "#FFFFFF"
         },
         {
           "title": "results",
-          "description": "",
+          "description": "this is a result",
           "bgColor": "#c2e6e1",
           "fontColor": "#0c95b9"
         }
@@ -764,25 +784,30 @@
         "https://www.morsecodemedia.com/site/assets/files/1024/epp-responsive-website-3.jpg",
         "https://www.morsecodemedia.com/site/assets/files/1024/epp-responsive-website-4-1.jpg"
       ],
-      "overview" : "",
+      "overview": {
+        "description": "",
+        "bgColor": "white",
+        "titleColor": "magenta",
+        "descriptionColor": "magenta"
+      },
       "description": [
         {
           "title": "challenge",
-          "description": "ARPRO® is JSP International's brand name for a premium Expanded Polypropylene (EPP) product. EPP is an impact energy management material with a unique combination of properties including energy absorption, structural strength, low weight, chemical resistance, and both thermal and acoustical insulation. While ARPRO® is the leading brand of EPP, there are many generic offerings, making it difficult for ARPRO® to rank organically for non-branded keywords and attributes of EPP.",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "ARPRO<sup>&reg</sup> is JSP International's brand name for a premium Expanded Polypropylene (EPP) product. EPP is an impact energy management material with a unique combination of properties including energy absorption, structural strength, low weight, chemical resistance, and both thermal and acoustical insulation. While ARPRO<sup>&reg</sup> is the leading brand of EPP, there are many generic offerings, making it difficult for ARPRO<sup>&reg</sup> to rank organically for non-branded keywords and attributes of EPP.",
+          "bgColor": "magenta",
+          "fontColor": "white"
         },
         {
           "title": "solution",
-          "description": "We collaborated with JSP to create personas around potential customers that would not be familiar with ARPRO®. Then crafted an interactive experience and content targeted towards those users, around EPP and other keywords identified in the persona exercise; allowing ARPRO® to compete with organic rankings against “generic” EPP products.",
-          "bgColor": "",
-          "fontColor": ""
+          "description": "We collaborated with JSP to create personas around potential customers that would not be familiar with ARPRO<sup>&reg</sup>. Then crafted an interactive experience and content targeted towards those users, around EPP and other keywords identified in the persona exercise; allowing ARPRO<sup>&reg</sup> to compete with organic rankings against “generic” EPP products.",
+          "bgColor": "white",
+          "fontColor": "black"
         },
         {
           "title": "results",
           "description": "EPP has been well-received and achieved page one rankings for core keywords and increased website visit duration by 190%. Bounce rate was decreased by 19% and is now acting as an effective lead generation website.",
-          "bgColor": "",
-          "fontColor": ""
+          "bgColor": "blue",
+          "fontColor": "white"
         }
       ],
       "needsPassword": false,

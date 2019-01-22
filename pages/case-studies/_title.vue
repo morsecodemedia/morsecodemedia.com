@@ -36,14 +36,17 @@
           </div>
         </div>
 
-        <div class="description-container">
+        <div
+          :style="{'background-color': cs.overview.bgColor}"
+          class="description-container">
           <div
             v-for="(des, index) in activeDescription"
             :key="index"
             :style="{color: des.fontColor, 'background-color': des.bgColor}">
 
             <h3
-              v-if="des.type === 'description' && des.title">{{ des.title }} </h3>
+              v-if="des.type === 'description' && des.title"
+              :style="{'border-bottom': '4px ' + 'solid ' + des.fontColor}">{{ des.title }} </h3>
             <p
               v-if="des.type === 'description' && des.description"
               v-html="des.description" />
@@ -85,9 +88,6 @@
           :to="'/case-studies/'">click here</nuxt-link> to go back to the case study listings.</p>
       </div>
     </div>
-    <nuxt-link
-      :to="'/case-studies/'">Back To Case Studies</nuxt-link>
-    <div @click="nextCaseStudy"> Next &raquo; </div>
     <siteFooter />
   </section>
 </template>
@@ -130,10 +130,22 @@
               })
           }
           if (images[i]) {
-            returnArray.push({
-              'type': 'image',
-              'src': images[i]
-            })
+            if (description[i]) {
+              returnArray.push({
+                'type': 'image',
+                'src': images[i],
+                'fontColor': description[i].fontColor,
+                'bgColor': description[i].bgColor
+              })
+            } else {
+              let newi = i - 2
+              returnArray.push({
+                'type': 'image',
+                'src': images[i],
+                'fontColor': description[newi].fontColor,
+                'bgColor': description[newi].bgColor
+              })
+            }
           }
         }
         return returnArray
@@ -279,6 +291,9 @@
       h3 {
         text-transform: uppercase;
         font-size: 32px;
+        padding: 0 0 15px 0;
+        margin: 0 0 15px 0;
+        text-transform: uppercase;
       }
       p{
         padding: 0 20px;
@@ -297,6 +312,26 @@
     justify-content: center;
     img {
       object-fit: contain;
+    }
+  }
+  .case-study-awards {
+    background: #efefef;
+    padding: 35px;
+    text-align: center;
+    h3 {
+      border-bottom: 4px solid #222;
+      display: inline-block;
+      font-size: 32px;
+      padding: 0 0 15px 0;
+      margin: 0 0 15px 0;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    ul {
+      list-style: none;
+      li {
+        margin: 0 0 15px;
+      }
     }
   }
 

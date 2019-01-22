@@ -8,6 +8,8 @@
       </div>
       <div
         class="menu-btn"
+        aria-label="Menu"
+        aria-controls="navigation"
         @click="toggleMenu">
         <div class="menu-icon">
           <span />

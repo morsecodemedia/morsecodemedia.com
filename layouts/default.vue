@@ -11,7 +11,10 @@
     margin: 0;
     padding: 0;
   }
-
+  sup {
+    vertical-align: super;
+    font-size: 50%;
+  }
   .case-studies {
     display: grid;
     grid-gap: 10px;
