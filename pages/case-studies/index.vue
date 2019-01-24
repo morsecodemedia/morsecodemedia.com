@@ -1,27 +1,36 @@
 <template>
   <section class="container">
     <siteHeader />
-    <caseStudiesIntro />
+    <sectionIntro :intro="intro" />
     <caseStudies />
     <siteFooter />
   </section>
 </template>
 
 <script>
-  import siteHeader from '~/components/header.vue'
-  import caseStudiesIntro from '~/components/case-studies-intro.vue'
-  import caseStudies from '~/components/case-studies.vue'
-  import siteFooter from '~/components/footer.vue'
+  import config from '~/components/config.json'
+  import siteHeader from '~/components/header'
+  import sectionIntro from '~/components/section-intro'
+  import caseStudies from '~/components/case-studies'
+  import siteFooter from '~/components/footer'
 
   export default {
     components: {
       siteHeader,
-      caseStudiesIntro,
+      sectionIntro,
       caseStudies,
       siteFooter
     },
     metaInfo: {
       title: 'Case Studies'
+    },
+    data() {
+      return {
+        intro: {
+          "image": "https://via.placeholder.com/950x630",
+          "quote": config.about.caseStudiesQuote
+        }
+      }
     }
   }
 </script>

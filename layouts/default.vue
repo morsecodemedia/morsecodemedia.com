@@ -7,9 +7,36 @@
 <style lang="scss">
   * {
     font-family: 'Muli', sans-serif;
-    font-size: 22px;
     margin: 0;
     padding: 0;
+  }
+  h1 {
+    font-size: 72px;
+    margin-bottom: 25px;
+  }
+  h2 {
+    font-size: 48px;
+    margin-bottom: 25px;
+  }
+  h3 {
+    font-size: 32px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  h4 {
+    font-size: 26px;
+  }
+  h5 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 18px;
+  }
+  ul {
+    li {
+      font-size: 18px;
+    }
   }
   sup {
     vertical-align: super;
@@ -48,7 +75,6 @@
           justify-content: center;
         }
         h3 {
-          text-transform: uppercase;
           text-align: center;
           position: relative;
           justify-self: center;
@@ -127,7 +153,6 @@
             -ms-transform: scale(0,1);
             transform: scale(0,1);
             h3 {
-              text-transform: uppercase;
               text-align: center;
               position: relative;
               justify-self: center;

@@ -2,7 +2,7 @@
   <section class="container">
     <siteHeader />
     <heroHome />
-    <aboutHome />
+    <sectionIntro :intro="intro" />
     <services />
     <trackRecord />
     <featuredCaseStudies />
@@ -17,20 +17,21 @@ import Meta from 'vue-meta'
 
 Vue.use(Meta)
 
-import siteHeader from '~/components/header.vue'
-import heroHome from '~/components/hero-home.vue'
-import aboutHome from '~/components/about-home.vue'
-import services from '~/components/services.vue'
-import trackRecord from '~/components/track-record.vue'
-import featuredCaseStudies from '~/components/featured-case-studies.vue'
-import linkBarCaseStudies from '~/components/link-bar-case-studies.vue'
-import siteFooter from '~/components/footer.vue'
+import config from '~/components/config.json'
+import siteHeader from '~/components/header'
+import heroHome from '~/components/hero-home'
+import sectionIntro from '~/components/section-intro'
+import services from '~/components/services'
+import trackRecord from '~/components/track-record'
+import featuredCaseStudies from '~/components/featured-case-studies'
+import linkBarCaseStudies from '~/components/link-bar-case-studies'
+import siteFooter from '~/components/footer'
 
 export default {
   components: {
     siteHeader,
     heroHome,
-    aboutHome,
+    sectionIntro,
     services,
     trackRecord,
     featuredCaseStudies,
@@ -44,7 +45,15 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
     ]
-  }
+  },
+    data() {
+      return {
+        intro: {
+          "image": config.about.headshot,
+          "quote": config.about.homeQuote
+        }
+      }
+    }
 }
 </script>
 

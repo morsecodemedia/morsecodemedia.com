@@ -1,15 +1,13 @@
 <template>
-  <section class="about-intro">
+  <section class="section-intro">
     <img
-      :src="headshotImg"
-      class="headshot"
-      role="presentation">
-    <blockquote class="intro-quote">
-      <p>
-        {{ quote }}
-
-      </p>
-    </blockquote>
+      :src="intro.image"
+      class="intro-image"
+      role="presentation"
+      alt="">
+    <blockquote
+      class="intro-quote"
+      v-html="intro.quote" />
   </section>
 </template>
 
@@ -17,17 +15,19 @@
   import config from '~/components/config.json'
 
   export default {
-    data() {
-      return {
-        headshotImg: config.about.headshot,
-        quote: config.about.aboutQuote
+    props: {
+      intro: {
+        type: Object,
+        required: true,
+        twoWay: true,
+        default: () => {}
       }
     }
   }
 </script>
 
 <style lang="scss" scoped>
-  .about-intro {
+  .section-intro {
     background: linear-gradient(45deg,#f9f9f9 0%,#ededed 100%);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -38,7 +38,7 @@
     "hs hs hs hs hs hs hs hs hs hs hs hs"
     "hs hs hs hs hs hs hs hs hs hs hs hs"
     "hs hs hs hs hs hs hs hs hs hs hs hs";
-    .headshot {
+    .intro-image {
       grid-area: hs;
       align-self: start;
       object-fit: cover;
@@ -61,7 +61,7 @@
   }
 
   @media (min-width: 768px) {
-    .about-intro {
+    .section-intro {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: 60px auto auto 60px;

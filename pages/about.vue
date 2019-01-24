@@ -1,15 +1,7 @@
 <template>
   <section class="container">
     <siteHeader />
-
-    <article class="case-studies-intro">
-      <img
-        class="intro-image"
-        src="https://via.placeholder.com/950x630">
-      <blockquote class="intro-quote">
-        <p>{{ about.overview }}</p>
-      </blockquote>
-    </article>
+    <sectionIntro :intro="intro" />
 
     <div class="description-container">
       <div>
@@ -31,39 +23,47 @@
             {{ work.title }} at {{ work.company }} {{ work.yearStart }}-{{ work.yearEnd }}
           </li>
         </ul>
+        <p>More about my career on <a
+          href="https://www.linkedin.com/in/brandonmorse"
+          target="_blank">LinkedIn</a></p>
+      </div>
+      <div>
+        <h2>Certifications</h2>
+        <ul>
+          <li
+            v-for="(cert, index) in about.certifications"
+            :key="index">
+            {{ cert.certification }} ({{ cert.organization }})
+            <br>
+            <span>{{ cert.certificationStart }}-{{ cert.certificationEnd }}</span>
+          </li>
+        </ul>
       </div>
     </div>
 
-
-
-
-    <h2>Certifications</h2>
-    <ul>
-      <li
-        v-for="(cert, index) in about.certifications"
-        :key="index">
-        {{ cert.certification }} ({{ cert.organization }})
-        <br>
-        <span>{{ cert.certificationStart }}-{{ cert.certificationEnd }}</span>
-      </li>
-    </ul>
     <siteFooter />
   </section>
 </template>
 
 <script>
   import config from '~/components/config.json'
-  import siteHeader from '~/components/header.vue'
-  import siteFooter from '~/components/footer.vue'
+  import siteHeader from '~/components/header'
+  import sectionIntro from '~/components/section-intro'
+  import siteFooter from '~/components/footer'
 
   export default {
     components: {
       siteHeader,
+      sectionIntro,
       siteFooter
     },
     data() {
       return {
-        about: config.about
+        about: config.about,
+        intro: {
+          "image": "https://via.placeholder.com/950x630",
+          "quote": config.about.aboutQuote
+        }
       }
     }
   }
