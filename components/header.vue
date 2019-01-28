@@ -2,9 +2,7 @@
   <header>
     <div class="masthead">
       <div class="logo">
-        <a
-          href="/"
-          @contextmenu="openMenu">&lt;morsecodemedia&gt;</a>
+        <a href="/">&lt;morsecodemedia&gt;</a>
       </div>
       <div
         class="menu-btn"
@@ -32,18 +30,6 @@
             {{ nav.text }}
           </a>
         </li>
-      </ul>
-    </nav>
-    <nav
-      v-el="right"
-      v-if="viewMenu"
-      id="right-click-menu"
-      tabindex="-1"
-      class="hidden-menu"
-      @click="closeMenu">
-      <ul>
-        <li @click="showPwdProjects = !showPwdProjects">Toggle Hidden Case Studies</li>
-        <li>Download PDF Resume</li>
       </ul>
     </nav>
   </header>
@@ -74,25 +60,6 @@
             document.querySelector('.menu-label').innerHTML = 'close'
           }
         })
-      },
-      setMenu: function(top, left) {
-        largestHeight = window.innerHeight - this.$$.right.offsetHeight - 25
-        largestWidth = window.innerWidth - this.$$.right.offsetWidth - 25
-        if (top > largestHeight) top = largestHeight
-        if (left > largestWidth) left = largestWidth
-        this.top = top + 'px'
-        this.left = left + 'px'
-      },
-      closeMenu: function() {
-        this.viewMenu = false
-      },
-      openMenu: function(e) {
-        this.viewMenu = true
-        Vue.nextTick(function() {
-          this.$$.right.focus()
-          this.setMenu(e.y, e.x)
-        }.bind(this))
-        e.preventDefault()
       }
     }
   }
@@ -243,37 +210,6 @@
               text-decoration: underline;
             }
           }
-        }
-      }
-    }
-    .hidden-menu {
-      background: #222;
-      border: 1px solid #BDBDBD;
-      box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
-      display: block;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      position: absolute;
-      z-index: 9999;
-      width: 250px;
-      li {
-        border-bottom: 1px solid #E0E0E0;
-        display: block;
-        color: white;
-        font-size: 12px;
-        text-align: center;
-        text-decoration: none;
-        text-transform: uppercase;
-        padding: 10px 0px;
-        width: 100%;
-        &:last-child {
-          border-bottom: none;
-        }
-        &:hover {
-          background: #1E88E5;
-          color: #FAFAFA;
-          cursor: pointer;
         }
       }
     }
