@@ -5,14 +5,8 @@
 
     <div class="description-container">
       <div>
-        <h2>Recognition</h2>
-        <ul>
-          <li
-            v-for="(award, index) in about.awards"
-            :key="index">
-            {{ award.count }} {{ award.award }} ({{ award.organization }})
-          </li>
-        </ul>
+        <h2>About Me</h2>
+        <p v-html="about.aboutQuote" />
       </div>
       <div>
         <h2>Work History</h2>
@@ -26,6 +20,16 @@
         <p>More about my career on <a
           href="https://www.linkedin.com/in/brandonmorse"
           target="_blank">LinkedIn</a></p>
+      </div>
+      <div>
+        <h2>Recognition</h2>
+        <ul>
+          <li
+            v-for="(award, index) in about.awards"
+            :key="index">
+            {{ award.count }} {{ award.award }} ({{ award.organization }})
+          </li>
+        </ul>
       </div>
       <div>
         <h2>Certifications</h2>
@@ -62,7 +66,7 @@
         about: config.about,
         intro: {
           "image": "https://via.placeholder.com/950x630",
-          "quote": config.about.aboutQuote
+          "quote": config.about.trackRecordQuote
         }
       }
     }
@@ -70,38 +74,6 @@
 </script>
 
 <style lang="scss" scoped>
-  .case-studies-intro {
-    background: linear-gradient(45deg,#f9f9f9 0%,#ededed 100%);
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto auto 40px 60px auto 60px auto;
-    grid-template-areas:
-    ".  .  .  .  .  .  .  .  .  .  .  . "
-    "hs hs hs hs hs hs hs hs hs hs hs hs"
-    "hs hs hs hs hs hs hs hs hs hs hs hs"
-    "hs hs hs hs hs hs hs hs hs hs hs hs"
-    "hs hs hs hs hs hs hs hs hs hs hs hs";
-    .intro-image {
-      grid-area: hs;
-      align-self: start;
-      object-fit: cover;
-      width: 100%;
-      max-height: 100%;
-    }
-    .intro-quote {
-      align-self: center;
-      background: #222;
-      color: white;
-      font-size: 36px;
-      line-height: 1.1em;
-      grid-row-start: 1;
-      grid-row-end: 2;
-      grid-column-start: 1;
-      grid-column-end: 13;
-      padding: 25px 10px;
-      text-align: center;
-    }
-  }
   .description-container {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -111,9 +83,7 @@
       grid-row: span 1;
       overflow: hidden;
       display: flex;
-      // align-items: center;
       flex-direction: column;
-      // justify-content: center;
       padding: 35px;
       h2 {
         justify-self: center;
@@ -137,7 +107,11 @@
   }
 
   @media (min-width: 768px) {
-    .case-studies-intro {
+
+  }
+
+  @media (min-width: 992px) {
+    .section-intro {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: 60px auto auto 60px;

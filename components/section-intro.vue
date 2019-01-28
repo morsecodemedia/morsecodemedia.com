@@ -26,7 +26,7 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   .section-intro {
     background: linear-gradient(45deg,#f9f9f9 0%,#ededed 100%);
     display: grid;
