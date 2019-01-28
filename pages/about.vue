@@ -5,8 +5,13 @@
 
     <div class="description-container">
       <div>
+        <img src="https://via.placeholder.com/950x630">
+      </div>
+
+      <div>
         <h2>About Me</h2>
         <p v-html="about.aboutQuote" />
+        <p v-html="about.trackRecordQuote" />
       </div>
       <div>
         <h2>Work History</h2>
@@ -31,18 +36,19 @@
           </li>
         </ul>
       </div>
-      <div>
-        <h2>Certifications</h2>
-        <ul>
-          <li
-            v-for="(cert, index) in about.certifications"
-            :key="index">
-            {{ cert.certification }} ({{ cert.organization }})
-            <br>
-            <span>{{ cert.certificationStart }}-{{ cert.certificationEnd }}</span>
-          </li>
-        </ul>
-      </div>
+    </div>
+
+    <div>
+      <h2>Certifications</h2>
+      <ul>
+        <li
+          v-for="(cert, index) in about.certifications"
+          :key="index">
+          {{ cert.certification }} ({{ cert.organization }})
+          <br>
+          <span>{{ cert.certificationStart }}-{{ cert.certificationEnd }}</span>
+        </li>
+      </ul>
     </div>
 
     <siteFooter />
@@ -66,7 +72,7 @@
         about: config.about,
         intro: {
           "image": "https://via.placeholder.com/950x630",
-          "quote": config.about.trackRecordQuote
+          "quote": "I have a passion to innovate and develop digital experiences."
         }
       }
     }
@@ -97,6 +103,7 @@
       }
       p {
         padding: 0 20px;
+        margin: 0 0 20px 0;
       }
       img {
         object-fit: contain;

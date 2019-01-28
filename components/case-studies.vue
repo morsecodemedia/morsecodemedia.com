@@ -2,11 +2,21 @@
   <section>
     <nav class="case-studies-filter">
       <ul>
-        <li @click="showPwdProjects = !showPwdProjects">(L)</li>
-        <li @click="activeCaseStudyCategory = 'all'">All Projects</li>
+        <li @click="showPwdProjects = !showPwdProjects">
+          <font-awesome-icon
+            v-if="!showPwdProjects"
+            icon="lock" />
+          <font-awesome-icon
+            v-else
+            icon="lock-open" />
+        </li>
+        <li
+          :class="{ active: (activeCaseStudyCategory === 'all') }"
+          @click="activeCaseStudyCategory = 'all'">All Projects</li>
         <li
           v-for="(cat, index) in activeCategories"
           :key="index"
+          :class="{ active: (activeCaseStudyCategory === cat.toLowerCase().replace(/\s/g, '-')) }"
           @click="activeCaseStudyCategory = cat.toLowerCase().replace(/\s/g, '-')">{{ cat }}</li>
       </ul>
     </nav>
@@ -23,8 +33,16 @@
 </template>
 
 <script>
+  import Vue from 'vue'
   import config from '~/components/config.json'
   import caseStudyListing from '~/components/case-study-listing'
+  import { library } from '@fortawesome/fontawesome-svg-core'
+  import { faLock, faLockOpen } from '@fortawesome/free-solid-svg-icons'
+  import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+  library.add(faLock, faLockOpen)
+  Vue.component('font-awesome-icon', FontAwesomeIcon)
+
   export default {
     components: {
       caseStudyListing
@@ -272,5 +290,43 @@
 </script>
 
 <style lang="scss">
-
+  .case-studies-filter {
+    ul {
+      li {
+        &:before,
+        &:after {
+          display: inline-block;
+          opacity: 0;
+          -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+          -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+          transition: transform 0.3s, opacity 0.2s;
+        }
+        &:before {
+          margin-right: 10px;
+          content: '[';
+          -webkit-transform: translateX(20px);
+          -moz-transform: translateX(20px);
+          transform: translateX(20px);
+        }
+        &:after {
+          margin-left: 10px;
+          content: ']';
+          -webkit-transform: translateX(-20px);
+          -moz-transform: translateX(-20px);
+          transform: translateX(-20px);
+        }
+        &:hover,
+        &.active {
+          text-decoration: none;
+          &:before,
+          &:after {
+            opacity: 1;
+            -webkit-transform: translateX(0px);
+            -moz-transform: translateX(0px);
+            transform: translateX(0px);
+          }
+        }
+      }
+    }
+  }
 </style>

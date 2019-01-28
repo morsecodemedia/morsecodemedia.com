@@ -1,7 +1,6 @@
 <template>
   <section class="container">
     <siteHeader />
-    <sectionIntro :intro="intro" />
     <caseStudies />
     <siteFooter />
   </section>
