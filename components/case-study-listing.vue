@@ -24,6 +24,7 @@
   })
 
   export default {
+    name: 'CaseStudyListing',
     filters: {
       lowerKebab: function(term) {
         return term.toLowerCase().replace(/[.\s]/g, '-').replace(/[&#,+()$~%'":*?<>{}]/g, '' )

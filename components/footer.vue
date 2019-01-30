@@ -1,7 +1,6 @@
 <template>
   <footer>
     <div class="footer-copyright">
-      <p>&copy; 2005-{{ year }} MorseCodeMedia. All rights reserved.</p>
       <ul
         v-if="about.socialMedia.length">
         <li
@@ -10,24 +9,32 @@
           <a
             :href="sm.url"
             target="_blank">
-            {{ sm.title }}
+            <font-awesome-icon
+              :icon="['fab', sm.title.toLowerCase()]" />
           </a>
         </li>
       </ul>
+      <p>&copy; 2005-{{ year }} MorseCodeMedia. All rights reserved.</p>
     </div>
   </footer>
 </template>
 
 <script>
+  import Vue from 'vue'
   import { about } from '~/components/config.json'
+  import { library } from '@fortawesome/fontawesome-svg-core'
+  import { faGithub, faLinkedin, faStackOverflow } from '@fortawesome/free-brands-svg-icons'
+  import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+  library.add(faGithub, faLinkedin, faStackOverflow)
+  Vue.component('font-awesome-icon', FontAwesomeIcon)
 
   export default {
+    name: 'Footer',
     data() {
       return {
         about: about,
-        year: '',
-        footerLeader: 'Your website should be your strongest business asset.',
-        footerCopy: 'It represents your brand to the world, and needs to interface with your customers like one of the team. That’s why we start every project with a conversation — to ensure your web design, web development, and digital strategy align with your goals, every step of the way.'
+        year: ''
       }
     },
     beforeMount: function () {
@@ -43,17 +50,18 @@
     .footer-copyright {
       p {
         color: white;
-        font-size: 12px;
+        font-size: 16px;
         padding: 0 10px;
         text-align: center;
       }
       ul {
         text-align: center;
+        margin-bottom: 15px;
         li {
           display: inline-block;
           a {
             color: white;
-            font-size: 12px;
+            font-size: 18px;
             padding: 0 10px;
           }
         }

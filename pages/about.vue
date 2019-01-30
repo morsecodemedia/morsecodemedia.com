@@ -62,10 +62,23 @@
   import siteFooter from '~/components/footer'
 
   export default {
+    name: 'About',
     components: {
       siteHeader,
       sectionIntro,
       siteFooter
+    },
+    head () {
+      return {
+        title: 'About Brandon Morse | morsecodemedia.com',
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: ""
+          }
+        ]
+      }
     },
     data() {
       return {

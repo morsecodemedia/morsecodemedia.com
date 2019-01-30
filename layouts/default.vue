@@ -4,6 +4,24 @@
   </div>
 </template>
 
+<script>
+  export default {
+    name: 'App',
+    head () {
+      return {
+        title: 'The Porfolio of Brandon Morse | morsecodemedia.com',
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Brandon Morse (morsecodemedia) is an award-winning web developer who has a passion to innovate and develop digital experiences.'
+          }
+        ]
+      }
+    }
+  }
+</script>
+
 <style lang="scss">
   * {
     font-family: 'Muli', sans-serif;

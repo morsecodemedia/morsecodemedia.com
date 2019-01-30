@@ -17,6 +17,7 @@
   import { homepageHero } from '~/components/config.json'
 
   export default {
+    name: 'HeroHome',
     data() {
       return {
         heroDescriptor: homepageHero.heroDescriptor,

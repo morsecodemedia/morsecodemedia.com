@@ -15,6 +15,7 @@
   import { services } from '~/components/config.json'
 
   export default {
+    name: 'Services',
     data() {
       return {
         services: services

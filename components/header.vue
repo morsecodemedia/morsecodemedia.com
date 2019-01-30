@@ -40,9 +40,8 @@
           <a
             :href="sm.url"
             target="_blank">
-            {{ sm.title }}
-            <!-- <font-awesome-icon
-              :icon="['fab', 'fa-github']" /> -->
+            <font-awesome-icon
+              :icon="['fab', sm.title.toLowerCase()]" />
           </a>
         </li>
       </ul>
@@ -51,16 +50,17 @@
 </template>
 
 <script>
-  // import Vue from 'vue'
+  import Vue from 'vue'
   import { navigation, about } from '~/components/config.json'
-  // import { library } from '@fortawesome/fontawesome-svg-core'
-  // import { fabLinkedin, fabGithub, fabStackOverflow } from '@fortawesome/free-brands-svg-icons'
-  // import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+  import { library } from '@fortawesome/fontawesome-svg-core'
+  import { faGithub, faLinkedin, faStackOverflow } from '@fortawesome/free-brands-svg-icons'
+  import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-  // library.add(fabLinkedin, fabGithub, fabStackOverflow)
-  // Vue.component('font-awesome-icon', FontAwesomeIcon)
+  library.add(faGithub, faLinkedin, faStackOverflow)
+  Vue.component('font-awesome-icon', FontAwesomeIcon)
 
   export default {
+    name: 'Header',
     data() {
       return {
         viewMenu: false,
@@ -238,8 +238,8 @@
             display: inline-block;
             a {
               color: white;
-              font-size: 12px;
-              padding: 0 10px;
+              font-size: 18px;
+              padding: 0 15px;
             }
           }
         }

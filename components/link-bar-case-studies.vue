@@ -10,6 +10,7 @@
   import { caseStudies } from '~/components/config.json'
 
   export default {
+    name: 'LinkBar',
     data() {
       return {
         caseStudies: caseStudies

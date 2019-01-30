@@ -14,14 +14,24 @@
   import siteFooter from '~/components/footer'
 
   export default {
+    name: 'CaseStudies',
     components: {
       siteHeader,
       sectionIntro,
       caseStudies,
       siteFooter
     },
-    metaInfo: {
-      title: 'Case Studies'
+    head () {
+      return {
+        title: 'Case Studies | morsecodemedia.com',
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: ""
+          }
+        ]
+      }
     },
     data() {
       return {

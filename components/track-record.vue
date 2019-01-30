@@ -8,6 +8,7 @@
   import { about } from '~/components/config.json'
 
   export default {
+    name: 'TrackRecord',
     data() {
       return {
         quote: about.trackRecordQuote

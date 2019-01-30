@@ -14,6 +14,7 @@
 <script>
 
   export default {
+    name: 'SectionIntro',
     props: {
       intro: {
         type: Object,

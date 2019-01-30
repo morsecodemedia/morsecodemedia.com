@@ -17,6 +17,7 @@
   import { about } from '~/components/config.json'
 
   export default {
+    name: 'AboutHome',
     data() {
       return {
         headshotImg: about.headshot,
