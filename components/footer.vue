@@ -3,9 +3,9 @@
     <div class="footer-copyright">
       <p>&copy; 2005-{{ year }} MorseCodeMedia. All rights reserved.</p>
       <ul
-        v-if="config.about.socialMedia.length">
+        v-if="about.socialMedia.length">
         <li
-          v-for="(sm, index) in config.about.socialMedia.filter((sm)=>sm.url)"
+          v-for="(sm, index) in about.socialMedia.filter((sm)=>sm.url)"
           :key="index">
           <a
             :href="sm.url"
@@ -19,12 +19,12 @@
 </template>
 
 <script>
-  import config from '~/components/config.json'
+  import { about } from '~/components/config.json'
 
   export default {
     data() {
       return {
-        config: config,
+        about: about,
         year: '',
         footerLeader: 'Your website should be your strongest business asset.',
         footerCopy: 'It represents your brand to the world, and needs to interface with your customers like one of the team. That’s why we start every project with a conversation — to ensure your web design, web development, and digital strategy align with your goals, every step of the way.'

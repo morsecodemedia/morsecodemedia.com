@@ -34,7 +34,7 @@
 
 <script>
   import Vue from 'vue'
-  import config from '~/components/config.json'
+  import { caseStudies } from '~/components/config.json'
   import caseStudyListing from '~/components/case-study-listing'
   import { library } from '@fortawesome/fontawesome-svg-core'
   import { faLock, faLockOpen } from '@fortawesome/free-solid-svg-icons'
@@ -51,7 +51,7 @@
       return {
         showPwdProjects: false,
         displayCaseStudies: false,
-        caseStudies: config.caseStudies,
+        caseStudies: caseStudies,
         activeCaseStudyCategory: 'all',
         twoUpClasses: ['horizontal-2'],
         twoUpDensity: 0.6,

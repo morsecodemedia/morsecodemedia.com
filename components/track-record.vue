@@ -5,12 +5,12 @@
 </template>
 
 <script>
-  import config from '~/components/config.json'
+  import { about } from '~/components/config.json'
 
   export default {
     data() {
       return {
-        quote: config.about.trackRecordQuote
+        quote: about.trackRecordQuote
       }
     }
   }

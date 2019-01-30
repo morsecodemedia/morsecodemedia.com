@@ -41,8 +41,8 @@
             :href="sm.url"
             target="_blank">
             {{ sm.title }}
-            <font-awesome-icon
-              :icon="['fab', 'fa-github']" />
+            <!-- <font-awesome-icon
+              :icon="['fab', 'fa-github']" /> -->
           </a>
         </li>
       </ul>
@@ -51,14 +51,14 @@
 </template>
 
 <script>
-  import Vue from 'vue'
-  import config from '~/components/config.json'
-  import { library } from '@fortawesome/fontawesome-svg-core'
-  import { fabLinkedin, fabGithub, fabStackOverflow } from '@fortawesome/free-brands-svg-icons'
-  import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+  // import Vue from 'vue'
+  import { navigation, about } from '~/components/config.json'
+  // import { library } from '@fortawesome/fontawesome-svg-core'
+  // import { fabLinkedin, fabGithub, fabStackOverflow } from '@fortawesome/free-brands-svg-icons'
+  // import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-  library.add(fabLinkedin, fabGithub, fabStackOverflow)
-  Vue.component('font-awesome-icon', FontAwesomeIcon)
+  // library.add(fabLinkedin, fabGithub, fabStackOverflow)
+  // Vue.component('font-awesome-icon', FontAwesomeIcon)
 
   export default {
     data() {
@@ -66,8 +66,8 @@
         viewMenu: false,
         top: '0px',
         left: '0px',
-        navigation: config.navigation,
-        socialMedia: config.about.socialMedia
+        navigation: navigation,
+        socialMedia: about.socialMedia
       }
     },
     methods: {

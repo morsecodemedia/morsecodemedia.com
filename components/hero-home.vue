@@ -14,14 +14,14 @@
 </template>
 
 <script>
-  import config from '~/components/config.json'
+  import { homepageHero } from '~/components/config.json'
 
   export default {
     data() {
       return {
-        heroDescriptor: config.homepageHero.heroDescriptor,
-        heroName: config.homepageHero.heroName,
-        heroStatement: config.homepageHero.heroStatement
+        heroDescriptor: homepageHero.heroDescriptor,
+        heroName: homepageHero.heroName,
+        heroStatement: homepageHero.heroStatement
       }
     }
   }

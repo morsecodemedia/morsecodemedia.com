@@ -14,13 +14,13 @@
 </template>
 
 <script>
-  import config from '~/components/config.json'
+  import { about } from '~/components/config.json'
 
   export default {
     data() {
       return {
-        headshotImg: config.about.headshot,
-        quote: config.about.aboutQuote
+        headshotImg: about.headshot,
+        quote: about.aboutQuote
       }
     }
   }

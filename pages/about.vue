@@ -56,7 +56,7 @@
 </template>
 
 <script>
-  import config from '~/components/config.json'
+  import { about } from '~/components/config.json'
   import siteHeader from '~/components/header'
   import sectionIntro from '~/components/section-intro'
   import siteFooter from '~/components/footer'
@@ -69,7 +69,7 @@
     },
     data() {
       return {
-        about: config.about,
+        about: about,
         intro: {
           "image": "https://via.placeholder.com/950x630",
           "quote": "I have a passion to innovate and develop digital experiences."

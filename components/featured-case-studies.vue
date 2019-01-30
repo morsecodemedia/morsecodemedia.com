@@ -19,7 +19,7 @@
 </template>
 
 <script>
-  import config from '~/components/config.json'
+  import { caseStudies } from '~/components/config.json'
 
   export default {
     filters: {
@@ -29,7 +29,7 @@
     },
     data() {
       return {
-        caseStudies: config.caseStudies,
+        caseStudies: caseStudies,
         showPwdProjects: false
       }
     },

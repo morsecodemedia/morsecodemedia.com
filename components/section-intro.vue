@@ -12,7 +12,6 @@
 </template>
 
 <script>
-  import config from '~/components/config.json'
 
   export default {
     props: {

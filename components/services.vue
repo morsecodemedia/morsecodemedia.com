@@ -12,12 +12,12 @@
 </template>
 
 <script>
-  import config from '~/components/config.json'
+  import { services } from '~/components/config.json'
 
   export default {
     data() {
       return {
-        services: config.services
+        services: services
       }
     }
   }
