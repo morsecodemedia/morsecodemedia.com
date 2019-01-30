@@ -31,12 +31,34 @@
           </a>
         </li>
       </ul>
+      <ul
+        v-if="socialMedia.length"
+        class="social">
+        <li
+          v-for="(sm, index) in socialMedia.filter((sm)=>sm.url)"
+          :key="index">
+          <a
+            :href="sm.url"
+            target="_blank">
+            {{ sm.title }}
+            <font-awesome-icon
+              :icon="['fab', 'fa-github']" />
+          </a>
+        </li>
+      </ul>
     </nav>
   </header>
 </template>
 
 <script>
+  import Vue from 'vue'
   import config from '~/components/config.json'
+  import { library } from '@fortawesome/fontawesome-svg-core'
+  import { fabLinkedin, fabGithub, fabStackOverflow } from '@fortawesome/free-brands-svg-icons'
+  import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+  library.add(fabLinkedin, fabGithub, fabStackOverflow)
+  Vue.component('font-awesome-icon', FontAwesomeIcon)
 
   export default {
     data() {
@@ -44,7 +66,8 @@
         viewMenu: false,
         top: '0px',
         left: '0px',
-        navigation: config.navigation
+        navigation: config.navigation,
+        socialMedia: config.about.socialMedia
       }
     },
     methods: {
@@ -193,7 +216,6 @@
         display: flex;
       }
       ul {
-        justify-self: center;
         list-style-type: none;
         li {
           margin-bottom: 55px;
@@ -206,6 +228,18 @@
             &:hover {
               cursor: pointer;
               text-decoration: underline;
+            }
+          }
+        }
+        &.social {
+          position: absolute;
+          bottom: 5vh;
+          li {
+            display: inline-block;
+            a {
+              color: white;
+              font-size: 12px;
+              padding: 0 10px;
             }
           }
         }
