@@ -1,4 +1,4 @@
-# morsecodemedia.com
+# morsecodemedia.com [![Build Status](https://travis-ci.com/morsecodemedia/morsecodemedia.svg?branch=stage)](https://travis-ci.com/morsecodemedia/morsecodemedia)
 
 > Morsecodemedia.com - the portfolio of Brandon G. Morse
 
