@@ -3,16 +3,21 @@
     <siteHeader />
     <sectionIntro :intro="intro" />
 
-    <div class="description-container">
-      <div>
-        <img src="https://via.placeholder.com/950x630">
+    <div style="display:flex;">
+      <div style="width:45vw; height:50vh;">
+        <img
+          src="https://www.morsecodemedia.com/site/assets/files/1016/bmorse-headshot-1.jpg"
+          style="width:50vw; height:50vh; display: flex;">
       </div>
 
-      <div>
+      <div style="width:50vw; height:50vh;">
         <h2>About Me</h2>
         <p v-html="about.aboutQuote" />
         <p v-html="about.trackRecordQuote" />
       </div>
+    </div>
+
+    <div class="description-container">
       <div>
         <h2>Work History</h2>
         <ul>
@@ -38,7 +43,7 @@
       </div>
     </div>
 
-    <div>
+    <div style="display: flex;">
       <h2>Certifications</h2>
       <ul>
         <li
