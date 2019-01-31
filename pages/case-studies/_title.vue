@@ -42,7 +42,7 @@
           <div
             v-for="(des, index) in activeDescription"
             :key="index"
-            :class="(des.type === 'description') ? 'textBlock' : 'imgBlock'"
+            :class="(des.type === 'description') ? 'text-block' : 'img-block'"
             :style="{color: des.fontColor, 'background-color': des.bgColor}">
 
             <h3
@@ -214,6 +214,8 @@
   }
   .case-study-intro {
     width: 100vw;
+    min-height: 100vh;
+    display: flex;
     align-items: center;
     justify-content: center;
     .case-study-intro-copy {
@@ -273,19 +275,19 @@
     }
   }
   .description-container {
-    // display: grid;
-    // grid-template-columns: 1fr;
-    // grid-auto-rows: .5fr;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
     min-height: 50vh;
     div {
       grid-column: span 1;
-      grid-row: span 1;
       overflow: hidden;
-      // display: flex;
+      display: flex;
       align-items: center;
       flex-direction: column;
       justify-content: start;
+      &.img-block {
+        height: 50vh;
+      }
       h3 {
         text-transform: uppercase;
         font-size: 32px;
