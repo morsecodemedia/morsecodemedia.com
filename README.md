@@ -2,6 +2,34 @@
 
 > Morsecodemedia.com - the portfolio of Brandon G. Morse
 
+## Todo Notes & Cleanup
+- Add Analytics
+- Fix Meta tags
+- Creat Favicon
+- A11y audit
+- Set up 301 redirects
+- Apply Color palette
+- Mobile Styles
+- Homepage
+  - Hero Graphic(s)
+    - Glitch Animation?
+- About Page Design
+- Contact Page Design/Content
+- Photo shoot
+- Case Study Content
+  - Copy
+  - Screenshots
+  - Device Insitu
+- CDN
+  - Video Hosting
+  - Image Hosting
+- Vuex store
+  - case studies password protected projects
+  - low animation options
+- Server
+  - SSR or Static Gen
+- Update Resume/LinkedIn
+
 ## Build Setup
 
 ``` bash
