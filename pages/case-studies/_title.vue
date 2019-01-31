@@ -42,6 +42,7 @@
           <div
             v-for="(des, index) in activeDescription"
             :key="index"
+            :class="(des.type === 'description') ? 'textBlock' : 'imgBlock'"
             :style="{color: des.fontColor, 'background-color': des.bgColor}">
 
             <h3
@@ -65,7 +66,7 @@
             <li
               v-for="(award, index) in cs.awards"
               :key="index">
-              {{ award.year }} {{ award.award }} from {{ award.organization }}
+              {{ award.year }} {{ award.award }} <nobr>from {{ award.organization }}</nobr>
             </li>
           </ul>
         </div>
@@ -166,7 +167,7 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   .password-overlay {
     display: none;
     position: fixed;
@@ -212,20 +213,18 @@
     }
   }
   .case-study-intro {
-    height: 100vh;
     width: 100vw;
-    display: flex;
     align-items: center;
     justify-content: center;
     .case-study-intro-copy {
       text-align: center;
       padding: 0 40px;
       h1 {
-        font-size: 72px;
+        font-size: calc(72px/1.5);
         margin-bottom: 25px;
       }
       h2 {
-        font-size: 48px;
+        font-size: calc(48px/1.5);
         margin-bottom: 25px;
       }
       p {
@@ -238,67 +237,75 @@
           }
         }
       }
-    }
-    .scroll-downs {
-      width: 34px;
-      height: 55px;
-      position: absolute;
-      margin: auto;
-      top: 0;
-      left: 0;
-      bottom: -650px;
-      right: 0px;
-      .mousey {
-        width: 3px;
-        padding: 10px 15px;
-        height: 35px;
-        border-radius: 25px;
-        opacity: 0.75;
-        box-sizing: content-box;
-        .scroller {
+      .scroll-downs {
+        width: 34px;
+        height: 55px;
+        position: relative;
+        margin: auto;
+        top: 0;
+        left: 0;
+        bottom: -650px;
+        right: 0px;
+        .mousey {
           width: 3px;
-          height: 10px;
-          border-radius: 25%;
-          animation-name: scroll;
-          animation-duration: 2.2s;
-          animation-timing-function: cubic-bezier(.15,.41,.69,.94);
-          animation-iteration-count: infinite;
+          padding: 10px 15px;
+          height: 35px;
+          border-radius: 25px;
+          opacity: 0.75;
+          box-sizing: content-box;
+          .scroller {
+            width: 3px;
+            height: 10px;
+            border-radius: 25%;
+            animation-name: scroll;
+            animation-duration: 2.2s;
+            animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+            animation-iteration-count: infinite;
+          }
         }
       }
-    }
 
-    @keyframes scroll {
-      0% { opacity: 0; }
-      10% { transform: translateY(0); opacity: 1; }
-      100% { transform: translateY(15px); opacity: 0;}
+      @keyframes scroll {
+        0% { opacity: 0; }
+        10% { transform: translateY(0); opacity: 1; }
+        100% { transform: translateY(15px); opacity: 0;}
+      }
     }
   }
   .description-container {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-auto-rows: 1fr;
+    // display: grid;
+    // grid-template-columns: 1fr;
+    // grid-auto-rows: .5fr;
+    width: 100%;
+    min-height: 50vh;
     div {
       grid-column: span 1;
       grid-row: span 1;
       overflow: hidden;
-      display: flex;
+      // display: flex;
       align-items: center;
       flex-direction: column;
-      justify-content: center;
-      &:nth-of-type(1){ background-color: #EEE; }
-      &:nth-of-type(3){ background-color: #EAEAEA; }
-      &:nth-of-type(5){ background-color: #EEE; }
+      justify-content: start;
       h3 {
         text-transform: uppercase;
         font-size: 32px;
         padding: 0 0 15px 0;
-        margin: 0 0 15px 0;
+        margin: 20px 0 15px 0;
         text-transform: uppercase;
       }
-      p{
+      span {
+        display: block;
         padding: 0 20px;
+        p {
+          margin-bottom: 20px;
+        }
+      }
+      p {
+        padding: 0 20px;
+        margin-bottom: 20px;
       }
       img {
+        justify-self: center;
         object-fit: contain;
         object-position: center center;
         height: 100%;
@@ -311,7 +318,7 @@
     display: flex;
     justify-content: center;
     img {
-      object-fit: contain;
+      max-width:100%;
     }
   }
   .case-study-awards {
@@ -341,12 +348,63 @@
         width: 50vw;
       }
     }
+    .case-study-intro {
+      .case-study-intro-copy {
+        padding: 0 40px;
+        h1 {
+          font-size: 72px;
+          margin-bottom: 25px;
+        }
+        h2 {
+          font-size: 48px;
+          margin-bottom: 25px;
+        }
+        p {
+          margin-bottom: 25px;
+          &.case-study-meta {
+            font-size: 14px;
+            span {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
   }
 
   @media (min-width: 992px) {
     .password-overlay {
       p {
         width: 50vw;
+      }
+    }
+    .description-container {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-auto-rows: 1fr;
+      div {
+        grid-column: span 1;
+        grid-row: span 1;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        h3 {
+          text-transform: uppercase;
+          font-size: 32px;
+          padding: 0 0 15px 0;
+          margin: 0 0 15px 0;
+          text-transform: uppercase;
+        }
+        p{
+          padding: 0 20px;
+        }
+        img {
+          object-fit: contain;
+          object-position: center center;
+          height: 100%;
+        }
       }
     }
   }
@@ -357,5 +415,6 @@
         width: 30vw;
       }
     }
+
   }
 </style>
