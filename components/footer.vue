@@ -14,7 +14,7 @@
           </a>
         </li>
       </ul>
-      <p>&copy; 2005-{{ year }} MorseCodeMedia. All rights reserved.</p>
+      <p>&copy; 2005-{{ year }} MorseCodeMedia. <nobr>All rights reserved.</nobr></p>
     </div>
   </footer>
 </template>
