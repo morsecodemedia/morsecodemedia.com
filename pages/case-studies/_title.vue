@@ -308,9 +308,10 @@
       }
       img {
         justify-self: center;
-        object-fit: contain;
+        object-fit: cover;
         object-position: center center;
         height: 100%;
+        width: 100vw;
       }
     }
   }
@@ -372,6 +373,16 @@
         }
       }
     }
+    .description-container {
+      div {
+        p {
+          padding: 0 40px;
+        }
+        img {
+          object-fit: cover;
+        }
+      }
+    }
   }
 
   @media (min-width: 992px) {
@@ -392,20 +403,8 @@
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        h3 {
-          text-transform: uppercase;
-          font-size: 32px;
-          padding: 0 0 15px 0;
-          margin: 0 0 15px 0;
-          text-transform: uppercase;
-        }
-        p{
-          padding: 0 20px;
-        }
         img {
-          object-fit: contain;
-          object-position: center center;
-          height: 100%;
+          object-fit: cover;
         }
       }
     }
@@ -417,6 +416,15 @@
         width: 30vw;
       }
     }
-
+    .description-container {
+      div {
+        &.img-block {
+          min-height: 75vh;
+        }
+        img {
+          object-fit: contain;
+        }
+      }
+    }
   }
 </style>
