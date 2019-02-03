@@ -34,37 +34,40 @@
     grid-template-rows: auto auto 40px 60px auto 60px auto;
     grid-template-areas:
     ".  .  .  .  .  .  .  .  .  .  .  . "
+    ".  .  .  .  .  .  .  .  .  .  .  . "
     "hs hs hs hs hs hs hs hs hs hs hs hs"
     "hs hs hs hs hs hs hs hs hs hs hs hs"
     "hs hs hs hs hs hs hs hs hs hs hs hs"
-    "hs hs hs hs hs hs hs hs hs hs hs hs";
+    "hs hs hs hs hs hs hs hs hs hs hs hs"
+    ".  .  .  .  .  .  .  .  .  .  .  . ";
     .intro-image {
       grid-area: hs;
       align-self: start;
       object-fit: cover;
-      width: 100%;
-      max-height: 100%;
+      width: 100vw;
+      min-height: 100%;
     }
     .intro-quote {
       align-self: center;
       background: #222;
       color: white;
-      font-size: 36px;
-      line-height: 1.1em;
+      font-size: 22px;
+      line-height: 32px;
       grid-row-start: 1;
       grid-row-end: 2;
       grid-column-start: 1;
       grid-column-end: 13;
-      padding: 25px 10px;
+      padding: 25px;
       text-align: center;
+      a {
+        color: white;
+      }
     }
   }
 
   @media (min-width: 768px) {
     .section-intro {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: 60px auto auto 60px;
+      grid-template-rows: repeat(4, 1fr);
       grid-template-areas:
       ". . . . hs hs hs hs hs hs hs hs"
       ". . . . hs hs hs hs hs hs hs hs"
@@ -74,7 +77,24 @@
         grid-row-start: 2;
         grid-row-end: 4;
         grid-column-start: 1;
-        grid-column-end: 6;
+        grid-column-end: 7;
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .section-intro {
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas:
+      ". . . . hs hs hs hs hs hs hs hs"
+      ". . . . hs hs hs hs hs hs hs hs"
+      ". . . . hs hs hs hs hs hs hs hs"
+      ". . . . hs hs hs hs hs hs hs hs";
+      .intro-quote {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 7;
       }
     }
   }
