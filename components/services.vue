@@ -29,6 +29,7 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto auto;
+    grid-gap: 1px;
     article {
       padding: 30px;
       &:nth-of-type(odd) {
@@ -36,15 +37,6 @@
       }
       &:nth-of-type(even) {
         background: #efefef;
-      }
-      h3 {
-        font-family: 'Muli', sans-serif;
-        font-size: 27px;
-        text-transform: uppercase;
-      }
-      p {
-        font-family: 'Playfair Display', serif;
-        font-size: 18px;
       }
     }
   }
