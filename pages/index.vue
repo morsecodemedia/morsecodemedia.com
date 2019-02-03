@@ -49,7 +49,7 @@
           {
             hid: 'description',
             name: 'description',
-            content: ""
+            content: "Brandon Morse is an award-winning web developer, based out of New Jersey, USA."
           }
         ]
       }
