@@ -403,6 +403,9 @@
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        &.img-block {
+          min-height: 100vh;
+        }
         img {
           object-fit: cover;
         }
@@ -418,9 +421,6 @@
     }
     .description-container {
       div {
-        &.img-block {
-          min-height: 75vh;
-        }
         img {
           object-fit: contain;
         }
