@@ -11,12 +11,23 @@
     <div class="overlay">
       <h3>{{ cs.title }}</h3>
     </div>
+    <span
+      v-if="cs.needsPassword"
+      class="requires-password">
+      <font-awesome-icon icon="lock" />
+    </span>
   </nuxt-link>
 </template>
 
 <script>
   import Vue from 'vue'
   import VueLazyload from 'vue-lazyload'
+  import { library } from '@fortawesome/fontawesome-svg-core'
+  import { faLock, faLockOpen } from '@fortawesome/free-solid-svg-icons'
+  import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+  library.add(faLock, faLockOpen)
+  Vue.component('font-awesome-icon', FontAwesomeIcon)
 
   Vue.use(VueLazyload, {
     preLoad: 1.3,
@@ -54,5 +65,18 @@
 </script>
 
 <style lang="scss">
-
+  .requires-password {
+    position: absolute;
+    display: flex;
+    bottom: 5px;
+    right: 5px;
+    background: rgba(2,2,2,.5);
+    color: rgba(255,255,255,.5);
+    font-size: 16px;
+    line-height: 16px;
+    height: 26px;
+    width: 26px;
+    align-items: center;
+    justify-content: center;
+  }
 </style>
