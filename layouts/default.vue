@@ -24,45 +24,64 @@
 
 <style lang="scss">
   * {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
   }
+
   h1 {
+    font-family: 'Karla', sans-serif;
     font-size: 72px;
     margin-bottom: 25px;
   }
+
   h2 {
-    font-size: 48px;
+    font-family: 'Karla', sans-serif;
+    font-size: 52px;
     margin-bottom: 25px;
   }
+
   h3 {
-    font-size: 32px;
+    font-family: 'Karla', sans-serif;
+    font-size: 36px;
     padding-bottom: 15px;
     margin-bottom: 15px;
     text-transform: uppercase;
   }
+
   h4 {
+    font-family: 'Karla', sans-serif;
+    font-size: 30px;
+  }
+
+  h5 {
+    font-family: 'Karla', sans-serif;
     font-size: 26px;
   }
-  h5 {
-    font-size: 22px;
-  }
+
   p {
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 25px;
   }
-  ul {
+
+  ul,
+  ol {
     li {
-      font-size: 18px;
+      font-size: 20px;
+      margin-bottom: 10px;
     }
+    margin-bottom: 25px;
   }
+
   sup {
     vertical-align: super;
     font-size: 50%;
   }
+
   .case-studies {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 2px;
     grid-auto-flow: dense;
     a {
       &.case-study {
@@ -152,7 +171,56 @@
     }
   }
 
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 72px;
+    }
+    h2 {
+      font-size: 52px;
+    }
+    h3 {
+      font-size: 36px;
+    }
+    h4 {
+      font-size: 30px;
+    }
+    h5 {
+      font-size: 26px;
+    }
+    p {
+      font-size: 20px;
+    }
+    ul {
+      li {
+        font-size: 20px;
+      }
+    }
+  }
+
   @media (min-width: 992px) {
+    h1 {
+      font-size: 72px;
+    }
+    h2 {
+      font-size: 52px;
+    }
+    h3 {
+      font-size: 36px;
+    }
+    h4 {
+      font-size: 30px;
+    }
+    h5 {
+      font-size: 26px;
+    }
+    p {
+      font-size: 20px;
+    }
+    ul {
+      li {
+        font-size: 20px;
+      }
+    }
     .case-studies {
       a {
         &.case-study {
