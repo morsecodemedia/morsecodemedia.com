@@ -20,11 +20,12 @@
 <style lang="scss" scoped>
   .track-record {
     background: #222;
-    padding: 25px;
+    padding: 40px 80px;
     .tr-quote {
       align-self: center;
       color: white;
-      font-size: 22px;
+      font-size: 26px;
+      line-height: 38px;
       padding: 30px 20px;
       text-align: center;
     }
