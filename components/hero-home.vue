@@ -33,16 +33,14 @@
     background: #f9f9f9;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 45px auto auto auto auto 45px;
+    grid-template-rows: auto auto auto auto 45px;
     grid-template-areas:
-    ".  .  .  .  .  .  .  .  .  .  .  ."
     "hc hc hc hc hc hc hc hc hc hc hc hc"
     "hc hc hc hc hc hc hc hc hc hc hc hc"
     "hi hi hi hi hi hi hi hi hi hi hi hi"
     "hi hi hi hi hi hi hi hi hi hi hi hi"
     ".  .  .  .  .  .  .  .  .  .  .  .";
     .hero-copy {
-      font-family: 'Muli', sans-serif;
       grid-area: hc;
       padding: 45px 10px;
       .hero-copy__small {
@@ -50,12 +48,17 @@
         font-size: 18px;
         font-weight: bold;
         text-transform: uppercase;
+        margin-bottom: 0px;
       }
       .hero-copy__large {
         font-size: 52px;
+        line-height: 66px;
+        margin-bottom: 0px;
       }
       .hero-copy__normal {
         font-size: 32px;
+        line-height: 46px;
+        margin-bottom: 0px;
       }
     }
     .hero-image {
@@ -67,24 +70,16 @@
   }
   @media (min-width: 768px) {
     .hero {
+      grid-template-rows: 45px auto auto auto auto 45px;
       grid-template-areas:
       ".  .  .  .  .  .  .  .  .  .  .  ."
-      "hc hc hc hc hc hc hi hi hi hi hi hi"
-      "hc hc hc hc hc hc hi hi hi hi hi hi"
-      "hc hc hc hc hc hc hi hi hi hi hi hi"
-      "hc hc hc hc hc hc hi hi hi hi hi hi"
+      "hc hc hc hc hc hc hc hi hi hi hi hi"
+      "hc hc hc hc hc hc hc hi hi hi hi hi"
+      "hc hc hc hc hc hc hc hi hi hi hi hi"
+      "hc hc hc hc hc hc hc hi hi hi hi hi"
       ".  .  .  .  .  .  .  .  .  .  .  .";
       .hero-copy {
-        padding: 45px 10px;
-        .hero-copy__small {
-          font-size: 18px;
-        }
-        .hero-copy__large {
-          font-size: 52px;
-        }
-        .hero-copy__normal {
-          font-size: 32px;
-        }
+        padding: 30px 10px 45px;
       }
     }
   }
@@ -94,9 +89,11 @@
         padding: 45px 10px;
         .hero-copy__small {
           font-size: 22px;
+          margin-bottom: 25px;
         }
         .hero-copy__large {
           font-size: 62px;
+          margin-bottom: 25px;
         }
         .hero-copy__normal {
           font-size: 38px;
@@ -107,10 +104,6 @@
   @media (min-width: 1200px) {
     .hero {
       .hero-copy {
-        padding: 45px 10px;
-        .hero-copy__small {
-          font-size: 22px;
-        }
         .hero-copy__large {
           font-size: 82px;
         }
