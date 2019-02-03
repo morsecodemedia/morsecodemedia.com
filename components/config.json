@@ -40,35 +40,64 @@
         "location": "Newtown, PA",
         "title": "Lead Architect",
         "yearStart": "2018",
-        "yearEnd": ""
+        "yearEnd": "",
+        "notableSuccesses": []
       },
       {
         "company": "GSW Advertising",
         "location": "Newtown, PA",
         "title": "Associate Technology Director",
         "yearStart": "2016",
-        "yearEnd": "2018"
+        "yearEnd": "2018",
+        "notableSuccesses": [
+          "Managed and mentored a team of developers of various skillsets.",
+          "Responsible for build quality, execution, maintainabiliy and support.",
+          "Maintains technical relationships with technical vendors and client IT departments.",
+          "Consulted on project scopes, technical and functional specs, and timelines.",
+          "Works with clients such as, Endo Pharmacueticals, Shire, Teva Pharmacutical Industries Ltd., Johnson and Johnson, Aprecia Pharmaceuticals, SteadyMed Therapeutics."
+        ]
       },
       {
         "company": "inVentiv Creative Studios",
         "location": "Newtown, PA",
         "title": "Technology Manager",
         "yearStart": "2015",
-        "yearEnd": "2016"
+        "yearEnd": "2016",
+        "notableSuccesses": [
+          "Managed and mentored a team of developers of various skillsets.",
+          "Oversaw the recruitment efforts for new team members.",
+          "Acted as the technical leiasion throughout project lifecycles.",
+          "Consultant on project scopes, technical and functional specs, and timelines.",
+          "Worked with clients such as, Endo Pharmacueticals, Shire, Teva Pharmacutical Industries Ltd., Novartis AG, Johnson and Johnson, AstraZeneca."
+        ]
       },
       {
         "company": "allwebcafe",
         "location": "Berwyn, PA",
         "title": "Director of Technology and Development",
         "yearStart": "2014",
-        "yearEnd": "2015"
+        "yearEnd": "2015",
+        "notableSuccesses": [
+          "Spearheaded a successful server migration, reducing the monthly spend by 92%.",
+          "Developed and implemented an interactive QA process.",
+          "Executed 'work-flex' and 'work-remote' initiatives allowing employees to gain better control over their work-life balance.",
+          "Oversaw and mentored a team of developers of various skill sets.",
+          "Maintained development, staging and production servers on DigitalOcean, Rackspace and Amazon Web Services."
+        ]
       },
       {
         "company": "allwebcafe",
         "location": "Berwyn, PA",
         "title": "Senior Web Developer",
         "yearStart": "2012",
-        "yearEnd": "2014"
+        "yearEnd": "2014",
+        "notableSuccesses": [
+          "Developed two box subscription sites for Wal-Mart that generated over 188k users and $2.1M in less than a year.",
+          "Created a system for internal documentation of clients, projects, processes.",
+          "Lead and implemented team building and best practice exercises as well as optimization techniques.",
+          "Launched a tiered hosting support system for customers - complete with ticketing system, site and server up-times tied to Rackspace Cloud and Pingdom APIs, and 24-hour support.",
+          "Wrote 'Is It Time To Drop Support for Internet Explorer 8', a blog post that generated 18.7k+ visitors (17.4k+ unique) since February 2014 - ~42% of traffic to the website. [as of July 21, 2015.]"
+        ]
       }
     ],
     "certifications": [
