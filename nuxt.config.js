@@ -15,11 +15,10 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Muli' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Playfair+Display' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Karla' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat' }
     ]
   },
-
   /*
   ** Customize the progress-bar color
   */
