@@ -80,7 +80,7 @@
           {
             hid: 'description',
             name: 'description',
-            content: ""
+            content: "Get the quick pitch of who Brandon Morse is and his past experience as a developer."
           }
         ]
       }
