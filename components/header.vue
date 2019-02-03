@@ -2,7 +2,9 @@
   <header>
     <div class="masthead">
       <div class="logo">
-        <a href="/">&lt;morsecodemedia&gt;</a>
+        <a href="/">
+          <span>&lt;</span>morsecodemedia<span>&gt;</span>
+        </a>
       </div>
       <div
         class="menu-btn"
@@ -112,6 +114,15 @@
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+        span {
+          font-size: 32px;
+          line-height: 0;
+          position: relative;
+          top: 4px;
+          display: inline-block;
+          margin: 0;
+          padding: 0;
+        }
         & > a,
         & > a:visited,
         & > a:hover {
