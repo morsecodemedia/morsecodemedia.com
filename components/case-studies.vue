@@ -291,6 +291,7 @@
 
 <style lang="scss">
   .case-studies-filter {
+
     ul {
       li {
         &:before,
