@@ -291,8 +291,9 @@
 
 <style lang="scss">
   .case-studies-filter {
-
     ul {
+      margin: 0;
+      padding: 0;
       li {
         &:before,
         &:after {
