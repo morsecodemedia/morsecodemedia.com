@@ -373,13 +373,13 @@
         },
         {
           "title": "solution",
-          "description": "- Moved from custom CMS to ProcessWire CMS. - Built blog system into the CMS. - Continued to use the 3rd-party service to scrap various XML feeds. This time, instead of scraping the feeds at load-time, we created a cronjob to run three-times-a-week and pull all data into the CMS. - Created the ability to manage call-tracking phone numbers in the CMS.",
+          "description": "<ul> <li>Moved from custom CMS to ProcessWire CMS.</li> <li>Built blog system into the CMS.</li> <li>Continued to use the 3rd-party service to scrap various XML feeds. This time, instead of scraping the feeds at load-time, we created a cronjob to run three-times-a-week and pull all data into the CMS.</li> <li>Created the ability to manage call-tracking phone numbers in the CMS.</li> </ul>",
           "bgColor": "#FFFFFF",
           "fontColor": "#222222"
         },
         {
           "title": "results",
-          "description": "- Client is able to manage 100% of the content displayed on the site, despite the original source of the data. - With all data in the CMS, site is now able to have a more robust search integrated throughout the site. - Weekly blog articles are able to be managed through the CMS. - Landing pages with call tracking have the ability to display an unlimited set of numbers.",
+          "description": "<ul> <li>Client is able to manage 100% of the content displayed on the site, despite the original source of the data.</li> <li>With all data in the CMS, site is now able to have a more robust search integrated throughout the site.</li> <li>Weekly blog articles are able to be managed through the CMS.</li> <li>Landing pages with call tracking have the ability to display an unlimited set of numbers.</li> </ul>",
           "bgColor": "#00539A",
           "fontColor": "#FFFFFF"
         }
