@@ -191,6 +191,7 @@
           }
         }
         .menu-label {
+          font-family: 'Montserrat', sans-serif;
           font-size: 18px;
           margin-top: 30px;
           text-transform: uppercase;
