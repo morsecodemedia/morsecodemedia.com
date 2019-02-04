@@ -14,7 +14,7 @@
 <script>
 
   export default {
-    name: 'SectionIntro',
+    name: 'BlockquoteWithImg',
     props: {
       intro: {
         type: Object,

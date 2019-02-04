@@ -15,7 +15,6 @@
 <script>
   import config from '~/components/config.json'
   import siteHeader from '~/components/header'
-  import sectionIntro from '~/components/section-intro'
   import caseStudies from '~/components/case-studies'
   import siteFooter from '~/components/footer'
 
@@ -23,7 +22,6 @@
     name: 'CaseStudies',
     components: {
       siteHeader,
-      sectionIntro,
       caseStudies,
       siteFooter
     },

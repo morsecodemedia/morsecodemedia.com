@@ -2,7 +2,7 @@
   <section class="container">
     <siteHeader />
     <heroHome />
-    <sectionIntro :intro="intro" />
+    <blockquoteWithImg :intro="intro" />
     <services />
     <trackRecord />
     <featuredCaseStudies />
@@ -21,7 +21,7 @@
   import config from '~/components/config.json'
   import siteHeader from '~/components/header'
   import heroHome from '~/components/hero-home'
-  import sectionIntro from '~/components/section-intro'
+  import blockquoteWithImg from '~/components/blockquote-with-image'
   import sectionOutro from '~/components/section-outro'
   import services from '~/components/services'
   import trackRecord from '~/components/track-record'
@@ -34,7 +34,7 @@
     components: {
       siteHeader,
       heroHome,
-      sectionIntro,
+      blockquoteWithImg,
       sectionOutro,
       services,
       trackRecord,

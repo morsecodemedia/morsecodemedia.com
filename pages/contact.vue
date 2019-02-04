@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <siteHeader />
-    <sectionIntro :intro="intro" />
+    <blockquoteWithImg :intro="intro" />
     <siteFooter />
   </section>
 </template>
@@ -9,14 +9,14 @@
 <script>
   import config from '~/components/config.json'
   import siteHeader from '~/components/header'
-  import sectionIntro from '~/components/section-intro'
+  import blockquoteWithImg from '~/components/blockquote-with-image'
   import siteFooter from '~/components/footer'
 
   export default {
     name: 'Contact',
     components: {
       siteHeader,
-      sectionIntro,
+      blockquoteWithImg,
       siteFooter
     },
     head () {
