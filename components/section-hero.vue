@@ -21,7 +21,7 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   .section-hero {
     background: #ffaf4b;
     background: -moz-radial-gradient(center, ellipse cover, #ffaf4b 0%, #ff920a 100%);

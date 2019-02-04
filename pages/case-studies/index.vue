@@ -1,20 +1,16 @@
 <template>
   <section class="container">
     <siteHeader />
-    <div class="csHero">
-      <div>
-        <h1>Case <br >Studies</h1>
-        <p>Bridging the gap between client fantasies and digital realities.</p>
-      </div>
-    </div>
+    <sectionHero :hero="hero" />
     <caseStudies />
     <siteFooter />
   </section>
 </template>
 
 <script>
-  import config from '~/components/config.json'
+  import { about } from '~/components/config.json'
   import siteHeader from '~/components/header'
+  import sectionHero from '~/components/section-hero'
   import caseStudies from '~/components/case-studies'
   import siteFooter from '~/components/footer'
 
@@ -22,6 +18,7 @@
     name: 'CaseStudies',
     components: {
       siteHeader,
+      sectionHero,
       caseStudies,
       siteFooter
     },
@@ -39,9 +36,9 @@
     },
     data() {
       return {
-        intro: {
-          "image": "https://via.placeholder.com/950x630",
-          "quote": config.about.caseStudiesQuote
+        hero: {
+          "header": "Case Studies",
+          "copy": about.caseStudiesQuote
         }
       }
     }
@@ -49,36 +46,15 @@
 </script>
 
 <style lang="scss" scoped>
-  .csHero {
-    background: #ffaf4b;
-    background: -moz-radial-gradient(center, ellipse cover, #ffaf4b 0%, #ff920a 100%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffaf4b), color-stop(100%, #ff920a));
-    background: -webkit-radial-gradient(center, ellipse cover, #ffaf4b 0%, #ff920a 100%);
-    background: -o-radial-gradient(center, ellipse cover, #ffaf4b 0%, #ff920a 100%);
-    background: -ms-radial-gradient(center, ellipse cover, #ffaf4b 0%, #ff920a 100%);
-    background: radial-gradient(ellipse at center, #ffaf4b 0%, #ff920a 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a', GradientType=1 );
-
-    height: 75vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    div {
-      h1 {
-        border-bottom: 4px solid white;
-        color: white;
-        display: inline-block;
-        font-size: 56px;
-        padding: 0 0 10px 0;
-        margin: 0 0 25px 0;
-        text-transform: uppercase;
-      }
-      p {
-        font-size: 24px;
-        color: white;
-      }
-    }
+  .section-hero {
+    background: rgba(210,255,82,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(210,255,82,1)), color-stop(100%, rgba(145,232,66,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842', GradientType=1 );
   }
 </style>
 

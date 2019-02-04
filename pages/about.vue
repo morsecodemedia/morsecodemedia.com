@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <siteHeader />
-    <blockquoteWithImg :bqwi="bqwi" />
+    <sectionHero :hero="hero" />
 
     <div style="display:flex;">
       <div style="width:45vw; height:50vh;">
@@ -11,7 +11,6 @@
       </div>
 
       <div style="width:50vw; height:50vh;">
-        <h2>About Me</h2>
         <p v-html="about.aboutQuote" />
         <p v-html="about.trackRecordQuote" />
       </div>
@@ -63,14 +62,14 @@
 <script>
   import { about } from '~/components/config.json'
   import siteHeader from '~/components/header'
-  import blockquoteWithImg from '~/components/blockquote-with-image'
+  import sectionHero from '~/components/section-hero'
   import siteFooter from '~/components/footer'
 
   export default {
     name: 'About',
     components: {
       siteHeader,
-      blockquoteWithImg,
+      sectionHero,
       siteFooter
     },
     head () {
@@ -88,9 +87,9 @@
     data() {
       return {
         about: about,
-        bqwi: {
-          "image": "https://via.placeholder.com/950x630",
-          "quote": "I have a passion to innovate and develop digital experiences."
+        hero: {
+          "header": "About Me",
+          "copy": "I have a passion to innovate and develop digital experiences."
         }
       }
     }
@@ -98,6 +97,16 @@
 </script>
 
 <style lang="scss" scoped>
+  .section-hero {
+    background: rgba(147,206,222,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(147,206,222,1)), color-stop(41%, rgba(117,189,209,1)), color-stop(100%, rgba(73,165,191,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1 );
+  }
   .description-container {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -136,21 +145,6 @@
   }
 
   @media (min-width: 992px) {
-    .section-intro {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: 60px auto auto 60px;
-      grid-template-areas:
-      ". . . . hs hs hs hs hs hs hs hs"
-      ". . . . hs hs hs hs hs hs hs hs"
-      ". . . . hs hs hs hs hs hs hs hs"
-      ". . . . hs hs hs hs hs hs hs hs";
-      .intro-quote {
-        grid-row-start: 2;
-        grid-row-end: 4;
-        grid-column-start: 1;
-        grid-column-end: 8;
-      }
-    }
+
   }
 </style>
