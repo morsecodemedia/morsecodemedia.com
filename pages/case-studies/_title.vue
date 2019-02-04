@@ -305,6 +305,9 @@
       p {
         padding: 0 20px;
         margin-bottom: 20px;
+        a {
+          color: inherit;
+        }
       }
       img {
         justify-self: center;
