@@ -279,13 +279,18 @@
       "yearEnd": "2014",
       "insitu": {
         "img": "",
-        "color1": "",
-        "color2": ""
+        "color1": "#e0e6f2",
+        "color2": "#0076BE"
       },
       "gallery": [
         "https://www.morsecodemedia.com/site/assets/files/1023/babybox-responsive-website-1.jpg"
       ],
-      "overview" : "Subscription box website for baby products for new and expecting mothers.",
+      "overview": {
+        "description": "Subscription box website for baby products for new and expecting mothers.",
+        "bgColor": "#e0e6f2",
+        "titleColor": "#FDB72B",
+        "descriptionColor": "#0076BE"
+      },
       "description": [
         {
           "title": "challenge",
@@ -319,11 +324,16 @@
       "yearEnd": "2014",
       "insitu": {
         "img": "",
-        "color1": "",
-        "color2": ""
+        "color1": "#f79d3c",
+        "color2": "#b93b61"
       },
       "gallery": [],
-      "overview" : "Subscription box website for beauty products for women of all ages.",
+      "overview": {
+        "description": "Subscription box website for beauty products for women of all ages.",
+        "bgColor": "#FFFFFF",
+        "titleColor": "#f79d3c",
+        "descriptionColor": "#b93b61"
+      },
       "description": [
         {
           "title": "challenge",
