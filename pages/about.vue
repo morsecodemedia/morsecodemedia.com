@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <siteHeader />
-    <blockquoteWithImg :intro="intro" />
+    <blockquoteWithImg :bqwi="bqwi" />
 
     <div style="display:flex;">
       <div style="width:45vw; height:50vh;">
@@ -88,7 +88,7 @@
     data() {
       return {
         about: about,
-        intro: {
+        bqwi: {
           "image": "https://via.placeholder.com/950x630",
           "quote": "I have a passion to innovate and develop digital experiences."
         }

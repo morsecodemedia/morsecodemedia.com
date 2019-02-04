@@ -2,7 +2,7 @@
   <section class="container">
     <siteHeader />
     <heroHome />
-    <blockquoteWithImg :intro="intro" />
+    <blockquoteWithImg :bqwi="bqwi" />
     <services />
     <trackRecord />
     <featuredCaseStudies />
@@ -18,7 +18,7 @@
 
   Vue.use(Meta)
 
-  import config from '~/components/config.json'
+  import { about } from '~/components/config.json'
   import siteHeader from '~/components/header'
   import heroHome from '~/components/hero-home'
   import blockquoteWithImg from '~/components/blockquote-with-image'
@@ -56,9 +56,9 @@
     },
     data() {
       return {
-        intro: {
-          "image": config.about.headshot,
-          "quote": config.about.homeQuote
+        bqwi: {
+          "image": about.headshot,
+          "quote": about.homeQuote
         },
         outro: {
           "header": 'Your website should be your strongest business asset.',

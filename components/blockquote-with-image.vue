@@ -1,22 +1,21 @@
 <template>
-  <section class="section-intro">
+  <section class="bq-w-img">
     <img
-      :src="intro.image"
-      class="intro-image"
+      :src="bqwi.image"
+      class="bqwi-image"
       role="presentation"
       alt="">
     <blockquote
-      class="intro-quote"
-      v-html="intro.quote" />
+      class="bqwi-quote"
+      v-html="bqwi.quote" />
   </section>
 </template>
 
 <script>
-
   export default {
     name: 'BlockquoteWithImg',
     props: {
-      intro: {
+      bqwi: {
         type: Object,
         required: true,
         twoWay: true,
@@ -27,7 +26,7 @@
 </script>
 
 <style lang="scss">
-  .section-intro {
+  .bq-w-img {
     background: linear-gradient(45deg,#f9f9f9 0%,#ededed 100%);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -40,14 +39,14 @@
     "hs hs hs hs hs hs hs hs hs hs hs hs"
     "hs hs hs hs hs hs hs hs hs hs hs hs"
     ".  .  .  .  .  .  .  .  .  .  .  . ";
-    .intro-image {
+    .bqwi-image {
       grid-area: hs;
       align-self: start;
       object-fit: cover;
       width: 100vw;
       min-height: 100%;
     }
-    .intro-quote {
+    .bqwi-quote {
       align-self: center;
       background: #222;
       color: white;
@@ -66,14 +65,14 @@
   }
 
   @media (min-width: 768px) {
-    .section-intro {
+    .bq-w-img {
       grid-template-rows: repeat(4, 1fr);
       grid-template-areas:
       ". . . . hs hs hs hs hs hs hs hs"
       ". . . . hs hs hs hs hs hs hs hs"
       ". . . . hs hs hs hs hs hs hs hs"
       ". . . . hs hs hs hs hs hs hs hs";
-      .intro-quote {
+      .bqwi-quote {
         grid-row-start: 2;
         grid-row-end: 4;
         grid-column-start: 1;
@@ -83,14 +82,14 @@
   }
 
   @media (min-width: 992px) {
-    .section-intro {
+    .bq-w-img {
       grid-template-rows: repeat(4, 1fr);
       grid-template-areas:
       ". . . . hs hs hs hs hs hs hs hs"
       ". . . . hs hs hs hs hs hs hs hs"
       ". . . . hs hs hs hs hs hs hs hs"
       ". . . . hs hs hs hs hs hs hs hs";
-      .intro-quote {
+      .bqwi-quote {
         grid-row-start: 2;
         grid-row-end: 4;
         grid-column-start: 1;

@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <siteHeader />
-    <blockquoteWithImg :intro="intro" />
+    <sectionHero :hero="hero" />
     <siteFooter />
   </section>
 </template>
@@ -9,14 +9,14 @@
 <script>
   import config from '~/components/config.json'
   import siteHeader from '~/components/header'
-  import blockquoteWithImg from '~/components/blockquote-with-image'
+  import sectionHero from '~/components/section-hero'
   import siteFooter from '~/components/footer'
 
   export default {
     name: 'Contact',
     components: {
       siteHeader,
-      blockquoteWithImg,
+      sectionHero,
       siteFooter
     },
     head () {
@@ -33,9 +33,9 @@
     },
     data() {
       return {
-        intro: {
-          "image": "https://via.placeholder.com/950x630",
-          "quote": config.about.contactQuote
+        hero: {
+          'header': "Let's Work <br>Together",
+          'copy': "Looking for a website? Need an engaging email to drive customers to your site? Just asking for advice? I can't wait to tackle whatever challenge you are having."
         }
       }
     }
