@@ -44,7 +44,7 @@
       align-self: start;
       object-fit: cover;
       width: 100vw;
-      min-height: 100%;
+      min-height: 50vh;
     }
     .bqwi-quote {
       align-self: center;
@@ -94,6 +94,10 @@
         grid-row-end: 4;
         grid-column-start: 1;
         grid-column-end: 7;
+      }
+      .bqwi-image {
+        object-fit: contain;
+        max-height: 50vh;
       }
     }
   }
