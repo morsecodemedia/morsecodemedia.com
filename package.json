@@ -22,7 +22,8 @@
     "node-sass": "^4.10.0",
     "nuxt": "^2.0.0",
     "sass-loader": "^7.1.0",
-    "vue-lazyload": "^1.2.6"
+    "vue-lazyload": "^1.2.6",
+    "vuex-persistedstate": "^2.5.4"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

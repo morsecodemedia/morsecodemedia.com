@@ -2,7 +2,7 @@
   <section>
     <nav class="case-studies-filter">
       <ul>
-        <li @click="showPwdProjects = !showPwdProjects">
+        <li @click="toggleProjects">
           <font-awesome-icon
             v-if="!showPwdProjects"
             icon="lock" />
@@ -34,6 +34,7 @@
 
 <script>
   import Vue from 'vue'
+  import { mapGetters, mapMutations } from 'vuex'
   import { caseStudies } from '~/components/config.json'
   import caseStudyListing from '~/components/case-study-listing'
   import { library } from '@fortawesome/fontawesome-svg-core'
@@ -49,7 +50,6 @@
     },
     data() {
       return {
-        showPwdProjects: false,
         displayCaseStudies: false,
         caseStudies: caseStudies,
         activeCaseStudyCategory: 'all',
@@ -273,7 +273,10 @@
           }
         }
         return classArray
-      }
+      },
+      ...mapGetters('casestudies', [
+        'showPwdProjects'
+      ])
     },
     mounted() {
       this.displayCaseStudies = true
@@ -284,7 +287,10 @@
             const j = Math.floor(Math.random() * (i + 1));
             [array[i], array[j]] = [array[j], array[i]];
         }
-      }
+      },
+      ...mapMutations('casestudies', [
+        'toggleProjects'
+      ])
     }
   }
 </script>
