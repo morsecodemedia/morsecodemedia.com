@@ -373,7 +373,12 @@
       "gallery": [
         "/web-patravel/patravel-homepage-desktop-01.jpg"
       ],
-      "overview" : "Pennsylvania Travel is a travel agency for unique global vacation deals.",
+      "overview": {
+        "description": "Pennsylvania Travel is a travel agency for unique global vacation deals.",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
       "description": [
         {
           "title": "challenge",
@@ -519,7 +524,12 @@
       "gallery": [
         "/web-xiaflex-dc/hcp/xiaflex-dc-homepage-desktop-01.jpg"
       ],
-      "overview" : "Website for both HCPs and Patients to learn about Dupuytren's Contracture and the Xiaflex, the only FDA-approved non-surgical option, for treatment.",
+      "overview": {
+        "description": "Website for both HCPs and Patients to learn about Dupuytren's contracture and XIAFLEX<sup>&reg;</sup>.",
+        "bgColor": "#eb5903",
+        "titleColor": "#FFFFFF",
+        "descriptionColor": "#002e5d"
+      },
       "description": [
         {
           "title": "challenge",
@@ -560,7 +570,7 @@
         "/web-xiaflex-pd/hcp/xiaflex-pd-homepage-desktop-01.jpg"
       ],
       "overview": {
-        "description": "Website for both HCPs and Patients to learn about Peyronie's Disease and the Xiaflex, the only FDA-approved non-surgical option, for treatment.",
+        "description": "Website for both HCPs and Patients to learn about Peyronie's Disease and Xiaflex.",
         "bgColor": "#002e5d",
         "titleColor": "#FFFFFF",
         "descriptionColor": "#818181"
@@ -651,7 +661,12 @@
       "gallery": [
         "/web-radicava/patient/radicava-homepage-desktop-01.jpg"
       ],
-      "overview" : "A branded website for Radicava<sup>&reg</sup>. Radicava<sup>&reg</sup> (edaravone) is the only FDA-approved treatment option for amyotrophic lateral sclerosis (ALS) in the last 20 years.",
+      "overview": {
+        "description": "A branded website for RADICAVA<sup>&reg</sup>. RADICAVA<sup>&reg</sup> (edaravone) is the only FDA-approved treatment option for amyotrophic lateral sclerosis (ALS) in the last 20 years.",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
       "description": [
         {
           "title": "challenge",
@@ -750,7 +765,12 @@
         "color2": ""
       },
       "gallery": ["https://www.morsecodemedia.com/site/assets/files/1141/ipipeline-3.jpg"],
-      "overview" : "iPipeline is a technology provider of SaaS solutions that drives straight-through processing for the insurance and financial services industry.",
+      "overview": {
+        "description": "iPipeline is a technology provider of SaaS solutions that drives straight-through processing for the insurance and financial services industry.",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
       "description": [
         {
           "title": "challenge",
@@ -958,7 +978,7 @@
       ],
       "video": "315877061",
       "overview": {
-        "description": "Interactive Touch Screen for XIAFLEX for <nobr>Dupuytren's contracture.</nobr>",
+        "description": "Interactive Touch Screen for XIAFLEX<sup>&reg;</sup> for <nobr>Dupuytren's contracture.</nobr>",
         "bgColor": "#eb5903",
         "titleColor": "#FFFFFF",
         "descriptionColor": "#002e5d"
@@ -1001,7 +1021,12 @@
       },
       "gallery": [],
       "video": "315877061",
-      "overview" : "A touchscreen expereience for the 2017 ASSH Conference. This conference panel showcases procedure videos, treatment efficacy and patient profiles of those treated with Xiaflex for Dupuytren's contracture.",
+      "overview": {
+        "description": "A touchscreen expereience for the 2017 ASSH Conference. This conference panel showcases procedure videos, treatment efficacy and patient profiles of those treated with XIAFLEX<sup>&reg;</sup> for Dupuytren's contracture.",
+        "bgColor": "#eb5903",
+        "titleColor": "#FFFFFF",
+        "descriptionColor": "#002e5d"
+      },
       "description": [
         {
           "title": "challenge",
@@ -1039,7 +1064,12 @@
         "color2": ""
       },
       "gallery": [],
-      "overview" : "",
+      "overview": {
+        "description": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
       "description": [
         {
           "title": "challenge",
@@ -1078,7 +1108,12 @@
       },
       "gallery": [],
       "video": "315877061",
-      "overview" : "",
+      "overview": {
+        "description": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
       "description": [
         {
           "title": "challenge",
@@ -1116,7 +1151,12 @@
         "color2": ""
       },
       "gallery": [],
-      "overview" : "",
+      "overview": {
+        "description": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
       "description": [
         {
           "title": "challenge",
@@ -1154,7 +1194,12 @@
         "color2": ""
       },
       "gallery": [],
-      "overview" : "",
+      "overview": {
+        "description": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
       "description": [
         {
           "title": "challenge",
@@ -1192,7 +1237,12 @@
         "color2": ""
       },
       "gallery": [],
-      "overview" : "",
+      "overview": {
+        "description": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
       "description": [
         {
           "title": "challenge",
@@ -1230,7 +1280,12 @@
         "color2": ""
       },
       "gallery": [],
-      "overview" : "",
+      "overview": {
+        "description": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
       "description": [
         {
           "title": "challenge",
@@ -1268,7 +1323,12 @@
         "color2": ""
       },
       "gallery": [],
-      "overview" : "",
+      "overview": {
+        "description": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
       "description": [
         {
           "title": "challenge",
@@ -1308,7 +1368,12 @@
       "needsPassword": true,
       "gallery": [],
       "video": "315877061",
-      "overview" : "",
+      "overview": {
+        "description": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
       "description": [
         {
           "title": "challenge",
@@ -1346,7 +1411,12 @@
       },
       "needsPassword": false,
       "gallery": [],
-      "overview" : "",
+      "overview": {
+        "description": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
       "description": [
         {
           "title": "challenge",
@@ -1384,7 +1454,12 @@
       },
       "needsPassword": false,
       "gallery": [],
-      "overview" : "",
+      "overview": {
+        "description": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
       "description": [
         {
           "title": "challenge",
