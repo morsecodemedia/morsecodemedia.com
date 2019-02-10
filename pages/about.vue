@@ -3,56 +3,58 @@
     <siteHeader />
     <sectionHero :hero="hero" />
 
-    <div style="display:flex;">
-      <div style="width:45vw; height:50vh;">
-        <img
-          src="https://www.morsecodemedia.com/site/assets/files/1016/bmorse-headshot-1.jpg"
-          style="width:50vw; height:50vh; display: flex;">
-      </div>
-
-      <div style="width:50vw; height:50vh;">
+    <div class="about-1up">
+      <div class="content-block">
+        <h2>My Story</h2>
         <p v-html="about.aboutQuote" />
         <p v-html="about.trackRecordQuote" />
       </div>
     </div>
 
-    <div class="description-container">
-      <div>
-        <h2>Work History</h2>
+    <div class="about-2up">
+      <div class="content-block content-block--left">
+        <h3>Work History</h3>
         <ul>
           <li
             v-for="(work, index) in about.workHistory"
             :key="index">
-            {{ work.title }} at {{ work.company }} {{ work.yearStart }}-{{ work.yearEnd }}
+            <span class="dates">{{ work.yearStart }}-<span v-if="work.yearEnd">{{ work.yearEnd }}</span><span v-else>Present</span></span><br>
+            {{ work.title }} at {{ work.company }}
           </li>
         </ul>
         <p>More about my career on <a
           href="https://www.linkedin.com/in/brandonmorse"
           target="_blank">LinkedIn</a></p>
       </div>
-      <div>
-        <h2>Recognition</h2>
+      <div class="content-block content-block--right">
+        <h3>Recognition</h3>
         <ul>
           <li
             v-for="(award, index) in about.awards"
             :key="index">
-            {{ award.count }} {{ award.award }} ({{ award.organization }})
+            <span class="awardOrg">{{ award.organization }}</span>
+            <br>
+            {{ award.count }} {{ award.award }}
           </li>
         </ul>
       </div>
     </div>
 
-    <div style="display: flex;">
-      <h2>Certifications</h2>
-      <ul>
-        <li
-          v-for="(cert, index) in about.certifications"
-          :key="index">
-          {{ cert.certification }} ({{ cert.organization }})
-          <br>
-          <span>{{ cert.certificationStart }}-{{ cert.certificationEnd }}</span>
-        </li>
-      </ul>
+    <div class="about-1up">
+      <div class="content-block content-block--center">
+        <h3>Certifications</h3>
+        <ul>
+          <li
+            v-for="(cert, index) in about.certifications"
+            :key="index">
+            <span class="dates">{{ cert.certificationStart }}-{{ cert.certificationEnd }}</span>
+            <br>
+            {{ cert.certification }}
+            <br>
+            <span class="certOrg">({{ cert.organization }})</span>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <siteFooter />
@@ -107,44 +109,107 @@
     background: radial-gradient(ellipse at center, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1 );
   }
-  .description-container {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-auto-rows: 1fr;
-    div {
-      grid-column: span 1;
-      grid-row: span 1;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      padding: 35px;
-      h2 {
-        justify-self: center;
-        border-bottom: 4px solid #222;
-        display: inline-block;
-        font-size: 32px;
-        padding: 0 0 15px 0;
-        margin: 0 0 15px 0;
-        text-transform: uppercase;
+
+  .about-1up {
+    display: flex;
+    width: 100vw;
+    min-height: 50vh;
+    align-content: center;
+    justify-content: center;
+    padding: 35px 0;
+    .content-block {
+      height: 100%;
+      width: 90%;
+      &--center {
         text-align: center;
       }
-      p {
+    }
+  }
+
+  .about-2up {
+    display: block;
+    width: 100vw;
+    min-height: 50vh;
+    justify-content:center;
+    align-content: center;
+    .content-block {
+      height: 100%;
+      &--left {
         padding: 0 20px;
-        margin: 0 0 20px 0;
+        text-align: left;
       }
-      img {
-        object-fit: contain;
-        object-position: center center;
-        height: 100%;
+      &--right {
+        padding: 0 20px;
+        text-align: left;
+      }
+    }
+  }
+
+  .about-1up,
+  .about-2up {
+    h3 {
+      position: relative;
+      display: inline-block;
+      &:after {
+        display: block;
+        width: 50px;
+        height: 10px;
+        background-color: #222;
+        position: absolute;
+        top: 0;
+        left: 50%;
+      }
+    }
+    ul {
+      list-style: none;
+      li {
+        span {
+          &.dates,
+          &.awardOrg,
+          &.certOrg {
+            font-size: .8em;
+          }
+        }
       }
     }
   }
 
   @media (min-width: 768px) {
-
+    .about-1up {
+      .content-block {
+        width: 75%;
+      }
+    }
+    .about-2up {
+      display: flex;
+      .content-block {
+        height: 100%;
+        width: 50vw;
+        &--left {
+          padding: 0 40px 0 20px;
+          text-align: right;
+        }
+        &--right {
+          padding: 0 20px 0 40px;
+          text-align: left;
+        }
+      }
+    }
   }
 
   @media (min-width: 992px) {
+    .about-1up {
+      .content-block {
+        width: 60%;
+      }
+    }
+  }
 
+  @media (min-width: 1200px) {
+    .about-1up {
+      .content-block {
+        width: 50%;
+      }
+    }
   }
 </style>
