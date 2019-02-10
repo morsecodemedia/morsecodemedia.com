@@ -10,7 +10,9 @@
           class="case-study-intro">
           <div class="case-study-intro-copy">
             <h1 :style="{color: cs.overview.titleColor}">{{ cs.title }}</h1>
-            <h2 :style="{color: cs.overview.descriptionColor}">{{ cs.overview.description }}</h2>
+            <h2
+              :style="{color: cs.overview.descriptionColor}"
+              v-html="cs.overview.description" />
             <p><a
               :style="{color: cs.overview.titleColor}"
               :href="cs.url">{{ cs.url }}</a></p>
@@ -34,6 +36,20 @@
               </div>
             </div>
           </div>
+        </div>
+
+        <div
+          v-if="cs.video"
+          :style="{'background-color': cs.overview.bgColor}"
+          class="case-study-video embed-responsive embed-responsive-16by9">
+          <iframe
+            :src="'https://player.vimeo.com/video/' + cs.video"
+            width="1200"
+            height="360"
+            frameborder="0"
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowfullscreen />
         </div>
 
         <div
@@ -168,6 +184,32 @@
 </script>
 
 <style lang="scss">
+  .embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+
+    .embed-responsive-item,
+    iframe,
+    embed,
+    object,
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      border: 0;
+    }
+  }
+
+  // Modifier class for 16:9 aspect ratio
+  .embed-responsive-16by9 {
+    padding-bottom: 56.25%;
+  }
   .password-overlay {
     display: none;
     position: fixed;
