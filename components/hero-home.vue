@@ -7,8 +7,9 @@
     </article>
     <aside class="hero-image">
       <img
+        class="hero-image"
         src="#"
-        alt="Broken Image">
+        alt="Glitch Images Go Here">
     </aside>
   </section>
 </template>
@@ -62,12 +63,12 @@
       }
     }
     .hero-image {
-      background: rosybrown;
       grid-area: hi;
       align-self: center;
       justify-self: center;
     }
   }
+
   @media (min-width: 768px) {
     .hero {
       grid-template-rows: 45px auto auto auto auto 45px;
