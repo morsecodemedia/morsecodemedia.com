@@ -23,7 +23,8 @@
     <nav
       v-if="navigation.length > 0"
       class="main-nav">
-      <ul>
+      <ul
+        class="site-nav">
         <li
           v-for="nav in navigation"
           :key="nav.index">
@@ -35,7 +36,7 @@
       </ul>
       <ul
         v-if="socialMedia.length"
-        class="social">
+        class="social-nav">
         <li
           v-for="(sm, index) in socialMedia.filter((sm)=>sm.url)"
           :key="index">
@@ -47,18 +48,39 @@
           </a>
         </li>
       </ul>
+      <ul
+        class="user-pref">
+        <li @click="toggleProjects">
+          <span
+            v-if="!showPwdProjects">
+            <font-awesome-icon
+              icon="lock" />
+            &nbsp;
+            Show Protected Case Studies
+          </span>
+          <span
+            v-else>
+            <font-awesome-icon
+              icon="lock-open" />
+            &nbsp;
+            Hide Protected Case Studies
+          </span>
+        </li>
+      </ul>
     </nav>
   </header>
 </template>
 
 <script>
   import Vue from 'vue'
+  import { mapGetters, mapMutations } from 'vuex'
   import { navigation, about } from '~/components/config.json'
   import { library } from '@fortawesome/fontawesome-svg-core'
   import { faGithub, faLinkedin, faStackOverflow } from '@fortawesome/free-brands-svg-icons'
+  import { faLock, faLockOpen } from '@fortawesome/free-solid-svg-icons'
   import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-  library.add(faGithub, faLinkedin, faStackOverflow)
+  library.add(faGithub, faLinkedin, faStackOverflow, faLock, faLockOpen)
   Vue.component('font-awesome-icon', FontAwesomeIcon)
 
   export default {
@@ -72,6 +94,11 @@
         socialMedia: about.socialMedia
       }
     },
+    computed: {
+      ...mapGetters('casestudies', [
+        'showPwdProjects'
+      ])
+    },
     methods: {
       toggleMenu: function() {
         if ( document.querySelector('.menu-icon').classList.contains('open') ) {
@@ -83,7 +110,10 @@
           document.querySelector('.main-nav').classList.add('open')
           document.querySelector('.menu-label').innerHTML = 'close'
         }
-      }
+      },
+      ...mapMutations('casestudies', [
+        'toggleProjects'
+      ])
     }
   }
 </script>
@@ -226,12 +256,14 @@
       background: #222;
       &.open {
         display: flex;
+        align-content: space-between;
+        flex-direction: column;
       }
       ul {
         list-style-type: none;
         li {
-          margin-bottom: 55px;
           text-align: center;
+          color: white;
           a {
             color: white;
             font-size: 32px;
@@ -243,15 +275,28 @@
             }
           }
         }
-        &.social {
-          position: absolute;
-          bottom: 5vh;
+        &.site-nav {
+          height: 50vh;
+          list-style-type: none;
+          align-content: space-between;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+        }
+        &.social-nav {
           li {
             display: inline-block;
+            margin: 0 15px 0 0;
             a {
-              color: white;
               font-size: 18px;
               padding: 0 15px;
+            }
+          }
+        }
+        &.user-pref {
+          li {
+            &:hover {
+              cursor: pointer;
             }
           }
         }
