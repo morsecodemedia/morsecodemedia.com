@@ -559,7 +559,12 @@
       "gallery": [
         "/web-xiaflex-pd/hcp/xiaflex-pd-homepage-desktop-01.jpg"
       ],
-      "overview" : "Website for both HCPs and Patients to learn about Peyronie's Disease and the Xiaflex, the only FDA-approved non-surgical option, for treatment.",
+      "overview": {
+        "description": "Website for both HCPs and Patients to learn about Peyronie's Disease and the Xiaflex, the only FDA-approved non-surgical option, for treatment.",
+        "bgColor": "#002e5d",
+        "titleColor": "#FFFFFF",
+        "descriptionColor": "#818181"
+      },
       "description": [
         {
           "title": "challenge",
@@ -951,7 +956,13 @@
         "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-01.jpg",
         "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-02.jpg"
       ],
-      "overview" : "",
+      "video": "315877061",
+      "overview": {
+        "description": "Interactive Touch Screen for XIAFLEX for <nobr>Dupuytren's contracture.</nobr>",
+        "bgColor": "#eb5903",
+        "titleColor": "#FFFFFF",
+        "descriptionColor": "#002e5d"
+      },
       "description": [
         {
           "title": "challenge",
@@ -989,6 +1000,7 @@
         "color2": ""
       },
       "gallery": [],
+      "video": "315877061",
       "overview" : "A touchscreen expereience for the 2017 ASSH Conference. This conference panel showcases procedure videos, treatment efficacy and patient profiles of those treated with Xiaflex for Dupuytren's contracture.",
       "description": [
         {
@@ -1053,7 +1065,6 @@
       "active": true,
       "awards": []
     },
-
     {
       "id": "rad003",
       "title": "ALSFRS-R Interactive Human Body Detail Aid",
@@ -1066,6 +1077,7 @@
         "color2": ""
       },
       "gallery": [],
+      "video": "315877061",
       "overview" : "",
       "description": [
         {
@@ -1295,6 +1307,7 @@
       },
       "needsPassword": true,
       "gallery": [],
+      "video": "315877061",
       "overview" : "",
       "description": [
         {
@@ -1421,7 +1434,13 @@
         "/ipad-xtra-kickstarts/xtra-kickstarts-04.jpg",
         "/ipad-xtra-kickstarts/xtra-kickstarts-05.jpg"
       ],
-      "overview" : "",
+      "video": "315877061",
+      "overview": {
+        "description": "",
+        "bgColor": "#eb5903",
+        "titleColor": "#FFFFFF",
+        "descriptionColor": "#002e5d"
+      },
       "description": [
         {
           "title": "challenge",
@@ -1462,7 +1481,13 @@
         "/native-endo-video-library/native-endo-video-library-video-listing-01.jpg",
         "/native-endo-video-library/native-endo-video-library-downloading-01.jpg"
       ],
-      "overview" : "",
+      "video": "315877061",
+      "overview": {
+        "description": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
       "description": [
         {
           "title": "challenge",
