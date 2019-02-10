@@ -50,7 +50,7 @@
             hid: 'description',
             name: 'description',
             content: "Brandon Morse is an award-winning web developer, based out of New Jersey, USA."
-          }
+          },
         ]
       }
     },
