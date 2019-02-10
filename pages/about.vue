@@ -47,7 +47,7 @@
           <li
             v-for="(cert, index) in about.certifications"
             :key="index">
-            <span class="dates">{{ cert.certificationStart }}-{{ cert.certificationEnd }}</span>
+            <span class="dates">{{ cert.certificationStart }}-<span v-if="cert.certificationEnd">{{ cert.certificationEnd }}</span><span v-else>Current</span></span>
             <br>
             {{ cert.certification }}
             <br>
@@ -121,7 +121,7 @@
       height: 100%;
       width: 90%;
       &--center {
-        text-align: center;
+        text-align: left;
       }
     }
   }
@@ -178,6 +178,9 @@
     .about-1up {
       .content-block {
         width: 75%;
+        &--center {
+          text-align: center;
+        }
       }
     }
     .about-2up {
