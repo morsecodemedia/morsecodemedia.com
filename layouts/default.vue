@@ -29,20 +29,29 @@
     padding: 0;
   }
 
-  h1 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: 'Karla', sans-serif;
+    nobr {
+      font-family: 'Karla', sans-serif;
+    }
+  }
+
+  h1 {
     font-size: 72px;
     margin-bottom: 25px;
   }
 
   h2 {
-    font-family: 'Karla', sans-serif;
     font-size: 52px;
     margin-bottom: 25px;
   }
 
   h3 {
-    font-family: 'Karla', sans-serif;
     font-size: 36px;
     padding-bottom: 15px;
     margin-bottom: 15px;
@@ -50,12 +59,10 @@
   }
 
   h4 {
-    font-family: 'Karla', sans-serif;
     font-size: 30px;
   }
 
   h5 {
-    font-family: 'Karla', sans-serif;
     font-size: 26px;
   }
 
