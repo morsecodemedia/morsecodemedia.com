@@ -40,6 +40,10 @@ module.exports = {
     {
       src: '~/plugins/localStorage.js',
       ssr: false
+    },
+    {
+      src: '~/plugins/axe',
+      ssr: false
     }
   ],
 

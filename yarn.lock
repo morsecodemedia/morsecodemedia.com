@@ -1283,6 +1283,11 @@ aws4@^1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.8.0.tgz#f0e003d9ca9e7f59c7a508945d7b2ef9a04a542f"
 
+axe-core@^3.0.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-3.1.2.tgz#ca0aff897ebefca7552f97859dc1217c06c4f9e6"
+  integrity sha512-e1WVs0SQu3tM29J9a/mISGvlo2kdCStE+yffIAJF6eb42FS+eUFEVz9j4rgDeV2TAfPJmuOZdRetWYycIbK7Vg==
+
 babel-code-frame@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-code-frame/-/babel-code-frame-6.26.0.tgz#63fd43f7dc1e3bb7ce35947db8fe369a3f58c74b"
@@ -6814,6 +6819,13 @@ vm-browserify@0.0.4:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-0.0.4.tgz#5d7ea45bbef9e4a6ff65f95438e0a87c357d5a73"
   dependencies:
     indexof "0.0.1"
+
+vue-axe@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/vue-axe/-/vue-axe-1.0.7.tgz#47ad7c5aea4d7d762bf0891fe8e16bf24063405a"
+  integrity sha512-/o1m3cH9StOi9gBGSGI5EyApY24PIN1vzC8FxRDT5QXErSWbxUunVWQuhU65kqvmAsOJcDg5iW6KXoJEbf/x4Q==
+  dependencies:
+    axe-core "^3.0.2"
 
 vue-eslint-parser@^2.0.3:
   version "2.0.3"

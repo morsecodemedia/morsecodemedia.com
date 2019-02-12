@@ -22,6 +22,7 @@
     "node-sass": "^4.10.0",
     "nuxt": "^2.0.0",
     "sass-loader": "^7.1.0",
+    "vue-axe": "^1.0.7",
     "vue-lazyload": "^1.2.6",
     "vuex-persistedstate": "^2.5.4"
   },
