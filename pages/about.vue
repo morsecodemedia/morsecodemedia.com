@@ -83,8 +83,16 @@
           {
             hid: 'description',
             name: 'description',
-            content: "Get the quick pitch of who Brandon Morse is and his past experience as a developer."
-          }
+            content: 'Get the quick pitch of who Brandon Morse is and his past experience as a developer.'
+          },
+          { hid: 'ogtitle', property: 'og:title', content: "About Brandon Morse | morsecodemedia.com" },
+          { hid: 'ogurl', property: 'og:url', content: 'https://www.morsecodemedia.com/contact/' },
+          { hid: 'ogdescription', property: 'og:description', content: 'Get the quick pitch of who Brandon Morse is and his past experience as a developer.' },
+          { hid: 'twsite', name: 'twitter:site', content: 'https://www.morsecodemedia.com/contact/' },
+          { hid: 'twtitle', name: 'twitter:title', content: "About Brandon Morse | morsecodemedia.com" },
+          { hid: 'twdescription', name: 'twitter:description', content: 'Get the quick pitch of who Brandon Morse is and his past experience as a developer.' },
+          { hid: 'googlename', itemprop: 'name', content: "About Brandon Morse | morsecodemedia.com" },
+          { hid: 'googledescription', itemprop: 'description', content: 'Get the quick pitch of who Brandon Morse is and his past experience as a developer.' }
         ]
       }
     },

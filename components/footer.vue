@@ -8,10 +8,10 @@
           :key="index">
           <a
             :href="sm.url"
+            :aria-label="'morsecodemedia on ' + sm.title.toLowerCase()"
             target="_blank"
             rel="noopener"
-            role="link"
-            aria-label="morsecodemedia on sm.title">
+            role="link">
             <font-awesome-icon
               :icon="['fab', sm.title.toLowerCase()]" />
           </a>
