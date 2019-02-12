@@ -2,25 +2,19 @@
 
 > Morsecodemedia.com - the portfolio of Brandon G. Morse
 
-### 2019-02-10 Lighthouse Report
-Performace: 80  
-Accessibility: 72  
-Best Practices: 86  
+### 2019-02-11 Lighthouse Report
+Performace: 77
+Accessibility: 100
+Best Practices: 93
 SEO: 100
 
 ## Todo Notes & Cleanup
 - Add Analytics
-- `rel="noopener"` on `target="_blank"` links
 - Create Favicon
 - ALT tag images
-- ARIA attributes
-- icon Links do not have a discernible name
-- <html> element does not have a [lang] attribute
 - Add robots.txt
 - Add XML sitemap
 - `rel=canonical`
-- A11y audit
-  - logical tab order
 - Set up 301 redirects
 - Apply Color palette
 - Mobile Styles

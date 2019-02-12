@@ -25,6 +25,7 @@
 <style lang="scss">
   * {
     font-family: 'Montserrat', sans-serif;
+    font-display: auto;
     margin: 0;
     padding: 0;
   }
@@ -36,11 +37,14 @@
   h5,
   h6 {
     font-family: 'Karla', sans-serif;
+    font-display: auto;
     nobr {
       font-family: 'Karla', sans-serif;
+      font-display: auto;
     }
     span {
       font-family: 'Karla', sans-serif;
+      font-display: auto;
     }
   }
 
