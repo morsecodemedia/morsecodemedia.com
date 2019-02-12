@@ -9,12 +9,9 @@ Best Practices: 93
 SEO: 100
 
 ## Todo Notes & Cleanup
-- Add Analytics
-- Create Favicon
 - ALT tag images
-- Add robots.txt
-- Add XML sitemap
 - `rel=canonical`
+- open graph tags
 - Set up 301 redirects
 - Apply Color palette
 - Mobile Styles
