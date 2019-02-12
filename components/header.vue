@@ -57,8 +57,8 @@
       <ul
         class="user-pref">
         <li
-          @click="toggleProjects"
-          role="switch">
+          role="switch"
+          @click="toggleProjects">
           <span
             v-if="!showPwdProjects">
             <font-awesome-icon

@@ -98,7 +98,7 @@
           <img
             :src="cs.insitu.img"
             alt=""
-            role="img" />
+            role="img">
         </div>
       </div>
 
