@@ -15,7 +15,26 @@
             hid: 'description',
             name: 'description',
             content: 'Brandon Morse (morsecodemedia) is an award-winning web developer who has a passion to innovate and develop digital experiences.'
-          }
+          },
+          {property: 'og:title', content: 'The Porfolio of Brandon Morse | morsecodemedia.com'},
+          {property: 'og:site_name', content: 'morsecodemedia.com'},
+          {property: 'og:type', content: 'website'},
+          {property: 'og:url', content: 'https://www.morsecodemedia.com/my-special-page'},
+          {property: 'og:image', content: 'https://www.morsecodemedia.com/my-special-image.jpg'},
+          {property: 'og:description', content: 'Brandon Morse (morsecodemedia) is an award-winning web developer who has a passion to innovate and develop digital experiences.'},
+
+          // Twitter card
+          {name: 'twitter:card', content: 'summary'},
+          {name: 'twitter:site', content: 'https://www.morsecodemedia.com/my-special-page'},
+          {name: 'twitter:title', content: 'The Porfolio of Brandon Morse | morsecodemedia.com'},
+          {name: 'twitter:description', content: 'Brandon Morse (morsecodemedia) is an award-winning web developer who has a passion to innovate and develop digital experiences.'},
+          {name: 'twitter:creator', content: '@morsecodemedia'},
+          {name: 'twitter:image:src', content: 'https://www.morseodemedia.com/my-special-image.jpg'},
+
+          // Google / Schema.org markup:
+          {itemprop: 'name', content: 'The Porfolio of Brandon Morse | morsecodemedia.com'},
+          {itemprop: 'description', content: 'Brandon Morse (morsecodemedia) is an award-winning web developer who has a passion to innovate and develop digital experiences.'},
+          {itemprop: 'image', content: 'https://www.my-site.com/my-special-image.jpg'}
         ]
       }
     }
