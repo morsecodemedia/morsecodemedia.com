@@ -60,6 +60,7 @@
       }
       .hero-copy__small {
         color: #54bad8;
+        font-family: 'Montserrat', sans-serif;
         font-size: 18px;
         font-weight: bold;
         text-transform: uppercase;
@@ -70,6 +71,7 @@
         }
       }
       .hero-copy__large {
+        font-family: 'Montserrat', sans-serif;
         font-size: 52px;
         line-height: 66px;
         margin-bottom: 0px;
@@ -79,6 +81,7 @@
         }
       }
       .hero-copy__normal {
+        font-family: 'Montserrat', sans-serif;
         font-size: 32px;
         line-height: 46px;
         margin-bottom: 0px;
