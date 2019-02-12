@@ -2,7 +2,9 @@
   <section>
     <nav class="case-studies-filter">
       <ul>
-        <li @click="toggleProjects">
+        <li
+          @click="toggleProjects"
+          role="switch">
           <font-awesome-icon
             v-if="!showPwdProjects"
             icon="lock" />
@@ -12,12 +14,14 @@
         </li>
         <li
           :class="{ active: (activeCaseStudyCategory === 'all') }"
-          @click="activeCaseStudyCategory = 'all'">All Projects</li>
+          @click="activeCaseStudyCategory = 'all'"
+          role="switch">All Projects</li>
         <li
           v-for="(cat, index) in activeCategories"
           :key="index"
           :class="{ active: (activeCaseStudyCategory === cat.toLowerCase().replace(/\s/g, '-')) }"
-          @click="activeCaseStudyCategory = cat.toLowerCase().replace(/\s/g, '-')">{{ cat }}</li>
+          @click="activeCaseStudyCategory = cat.toLowerCase().replace(/\s/g, '-')"
+          role="switch">{{ cat }}</li>
       </ul>
     </nav>
     <article

@@ -8,7 +8,9 @@
           :key="index">
           <a
             :href="sm.url"
-            target="_blank">
+            target="_blank"
+            rel="noopener"
+            role="link">
             <font-awesome-icon
               :icon="['fab', sm.title.toLowerCase()]" />
           </a>

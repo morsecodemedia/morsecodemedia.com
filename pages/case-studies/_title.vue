@@ -15,7 +15,9 @@
               v-html="cs.overview.description" />
             <p><a
               :style="{color: cs.overview.titleColor}"
-              :href="cs.url">{{ cs.url }}</a></p>
+              :href="cs.url"
+              target="_blank"
+              rel="noopener">{{ cs.url }}</a></p>
             <p
               :style="{color: cs.overview.descriptionColor}"
               class="case-study-meta">
@@ -70,7 +72,9 @@
 
             <img
               v-if="des.type === 'image' && des.src"
-              :src="des.src">
+              :src="des.src"
+              alt=""
+              role="img">
           </div>
         </div>
 
@@ -92,7 +96,9 @@
           :style="{background: 'linear-gradient' + '(135deg, ' + cs.insitu.color1 + ' 0%, ' + cs.insitu.color2 + ' 100%)'}"
           class="case-study-insitu">
           <img
-            :src="cs.insitu.img">
+            :src="cs.insitu.img"
+            alt=""
+            role="img" />
         </div>
       </div>
 

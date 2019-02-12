@@ -24,7 +24,8 @@
         </ul>
         <p>More about my career on <a
           href="https://www.linkedin.com/in/brandonmorse"
-          target="_blank">LinkedIn</a></p>
+          target="_blank"
+          rel="noopener">LinkedIn</a></p>
       </div>
       <div class="content-block content-block--right">
         <h3>Recognition</h3>

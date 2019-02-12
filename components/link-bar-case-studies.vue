@@ -2,7 +2,8 @@
   <section
     v-if="caseStudies"
     class="link-bar">
-    <a href="/case-studies/">See More Work &gt;</a>
+    <a
+      href="/case-studies/">See More Work &gt;</a>
   </section>
 </template>
 

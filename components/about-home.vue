@@ -3,11 +3,11 @@
     <img
       :src="headshotImg"
       class="headshot"
+      alt="A headshot of Brandon Morse"
       role="presentation">
     <blockquote class="intro-quote">
       <p>
         {{ quote }}
-
       </p>
     </blockquote>
   </section>

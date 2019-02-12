@@ -4,7 +4,7 @@
       :src="bqwi.image"
       class="bqwi-image"
       role="presentation"
-      alt="">
+      alt="An image to accompany the quote, however, it provides no additional information and the message is still conveyed without its inclusion.">
     <blockquote
       class="bqwi-quote"
       v-html="bqwi.quote" />

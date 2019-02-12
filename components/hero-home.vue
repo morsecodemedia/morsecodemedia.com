@@ -9,7 +9,8 @@
       <img
         class="hero-image"
         src="#"
-        alt="Glitch Images Go Here">
+        alt="Glitch Images Go Here"
+        role="img">
     </aside>
   </section>
 </template>

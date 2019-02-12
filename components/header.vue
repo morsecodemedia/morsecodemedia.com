@@ -2,7 +2,9 @@
   <header>
     <div class="masthead">
       <div class="logo">
-        <a href="/">
+        <a
+          href="/"
+          role="link">
           <span>&lt;</span>morsecodemedia<span>&gt;</span>
         </a>
       </div>
@@ -10,6 +12,7 @@
         class="menu-btn"
         aria-label="Menu"
         aria-controls="navigation"
+        role="button"
         @click="toggleMenu">
         <div class="menu-icon">
           <span />
@@ -29,7 +32,8 @@
           v-for="nav in navigation"
           :key="nav.index">
           <a
-            :href="nav.url">
+            :href="nav.url"
+            role="menuitem">
             {{ nav.text }}
           </a>
         </li>
@@ -42,7 +46,9 @@
           :key="index">
           <a
             :href="sm.url"
-            target="_blank">
+            target="_blank"
+            rel="noopener"
+            role="link">
             <font-awesome-icon
               :icon="['fab', sm.title.toLowerCase()]" />
           </a>
@@ -50,7 +56,9 @@
       </ul>
       <ul
         class="user-pref">
-        <li @click="toggleProjects">
+        <li
+          @click="toggleProjects"
+          role="switch">
           <span
             v-if="!showPwdProjects">
             <font-awesome-icon

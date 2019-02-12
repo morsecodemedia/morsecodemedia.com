@@ -3,7 +3,8 @@
     v-lazy-container="{ selector: 'img' }"
     :to="'/case-studies/' + cs.title | lowerKebab"
     :class="styleClasses"
-    class="case-study">
+    class="case-study"
+    role="link">
     <img
       :data-src="cs.img"
       :data-loading="loadingColors[Math.floor(Math.random()*loadingColors.length)]"
