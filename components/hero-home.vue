@@ -64,7 +64,7 @@
         font-size: 18px;
         font-weight: bold;
         text-transform: uppercase;
-        margin-bottom: 0px;
+        margin-bottom: 20px;
         &:after {
           content: "\A";
           white-space: pre;
@@ -73,16 +73,16 @@
       .hero-copy__large {
         font-family: 'Montserrat', sans-serif;
         font-size: 52px;
+        font-weight: normal;
         line-height: 66px;
         margin-bottom: 0px;
-        &:after {
-          content: "\A";
-          white-space: pre;
-        }
+        padding: 0;
+        margin: 0 0 0 -5px;
       }
       .hero-copy__normal {
         font-family: 'Montserrat', sans-serif;
         font-size: 32px;
+        font-weight: normal;
         line-height: 46px;
         margin-bottom: 0px;
       }
