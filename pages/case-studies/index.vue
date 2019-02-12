@@ -1,8 +1,10 @@
 <template>
   <section class="container">
     <siteHeader />
-    <sectionHero :hero="hero" />
-    <caseStudies />
+    <main>
+      <sectionHero :hero="hero" />
+      <caseStudies />
+    </main>
     <siteFooter />
   </section>
 </template>

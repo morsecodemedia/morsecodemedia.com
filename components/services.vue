@@ -5,7 +5,9 @@
     <article
       v-for="service in services"
       :key="service.id">
-      <h3>{{ service.title }}</h3>
+      <header>
+        <h2>{{ service.title }}</h2>
+      </header>
       <p>{{ service.description }}</p>
     </article>
   </section>
@@ -38,6 +40,12 @@
       &:nth-of-type(even) {
         background: #efefef;
       }
+      h2 {
+        font-size: 36px;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+      }
     }
   }
   @media (min-width: 768px) {
@@ -45,12 +53,20 @@
       grid-template-columns: repeat(2, 1fr);
       article {
         padding: 40px;
+        h2 {
+          font-size: 36px;
+        }
       }
     }
   }
   @media (min-width: 992px) {
     .services {
       grid-template-columns: repeat(3, 1fr);
+      article {
+        h2 {
+          font-size: 36px;
+        }
+      }
     }
   }
   @media (min-width: 1200px) {

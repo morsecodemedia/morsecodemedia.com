@@ -1,6 +1,8 @@
 <template>
   <section>
-    <nav class="case-studies-filter">
+    <nav
+      class="case-studies-filter"
+      role="menu">
       <ul>
         <li
           role="switch"

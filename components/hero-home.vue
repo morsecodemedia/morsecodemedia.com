@@ -1,9 +1,13 @@
 <template>
   <section class="hero">
     <article class="hero-copy">
-      <p class="hero-copy__small">{{ heroDescriptor }}</p>
-      <p class="hero-copy__large">{{ heroName }}</p>
-      <p class="hero-copy__normal">{{ heroStatement }}</p>
+      <header>
+        <h1 class="empty-styles">
+          <span class="hero-copy__small">{{ heroDescriptor }}</span>
+          <span class="hero-copy__large">{{ heroName }}</span>
+          <span class="hero-copy__normal">{{ heroStatement }}</span>
+        </h1>
+      </header>
     </article>
     <aside class="hero-image">
       <img
@@ -45,17 +49,34 @@
     .hero-copy {
       grid-area: hc;
       padding: 45px 10px;
+      h1 {
+        &.empty-styles {
+          margin: 0;
+          padding: 0;
+          line-height: 0;
+          display: inline-grid;
+          display: -ms-inline-grid;
+        }
+      }
       .hero-copy__small {
         color: #54bad8;
         font-size: 18px;
         font-weight: bold;
         text-transform: uppercase;
         margin-bottom: 0px;
+        &:after {
+          content: "\A";
+          white-space: pre;
+        }
       }
       .hero-copy__large {
         font-size: 52px;
         line-height: 66px;
         margin-bottom: 0px;
+        &:after {
+          content: "\A";
+          white-space: pre;
+        }
       }
       .hero-copy__normal {
         font-size: 32px;

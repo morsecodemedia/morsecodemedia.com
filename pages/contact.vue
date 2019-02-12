@@ -1,7 +1,9 @@
 <template>
   <section class="container">
     <siteHeader />
-    <sectionHero :hero="hero" />
+    <main>
+      <sectionHero :hero="hero" />
+    </main>
     <siteFooter />
   </section>
 </template>

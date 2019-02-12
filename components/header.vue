@@ -11,7 +11,6 @@
       <div
         class="menu-btn"
         aria-label="Menu"
-        aria-controls="navigation"
         role="button"
         @click="toggleMenu">
         <div class="menu-icon">
@@ -25,7 +24,8 @@
     </div>
     <nav
       v-if="navigation.length > 0"
-      class="main-nav">
+      class="main-nav"
+      role="navigation">
       <ul
         class="site-nav">
         <li

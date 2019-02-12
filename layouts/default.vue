@@ -39,6 +39,9 @@
     nobr {
       font-family: 'Karla', sans-serif;
     }
+    span {
+      font-family: 'Karla', sans-serif;
+    }
   }
 
   h1 {

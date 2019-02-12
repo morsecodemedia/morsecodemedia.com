@@ -1,63 +1,64 @@
 <template>
   <section class="container">
     <siteHeader />
-    <sectionHero :hero="hero" />
+    <main>
+      <sectionHero :hero="hero" />
 
-    <div class="about-1up">
-      <div class="content-block">
-        <h2>My Story</h2>
-        <p v-html="about.aboutQuote" />
-        <p v-html="about.trackRecordQuote" />
+      <div class="about-1up">
+        <div class="content-block">
+          <h2>My Story</h2>
+          <p v-html="about.aboutQuote" />
+          <p v-html="about.trackRecordQuote" />
+        </div>
       </div>
-    </div>
 
-    <div class="about-2up">
-      <div class="content-block content-block--left">
-        <h3>Work History</h3>
-        <ul>
-          <li
-            v-for="(work, index) in about.workHistory"
-            :key="index">
-            <span class="dates">{{ work.yearStart }}-<span v-if="work.yearEnd">{{ work.yearEnd }}</span><span v-else>Present</span></span><br>
-            {{ work.title }} at {{ work.company }}
-          </li>
-        </ul>
-        <p>More about my career on <a
-          href="https://www.linkedin.com/in/brandonmorse"
-          target="_blank"
-          rel="noopener">LinkedIn</a></p>
+      <div class="about-2up">
+        <div class="content-block content-block--left">
+          <h3>Work History</h3>
+          <ul>
+            <li
+              v-for="(work, index) in about.workHistory"
+              :key="index">
+              <span class="dates">{{ work.yearStart }}-<span v-if="work.yearEnd">{{ work.yearEnd }}</span><span v-else>Present</span></span><br>
+              {{ work.title }} at {{ work.company }}
+            </li>
+          </ul>
+          <p>More about my career on <a
+            href="https://www.linkedin.com/in/brandonmorse"
+            target="_blank"
+            rel="noopener">LinkedIn</a></p>
+        </div>
+        <div class="content-block content-block--right">
+          <h3>Recognition</h3>
+          <ul>
+            <li
+              v-for="(award, index) in about.awards"
+              :key="index">
+              <span class="awardOrg">{{ award.organization }}</span>
+              <br>
+              {{ award.count }} {{ award.award }}
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="content-block content-block--right">
-        <h3>Recognition</h3>
-        <ul>
-          <li
-            v-for="(award, index) in about.awards"
-            :key="index">
-            <span class="awardOrg">{{ award.organization }}</span>
-            <br>
-            {{ award.count }} {{ award.award }}
-          </li>
-        </ul>
-      </div>
-    </div>
 
-    <div class="about-1up">
-      <div class="content-block content-block--center">
-        <h3>Certifications</h3>
-        <ul>
-          <li
-            v-for="(cert, index) in about.certifications"
-            :key="index">
-            <span class="dates">{{ cert.certificationStart }}-<span v-if="cert.certificationEnd">{{ cert.certificationEnd }}</span><span v-else>Current</span></span>
-            <br>
-            {{ cert.certification }}
-            <br>
-            <span class="certOrg">({{ cert.organization }})</span>
-          </li>
-        </ul>
+      <div class="about-1up">
+        <div class="content-block content-block--center">
+          <h3>Certifications</h3>
+          <ul>
+            <li
+              v-for="(cert, index) in about.certifications"
+              :key="index">
+              <span class="dates">{{ cert.certificationStart }}-<span v-if="cert.certificationEnd">{{ cert.certificationEnd }}</span><span v-else>Current</span></span>
+              <br>
+              {{ cert.certification }}
+              <br>
+              <span class="certOrg">({{ cert.organization }})</span>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-
+    </main>
     <siteFooter />
   </section>
 </template>

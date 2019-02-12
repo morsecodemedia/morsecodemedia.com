@@ -1,7 +1,9 @@
 <template>
   <section class="section-outro">
-    <h4
-      v-html="outro.header"/>
+    <header>
+      <h4
+        v-html="outro.header"/>
+    </header>
     <p
       v-html="outro.body" />
   </section>

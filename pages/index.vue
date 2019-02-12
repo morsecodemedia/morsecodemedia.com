@@ -1,13 +1,15 @@
 <template>
   <section class="container">
     <siteHeader />
-    <heroHome />
-    <blockquoteWithImg :bqwi="bqwi" />
-    <services />
-    <trackRecord />
-    <featuredCaseStudies />
-    <linkBarCaseStudies />
-    <sectionOutro :outro="outro" />
+    <main>
+      <heroHome />
+      <blockquoteWithImg :bqwi="bqwi" />
+      <services />
+      <trackRecord />
+      <featuredCaseStudies />
+      <linkBarCaseStudies />
+      <sectionOutro :outro="outro" />
+    </main>
     <siteFooter />
   </section>
 </template>

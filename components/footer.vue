@@ -10,7 +10,8 @@
             :href="sm.url"
             target="_blank"
             rel="noopener"
-            role="link">
+            role="link"
+            aria-label="morsecodemedia on sm.title">
             <font-awesome-icon
               :icon="['fab', sm.title.toLowerCase()]" />
           </a>
