@@ -93,6 +93,9 @@
           { hid: 'twdescription', name: 'twitter:description', content: 'Get the quick pitch of who Brandon Morse is and his past experience as a developer.' },
           { hid: 'googlename', itemprop: 'name', content: "About Brandon Morse | morsecodemedia.com" },
           { hid: 'googledescription', itemprop: 'description', content: 'Get the quick pitch of who Brandon Morse is and his past experience as a developer.' }
+        ],
+        link: [
+          { hid: 'canonical', rel: 'canonical', href: 'https://www.morsecodemedia.com/about/' }
         ]
       }
     },

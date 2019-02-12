@@ -41,6 +41,9 @@
           { hid: 'twdescription', name: 'twitter:description', content: 'I have a proven track record of quality web development backed by some award winning work.' },
           { hid: 'googlename', itemprop: 'name', content: "Case Studies | morsecodemedia.com" },
           { hid: 'googledescription', itemprop: 'description', content: 'I have a proven track record of quality web development backed by some award winning work.' }
+        ],
+        link: [
+          { hid: 'canonical', rel: 'canonical', href: 'https://www.morsecodemedia.com/case-studies/' }
         ]
       }
     },

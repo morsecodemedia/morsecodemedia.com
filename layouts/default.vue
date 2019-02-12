@@ -35,6 +35,9 @@
           { hid: 'googlename', itemprop: 'name', content: 'The Porfolio of Brandon Morse | morsecodemedia.com' },
           { hid: 'googledescrition', itemprop: 'description', content: 'Brandon Morse (morsecodemedia) is an award-winning web developer who has a passion to innovate and develop digital experiences.' },
           { hid: 'googleimage', itemprop: 'image', content: 'https://www.my-site.com/my-special-image.jpg '}
+        ],
+        link: [
+          { hid: 'canonical', rel: 'canonical', href: 'https://www.morsecodemedia.com/' }
         ]
       }
     }

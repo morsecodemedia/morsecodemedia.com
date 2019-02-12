@@ -27,10 +27,12 @@ SEO: 100
 - CDN
   - Video Hosting
   - Image Hosting
+    - move images that are from old site that are still being used over
 - Vuex store
   - low animation options
 - Server
   - SSR or Static Gen
+    - hosted all on S3?
 - Update Resume/LinkedIn
 
 ## Build Setup

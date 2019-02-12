@@ -38,6 +38,9 @@
           { hid: 'twdescription', name: 'twitter:description', content: 'Looking for a website? Need an engaging email to drive customers to your site? Just asking for advice? I can tackle whatever challenge you have.' },
           { hid: 'googlename', itemprop: 'name', content: "Let's Work Together! | morsecodemedia.com" },
           { hid: 'googledescription', itemprop: 'description', content: 'Looking for a website? Need an engaging email to drive customers to your site? Just asking for advice? I can tackle whatever challenge you have.' }
+        ],
+        link: [
+          { hid: 'canonical', rel: 'canonical', href: 'https://www.morsecodemedia.com/contact/' }
         ]
       }
     },
