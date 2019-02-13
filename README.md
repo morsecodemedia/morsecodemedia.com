@@ -10,7 +10,6 @@ SEO: 100
 
 ## Todo Notes & Cleanup
 - ALT tag images
-- `rel=canonical`
 - Set up 301 redirects
 - Apply Color palette
 - Mobile Styles

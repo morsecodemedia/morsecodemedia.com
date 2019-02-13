@@ -54,20 +54,16 @@ module.exports = {
   ** Global CSS
   */
   css: [
+    'video.js/dist/video-js.css'
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    {
-      src: '~/plugins/localStorage.js',
-      ssr: false
-    },
-    {
-      src: '~/plugins/axe',
-      ssr: false
-    }
+    { src: '~/plugins/localStorage', ssr: false },
+    { src: '~/plugins/axe', ssr: false },
+    { src: '~/plugins/video-player', ssr: false }
   ],
 
   /*
