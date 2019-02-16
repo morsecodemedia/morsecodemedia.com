@@ -43,20 +43,8 @@
             </div>
           </div>
 
-          <!-- <div
-            v-if="cs.video"
-            :style="{'background-color': cs.overview.bgColor}"
-            class="case-study-video embed-responsive embed-responsive-16by9">
-            <iframe
-              :src="'https://player.vimeo.com/video/' + cs.video"
-              width="1200"
-              height="360"
-              frameborder="0"
-              webkitallowfullscreen
-              mozallowfullscreen
-              allowfullscreen />
-          </div> -->
-          <div class="case-study-video embed-responsive embed-responsive-item embed-responsive-16by9">
+          <div
+            class="case-study-video embed-responsive embed-responsive-item embed-responsive-16by9">
             <div
               v-video-player:myVideoPlayer="playerOptions"
               :playsinline="playsinline"
@@ -537,7 +525,7 @@
   }
 
   .case-study-video {
-    display: flex;
+    display: relative;
     height: 100%;
     padding: 10px;
     // &.embed-responsive {
@@ -564,8 +552,9 @@
     //   padding-bottom: 56.25%;
     // }
     .video-js {
+      position: relative;
       margin: 0 auto;
-      height: -webkit-fill-available;
+      height: 50vh;
       width: 100%;
       &.vjs-no-flex {
         .vjs-menu-button-inline {
@@ -599,6 +588,7 @@
       }
       .vjs-seeking,
       .vjs-waiting,
+      .vjs-playing,
       .vjs-controls-disabled {
         .vjs-big-play-button {
           display: none !important;
@@ -655,6 +645,27 @@
       .vjs-play-progress,
       .vjs-volume-level {
         background-color: null;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    .case-study-video {
+      .video-js {
+
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    .case-study-video {
+      .video-js {
+
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    .case-study-video {
+      .video-js {
+        height: -webkit-fill-available;
       }
     }
   }
