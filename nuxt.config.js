@@ -24,6 +24,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'description' }
     ],
     link: [
+      { rel: 'author', href:'/humans.txt' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon.ico' },
       { rel: 'icon', type: 'image/png', sizes: '196x196', href: '/favicon/favicon-196x196.png' },
       { rel: 'icon', type: 'image/png', sizes: '96x96', href: '/favicon/favicon-96x96.png' },

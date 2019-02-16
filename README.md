@@ -5,6 +5,8 @@
 
 **Website:** https://www.morsecodemedia.com
 
+**LinkedIn:** https://www.linkedin.com/in/brandonmorse/
+
 ## Work History
 **Lead Architect**
 GSW Advertising, a Syneos Health Company

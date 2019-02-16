@@ -1,8 +1,16 @@
-/* Foundation was made by ZURB, an interaction design and design strategy firm in Campbell, CA */
-/* zurb.com */
-/* humanstxt.org */
+/* TEAM */
+	Brandon Morse
+	Email: brandon@morsecodemedia.com
+  LinkedIn: https://www.linkedin.com/in/brandonmorse/
+	Twitter: @morsecodemedia
+  Website: https://www.morsecodemedia.com/
+  Blog: https://blog.morsecodemedia.com/
 
 /* SITE */
-  Standards: HTML5, CSS3
-  Components: jQuery, Orbit, Reveal
-  Software: Sublime, Git, Sass
+  Site Name: morsecodemedia
+  Site URL: https://www.morsecodemedia.com/
+	Last update: https://github.com/morsecodemedia/morsecodemedia/commits/master
+	i18n: en-us
+	Doctype: HTML5
+	IDE: VSCode, vim
+  Language/Framework: Vuejs/Nuxtjs
