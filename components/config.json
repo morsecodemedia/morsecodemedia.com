@@ -976,7 +976,10 @@
         "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-01.jpg",
         "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-02.jpg"
       ],
-      "video": "315877061",
+      "video": {
+        "src": "/placeholder-video.mp4",
+        "poster": ""
+      },
       "overview": {
         "description": "Interactive Touch Screen for XIAFLEX<sup>&reg;</sup> for <nobr>Dupuytren's contracture.</nobr>",
         "bgColor": "#eb5903",
@@ -1020,7 +1023,10 @@
         "color2": ""
       },
       "gallery": [],
-      "video": "315877061",
+      "video": {
+        "src": "/placeholder-video.mp4",
+        "poster": ""
+      },
       "overview": {
         "description": "A touchscreen expereience for the 2017 ASSH Conference. This conference panel showcases procedure videos, treatment efficacy and patient profiles of those treated with XIAFLEX<sup>&reg;</sup> for Dupuytren's contracture.",
         "bgColor": "#eb5903",
@@ -1107,7 +1113,10 @@
         "color2": ""
       },
       "gallery": [],
-      "video": "315877061",
+      "video": {
+        "src": "/placeholder-video.mp4",
+        "poster": ""
+      },
       "overview": {
         "description": "",
         "bgColor": "",
@@ -1367,7 +1376,10 @@
       },
       "needsPassword": true,
       "gallery": [],
-      "video": "315877061",
+      "video": {
+        "src": "/placeholder-video.mp4",
+        "poster": ""
+      },
       "overview": {
         "description": "",
         "bgColor": "",
@@ -1509,7 +1521,10 @@
         "/ipad-xtra-kickstarts/xtra-kickstarts-04.jpg",
         "/ipad-xtra-kickstarts/xtra-kickstarts-05.jpg"
       ],
-      "video": "315877061",
+      "video": {
+        "src": "/placeholder-video.mp4",
+        "poster": ""
+      },
       "overview": {
         "description": "",
         "bgColor": "#eb5903",
@@ -1556,7 +1571,10 @@
         "/native-endo-video-library/native-endo-video-library-video-listing-01.jpg",
         "/native-endo-video-library/native-endo-video-library-downloading-01.jpg"
       ],
-      "video": "315877061",
+      "video": {
+        "src": "/placeholder-video.mp4",
+        "poster": ""
+      },
       "overview": {
         "description": "",
         "bgColor": "",
