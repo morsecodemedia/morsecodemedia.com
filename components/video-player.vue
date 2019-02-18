@@ -2,7 +2,8 @@
   <div class="case-study-video">
     <div class="embed-responsive embed-responsive-16by9">
       <iframe
-        src="https://www.youtube.com/embed/P6d5_a-tPAg"
+        :src="video"
+        title="Video demo"
         class="embed-responsive-item"
         allowfullscreen />
     </div>
@@ -11,7 +12,15 @@
 
 <script>
   export default {
-    name: 'VideoPlayer'
+    name: 'VideoPlayer',
+    props: {
+      video: {
+        type: String,
+        required: true,
+        twoWay: true,
+        default: ''
+      }
+    }
   }
 </script>
 
