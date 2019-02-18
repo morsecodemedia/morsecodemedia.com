@@ -43,7 +43,9 @@
             </div>
           </div>
 
-          <!-- insert video player -->
+          <videoPlayer
+            v-if="cs.video"
+            :video="cs.video"/>
 
           <div
             :style="{'background-color': cs.overview.bgColor}"
@@ -110,8 +112,9 @@
 
 <script>
   import config from '~/components/config.json'
-  import siteHeader from '~/components/header.vue'
-  import siteFooter from '~/components/footer.vue'
+  import siteHeader from '~/components/header'
+  import siteFooter from '~/components/footer'
+  import videoPlayer from '~/components/video-player'
 
   export default {
     components: {

@@ -1,7 +1,7 @@
 <template>
   <div class="section-video-player">
     <div
-      class="case-study-video embed-responsive embed-responsive-item embed-responsive-16by9">
+      class="case-study-video embed-responsive embed-responsive-16by9">
       <div
         v-video-player:myVideoPlayer="playerOptions"
         :playsinline="playsinline"
@@ -50,7 +50,7 @@
             type: "video/mp4",
             src: "/placeholder-video.mp4"
           }],
-          poster: "https://www.fillmurray.com/g/900/500",
+          // poster: "https://www.fillmurray.com/g/900/500",
         }
 
       }
@@ -96,38 +96,39 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   .case-study-video {
-    display: relative;
+    // position: relative;
+    min-height: 50vh;
     height: 100%;
     padding: 10px;
-    // &.embed-responsive {
-    //   position: relative;
-    //   display: block;
-    //   height: 0;
-    //   padding: 0;
-    //   overflow: hidden;
-    // }
-    // &.embed-responsive-item,
-    // iframe,
-    // embed,
-    // object,
-    // video {
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   bottom: 0;
-    //   height: 100%;
-    //   width: 100%;
-    //   border: 0;
-    // }
-    // &.embed-responsive-16by9 {
-    //   padding-bottom: 56.25%;
-    // }
+    &.embed-responsive {
+      position: relative;
+      display: block;
+      height: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    &.embed-responsive-item,
+    iframe,
+    embed,
+    object,
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      border: 0;
+    }
+    &.embed-responsive-16by9 {
+      padding-bottom: 56.25%;
+    }
     .video-js {
       position: relative;
       margin: 0 auto;
-      height: 50vh;
+      height: 100%;
       width: 100%;
       &.vjs-no-flex {
         .vjs-menu-button-inline {
@@ -164,7 +165,7 @@
       .vjs-playing,
       .vjs-controls-disabled {
         .vjs-big-play-button {
-          display: none !important;
+          display: none;
         }
       }
       .vjs-load-progress {
@@ -208,7 +209,7 @@
         border-color: null;
       }
       .vjs-control-bar2 {
-        background-color: #000000;
+        background-color: #222;
       }
       .vjs-control-bar {
         background-color: !important;
@@ -238,7 +239,7 @@
   @media (min-width: 1200px) {
     .case-study-video {
       .video-js {
-        height: -webkit-fill-available;
+        //height: -webkit-fill-available;
       }
     }
   }
