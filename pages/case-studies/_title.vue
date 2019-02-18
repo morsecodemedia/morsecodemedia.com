@@ -45,7 +45,8 @@
 
           <videoPlayer
             v-if="cs.video"
-            :video="cs.video"/>
+            :style="{'background-color': cs.video.bgColor}"
+            :video="cs.video.src"/>
 
           <div
             :style="{'background-color': cs.overview.bgColor}"
@@ -121,13 +122,6 @@
       siteHeader,
       videoPlayer,
       siteFooter
-    },
-    head () {
-      return {
-        link: [
-          { rel: 'stylesheet', href: 'https://vjs.zencdn.net/7.4.1/video-js.css' }
-        ]
-      }
     },
     data() {
       return {

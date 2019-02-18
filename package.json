@@ -26,7 +26,6 @@
     "sass-loader": "^7.1.0",
     "vue-axe": "^1.0.7",
     "vue-lazyload": "^1.2.6",
-    "vue-video-player": "^5.0.2",
     "vuex-persistedstate": "^2.5.4"
   },
   "devDependencies": {

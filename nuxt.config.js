@@ -55,7 +55,6 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    'video.js/dist/video-js.css'
   ],
 
   /*
@@ -63,8 +62,7 @@ module.exports = {
   */
   plugins: [
     { src: '~/plugins/localStorage', ssr: false },
-    { src: '~/plugins/axe', ssr: false },
-    { src: '~/plugins/video-player', ssr: false }
+    { src: '~/plugins/axe', ssr: false }
   ],
 
   /*
