@@ -72,9 +72,6 @@
   @media (min-width: 1200px) {
     .services {
       grid-template-columns: repeat(3, 1fr);
-      article {
-        padding: 80px;
-      }
     }
   }
 </style>
