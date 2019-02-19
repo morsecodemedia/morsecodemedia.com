@@ -97,14 +97,8 @@
           </div>
         </div>
 
-        <div
-          :class="(cs.needsPassword) ? 'show' : ''"
-          class="password-overlay">
-          <p>Due to contractual restrictions, I am obligated to inform you that the work for this project was done while working for an pharmaceutical advertising agency. <span
-            class="btn"
-            @click="showCaseStudy">Click here</span> to confirm that you want to view this project. Otherwise, <nuxt-link
-            :to="'/case-studies/'">click here</nuxt-link> to go back to the case study listings.</p>
-        </div>
+        <passwordProject :class="(cs.needsPassword) ? 'show' : ''" />
+
       </div>
     </main>
     <siteFooter />
@@ -116,11 +110,13 @@
   import siteHeader from '~/components/header'
   import siteFooter from '~/components/footer'
   import videoPlayer from '~/components/video-player'
+  import passwordProject from '~/components/password-project'
 
   export default {
     components: {
       siteHeader,
       videoPlayer,
+      passwordProject,
       siteFooter
     },
     data() {
@@ -173,12 +169,6 @@
       }
     },
     methods: {
-      showCaseStudy: function() {
-        let overlay = document.getElementsByClassName('password-overlay')
-        for (var i=0; i < overlay.length; ++i) {
-          overlay[i].classList.remove('show')
-        }
-      },
       nextCaseStudy: function() {
         router.go(1)
         next()
@@ -189,50 +179,6 @@
 
 <style lang="scss">
 
-  .password-overlay {
-    display: none;
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0,0,0,.95);
-    color: white;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-    &.show {
-      display: flex;
-    }
-    p {
-      width: 80vw;
-      .btn {
-        display: flex;
-        background: greenyellow;
-        padding: 10px;
-        margin: 10px 0;
-        justify-self: center;
-        align-self: center;
-        color: black;
-        text-align: center;
-        border-radius: 5px;
-        text-transform: uppercase;
-        cursor: pointer;
-        &:before {
-          content: "\A";
-          white-space: pre;
-        }
-        &:after {
-          content: "\A";
-          white-space: pre;
-        }
-      }
-      a {
-        color: red;
-        text-decoration: underline;
-      }
-    }
-  }
   .case-study-intro {
     width: 100vw;
     min-height: 100vh;
@@ -295,6 +241,7 @@
       }
     }
   }
+
   .description-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -339,6 +286,7 @@
       }
     }
   }
+
   .case-study-insitu {
     padding: 75px 0;
     justify-items: center;
@@ -348,6 +296,7 @@
       max-width:100%;
     }
   }
+
   .case-study-awards {
     background: #efefef;
     padding: 35px;
@@ -370,11 +319,6 @@
   }
 
   @media (min-width: 768px) {
-    .password-overlay {
-      p {
-        width: 50vw;
-      }
-    }
     .case-study-intro {
       .case-study-intro-copy {
         padding: 0 40px;
@@ -410,11 +354,6 @@
   }
 
   @media (min-width: 992px) {
-    .password-overlay {
-      p {
-        width: 50vw;
-      }
-    }
     .description-container {
       display: grid;
       grid-template-columns: repeat(2, 50%);
@@ -438,11 +377,6 @@
   }
 
   @media (min-width: 1200px) {
-    .password-overlay {
-      p {
-        width: 30vw;
-      }
-    }
     .description-container {
       div {
         img {
@@ -451,4 +385,5 @@
       }
     }
   }
+
 </style>
