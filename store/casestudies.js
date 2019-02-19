@@ -1,5 +1,5 @@
 export const state = () => ({
-  showPwdProjects: false
+  showPwdProjects: true
 })
 
 export const mutations = {

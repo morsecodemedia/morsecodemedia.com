@@ -115,6 +115,21 @@
     font-size: 50%;
   }
 
+  .requires-password {
+    position: absolute;
+    display: flex;
+    bottom: 5px;
+    right: 5px;
+    background: rgba(2,2,2,.5);
+    color: rgba(255,255,255,.5);
+    font-size: 16px;
+    line-height: 16px;
+    height: 26px;
+    width: 26px;
+    align-items: center;
+    justify-content: center;
+  }
+
   .case-studies {
     display: grid;
     grid-gap: 2px;

@@ -19,11 +19,18 @@
           <span>&mdash; View Project &mdash;</span>
         </h3>
       </div>
+      <span
+        v-if="cs.needsPassword"
+        class="requires-password">
+        <font-awesome-icon icon="lock" />
+      </span>
     </nuxt-link>
   </section>
 </template>
 
 <script>
+  import Vue from 'vue'
+  import { mapGetters } from 'vuex'
   import { caseStudies } from '~/components/config.json'
 
   export default {
@@ -34,8 +41,7 @@
     },
     data() {
       return {
-        caseStudies: caseStudies,
-        showPwdProjects: false
+        caseStudies: caseStudies
       }
     },
     computed : {
@@ -60,7 +66,10 @@
           return b.yearStart - a.yearStart
         })
         return activeProjects.concat(sortedCaseStudies)
-      }
+      },
+      ...mapGetters('casestudies', [
+        'showPwdProjects'
+      ])
     }
   }
 </script>
