@@ -974,7 +974,9 @@
       },
       "gallery": [
         "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-01.jpg",
-        "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-02.jpg"
+        "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-02.jpg",
+        "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-03.jpg",
+        "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-04.jpg"
       ],
       "video": {
         "src": "https://www.youtube.com/embed/P6d5_a-tPAg",
@@ -1023,7 +1025,10 @@
         "color2": ""
       },
       "gallery": [],
-      "video": "https://www.youtube.com/embed/P6d5_a-tPAg",
+      "video": {
+        "src": "https://www.youtube.com/embed/P6d5_a-tPAg",
+        "bgColor": "#002e5d"
+      },
       "overview": {
         "description": "A touchscreen expereience for the 2017 ASSH Conference. This conference panel showcases procedure videos, treatment efficacy and patient profiles of those treated with XIAFLEX<sup>&reg;</sup> for Dupuytren's contracture.",
         "bgColor": "#eb5903",
@@ -1110,7 +1115,10 @@
         "color2": ""
       },
       "gallery": [],
-      "video": "https://www.youtube.com/embed/P6d5_a-tPAg",
+      "video": {
+        "src": "https://www.youtube.com/embed/P6d5_a-tPAg",
+        "bgColor": "#d9deed"
+      },
       "overview": {
         "description": "",
         "bgColor": "",
@@ -1370,7 +1378,10 @@
       },
       "needsPassword": true,
       "gallery": [],
-      "video": "https://www.youtube.com/embed/P6d5_a-tPAg",
+      "video": {
+        "src": "https://www.youtube.com/embed/P6d5_a-tPAg",
+        "bgColor": ""
+      },
       "overview": {
         "description": "",
         "bgColor": "",
@@ -1512,7 +1523,10 @@
         "/ipad-xtra-kickstarts/xtra-kickstarts-04.jpg",
         "/ipad-xtra-kickstarts/xtra-kickstarts-05.jpg"
       ],
-      "video": "https://www.youtube.com/embed/P6d5_a-tPAg",
+      "video": {
+        "src": "https://www.youtube.com/embed/P6d5_a-tPAg",
+        "bgColor": "#002e5d"
+      },
       "overview": {
         "description": "",
         "bgColor": "#eb5903",
@@ -1559,7 +1573,10 @@
         "/native-endo-video-library/native-endo-video-library-video-listing-01.jpg",
         "/native-endo-video-library/native-endo-video-library-downloading-01.jpg"
       ],
-      "video": "https://www.youtube.com/embed/P6d5_a-tPAg",
+      "video": {
+        "src": "https://www.youtube.com/embed/P6d5_a-tPAg",
+        "bgColor": ""
+      },
       "overview": {
         "description": "",
         "bgColor": "",
