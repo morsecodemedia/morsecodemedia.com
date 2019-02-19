@@ -155,6 +155,12 @@
           background-color: transparent;
           color: #FFF;
           padding: 1em 0;
+          span {
+            font-weight: normal;
+            font-size: .8em;
+            margin-top: 15px;
+            display:block;
+          }
         }
         p {
           color: #FFF;

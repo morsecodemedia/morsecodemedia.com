@@ -13,7 +13,11 @@
         :src="(cs.gallery.length) ? cs.gallery[Math.floor(Math.random()*cs.gallery.length)] : 'https://www.fillmurray.com/500/500'"
         role="presentation">
       <div class="overlay">
-        <h3>{{ cs.title }}</h3>
+        <h3>
+          {{ cs.title }}
+          <br>
+          <span>&mdash; View Project &mdash;</span>
+        </h3>
       </div>
     </nuxt-link>
   </section>

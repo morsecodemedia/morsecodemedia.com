@@ -10,7 +10,11 @@
       :data-loading="loadingColors[Math.floor(Math.random()*loadingColors.length)]"
       role="presentation">
     <div class="overlay">
-      <h3>{{ cs.title }}</h3>
+      <h3>
+        {{ cs.title }}
+        <br>
+        <span>&mdash; View Project &mdash;</span>
+      </h3>
     </div>
     <span
       v-if="cs.needsPassword"
