@@ -294,19 +294,19 @@
       "description": [
         {
           "title": "challenge",
-          "description": "this is a challenge",
+          "description": "<p>this is a challenge</p>",
           "bgColor": "#FDB72B",
           "fontColor": "#FFFFFF"
         },
         {
           "title": "solution",
-          "description": "this is a solution",
+          "description": "<p>this is a solution</p>",
           "bgColor": "#FFFFFF",
           "fontColor": "#0076BE"
         },
         {
           "title": "results",
-          "description": "Combine with the <a href=\"/case-studies/walmart-beauty-subscription-box/\">Beauty Box Subscription Site</a>, generated over 188k users and $2.1M in less than a year.",
+          "description": "<p>Combine with the <a href=\"/case-studies/walmart-beauty-subscription-box/\">Beauty Box Subscription Site</a>, generated over 188k users and $2.1M in less than a year.</p>",
           "bgColor": "#0076BE",
           "fontColor": "#FDB72B"
         }
@@ -337,19 +337,19 @@
       "description": [
         {
           "title": "challenge",
-          "description": "this is a challenge",
+          "description": "<p>this is a challenge</p>",
           "bgColor": "#FDB72B",
           "fontColor": "#FFFFFF"
         },
         {
           "title": "solution",
-          "description": "this is a solution",
+          "description": "<p>this is a solution</p>",
           "bgColor": "#FFFFFF",
           "fontColor": "#0076BE"
         },
         {
           "title": "results",
-          "description": "Combine with the <a href=\"/case-studies/walmart-baby-subscription-box/\">Baby Box Subscription Site</a>, generated over 188k users and $2.1M in less than a year.",
+          "description": "<p>Combine with the <a href=\"/case-studies/walmart-baby-subscription-box/\">Baby Box Subscription Site</a>, generated over 188k users and $2.1M in less than a year.</p>",
           "bgColor": "#0076BE",
           "fontColor": "#FDB72B"
         }
@@ -429,19 +429,19 @@
       "description": [
         {
           "title": "challenge",
-          "description": "This is the Challenge",
+          "description": "<p>This is the Challenge</p>",
           "bgColor": "#E5002E",
           "fontColor": "#FFFFFF"
         },
         {
           "title": "solution",
-          "description": "This is the Solution",
+          "description": "<p>This is the Solution</p>",
           "bgColor": "#FFFFFF",
           "fontColor": "#444444"
         },
         {
           "title": "results",
-          "description": "This is the Result",
+          "description": "<p>This is the Result</p>",
           "bgColor": "#1A1B69",
           "fontColor": "#FFFFFF"
         }
@@ -476,19 +476,19 @@
       "description": [
         {
           "title": "challenge",
-          "description": "Tunnell engaged us to update their website to a modernized and responsive design. Their updated web presence was to communicate Tunnell's story in a way that conveys the impact their services have on the life sciences industry at large. In addition, the website was meant to draw new organizational talent and communicate Tunnell's evolving services.",
+          "description": "<p>Tunnell engaged us to update their website to a modernized and responsive design. Their updated web presence was to communicate Tunnell's story in a way that conveys the impact their services have on the life sciences industry at large. In addition, the website was meant to draw new organizational talent and communicate Tunnell's evolving services.</p>",
           "bgColor": "#254e99",
           "fontColor": "#FFFFFF"
         },
         {
         "title": "solution",
-        "description": "Before approaching the website redesign, we developed buyer personas, a positioning statement, and a Brand Playbook that worked to inform the website architecture and user experience. The homepage story and internal pages were heavily based on feedback received in the client and customer interviews that made up the Brand Playbook.",
+        "description": "<p>Before approaching the website redesign, we developed buyer personas, a positioning statement, and a Brand Playbook that worked to inform the website architecture and user experience. The homepage story and internal pages were heavily based on feedback received in the client and customer interviews that made up the Brand Playbook.</p>",
         "bgColor": "#099ed6",
         "fontColor": "#FFFFFF"
         },
         {
           "title": "results",
-          "description": "We created a fresh, modern design that is simple to use and easy to navigate. With an emphasis placed on SEO and responsive design, the new website is set to perform and behave significantly better across all devices. It tells the Tunnell story effectively, positioning them as a professional and reputable consulting firm within the life sciences industry.",
+          "description": "<p>We created a fresh, modern design that is simple to use and easy to navigate. With an emphasis placed on SEO and responsive design, the new website is set to perform and behave significantly better across all devices. It tells the Tunnell story effectively, positioning them as a professional and reputable consulting firm within the life sciences industry.</p>",
           "bgColor": "#FFFFFF",
           "fontColor": "#092e6e"
         }
@@ -533,19 +533,19 @@
       "description": [
         {
           "title": "challenge",
-          "description": "this is a challenge",
+          "description": "<p>this is a challenge</p>",
           "bgColor": "#eb5903",
           "fontColor": "#FFFFFF"
         },
         {
           "title": "solution",
-          "description": "this is a solution",
+          "description": "<p>this is a solution</p>",
           "bgColor": "#002e5d",
           "fontColor": "#FFFFFF"
         },
         {
           "title": "results",
-          "description": "this is a result",
+          "description": "<p>this is a result</p>",
           "bgColor": "#ebebeb",
           "fontColor": "#585757"
         }
@@ -578,19 +578,19 @@
       "description": [
         {
           "title": "challenge",
-          "description": "this is a challenge",
+          "description": "<p>this is a challenge</p>",
           "bgColor": "#002e5d",
           "fontColor": "#FFFFFF"
         },
         {
           "title": "solution",
-          "description": "this is a solution",
+          "description": "<p>this is a solution</p>",
           "bgColor": "#818181",
           "fontColor": "#FFFFFF"
         },
         {
           "title": "results",
-          "description": "this is a result",
+          "description": "<p>this is a result</p>",
           "bgColor": "#FFFFFF",
           "fontColor": "#002e5d"
         }
@@ -624,19 +624,19 @@
       "description": [
         {
           "title": "challenge",
-          "description": "Client doesn't have an online presence.",
+          "description": "<p>Client didn't have an online presence.</p>",
           "bgColor": "#093956",
           "fontColor": "#FFFFFF"
         },
         {
           "title": "solution",
-          "description": "Developed a small, responsive, brochure site that highlights the client's services and some various properties.",
+          "description": "<p>Developed a small, responsive, brochure site that highlights the client's services and some various properties.</p>",
           "bgColor": "#064870",
           "fontColor": "#FFFFFF"
         },
         {
           "title": "results",
-          "description": "these are some results",
+          "description": "<p>these are some results</p>",
           "bgColor": "#0669A5",
           "fontColor": "#FFFFFF"
         }
@@ -670,19 +670,19 @@
       "description": [
         {
           "title": "challenge",
-          "description": "this is a challenge",
+          "description": "<p>this is a challenge</p>",
           "bgColor": "#d6d6d6",
           "fontColor": "#3c5daa"
         },
         {
           "title": "solution",
-          "description": "this is a solution",
+          "description": "<p>this is a solution</p>",
           "bgColor": "#d9deed",
           "fontColor": "#484848"
         },
         {
           "title": "results",
-          "description": "this is a result",
+          "description": "<p>this is a result</p>",
           "bgColor": "#6a86c2",
           "fontColor": "#FFFFFF"
         }
@@ -731,19 +731,19 @@
       "description": [
         {
           "title": "challenge",
-          "description": "asdf",
+          "description": "<p>this is a challenge</p>",
           "bgColor": "#f0b433",
           "fontColor": "#000000"
         },
         {
           "title": "solution",
-          "description": "adsf",
+          "description": "<p>this is a solution</p>",
           "bgColor": "#435564",
           "fontColor": "#FFFFFF"
         },
         {
           "title": "results",
-          "description": "asdf",
+          "description": "<p>this is a result</p>",
           "bgColor": "#efefef",
           "fontColor": "#000000"
         }
@@ -774,19 +774,19 @@
       "description": [
         {
           "title": "challenge",
-          "description": "iPipeline, a B2B technology provider offering web-based software tools that streamline processing for the insurance industry, hired us to modernize their brand, create a responsive website or multiple platforms, and enhance their offline collateral.",
+          "description": "<p>iPipeline, a B2B technology provider offering web-based software tools that streamline processing for the insurance industry, hired us to modernize their brand, create a responsive website or multiple platforms, and enhance their offline collateral.</p>",
           "bgColor": "",
           "fontColor": ""
         },
         {
           "title": "solution",
-          "description": "We conducted a series of interviews to create a brand playbook that established a positioning statement, brand identity and creative mood boards to communicate the brand's message. A website 'proof of concept' was delivered to present content drivers, user experience, responsive design and a grey box prototype. The website was developed using the ExpressionEngine CMS and launched with multiple languages.",
+          "description": "<p>We conducted a series of interviews to create a brand playbook that established a positioning statement, brand identity and creative mood boards to communicate the brand's message. A website 'proof of concept' was delivered to present content drivers, user experience, responsive design and a grey box prototype. The website was developed using the ExpressionEngine CMS and launched with multiple languages.</p>",
           "bgColor": "",
           "fontColor": ""
         },
         {
           "title": "results",
-          "description": "The website hosts a blog, news, webinars, events and a careers portal, as well as a series of 'explanamation' videos to help guide users to their product offerings. The end result is a website that is modern and fresh, works seamlessly across multiple screen sizes or devices and that weill help iPipeline's new brand stand out within its industry with content marketing.",
+          "description": "<p>The website hosts a blog, news, webinars, events and a careers portal, as well as a series of 'explanamation' videos to help guide users to their product offerings. The end result is a website that is modern and fresh, works seamlessly across multiple screen sizes or devices and that weill help iPipeline's new brand stand out within its industry with content marketing.</p>",
           "bgColor": "",
           "fontColor": ""
         }
@@ -832,19 +832,19 @@
       "description": [
         {
           "title": "challenge",
-          "description": "GeoBlue (a Blue Cross Blue Shield affiliated brand) is a leader in the travel health insurance industry. We were hired by GeoBlue to develop an all-new website experience that seamlessly integrated with their complex back-end quoting tool; and upon launch, build out a digital strategy to support the site.",
+          "description": "<p>GeoBlue (a Blue Cross Blue Shield affiliated brand) is a leader in the travel health insurance industry. We were hired by GeoBlue to develop an all-new website experience that seamlessly integrated with their complex back-end quoting tool; and upon launch, build out a digital strategy to support the site.</p>",
           "bgColor": "#00aedb",
           "fontColor": "#FFFFFF"
         },
         {
           "title": "solution",
-          "description": "We utilized a persona based methodology to identify content drivers that would inform the strategy for both web experience and online marketing plan. Additionally, the website launch was supported by an advertising campaign alerting their broker network of the new members tools and online resources.",
+          "description": "<p>We utilized a persona based methodology to identify content drivers that would inform the strategy for both web experience and online marketing plan. Additionally, the website launch was supported by an advertising campaign alerting their broker network of the new members tools and online resources.</p>",
           "bgColor": "#00a0af",
           "fontColor": "#FFFFFF"
         },
         {
           "title": "results",
-          "description": "A silver winner at the 2013 W3 Awards, the GeoBlue travel health insurance website has recorded increased conversion rates through the introduction of 'Find your Plan' and Dynamic Quoting results features. Content Marketing through organic traffic (SEO) and targeted PPC campaigns have generated over 20,000 visitors a month.",
+          "description": "<p>A silver winner at the 2013 W3 Awards, the GeoBlue travel health insurance website has recorded increased conversion rates through the introduction of 'Find your Plan' and Dynamic Quoting results features. Content Marketing through organic traffic (SEO) and targeted PPC campaigns have generated over 20,000 visitors a month.</p>",
           "bgColor": "#c2e6e1",
           "fontColor": "#0c95b9"
         }
@@ -885,19 +885,19 @@
       "description": [
         {
           "title": "challenge",
-          "description": "this is a challenge",
+          "description": "<p>this is a challenge</p>",
           "bgColor": "#00aedb",
           "fontColor": "#FFFFFF"
         },
         {
           "title": "solution",
-          "description": "this is a solution",
+          "description": "<p>this is a solution</p>",
           "bgColor": "#00a0af",
           "fontColor": "#FFFFFF"
         },
         {
           "title": "results",
-          "description": "this is a result",
+          "description": "<p>this is a result</p>",
           "bgColor": "#c2e6e1",
           "fontColor": "#0c95b9"
         }
@@ -933,19 +933,19 @@
       "description": [
         {
           "title": "challenge",
-          "description": "ARPRO<sup>&reg</sup> is JSP International's brand name for a premium Expanded Polypropylene (EPP) product. EPP is an impact energy management material with a unique combination of properties including energy absorption, structural strength, low weight, chemical resistance, and both thermal and acoustical insulation. While ARPRO<sup>&reg</sup> is the leading brand of EPP, there are many generic offerings, making it difficult for ARPRO<sup>&reg</sup> to rank organically for non-branded keywords and attributes of EPP.",
+          "description": "<p>ARPRO<sup>&reg</sup> is JSP International's brand name for a premium Expanded Polypropylene (EPP) product. EPP is an impact energy management material with a unique combination of properties including energy absorption, structural strength, low weight, chemical resistance, and both thermal and acoustical insulation. While ARPRO<sup>&reg</sup> is the leading brand of EPP, there are many generic offerings, making it difficult for ARPRO<sup>&reg</sup> to rank organically for non-branded keywords and attributes of EPP.</p>",
           "bgColor": "magenta",
           "fontColor": "white"
         },
         {
           "title": "solution",
-          "description": "We collaborated with JSP to create personas around potential customers that would not be familiar with ARPRO<sup>&reg</sup>. Then crafted an interactive experience and content targeted towards those users, around EPP and other keywords identified in the persona exercise; allowing ARPRO<sup>&reg</sup> to compete with organic rankings against “generic” EPP products.",
+          "description": "<p>We collaborated with JSP to create personas around potential customers that would not be familiar with ARPRO<sup>&reg</sup>. Then crafted an interactive experience and content targeted towards those users, around EPP and other keywords identified in the persona exercise; allowing ARPRO<sup>&reg</sup> to compete with organic rankings against “generic” EPP products.</p>",
           "bgColor": "white",
           "fontColor": "black"
         },
         {
           "title": "results",
-          "description": "EPP has been well-received and achieved page one rankings for core keywords and increased website visit duration by 190%. Bounce rate was decreased by 19% and is now acting as an effective lead generation website.",
+          "description": "<p>EPP has been well-received and achieved page one rankings for core keywords and increased website visit duration by 190%. Bounce rate was decreased by 19% and is now acting as an effective lead generation website.</p>",
           "bgColor": "blue",
           "fontColor": "white"
         }
@@ -991,7 +991,7 @@
       "description": [
         {
           "title": "challenge",
-          "description": "this is a challenge",
+          "description": "<p>this is a challenge</p>",
           "bgColor": "#eb5903",
           "fontColor": "#FFFFFF"
         },
@@ -1044,19 +1044,19 @@
       "description": [
         {
           "title": "challenge",
-          "description": "this is a challenge",
+          "description": "<p>this is a challenge</p>",
           "bgColor": "#eb5903",
           "fontColor": "#FFFFFF"
         },
         {
           "title": "solution",
-          "description": "this is a solution",
+          "description": "<p>this is a solution</p>",
           "bgColor": "#002e5d",
           "fontColor": "#FFFFFF"
         },
         {
           "title": "results",
-          "description": "this is a result",
+          "description": "<p>this is a result</p>",
           "bgColor": "#ebebeb",
           "fontColor": "#585757"
         }
@@ -1087,19 +1087,19 @@
       "description": [
         {
           "title": "challenge",
-          "description": "this is a challenge",
+          "description": "<p>this is a challenge</p>",
           "bgColor": "#d6d6d6",
           "fontColor": "#3c5daa"
         },
         {
           "title": "solution",
-          "description": "this is a solution",
+          "description": "<p>this is a solution</p>",
           "bgColor": "#d9deed",
           "fontColor": "#484848"
         },
         {
           "title": "results",
-          "description": "this is a result",
+          "description": "<p>this is a result</p>",
           "bgColor": "#6a86c2",
           "fontColor": "#FFFFFF"
         }
@@ -1134,19 +1134,19 @@
       "description": [
         {
           "title": "challenge",
-          "description": "this is a challenge",
+          "description": "<p>this is a challenge</p>",
           "bgColor": "#d6d6d6",
           "fontColor": "#3c5daa"
         },
         {
           "title": "solution",
-          "description": "this is a solution",
+          "description": "<p>this is a solution</p>",
           "bgColor": "#d9deed",
           "fontColor": "#484848"
         },
         {
           "title": "results",
-          "description": "this is a result",
+          "description": "<p>this is a result</p>",
           "bgColor": "#6a86c2",
           "fontColor": "#FFFFFF"
         }
@@ -1349,19 +1349,19 @@
       "description": [
         {
           "title": "challenge",
-          "description": "this is a challenge",
+          "description": "<p>this is a challenge</p>",
           "bgColor": "#d6d6d6",
           "fontColor": "#3c5daa"
         },
         {
           "title": "solution",
-          "description": "this is a solution",
+          "description": "<p>this is a solution</p>",
           "bgColor": "#d9deed",
           "fontColor": "#484848"
         },
         {
           "title": "results",
-          "description": "this is a result",
+          "description": "<p>this is a result</p>",
           "bgColor": "#6a86c2",
           "fontColor": "#FFFFFF"
         }
@@ -1542,7 +1542,7 @@
       "description": [
         {
           "title": "challenge",
-          "description": "this is a challenge",
+          "description": "<p>this is a challenge</p>",
           "bgColor": "#eb5903",
           "fontColor": "#FFFFFF"
         },
