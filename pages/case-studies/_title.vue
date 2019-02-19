@@ -12,6 +12,7 @@
           <header>
             <h1 :style="{color: cs.overview.titleColor}">{{ cs.title }}</h1>
             <h2
+              v-if="cs.overview.description"
               :style="{color: cs.overview.descriptionColor}"
               v-html="cs.overview.description" />
           </header>
@@ -55,12 +56,12 @@
           :key="index"
           :class="(des.type === 'description') ? 'text-block' : 'img-block'"
           :style="{color: des.fontColor, 'background-color': des.bgColor}">
-          <header>
+          <header
+            v-if="des.type === 'description' && des.title">
             <h3
-              v-if="des.type === 'description' && des.title"
               :style="{'border-bottom': '4px ' + 'solid ' + des.fontColor}">{{ des.title }} </h3>
           </header>
-          <p
+          <article
             v-if="des.type === 'description' && des.description"
             v-html="des.description" />
 
@@ -90,7 +91,8 @@
         :insitu="cs.insitu" />
 
       <passwordProject
-        :class="(cs.needsPassword) ? 'show' : ''" />
+        :class="(cs.needsPassword) ? 'show' : ''"
+        :info="{id:cs.id,title:cs.title}" />
 
     </main>
     <siteFooter />

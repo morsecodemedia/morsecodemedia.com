@@ -115,6 +115,17 @@
     font-size: 50%;
   }
 
+  form {
+    padding: 0;
+    margin: 0 0 25px 0;
+    input[type=password] {
+      font-size: 20px;
+      margin: 0 0 25px 0;
+      padding: 0 15px;
+      width: 50%;
+    }
+  }
+
   .requires-password {
     position: absolute;
     display: flex;
