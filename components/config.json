@@ -29,7 +29,7 @@
   },
   "about": {
     "headshot": "https://www.morsecodemedia.com/site/assets/files/1016/bmorse-headshot-1.jpg",
-    "homeQuote": "Bringing beautifully designed experiences to life through coding, testing, and just the right amount of technical magic. <a href='/about/'>More about me &raquo;</a>",
+    "homeQuote": "Bringing beautifully designed experiences to life through coding, testing, and just the right amount of technical magic. <a href=\"/about/\">More about me &raquo;</a>",
     "aboutQuote": "My name is Brandon Morse. I am a New Jersey-based, developer with a passion to innovate and to create a better web. I've worked with many great clients, such as: Walmart, Ikea, Lenovo, The Children's Hospital of Philadelphia, and more! Pushing the digital envelope, my analytical and creative thinking drives me to bridge the gap between client fantasies and digital realities to bring incredible interactive experiences to life.",
     "caseStudiesQuote": "Bridging the gap between client fantasies and digital realities.",
     "contactQuote": "Contact Quote Goes Here",
@@ -997,15 +997,21 @@
         },
         {
           "title": "solution",
-          "description": "this is a solution",
+          "description": "<p>At the 2018 American Society for Surgery of the Hand (ASSH) conference, we created a convention booth experience unlike any other. We literally brought our latest campaign to life and invited hand surgeons to enter the interactive world of a patient with DC&mdash;the XIAFLEX<sup>&reg;</sup> \"garage.\" To help hand surgeons become more comfortable with using XIAFLEX<sup>&reg;</sup> and gain a deeper understanding of their patients' challenges, this garage provided several dynamic, self-navigated opportunities for training and learning.</p><p>iPads with preloaded modules offered individual on-the-spot training on treating with XIAFLEX<sup>&reg;</sup>, while touch panels peppered throughout the booth allowed hand surgeons to view clinical data and patient profiles. Hand surgeons could also step directly into their patients' shoes by wearing a special motorcycle glove we helped design that simulated what it feels like to have DC. They could even hop onto an actual motorcycle we parked in the booth.</p>",
           "bgColor": "#002e5d",
           "fontColor": "#FFFFFF"
         },
         {
           "title": "results",
-          "description": "this is a result",
+          "description": "<p>Our interactive, in-your-face efforts to reach HCPs in a meaningful way were a hands-down success. Not only did we engage about 2,145 HCPs attending ASSH&mdash;sourcing nearly 50 high-quality leads at the XIAFLEX<sup>&reg;</sup> booth&mdash;but the ASSH board of directors deemed the experience we created \"the new gold standard.\"</p><p>See the <a href=\"/case-studies/xtra-kick-starts/\">iPad presentations</a> that were also installed in the booth.</p>",
           "bgColor": "#ebebeb",
           "fontColor": "#585757"
+        },
+        {
+          "title": "notable items",
+          "description": "Additional awesomeness.",
+          "bgColor": "",
+          "fontColor": ""
         }
       ],
       "needsPassword": true,
@@ -1542,13 +1548,13 @@
         },
         {
           "title": "solution",
-          "description": "this is a solution",
+          "description": "<p>At the 2018 American Society for Surgery of the Hand (ASSH) conference, we created a convention booth experience unlike any other. We literally brought our latest campaign to life and invited hand surgeons to enter the interactive world of a patient with DC&mdash;the XIAFLEX<sup>&reg;</sup> \"garage.\" To help hand surgeons become more comfortable with using XIAFLEX<sup>&reg;</sup> and gain a deeper understanding of their patients' challenges, this garage provided several dynamic, self-navigated opportunities for training and learning.</p><p>iPads with preloaded modules offered individual on-the-spot training on treating with XIAFLEX<sup>&reg;</sup>, while touch panels peppered throughout the booth allowed hand surgeons to view clinical data and patient profiles. Hand surgeons could also step directly into their patients' shoes by wearing a special motorcycle glove we helped design that simulated what it feels like to have DC. They could even hop onto an actual motorcycle we parked in the booth.</p>",
           "bgColor": "#002e5d",
           "fontColor": "#FFFFFF"
         },
         {
           "title": "results",
-          "description": "this is a result",
+          "description": "<p>Our interactive, in-your-face efforts to reach HCPs in a meaningful way were a hands-down success. Not only did we engage about 2,145 HCPs attending ASSH&mdash;sourcing nearly 50 high-quality leads at the XIAFLEX<sup>&reg;</sup> booth&mdash;but the ASSH board of directors deemed the experience we created \"the new gold standard.\"</p><p>See the <a href=\"/case-studies/xiaflex-for-dc-2018-conference-panel/\">interactive touch-screen</a> displays that were also installed in the booth.</p>",
           "bgColor": "#ebebeb",
           "fontColor": "#585757"
         }
