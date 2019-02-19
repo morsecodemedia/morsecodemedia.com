@@ -1,105 +1,100 @@
 <template>
   <section class="container">
     <siteHeader />
-    <main>
-      <div
-        v-for="(cs, index) in activeCaseStudy"
-        :key="index">
-        <div>
-          <div
-            :style="{'background-color': cs.overview.bgColor}"
-            class="case-study-intro">
-            <div class="case-study-intro-copy">
-              <header>
-                <h1 :style="{color: cs.overview.titleColor}">{{ cs.title }}</h1>
-                <h2
-                  :style="{color: cs.overview.descriptionColor}"
-                  v-html="cs.overview.description" />
-              </header>
-              <p><a
-                :style="{color: cs.overview.titleColor}"
-                :href="cs.url"
-                target="_blank"
-                rel="noopener">{{ cs.url }}</a></p>
-              <p
+    <main
+      v-for="(cs, index) in activeCaseStudy"
+      :key="index">
+
+      <div>
+        <div
+          :style="{'background-color': cs.overview.bgColor}"
+          class="case-study-intro">
+          <div class="case-study-intro-copy">
+            <header>
+              <h1 :style="{color: cs.overview.titleColor}">{{ cs.title }}</h1>
+              <h2
                 :style="{color: cs.overview.descriptionColor}"
-                class="case-study-meta">
-                {{ cs.category }} //
-                {{ cs.yearStart }} - <span
-                  v-if="cs.yearEnd !== ''"
-                  :style="{color: cs.overview.descriptionColor}">{{ cs.yearEnd }}</span><span
-                    v-else
-                    :style="{color: cs.overview.descriptionColor}">Present</span>
-              </p>
-              <div class="scroll-downs">
+                v-html="cs.overview.description" />
+            </header>
+            <p><a
+              :style="{color: cs.overview.titleColor}"
+              :href="cs.url"
+              target="_blank"
+              rel="noopener">{{ cs.url }}</a></p>
+            <p
+              :style="{color: cs.overview.descriptionColor}"
+              class="case-study-meta">
+              {{ cs.category }} //
+              {{ cs.yearStart }} - <span
+                v-if="cs.yearEnd !== ''"
+                :style="{color: cs.overview.descriptionColor}">{{ cs.yearEnd }}</span><span
+                  v-else
+                  :style="{color: cs.overview.descriptionColor}">Present</span>
+            </p>
+            <div class="scroll-downs">
+              <div
+                :style="{border: '2px ' + 'solid ' + cs.overview.titleColor}"
+                class="mousey">
                 <div
-                  :style="{border: '2px ' + 'solid ' + cs.overview.titleColor}"
-                  class="mousey">
-                  <div
-                    :style="{'background-color': cs.overview.titleColor}"
-                    class="scroller"/>
-                </div>
+                  :style="{'background-color': cs.overview.titleColor}"
+                  class="scroller"/>
               </div>
             </div>
           </div>
+        </div>
 
-          <videoPlayer
-            v-if="cs.video"
-            :style="{'background-color': cs.video.bgColor}"
-            :video="cs.video.src"/>
+        <videoPlayer
+          v-if="cs.video"
+          :style="{'background-color': cs.video.bgColor}"
+          :video="cs.video.src"/>
 
+        <div
+          :style="{'background-color': cs.overview.bgColor}"
+          class="description-container">
           <div
-            :style="{'background-color': cs.overview.bgColor}"
-            class="description-container">
-            <div
-              v-for="(des, index) in activeDescription"
-              :key="index"
-              :class="(des.type === 'description') ? 'text-block' : 'img-block'"
-              :style="{color: des.fontColor, 'background-color': des.bgColor}">
-              <header>
-                <h3
-                  v-if="des.type === 'description' && des.title"
-                  :style="{'border-bottom': '4px ' + 'solid ' + des.fontColor}">{{ des.title }} </h3>
-              </header>
-              <p
-                v-if="des.type === 'description' && des.description"
-                v-html="des.description" />
+            v-for="(des, index) in activeDescription"
+            :key="index"
+            :class="(des.type === 'description') ? 'text-block' : 'img-block'"
+            :style="{color: des.fontColor, 'background-color': des.bgColor}">
+            <header>
+              <h3
+                v-if="des.type === 'description' && des.title"
+                :style="{'border-bottom': '4px ' + 'solid ' + des.fontColor}">{{ des.title }} </h3>
+            </header>
+            <p
+              v-if="des.type === 'description' && des.description"
+              v-html="des.description" />
 
-              <img
-                v-if="des.type === 'image' && des.src"
-                :src="des.src"
-                alt=""
-                role="img">
-            </div>
-          </div>
-
-          <div
-            v-if="cs.awards.length"
-            class="case-study-awards">
-            <h3>Awards</h3>
-            <ul>
-              <li
-                v-for="(award, index) in cs.awards"
-                :key="index">
-                {{ award.year }} {{ award.award }} <nobr>from {{ award.organization }}</nobr>
-              </li>
-            </ul>
-          </div>
-
-          <div
-            v-if="cs.insitu.img.length"
-            :style="{background: 'linear-gradient' + '(135deg, ' + cs.insitu.color1 + ' 0%, ' + cs.insitu.color2 + ' 100%)'}"
-            class="case-study-insitu">
             <img
-              :src="cs.insitu.img"
+              v-if="des.type === 'image' && des.src"
+              :src="des.src"
               alt=""
               role="img">
           </div>
         </div>
 
-        <passwordProject :class="(cs.needsPassword) ? 'show' : ''" />
+        <div
+          v-if="cs.awards.length"
+          class="case-study-awards">
+          <h3>Awards</h3>
+          <ul>
+            <li
+              v-for="(award, index) in cs.awards"
+              :key="index">
+              {{ award.year }} {{ award.award }} <nobr>from {{ award.organization }}</nobr>
+            </li>
+          </ul>
+        </div>
+
+        <caseStudyInsitu
+          v-if="cs.insitu.img.length"
+          :insitu="cs.insitu" />
 
       </div>
+
+      <passwordProject
+        :class="(cs.needsPassword) ? 'show' : ''" />
+
     </main>
     <siteFooter />
   </section>
@@ -111,11 +106,13 @@
   import siteFooter from '~/components/footer'
   import videoPlayer from '~/components/video-player'
   import passwordProject from '~/components/password-project'
+  import caseStudyInsitu from '~/components/case-study-insitu'
 
   export default {
     components: {
       siteHeader,
       videoPlayer,
+      caseStudyInsitu,
       passwordProject,
       siteFooter
     },
@@ -284,16 +281,6 @@
         height: 100%;
         width: 100vw;
       }
-    }
-  }
-
-  .case-study-insitu {
-    padding: 75px 0;
-    justify-items: center;
-    display: flex;
-    justify-content: center;
-    img {
-      max-width:100%;
     }
   }
 
