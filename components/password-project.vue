@@ -1,7 +1,9 @@
 <template>
-  <div class="password-overlay">
+  <div
+    id="password-overlay"
+    class="password-overlay">
     <div class="">
-      <p style="font-size: 36px">Passowrd Required</p>
+      <p style="font-size: 36px">Password Required</p>
       <p>Due to contractual restrictions, I am obligated to inform you that the work for this project was done while working for an pharmaceutical advertising agency.</p>
       <p>Please enter <code>{{ info.id }}</code> into the field below to continue on viewing <span class="project-title">{{ info.title }}</span>.</p>
       <form @submit.prevent="checkPassword">
@@ -39,10 +41,8 @@
     },
     methods: {
       showCaseStudy: function() {
-        let overlay = document.getElementsByClassName('password-overlay')
-        for (var i=0; i < overlay.length; ++i) {
-          overlay[i].classList.remove('show')
-        }
+        let overlay = document.getElementById('password-overlay')
+        overlay.classList.remove('show')
       },
       timeout: function(delay, args) {
         return new Promise(function(resolve) {
