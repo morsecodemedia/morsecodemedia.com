@@ -9,6 +9,7 @@
           v-model="password"
           type="password">
         <button
+          id="submit-password"
           class="submit"
           type="submit"/>
       </form>
@@ -43,39 +44,26 @@
           overlay[i].classList.remove('show')
         }
       },
-      checkPassword: function() {
-        // TODO: REWRITE ALL OF THIS
-        // Get the Submit Button
-        let submitBtn = document.getElementsByClassName('submit')
-        // Add submitted class
-        submitBtn[0].classList.add('submitted')
-        // Allow animation to happen for X amount of time
-        setTimeout(function() {
-          submitBtn[0].classList.remove('submitted')
-        }, 750)
-        // Check if password is correct
+      timeout: function(delay, args) {
+        return new Promise(function(resolve) {
+          setTimeout(resolve, delay, args);
+        })
+      },
+      checkPassword: async function() {
+        let submitBtn = document.getElementById('submit-password')
+        submitBtn.classList.add('submitted')
+        await this.timeout(750)
+        submitBtn.classList.remove('submitted')
         if (this.password === this.myProps.id) {
-          // if password is correct
-          // add validated class for X amount of time
-          // then proceed to showing the case study
-          setTimeout(function() {
-            submitBtn[0].classList.add('validated')
-            setTimeout(function() {
-              //this.showCaseStudy()
-              let overlay = document.getElementsByClassName('password-overlay')
-              overlay[0].classList.remove('show')
-            }, 250)
-          }, 500)
+          await this.timeout(750)
+          submitBtn.classList.add('validated')
+          await this.timeout(750)
+          this.showCaseStudy()
         } else {
-          // if password is incorrect
-          // add error class for X amount of time
-          // revert back to default submit button
-          // apply focus on password field
           console.log("wrong password")
-          submitBtn[0].classList.add('error')
-          setTimeout(function() {
-            submitBtn[0].classList.remove('error')
-          }, 500)
+          submitBtn.classList.add('error')
+          await this.timeout(750)
+          submitBtn.classList.remove('error')
         }
       }
     }
@@ -179,6 +167,10 @@
         &:after {
           font-family:'FontAwesome';
           content:"\f00c";
+        }
+        &:hover {
+          color: white;
+          background: red;
         }
       }
     }
