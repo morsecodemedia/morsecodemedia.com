@@ -45,86 +45,6 @@
 </script>
 
 <style lang="scss">
-  * {
-    font-family: 'Montserrat', sans-serif;
-    font-display: auto;
-    margin: 0;
-    padding: 0;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: 'Karla', sans-serif;
-    font-display: auto;
-    nobr {
-      font-family: 'Karla', sans-serif;
-      font-display: auto;
-    }
-    span {
-      font-family: 'Karla', sans-serif;
-      font-display: auto;
-    }
-  }
-
-  h1 {
-    font-size: 72px;
-    margin-bottom: 25px;
-  }
-
-  h2 {
-    font-size: 52px;
-    margin-bottom: 25px;
-  }
-
-  h3 {
-    font-size: 36px;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-  }
-
-  h4 {
-    font-size: 30px;
-  }
-
-  h5 {
-    font-size: 26px;
-  }
-
-  p {
-    font-size: 20px;
-    line-height: 28px;
-    margin-bottom: 25px;
-  }
-
-  ul,
-  ol {
-    li {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-    margin-bottom: 25px;
-  }
-
-  sup {
-    vertical-align: super;
-    font-size: 50%;
-  }
-
-  form {
-    padding: 0;
-    margin: 0 0 25px 0;
-    input[type=password] {
-      font-size: 20px;
-      margin: 0 0 25px 0;
-      padding: 0 15px;
-      width: 50%;
-    }
-  }
 
   .requires-password {
     position: absolute;
@@ -165,8 +85,8 @@
           height: 80%;
           left: 10%;
           top: 10%;
-          border-top: 1px solid #FFF;
-          border-bottom: 1px solid #FFF;
+          border-top: 1px solid $white;
+          border-bottom: 1px solid $white;
           opacity: 1;
           filter: alpha(opacity=100);
           display: flex;
@@ -179,7 +99,7 @@
           justify-self: center;
           font-size: 22px;
           background-color: transparent;
-          color: #FFF;
+          color: $white;
           padding: 1em 0;
           span {
             font-weight: normal;
@@ -189,7 +109,7 @@
           }
         }
         p {
-          color: #FFF;
+          color: $white;
           padding: 1em 0;
         }
         p,
@@ -209,10 +129,10 @@
 
   }
   .link-bar {
-    background: white;
+    background: $white;
     padding: 45px 25px;
     a {
-      color: #222;
+      color: $dk-grey;
       font-size: 24px;
       text-decoration: none;
       text-transform: uppercase;
@@ -231,7 +151,7 @@
             text-decoration: underline;
           }
           &.disabled {
-            color: #999;
+            color: $lt-grey;
             pointer-events: none;
           }
         }
@@ -240,55 +160,10 @@
   }
 
   @media (min-width: 768px) {
-    h1 {
-      font-size: 72px;
-    }
-    h2 {
-      font-size: 52px;
-    }
-    h3 {
-      font-size: 36px;
-    }
-    h4 {
-      font-size: 30px;
-    }
-    h5 {
-      font-size: 26px;
-    }
-    p {
-      font-size: 20px;
-    }
-    ul {
-      li {
-        font-size: 20px;
-      }
-    }
+
   }
 
   @media (min-width: 992px) {
-    h1 {
-      font-size: 72px;
-    }
-    h2 {
-      font-size: 52px;
-    }
-    h3 {
-      font-size: 36px;
-    }
-    h4 {
-      font-size: 30px;
-    }
-    h5 {
-      font-size: 26px;
-    }
-    p {
-      font-size: 20px;
-    }
-    ul {
-      li {
-        font-size: 20px;
-      }
-    }
     .case-studies {
       a {
         &.case-study {
@@ -299,8 +174,8 @@
             height: 80%;
             left: 10%;
             top: 10%;
-            border-bottom: 1px solid #FFF;
-            border-top: 1px solid #FFF;
+            border-bottom: 1px solid $white;
+            border-top: 1px solid $white;
             -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
             transition: opacity 0.35s, transform 0.35s;
             -webkit-transform: scale(0,1);
@@ -312,7 +187,7 @@
               justify-self: center;
               font-size: 22px;
               background-color: transparent;
-              color: #FFF;
+              color: $white;
               padding: 1em 0;
               opacity: 0;
               filter: alpha(opacity=0);
@@ -322,7 +197,7 @@
               transform: translate3d(0,-100%,0);
             }
             p {
-              color: #FFF;
+              color: $white;
               padding: 1em 0;
               opacity: 0;
               filter: alpha(opacity=0);

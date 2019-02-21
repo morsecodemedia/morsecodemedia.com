@@ -127,21 +127,22 @@
 </script>
 
 <style lang="scss" scoped>
+
   header {
     position: sticky;
     top: 0;
     left: 0;
     z-index: 1;
     .masthead {
-      background: #222;
+      background: $dk-grey;
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: auto auto;
       grid-template-areas:
       "logo logo logo logo logo logo logo logo logo logo logo mbtn";
       .logo {
-        background: #222;
-        color: white;
+        background: $dk-grey;
+        color: $white;
         font-size: 26px;
         grid-area: logo;
         padding: 10px;
@@ -164,13 +165,13 @@
         & > a,
         & > a:visited,
         & > a:hover {
-          color: white;
+          color: $white;
           text-decoration: none;
         }
       }
       .menu-btn {
-        background: #333;
-        color: white;
+        background: $md-grey;
+        color: $white;
         cursor: pointer;
         grid-area: mbtn;
         padding: 10px;
@@ -189,7 +190,7 @@
             position: absolute;
             height: 3px;
             width: 50%;
-            background: white;
+            background: $white;
             border-radius: 9px;
             opacity: 1;
             left: 25%;
@@ -261,7 +262,7 @@
       width: 100vw;
       align-items: center;
       justify-content: center;
-      background: #222;
+      background: $dk-grey;
       &.open {
         display: flex;
         align-content: space-between;
@@ -271,9 +272,9 @@
         list-style-type: none;
         li {
           text-align: center;
-          color: white;
+          color: $white;
           a {
-            color: white;
+            color: $white;
             font-size: 32px;
             text-decoration: none;
             text-transform: uppercase;

@@ -55,6 +55,7 @@ module.exports = {
   ** Global CSS
   */
   css: [
+
   ],
 
   /*
@@ -72,9 +73,16 @@ module.exports = {
     '@nuxtjs/sitemap',
     ['@nuxtjs/google-analytics', {
       id: 'UA-5476316-1'
-    }]
+    }],
+    '@nuxtjs/style-resources'
   ],
 
+  styleResources: {
+    scss: [
+      'assets/scss/_variables.scss',
+      'assets/scss/_typography.scss'
+    ]
+  },
   /*
   ** Build configuration
   */

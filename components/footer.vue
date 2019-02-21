@@ -47,12 +47,13 @@
 </script>
 
 <style lang="scss" scoped>
+
   footer {
-    background: #222;
+    background: $dk-grey;
     padding: 10px 0;
     .footer-copyright {
       p {
-        color: white;
+        color: $white;
         font-size: 16px;
         padding: 0 10px;
         text-align: center;
@@ -63,7 +64,7 @@
         li {
           display: inline-block;
           a {
-            color: white;
+            color: $white;
             font-size: 18px;
             padding: 0 10px;
           }

@@ -27,6 +27,7 @@
 </script>
 
 <style lang="scss" scoped>
+
   .services {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -35,10 +36,10 @@
     article {
       padding: 30px;
       &:nth-of-type(odd) {
-        background: #ededed;
+        background: $offwhite;
       }
       &:nth-of-type(even) {
-        background: #efefef;
+        background: $eggshell;
       }
       h2 {
         font-size: 36px;

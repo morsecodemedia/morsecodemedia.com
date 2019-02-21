@@ -26,8 +26,9 @@
 </script>
 
 <style lang="scss">
+
   .bq-w-img {
-    background: linear-gradient(45deg,#f9f9f9 0%,#ededed 100%);
+    background: linear-gradient(45deg, $eggshell 0%, $offwhite 100%);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto auto 40px 60px auto 60px auto;
@@ -48,8 +49,8 @@
     }
     .bqwi-quote {
       align-self: center;
-      background: #222;
-      color: white;
+      background: $dk-grey;
+      color: $white;
       font-size: 22px;
       line-height: 32px;
       grid-row-start: 1;
@@ -59,7 +60,7 @@
       padding: 25px;
       text-align: center;
       a {
-        color: white;
+        color: $white;
       }
     }
   }

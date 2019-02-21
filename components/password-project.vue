@@ -17,7 +17,7 @@
       </form>
       <p>Otherwise, <span
         class="link"
-        @click="$router.go(-1)">click here</span> to go back to the case study listings.</p>
+        @click="$router.go(-1)">click here to go back</span>, way back, back into time.</p>
     </div>
   </div>
 </template>
@@ -71,6 +71,7 @@
 </script>
 
 <style lang="scss">
+
   .password-overlay {
     display: flex;
     visibility: hidden;
@@ -82,7 +83,7 @@
     align-items: center;
     justify-content: center;
     background: rgba(0,0,0,.95);
-    color: white;
+    color: $white;
     top: 0px;
     left: 0px;
     z-index: 1;
@@ -104,77 +105,80 @@
         font-family: monospace;
         font-weight: normal;
         background: rgba(255,255,255,.5);
-        color: #222;
+        color: $dk-grey;
         padding: 2px 5px;
       }
     }
-    button {
-      &.submit {
-        outline:none;
-        height: 40px;
-        text-align: center;
-        width: 175px;
-        border-radius: 40px;
-        background: rgba(0,0,0,.95);
-        border: 2px solid green;
-        color: green;
-        letter-spacing:1px;
-        text-shadow:0;
+    form {
+      padding: 0;
+      margin: 0 0 25px 0;
+      input[type=password] {
         font-size: 20px;
-        cursor: pointer;
-        transition: all 0.25s ease;
-        &:hover {
-          color:white;
-          background: green;
-        }
-        &:active {
-          letter-spacing: 2px;
-        }
-        &:after {
-          content: "View Project";
-        }
+        margin: 0 0 25px 0;
+        padding: 0 15px;
+        width: 50%;
       }
-      &.submitted {
-        width: 40px;
-        border-color: gray;
-        border-width: 3px;
-        font-size: 0;
-        border-left-color: green;
-        animation: rotating 1s 0.25s linear infinite;
+      button {
+        &.submit {
+          outline:none;
+          height: 40px;
+          text-align: center;
+          width: 175px;
+          border-radius: 40px;
+          background: rgba(0,0,0,.95);
+          border: 2px solid $form-green;
+          color: $form-green;
+          text-shadow:0;
+          font-size: 20px;
+          cursor: pointer;
+          transition: all 0.25s ease;
+          &:hover {
+            color:$white;
+            background: $form-green;
+          }
+          &:after {
+            content: "View Project";
+          }
+        }
+        &.submitted {
+          width: 40px;
+          border-color: #6c757d;
+          border-left-color: $form-green;
+          border-right-color: $form-green;
+          animation: rotating 1s 0.25s linear infinite;
 
-        &:after {
-          content:"";
+          &:after {
+            content:"";
+          }
+          &:hover {
+            color: $form-green;
+            background: $white;
+          }
         }
-        &:hover {
-          color: green;
-          background: white;
+        &.validated {
+          color: $white;
+          background: $form-green;
+          &:after {
+            content:"Success";
+            line-height: 0;
+            padding: 0;
+            margin: 0;
+          }
         }
-      }
-      &.validated {
-        font-size:13px;
-        color: white;
-        background: green;
-        &:after {
-          content:"\2713";
-          font-size: 28px;
-          padding: 0;
-          margin: 0;
-        }
-      }
-      &.error {
-        font-size:13px;
-        color: white;
-        border: 2px solid red;
-        background: red;
-        &:after {
-          content:"\2717";
-          font-size: 28px;
-          padding: 0;
-          margin: 0;
-        }
-        &:hover {
-          color: white;
-          background: red;
+        &.error {
+          color: $white;
+          border: 2px solid $form-red;
+          background: $form-red;
+          &:after {
+            content:"Error";
+            line-height: 0;
+            padding: 0;
+            margin: 0;
+          }
+          &:hover {
+            color: $white;
+            background: $form-red;
+          }
         }
       }
     }

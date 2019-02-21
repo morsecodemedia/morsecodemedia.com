@@ -21,11 +21,12 @@
 </script>
 
 <style lang="scss" scoped>
+
   .link-bar {
-    background: white;
+    background: $white;
     padding: 45px 25px;
     a {
-      color: #222;
+      color: $dk-grey;
       font-size: 24px;
       text-decoration: none;
       text-transform: uppercase;

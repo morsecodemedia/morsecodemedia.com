@@ -22,6 +22,7 @@
 </script>
 
 <style lang="scss">
+
   .section-hero {
     background: #ffaf4b;
     background: -moz-radial-gradient(center, ellipse cover, #ffaf4b 0%, #ff920a 100%);
@@ -40,8 +41,8 @@
     div {
       width: 75vw;
       h1 {
-        border-bottom: 4px solid white;
-        color: white;
+        border-bottom: 4px solid $white;
+        color: $white;
         display: inline-block;
         font-size: 56px;
         padding: 0 0 10px 0;
@@ -49,7 +50,7 @@
         text-transform: uppercase;
       }
       p {
-        color: white;
+        color: $white;
       }
     }
   }

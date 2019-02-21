@@ -112,6 +112,7 @@
 </script>
 
 <style lang="scss" scoped>
+
   .section-hero {
     background: rgba(147,206,222,1);
     background: -moz-radial-gradient(center, ellipse cover, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
@@ -167,7 +168,7 @@
         display: block;
         width: 50px;
         height: 10px;
-        background-color: #222;
+        background-color: $dk-grey;
         position: absolute;
         top: 0;
         left: 50%;

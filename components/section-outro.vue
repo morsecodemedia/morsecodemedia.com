@@ -25,6 +25,7 @@
 </script>
 
 <style lang="scss">
+
   .section-outro{
     background: rgba(147,206,222,1);
     background: -moz-radial-gradient(center, ellipse cover, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
@@ -35,10 +36,10 @@
     background: radial-gradient(ellipse at center, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1 );
 
-    color: #FFF;
+    color: $white;
     padding: 80px 125px 80px 40px;
     h4 {
-      border-bottom: 4px solid #FFF;
+      border-bottom: 4px solid $white;
       display: inline-block;
       font-size: 32px;
       margin: 0 0 45px 0;

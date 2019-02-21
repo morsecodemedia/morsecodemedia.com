@@ -284,11 +284,11 @@
   }
 
   .case-study-awards {
-    background: #efefef;
+    background: $lt-grey;
     padding: 35px;
     text-align: center;
     h3 {
-      border-bottom: 4px solid #222;
+      border-bottom: 4px solid $dk-grey;
       display: inline-block;
       font-size: 32px;
       padding: 0 0 15px 0;

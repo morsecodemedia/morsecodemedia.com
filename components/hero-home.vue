@@ -35,8 +35,9 @@
 </script>
 
 <style lang="scss" scoped>
+
   .hero {
-    background: #f9f9f9;
+    background: $eggshell;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto auto auto auto 45px;
