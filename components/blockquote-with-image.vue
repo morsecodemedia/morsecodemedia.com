@@ -97,7 +97,9 @@
       }
       .bqwi-image {
         object-fit: contain;
+        object-position: right;
         max-height: 50vh;
+        width: 100%;
       }
     }
   }
