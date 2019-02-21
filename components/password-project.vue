@@ -155,8 +155,10 @@
         color: white;
         background: green;
         &:after {
-          font-family:'FontAwesome';
-          content:"\f00c";
+          content:"\2713";
+          font-size: 28px;
+          padding: 0;
+          margin: 0;
         }
       }
       &.error {
@@ -165,8 +167,10 @@
         border: 2px solid red;
         background: red;
         &:after {
-          font-family:'FontAwesome';
-          content:"\f00c";
+          content:"\2717";
+          font-size: 28px;
+          padding: 0;
+          margin: 0;
         }
         &:hover {
           color: white;
