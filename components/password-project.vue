@@ -55,14 +55,14 @@
         await this.timeout(750)
         submitBtn.classList.remove('submitted')
         if (this.password === this.myProps.id) {
-          await this.timeout(750)
+          await this.timeout(425)
           submitBtn.classList.add('validated')
-          await this.timeout(750)
+          await this.timeout(1000)
           this.showCaseStudy()
         } else {
           console.log("wrong password")
           submitBtn.classList.add('error')
-          await this.timeout(750)
+          await this.timeout(1500)
           submitBtn.classList.remove('error')
         }
       }
