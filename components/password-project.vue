@@ -166,7 +166,7 @@
             }
             &:hover {
               color: $form-green;
-              background: $white;
+              background: none;
             }
           }
           &.validated {
@@ -177,6 +177,9 @@
               line-height: 0;
               padding: 0;
               margin: 0;
+            }
+            &:hover {
+              background: none;
             }
           }
           &.error {
@@ -191,7 +194,7 @@
             }
             &:hover {
               color: $white;
-              background: $form-red;
+              background: none;
             }
           }
         }
@@ -221,7 +224,7 @@
   @media (min-width: 1200px) {
     .password-overlay {
       .password-overlay-container {
-        width: 30vw;
+        width: 35vw;
         p {
 
         }
