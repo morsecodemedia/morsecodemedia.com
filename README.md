@@ -103,8 +103,6 @@ SEO: 100
 - ALT tag images
 - Set up 301 redirects
 - Apply Color palette
-- Video Component
-- Mobile Styles
 - Homepage
   - Hero Graphic(s)
     - Glitch Animation?
@@ -116,7 +114,6 @@ SEO: 100
   - Screenshots
   - Device Insitu
 - CDN
-  - Video Hosting
   - Image Hosting
     - move images that are from old site that are still being used over
 - Vuex store

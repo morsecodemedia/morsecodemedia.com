@@ -2,11 +2,13 @@
   <div
     id="password-overlay"
     class="password-overlay">
-    <div class="">
-      <p style="font-size: 36px">Password Required</p>
+    <div class="password-overlay-container">
+      <p class="password-overlay-header">Password Required</p>
       <p>Due to contractual restrictions, I am obligated to inform you that the work for this project was done while working for an pharmaceutical advertising agency.</p>
       <p>Please enter <code>{{ info.id }}</code> into the field below to continue on viewing <span class="project-title">{{ info.title }}</span>.</p>
-      <form @submit.prevent="checkPassword">
+      <form
+        class="password-overlay-form"
+        @submit.prevent="checkPassword">
         <input
           v-model="password"
           type="password">
@@ -15,7 +17,7 @@
           class="submit"
           type="submit"/>
       </form>
-      <p>Otherwise, <span
+      <p class="abort-action">Otherwise, <span
         class="link"
         @click="$router.go(-1)">click here to go back</span>, way back, back into time.</p>
     </div>
@@ -52,7 +54,7 @@
       checkPassword: async function() {
         let submitBtn = document.getElementById('submit-password')
         submitBtn.classList.add('submitted')
-        await this.timeout(750)
+        await this.timeout(1000)
         submitBtn.classList.remove('submitted')
         if (this.password === this.myProps.id) {
           await this.timeout(425)
@@ -91,93 +93,106 @@
       visibility: visible;
       opacity: 1;
     }
-    p {
-      width: 80vw;
-      .project-title {
-        font-weight: bold;
-      }
-      .link {
-        cursor: pointer;
-        display: inline-block;
-        text-decoration: underline;
-      }
-      code {
-        font-family: monospace;
-        font-weight: normal;
-        background: rgba(255,255,255,.5);
-        color: $dk-grey;
-        padding: 2px 5px;
-      }
-    }
-    form {
-      padding: 0;
-      margin: 0 0 25px 0;
-      input[type=password] {
-        font-size: 20px;
-        margin: 0 0 25px 0;
-        padding: 0 15px;
-        width: 50%;
-      }
-      button {
-        &.submit {
-          outline:none;
-          height: 40px;
-          text-align: center;
-          width: 175px;
-          border-radius: 40px;
-          background: rgba(0,0,0,.95);
-          border: 2px solid $form-green;
-          color: $form-green;
-          text-shadow:0;
-          font-size: 20px;
+    .password-overlay-container {
+      width: 85vw;
+      padding: 20px 0;
+      p {
+        &.password-overlay-header {
+          font-size: 32px;
+          line-height: 38px;
+        }
+        &.abort-action {
+          font-size: 16px;
+        }
+        .project-title {
+          font-weight: bold;
+        }
+        .link {
           cursor: pointer;
-          transition: all 0.25s ease;
-          &:hover {
-            color:$white;
-            background: $form-green;
-          }
-          &:after {
-            content: "View Project";
-          }
+          display: inline-block;
+          text-decoration: underline;
         }
-        &.submitted {
-          width: 40px;
-          border-color: #6c757d;
-          border-left-color: $form-green;
-          border-right-color: $form-green;
-          animation: rotating 1s 0.25s linear infinite;
-
-          &:after {
-            content:"";
-          }
-          &:hover {
+        code {
+          font-family: monospace;
+          font-weight: normal;
+          background: rgba(255,255,255,.5);
+          color: $dk-grey;
+          padding: 2px 5px;
+        }
+      }
+      form {
+        padding: 0;
+        margin: 0 0 25px 0;
+        display: grid;
+        input[type=password] {
+          font-size: 20px;
+          margin: 0 0 25px 0;
+          padding: 0 15px;
+          display: block;
+        }
+        button {
+          &.submit {
+            outline:none;
+            height: 40px;
+            text-align: center;
+            width: 175px;
+            border-radius: 40px;
+            background: rgba(0,0,0,.95);
+            border: 2px solid $form-green;
             color: $form-green;
-            background: $white;
+            font-size: 20px;
+            justify-self: center;
+            align-self: center;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            &:hover {
+              color:$white;
+              background: $form-green;
+            }
+            &:after {
+              content: "View Project";
+            }
           }
-        }
-        &.validated {
-          color: $white;
-          background: $form-green;
-          &:after {
-            content:"Success";
-            line-height: 0;
-            padding: 0;
-            margin: 0;
+          &.submitted {
+            width: 40px;
+            border-color: #6c757d;
+            border-left-color: $form-green;
+            border-right-color: $form-green;
+            box-shadow: 0 0 10px #9ecaed;
+            animation: rotating 1s 0.25s linear infinite;
+
+            &:after {
+              content:"";
+            }
+            &:hover {
+              color: $form-green;
+              background: $white;
+            }
           }
-        }
-        &.error {
-          color: $white;
-          border: 2px solid $form-red;
-          background: $form-red;
-          &:after {
-            content:"Error";
-            line-height: 0;
-            padding: 0;
-            margin: 0;
-          }
-          &:hover {
+          &.validated {
             color: $white;
+            background: $form-green;
+            &:after {
+              content:"Success";
+              line-height: 0;
+              padding: 0;
+              margin: 0;
+            }
+          }
+          &.error {
+            color: $white;
+            border: 2px solid $form-red;
             background: $form-red;
+            &:after {
+              content:"Error";
+              line-height: 0;
+              padding: 0;
+              margin: 0;
+            }
+            &:hover {
+              color: $white;
+              background: $form-red;
+            }
           }
         }
       }
@@ -186,24 +201,30 @@
 
   @media (min-width: 768px) {
     .password-overlay {
-      p {
+      .password-overlay-container {
         width: 50vw;
+        p {
+
+        }
       }
     }
   }
 
   @media (min-width: 992px) {
     .password-overlay {
-      p {
-        width: 50vw;
+      .password-overlay-container {
+
       }
     }
   }
 
   @media (min-width: 1200px) {
     .password-overlay {
-      p {
+      .password-overlay-container {
         width: 30vw;
+        p {
+
+        }
       }
     }
   }
