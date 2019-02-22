@@ -1,7 +1,7 @@
 {
   "navigation": [
     {
-      "url": "/",
+      "url": "https://www.morsecodemedia.com/",
       "text": "Home"
     },
     {
@@ -294,7 +294,7 @@
       "description": [
         {
           "title": "challenge",
-          "description": "<p>this is a challenge</p>",
+          "description": "<p>Walmart approached us about creating two subscription box model sites, one for new and expecting mothers, and the other for <a href=\"/case-studies/walmart-beauty-subscription-box/\">women's beauty products</a>. While these are two completely separate sites, the core functionality was the same. We had to create an architecture that was sophisticated enough to know the user and where they were on their personal buyer's journey, but efficient enough to not duplicate efforts on shared functionality.</p>",
           "bgColor": "#FDB72B",
           "fontColor": "#FFFFFF"
         },
@@ -309,6 +309,11 @@
           "description": "<p>Combine with the <a href=\"/case-studies/walmart-beauty-subscription-box/\">Beauty Box Subscription Site</a>, generated over 188k users and $2.1M in less than a year.</p>",
           "bgColor": "#0076BE",
           "fontColor": "#FDB72B"
+        },{
+          "title": "technologies",
+          "description": "<p>Ansible, CodeIgniter, PHP, CSS, Javascript, Stripe API, GPG Encryption, SMTP, SFTP, MySQL</p>",
+          "bgColor": "#FDB72B",
+          "fontColor": "#FFFFFF"
         }
       ],
       "needsPassword": false,
