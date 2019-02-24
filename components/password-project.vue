@@ -1,7 +1,7 @@
 <template>
   <div
-    id="password-overlay"
-    class="password-overlay">
+    v-show="showOverlay"
+    class="password-overlay show">
     <div class="password-overlay-container">
       <p class="password-overlay-header">Password Required</p>
       <p>Due to contractual restrictions, I am obligated to inform you that the work for this project was done while working for an pharmaceutical advertising agency.</p>
@@ -14,6 +14,7 @@
           type="password">
         <button
           id="submit-password"
+          :class="validatedClass"
           class="submit"
           type="submit"/>
       </form>
@@ -38,34 +39,30 @@
     data() {
       return {
         password: '',
-        myProps: this.info
+        myProps: this.info,
+        validatedClass: '',
+        showOverlay: true
       }
     },
     methods: {
-      showCaseStudy: function() {
-        let overlay = document.getElementById('password-overlay')
-        overlay.classList.remove('show')
-      },
       timeout: function(delay, args) {
         return new Promise(function(resolve) {
           setTimeout(resolve, delay, args);
         })
       },
       checkPassword: async function() {
-        let submitBtn = document.getElementById('submit-password')
-        submitBtn.classList.add('submitted')
+        this.validatedClass = 'submitted'
         await this.timeout(1000)
-        submitBtn.classList.remove('submitted')
         if (this.password === this.myProps.id) {
+          this.validatedClass = ''
           await this.timeout(425)
-          submitBtn.classList.add('validated')
+          this.validatedClass = 'validated'
           await this.timeout(1000)
-          this.showCaseStudy()
+          this.showOverlay = false
         } else {
-          console.log("wrong password")
-          submitBtn.classList.add('error')
+          this.validatedClass = 'error'
           await this.timeout(1500)
-          submitBtn.classList.remove('error')
+          this.validatedClass = ''
         }
       }
     }
@@ -158,7 +155,6 @@
             border-color: #6c757d;
             border-left-color: $form-green;
             border-right-color: $form-green;
-            box-shadow: 0 0 10px #9ecaed;
             animation: rotating 1s 0.25s linear infinite;
 
             &:after {
