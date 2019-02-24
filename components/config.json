@@ -41,7 +41,9 @@
         "title": "Lead Architect",
         "yearStart": "2018",
         "yearEnd": "",
-        "notableSuccesses": []
+        "notableSuccesses": [
+          "Works with clients such as, Endo Pharmacueticals, Mitsubishi Tanabe Pharmaceuticals America, Johnson and Johnson, Aerie Pharmaceuticals."
+        ]
       },
       {
         "company": "GSW Advertising",
@@ -98,6 +100,14 @@
           "Launched a tiered hosting support system for customers - complete with ticketing system, site and server up-times tied to Rackspace Cloud and Pingdom APIs, and 24-hour support.",
           "Wrote 'Is It Time To Drop Support for Internet Explorer 8', a blog post that generated 18.7k+ visitors (17.4k+ unique) since February 2014 - ~42% of traffic to the website. [as of July 21, 2015.]"
         ]
+      },
+      {
+        "company": "morsecodemedia",
+        "location": "127.0.0.1",
+        "title": "Freelance Web Developer",
+        "yearStart": "2005",
+        "yearEnd": "",
+        "notableSuccesses": []
       }
     ],
     "certifications": [
@@ -433,20 +443,20 @@
       },
       "description": [
         {
-          "title": "challenge",
-          "description": "<p>This is the Challenge</p>",
+          "title": "",
+          "description": "",
           "bgColor": "#E5002E",
           "fontColor": "#FFFFFF"
         },
         {
-          "title": "solution",
-          "description": "<p>This is the Solution</p>",
+          "title": "",
+          "description": "",
           "bgColor": "#FFFFFF",
           "fontColor": "#444444"
         },
         {
-          "title": "results",
-          "description": "<p>This is the Result</p>",
+          "title": "",
+          "description": "",
           "bgColor": "#1A1B69",
           "fontColor": "#FFFFFF"
         }
@@ -537,26 +547,26 @@
       },
       "description": [
         {
-          "title": "challenge",
-          "description": "<p>this is a challenge</p>",
+          "title": "",
+          "description": "",
           "bgColor": "#eb5903",
           "fontColor": "#FFFFFF"
         },
         {
-          "title": "solution",
-          "description": "<p>this is a solution</p>",
+          "title": "",
+          "description": "",
           "bgColor": "#002e5d",
           "fontColor": "#FFFFFF"
         },
         {
-          "title": "results",
-          "description": "<p>this is a result</p>",
+          "title": "",
+          "description": "",
           "bgColor": "#ebebeb",
           "fontColor": "#585757"
         }
       ],
       "category": "Websites",
-      "active": true,
+      "active": false,
       "awards": []
     },
     {
@@ -582,20 +592,20 @@
       },
       "description": [
         {
-          "title": "challenge",
-          "description": "<p>this is a challenge</p>",
+          "title": "",
+          "description": "",
           "bgColor": "#002e5d",
           "fontColor": "#FFFFFF"
         },
         {
-          "title": "solution",
-          "description": "<p>this is a solution</p>",
+          "title": "",
+          "description": "",
           "bgColor": "#818181",
           "fontColor": "#FFFFFF"
         },
         {
-          "title": "results",
-          "description": "<p>this is a result</p>",
+          "title": "",
+          "description": "",
           "bgColor": "#FFFFFF",
           "fontColor": "#002e5d"
         }
@@ -640,8 +650,8 @@
           "fontColor": "#FFFFFF"
         },
         {
-          "title": "results",
-          "description": "<p>these are some results</p>",
+          "title": "",
+          "description": "",
           "bgColor": "#0669A5",
           "fontColor": "#FFFFFF"
         }
@@ -693,7 +703,7 @@
         }
       ],
       "category": "Websites",
-      "active": true,
+      "active": false,
       "awards": [
         {
           "award": "Creative Excellence Award for Healthcare Professional Website",
@@ -755,12 +765,12 @@
       ],
       "category": "Websites",
       "needsPassword": true,
-      "active": true,
+      "active": false,
       "awards": []
     },
     {
       "id": "ipl001",
-      "title": "iPipeline.com",
+      "title": "iPipeline",
       "url": "https://www.ipipeline.com/",
       "yearStart": "2014",
       "yearEnd": "2014",
@@ -772,28 +782,28 @@
       "gallery": ["https://www.morsecodemedia.com/site/assets/files/1141/ipipeline-3.jpg"],
       "overview": {
         "description": "iPipeline is a technology provider of SaaS solutions that drives straight-through processing for the insurance and financial services industry.",
-        "bgColor": "",
-        "titleColor": "",
-        "descriptionColor": ""
+        "bgColor": "#FFFFFF",
+        "titleColor": "#2483b3",
+        "descriptionColor": "#3b4141"
       },
       "description": [
         {
           "title": "challenge",
           "description": "<p>iPipeline, a B2B technology provider offering web-based software tools that streamline processing for the insurance industry, hired us to modernize their brand, create a responsive website or multiple platforms, and enhance their offline collateral.</p>",
-          "bgColor": "",
-          "fontColor": ""
+          "bgColor": "#3b4141",
+          "fontColor": "#FFFFFF"
         },
         {
           "title": "solution",
           "description": "<p>We conducted a series of interviews to create a brand playbook that established a positioning statement, brand identity and creative mood boards to communicate the brand's message. A website 'proof of concept' was delivered to present content drivers, user experience, responsive design and a grey box prototype. The website was developed using the ExpressionEngine CMS and launched with multiple languages.</p>",
-          "bgColor": "",
-          "fontColor": ""
+          "bgColor": "#5c6164",
+          "fontColor": "#FFFFFF"
         },
         {
           "title": "results",
           "description": "<p>The website hosts a blog, news, webinars, events and a careers portal, as well as a series of 'explanamation' videos to help guide users to their product offerings. The end result is a website that is modern and fresh, works seamlessly across multiple screen sizes or devices and that weill help iPipeline's new brand stand out within its industry with content marketing.</p>",
-          "bgColor": "",
-          "fontColor": ""
+          "bgColor": "#FFFFFF",
+          "fontColor": "#2483b3"
         }
       ],
       "needsPassword": false,
@@ -909,7 +919,7 @@
       ],
       "needsPassword": false,
       "category": "Websites",
-      "active": true,
+      "active": false,
       "awards": []
     },
     {
@@ -930,29 +940,29 @@
         "https://www.morsecodemedia.com/site/assets/files/1024/epp-responsive-website-4-1.jpg"
       ],
       "overview": {
-        "description": "",
-        "bgColor": "white",
-        "titleColor": "magenta",
-        "descriptionColor": "magenta"
+        "description": "Expanding lightweight material solutions, globally.",
+        "bgColor": "#ed008c",
+        "titleColor": "#FFFFFF",
+        "descriptionColor": "#FFFFFF"
       },
       "description": [
         {
           "title": "challenge",
           "description": "<p>ARPRO<sup>&reg</sup> is JSP International's brand name for a premium Expanded Polypropylene (EPP) product. EPP is an impact energy management material with a unique combination of properties including energy absorption, structural strength, low weight, chemical resistance, and both thermal and acoustical insulation. While ARPRO<sup>&reg</sup> is the leading brand of EPP, there are many generic offerings, making it difficult for ARPRO<sup>&reg</sup> to rank organically for non-branded keywords and attributes of EPP.</p>",
-          "bgColor": "magenta",
-          "fontColor": "white"
+          "bgColor": "#0047ba",
+          "fontColor": "#FFFFFF"
         },
         {
           "title": "solution",
-          "description": "<p>We collaborated with JSP to create personas around potential customers that would not be familiar with ARPRO<sup>&reg</sup>. Then crafted an interactive experience and content targeted towards those users, around EPP and other keywords identified in the persona exercise; allowing ARPRO<sup>&reg</sup> to compete with organic rankings against “generic” EPP products.</p>",
-          "bgColor": "white",
-          "fontColor": "black"
+          "description": "<p>We collaborated with JSP to create personas around potential customers that would not be familiar with ARPRO<sup>&reg</sup>. Then crafted an interactive experience and content targeted towards those users, around EPP and other keywords identified in the persona exercise; allowing ARPRO<sup>&reg</sup> to compete with organic rankings against \"generic\" EPP products.</p>",
+          "bgColor": "#FFFFFF",
+          "fontColor": "#000000"
         },
         {
           "title": "results",
           "description": "<p>EPP has been well-received and achieved page one rankings for core keywords and increased website visit duration by 190%. Bounce rate was decreased by 19% and is now acting as an effective lead generation website.</p>",
-          "bgColor": "blue",
-          "fontColor": "white"
+          "bgColor": "#ed008c",
+          "fontColor": "#FFFFFF"
         }
       ],
       "needsPassword": false,
@@ -1068,7 +1078,7 @@
       ],
       "needsPassword": true,
       "category": "Conference Pieces",
-      "active": true,
+      "active": false,
       "awards": []
     },
     {
@@ -1111,7 +1121,7 @@
       ],
       "needsPassword": true,
       "category": "Websites",
-      "active": true,
+      "active": false,
       "awards": []
     },
     {
@@ -1158,7 +1168,7 @@
       ],
       "needsPassword": true,
       "category": "iPad Presentations",
-      "active": true,
+      "active": false,
       "awards": []
     },
     {
@@ -1201,7 +1211,7 @@
       ],
       "needsPassword": false,
       "category": "Alexa Skills",
-      "active": true,
+      "active": false,
       "awards": []
     },
     {
@@ -1244,7 +1254,7 @@
       ],
       "needsPassword": false,
       "category": "Alexa Skills",
-      "active": true,
+      "active": false,
       "awards": []
     },
     {
@@ -1615,7 +1625,7 @@
         }
       ],
       "category": "Native Apps",
-      "active": true,
+      "active": false,
       "awards": []
     }
   ]
