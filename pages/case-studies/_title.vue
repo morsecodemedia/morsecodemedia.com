@@ -91,7 +91,7 @@
         :insitu="cs.insitu" />
 
       <passwordProject
-        :class="(cs.needsPassword) ? 'show' : ''"
+        v-if="cs.needsPassword"
         :info="{id:cs.id,title:cs.title}" />
 
     </main>
@@ -284,7 +284,7 @@
   }
 
   .case-study-awards {
-    background: $lt-grey;
+    background: $eggshell;
     padding: 35px;
     text-align: center;
     h3 {

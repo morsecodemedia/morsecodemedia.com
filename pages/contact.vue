@@ -3,6 +3,39 @@
     <siteHeader />
     <main>
       <sectionHero :hero="hero" />
+      <div>
+        <form
+          @submit.prevent="checkPassword">
+
+          <p>
+            <label for="name">Name:</label>
+            <input
+              v-model="name"
+              type="text">
+          </p>
+
+          <p>
+            <label for="email">Email:</label>
+            <input
+              v-model="email"
+              type="email">
+          </p>
+
+          <p>
+            <label for="message">Message:</label>
+            <textarea
+              v-model="message"/>
+          </p>
+
+          <p>
+            <button
+              id="submit-form"
+              :class="validatedClass"
+              class="submit"
+              type="submit"/>
+          </p>
+        </form>
+      </div>
     </main>
     <siteFooter />
   </section>
