@@ -352,7 +352,7 @@
       "description": [
         {
           "title": "challenge",
-          "description": "<p>this is a challenge</p>",
+          "description": "<p>Walmart approached us about creating two subscription box model sites, one for <a href=\"/case-studies/walmart-baby-subscription-box/\">new and expecting mothers</a>, and the other for women's beauty products. While these are two completely separate sites, the core functionality was the same. We had to create an architecture that was sophisticated enough to know the user and where they were on their personal buyer's journey, but efficient enough to not duplicate efforts on shared functionality.</p>",
           "bgColor": "#FDB72B",
           "fontColor": "#FFFFFF"
         },
@@ -397,19 +397,19 @@
       "description": [
         {
           "title": "challenge",
-          "description": "<ul> <li>Site was not responsive.</li> <li>3rd Party feed that is scraped on page load is providing 95% of the content on the site.</li> <li>Due to vacation offers being provided from 3rd party feed, site does not have a robust search</li> <li>Users must 'drill down' to a specific pairing to see offers.</li> <li>Custom CMS was antiquated and confusing to navigate around.</li> <li>Call-tracking was only able to display two numbers: the default or Google AdWords specific numbers.</li> <li>Social strategy consisted of weekly blog posts, however the CMS did not have a section to manage articles.</li> </ul>",
+          "description": "<p>PATravel is a small boutique travel agency. Their original site was running on many legacy technologies and was not responsive. A large portion of the site's content was driven by a 3rd-part feed that would be scraped on page load. Unfortunately, the feel often results in broken images, and error pages, which would result in broken pages on PATravel's website.</p><p>They also had a CMS to allow custom additions of vacation packages, however it was constantly broken, and wasn't intuitive for the client to use. There wasn't an option to manage their blog via the CMS either, which resulted in the weekly blog posts to be manually added.</p>",
           "bgColor": "#19AFE1",
           "fontColor": "#FFFFFF"
         },
         {
           "title": "solution",
-          "description": "<ul> <li>Moved from custom CMS to ProcessWire CMS.</li> <li>Built blog system into the CMS.</li> <li>Continued to use the 3rd-party service to scrap various XML feeds. This time, instead of scraping the feeds at load-time, we created a cronjob to run three-times-a-week and pull all data into the CMS.</li> <li>Created the ability to manage call-tracking phone numbers in the CMS.</li> </ul>",
+          "description": "<p>We rebuilt the site from the ground up, starting with a mobile-first design. Using analytics and an updated brand strategy, we enhanced the user experience across all browsers and devices, allowing users to get to the information they wanted with ease.</p><p>We replaced the custom CMS with ProcessWire, a PHP-based, secure content management system and framework. Management of the blog was built into the system along with the ability to manage call-tracking phone numbers for custom landing pages to align with the content marketing strategy we put together.<p><p>We updated the way the 3rd-party feed provided content for the website. The feed is now parsed as an automated system task, that loads the information into the CMS. This allows system admins to update or remove any information as needed, to keep a clean and consistent experience for PATravel's users.</p>",
           "bgColor": "#FFFFFF",
           "fontColor": "#222222"
         },
         {
           "title": "results",
-          "description": "<ul> <li>Client is able to manage 100% of the content displayed on the site, despite the original source of the data.</li> <li>With all data in the CMS, site is now able to have a more robust search integrated throughout the site.</li> <li>Weekly blog articles are able to be managed through the CMS.</li> <li>Landing pages with call tracking have the ability to display an unlimited set of numbers.</li> </ul>",
+          "description": "<p>Client is able to manage 100% of the content displayed on the site, regardless the original source of the data. With all data in the CMS, site is now able to have a more robust search integrated throughout the site. Regular blog articles are no longer a sore issue and are able to be added freely though the CMS. Landing pages with call tracking have the ability to display an unlimited set of numbers, allowing scalability in their content marketing strategy.</p>",
           "bgColor": "#00539A",
           "fontColor": "#FFFFFF"
         }
@@ -443,20 +443,20 @@
       },
       "description": [
         {
-          "title": "",
-          "description": "",
+          "title": "Challenge",
+          "description": "<p>The original website was built as a WordPress site. Unfortunately, the way in which it was built included altering the 'core system', leaving it unable to be updated. This meant security vulnerabilities were unable to be addressed causing the site to be hacked multiple times over the years. The fragile state of the site also meant that making minor content updates (ie, creating new pages) a more cumbersome task than it needed to be.</p><p>Another challenge with the website was the 'League Manager', was a partially built out plugin that required the deletion of the prior year's teams, conferences, standings, etc. to set up the upcoming season's game management.</p><p>The last challenge was that the site was not responsive.</p>",
           "bgColor": "#E5002E",
           "fontColor": "#FFFFFF"
         },
         {
-          "title": "",
-          "description": "",
+          "title": "Solution",
+          "description": "<p>First and foremost, we addressed the security concerns, moving the site into ProcessWire. We created a new League Manager to be an integral part of the site's content and structure. It all starts with the teams. Each team has their own page, with history, plater roster, schedule and more. Due to the scalability of league, the number of teams and conferences varied from season to season. We took this into consideration, allowing admins to define the conferences and which teams were in each for each year. By using the teams' 'ids' as references, we were able to create a history of previous years, despite if a team didn't play certain years, or was zoned into a different conference.</p><p>The system also allowed for News and Video Library sections, complete with tag management. This tagging system allowed for relevant articles and videos to be dynamically pulled into the team pages as well.</p><p>Another new offering provided, was a portal for users to find out how to get involved with the league, as well as current members to be able to pay their membership dues.</p>",
           "bgColor": "#FFFFFF",
           "fontColor": "#444444"
         },
         {
-          "title": "",
-          "description": "",
+          "title": "Results",
+          "description": "<p>Since the launch of the site, it is no longer a victim of malicious attacks. Updates are able to be managed by content administrations, and no longer require a developer. Users have a more complete and engaging experience no matter which device or browser they are viewing the site.</p>",
           "bgColor": "#1A1B69",
           "fontColor": "#FFFFFF"
         }

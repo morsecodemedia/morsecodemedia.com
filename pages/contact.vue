@@ -5,7 +5,7 @@
       <sectionHero :hero="hero" />
       <div>
         <form
-          @submit.prevent="checkPassword">
+          @submit.prevent="validateForm">
 
           <p>
             <label for="name">Name:</label>
