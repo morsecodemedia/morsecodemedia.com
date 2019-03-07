@@ -75,6 +75,7 @@
   import siteHeader from '~/components/header'
   import sectionHero from '~/components/section-hero'
   import siteFooter from '~/components/footer'
+  import postmark from 'postmark'
 
   export default {
     name: 'Contact',
@@ -140,6 +141,16 @@
           // put error classes on form fields as needed
           // await this.timeout(1500)
           // this.validatedClass = ''
+      },
+      sendEmail: async function() {
+        let client = new postmark.Client('api-key')
+
+        client.sendEmail({
+          'From': '',
+          'To': '',
+          'Subject': '',
+          'TextBody': ''
+        })
       }
     }
   }
