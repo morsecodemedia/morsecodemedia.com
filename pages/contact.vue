@@ -6,63 +6,59 @@
       <div class="form-container">
         <form
           @submit.prevent="validateForm">
-          <p>
-            <span class="input input--yoshiko">
-              <input
-                id="input-10"
-                v-model="name"
-                class="input__field input__field--yoshiko"
-                type="text">
-              <label
-                class="input__label input__label--yoshiko"
-                for="input-10">
-                <span
-                  class="input__label-content input__label-content--yoshiko"
-                  data-content="Name">Name</span>
-              </label>
-            </span>
-          </p>
 
-          <p>
-            <span class="input input--yoshiko">
-              <input
-                id="input-11"
-                v-model="email"
-                class="input__field input__field--yoshiko"
-                type="email">
-              <label
-                class="input__label input__label--yoshiko"
-                for="input-11">
-                <span
-                  class="input__label-content input__label-content--yoshiko"
-                  data-content="Email Address">Email Address</span>
-              </label>
-            </span>
-          </p>
+          <span class="input">
+            <input
+              id="input-name"
+              v-model="name"
+              class="input-field"
+              type="text">
+            <label
+              class="input-label"
+              for="input-name">
+              <span
+                class="input-label-content"
+                data-content="Name">Name</span>
+            </label>
+          </span>
 
-          <p>
-            <span class="input input--yoshiko">
-              <textarea
-                id="input-12"
-                v-model="message"
-                class="input__field input__field--yoshiko"/>
-              <label
-                class="input__label input__label--yoshiko"
-                for="input-12">
-                <span
-                  class="input__label-content input__label-content--yoshiko"
-                  data-content="Message">Message</span>
-              </label>
-            </span>
-          </p>
+          <span class="input">
+            <input
+              id="input-email"
+              v-model="email"
+              class="input-field"
+              type="email">
+            <label
+              class="input-label"
+              for="input-email">
+              <span
+                class="input-label-content"
+                data-content="Email Address">Email Address</span>
+            </label>
+          </span>
 
-          <p>
-            <button
-              id="submit-form"
-              :class="validatedClass"
-              class="submit"
-              type="submit"/>
-          </p>
+          <span class="input">
+            <textarea
+              id="input-message"
+              v-model="message"
+              class="input-field input-textarea"/>
+            <label
+              class="input-label input-label-textarea"
+              for="input-message">
+              <span
+                class="input-label-content input-label-content-textarea"
+                data-content="Message">Message</span>
+            </label>
+          </span>
+
+
+
+          <button
+            id="submit-form"
+            :class="validatedClass"
+            class="submit"
+            type="submit"/>
+
         </form>
       </div>
     </main>
@@ -140,52 +136,124 @@
           // put error classes on form fields as needed
           // await this.timeout(1500)
           // this.validatedClass = ''
+      },
+      inputFields: function() {
+
+        if (!String.prototype.trim) {
+          (function() {
+            // Make sure we trim BOM and NBSP
+            var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+            String.prototype.trim = function() {
+              return this.replace(rtrim, '');
+            };
+          })();
+        }
+
+        [].slice.call( document.querySelectorAll('input.input-field') ).forEach( function( inputEl ) {
+          if( inputEl.value.trim() !== '' ) {
+            classie.add(inputEl.parentNode, 'input--filled')
+          }
+
+          // events:
+          inputEl.addEventListener('focus', this.onInputFocus)
+          inputEl.addEventListener('blur', this.onInputBlur)
+        } );
+
+      },
+      onInputFocus: function(event) {
+        classie.add(event.target.parentNode, 'input--filled')
+      },
+      onInputBlur: function(event) {
+        if (event.target.value.trim() === '') {
+          classie.remove(event.target.parentNode, 'input--filled')
+        }
       }
+
     }
   }
 </script>
 
 <style lang="scss" scoped>
   .form-container {
-    background: purple;
-    padding: 20px;
+    padding: 50px 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    form {
+      width: 90vw;
+    }
   }
+
   .input {
     position: relative;
-    z-index: 1;
     display: inline-block;
-    margin: 1em;
-    max-width: 350px;
+    margin: 20px 0px;
     width: calc(100% - 2em);
     vertical-align: top;
   }
 
-  .input__field {
+  .input-field {
     position: relative;
     display: block;
-    float: right;
-    padding: 0.8em;
-    width: 60%;
-    border: none;
+    padding: 15px;
     border-radius: 0;
-    background: #f0f0f0;
-    color: #aaa;
+    background: #fff;
+    color: #222;
+    font-size: 18px;
     font-weight: 400;
-    -webkit-appearance: none; /* for box shadows to show on iOS */
+    -webkit-appearance: none;
+    width: 100%;
+    border: 1px solid #222;
+    -webkit-transition: background-color 0.25s, border-color 0.25s;
+    transition: background-color 0.25s, border-color 0.25s;
+    &:focus {
+      outline-color: $form-green;
+      + .input-label {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        .input-label-content {
+          -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
+        }
+      }
+      + .input-field {
+        background-color: transparent;
+        border-color: $form-green;
+      }
+    }
   }
 
-  .input__field:focus {
-    outline: none;
+  .input-textarea {
+    height: 200px;
+    &:focus {
+      + .input-label {
+        -webkit-transform: translate3d(0, 10px, 0);
+        transform: translate3d(0, 10px, 0);
+      }
+    }
   }
 
-  .input__label {
+  .input--filled {
+    .input-label {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    .input-label-content {
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+    .input-field {
+      background-color: transparent;
+      border-color: $form-green;
+    }
+  }
+
+  .input-label {
     display: inline-block;
-    float: right;
-    padding: 0 1em;
-    width: 40%;
-    color: #696969;
+    padding: 0 15px;
+    color: #222;
     font-weight: bold;
-    font-size: 70.25%;
+    font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-touch-callout: none;
@@ -194,78 +262,125 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
-
-  .input__label-content {
-    position: relative;
-    display: block;
-    padding: 1.6em 0;
-    width: 100%;
-  }
-
-  .input__field--yoshiko {
-    width: 100%;
-    background-color: #d0d1d0;
-    border: 2px solid transparent;
-    -webkit-transition: background-color 0.25s, border-color 0.25s;
-    transition: background-color 0.25s, border-color 0.25s;
-  }
-
-  .input__label--yoshiko {
     width: 100%;
     text-align: left;
     position: absolute;
-    bottom: 100%;
+    bottom: 80%;
     pointer-events: none;
     overflow: hidden;
-    padding: 0 1.25em;
     -webkit-transform: translate3d(0, 3em, 0);
     transform: translate3d(0, 3em, 0);
     -webkit-transition: -webkit-transform 0.25s;
     transition: transform 0.25s ;
     -webkit-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
+    &-textarea {
+      bottom: 100%;
+    }
+    &-content {
+      position: relative;
+      display: block;
+      padding: 20px 0;
+      width: 100%;
+      color: #222;
+      -webkit-transition: -webkit-transform 0.25s;
+      transition: transform 0.25s;
+      -webkit-transition-timing-function: ease-in-out;
+      transition-timing-function: ease-in-out;
+      &-textarea {
+        color: #222;
+      }
+      &::after {
+        content: attr(data-content);
+        position: absolute;
+        font-weight: bold;
+        bottom: 60%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        color: $form-green;
+        padding: 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 16px;
+      }
+    }
   }
 
-  .input__label-content--yoshiko {
-    color: #8B8C8B;
-    padding: 0.25em 0;
-    -webkit-transition: -webkit-transform 0.25s;
-    transition: transform 0.25s;
-    -webkit-transition-timing-function: ease-in-out;
-    transition-timing-function: ease-in-out;
-  }
+  button {
+    &.submit {
+      outline: none;
+      display: block;
+      height: 40px;
+      text-align: center;
+      width: 175px;
+      border-radius: 40px;
+      background: rgba(255, 255, 255, .95);
+      border: 2px solid $form-green;
+      color: $form-green;
+      font-size: 20px;
+      justify-self: center;
+      align-self: center;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      &:hover {
+        color:$white;
+        background: $form-green;
+      }
+      &:after {
+        content: "Send Message";
+      }
+    }
+    &.submitted {
+      width: 40px;
+      border-color: #6c757d;
+      border-left-color: $form-green;
+      border-right-color: $form-green;
+      animation: rotating 1s 0.25s linear infinite;
 
-  .input__label-content--yoshiko::after {
-    content: attr(data-content);
-    position: absolute;
-    font-weight: 800;
-    bottom: 100%;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    color: #a3d39c;
-    padding: 0.25em 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 0.85em;
+      &:after {
+        content:"";
+      }
+      &:hover {
+        color: $form-green;
+        background: none;
+      }
+    }
+    &.validated {
+      color: $white;
+      background: $form-green;
+      &:after {
+        content:"Success";
+        line-height: 0;
+        padding: 0;
+        margin: 0;
+      }
+      &:hover {
+        background: none;
+      }
+    }
+    &.error {
+      color: $white;
+      border: 2px solid $form-red;
+      background: $form-red;
+      &:after {
+        content:"Error";
+        line-height: 0;
+        padding: 0;
+        margin: 0;
+      }
+      &:hover {
+        color: $white;
+        background: none;
+      }
+    }
   }
-
-  .input__field--yoshiko:focus + .input__label--yoshiko,
-  .input--filled .input__label--yoshiko {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  .input__field--yoshiko:focus + .input__label--yoshiko .input__label-content--yoshiko,
-  .input--filled .input__label-content--yoshiko {
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  .input__field--yoshiko:focus + .input__field--yoshiko,
-  .input--filled .input__field--yoshiko {
-    background-color: transparent;
-    border-color: #a3d39c;
+  @keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
 </style>
