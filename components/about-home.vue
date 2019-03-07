@@ -6,9 +6,7 @@
       alt="A headshot of Brandon Morse"
       role="presentation">
     <blockquote class="intro-quote">
-      <p>
-        {{ quote }}
-      </p>
+      <p v-html="quote">
     </blockquote>
   </section>
 </template>

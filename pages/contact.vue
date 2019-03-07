@@ -7,7 +7,9 @@
         <form
           @submit.prevent="validateForm">
 
-          <span class="input">
+          <span
+            :class="{'input--filled': name.length !== 0}"
+            class="input">
             <input
               id="input-name"
               v-model="name"
@@ -22,7 +24,9 @@
             </label>
           </span>
 
-          <span class="input">
+          <span
+            :class="{'input--filled': email.length !== 0}"
+            class="input">
             <input
               id="input-email"
               v-model="email"
@@ -37,7 +41,9 @@
             </label>
           </span>
 
-          <span class="input">
+          <span
+            :class="{'input--filled': message.length !== 0}"
+            class="input textarea">
             <textarea
               id="input-message"
               v-model="message"
@@ -50,8 +56,6 @@
                 data-content="Message">Message</span>
             </label>
           </span>
-
-
 
           <button
             id="submit-form"
@@ -136,39 +140,7 @@
           // put error classes on form fields as needed
           // await this.timeout(1500)
           // this.validatedClass = ''
-      },
-      inputFields: function() {
-
-        if (!String.prototype.trim) {
-          (function() {
-            // Make sure we trim BOM and NBSP
-            var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
-            String.prototype.trim = function() {
-              return this.replace(rtrim, '');
-            };
-          })();
-        }
-
-        [].slice.call( document.querySelectorAll('input.input-field') ).forEach( function( inputEl ) {
-          if( inputEl.value.trim() !== '' ) {
-            classie.add(inputEl.parentNode, 'input--filled')
-          }
-
-          // events:
-          inputEl.addEventListener('focus', this.onInputFocus)
-          inputEl.addEventListener('blur', this.onInputBlur)
-        } );
-
-      },
-      onInputFocus: function(event) {
-        classie.add(event.target.parentNode, 'input--filled')
-      },
-      onInputBlur: function(event) {
-        if (event.target.value.trim() === '') {
-          classie.remove(event.target.parentNode, 'input--filled')
-        }
       }
-
     }
   }
 </script>
@@ -197,13 +169,13 @@
     display: block;
     padding: 15px;
     border-radius: 0;
-    background: #fff;
-    color: #222;
+    background: $white;
+    color: $dk-grey;
     font-size: 18px;
     font-weight: 400;
     -webkit-appearance: none;
     width: 100%;
-    border: 1px solid #222;
+    border: 1px solid $dk-grey;
     -webkit-transition: background-color 0.25s, border-color 0.25s;
     transition: background-color 0.25s, border-color 0.25s;
     &:focus {
@@ -248,10 +220,19 @@
     }
   }
 
+  .textarea {
+    &.input--filled {
+      .input-label {
+        -webkit-transform: translate3d(0, 10px, 0);
+        transform: translate3d(0, 10px, 0);
+      }
+    }
+  }
+
   .input-label {
     display: inline-block;
     padding: 0 15px;
-    color: #222;
+    color: $dk-grey;
     font-weight: bold;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
@@ -282,13 +263,13 @@
       display: block;
       padding: 20px 0;
       width: 100%;
-      color: #222;
+      color: $dk-grey;
       -webkit-transition: -webkit-transform 0.25s;
       transition: transform 0.25s;
       -webkit-transition-timing-function: ease-in-out;
       transition-timing-function: ease-in-out;
       &-textarea {
-        color: #222;
+        color: $dk-grey;
       }
       &::after {
         content: attr(data-content);
