@@ -10,11 +10,21 @@
       </header>
     </article>
     <aside class="hero-image">
-      <img
-        class="hero-image"
-        src="#"
-        alt="Glitch Images Go Here"
-        role="img">
+      <div class="content">
+        <div class="slides slides--contained effect-2">
+          <div class="slide slide--current">
+            <div
+              :class="'slide' + displaySlide"
+              class="slide__img glitch">
+              <div
+                v-for="index in totalGlitchs"
+                :key="index"
+                :class="[{'glitch': (index >= glitchStep)}, 'slide'+currentSlide]"
+                class="glitch__img"/>
+            </div>
+          </div>
+        </div>
+      </div>
     </aside>
   </section>
 </template>
@@ -28,8 +38,38 @@
       return {
         heroDescriptor: homepageHero.heroDescriptor,
         heroName: homepageHero.heroName,
-        heroStatement: homepageHero.heroStatement
+        heroStatement: homepageHero.heroStatement,
+        currentSlide: 0,
+        displaySlide: 0,
+        totalSlides: 2,
+        totalGlitchs: 5,
+        glitchStep: 0,
+        glitchInterval: null,
+        glitchSpeed: 100,
+        slideShowInterval: null,
+        slideShowSpeed: 4000
       }
+    },
+    watch: {
+      currentSlide: function (newSlide, oldSlide) {
+        this.glitchStep = this.totalGlitchs
+        this.glitchInterval = setInterval(() => {
+          this.glitchStep--
+          if (this.glitchStep <= 0) {
+            clearInterval(this.glitchInterval)
+            this.displaySlide = this.currentSlide
+          }
+        }, this.glitchSpeed)
+      }
+    },
+    created() {
+      this.slideShowInterval = setInterval(() => {
+        this.currentSlide = (this.currentSlide + 1 < this.totalSlides) ? this.currentSlide + 1 : 0
+      }, this.slideShowSpeed)
+    },
+    beforeDestroy() {
+      clearInterval(this.slideShowInterval)
+      clearInterval(this.glitchInterval)
     }
   }
 </script>
