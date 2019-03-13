@@ -75,7 +75,6 @@
   import siteHeader from '~/components/header'
   import sectionHero from '~/components/section-hero'
   import siteFooter from '~/components/footer'
-  let postmark = require('postmark')
 
   export default {
     name: 'Contact',

@@ -5537,13 +5537,6 @@ postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.2, postcss@^7.0.5, postcss@^7.0.6:
     source-map "^0.6.1"
     supports-color "^5.5.0"
 
-postmark@^2.2.4:
-  version "2.2.4"
-  resolved "https://registry.yarnpkg.com/postmark/-/postmark-2.2.4.tgz#30a9ef57f738009bae14aa22f2f62e497b6f4a08"
-  integrity sha512-qzqcXrKQnSGIScOpCNz2ArC69zHSuVZKo8RLg8Nioz633NIi4aVYeBNBwCn1hfAcQ/g/eCAyTAvVbMYyPmlSzQ==
-  dependencies:
-    request "^2.88.0"
-
 prelude-ls@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
