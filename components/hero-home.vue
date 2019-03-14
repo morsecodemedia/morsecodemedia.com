@@ -13,7 +13,7 @@
       <div class="slides slides--contained effect-2">
         <div class="slide slide--current">
           <div
-            :class="'slide' + displaySlide"
+            :class="[{'glitch--animate': glitchAnimate},'slide' + displaySlide]"
             class="slide__img glitch">
             <div
               v-for="index in totalGlitchs"
@@ -39,23 +39,26 @@
         heroStatement: homepageHero.heroStatement,
         currentSlide: 0,
         displaySlide: 0,
-        totalSlides: 2,
+        totalSlides: 4,
         totalGlitchs: 5,
+        glitchAnimate: false,
         glitchStep: 0,
         glitchInterval: null,
-        glitchSpeed: 100,
+        glitchSpeed: 400,
         slideShowInterval: null,
-        slideShowSpeed: 4000
+        slideShowSpeed: 8000
       }
     },
     watch: {
       currentSlide: function (newSlide, oldSlide) {
         this.glitchStep = this.totalGlitchs
+        this.glitchAnimate = true
         this.glitchInterval = setInterval(() => {
           this.glitchStep--
-          if (this.glitchStep <= 0) {
+          if (this.glitchStep < 0) {
             clearInterval(this.glitchInterval)
             this.displaySlide = this.currentSlide
+            this.glitchAnimate = false
           }
         }, this.glitchSpeed)
       }
@@ -139,12 +142,12 @@
     .hero {
       grid-template-rows: 45px auto auto auto auto 45px;
       grid-template-areas:
-      ".  .  .  .  .  .  .  .  .  .  .  ."
+      ".  .  .  .  .  .  .  hi hi hi hi hi"
       "hc hc hc hc hc hc hc hi hi hi hi hi"
       "hc hc hc hc hc hc hc hi hi hi hi hi"
       "hc hc hc hc hc hc hc hi hi hi hi hi"
       "hc hc hc hc hc hc hc hi hi hi hi hi"
-      ".  .  .  .  .  .  .  .  .  .  .  .";
+      ".  .  .  .  .  .  .  hi hi hi hi hi";
       .hero-copy {
         padding: 30px 10px 45px;
       }
@@ -181,31 +184,24 @@
     }
   }
 
-  $gap-horizontal: 10px;
-  $gap-vertical: 5px;
-  $time-anim: 2s;
-  $delay-anim: 0s;
-  $blend-mode-1: none;
-  $blend-mode-2: none;
-  $blend-mode-3: none;
-  $blend-mode-4: none;
-  $blend-mode-5: overlay;
-  $blend-color-1: transparent;
-  $blend-color-2: transparent;
-  $blend-color-3: transparent;
-  $blend-color-4: transparent;
-  $blend-color-5: #af4949;
-
   .slides {
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    position: relative;
   }
   .slide {
+    position: absolute;
     height: 100%;
     width: 100%;
   }
+
+  .slide__img {
+    height: 100%;
+    width: 100%;
+  }
+
   .slide0 {
     background: url('/web-usarl/usarl-homepage-desktop-01.jpg') center center no-repeat;
     height: 100%;
@@ -213,6 +209,16 @@
   }
   .slide1 {
     background: url('/web-patravel/patravel-homepage-desktop-01.jpg') center center no-repeat;
+    height: 100%;
+    width: 100%;
+  }
+  .slide2 {
+    background: url('/web-endomenshealth/endomenshealth-desktop-01.jpg') center center no-repeat;
+    height: 100%;
+    width: 100%;
+  }
+  .slide3 {
+    background: url('/web-merion-commercial/merion-commercial-homepage-desktop-01.jpg') center center no-repeat;
     height: 100%;
     width: 100%;
   }
@@ -231,13 +237,18 @@
 
   .glitch__img {
     position: absolute;
-    top: calc(-1 * var($gap-vertical));
-    left: calc(-1 * var($gap-horizontal));
-    width: calc(100% + var($gap-horizontal) * 2);
-    height: calc(100% + var($gap-vertical) * 2);
-    background-color: var($blend-color-1);
+    top: calc(-1 * 5px);
+    left: calc(-1 * 10px);
+    width: calc(100% + 10px * 2);
+    height: calc(100% + 5px * 2);
+    background-color: transparent;
     transform: translate3d(0,0,0);
-    background-blend-mode: var($blend-mode-1);
+    background-blend-mode: normal;
+    display: none;
+  }
+
+  .glitch.glitch__img {
+    display: block;
   }
 
   .glitch__img:nth-child(n+2) {
@@ -245,41 +256,41 @@
   }
 
   .glitch--animate .glitch__img:nth-child(n+2) {
-    animation-duration: var($time-anim);
-    animation-delay: var($delay-anim);
+    animation-duration: 2s;
+    animation-delay: 0s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
   }
 
   .glitch--animate .glitch__img:nth-child(2) {
-    background-color: var($blend-color-2);
-    background-blend-mode: var($blend-mode-2);
+    background-color: transparent;
+    background-blend-mode: none;
     animation-name: glitch-anim-1;
   }
 
   .glitch--animate .glitch__img:nth-child(3) {
-    background-color: var($blend-color-3);
-    background-blend-mode: var($blend-mode-3);
+    background-color: transparent;
+    background-blend-mode: none;
     animation-name: glitch-anim-2;
   }
 
   .glitch--animate .glitch__img:nth-child(4) {
-    background-color: var($blend-color-4);
-    background-blend-mode: var($blend-mode-4);
+    background-color: transparent;
+    background-blend-mode: none;
     animation-name: glitch-anim-3;
   }
 
   .glitch--animate .glitch__img:nth-child(5) {
-    background-color: var($blend-color-5);
-    background-blend-mode: var($blend-mode-5);
+    background-color: #af4949;
+    background-blend-mode: overlay;
     animation-name: glitch-anim-flash;
   }
 
   @keyframes glitch-anim-1 {
     0%, 100% {
       opacity: 1;
-      transform: translate3d(var($gap-horizontal),0,0) scale3d(-1,-1,1);
+      transform: translate3d(10px,0,0) scale3d(-1,-1,1);
       -webkit-clip-path: polygon(0 2%, 100% 2%, 100% 5%, 0 5%);
       clip-path: polygon(0 2%, 100% 2%, 100% 5%, 0 5%);
     }
@@ -332,7 +343,7 @@
   @keyframes glitch-anim-2 {
     0%, 100% {
       opacity: 1;
-      transform: translate3d(calc(-1 * var($gap-horizontal)),0,0);
+      transform: translate3d(calc(-1 * 10px),0,0);
       -webkit-clip-path: polygon(0 25%, 100% 25%, 100% 30%, 0 30%);
       clip-path: polygon(0 25%, 100% 25%, 100% 30%, 0 30%);
     }
@@ -401,7 +412,7 @@
   @keyframes glitch-anim-3 {
     0%, 100% {
       opacity: 1;
-      transform: translate3d(0, calc(-1 * var($gap-vertical)), 0) scale3d(-1,-1,1);
+      transform: translate3d(0, calc(-1 * 5px), 0) scale3d(-1,-1,1);
       -webkit-clip-path: polygon(0 1%, 100% 1%, 100% 3%, 0 3%);
       clip-path: polygon(0 1%, 100% 1%, 100% 3%, 0 3%);
     }
@@ -482,7 +493,7 @@
   @keyframes glitch-anim-flash {
     0%, 5% {
       opacity: 0.2;
-      transform: translate3d(var($gap-horizontal), var($gap-vertical), 0);
+      transform: translate3d(10px, 5px, 0);
     }
     5.5%, 100% {
       opacity: 0;
