@@ -24,14 +24,14 @@
 <style lang="scss">
 
   .section-hero {
-    background: #ffaf4b;
-    background: -moz-radial-gradient(center, ellipse cover, #ffaf4b 0%, #ff920a 100%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffaf4b), color-stop(100%, #ff920a));
-    background: -webkit-radial-gradient(center, ellipse cover, #ffaf4b 0%, #ff920a 100%);
-    background: -o-radial-gradient(center, ellipse cover, #ffaf4b 0%, #ff920a 100%);
-    background: -ms-radial-gradient(center, ellipse cover, #ffaf4b 0%, #ff920a 100%);
-    background: radial-gradient(ellipse at center, #ffaf4b 0%, #ff920a 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a', GradientType=1 );
+    background: #485563;
+    background: -moz-radial-gradient(center, ellipse cover, #485563, #29323C);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #485563), color-stop(100%, #29323C));
+    background: -webkit-radial-gradient(center, ellipse cover, #485563, #29323C);
+    background: -o-radial-gradient(center, ellipse cover, #485563, #29323C);
+    background: -ms-radial-gradient(center, ellipse cover, #485563, #29323C);
+    background: radial-gradient(ellipse at center, #485563, #29323C);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#485563', endColorstr='#29323C', GradientType=1 );
 
     height: 75vh;
     width: 100vw;
