@@ -13,7 +13,7 @@
       <div class="slides slides--contained effect-2">
         <div class="slide slide--current">
           <div
-            :class="[{'glitch--animate': glitchAnimate},'slide' + displaySlide]"
+            :class="[{'glitch--animate': glitchAnimate}, 'slide' + displaySlide]"
             class="slide__img glitch">
             <div
               v-for="index in totalGlitchs"
@@ -44,7 +44,7 @@
         glitchAnimate: false,
         glitchStep: 0,
         glitchInterval: null,
-        glitchSpeed: 400,
+        glitchSpeed: 600,
         slideShowInterval: null,
         slideShowSpeed: 8000
       }
@@ -52,8 +52,8 @@
     watch: {
       currentSlide: function (newSlide, oldSlide) {
         this.glitchStep = this.totalGlitchs
-        this.glitchAnimate = true
         this.glitchInterval = setInterval(() => {
+          this.glitchAnimate = true
           this.glitchStep--
           if (this.glitchStep < 0) {
             clearInterval(this.glitchInterval)
@@ -64,13 +64,17 @@
       }
     },
     created() {
-      this.slideShowInterval = setInterval(() => {
-        this.currentSlide = (this.currentSlide + 1 < this.totalSlides) ? this.currentSlide + 1 : 0
-      }, this.slideShowSpeed)
+      this.slideShowInterval = setInterval(this.nextSlide, this.slideShowSpeed)
+      this.nextSlide()
     },
     beforeDestroy() {
       clearInterval(this.slideShowInterval)
       clearInterval(this.glitchInterval)
+    },
+    methods: {
+      nextSlide: function () {
+        this.currentSlide = (this.currentSlide + 1 < this.totalSlides) ? this.currentSlide + 1 : 0
+      }
     }
   }
 </script>
@@ -148,8 +152,109 @@
       "hc hc hc hc hc hc hc hi hi hi hi hi"
       "hc hc hc hc hc hc hc hi hi hi hi hi"
       ".  .  .  .  .  .  .  hi hi hi hi hi";
+
       .hero-copy {
         padding: 30px 10px 45px;
+      }
+
+      .slides {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        .slide {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          .slide__img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+
+      .slide0 {
+        background: url('/web-usarl/usarl-homepage-desktop-01.jpg') center center no-repeat;
+        height: 100%;
+        width: 100%;
+      }
+      .slide1 {
+        background: url('/web-patravel/patravel-homepage-desktop-01.jpg') center center no-repeat;
+        height: 100%;
+        width: 100%;
+      }
+      .slide2 {
+        background: url('/web-endomenshealth/endomenshealth-desktop-01.jpg') center center no-repeat;
+        height: 100%;
+        width: 100%;
+      }
+      .slide3 {
+        background: url('/web-merion-commercial/merion-commercial-homepage-desktop-01.jpg') center center no-repeat;
+        height: 100%;
+        width: 100%;
+      }
+
+      .glitch {
+        overflow: hidden;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        &.glitch__img {
+          display: block;
+        }
+      }
+
+      .glitch__img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform: translate3d(0,0,0);
+        background-color: transparent;
+        background-blend-mode: normal;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        display: none;
+      }
+
+      .glitch__img:nth-child(n+2) {
+        opacity: 0;
+      }
+
+      .glitch--animate {
+        .glitch__img:nth-child(n+2) {
+          animation-duration: 2s;
+          animation-delay: 0s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-fill-mode: forwards;
+        }
+
+        .glitch__img:nth-child(2) {
+          background-color: transparent;
+          background-blend-mode: none;
+          animation-name: glitch-anim-1;
+        }
+
+        .glitch__img:nth-child(3) {
+          background-color: transparent;
+          background-blend-mode: none;
+          animation-name: glitch-anim-2;
+        }
+
+        .glitch__img:nth-child(4) {
+          background-color: transparent;
+          background-blend-mode: none;
+          animation-name: glitch-anim-3;
+        }
+
+        .glitch__img:nth-child(5) {
+          background-color: #af4949;
+          background-blend-mode: overlay;
+          animation-name: glitch-anim-flash;
+        }
       }
     }
   }
@@ -182,109 +287,6 @@
         }
       }
     }
-  }
-
-  .slides {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-  }
-  .slide {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-  }
-
-  .slide__img {
-    height: 100%;
-    width: 100%;
-  }
-
-  .slide0 {
-    background: url('/web-usarl/usarl-homepage-desktop-01.jpg') center center no-repeat;
-    height: 100%;
-    width: 100%;
-  }
-  .slide1 {
-    background: url('/web-patravel/patravel-homepage-desktop-01.jpg') center center no-repeat;
-    height: 100%;
-    width: 100%;
-  }
-  .slide2 {
-    background: url('/web-endomenshealth/endomenshealth-desktop-01.jpg') center center no-repeat;
-    height: 100%;
-    width: 100%;
-  }
-  .slide3 {
-    background: url('/web-merion-commercial/merion-commercial-homepage-desktop-01.jpg') center center no-repeat;
-    height: 100%;
-    width: 100%;
-  }
-
-  .glitch {
-    overflow: hidden;
-    position: relative;
-  }
-
-  .glitch,
-  .glitch__img {
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
-
-  .glitch__img {
-    position: absolute;
-    top: calc(-1 * 5px);
-    left: calc(-1 * 10px);
-    width: calc(100% + 10px * 2);
-    height: calc(100% + 5px * 2);
-    background-color: transparent;
-    transform: translate3d(0,0,0);
-    background-blend-mode: normal;
-    display: none;
-  }
-
-  .glitch.glitch__img {
-    display: block;
-  }
-
-  .glitch__img:nth-child(n+2) {
-    opacity: 0;
-  }
-
-  .glitch--animate .glitch__img:nth-child(n+2) {
-    animation-duration: 2s;
-    animation-delay: 0s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-fill-mode: forwards;
-  }
-
-  .glitch--animate .glitch__img:nth-child(2) {
-    background-color: transparent;
-    background-blend-mode: none;
-    animation-name: glitch-anim-1;
-  }
-
-  .glitch--animate .glitch__img:nth-child(3) {
-    background-color: transparent;
-    background-blend-mode: none;
-    animation-name: glitch-anim-2;
-  }
-
-  .glitch--animate .glitch__img:nth-child(4) {
-    background-color: transparent;
-    background-blend-mode: none;
-    animation-name: glitch-anim-3;
-  }
-
-  .glitch--animate .glitch__img:nth-child(5) {
-    background-color: #af4949;
-    background-blend-mode: overlay;
-    animation-name: glitch-anim-flash;
   }
 
   @keyframes glitch-anim-1 {
