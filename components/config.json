@@ -1,0 +1,1631 @@
+{
+  "navigation": [
+    {
+      "url": "https://www.morsecodemedia.com/",
+      "text": "Home"
+    },
+    {
+      "url": "/about/",
+      "text": "About"
+    },
+    {
+      "url": "/case-studies/",
+      "text": "Case Studies"
+    },
+    {
+      "url": "https://blog.morsecodemedia.com/",
+      "text": "Blog"
+    },
+    {
+      "url": "/contact/",
+      "text": "Contact"
+    }
+  ],
+  "homepageHero": {
+    "heroDescriptor": "award-winning developer",
+    "heroName": "Brandon Morse",
+    "heroStatement": "I have a passion to innovate and develop digital experiences."
+  },
+  "about": {
+    "headshot": "/headshots/brandon-morse-01.jpg",
+    "homeQuote": "Bringing beautifully designed experiences to life through coding, testing, and just the right amount of technical magic. <a href=\"/about/\">More about me &raquo;</a>",
+    "aboutQuote": "My name is Brandon Morse. I am a New Jersey-based, developer with a passion to innovate and to create a better web. I've worked with many great clients, such as: Walmart, Ikea, Lenovo, The Children's Hospital of Philadelphia, and more! Pushing the digital envelope, my analytical and creative thinking drives me to bridge the gap between client fantasies and digital realities to bring incredible interactive experiences to life.",
+    "caseStudiesQuote": "Bridging the gap between client fantasies and digital realities.",
+    "contactQuote": "Contact Quote Goes Here",
+    "trackRecordQuote": "With over 15 years of experience, I have demonstrated success in communicating technical/complex information in understandable language to non-technical and technical personnel; plan and execute presentations, write proposals, system documentation and client reference materials.",
+    "workHistory": [
+      {
+        "company": "GSW Advertising",
+        "location": "Newtown, PA",
+        "title": "Lead Architect",
+        "yearStart": "2018",
+        "yearEnd": "",
+        "notableSuccesses": [
+          "Works with clients such as, Endo Pharmacueticals, Mitsubishi Tanabe Pharmaceuticals America, Johnson and Johnson, Aerie Pharmaceuticals."
+        ]
+      },
+      {
+        "company": "GSW Advertising",
+        "location": "Newtown, PA",
+        "title": "Associate Technology Director",
+        "yearStart": "2016",
+        "yearEnd": "2018",
+        "notableSuccesses": [
+          "Managed and mentored a team of developers of various skillsets.",
+          "Responsible for build quality, execution, maintainabiliy and support.",
+          "Maintains technical relationships with technical vendors and client IT departments.",
+          "Consulted on project scopes, technical and functional specs, and timelines.",
+          "Works with clients such as, Endo Pharmacueticals, Shire, Teva Pharmacutical Industries Ltd., Johnson and Johnson, Aprecia Pharmaceuticals, SteadyMed Therapeutics."
+        ]
+      },
+      {
+        "company": "inVentiv Creative Studios",
+        "location": "Newtown, PA",
+        "title": "Technology Manager",
+        "yearStart": "2015",
+        "yearEnd": "2016",
+        "notableSuccesses": [
+          "Managed and mentored a team of developers of various skillsets.",
+          "Oversaw the recruitment efforts for new team members.",
+          "Acted as the technical leiasion throughout project lifecycles.",
+          "Consultant on project scopes, technical and functional specs, and timelines.",
+          "Worked with clients such as, Endo Pharmacueticals, Shire, Teva Pharmacutical Industries Ltd., Novartis AG, Johnson and Johnson, AstraZeneca."
+        ]
+      },
+      {
+        "company": "allwebcafe",
+        "location": "Berwyn, PA",
+        "title": "Director of Technology and Development",
+        "yearStart": "2014",
+        "yearEnd": "2015",
+        "notableSuccesses": [
+          "Spearheaded a successful server migration, reducing the monthly spend by 92%.",
+          "Developed and implemented an interactive QA process.",
+          "Executed 'work-flex' and 'work-remote' initiatives allowing employees to gain better control over their work-life balance.",
+          "Oversaw and mentored a team of developers of various skill sets.",
+          "Maintained development, staging and production servers on DigitalOcean, Rackspace and Amazon Web Services."
+        ]
+      },
+      {
+        "company": "allwebcafe",
+        "location": "Berwyn, PA",
+        "title": "Senior Web Developer",
+        "yearStart": "2012",
+        "yearEnd": "2014",
+        "notableSuccesses": [
+          "Developed two box subscription sites for Wal-Mart that generated over 188k users and $2.1M in less than a year.",
+          "Created a system for internal documentation of clients, projects, processes.",
+          "Lead and implemented team building and best practice exercises as well as optimization techniques.",
+          "Launched a tiered hosting support system for customers - complete with ticketing system, site and server up-times tied to Rackspace Cloud and Pingdom APIs, and 24-hour support.",
+          "Wrote 'Is It Time To Drop Support for Internet Explorer 8', a blog post that generated 18.7k+ visitors (17.4k+ unique) since February 2014 - ~42% of traffic to the website. [as of July 21, 2015.]"
+        ]
+      },
+      {
+        "company": "morsecodemedia",
+        "location": "127.0.0.1",
+        "title": "Freelance Web Developer",
+        "yearStart": "2005",
+        "yearEnd": "",
+        "notableSuccesses": []
+      }
+    ],
+    "certifications": [
+      {
+        "certification": "Custom Lightbox Ads Badge Certification",
+        "organization": "DoubleClick",
+        "organizationLogo": "",
+        "certificationStart": "March 2016",
+        "certificationEnd": ""
+      },
+      {
+        "certification": "Dynamic Creative Badge Certification",
+        "organization": "DoubleClick",
+        "organizationLogo": "",
+        "certificationStart": "March 2016",
+        "certificationEnd": ""
+      },
+      {
+        "certification": "VPAID Badge Certification",
+        "organization": "DoubleClick",
+        "organizationLogo": "",
+        "certificationStart": "March 2016",
+        "certificationEnd": ""
+      },
+      {
+        "certification": "YouTube Masthead Badge Certification",
+        "organization": "DoubleClick",
+        "organizationLogo": "",
+        "certificationStart": "March 2016",
+        "certificationEnd": ""
+      },
+      {
+        "certification": "HTML5 Studio Certification",
+        "organization": "DoubleClick",
+        "organizationLogo": "",
+        "certificationStart": "February 2016",
+        "certificationEnd": ""
+      },
+      {
+        "certification": "Veeva MyInsights",
+        "organization": "Veeva",
+        "organizationLogo": "",
+        "certificationStart": "May 2017",
+        "certificationEnd": "May 2018"
+      },
+      {
+        "certification": "Inbound Certification",
+        "organization": "HubSpot",
+        "organizationLogo": "",
+        "certificationStart": "February 2015",
+        "certificationEnd": "March 2016"
+      },
+      {
+        "certification": "HubSpot Design Certification",
+        "organization": "HubSpot",
+        "organizationLogo": "",
+        "certificationStart": "January 2015",
+        "certificationEnd": "February 2016"
+      }
+    ],
+    "socialMedia": [
+      {
+        "url": "https://www.linkedin.com/in/brandonmorse",
+        "title": "LinkedIn",
+        "icon": ""
+      },
+      {
+        "url": "https://github.com/morsecodemedia",
+        "title": "Github",
+        "icon": ""
+      },
+      {
+        "url": "",
+        "title": "GitLab",
+        "icon": ""
+      },
+      {
+        "url": "",
+        "title": "CodePen",
+        "icon": ""
+      },
+      {
+        "url": "https://stackoverflow.com/users/1857186/morsecodemedia",
+        "title": "Stack-Overflow"
+      }
+    ],
+    "awards": [
+      {
+        "award": "W3 Silver Awards",
+        "organization": "W3 Awards",
+        "count": "4"
+      },
+      {
+        "award": "Davey Silver Award",
+        "organization": "Davey Awards",
+        "count": "1"
+      },
+      {
+        "award": "Creative Excellence Award for Healthcare Professional Website",
+        "organization": "The RX Club",
+        "count": "1"
+      },
+      {
+        "award": "1:1 Product Website",
+        "organization": "The RX Club",
+        "count": "1"
+      },
+      {
+        "award": "Summit International Leader Award",
+        "organization": "Summit International Awards",
+        "count": "1"
+      },
+      {
+        "award": "Communicator Award of Distinction",
+        "organization": "Communicator Awards",
+        "count": "1"
+      }
+    ]
+  },
+  "services": [
+    {
+      "title": "Web Development",
+      "description": "I approach every web design project with passion and determination, from initial research and data analysis to post-launch support. I deliver smooth, mobile-friendly customer experiences, and yield strong results in improved website performance, SEO, and conversions."
+    },
+    {
+      "title": "Voice Assistants",
+      "description": "Want to know about local school closings, have Alexa control your smart home, or even tell you horrible Dad jokes? If you have an idea for a custom Alexa skill, I can help bring that idea to reality and get it published to the Amazon marketplace."
+    },
+    {
+      "title": "Consultation",
+      "description": "Need someone to provide recommendations and guidance on technologies, services, and systems? My guidance can range from improving IT policies through training to implementing entirely new systems and servers to address your organization’s current and future IT needs."
+    },
+    {
+      "title": "Touch Panels",
+      "description": "Are you in need of an touch screen presentation for your store front or conference booth? I can help you engage your customers with an interactive touch panel experience."
+    },
+    {
+      "title": "Email Marketing",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque inventore ullam ipsam eaque odio omnis voluptatum accusantium, totam quas, amet ipsa. Consequuntur excepturi ea aliquam repellat accusantium quisquam alias labore!"
+    },{
+      "title": "Let's Work Together",
+      "description": "Looking for a website? Need an engaging email to drive customers to your site? Just asking for advice? I can't wait to tackle whatever challenge you are having."
+    }
+  ],
+  "clients": [
+    "Inter IKEA Systems B.V.",
+    "Walmart",
+    "The Children's Hospital of Philadelphia",
+    "John Hopkins",
+    "Endo Pharmaceuticals Inc.",
+    "Shire",
+    "Lenovo Health",
+    "Novartis International AG",
+    "Gilead Sciences, Inc.",
+    "Johnson and Johnson",
+    "Merck & Co., Inc.",
+    "Mitsubishi Tanabe Pharma America, Inc.",
+    "Joe Hand Promotions, Inc.",
+    "Merion Commercial Realty, Inc.",
+    "Quench USA, Inc.",
+    "Tunnell Consulting, Inc.",
+    "Internet Pipeline, Inc.",
+    "GeoBlue Travel Health Insurance",
+    "PA Travel, Inc.",
+    "USA Rugby League",
+    "GSW Advertising",
+    "inVentiv Health",
+    "JSP",
+    "Aerie Pharmaceuticals, Inc.",
+    "Secant Group, LLC",
+    "Entellus Medical, Inc."
+  ],
+  "caseStudies": [
+    {
+      "id": "wal001",
+      "title": "Walmart Baby Subscription Box",
+      "url": "https://babybox.walmart.com/",
+      "yearStart": "2014",
+      "yearEnd": "2014",
+      "insitu": {
+        "img": "",
+        "color1": "#e0e6f2",
+        "color2": "#0076BE"
+      },
+      "gallery": [
+        "https://www.morsecodemedia.com/site/assets/files/1023/babybox-responsive-website-1.jpg"
+      ],
+      "overview": {
+        "description": "Subscription box website for baby products for new and expecting mothers.",
+        "bgColor": "#e0e6f2",
+        "titleColor": "#FDB72B",
+        "descriptionColor": "#0076BE"
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>Walmart approached us about creating two subscription box model sites, one for new and expecting mothers, and the other for <a href=\"/case-studies/walmart-beauty-subscription-box/\">women's beauty products</a>. While these are two completely separate sites, the core functionality was the same. We had to create an architecture that was sophisticated enough to know the user and where they were on their personal buyer's journey, but efficient enough to not duplicate efforts on shared functionality.</p>",
+          "bgColor": "#FDB72B",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "solution",
+          "description": "<p>this is a solution</p>",
+          "bgColor": "#FFFFFF",
+          "fontColor": "#0076BE"
+        },
+        {
+          "title": "results",
+          "description": "<p>Combine with the <a href=\"/case-studies/walmart-beauty-subscription-box/\">Beauty Box Subscription Site</a>, generated over 188k users and $2.1M in less than a year.</p>",
+          "bgColor": "#0076BE",
+          "fontColor": "#FDB72B"
+        },{
+          "title": "technologies",
+          "description": "<p>Ansible, CodeIgniter, PHP, CSS, Javascript, Stripe API, GPG Encryption, SMTP, SFTP, MySQL</p>",
+          "bgColor": "#FDB72B",
+          "fontColor": "#FFFFFF"
+        }
+      ],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": true,
+      "awards": []
+    },
+    {
+      "id": "wal002",
+      "title": "Walmart Beauty Subscription Box",
+      "url": "https://beautybox.walmart.com/",
+      "yearStart": "2014",
+      "yearEnd": "2014",
+      "insitu": {
+        "img": "",
+        "color1": "#f79d3c",
+        "color2": "#b93b61"
+      },
+      "gallery": [],
+      "overview": {
+        "description": "Subscription box website for beauty products for women of all ages.",
+        "bgColor": "#FFFFFF",
+        "titleColor": "#f79d3c",
+        "descriptionColor": "#b93b61"
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>Walmart approached us about creating two subscription box model sites, one for <a href=\"/case-studies/walmart-baby-subscription-box/\">new and expecting mothers</a>, and the other for women's beauty products. While these are two completely separate sites, the core functionality was the same. We had to create an architecture that was sophisticated enough to know the user and where they were on their personal buyer's journey, but efficient enough to not duplicate efforts on shared functionality.</p>",
+          "bgColor": "#FDB72B",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "solution",
+          "description": "<p>this is a solution</p>",
+          "bgColor": "#FFFFFF",
+          "fontColor": "#0076BE"
+        },
+        {
+          "title": "results",
+          "description": "<p>Combine with the <a href=\"/case-studies/walmart-baby-subscription-box/\">Baby Box Subscription Site</a>, generated over 188k users and $2.1M in less than a year.</p>",
+          "bgColor": "#0076BE",
+          "fontColor": "#FDB72B"
+        }
+      ],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": true,
+      "awards": []
+    },
+    {
+      "id": "pat001",
+      "title": "PA Travel",
+      "url": "http://patravel.com/",
+      "yearStart": "2012",
+      "yearEnd": "2015",
+      "insitu": {
+        "img": "",
+        "color1": "#19AFE1",
+        "color2": "#00539A"
+      },
+      "gallery": [
+        "/web-patravel/patravel-homepage-desktop-01.jpg"
+      ],
+      "overview": {
+        "description": "Pennsylvania Travel is a travel agency for unique global vacation deals.",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>PATravel is a small boutique travel agency. Their original site was running on many legacy technologies and was not responsive. A large portion of the site's content was driven by a 3rd-part feed that would be scraped on page load. Unfortunately, the feel often results in broken images, and error pages, which would result in broken pages on PATravel's website.</p><p>They also had a CMS to allow custom additions of vacation packages, however it was constantly broken, and wasn't intuitive for the client to use. There wasn't an option to manage their blog via the CMS either, which resulted in the weekly blog posts to be manually added.</p>",
+          "bgColor": "#19AFE1",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "solution",
+          "description": "<p>We rebuilt the site from the ground up, starting with a mobile-first design. Using analytics and an updated brand strategy, we enhanced the user experience across all browsers and devices, allowing users to get to the information they wanted with ease.</p><p>We replaced the custom CMS with ProcessWire, a PHP-based, secure content management system and framework. Management of the blog was built into the system along with the ability to manage call-tracking phone numbers for custom landing pages to align with the content marketing strategy we put together.<p><p>We updated the way the 3rd-party feed provided content for the website. The feed is now parsed as an automated system task, that loads the information into the CMS. This allows system admins to update or remove any information as needed, to keep a clean and consistent experience for PATravel's users.</p>",
+          "bgColor": "#FFFFFF",
+          "fontColor": "#222222"
+        },
+        {
+          "title": "results",
+          "description": "<p>Client is able to manage 100% of the content displayed on the site, regardless the original source of the data. With all data in the CMS, site is now able to have a more robust search integrated throughout the site. Regular blog articles are no longer a sore issue and are able to be added freely though the CMS. Landing pages with call tracking have the ability to display an unlimited set of numbers, allowing scalability in their content marketing strategy.</p>",
+          "bgColor": "#00539A",
+          "fontColor": "#FFFFFF"
+        }
+      ],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": true,
+      "awards": []
+    },
+    {
+      "id": "usarl001",
+      "title": "USA Rugby League",
+      "url": "http://www.usarl.org/",
+      "yearStart": "2012",
+      "yearEnd": "2016",
+      "insitu": {
+        "img": "/web-usarl/usarl-insitu-01.png",
+        "color1": "#E5002E",
+        "color2": "#1A1B69"
+      },
+      "gallery": [
+        "/web-usarl/usarl-homepage-desktop-01.jpg",
+        "/web-usarl/usarl-clubs-desktop-01.jpg",
+        "/web-usarl/usarl-conference-listings-desktop-01.jpg"
+      ],
+      "overview": {
+        "description": "The official website of the US Association of Rugby League.",
+        "bgColor": "#1A1B69",
+        "titleColor": "#E5002E",
+        "descriptionColor": "#FFFFFF"
+      },
+      "description": [
+        {
+          "title": "Challenge",
+          "description": "<p>The original website was built as a WordPress site. Unfortunately, the way in which it was built included altering the 'core system', leaving it unable to be updated. This meant security vulnerabilities were unable to be addressed causing the site to be hacked multiple times over the years. The fragile state of the site also meant that making minor content updates (ie, creating new pages) a more cumbersome task than it needed to be.</p><p>Another challenge with the website was the 'League Manager', was a partially built out plugin that required the deletion of the prior year's teams, conferences, standings, etc. to set up the upcoming season's game management.</p><p>The last challenge was that the site was not responsive.</p>",
+          "bgColor": "#E5002E",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "Solution",
+          "description": "<p>First and foremost, we addressed the security concerns, moving the site into ProcessWire. We created a new League Manager to be an integral part of the site's content and structure. It all starts with the teams. Each team has their own page, with history, plater roster, schedule and more. Due to the scalability of league, the number of teams and conferences varied from season to season. We took this into consideration, allowing admins to define the conferences and which teams were in each for each year. By using the teams' 'ids' as references, we were able to create a history of previous years, despite if a team didn't play certain years, or was zoned into a different conference.</p><p>The system also allowed for News and Video Library sections, complete with tag management. This tagging system allowed for relevant articles and videos to be dynamically pulled into the team pages as well.</p><p>Another new offering provided, was a portal for users to find out how to get involved with the league, as well as current members to be able to pay their membership dues.</p>",
+          "bgColor": "#FFFFFF",
+          "fontColor": "#444444"
+        },
+        {
+          "title": "Results",
+          "description": "<p>Since the launch of the site, it is no longer a victim of malicious attacks. Updates are able to be managed by content administrations, and no longer require a developer. Users have a more complete and engaging experience no matter which device or browser they are viewing the site.</p>",
+          "bgColor": "#1A1B69",
+          "fontColor": "#FFFFFF"
+        }
+      ],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": true,
+      "awards": []
+    },
+    {
+      "id": "tnl001",
+      "title": "Tunnell Consulting",
+      "url": "http://www.tunnellconsulting.com/",
+      "yearStart": "2015",
+      "yearEnd": "2015",
+      "insitu": {
+        "img": "",
+        "color1": "#254e99",
+        "color2": "#099ed6"
+      },
+      "gallery": [
+        "https://www.morsecodemedia.com/site/assets/files/1104/tunnell-consulting-responsive-website-1.jpg",
+        "https://www.morsecodemedia.com/site/assets/files/1104/tunnell-consulting-responsive-website-2.jpg",
+        "https://www.morsecodemedia.com/site/assets/files/1104/tunnell-consulting-responsive-website-3.jpg"
+      ],
+      "overview": {
+        "description": "A global pharmaceutical and biotechnology consulting company.",
+        "bgColor": "#099ed6",
+        "titleColor": "#FFFFFF",
+        "descriptionColor": "#092e6e"
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>Tunnell engaged us to update their website to a modernized and responsive design. Their updated web presence was to communicate Tunnell's story in a way that conveys the impact their services have on the life sciences industry at large. In addition, the website was meant to draw new organizational talent and communicate Tunnell's evolving services.</p>",
+          "bgColor": "#254e99",
+          "fontColor": "#FFFFFF"
+        },
+        {
+        "title": "solution",
+        "description": "<p>Before approaching the website redesign, we developed buyer personas, a positioning statement, and a Brand Playbook that worked to inform the website architecture and user experience. The homepage story and internal pages were heavily based on feedback received in the client and customer interviews that made up the Brand Playbook.</p>",
+        "bgColor": "#099ed6",
+        "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "results",
+          "description": "<p>We created a fresh, modern design that is simple to use and easy to navigate. With an emphasis placed on SEO and responsive design, the new website is set to perform and behave significantly better across all devices. It tells the Tunnell story effectively, positioning them as a professional and reputable consulting firm within the life sciences industry.</p>",
+          "bgColor": "#FFFFFF",
+          "fontColor": "#092e6e"
+        }
+      ],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": true,
+      "awards": [
+        {
+          "award": "Davey Silver Award",
+          "organization": "Davey Awards",
+          "year": "2015"
+        },
+        {
+          "award": "W3 Silver Award",
+          "organization": "W3 Awards",
+          "year": "2015"
+        }
+      ]
+    },
+    {
+      "id": "xdc001",
+      "title": "Xiaflex for Dupuytren's Contracture",
+      "url": "https://dupuytrens-contracture.xiaflex.com/",
+      "yearStart": "2015",
+      "yearEnd": "",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "needsPassword": true,
+      "gallery": [
+        "/web-xiaflex-dc/hcp/xiaflex-dc-homepage-desktop-01.jpg"
+      ],
+      "overview": {
+        "description": "Website for both HCPs and Patients to learn about Dupuytren's contracture and XIAFLEX<sup>&reg;</sup>.",
+        "bgColor": "#eb5903",
+        "titleColor": "#FFFFFF",
+        "descriptionColor": "#002e5d"
+      },
+      "description": [
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#eb5903",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#002e5d",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#ebebeb",
+          "fontColor": "#585757"
+        }
+      ],
+      "category": "Websites",
+      "active": false,
+      "awards": []
+    },
+    {
+      "id": "xpd001",
+      "title": "Xiaflex for Peyronie's Disease",
+      "url": "https://peyronies-disease.xiaflex.com/",
+      "yearStart": "2015",
+      "yearEnd": "",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "needsPassword": true,
+      "gallery": [
+        "/web-xiaflex-pd/hcp/xiaflex-pd-homepage-desktop-01.jpg"
+      ],
+      "overview": {
+        "description": "Website for both HCPs and Patients to learn about Peyronie's Disease and Xiaflex.",
+        "bgColor": "#002e5d",
+        "titleColor": "#FFFFFF",
+        "descriptionColor": "#818181"
+      },
+      "description": [
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#002e5d",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#818181",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#FFFFFF",
+          "fontColor": "#002e5d"
+        }
+      ],
+      "category": "Websites",
+      "active": true,
+      "awards": []
+    },
+    {
+      "id": "mcr001",
+      "title": "Merion Commercial Realty",
+      "url": "http://www.merioncommercial.com/",
+      "yearStart": "2015",
+      "yearEnd": "2015",
+      "insitu": {
+        "img": "/web-merion-commercial/merion-commercial-insitu-01.png",
+        "color1": "#093956",
+        "color2": "#0669A5"
+      },
+      "gallery": [
+        "/web-merion-commercial/merion-commercial-homepage-desktop-01.jpg",
+        "/web-merion-commercial/merion-commercial-homepage-mobile-01.jpg",
+        "/web-merion-commercial/merion-commercial-clients-desktop-01.jpg"
+      ],
+      "overview": {
+        "description": "Commercial real estate services and solutions.",
+        "bgColor": "#064870",
+        "titleColor": "#FFFFFF",
+        "descriptionColor": "#edc315"
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>Client didn't have an online presence.</p>",
+          "bgColor": "#093956",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "solution",
+          "description": "<p>Developed a small, responsive, brochure site that highlights the client's services and some various properties.</p>",
+          "bgColor": "#064870",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#0669A5",
+          "fontColor": "#FFFFFF"
+        }
+      ],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": true,
+      "awards": []
+    },
+    {
+      "id": "rad001",
+      "title": "Radicava.com",
+      "url": "https://www.radicava.com/",
+      "yearStart": "2016",
+      "yearEnd": "",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "needsPassword": true,
+      "gallery": [
+        "/web-radicava/patient/radicava-homepage-desktop-01.jpg"
+      ],
+      "overview": {
+        "description": "A branded website for RADICAVA<sup>&reg</sup>. RADICAVA<sup>&reg</sup> (edaravone) is the only FDA-approved treatment option for amyotrophic lateral sclerosis (ALS) in the last 20 years.",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>this is a challenge</p>",
+          "bgColor": "#d6d6d6",
+          "fontColor": "#3c5daa"
+        },
+        {
+          "title": "solution",
+          "description": "<p>this is a solution</p>",
+          "bgColor": "#d9deed",
+          "fontColor": "#484848"
+        },
+        {
+          "title": "results",
+          "description": "<p>this is a result</p>",
+          "bgColor": "#6a86c2",
+          "fontColor": "#FFFFFF"
+        }
+      ],
+      "category": "Websites",
+      "active": false,
+      "awards": [
+        {
+          "award": "Creative Excellence Award for Healthcare Professional Website",
+          "organization": "The RX Club",
+          "year": "2017"
+        },
+        {
+          "award": "1:1 Product Website",
+          "organization": "The RX Club",
+          "year": "2017"
+        }
+      ]
+    },
+    {
+      "id": "emh001",
+      "title": "Endo Men's Health",
+      "url": "https://endomenshealth.com/",
+      "yearStart": "2018",
+      "yearEnd": "",
+      "brandColors": {
+        "color1": "#f0b433",
+        "color2": "#435564",
+        "color3": "#efefef"
+      },
+      "insitu": {
+        "img": "/web-endomenshealth/endomenshealth-insitu-01.png",
+        "color1": "#435564",
+        "color2": "#efefef"
+      },
+      "gallery": [
+        "/web-endomenshealth/endomenshealth-desktop-01.jpg",
+        "/web-endomenshealth/endomenshealth-mobile-01.jpg"
+      ],
+      "overview": {
+        "description": "A landing page to engage urologists to help shape awareness of men's health.",
+        "bgColor": "#435564",
+        "titleColor": "#f0b433",
+        "descriptionColor": "#FFFFFF"
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>this is a challenge</p>",
+          "bgColor": "#f0b433",
+          "fontColor": "#000000"
+        },
+        {
+          "title": "solution",
+          "description": "<p>this is a solution</p>",
+          "bgColor": "#435564",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "results",
+          "description": "<p>this is a result</p>",
+          "bgColor": "#efefef",
+          "fontColor": "#000000"
+        }
+      ],
+      "category": "Websites",
+      "needsPassword": true,
+      "active": false,
+      "awards": []
+    },
+    {
+      "id": "ipl001",
+      "title": "iPipeline",
+      "url": "https://www.ipipeline.com/",
+      "yearStart": "2014",
+      "yearEnd": "2014",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "gallery": ["https://www.morsecodemedia.com/site/assets/files/1141/ipipeline-3.jpg"],
+      "overview": {
+        "description": "iPipeline is a technology provider of SaaS solutions that drives straight-through processing for the insurance and financial services industry.",
+        "bgColor": "#FFFFFF",
+        "titleColor": "#2483b3",
+        "descriptionColor": "#3b4141"
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>iPipeline, a B2B technology provider offering web-based software tools that streamline processing for the insurance industry, hired us to modernize their brand, create a responsive website or multiple platforms, and enhance their offline collateral.</p>",
+          "bgColor": "#3b4141",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "solution",
+          "description": "<p>We conducted a series of interviews to create a brand playbook that established a positioning statement, brand identity and creative mood boards to communicate the brand's message. A website 'proof of concept' was delivered to present content drivers, user experience, responsive design and a grey box prototype. The website was developed using the ExpressionEngine CMS and launched with multiple languages.</p>",
+          "bgColor": "#5c6164",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "results",
+          "description": "<p>The website hosts a blog, news, webinars, events and a careers portal, as well as a series of 'explanamation' videos to help guide users to their product offerings. The end result is a website that is modern and fresh, works seamlessly across multiple screen sizes or devices and that weill help iPipeline's new brand stand out within its industry with content marketing.</p>",
+          "bgColor": "#FFFFFF",
+          "fontColor": "#2483b3"
+        }
+      ],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": true,
+      "awards": [
+        {
+          "award": "Summit International Leader Award",
+          "organization": "Summit International Awards",
+          "year": "2014"
+        },
+        {
+          "award": "Communicator Award of Distinction",
+          "organization": "Communicator Awards",
+          "year": "2015"
+        }
+      ]
+    },
+    {
+      "id": "hth001",
+      "title": "GeoBlue Travel Health Insurance (Desktop)",
+      "url": "https://www.geobluetravelinsurance.com/",
+      "yearStart": "2012",
+      "yearEnd": "2012",
+      "insitu": {
+        "img": "",
+        "color1": "#00aedb",
+        "color2": "#c2e6e1"
+      },
+      "gallery": [
+        "https://www.morsecodemedia.com/site/assets/files/1025/geoblue-desktop-1.jpg",
+        "https://www.morsecodemedia.com/site/assets/files/1025/geoblue-desktop-2.jpg",
+        "https://www.morsecodemedia.com/site/assets/files/1025/geoblue-desktop-3.jpg"
+      ],
+      "overview": {
+        "description": "",
+        "bgColor": "#c2e6e1",
+        "titleColor": "#00aedb",
+        "descriptionColor": "#00a0af"
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>GeoBlue (a Blue Cross Blue Shield affiliated brand) is a leader in the travel health insurance industry. We were hired by GeoBlue to develop an all-new website experience that seamlessly integrated with their complex back-end quoting tool; and upon launch, build out a digital strategy to support the site.</p>",
+          "bgColor": "#00aedb",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "solution",
+          "description": "<p>We utilized a persona based methodology to identify content drivers that would inform the strategy for both web experience and online marketing plan. Additionally, the website launch was supported by an advertising campaign alerting their broker network of the new members tools and online resources.</p>",
+          "bgColor": "#00a0af",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "results",
+          "description": "<p>A silver winner at the 2013 W3 Awards, the GeoBlue travel health insurance website has recorded increased conversion rates through the introduction of 'Find your Plan' and Dynamic Quoting results features. Content Marketing through organic traffic (SEO) and targeted PPC campaigns have generated over 20,000 visitors a month.</p>",
+          "bgColor": "#c2e6e1",
+          "fontColor": "#0c95b9"
+        }
+      ],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": true,
+      "awards": [
+        {
+          "award": "W3 Silver Award",
+          "organization": "W3 Awards",
+          "year": "2013"
+        }
+      ]
+    },
+    {
+      "id": "hth002",
+      "title": "GeoBlue Travel Health Insurance (Mobile)",
+      "url": "https://www.geobluetravelinsurance.com/mobile/index-2.cfm",
+      "yearStart": "2015",
+      "yearEnd": "2015",
+      "insitu": {
+        "img": "",
+        "color1": "#00aedb",
+        "color2": "#c2e6e1"
+      },
+      "gallery": [
+        "/web-geoblue/web-geoblue-travel-insurance-multi-trip-mobile-01.jpg",
+        "/web-geoblue/web-geoblue-travel-insurance-homepage-mobile-01.jpg",
+        "/web-geoblue/web-geoblue-travel-insurance-expat-mobile-01.jpg"
+      ],
+      "overview": {
+        "description": "",
+        "bgColor": "#c2e6e1",
+        "titleColor": "#00aedb",
+        "descriptionColor": "#00a0af"
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>this is a challenge</p>",
+          "bgColor": "#00aedb",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "solution",
+          "description": "<p>this is a solution</p>",
+          "bgColor": "#00a0af",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "results",
+          "description": "<p>this is a result</p>",
+          "bgColor": "#c2e6e1",
+          "fontColor": "#0c95b9"
+        }
+      ],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": false,
+      "awards": []
+    },
+    {
+      "id": "jsp001",
+      "title": "EPP.com",
+      "url": "http://epp.com/",
+      "yearStart": "2014",
+      "yearEnd": "2015",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "gallery": [
+        "https://www.morsecodemedia.com/site/assets/files/1024/epp-responsive-website-1.jpg",
+        "https://www.morsecodemedia.com/site/assets/files/1024/epp-responsive-website-2.jpg",
+        "https://www.morsecodemedia.com/site/assets/files/1024/epp-responsive-website-3.jpg",
+        "https://www.morsecodemedia.com/site/assets/files/1024/epp-responsive-website-4-1.jpg"
+      ],
+      "overview": {
+        "description": "Expanding lightweight material solutions, globally.",
+        "bgColor": "#ed008c",
+        "titleColor": "#FFFFFF",
+        "descriptionColor": "#FFFFFF"
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>ARPRO<sup>&reg</sup> is JSP International's brand name for a premium Expanded Polypropylene (EPP) product. EPP is an impact energy management material with a unique combination of properties including energy absorption, structural strength, low weight, chemical resistance, and both thermal and acoustical insulation. While ARPRO<sup>&reg</sup> is the leading brand of EPP, there are many generic offerings, making it difficult for ARPRO<sup>&reg</sup> to rank organically for non-branded keywords and attributes of EPP.</p>",
+          "bgColor": "#0047ba",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "solution",
+          "description": "<p>We collaborated with JSP to create personas around potential customers that would not be familiar with ARPRO<sup>&reg</sup>. Then crafted an interactive experience and content targeted towards those users, around EPP and other keywords identified in the persona exercise; allowing ARPRO<sup>&reg</sup> to compete with organic rankings against \"generic\" EPP products.</p>",
+          "bgColor": "#FFFFFF",
+          "fontColor": "#000000"
+        },
+        {
+          "title": "results",
+          "description": "<p>EPP has been well-received and achieved page one rankings for core keywords and increased website visit duration by 190%. Bounce rate was decreased by 19% and is now acting as an effective lead generation website.</p>",
+          "bgColor": "#ed008c",
+          "fontColor": "#FFFFFF"
+        }
+      ],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": true,
+      "awards": [
+        {
+          "award": "W3 Silver Award",
+          "organization": "W3 Awards",
+          "year": "2014"
+        }
+      ]
+    },
+    {
+      "id": "xdc002",
+      "title": "Xiaflex for DC 2018 Conference Panel",
+      "url": "",
+      "yearStart": "2018",
+      "yearEnd": "2018",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "gallery": [
+        "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-01.jpg",
+        "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-02.jpg",
+        "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-03.jpg",
+        "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-04.jpg"
+      ],
+      "video": {
+        "src": "https://www.youtube.com/embed/P6d5_a-tPAg",
+        "bgColor": "#002e5d"
+      },
+      "overview": {
+        "description": "Interactive Touch Screen for XIAFLEX<sup>&reg;</sup> for <nobr>Dupuytren's contracture.</nobr>",
+        "bgColor": "#eb5903",
+        "titleColor": "#FFFFFF",
+        "descriptionColor": "#002e5d"
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>this is a challenge</p>",
+          "bgColor": "#eb5903",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "solution",
+          "description": "<p>At the 2018 American Society for Surgery of the Hand (ASSH) conference, we created a convention booth experience unlike any other. We literally brought our latest campaign to life and invited hand surgeons to enter the interactive world of a patient with DC&mdash;the XIAFLEX<sup>&reg;</sup> \"garage.\" To help hand surgeons become more comfortable with using XIAFLEX<sup>&reg;</sup> and gain a deeper understanding of their patients' challenges, this garage provided several dynamic, self-navigated opportunities for training and learning.</p><p>iPads with preloaded modules offered individual on-the-spot training on treating with XIAFLEX<sup>&reg;</sup>, while touch panels peppered throughout the booth allowed hand surgeons to view clinical data and patient profiles. Hand surgeons could also step directly into their patients' shoes by wearing a special motorcycle glove we helped design that simulated what it feels like to have DC. They could even hop onto an actual motorcycle we parked in the booth.</p>",
+          "bgColor": "#002e5d",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "results",
+          "description": "<p>Our interactive, in-your-face efforts to reach HCPs in a meaningful way were a hands-down success. Not only did we engage about 2,145 HCPs attending ASSH&mdash;sourcing nearly 50 high-quality leads at the XIAFLEX<sup>&reg;</sup> booth&mdash;but the ASSH board of directors deemed the experience we created \"the new gold standard.\"</p><p>See the <a href=\"/case-studies/xtra-kick-starts/\">iPad presentations</a> that were also installed in the booth.</p>",
+          "bgColor": "#ebebeb",
+          "fontColor": "#585757"
+        },
+        {
+          "title": "notable items",
+          "description": "Additional awesomeness.",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "needsPassword": true,
+      "category": "Conference Pieces",
+      "active": true,
+      "awards": []
+    },
+    {
+      "id": "xdc003",
+      "title": "Xiaflex for DC 2017 Conference Panel",
+      "url": "",
+      "yearStart": "2017",
+      "yearEnd": "2017",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "gallery": [],
+      "video": {
+        "src": "https://www.youtube.com/embed/P6d5_a-tPAg",
+        "bgColor": "#002e5d"
+      },
+      "overview": {
+        "description": "A touchscreen expereience for the 2017 ASSH Conference. This conference panel showcases procedure videos, treatment efficacy and patient profiles of those treated with XIAFLEX<sup>&reg;</sup> for Dupuytren's contracture.",
+        "bgColor": "#eb5903",
+        "titleColor": "#FFFFFF",
+        "descriptionColor": "#002e5d"
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>this is a challenge</p>",
+          "bgColor": "#eb5903",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "solution",
+          "description": "<p>this is a solution</p>",
+          "bgColor": "#002e5d",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "results",
+          "description": "<p>this is a result</p>",
+          "bgColor": "#ebebeb",
+          "fontColor": "#585757"
+        }
+      ],
+      "needsPassword": true,
+      "category": "Conference Pieces",
+      "active": false,
+      "awards": []
+    },
+    {
+      "id": "rad002",
+      "title": "HQBlitz.com",
+      "url": "",
+      "yearStart": "2018",
+      "yearEnd": "2018",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "gallery": [],
+      "overview": {
+        "description": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>this is a challenge</p>",
+          "bgColor": "#d6d6d6",
+          "fontColor": "#3c5daa"
+        },
+        {
+          "title": "solution",
+          "description": "<p>this is a solution</p>",
+          "bgColor": "#d9deed",
+          "fontColor": "#484848"
+        },
+        {
+          "title": "results",
+          "description": "<p>this is a result</p>",
+          "bgColor": "#6a86c2",
+          "fontColor": "#FFFFFF"
+        }
+      ],
+      "needsPassword": true,
+      "category": "Websites",
+      "active": false,
+      "awards": []
+    },
+    {
+      "id": "rad003",
+      "title": "ALSFRS-R Interactive Human Body Detail Aid",
+      "url": "",
+      "yearStart": "2016",
+      "yearEnd": "2016",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "gallery": [],
+      "video": {
+        "src": "https://www.youtube.com/embed/P6d5_a-tPAg",
+        "bgColor": "#d9deed"
+      },
+      "overview": {
+        "description": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>this is a challenge</p>",
+          "bgColor": "#d6d6d6",
+          "fontColor": "#3c5daa"
+        },
+        {
+          "title": "solution",
+          "description": "<p>this is a solution</p>",
+          "bgColor": "#d9deed",
+          "fontColor": "#484848"
+        },
+        {
+          "title": "results",
+          "description": "<p>this is a result</p>",
+          "bgColor": "#6a86c2",
+          "fontColor": "#FFFFFF"
+        }
+      ],
+      "needsPassword": true,
+      "category": "iPad Presentations",
+      "active": false,
+      "awards": []
+    },
+    {
+      "id": "alexa001",
+      "title": "GSW Speak People Alexa Skill",
+      "url": "https://www.amazon.com/morsecodemedia-Speak-People/dp/B07JJ1D2LW/",
+      "yearStart": "2018",
+      "yearEnd": "2018",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "gallery": [],
+      "overview": {
+        "description": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "solution",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "results",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "needsPassword": false,
+      "category": "Alexa Skills",
+      "active": false,
+      "awards": []
+    },
+    {
+      "id": "alexa002",
+      "title": "Atlantic County Attractions Alexa Skill",
+      "url": "https://www.amazon.com/morsecodemedia-Atlantic-County-Attractions/dp/B074TPLK6R/",
+      "yearStart": "2018",
+      "yearEnd": "2017",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "gallery": [],
+      "overview": {
+        "description": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "solution",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "results",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "needsPassword": false,
+      "category": "Alexa Skills",
+      "active": false,
+      "awards": []
+    },
+    {
+      "id": "ikea001",
+      "title": "IKEA Emails",
+      "url": "",
+      "yearStart": "2010",
+      "yearEnd": "2010",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "gallery": [],
+      "overview": {
+        "description": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "solution",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "results",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "needsPassword": false,
+      "category": "Email Campaigns",
+      "active": false,
+      "awards": []
+    },
+    {
+      "id": "jakfri001",
+      "title": "Jakfri Emails",
+      "url": "",
+      "yearStart": "2018",
+      "yearEnd": "2018",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "gallery": [],
+      "overview": {
+        "description": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "solution",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "results",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "needsPassword": true,
+      "category": "Email Campaigns",
+      "active": false,
+      "awards": []
+    },
+    {
+      "id": "rad004",
+      "title": "Radicava Emails",
+      "url": "",
+      "yearStart": "2016",
+      "yearEnd": "",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "gallery": [],
+      "overview": {
+        "description": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>this is a challenge</p>",
+          "bgColor": "#d6d6d6",
+          "fontColor": "#3c5daa"
+        },
+        {
+          "title": "solution",
+          "description": "<p>this is a solution</p>",
+          "bgColor": "#d9deed",
+          "fontColor": "#484848"
+        },
+        {
+          "title": "results",
+          "description": "<p>this is a result</p>",
+          "bgColor": "#6a86c2",
+          "fontColor": "#FFFFFF"
+        }
+      ],
+      "needsPassword": true,
+      "category": "Email Campaigns",
+      "active": false,
+      "awards": []
+    },
+    {
+      "id": "aerie001",
+      "title": "Aerie MyInsights Dashboard",
+      "url": "",
+      "yearStart": "2018",
+      "yearEnd": "",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "needsPassword": true,
+      "gallery": [],
+      "video": {
+        "src": "https://www.youtube.com/embed/P6d5_a-tPAg",
+        "bgColor": ""
+      },
+      "overview": {
+        "description": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "solution",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "results",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "category": "Reporting Dashboards",
+      "active": false,
+      "awards": []
+    },
+    {
+      "id": "ent001",
+      "title": "Sinus Surgery Options",
+      "url": "",
+      "yearStart": "2012",
+      "yearEnd": "2014",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "needsPassword": false,
+      "gallery": [],
+      "overview": {
+        "description": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "solution",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "results",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "category": "Websites",
+      "active": false,
+      "awards": []
+    },
+    {
+      "id": "jhp001",
+      "title": "Joe Hand Promotions",
+      "url": "",
+      "yearStart": "2013",
+      "yearEnd": "2016",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "needsPassword": false,
+      "gallery": [],
+      "overview": {
+        "description": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "solution",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "results",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "category": "Websites",
+      "active": false,
+      "awards": [
+        {
+          "award": "W3 Silver Award",
+          "organization": "W3 Awards",
+          "year": "2013"
+        }
+      ]
+    },
+    {
+      "id": "xdc004",
+      "title": "XTRA Kick-starts",
+      "url": "http://www.xtra-kickstarts.com/",
+      "yearStart": "2018",
+      "yearEnd": "2018",
+      "insitu": {
+        "img": "",
+        "color1": "#eb5903",
+        "color2": "#FFFFFF"
+      },
+      "needsPassword": true,
+      "gallery": [
+        "/ipad-xtra-kickstarts/xtra-kickstarts-01.jpg",
+        "/ipad-xtra-kickstarts/xtra-kickstarts-02.jpg",
+        "/ipad-xtra-kickstarts/xtra-kickstarts-03.jpg",
+        "/ipad-xtra-kickstarts/xtra-kickstarts-04.jpg",
+        "/ipad-xtra-kickstarts/xtra-kickstarts-05.jpg"
+      ],
+      "video": {
+        "src": "https://www.youtube.com/embed/P6d5_a-tPAg",
+        "bgColor": "#002e5d"
+      },
+      "overview": {
+        "description": "",
+        "bgColor": "#eb5903",
+        "titleColor": "#FFFFFF",
+        "descriptionColor": "#002e5d"
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>this is a challenge</p>",
+          "bgColor": "#eb5903",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "solution",
+          "description": "<p>At the 2018 American Society for Surgery of the Hand (ASSH) conference, we created a convention booth experience unlike any other. We literally brought our latest campaign to life and invited hand surgeons to enter the interactive world of a patient with DC&mdash;the XIAFLEX<sup>&reg;</sup> \"garage.\" To help hand surgeons become more comfortable with using XIAFLEX<sup>&reg;</sup> and gain a deeper understanding of their patients' challenges, this garage provided several dynamic, self-navigated opportunities for training and learning.</p><p>iPads with preloaded modules offered individual on-the-spot training on treating with XIAFLEX<sup>&reg;</sup>, while touch panels peppered throughout the booth allowed hand surgeons to view clinical data and patient profiles. Hand surgeons could also step directly into their patients' shoes by wearing a special motorcycle glove we helped design that simulated what it feels like to have DC. They could even hop onto an actual motorcycle we parked in the booth.</p>",
+          "bgColor": "#002e5d",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "results",
+          "description": "<p>Our interactive, in-your-face efforts to reach HCPs in a meaningful way were a hands-down success. Not only did we engage about 2,145 HCPs attending ASSH&mdash;sourcing nearly 50 high-quality leads at the XIAFLEX<sup>&reg;</sup> booth&mdash;but the ASSH board of directors deemed the experience we created \"the new gold standard.\"</p><p>See the <a href=\"/case-studies/xiaflex-for-dc-2018-conference-panel/\">interactive touch-screen</a> displays that were also installed in the booth.</p>",
+          "bgColor": "#ebebeb",
+          "fontColor": "#585757"
+        }
+      ],
+      "category": "Conference Pieces",
+      "active": true,
+      "awards": []
+    },
+    {
+      "id": "endo001",
+      "title": "Endo Video Library",
+      "url": "",
+      "yearStart": "",
+      "yearEnd": "2018",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "needsPassword": true,
+      "gallery": [
+        "/native-endo-video-library/native-endo-video-library-video-listing-01.jpg",
+        "/native-endo-video-library/native-endo-video-library-downloading-01.jpg"
+      ],
+      "video": {
+        "src": "https://www.youtube.com/embed/P6d5_a-tPAg",
+        "bgColor": ""
+      },
+      "overview": {
+        "description": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "solution",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "results",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "category": "Native Apps",
+      "active": false,
+      "awards": []
+    }
+  ]
+}
