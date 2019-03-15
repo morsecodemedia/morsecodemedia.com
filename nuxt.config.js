@@ -38,9 +38,7 @@ module.exports = {
       { rel: 'apple-touch-icon-precomposed', sizes: '60x60', href: '/favicon/apple-touch-icon-60x60.png' },
       { rel: 'apple-touch-icon-precomposed', sizes: '120x120', href: '/favicon/apple-touch-icon-120x120.png' },
       { rel: 'apple-touch-icon-precomposed', sizes: '76x76', href: '/favicon/apple-touch-icon-76x76.png' },
-      { rel: 'apple-touch-icon-precomposed', sizes: '152x152', href: '/favicon/apple-touch-icon-152x152.png' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Karla' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat' }
+      { rel: 'apple-touch-icon-precomposed', sizes: '152x152', href: '/favicon/apple-touch-icon-152x152.png' }
     ]
   },
   /*
@@ -80,8 +78,15 @@ module.exports = {
       maxAge: 1000 * 60 * 60
     }],
     'nuxt-imagemin',
-    '@nuxtjs/redirect-module'
+    '@nuxtjs/redirect-module',
+    'nuxt-webfontloader'
   ],
+
+  webfontloader: {
+    google: {
+      families: ['Karla','Montserrat']
+    }
+  },
 
   redirect: [
     // Basic Pages
