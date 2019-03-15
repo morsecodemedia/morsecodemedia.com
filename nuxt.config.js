@@ -79,6 +79,7 @@ module.exports = {
       max: 10000,
       maxAge: 1000 * 60 * 60
     }],
+    "nuxt-imagemin"
   ],
 
   styleResources: {
