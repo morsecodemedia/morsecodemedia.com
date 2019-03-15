@@ -1,4 +1,4 @@
-# morsecodemedia.com [![Build Status](https://travis-ci.com/morsecodemedia/morsecodemedia.svg?branch=stage)](https://travis-ci.com/morsecodemedia/morsecodemedia)
+# morsecodemedia.com [![Build Status](https://travis-ci.com/morsecodemedia/morsecodemedia.svg?branch=stage)](https://travis-ci.com/morsecodemedia/morsecodemedia) [![Maintainability](https://api.codeclimate.com/v1/badges/696dcda43da5eec4c967/maintainability)](https://codeclimate.com/github/morsecodemedia/morsecodemedia/maintainability)
 
 # Brandon Morse
 **Email:** brandon@morsecodemedia.com
@@ -108,12 +108,11 @@ YSlow: C, 77%
 
 ## Todo Notes & Cleanup
 - ALT tag images
-- Set up 301 redirects
 - Apply Color palette
 - Homepage
 - About Page Design
 - Contact Page Design/Content
-  - set up Lambda to trigger Postmark
+  - set up middleware for axios call to postmark
   - create email template
 - Photo shoot
 - Case Study Content
