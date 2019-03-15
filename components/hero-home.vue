@@ -39,7 +39,7 @@
         heroStatement: homepageHero.heroStatement,
         currentSlide: 0,
         displaySlide: 0,
-        totalSlides: 4,
+        totalSlides: 5,
         totalGlitchs: 5,
         glitchAnimate: false,
         glitchStep: 0,
@@ -139,6 +139,14 @@
       justify-self: center;
       height: 100%;
       width: 100%;
+      background: #485563;
+      background: -moz-radial-gradient(center, ellipse cover, #485563, #29323C);
+      background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #485563), color-stop(100%, #29323C));
+      background: -webkit-radial-gradient(center, ellipse cover, #485563, #29323C);
+      background: -o-radial-gradient(center, ellipse cover, #485563, #29323C);
+      background: -ms-radial-gradient(center, ellipse cover, #485563, #29323C);
+      background: radial-gradient(ellipse at center, #485563, #29323C);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#485563', endColorstr='#29323C', GradientType=1 );
     }
   }
 
@@ -175,22 +183,27 @@
       }
 
       .slide0 {
-        background: url('/web-usarl/usarl-homepage-desktop-01.jpg') center center no-repeat;
+        background: url('~assets/images/glitch-endo-mens-health-desktop.png') center center no-repeat;
         height: 100%;
         width: 100%;
       }
       .slide1 {
-        background: url('/web-patravel/patravel-homepage-desktop-01.jpg') center center no-repeat;
+        background: url('~assets/images/glitch-endo-video-library-tablet.png') center center no-repeat;
         height: 100%;
         width: 100%;
       }
       .slide2 {
-        background: url('/web-endomenshealth/endomenshealth-desktop-01.jpg') center center no-repeat;
+        background: url('~assets/images/glitch-merion-commercial-desktop.png') center center no-repeat;
         height: 100%;
         width: 100%;
       }
       .slide3 {
-        background: url('/web-merion-commercial/merion-commercial-homepage-desktop-01.jpg') center center no-repeat;
+        background: url('~assets/images/glitch-xtra-kickstarts-tablet.png') center center no-repeat;
+        height: 100%;
+        width: 100%;
+      }
+      .slide4 {
+        background: url('~assets/images/glitch-usarl-desktop.png') center center no-repeat;
         height: 100%;
         width: 100%;
       }
