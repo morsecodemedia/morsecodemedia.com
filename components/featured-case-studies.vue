@@ -3,6 +3,7 @@
     v-if="caseStudies"
     class="case-studies">
     <nuxt-link
+      v-lazy-container="{ selector: 'img' }"
       v-for="(cs, index) in featuredCaseStudies.splice(0,5)"
       :key="index"
       :to="'/case-studies/' + cs.title | lowerKebab"
@@ -10,7 +11,8 @@
       class="case-study"
       role="link">
       <img
-        :src="(cs.gallery.length) ? cs.gallery[Math.floor(Math.random()*cs.gallery.length)] : 'https://www.fillmurray.com/500/500'"
+        :data-src="buildImage((cs.gallery.length) ? cs.gallery[Math.floor(Math.random()*cs.gallery.length)] : null)"
+        :data-loading="loadingColors[Math.floor(Math.random()*loadingColors.length)]"
         role="presentation">
       <div class="overlay">
         <h3>
@@ -30,8 +32,14 @@
 
 <script>
   import Vue from 'vue'
+  import VueLazyload from 'vue-lazyload'
   import { mapGetters } from 'vuex'
   import { caseStudies } from '~/components/config.json'
+
+  Vue.use(VueLazyload, {
+    preLoad: 1.3,
+    attempt: 1
+  })
 
   export default {
     filters: {
@@ -41,7 +49,10 @@
     },
     data() {
       return {
-        caseStudies: caseStudies
+        caseStudies: caseStudies,
+        loadingColors: [
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQYV2PQ09P7DwACogGKJIM9sQAAAABJRU5ErkJggg=='
+        ]
       }
     },
     computed : {
@@ -70,6 +81,17 @@
       ...mapGetters('casestudies', [
         'showPwdProjects'
       ])
+    },
+    methods: {
+      buildImage(imageSrc) {
+        if (imageSrc) {
+          if (imageSrc.substr(0,4) === 'http') {
+            return imageSrc
+          } else {
+            return require(`../assets/images${imageSrc}`)
+          }
+        }
+      }
     }
   }
 </script>

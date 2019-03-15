@@ -3,7 +3,7 @@
     :style="{background: 'linear-gradient' + '(135deg, ' + insitu.color1 + ' 0%, ' + insitu.color2 + ' 100%)'}"
     class="case-study-insitu">
     <img
-      :src="insitu.img"
+      :src="buildImage(insitu.img)"
       alt=""
       role="img">
   </div>
@@ -18,6 +18,17 @@
         required: true,
         twoWay: true,
         default: () => {}
+      }
+    },
+    methods: {
+      buildImage(imageSrc) {
+        if (imageSrc) {
+          if (imageSrc.substr(0,4) === 'http') {
+            return imageSrc
+          } else {
+            return require(`../assets/images${imageSrc}`)
+          }
+        }
       }
     }
   }

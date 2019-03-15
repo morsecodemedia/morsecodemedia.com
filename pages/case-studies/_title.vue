@@ -68,7 +68,7 @@
 
           <img
             v-if="des.type === 'image' && des.src"
-            :data-src="des.src"
+            :data-src="buildImage(des.src)"
             :data-loading="loadingColors[Math.floor(Math.random()*loadingColors.length)]"
             alt=""
             role="img">
@@ -180,6 +180,15 @@
       nextCaseStudy: function() {
         router.go(1)
         next()
+      },
+      buildImage(imageSrc) {
+        if (imageSrc) {
+          if (imageSrc.substr(0,4) === 'http') {
+            return imageSrc
+          } else {
+            return require(`../../assets/images${imageSrc}`)
+          }
+        }
       }
     }
   }

@@ -6,7 +6,7 @@
     class="case-study"
     role="link">
     <img
-      :data-src="cs.img"
+      :data-src="buildImage(cs.img)"
       :data-loading="loadingColors[Math.floor(Math.random()*loadingColors.length)]"
       role="presentation">
     <div class="overlay">
@@ -64,6 +64,17 @@
         loadingColors: [
           'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQYV2PQ09P7DwACogGKJIM9sQAAAABJRU5ErkJggg=='
         ]
+      }
+    },
+    methods: {
+      buildImage(imageSrc) {
+        if (imageSrc) {
+          if (imageSrc.substr(0,4) === 'http') {
+            return imageSrc
+          } else {
+            return require(`../assets/images${imageSrc}`)
+          }
+        }
       }
     }
   }

@@ -183,27 +183,27 @@
       }
 
       .slide0 {
-        background: url('~assets/images/glitch-endo-mens-health-desktop.png') center center no-repeat;
+        background: url('~assets/images/glitch/glitch-endo-mens-health-desktop.png') center center no-repeat;
         height: 100%;
         width: 100%;
       }
       .slide1 {
-        background: url('~assets/images/glitch-endo-video-library-tablet.png') center center no-repeat;
+        background: url('~assets/images/glitch/glitch-endo-video-library-tablet.png') center center no-repeat;
         height: 100%;
         width: 100%;
       }
       .slide2 {
-        background: url('~assets/images/glitch-merion-commercial-desktop.png') center center no-repeat;
+        background: url('~assets/images/glitch/glitch-merion-commercial-desktop.png') center center no-repeat;
         height: 100%;
         width: 100%;
       }
       .slide3 {
-        background: url('~assets/images/glitch-xtra-kickstarts-tablet.png') center center no-repeat;
+        background: url('~assets/images/glitch/glitch-xtra-kickstarts-tablet.png') center center no-repeat;
         height: 100%;
         width: 100%;
       }
       .slide4 {
-        background: url('~assets/images/glitch-usarl-desktop.png') center center no-repeat;
+        background: url('~assets/images/glitch/glitch-usarl-desktop.png') center center no-repeat;
         height: 100%;
         width: 100%;
       }
