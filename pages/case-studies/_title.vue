@@ -52,6 +52,7 @@
         :style="{'background-color': cs.overview.bgColor}"
         class="description-container">
         <div
+          v-lazy-container="{ selector: 'img' }"
           v-for="(des, index) in activeDescription"
           :key="index"
           :class="(des.type === 'description') ? 'text-block' : 'img-block'"
@@ -67,7 +68,8 @@
 
           <img
             v-if="des.type === 'image' && des.src"
-            :src="des.src"
+            :data-src="des.src"
+            :data-loading="loadingColors[Math.floor(Math.random()*loadingColors.length)]"
             alt=""
             role="img">
         </div>
@@ -100,12 +102,19 @@
 </template>
 
 <script>
+  import Vue from 'vue'
+  import VueLazyload from 'vue-lazyload'
   import config from '~/components/config.json'
   import siteHeader from '~/components/header'
   import siteFooter from '~/components/footer'
   import videoPlayer from '~/components/video-player'
   import passwordProject from '~/components/password-project'
   import caseStudyInsitu from '~/components/case-study-insitu'
+
+  Vue.use(VueLazyload, {
+    preLoad: 1.3,
+    attempt: 1
+  })
 
   export default {
     components: {
@@ -117,7 +126,10 @@
     },
     data() {
       return {
-        caseStudies: config.caseStudies
+        caseStudies: config.caseStudies,
+        loadingColors: [
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQYV2PQ09P7DwACogGKJIM9sQAAAABJRU5ErkJggg=='
+        ]
       }
     },
     computed: {

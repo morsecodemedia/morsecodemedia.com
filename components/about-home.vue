@@ -1,7 +1,10 @@
 <template>
-  <section class="about-intro">
+  <section
+    v-lazy-container="{ selector: 'img' }"
+    class="about-intro">
     <img
-      :src="headshotImg"
+      :data-src="headshotImg"
+      :data-loading="loadingColors[Math.floor(Math.random()*loadingColors.length)]"
       class="headshot"
       alt="A headshot of Brandon Morse"
       role="presentation">
@@ -12,14 +15,24 @@
 </template>
 
 <script>
+  import Vue from 'vue'
+  import VueLazyload from 'vue-lazyload'
   import { about } from '~/components/config.json'
+
+  Vue.use(VueLazyload, {
+    preLoad: 1.3,
+    attempt: 1
+  })
 
   export default {
     name: 'AboutHome',
     data() {
       return {
         headshotImg: about.headshot,
-        quote: about.aboutQuote
+        quote: about.aboutQuote,
+        loadingColors: [
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQYV2PQ09P7DwACogGKJIM9sQAAAABJRU5ErkJggg=='
+        ]
       }
     }
   }
