@@ -74,7 +74,11 @@ module.exports = {
     ['@nuxtjs/google-analytics', {
       id: 'UA-5476316-1'
     }],
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    ['@nuxtjs/component-cache', {
+      max: 10000,
+      maxAge: 1000 * 60 * 60
+    }],
   ],
 
   styleResources: {
