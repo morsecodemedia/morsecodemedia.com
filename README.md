@@ -1,4 +1,8 @@
-# morsecodemedia.com ![Website](https://img.shields.io/website/https/morsecodemedia.com.svg) [![Build Status](https://travis-ci.com/morsecodemedia/morsecodemedia.svg?branch=stage)](https://travis-ci.com/morsecodemedia/morsecodemedia) [![Maintainability](https://api.codeclimate.com/v1/badges/696dcda43da5eec4c967/maintainability)](https://codeclimate.com/github/morsecodemedia/morsecodemedia/maintainability) ![GitHub top language](https://img.shields.io/github/languages/top/morsecodemedia/morsecodemedia.svg) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/morsecodemedia/morsecodemedia.svg)
+# morsecodemedia.com ![Website](https://img.shields.io/website/https/morsecodemedia.com.svg) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/morsecodemedia/morsecodemedia/master.svg)
+
+[![Build Status](https://travis-ci.com/morsecodemedia/morsecodemedia.svg?branch=stage)](https://travis-ci.com/morsecodemedia/morsecodemedia) [![Maintainability](https://api.codeclimate.com/v1/badges/696dcda43da5eec4c967/maintainability)](https://codeclimate.com/github/morsecodemedia/morsecodemedia/maintainability)
+
+![GitHub top language](https://img.shields.io/github/languages/top/morsecodemedia/morsecodemedia.svg) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/morsecodemedia/morsecodemedia.svg)
 
 # Brandon Morse
 **Email:** brandon@morsecodemedia.com
