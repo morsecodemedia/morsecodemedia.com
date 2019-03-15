@@ -4,7 +4,7 @@
       <h4
         v-html="outro.header"/>
     </header>
-    <p
+    <div
       v-html="outro.body" />
   </section>
 </template>
@@ -48,6 +48,9 @@
     }
     p {
       font-size: 26px;
+      a {
+        color: inherit;
+      }
     }
   }
 

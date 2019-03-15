@@ -64,7 +64,7 @@
         },
         outro: {
           "header": 'Your website should be your strongest business asset.',
-          "body": 'It represents your brand to the world, and needs to interface with your customers like one of the team. That’s why I start every project with a conversation — to ensure your web design, web development, and digital strategy align with your goals, every step of the way.'
+          "body": '<p>It represents your brand to the world, and needs to interface with your customers like one of the team. That\'s why I start every project with a conversation &mdash; to ensure your web design, web development, and digital strategy align with your goals, every step of the way.</p><p><a href="/contact/">Let\'s Have A Conversation &raquo;</a></p>'
         }
       }
     }
