@@ -1,10 +1,13 @@
 <template>
-  <section class="bq-w-img">
+  <section
+    v-lazy-container="{ selector: 'img' }"
+    class="bq-w-img">
     <img
-      :src="bqwi.image"
+      :data-src="bqwi.image"
+      :data-loading="loadingColors[Math.floor(Math.random()*loadingColors.length)]"
       class="bqwi-image"
       role="presentation"
-      alt="An image to accompany the quote, however, it provides no additional information and the message is still conveyed without its inclusion.">
+      alt="">
     <blockquote
       class="bqwi-quote"
       v-html="bqwi.quote" />
@@ -12,6 +15,14 @@
 </template>
 
 <script>
+  import Vue from 'vue'
+  import VueLazyload from 'vue-lazyload'
+
+  Vue.use(VueLazyload, {
+    preLoad: 1.3,
+    attempt: 1
+  })
+
   export default {
     name: 'BlockquoteWithImg',
     props: {
@@ -20,6 +31,13 @@
         required: true,
         twoWay: true,
         default: () => {}
+      }
+    },
+    data() {
+      return {
+        loadingColors: [
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQYV2PQ09P7DwACogGKJIM9sQAAAABJRU5ErkJggg=='
+        ]
       }
     }
   }
@@ -99,7 +117,7 @@
       .bqwi-image {
         object-fit: contain;
         object-position: right;
-        max-height: 50vh;
+        max-height: 60vh;
         width: 100%;
       }
     }
