@@ -25,7 +25,7 @@
     <nav
       v-if="navigation.length > 0"
       class="main-nav"
-      role="navigation">
+      role="menu">
       <ul
         class="site-nav">
         <li
@@ -47,8 +47,7 @@
           <a
             :href="sm.url"
             target="_blank"
-            rel="noopener"
-            role="link">
+            rel="noopener">
             <font-awesome-icon
               :icon="['fab', sm.title.toLowerCase()]" />
           </a>

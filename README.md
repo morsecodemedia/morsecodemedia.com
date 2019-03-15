@@ -94,10 +94,17 @@ January 2015-February 2016
 ----
 
 ### 2019-03-15 Lighthouse Report
-Performace: 78
+Performace: 81
 Accessibility: 100
 Best Practices: 93
 SEO: 100
+
+### 2019-03-15 PageSpeed Insights
+95
+
+### 2019-03-15 GTMetrix
+PageSpeed: F, 41%
+YSlow: C, 77%
 
 ## Todo Notes & Cleanup
 - ALT tag images
@@ -117,7 +124,7 @@ SEO: 100
 - Vuex store
   - low animation options
 - Server
-  - Set up new EC2 Instance 
+  - Set up new EC2 Instance
     - Node with PM2
     - Nginx Proxy
 - Update Resume/LinkedIn
