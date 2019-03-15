@@ -79,7 +79,35 @@ module.exports = {
       max: 10000,
       maxAge: 1000 * 60 * 60
     }],
-    "nuxt-imagemin"
+    'nuxt-imagemin',
+    '@nuxtjs/redirect-module'
+  ],
+
+  redirect: [
+    // Basic Pages
+    { from: '^/who-i-am(\/)?$', to: '/about/', statusCode: 301 },
+    { from: '^/contact-me(\/)?$', to: '/contact/', statusCode: 301 },
+
+    // Case Studies
+    { from: '^/case-studies/ipipeline-responsive-website(\/)?$', to: '/case-studies/ipipeline/', statusCode: 301 },
+    { from: '^/case-studies/epp-expanded-polypropylene-responsive-website(\/)?$', to: '/case-studies/epp-com/', statusCode: 301 },
+    { from: '^/case-studies/geoblue-travel-insurance-desktop-website(\/)?$', to: '/case-studies/geoblue-travel-health-insurance-desktop/', statusCode: 301 },
+    { from: '^/case-studies/wal-mart-subscription-boxes-responsive-websites(\/)?$', to: '/case-studies/walmart-baby-subscription-box/', statusCode: 301 },
+    { from: '^/case-studies/tunnell-consulting-responsive-website(\/)?$', to: '/case-studies/tunnell-consulting/', statusCode: 301 },
+    { from: '^/case-studies/patravel-responsive-website(\/)?$', to: '/case-studies/pa-travel/', statusCode: 301 },
+    { from: '^/case-studies/merion-commercial-realty-inc-responsive-website(\/)?$', to: '/case-studies/merion-commercial-realty/', statusCode: 301 },
+
+    // Blog
+    { from: '^/publications(\/)?$', to: 'https://blog.morsecodemedia.com/', statusCode: 301 },
+    { from: '^/publications/internetology-101(\/)?$', to: 'https://blog.morsecodemedia.com/article/', statusCode: 301 },
+    { from: '^/publications/beyond-keywords-and-meta-data-the-developers-seo(\/)?$', to: 'https://blog.morsecodemedia.com/article/', statusCode: 301 },
+    { from: '^/publications/is-it-time-to-drop-support-for-ie8-part-ii(\/)?$', to: 'https://blog.morsecodemedia.com/article/', statusCode: 301 },
+    { from: '^/publications/choosing-a-cms-solution-for-your-website(\/)?$', to: 'https://blog.morsecodemedia.com/article/', statusCode: 301 },
+    { from: '^/publications/why-build-a-custom-404-error-page(\/)?$', to: 'https://blog.morsecodemedia.com/article/', statusCode: 301 },
+    { from: '^/publications/is-it-time-to-drop-support-for-ie8-part-i(\/)?$', to: 'https://blog.morsecodemedia.com/article/', statusCode: 301 },
+    { from: '^/publications/what-is-the-hour-of-code(\/)?$', to: 'https://blog.morsecodemedia.com/article/', statusCode: 301 },
+    { from: '^/publications/wordpress-our-love-hate-relationship(\/)?$', to: 'https://blog.morsecodemedia.com/article/', statusCode: 301 },
+    { from: '^/publications/wordpress-security-tips-cryptanaltic-attacks(\/)?$', to: 'https://blog.morsecodemedia.com/article/', statusCode: 301 }
   ],
 
   styleResources: {
