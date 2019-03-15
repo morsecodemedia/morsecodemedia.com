@@ -93,8 +93,8 @@ January 2015-February 2016
 
 ----
 
-### 2019-02-11 Lighthouse Report
-Performace: 77
+### 2019-03-15 Lighthouse Report
+Performace: 78
 Accessibility: 100
 Best Practices: 93
 SEO: 100
@@ -104,21 +104,20 @@ SEO: 100
 - Set up 301 redirects
 - Apply Color palette
 - Homepage
-  - Hero Graphic(s)
-    - Glitch Animation?
 - About Page Design
 - Contact Page Design/Content
+  - set up Lambda to trigger Postmark
+  - create email template
 - Photo shoot
 - Case Study Content
   - Copy
   - Screenshots
   - Device Insitu
-- CDN
-  - Image Hosting
-    - move images that are from old site that are still being used over
+  - move images that are from old site that are still being used over
 - Vuex store
   - low animation options
 - Server
-  - SSR or Static Gen
-    - hosted all on S3?
+  - Set up new EC2 Instance 
+    - Node with PM2
+    - Nginx Proxy
 - Update Resume/LinkedIn
