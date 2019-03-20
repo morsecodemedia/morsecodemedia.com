@@ -98,21 +98,20 @@ January 2015-February 2016
 ----
 
 ### 2019-03-15 Lighthouse Report
-Performace: 81
+Performace: 97
 Accessibility: 100
-Best Practices: 93
+Best Practices: 100
 SEO: 100
 
 ### 2019-03-15 PageSpeed Insights
-95
+98
 
 ### 2019-03-15 GTMetrix
-PageSpeed: F, 41%
-YSlow: C, 77%
+PageSpeed: A, 98%
+YSlow: B, 87%
 
 ## Todo Notes & Cleanup
 - ALT tag images
-- Apply Color palette
 - Homepage
 - About Page Design
 - Contact Page Design/Content
@@ -126,8 +125,4 @@ YSlow: C, 77%
   - move images that are from old site that are still being used over
 - Vuex store
   - low animation options
-- Server
-  - Set up new EC2 Instance
-    - Node with PM2
-    - Nginx Proxy
 - Update Resume/LinkedIn
