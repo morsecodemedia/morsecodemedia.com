@@ -5,7 +5,7 @@ if [ "$branch" = "master" ]; then
   case "$input" in
     [yY][eE][sS]|[yY]) 
       if yarn build; then
-        rsync -rvhe ssh --progress --delete --chmod=u+rw,g+rw,o+r --exclude-from 'exclude-list.txt' ./ morsecodemedia:/var/www/www.morsecodemedia.com/
+        rsync -ae ssh --progress --delete --chmod=u+rw,g+rw,o+r --exclude-from 'exclude-list.txt' ./ morsecodemedia:/var/www/www.morsecodemedia.com/
       else
         echo "Failed to build site. Aborting"
       fi
@@ -19,7 +19,7 @@ else
   case "$input" in
     [yY][eE][sS]|[yY]) 
       if yarn build; then
-        rsync -rvhe ssh --progress --delete --chmod=u+rw,g+rw,o+r --exclude-from 'exclude-list.txt' ./ morsecodemedia:/var/www/stage.morsecodemedia.com/
+        rsync -ae ssh --progress --delete --chmod=u+rw,g+rw,o+r --exclude-from 'exclude-list.txt' ./ morsecodemedia:/var/www/stage.morsecodemedia.com/
       else
         echo "Failed to build site. Aborting"
       fi
