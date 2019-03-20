@@ -1,9 +1,11 @@
 {
   "name": "morsecodemedia.com",
-  "version": "2019",
+  "version": "2019.03.20",
   "description": "morsecodemedia.com - the portfolio of Brandon G. Morse",
-  "author": "Brandon Morse",
-  "private": true,
+  "author": "Brandon Morse (brandon@morsecodemedia.com)",
+  "private": false,
+  "repository": "https://github.com/morsecodemedia/morsecodemedia",
+  "license": "GPL-3.0",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
