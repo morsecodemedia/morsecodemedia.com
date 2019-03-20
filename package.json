@@ -10,6 +10,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
+    "production": "pm2 start npm --name \"morsecodemedia\" -- start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "yarn run lint",
