@@ -138,7 +138,6 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    },
-    publicPath: 'https://s3.amazonaws.com/mcm-morsecodemedia/'
+    }
   }
 }
