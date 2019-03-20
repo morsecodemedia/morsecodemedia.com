@@ -1,9 +1,4 @@
-*.tar.gz
 .git/
 .gitignore
-.idea/
-README.md
 deploy.sh
 exclude-list.txt
-yarn.lock
-LICENSE
