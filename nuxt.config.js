@@ -65,9 +65,15 @@ module.exports = {
   ],
 
   /*
+  ** Server Middleware Awesomeness
+  */
+  serverMiddleware: [ '~/api/index' ],
+
+  /*
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/axios',
     '@nuxtjs/sitemap',
     ['@nuxtjs/google-analytics', {
       id: 'UA-5476316-1'

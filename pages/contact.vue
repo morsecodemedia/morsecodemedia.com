@@ -71,6 +71,7 @@
 </template>
 
 <script>
+  import axios from 'axios'
   import config from '~/components/config.json'
   import siteHeader from '~/components/header'
   import sectionHero from '~/components/section-hero'
@@ -126,29 +127,36 @@
         })
       },
       validateForm: async function() {
-        // this.validatedClass = 'submitted'
-        // await this.timeout(1000)
+        this.validatedClass = 'submitted'
+        await this.timeout(1000)
         // validate name, email and message
-        // if validated
-          //this.validatedClass = ''
-          //await this.timeout(425)
-          //this.validatedClass = 'validated'
-          //await this.timeout(1000)
+        if (true) {
+          await this.sendEmail()
+          this.validatedClass = ''
+          await this.timeout(425)
+          this.validatedClass = 'validated'
+          await this.timeout(1000)
           // Hide Form and show thank you message
-        // else
-          // this.validatedClass = 'error'
+        } else {
+          this.validatedClass = 'error'
           // put error classes on form fields as needed
-          // await this.timeout(1500)
-          // this.validatedClass = ''
+          await this.timeout(1500)
+          this.validatedClass = ''
+        }
       },
       sendEmail: async function() {
-        let client = new postmark.Client('api-key')
-
-        client.sendEmail({
-          'From': '',
-          'To': '',
-          'Subject': '',
-          'TextBody': ''
+        // make axios call to api
+        console.log('i made it to sendEmail')
+        axios.post('/api/submitContactForm/', {
+          name: this.name,
+          email: this.email,
+          message: this.message
+        })
+        .then(response => {
+          console.log('response')
+        })
+        .catch(error => {
+          console.log(error)
         })
       }
     }
