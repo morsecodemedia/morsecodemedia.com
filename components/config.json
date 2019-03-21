@@ -245,7 +245,7 @@
     },
     {
       "title": "Email Marketing",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque inventore ullam ipsam eaque odio omnis voluptatum accusantium, totam quas, amet ipsa. Consequuntur excepturi ea aliquam repellat accusantium quisquam alias labore!"
+      "description": "Email marketing is a cheap and effective way to reach your customers, build a community and increase sales. Engage subscribers, nurture leads and track results with beautiful, responsive emails."
     },{
       "title": "Let's Work Together",
       "description": "Looking for a website? Need an engaging email to drive customers to your site? Just asking for advice? I can't wait to tackle whatever challenge you are having."
@@ -610,7 +610,7 @@
         }
       ],
       "category": "Websites",
-      "active": true,
+      "active": false,
       "awards": []
     },
     {
@@ -1383,6 +1383,53 @@
       "needsPassword": true,
       "category": "Email Campaigns",
       "active": false,
+      "awards": []
+    },
+    {
+      "id": "rad005",
+      "title": "Radicava Patient Profiles",
+      "url": "",
+      "yearStart": "2019",
+      "yearEnd": "2019",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "gallery": [],
+      "video": {
+        "src": "https://www.youtube.com/embed/ODBRrHXin1A",
+        "bgColor": "#d6d6d6"
+      },
+      "overview": {
+        "description": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>this is a challenge</p>",
+          "bgColor": "#d6d6d6",
+          "fontColor": "#3c5daa"
+        },
+        {
+          "title": "solution",
+          "description": "<p>this is a solution</p>",
+          "bgColor": "#d9deed",
+          "fontColor": "#484848"
+        },
+        {
+          "title": "results",
+          "description": "<p>this is a result</p>",
+          "bgColor": "#6a86c2",
+          "fontColor": "#FFFFFF"
+        }
+      ],
+      "needsPassword": true,
+      "category": "Conference Pieces",
+      "active": true,
       "awards": []
     },
     {
