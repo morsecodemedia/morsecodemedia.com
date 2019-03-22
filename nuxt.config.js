@@ -73,6 +73,10 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    ['@nuxtjs/dotenv', {
+      path: '/',
+      filename: '.env'
+    }],
     '@nuxtjs/axios',
     '@nuxtjs/sitemap',
     ['@nuxtjs/google-analytics', {
@@ -127,6 +131,12 @@ module.exports = {
       'assets/scss/_typography.scss'
     ]
   },
+
+  axios: {
+    baseURL: 'http://localhost:3000',
+    debug: true
+  },
+
   /*
   ** Build configuration
   */
