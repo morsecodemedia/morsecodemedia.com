@@ -8,11 +8,12 @@
           @submit.prevent="validateForm">
 
           <span
-            :class="{'input--filled': name.length !== 0}"
+            :class="[{'input--filled': name.length !== 0}, {'name-error': nameError}]"
             class="input">
             <input
               id="input-name"
               v-model="name"
+              :disabled="formDisabled"
               class="input-field"
               type="text">
             <label
@@ -25,11 +26,12 @@
           </span>
 
           <span
-            :class="{'input--filled': email.length !== 0}"
+            :class="[{'input--filled': email.length !== 0}, {'email-error': emailError}]"
             class="input">
             <input
               id="input-email"
               v-model="email"
+              :disabled="formDisabled"
               class="input-field"
               type="email">
             <label
@@ -42,11 +44,12 @@
           </span>
 
           <span
-            :class="{'input--filled': message.length !== 0}"
+            :class="[{'input--filled': message.length !== 0}, {'message-error': messageError}]"
             class="input textarea">
             <textarea
               id="input-message"
               v-model="message"
+              :disabled="formDisabled"
               class="input-field input-textarea"/>
             <label
               class="input-label input-label-textarea"
@@ -117,8 +120,16 @@
         showThankYou: false,
         name: '',
         email: '',
-        message: ''
+        message: '',
+        page: '',
+        nameError: false,
+        emailError: false,
+        messageError: false,
+        formDisabled: false
       }
+    },
+    mounted() {
+      this.page = $nuxt.$route.path
     },
     methods: {
       timeout: function(delay, args) {
@@ -127,33 +138,66 @@
         })
       },
       validateForm: async function() {
+        this.formDisabled = true
         this.validatedClass = 'submitted'
         await this.timeout(1000)
         // validate name, email and message
-        if (true) {
+        if (!this.name && this.name.length < 3) {
+          this.nameError = true
+        } else {
+          this.nameError = false
+        }
+
+        if (!this.email || !this.validateEmail(this.email)) {
+          this.emailError = true
+        } else {
+          this.emailError = false
+        }
+
+        this.sanitizeMessage(this.message)
+        if (!this.message) {
+          this.messageError = true
+        } else {
+          this.messageError = false
+        }
+
+        if (!this.nameError && !this.emailError && !this.messageError) {
+          this.formDisabled = true
           let emailResponse = await axios.post('../api/', {
             name: this.name,
             email: this.email,
-            message: this.message
+            message: this.message,
+            page: this.page
           })
-          if (emailResponse) {
+
+          if (emailResponse.data === 'success') {
             this.validatedClass = ''
             await this.timeout(425)
             this.validatedClass = 'validated'
             await this.timeout(1000)
             // Hide Form and show thank you message
           } else {
+            this.formDisabled = false
             this.validatedClass = 'error'
             // put error classes on form fields as needed
             await this.timeout(1500)
             this.validatedClass = ''
           }
         } else {
+          this.formDisabled = false
           this.validatedClass = 'error'
           // put error classes on form fields as needed
           await this.timeout(1500)
           this.validatedClass = ''
         }
+      },
+      validateEmail: function(email) {
+        let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        return re.test(email)
+      },
+      sanitizeMessage: function(msg) {
+        let re = /[^\x20-\x3B\x3F-\x7E=]/g
+        this.message = this.message.replace(re, '')
       }
     }
   }
@@ -298,6 +342,39 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         font-size: 16px;
+      }
+    }
+  }
+
+  .input {
+    &.name-error,
+    &.email-error,
+    &.message-error {
+      .input-field {
+        background-color: transparent;
+        border-color: $form-red;
+        &:focus {
+          outline-color: $form-red;
+        }
+      }
+      .input-label {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+      .input-label-content {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+        &::after {
+          color: $form-red;
+          content: "Please enter a valid " attr(data-content);
+          font-size: 12px;
+        }
+      }
+    }
+    &.message-error {
+      .input-label {
+        -webkit-transform: translate3d(0, 10px, 0);
+        transform: translate3d(0, 10px, 0);
       }
     }
   }
