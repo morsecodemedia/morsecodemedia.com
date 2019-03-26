@@ -5,6 +5,7 @@
       <sectionHero :hero="hero" />
       <div class="form-container">
         <form
+          v-if="!showThankYou"
           @submit.prevent="validateForm">
 
           <span
@@ -67,6 +68,11 @@
             type="submit"/>
 
         </form>
+        <div
+          v-else
+          class="thank-you-msg">
+          <p v-html="thankYouMsg"/>
+        </div>
       </div>
     </main>
     <siteFooter />
@@ -125,7 +131,8 @@
         nameError: false,
         emailError: false,
         messageError: false,
-        formDisabled: false
+        formDisabled: false,
+        thankYouMsg: "Thank you for reaching out to me. I will get back you shortly."
       }
     },
     mounted() {
@@ -175,7 +182,7 @@
             await this.timeout(425)
             this.validatedClass = 'validated'
             await this.timeout(1000)
-            // Hide Form and show thank you message
+            this.showThankYou = true
           } else {
             this.formDisabled = false
             this.validatedClass = 'error'
@@ -209,7 +216,8 @@
     display: flex;
     align-content: center;
     justify-content: center;
-    form {
+    form,
+    .thank-you-msg {
       width: 90vw;
     }
   }
