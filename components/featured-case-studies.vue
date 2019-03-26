@@ -21,11 +21,19 @@
           <span>&mdash; View Project &mdash;</span>
         </h3>
       </div>
-      <span
-        v-if="cs.needsPassword"
-        class="requires-password">
-        <font-awesome-icon icon="lock" />
-      </span>
+      <div class="badges">
+        <span
+          v-if="cs.awards.length > 0"
+          class="has-award">
+          <font-awesome-icon icon="trophy" />
+        </span>
+
+        <span
+          v-if="cs.needsPassword"
+          class="requires-password">
+          <font-awesome-icon icon="lock" />
+        </span>
+      </div>
     </nuxt-link>
   </section>
 </template>

@@ -5,6 +5,14 @@
 </template>
 
 <script>
+  import Vue from 'vue'
+  import { library } from '@fortawesome/fontawesome-svg-core'
+  import { faLock, faLockOpen, faTrophy } from '@fortawesome/free-solid-svg-icons'
+  import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+  library.add(faLock, faLockOpen, faTrophy)
+  Vue.component('font-awesome-icon', FontAwesomeIcon)
+
   export default {
     name: 'App',
     head () {
@@ -45,20 +53,22 @@
 </script>
 
 <style lang="scss">
-
-  .requires-password {
+  .badges {
     position: absolute;
-    display: flex;
     bottom: 5px;
     right: 5px;
-    background: rgba(2,2,2,.5);
-    color: rgba(255,255,255,.5);
-    font-size: 16px;
-    line-height: 16px;
-    height: 26px;
-    width: 26px;
-    align-items: center;
-    justify-content: center;
+    .has-award,
+    .requires-password {
+      display: inline-flex;
+      background: rgba(2,2,2,.5);
+      color: rgba(255,255,255,.5);
+      font-size: 16px;
+      line-height: 16px;
+      height: 26px;
+      width: 26px;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   .case-studies {

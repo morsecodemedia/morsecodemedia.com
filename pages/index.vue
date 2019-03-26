@@ -5,7 +5,6 @@
       <heroHome />
       <blockquoteWithImg :bqwi="bqwi" />
       <services />
-      <trackRecord />
       <featuredCaseStudies />
       <linkBarCaseStudies />
       <sectionOutro :outro="outro" />
@@ -39,7 +38,6 @@
       blockquoteWithImg,
       sectionOutro,
       services,
-      trackRecord,
       featuredCaseStudies,
       linkBarCaseStudies,
       siteFooter

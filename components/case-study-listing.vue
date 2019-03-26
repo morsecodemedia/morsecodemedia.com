@@ -16,23 +16,25 @@
         <span>&mdash; View Project &mdash;</span>
       </h3>
     </div>
-    <span
-      v-if="cs.needsPassword"
-      class="requires-password">
-      <font-awesome-icon icon="lock" />
-    </span>
+    <div class="badges">
+      <span
+        v-if="cs.awards.length > 0"
+        class="has-award">
+        <font-awesome-icon icon="trophy" />
+      </span>
+
+      <span
+        v-if="cs.needsPassword"
+        class="requires-password">
+        <font-awesome-icon icon="lock" />
+      </span>
+    </div>
   </nuxt-link>
 </template>
 
 <script>
   import Vue from 'vue'
   import VueLazyload from 'vue-lazyload'
-  import { library } from '@fortawesome/fontawesome-svg-core'
-  import { faLock, faLockOpen } from '@fortawesome/free-solid-svg-icons'
-  import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
-  library.add(faLock, faLockOpen)
-  Vue.component('font-awesome-icon', FontAwesomeIcon)
 
   Vue.use(VueLazyload, {
     preLoad: 1.3,
