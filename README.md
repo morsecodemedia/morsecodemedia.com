@@ -5,9 +5,9 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/morsecodemedia/morsecodemedia.svg) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/morsecodemedia/morsecodemedia.svg)
 
 # Brandon Morse
-**Website:** https://www.morsecodemedia.com  
-**Email:** brandon@morsecodemedia.com  
-**LinkedIn:** https://www.linkedin.com/in/brandonmorse/  
+**Website:** https://www.morsecodemedia.com
+**Email:** brandon@morsecodemedia.com
+**LinkedIn:** https://www.linkedin.com/in/brandonmorse/
 
 ## Work History
 **Lead Architect**
@@ -95,8 +95,8 @@ January 2015-February 2016
 
 ----
 
-### 2019-03-15 Lighthouse Report
-Performace: 97
+### 2019-03-26 Lighthouse Report
+Performace: 100
 Accessibility: 100
 Best Practices: 100
 SEO: 100
@@ -111,10 +111,6 @@ YSlow: B, 87%
 ## Todo Notes & Cleanup
 - ALT tag images
 - Homepage
-- About Page Design
-- Contact Page Design/Content
-  - set up middleware for axios call to postmark
-  - create email template
 - Photo shoot
 - Case Study Content
   - Copy
