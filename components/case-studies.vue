@@ -1,31 +1,33 @@
 <template>
   <section>
-    <nav
+    <dl
       class="case-studies-filter"
       role="menu">
-      <ul>
-        <li
-          role="switch"
-          @click="toggleProjects">
-          <font-awesome-icon
-            v-if="!showPwdProjects"
-            icon="lock" />
-          <font-awesome-icon
-            v-else
-            icon="lock-open" />
-        </li>
-        <li
-          :class="{ active: (activeCaseStudyCategory === 'all') }"
-          role="switch"
-          @click="activeCaseStudyCategory = 'all'">All Projects</li>
-        <li
-          v-for="(cat, index) in activeCategories"
-          :key="index"
-          :class="{ active: (activeCaseStudyCategory === cat.toLowerCase().replace(/\s/g, '-')) }"
-          role="switch"
-          @click="activeCaseStudyCategory = cat.toLowerCase().replace(/\s/g, '-')">{{ cat }}</li>
-      </ul>
-    </nav>
+      <dt @click="toggleFilters">Filters:</dt>
+      <dd
+        v-show="showFilters"
+        role="switch"
+        @click="toggleProjects">
+        <font-awesome-icon
+          v-if="!showPwdProjects"
+          icon="lock" />
+        <font-awesome-icon
+          v-else
+          icon="lock-open" />
+      </dd>
+      <dd
+        v-show="showFilters"
+        :class="{ active: (activeCaseStudyCategory === 'all') }"
+        role="switch"
+        @click="activeCaseStudyCategory = 'all'">All Projects</dd>
+      <dd
+        v-for="(cat, index) in activeCategories"
+        v-show="showFilters"
+        :key="index"
+        :class="{ active: (activeCaseStudyCategory === cat.toLowerCase().replace(/\s/g, '-')) }"
+        role="switch"
+        @click="activeCaseStudyCategory = cat.toLowerCase().replace(/\s/g, '-')">{{ cat }}</dd>
+    </dl>
     <article
       v-if="filteredCaseStudies.length > 0 && displayCaseStudies"
       class="case-studies">
@@ -73,7 +75,8 @@
           'landscape': 3,
           'vertical': 1,
           'regular': 0
-        }
+        },
+        showFilters: false
       }
     },
     computed: {
@@ -296,51 +299,85 @@
       },
       ...mapMutations('casestudies', [
         'toggleProjects'
-      ])
+      ]),
+      toggleFilters: function() {
+        this.showFilters = !this.showFilters
+      }
     }
   }
 </script>
 
 <style lang="scss">
   .case-studies-filter {
-    ul {
-      margin: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    dt {
+      margin: 10px 0 10px 10px;
       padding: 0;
-      li {
+      display: block;
+      cursor: pointer;
+    }
+    dd {
+      cursor: pointer;
+      display: block;
+      margin: 0 10px 10px;
+      &:before,
+      &:after {
+        display: inline-block;
+        opacity: 0;
+        -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+        -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+        transition: transform 0.3s, opacity 0.2s;
+      }
+      &:before {
+        margin-right: 10px;
+        content: '[';
+        -webkit-transform: translateX(20px);
+        -moz-transform: translateX(20px);
+        transform: translateX(20px);
+      }
+      &:after {
+        margin-left: 10px;
+        content: ']';
+        -webkit-transform: translateX(-20px);
+        -moz-transform: translateX(-20px);
+        transform: translateX(-20px);
+      }
+      &:hover,
+      &.active {
+        text-decoration: none;
         &:before,
         &:after {
-          display: inline-block;
-          opacity: 0;
-          -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
-          -moz-transition: -moz-transform 0.3s, opacity 0.2s;
-          transition: transform 0.3s, opacity 0.2s;
-        }
-        &:before {
-          margin-right: 10px;
-          content: '[';
-          -webkit-transform: translateX(20px);
-          -moz-transform: translateX(20px);
-          transform: translateX(20px);
-        }
-        &:after {
-          margin-left: 10px;
-          content: ']';
-          -webkit-transform: translateX(-20px);
-          -moz-transform: translateX(-20px);
-          transform: translateX(-20px);
-        }
-        &:hover,
-        &.active {
-          text-decoration: none;
-          &:before,
-          &:after {
-            opacity: 1;
-            -webkit-transform: translateX(0px);
-            -moz-transform: translateX(0px);
-            transform: translateX(0px);
-          }
+          opacity: 1;
+          -webkit-transform: translateX(0px);
+          -moz-transform: translateX(0px);
+          transform: translateX(0px);
         }
       }
     }
+  }
+  @media (min-width: 768px) {
+
+  }
+
+  @media (min-width: 992px) {
+    .case-studies-filter {
+      dt {
+        cursor: unset;
+        display: inline-block;
+      }
+      dd {
+        display: inline-block;
+        margin: 0 10px;
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+
   }
 </style>
