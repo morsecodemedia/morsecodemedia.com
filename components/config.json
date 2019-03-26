@@ -1673,6 +1673,53 @@
       "category": "Native Apps",
       "active": false,
       "awards": []
+    },
+    {
+      "id": "jhp001",
+      "title": "Joe Hand Promotions",
+      "url": "https://www.joehandpromotions.com/",
+      "yearStart": "2013",
+      "yearEnd": "2015",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "needsPassword": false,
+      "gallery": [],
+      "video": {
+        "src": "",
+        "bgColor": ""
+      },
+      "overview": {
+        "description": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "Joe Hand Promotions is the official promoter of UFC fights to bars, restaurants, and other large commercial establishments. We were hired to refresh their brand, redesign their website, and increase their visibility online when they realized previous offline marketing efforts were no longer driving sales.",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "solution",
+          "description": "We created a new brand identity and logo. In order to architect an intelligent user experience on the website, personas were created to map out the buying journey and trigger points for conversion. Content Marketing tactics including landing pages and blog articles are routinely created to increase the SEO rankings and overall marketshare.",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "results",
+          "description": "Since launching the website in May 2013, their website traffic has doubled and organic visits have increasing by 72%. Overall, fight night sales goals have been exceeded consistently. Joe Hand Jr. has expressed that the brand evolution and digital presence have really changed and improved his business.",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "category": "Websites",
+      "active": false,
+      "awards": []
     }
   ]
 }
