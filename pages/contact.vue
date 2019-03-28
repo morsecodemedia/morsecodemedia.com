@@ -385,6 +385,13 @@
         transform: translate3d(0, 10px, 0);
       }
     }
+    .input-field {
+      &:disabled {
+        background-color: $lt-grey;
+        color: $dk-grey;
+        border-color: $dk-grey;
+      }
+    }
   }
 
   button {
