@@ -308,21 +308,10 @@
           "fontColor": "#FFFFFF"
         },
         {
-          "title": "solution",
-          "description": "<p>this is a solution</p>",
-          "bgColor": "#FFFFFF",
-          "fontColor": "#0076BE"
-        },
-        {
           "title": "results",
           "description": "<p>Combine with the <a href=\"/case-studies/walmart-beauty-subscription-box/\">Beauty Box Subscription Site</a>, generated over 188k users and $2.1M in less than a year.</p>",
           "bgColor": "#0076BE",
           "fontColor": "#FDB72B"
-        },{
-          "title": "technologies",
-          "description": "<p>Ansible, CodeIgniter, PHP, CSS, Javascript, Stripe API, GPG Encryption, SMTP, SFTP, MySQL</p>",
-          "bgColor": "#FDB72B",
-          "fontColor": "#FFFFFF"
         }
       ],
       "needsPassword": false,
@@ -356,12 +345,6 @@
           "fontColor": "#FFFFFF"
         },
         {
-          "title": "solution",
-          "description": "<p>this is a solution</p>",
-          "bgColor": "#FFFFFF",
-          "fontColor": "#0076BE"
-        },
-        {
           "title": "results",
           "description": "<p>Combine with the <a href=\"/case-studies/walmart-baby-subscription-box/\">Baby Box Subscription Site</a>, generated over 188k users and $2.1M in less than a year.</p>",
           "bgColor": "#0076BE",
@@ -389,9 +372,9 @@
       ],
       "overview": {
         "description": "Pennsylvania Travel is a travel agency for unique global vacation deals.",
-        "bgColor": "",
-        "titleColor": "",
-        "descriptionColor": ""
+        "bgColor": "#00539A",
+        "titleColor": "#19AFE1",
+        "descriptionColor": "#FFFFFF"
       },
       "description": [
         {
@@ -677,32 +660,32 @@
       ],
       "overview": {
         "description": "A branded website for RADICAVA<sup>&reg</sup>. RADICAVA<sup>&reg</sup> (edaravone) is the only FDA-approved treatment option for amyotrophic lateral sclerosis (ALS) in the last 20 years.",
-        "bgColor": "",
-        "titleColor": "",
-        "descriptionColor": ""
+        "bgColor": "#d9deed",
+        "titleColor": "#3c5daa",
+        "descriptionColor": "#484848"
       },
       "description": [
         {
-          "title": "challenge",
-          "description": "<p>this is a challenge</p>",
+          "title": "",
+          "description": "",
           "bgColor": "#d6d6d6",
           "fontColor": "#3c5daa"
         },
         {
-          "title": "solution",
-          "description": "<p>this is a solution</p>",
+          "title": "",
+          "description": "",
           "bgColor": "#d9deed",
           "fontColor": "#484848"
         },
         {
-          "title": "results",
-          "description": "<p>this is a result</p>",
+          "title": "",
+          "description": "",
           "bgColor": "#6a86c2",
           "fontColor": "#FFFFFF"
         }
       ],
       "category": "Websites",
-      "active": false,
+      "active": true,
       "awards": [
         {
           "award": "Creative Excellence Award for Healthcare Professional Website",
@@ -745,26 +728,26 @@
       "description": [
         {
           "title": "challenge",
-          "description": "<p>this is a challenge</p>",
+          "description": "<p>Create brand awareness for the Endo Men's Health product lineup.</p>",
           "bgColor": "#f0b433",
           "fontColor": "#000000"
         },
         {
           "title": "solution",
-          "description": "<p>this is a solution</p>",
+          "description": "<p>Developed a landing page with communications opt-in, inviting HCPs to join the charge for men's health advocacy.</p>",
           "bgColor": "#435564",
           "fontColor": "#FFFFFF"
         },
         {
-          "title": "results",
-          "description": "<p>this is a result</p>",
+          "title": "",
+          "description": "",
           "bgColor": "#efefef",
           "fontColor": "#000000"
         }
       ],
       "category": "Websites",
       "needsPassword": true,
-      "active": false,
+      "active": true,
       "awards": []
     },
     {
@@ -911,14 +894,14 @@
         },
         {
           "title": "results",
-          "description": "<p>this is a result</p>",
+          "description": "",
           "bgColor": "#c2e6e1",
           "fontColor": "#0c95b9"
         }
       ],
       "needsPassword": false,
       "category": "Websites",
-      "active": false,
+      "active": true,
       "awards": []
     },
     {
@@ -989,8 +972,7 @@
       "gallery": [
         "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-01.jpg",
         "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-02.jpg",
-        "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-03.jpg",
-        "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-04.jpg"
+        "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-03.jpg"
       ],
       "video": {
         "src": "https://www.youtube.com/embed/P6d5_a-tPAg",
@@ -1020,12 +1002,6 @@
           "description": "<p>Our interactive, in-your-face efforts to reach HCPs in a meaningful way were a hands-down success. Not only did we engage about 2,145 HCPs attending ASSH&mdash;sourcing nearly 50 high-quality leads at the XIAFLEX<sup>&reg;</sup> booth&mdash;but the ASSH board of directors deemed the experience we created \"the new gold standard.\"</p><p>See the <a href=\"/case-studies/xtra-kick-starts/\">iPad presentations</a> that were also installed in the booth.</p>",
           "bgColor": "#ebebeb",
           "fontColor": "#585757"
-        },
-        {
-          "title": "notable items",
-          "description": "Additional awesomeness.",
-          "bgColor": "",
-          "fontColor": ""
         }
       ],
       "needsPassword": true,
@@ -1070,7 +1046,7 @@
         },
         {
           "title": "results",
-          "description": "<p>this is a result</p>",
+          "description": "",
           "bgColor": "#ebebeb",
           "fontColor": "#585757"
         }
@@ -1082,7 +1058,7 @@
     },
     {
       "id": "rad002",
-      "title": "HQBlitz.com",
+      "title": "HQBlitz",
       "url": "",
       "yearStart": "2018",
       "yearEnd": "2018",
@@ -1091,36 +1067,40 @@
         "color1": "",
         "color2": ""
       },
-      "gallery": [],
+      "gallery": [
+        "/web-app-hqblitz/hqblitz-login.jpg",
+        "/web-app-hqblitz/hqblitz-manage-lists.jpg",
+        "/web-app-hqblitz/hqblitz-edit-list.jpg"
+      ],
       "overview": {
-        "description": "",
-        "bgColor": "",
-        "titleColor": "",
-        "descriptionColor": ""
+        "description": "A web-based app, for sales reps to send SMS messages to teams.",
+        "bgColor": "#d9deed",
+        "titleColor": "#3c5daa",
+        "descriptionColor": "#484848"
       },
       "description": [
         {
-          "title": "challenge",
-          "description": "<p>this is a challenge</p>",
+          "title": "",
+          "description": "",
           "bgColor": "#d6d6d6",
           "fontColor": "#3c5daa"
         },
         {
-          "title": "solution",
-          "description": "<p>this is a solution</p>",
+          "title": "",
+          "description": "",
           "bgColor": "#d9deed",
           "fontColor": "#484848"
         },
         {
-          "title": "results",
-          "description": "<p>this is a result</p>",
+          "title": "",
+          "description": "",
           "bgColor": "#6a86c2",
           "fontColor": "#FFFFFF"
         }
       ],
       "needsPassword": true,
-      "category": "Websites",
-      "active": false,
+      "category": "Web Apps",
+      "active": true,
       "awards": []
     },
     {
@@ -1147,20 +1127,20 @@
       },
       "description": [
         {
-          "title": "challenge",
-          "description": "<p>this is a challenge</p>",
+          "title": "",
+          "description": "",
           "bgColor": "#d6d6d6",
           "fontColor": "#3c5daa"
         },
         {
-          "title": "solution",
-          "description": "<p>this is a solution</p>",
+          "title": "",
+          "description": "",
           "bgColor": "#d9deed",
           "fontColor": "#484848"
         },
         {
-          "title": "results",
-          "description": "<p>this is a result</p>",
+          "title": "",
+          "description": "",
           "bgColor": "#6a86c2",
           "fontColor": "#FFFFFF"
         }
@@ -1375,7 +1355,7 @@
         },
         {
           "title": "results",
-          "description": "<p>this is a result</p>",
+          "description": "",
           "bgColor": "#6a86c2",
           "fontColor": "#FFFFFF"
         }
@@ -1403,26 +1383,26 @@
       },
       "overview": {
         "description": "",
-        "bgColor": "",
-        "titleColor": "",
-        "descriptionColor": ""
+        "bgColor": "#6a86c2",
+        "titleColor": "#d6d6d6",
+        "descriptionColor": "#FFFFFF"
       },
       "description": [
         {
-          "title": "challenge",
-          "description": "<p>this is a challenge</p>",
+          "title": "",
+          "description": "",
           "bgColor": "#d6d6d6",
           "fontColor": "#3c5daa"
         },
         {
-          "title": "solution",
-          "description": "<p>this is a solution</p>",
+          "title": "",
+          "description": "",
           "bgColor": "#d9deed",
           "fontColor": "#484848"
         },
         {
-          "title": "results",
-          "description": "<p>this is a result</p>",
+          "title": "",
+          "description": "",
           "bgColor": "#6a86c2",
           "fontColor": "#FFFFFF"
         }
@@ -1523,55 +1503,6 @@
       "awards": []
     },
     {
-      "id": "jhp001",
-      "title": "Joe Hand Promotions",
-      "url": "",
-      "yearStart": "2013",
-      "yearEnd": "2016",
-      "insitu": {
-        "img": "",
-        "color1": "",
-        "color2": ""
-      },
-      "needsPassword": false,
-      "gallery": [],
-      "overview": {
-        "description": "",
-        "bgColor": "",
-        "titleColor": "",
-        "descriptionColor": ""
-      },
-      "description": [
-        {
-          "title": "challenge",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
-        },
-        {
-          "title": "solution",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
-        },
-        {
-          "title": "results",
-          "description": "",
-          "bgColor": "",
-          "fontColor": ""
-        }
-      ],
-      "category": "Websites",
-      "active": false,
-      "awards": [
-        {
-          "award": "W3 Silver Award",
-          "organization": "W3 Awards",
-          "year": "2013"
-        }
-      ]
-    },
-    {
       "id": "xdc004",
       "title": "XTRA Kick-starts",
       "url": "http://www.xtra-kickstarts.com/",
@@ -1652,26 +1583,26 @@
       },
       "description": [
         {
-          "title": "challenge",
+          "title": "",
           "description": "",
           "bgColor": "",
           "fontColor": ""
         },
         {
-          "title": "solution",
+          "title": "",
           "description": "",
           "bgColor": "",
           "fontColor": ""
         },
         {
-          "title": "results",
+          "title": "",
           "description": "",
           "bgColor": "",
           "fontColor": ""
         }
       ],
       "category": "Native Apps",
-      "active": false,
+      "active": true,
       "awards": []
     },
     {
@@ -1718,8 +1649,14 @@
         }
       ],
       "category": "Websites",
-      "active": false,
-      "awards": []
+      "active": true,
+      "awards": [
+        {
+          "award": "W3 Silver Award",
+          "organization": "W3 Awards",
+          "year": "2013"
+        }
+      ]
     }
   ]
 }

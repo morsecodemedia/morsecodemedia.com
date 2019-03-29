@@ -89,7 +89,7 @@
       </div>
 
       <caseStudyInsitu
-        v-if="cs.insitu.img.length"
+        v-if="cs.insitu.img.length && breakPoint === 'desktop'"
         :insitu="cs.insitu" />
 
       <passwordProject
@@ -129,7 +129,8 @@
         caseStudies: config.caseStudies,
         loadingColors: [
           'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQYV2PQ09P7DwACogGKJIM9sQAAAABJRU5ErkJggg=='
-        ]
+        ],
+        breakPoint: ''
       }
     },
     computed: {
@@ -176,6 +177,9 @@
         return returnArray
       }
     },
+    mounted() {
+      this.checkBreakpoint()
+    },
     methods: {
       nextCaseStudy: function() {
         router.go(1)
@@ -188,6 +192,16 @@
           } else {
             return require(`../../assets/images${imageSrc}`)
           }
+        }
+      },
+      checkBreakpoint: function() {
+        let winWidth = window.innerWidth
+        if (winWidth <= 991) {
+          this.breakPoint = 'mobile'
+        } else if (winWidth <= 1199) {
+          this.breakPoint = 'tablet'
+        } else if (winWidth >= 1200) {
+          this.breakPoint = 'desktop'
         }
       }
     }

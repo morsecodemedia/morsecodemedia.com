@@ -1,6 +1,7 @@
 <template>
   <section>
     <dl
+      :class="breakPoint"
       class="case-studies-filter"
       role="menu">
       <dt @click="toggleFilters">Filters:</dt>
@@ -76,7 +77,8 @@
           'vertical': 1,
           'regular': 0
         },
-        showFilters: false
+        showFilters: false,
+        breakPoint: ''
       }
     },
     computed: {
@@ -289,6 +291,7 @@
     },
     mounted() {
       this.displayCaseStudies = true
+      this.checkBreakpoint()
     },
     methods: {
       shuffleArray: function(array) {
@@ -301,7 +304,23 @@
         'toggleProjects'
       ]),
       toggleFilters: function() {
-        this.showFilters = !this.showFilters
+        if (this.breakPoint === 'mobile') {
+          this.showFilters = !this.showFilters
+        } else {
+          this.showFilters = true
+        }
+      },
+      checkBreakpoint: function() {
+        let winWidth = window.innerWidth
+        if (winWidth <= 991) {
+          this.breakPoint = 'mobile'
+        } else if (winWidth <= 1199) {
+          this.breakPoint = 'tablet'
+          this.showFilters = true
+        } else if (winWidth >= 1200) {
+          this.breakPoint = 'desktop'
+          this.showFilters = true
+        }
       }
     }
   }
@@ -315,11 +334,13 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    text-align: center;
     dt {
       margin: 10px 0 10px 10px;
       padding: 0;
       display: block;
       cursor: pointer;
+      text-transform: uppercase;
     }
     dd {
       cursor: pointer;
@@ -366,6 +387,7 @@
 
   @media (min-width: 992px) {
     .case-studies-filter {
+      text-align: left;
       dt {
         cursor: unset;
         display: inline-block;
