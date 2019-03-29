@@ -659,15 +659,15 @@
         "/web-radicava/patient/radicava-homepage-desktop-01.jpg"
       ],
       "overview": {
-        "description": "A branded website for RADICAVA<sup>&reg</sup>. RADICAVA<sup>&reg</sup> (edaravone) is the only FDA-approved treatment option for amyotrophic lateral sclerosis (ALS) in the last 20 years.",
+        "description": "A branded website for RADICAVA<sup>&reg</sup>.",
         "bgColor": "#d9deed",
         "titleColor": "#3c5daa",
         "descriptionColor": "#484848"
       },
       "description": [
         {
-          "title": "",
-          "description": "",
+          "title": "overview",
+          "description": "<p>RADICAVA<sup>&reg</sup> (edaravone) is the only FDA-approved treatment option for amyotrophic lateral sclerosis (ALS) in the last 20 years.</p>",
           "bgColor": "#d6d6d6",
           "fontColor": "#3c5daa"
         },
