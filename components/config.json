@@ -1658,5 +1658,17 @@
         }
       ]
     }
+  ],
+  "landingPages": [
+    {
+      "id": "lp001",
+      "title": "Landing Pages",
+      "gallery": [
+        "/headshots/brandon-morse-01.jpg"
+      ],
+      "category": "",
+      "active": true,
+      "awards": []
+    }
   ]
 }

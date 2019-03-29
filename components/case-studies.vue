@@ -44,7 +44,7 @@
 <script>
   import Vue from 'vue'
   import { mapGetters, mapMutations } from 'vuex'
-  import { caseStudies } from '~/components/config.json'
+  import { caseStudies, landingPages } from '~/components/config.json'
   import caseStudyListing from '~/components/case-study-listing'
   import { library } from '@fortawesome/fontawesome-svg-core'
   import { faLock, faLockOpen } from '@fortawesome/free-solid-svg-icons'
@@ -61,6 +61,7 @@
       return {
         displayCaseStudies: false,
         caseStudies: caseStudies,
+        landingPages: landingPages,
         activeCaseStudyCategory: 'all',
         twoUpClasses: ['horizontal-2'],
         twoUpDensity: 0.6,
@@ -99,14 +100,21 @@
               return yearEndCompare
             }
           })
+        let activeLandingPages = this.landingPages
+          .filter(landingPage => landingPage.active)
+
         activeProjects.sort((a,b) => {
           return b.yearStart - a.yearStart
         })
+
         let totalProjects = activeProjects.concat(sortedCaseStudies)
         totalProjects = totalProjects.map(cs => {
           cs.img = (cs.gallery && cs.gallery.length) ? cs.gallery[Math.floor(Math.random()*cs.gallery.length)] : 'https://www.fillmurray.com/500/500'
           return cs
         })
+
+        totalProjects.splice(Math.floor(Math.random()*totalProjects.length), 0, activeLandingPages[0])
+
         if (this.activeCaseStudyCategory !== 'all') {
           return totalProjects
             .filter(caseStudy => {
