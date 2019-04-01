@@ -44,7 +44,7 @@
       </div>
 
       <videoPlayer
-        v-if="cs.video"
+        v-if="cs.video.src"
         :style="{'background-color': cs.video.bgColor}"
         :video="cs.video.src"/>
 

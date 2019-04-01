@@ -975,8 +975,8 @@
         "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-03.jpg"
       ],
       "video": {
-        "src": "https://www.youtube.com/embed/P6d5_a-tPAg",
-        "bgColor": "#002e5d"
+        "src": "",
+        "bgColor": ""
       },
       "overview": {
         "description": "Interactive Touch Screen for XIAFLEX<sup>&reg;</sup> for <nobr>Dupuytren's contracture.</nobr>",
@@ -1022,8 +1022,8 @@
       },
       "gallery": [],
       "video": {
-        "src": "https://www.youtube.com/embed/P6d5_a-tPAg",
-        "bgColor": "#002e5d"
+        "src": "",
+        "bgColor": ""
       },
       "overview": {
         "description": "A touchscreen expereience for the 2017 ASSH Conference. This conference panel showcases procedure videos, treatment efficacy and patient profiles of those treated with XIAFLEX<sup>&reg;</sup> for Dupuytren's contracture.",
@@ -1116,8 +1116,8 @@
       },
       "gallery": [],
       "video": {
-        "src": "https://www.youtube.com/embed/P6d5_a-tPAg",
-        "bgColor": "#d9deed"
+        "src": "",
+        "bgColor": ""
       },
       "overview": {
         "description": "",
@@ -1426,7 +1426,7 @@
       "needsPassword": true,
       "gallery": [],
       "video": {
-        "src": "https://www.youtube.com/embed/P6d5_a-tPAg",
+        "src": "",
         "bgColor": ""
       },
       "overview": {
@@ -1522,8 +1522,8 @@
         "/ipad-xtra-kickstarts/xtra-kickstarts-05.jpg"
       ],
       "video": {
-        "src": "https://www.youtube.com/embed/P6d5_a-tPAg",
-        "bgColor": "#002e5d"
+        "src": "",
+        "bgColor": ""
       },
       "overview": {
         "description": "",
@@ -1533,8 +1533,8 @@
       },
       "description": [
         {
-          "title": "challenge",
-          "description": "<p>this is a challenge</p>",
+          "title": "",
+          "description": "",
           "bgColor": "#eb5903",
           "fontColor": "#FFFFFF"
         },
@@ -1572,7 +1572,7 @@
         "/native-endo-video-library/native-endo-video-library-downloading-01.jpg"
       ],
       "video": {
-        "src": "https://www.youtube.com/embed/P6d5_a-tPAg",
+        "src": "",
         "bgColor": ""
       },
       "overview": {
