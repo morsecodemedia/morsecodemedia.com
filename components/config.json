@@ -1663,11 +1663,63 @@
     {
       "id": "lp001",
       "title": "Landing Pages",
-      "gallery": [
-        "/headshots/brandon-morse-01.jpg"
+      "url": "",
+      "yearStart": "",
+      "yearEnd": "",
+      "overview": {
+        "description": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
+      "description": [
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
       ],
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "gallery": [],
       "category": "",
-      "active": true,
+      "active": false,
+      "needsPassword": false,
+      "awards": []
+    },
+    {
+      "id": "lp002",
+      "title": "Email Campaigns",
+      "url": "",
+      "yearStart": "",
+      "yearEnd": "",
+      "overview": {
+        "description": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": ""
+      },
+      "description": [
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "gallery": [],
+      "category": "",
+      "active": false,
+      "needsPassword": false,
       "awards": []
     }
   ]

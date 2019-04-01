@@ -108,12 +108,15 @@
         })
 
         let totalProjects = activeProjects.concat(sortedCaseStudies)
+
+        for (let counter = 0; counter < activeLandingPages.length; counter++) {
+          totalProjects.splice(Math.floor(Math.random()*totalProjects.length), 0, activeLandingPages[counter])
+        }
+
         totalProjects = totalProjects.map(cs => {
           cs.img = (cs.gallery && cs.gallery.length) ? cs.gallery[Math.floor(Math.random()*cs.gallery.length)] : 'https://www.fillmurray.com/500/500'
           return cs
         })
-
-        totalProjects.splice(Math.floor(Math.random()*totalProjects.length), 0, activeLandingPages[0])
 
         if (this.activeCaseStudyCategory !== 'all') {
           return totalProjects
