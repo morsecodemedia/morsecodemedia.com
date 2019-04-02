@@ -44,7 +44,7 @@
       </div>
 
       <videoPlayer
-        v-if="cs.video.src"
+        v-if="cs.video && cs.video.src"
         :style="{'background-color': cs.video.bgColor}"
         :video="cs.video.src"/>
 
@@ -320,7 +320,7 @@
 
   .case-study-awards {
     background: $eggshell;
-    padding: 35px;
+    padding: 35px 15px;
     text-align: center;
     h3 {
       border-bottom: 4px solid $dk-grey;
@@ -335,6 +335,7 @@
       list-style: none;
       li {
         margin: 0 0 15px;
+        text-align: center;
       }
     }
   }
