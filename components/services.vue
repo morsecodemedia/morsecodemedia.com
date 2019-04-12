@@ -47,6 +47,10 @@
         margin-bottom: 15px;
         text-transform: uppercase;
       }
+      p {
+        font-size: 18px;
+        line-height: 26px;
+      }
     }
   }
   @media (min-width: 768px) {

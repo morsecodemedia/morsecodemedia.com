@@ -273,6 +273,15 @@
   }
   @media (min-width: 992px) {
     .hero {
+      grid-template-rows: 45px auto auto auto auto 45px;
+      grid-template-areas:
+      ".  .  .  .  .  .  .  hi hi hi hi hi"
+      "hc hc hc hc hc hc hc hi hi hi hi hi"
+      "hc hc hc hc hc hc hc hi hi hi hi hi"
+      "hc hc hc hc hc hc hc hi hi hi hi hi"
+      "hc hc hc hc hc hc hc hi hi hi hi hi"
+      ".  .  .  .  .  .  .  hi hi hi hi hi";
+      height: 90vh;
       .hero-copy {
         padding: 45px 10px;
         .hero-copy__small {
@@ -284,7 +293,9 @@
           margin-bottom: 25px;
         }
         .hero-copy__normal {
-          font-size: 38px;
+          // font-size: 38px;
+          font-size: 26px;
+          line-height: 36px;
         }
       }
     }
@@ -296,7 +307,9 @@
           font-size: 82px;
         }
         .hero-copy__normal {
-          font-size: 46px;
+          // font-size: 46px;
+          font-size: 26px;
+          line-height: 36px;
         }
       }
     }

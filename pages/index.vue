@@ -3,7 +3,7 @@
     <siteHeader />
     <main>
       <heroHome />
-      <blockquoteWithImg :bqwi="bqwi" />
+      <!-- <blockquoteWithImg :bqwi="bqwi" /> -->
       <services />
       <featuredCaseStudies />
       <linkBarCaseStudies />
@@ -21,11 +21,11 @@
 
   import { about } from '~/components/config.json'
   import siteHeader from '~/components/header'
-  import heroHome from '~/components/hero-home'
-  import blockquoteWithImg from '~/components/blockquote-with-image'
+  // import heroHome from '~/components/hero-home'
+  import heroHome from '~/components/homepage-hero'
+  // import blockquoteWithImg from '~/components/blockquote-with-image'
   import sectionOutro from '~/components/section-outro'
   import services from '~/components/services'
-  import trackRecord from '~/components/track-record'
   import featuredCaseStudies from '~/components/featured-case-studies'
   import linkBarCaseStudies from '~/components/link-bar-case-studies'
   import siteFooter from '~/components/footer'
@@ -35,7 +35,7 @@
     components: {
       siteHeader,
       heroHome,
-      blockquoteWithImg,
+      //blockquoteWithImg,
       sectionOutro,
       services,
       featuredCaseStudies,

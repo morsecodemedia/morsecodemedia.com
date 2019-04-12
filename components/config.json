@@ -24,7 +24,8 @@
   "homepageHero": {
     "heroDescriptor": "award-winning developer",
     "heroName": "Brandon Morse",
-    "heroStatement": "I have a passion to innovate and develop digital experiences."
+    "heroStatement1": "I have a passion to innovate and develop digital experiences.",
+    "heroStatement": "I have a <strong>passion to innovate</strong> and develop beautifully designed <strong>experiences to life</strong> through coding, testing, and <strong>just the right amount of technical magic.</strong> <a href=\"/about/\" class=\"hero-copy__link\">More about me &raquo;</a>"
   },
   "about": {
     "headshot": "/headshots/brandon-morse-01.jpg",
