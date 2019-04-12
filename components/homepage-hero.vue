@@ -6,14 +6,14 @@
       <header>
         <h1 class="empty-styles">
           <span
-            class="hero-copy__small"
-            v-html="heroDescriptor" />
+            class="hero-copy__small">Award-winning developer</span>
           <span
-            class="hero-copy__large"
-            v-html="heroName" />
+            class="hero-copy__large">Brandon Morse</span>
           <span
-            class="hero-copy__normal"
-            v-html="heroStatement" />
+            class="hero-copy__normal">I have a <strong>passion to innovate</strong> and develop beautifully designed <strong>experiences to life</strong> through coding, testing, and <strong>just the right amount of technical magic.</strong>
+            <a
+              href="/about/"
+              class="hero-copy__link">More about me &raquo;</a></span>
         </h1>
       </header>
     </article>
@@ -29,7 +29,7 @@
 <script>
   import Vue from 'vue'
   import VueLazyload from 'vue-lazyload'
-  import { homepageHero, about } from '~/components/config.json'
+  import { about } from '~/components/config.json'
 
   Vue.use(VueLazyload, {
     preLoad: 1.3,
@@ -40,9 +40,6 @@
     name: 'HomeHero',
     data() {
       return {
-        heroDescriptor: homepageHero.heroDescriptor,
-        heroName: homepageHero.heroName,
-        heroStatement: homepageHero.heroStatement,
         headshotImg: about.headshot,
         loadingColors: [
           'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQYV2PQ09P7DwACogGKJIM9sQAAAABJRU5ErkJggg=='
@@ -65,7 +62,14 @@
 
 <style lang="scss" scoped>
   .homepage-hero{
-    //background: linear-gradient(45deg, #333 0%, #666 100%);
+    background: #485563;
+    background: -moz-radial-gradient(center, ellipse cover, #485563, #29323C);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #485563), color-stop(100%, #29323C));
+    background: -webkit-radial-gradient(center, ellipse cover, #485563, #29323C);
+    background: -o-radial-gradient(center, ellipse cover, #485563, #29323C);
+    background: -ms-radial-gradient(center, ellipse cover, #485563, #29323C);
+    background: radial-gradient(ellipse at center, #485563, #29323C);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#485563', endColorstr='#29323C', GradientType=1 );
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto auto 40px 60px auto 60px auto;
@@ -114,6 +118,7 @@
         }
       }
       .hero-copy__large {
+        color: white;
         font-family: 'Montserrat', sans-serif;
         font-size: 52px;
         font-weight: normal;
@@ -123,15 +128,23 @@
         margin: 0 0 0 -5px;
       }
       .hero-copy__normal {
+        color: white;
         font-family: 'Montserrat', sans-serif;
         font-size: 32px;
-        font-weight: normal;
+        font-weight: 400;
         line-height: 46px;
         margin-bottom: 0px;
-      }
-      .hero-copy__link {
-        display: inline-block;
-        font-size: 26px;
+
+        strong {
+          font-weight: 700;
+          color: #54bad8;
+        }
+        .hero-copy__link {
+          display: block;
+          font-size: 26px;
+          margin-top: 10px;
+          color: white;
+        }
       }
     }
   }
