@@ -10,7 +10,7 @@
           <span
             class="hero-copy__large">Brandon Morse</span>
           <span
-            class="hero-copy__normal">I have a <strong>passion to innovate</strong> and develop beautifully designed <strong>experiences to life</strong> through coding, testing, and <strong>just the right amount of technical magic.</strong>
+            class="hero-copy__normal">I have a <strong>passion to innovate</strong> and bring beautifully designed <strong>experiences to life</strong> through coding, testing, and <strong>just the right amount of technical magic.</strong>
             <a
               href="/about/"
               class="hero-copy__link">More about me &raquo;</a></span>
@@ -23,12 +23,14 @@
       class="headshot hero-image"
       alt="A headshot of Brandon Morse"
       role="presentation">
+    <glitch />
   </section>
 </template>
 
 <script>
   import Vue from 'vue'
   import VueLazyload from 'vue-lazyload'
+  import glitch from '~/components/glitch-image'
   import { about } from '~/components/config.json'
 
   Vue.use(VueLazyload, {
@@ -38,6 +40,9 @@
 
   export default {
     name: 'HomeHero',
+    components: {
+      glitch
+    },
     data() {
       return {
         headshotImg: about.headshot,
@@ -81,12 +86,14 @@
     "hs hs hs hs hs hs hs hs hs hs hs hs"
     "hs hs hs hs hs hs hs hs hs hs hs hs"
     ".  .  .  .  .  .  .  .  .  .  .  . ";
-    .hero-image {
+    .hero-image,
+    .glitch-image-container {
       grid-area: hs;
       align-self: start;
       object-fit: cover;
       width: 100vw;
       min-height: 50vh;
+      z-index: 0;
     }
     .hero-copy {
       align-self: center;
@@ -100,6 +107,7 @@
         &.empty-styles {
           margin: 0;
           padding: 0;
+          font-weight: 400;
           line-height: 0;
           display: inline-grid;
           display: -ms-inline-grid;
@@ -139,6 +147,7 @@
           font-weight: 700;
           color: #54bad8;
         }
+
         .hero-copy__link {
           display: block;
           font-size: 26px;
@@ -150,20 +159,7 @@
   }
 
   @media (min-width: 768px) {
-    .homepage-hero {
-      grid-template-rows: repeat(4, 1fr);
-      grid-template-areas:
-      ". . . . hs hs hs hs hs hs hs hs"
-      ". . . . hs hs hs hs hs hs hs hs"
-      ". . . . hs hs hs hs hs hs hs hs"
-      ". . . . hs hs hs hs hs hs hs hs";
-      .hero-copy {
-        grid-row-start: 1;
-        grid-row-end: 5;
-        grid-column-start: 6;
-        grid-column-end: 13;
-      }
-    }
+
   }
 
   @media (min-width: 992px) {
@@ -175,7 +171,7 @@
       "hs hs hs hs hs hs hs hs . . . ."
       "hs hs hs hs hs hs hs hs . . . .";
       .hero-copy {
-        z-index: 0;
+        z-index: 10;
         grid-row-start: 1;
         grid-row-end: 5;
         grid-column-start: 7;
@@ -193,7 +189,8 @@
           line-height: 36px;
         }
       }
-      .hero-image {
+      .hero-image,
+      .glitch-image-container {
         object-fit: contain;
         object-position: left bottom;
         max-height: 100%;

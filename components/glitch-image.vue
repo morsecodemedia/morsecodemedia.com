@@ -1,42 +1,26 @@
 <template>
-  <section class="hero">
-    <article class="hero-copy">
-      <header>
-        <h1 class="empty-styles">
-          <span class="hero-copy__small">{{ heroDescriptor }}</span>
-          <span class="hero-copy__large">{{ heroName }}</span>
-          <span class="hero-copy__normal">{{ heroStatement }}</span>
-        </h1>
-      </header>
-    </article>
-    <aside class="hero-image">
-      <div class="slides slides--contained effect-2">
-        <div class="slide slide--current">
+  <div class="glitch-image-container">
+    <div class="slides slides--contained effect-2">
+      <div class="slide slide--current">
+        <div
+          :class="[{'glitch--animate': glitchAnimate}, 'slide' + displaySlide]"
+          class="slide__img glitch">
           <div
-            :class="[{'glitch--animate': glitchAnimate}, 'slide' + displaySlide]"
-            class="slide__img glitch">
-            <div
-              v-for="index in totalGlitchs"
-              :key="index"
-              :class="[{'glitch': (index >= glitchStep)}, 'slide'+currentSlide]"
-              class="glitch__img"/>
-          </div>
+            v-for="index in totalGlitchs"
+            :key="index"
+            :class="[{'glitch': (index >= glitchStep)}, 'slide'+currentSlide]"
+            class="glitch__img"/>
         </div>
       </div>
-    </aside>
-  </section>
+    </div>
+  </div>
 </template>
 
 <script>
-  import { homepageHero } from '~/components/config.json'
-
   export default {
-    name: 'HeroHome',
+    name: 'GlitchImage',
     data() {
       return {
-        heroDescriptor: homepageHero.heroDescriptor,
-        heroName: homepageHero.heroName,
-        heroStatement: homepageHero.heroStatement,
         currentSlide: 0,
         displaySlide: 0,
         totalSlides: 5,
@@ -81,238 +65,134 @@
 
 <style lang="scss" scoped>
 
-  .hero {
-    background: $eggshell;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto auto auto auto 45px;
-    grid-template-areas:
-    "hc hc hc hc hc hc hc hc hc hc hc hc"
-    "hc hc hc hc hc hc hc hc hc hc hc hc"
-    "hi hi hi hi hi hi hi hi hi hi hi hi"
-    "hi hi hi hi hi hi hi hi hi hi hi hi"
-    ".  .  .  .  .  .  .  .  .  .  .  .";
-    .hero-copy {
-      grid-area: hc;
-      padding: 45px 10px;
-      h1 {
-        &.empty-styles {
-          margin: 0;
-          padding: 0;
-          line-height: 0;
-          display: inline-grid;
-          display: -ms-inline-grid;
-        }
-      }
-      .hero-copy__small {
-        color: #54bad8;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 18px;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin-bottom: 20px;
-        &:after {
-          content: "\A";
-          white-space: pre;
-        }
-      }
-      .hero-copy__large {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 52px;
-        font-weight: normal;
-        line-height: 66px;
-        margin-bottom: 0px;
-        padding: 0;
-        margin: 0 0 0 -5px;
-      }
-      .hero-copy__normal {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 32px;
-        font-weight: normal;
-        line-height: 46px;
-        margin-bottom: 0px;
-      }
-    }
-    .hero-image {
-      grid-area: hi;
-      align-self: center;
-      justify-self: center;
-      height: 100%;
-      width: 100%;
-      background: #485563;
-      background: -moz-radial-gradient(center, ellipse cover, #485563, #29323C);
-      background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #485563), color-stop(100%, #29323C));
-      background: -webkit-radial-gradient(center, ellipse cover, #485563, #29323C);
-      background: -o-radial-gradient(center, ellipse cover, #485563, #29323C);
-      background: -ms-radial-gradient(center, ellipse cover, #485563, #29323C);
-      background: radial-gradient(ellipse at center, #485563, #29323C);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#485563', endColorstr='#29323C', GradientType=1 );
-    }
+  .glitch-image-container {
+    align-self: center;
+    justify-self: center;
+    height: 100%;
+    width: 100%;
+    background: #485563;
+    background: -moz-radial-gradient(center, ellipse cover, #485563, #29323C);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #485563), color-stop(100%, #29323C));
+    background: -webkit-radial-gradient(center, ellipse cover, #485563, #29323C);
+    background: -o-radial-gradient(center, ellipse cover, #485563, #29323C);
+    background: -ms-radial-gradient(center, ellipse cover, #485563, #29323C);
+    background: radial-gradient(ellipse at center, #485563, #29323C);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#485563', endColorstr='#29323C', GradientType=1 );
   }
 
   @media (min-width: 768px) {
-    .hero {
-      grid-template-rows: 45px auto auto auto auto 45px;
-      grid-template-areas:
-      ".  .  .  .  .  .  .  hi hi hi hi hi"
-      "hc hc hc hc hc hc hc hi hi hi hi hi"
-      "hc hc hc hc hc hc hc hi hi hi hi hi"
-      "hc hc hc hc hc hc hc hi hi hi hi hi"
-      "hc hc hc hc hc hc hc hi hi hi hi hi"
-      ".  .  .  .  .  .  .  hi hi hi hi hi";
-
-      .hero-copy {
-        padding: 30px 10px 45px;
-      }
-
-      .slides {
+    .slides {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      .slide {
+        position: absolute;
         height: 100%;
         width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        position: relative;
-        .slide {
-          position: absolute;
+        .slide__img {
           height: 100%;
           width: 100%;
-          .slide__img {
-            height: 100%;
-            width: 100%;
-          }
         }
       }
+    }
 
-      .slide0 {
-        background: url('~assets/images/glitch/glitch-endo-mens-health-desktop.png') center center no-repeat;
-        height: 100%;
-        width: 100%;
-      }
-      .slide1 {
-        background: url('~assets/images/glitch/glitch-endo-video-library-tablet.png') center center no-repeat;
-        height: 100%;
-        width: 100%;
-      }
-      .slide2 {
-        background: url('~assets/images/glitch/glitch-merion-commercial-desktop.png') center center no-repeat;
-        height: 100%;
-        width: 100%;
-      }
-      .slide3 {
-        background: url('~assets/images/glitch/glitch-xtra-kickstarts-tablet.png') center center no-repeat;
-        height: 100%;
-        width: 100%;
-      }
-      .slide4 {
-        background: url('~assets/images/glitch/glitch-usarl-desktop.png') center center no-repeat;
-        height: 100%;
-        width: 100%;
-      }
+    .slide0 {
+      background: url('~assets/images/glitch/glitch-endo-mens-health-desktop.png') center center no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+    .slide1 {
+      background: url('~assets/images/glitch/glitch-endo-video-library-tablet.png') center center no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+    .slide2 {
+      background: url('~assets/images/glitch/glitch-merion-commercial-desktop.png') center center no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+    .slide3 {
+      background: url('~assets/images/glitch/glitch-xtra-kickstarts-tablet.png') center center no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+    .slide4 {
+      background: url('~assets/images/glitch/glitch-usarl-desktop.png') center center no-repeat;
+      height: 100%;
+      width: 100%;
+    }
 
-      .glitch {
-        overflow: hidden;
-        position: relative;
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        background-size: cover;
-        &.glitch__img {
-          display: block;
-        }
+    .glitch {
+      overflow: hidden;
+      position: relative;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+      &.glitch__img {
+        display: block;
       }
+    }
 
-      .glitch__img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        transform: translate3d(0,0,0);
-        background-color: transparent;
-        background-blend-mode: normal;
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        background-size: cover;
-        display: none;
-      }
+    .glitch__img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transform: translate3d(0,0,0);
+      background-color: transparent;
+      background-blend-mode: normal;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+      display: none;
+    }
 
+    .glitch__img:nth-child(n+2) {
+      opacity: 0;
+    }
+
+    .glitch--animate {
       .glitch__img:nth-child(n+2) {
-        opacity: 0;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
       }
 
-      .glitch--animate {
-        .glitch__img:nth-child(n+2) {
-          animation-duration: 2s;
-          animation-delay: 0s;
-          animation-timing-function: linear;
-          animation-iteration-count: infinite;
-          animation-fill-mode: forwards;
-        }
+      .glitch__img:nth-child(2) {
+        background-color: transparent;
+        background-blend-mode: none;
+        animation-name: glitch-anim-1;
+      }
 
-        .glitch__img:nth-child(2) {
-          background-color: transparent;
-          background-blend-mode: none;
-          animation-name: glitch-anim-1;
-        }
+      .glitch__img:nth-child(3) {
+        background-color: transparent;
+        background-blend-mode: none;
+        animation-name: glitch-anim-2;
+      }
 
-        .glitch__img:nth-child(3) {
-          background-color: transparent;
-          background-blend-mode: none;
-          animation-name: glitch-anim-2;
-        }
+      .glitch__img:nth-child(4) {
+        background-color: transparent;
+        background-blend-mode: none;
+        animation-name: glitch-anim-3;
+      }
 
-        .glitch__img:nth-child(4) {
-          background-color: transparent;
-          background-blend-mode: none;
-          animation-name: glitch-anim-3;
-        }
-
-        .glitch__img:nth-child(5) {
-          background-color: #af4949;
-          background-blend-mode: overlay;
-          animation-name: glitch-anim-flash;
-        }
+      .glitch__img:nth-child(5) {
+        background-color: #af4949;
+        background-blend-mode: overlay;
+        animation-name: glitch-anim-flash;
       }
     }
   }
+
   @media (min-width: 992px) {
-    .hero {
-      grid-template-rows: 45px auto auto auto auto 45px;
-      grid-template-areas:
-      ".  .  .  .  .  .  .  hi hi hi hi hi"
-      "hc hc hc hc hc hc hc hi hi hi hi hi"
-      "hc hc hc hc hc hc hc hi hi hi hi hi"
-      "hc hc hc hc hc hc hc hi hi hi hi hi"
-      "hc hc hc hc hc hc hc hi hi hi hi hi"
-      ".  .  .  .  .  .  .  hi hi hi hi hi";
-      height: 90vh;
-      .hero-copy {
-        padding: 45px 10px;
-        .hero-copy__small {
-          font-size: 22px;
-          margin-bottom: 25px;
-        }
-        .hero-copy__large {
-          font-size: 62px;
-          margin-bottom: 25px;
-        }
-        .hero-copy__normal {
-          // font-size: 38px;
-          font-size: 26px;
-          line-height: 36px;
-        }
-      }
-    }
+
   }
+
   @media (min-width: 1200px) {
-    .hero {
-      .hero-copy {
-        .hero-copy__large {
-          font-size: 82px;
-        }
-        .hero-copy__normal {
-          // font-size: 46px;
-          font-size: 26px;
-          line-height: 36px;
-        }
-      }
-    }
+
   }
 
   @keyframes glitch-anim-1 {
