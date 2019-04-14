@@ -287,7 +287,7 @@
         "color2": "#0076BE"
       },
       "gallery": [
-        "https://www.morsecodemedia.com/site/assets/files/1023/babybox-responsive-website-1.jpg"
+        "/web-babybox-walmart/babybox-walmart-homepage-desktop-01.jpg"
       ],
       "overview": {
         "description": "Subscription box website for baby products for new and expecting mothers.",
@@ -455,9 +455,9 @@
         "color2": "#099ed6"
       },
       "gallery": [
-        "https://www.morsecodemedia.com/site/assets/files/1104/tunnell-consulting-responsive-website-1.jpg",
-        "https://www.morsecodemedia.com/site/assets/files/1104/tunnell-consulting-responsive-website-2.jpg",
-        "https://www.morsecodemedia.com/site/assets/files/1104/tunnell-consulting-responsive-website-3.jpg"
+        "/web-tunnell-consulting/tunnell-consulting-contact-desktop-01.jpg",
+        "/web-tunnell-consulting/tunnell-consulting-homepage-desktop-01.jpg",
+        "/web-tunnell-consulting/tunnell-consulting-manufacturing-mobile-01.jpg"
       ],
       "overview": {
         "description": "A global pharmaceutical and biotechnology consulting company.",
@@ -756,7 +756,9 @@
         "color1": "",
         "color2": ""
       },
-      "gallery": ["https://www.morsecodemedia.com/site/assets/files/1141/ipipeline-3.jpg"],
+      "gallery": [
+        "/web-ipipeline/web-ipipeline-responsive-display-01.jpg"
+      ],
       "overview": {
         "description": "iPipeline is a technology provider of SaaS solutions that drives straight-through processing for the insurance and financial services industry.",
         "bgColor": "#FFFFFF",
@@ -811,9 +813,9 @@
         "color2": "#c2e6e1"
       },
       "gallery": [
-        "https://www.morsecodemedia.com/site/assets/files/1025/geoblue-desktop-1.jpg",
-        "https://www.morsecodemedia.com/site/assets/files/1025/geoblue-desktop-2.jpg",
-        "https://www.morsecodemedia.com/site/assets/files/1025/geoblue-desktop-3.jpg"
+        "/web-geoblue/web-geoblue-travel-insurance-why-geoblue-desktop-01.jpg",
+        "/web-geoblue/web-geoblue-travel-insurance-quote-desktop-01.jpg",
+        "/web-geoblue/web-geoblue-travel-insurance-homepage-desktop-01.jpg"
       ],
       "overview": {
         "description": "",
@@ -877,13 +879,13 @@
       "description": [
         {
           "title": "challenge",
-          "description": "<p>this is a challenge</p>",
+          "description": "",
           "bgColor": "#00aedb",
           "fontColor": "#FFFFFF"
         },
         {
           "title": "solution",
-          "description": "<p>this is a solution</p>",
+          "description": "",
           "bgColor": "#00a0af",
           "fontColor": "#FFFFFF"
         },
@@ -911,10 +913,10 @@
         "color2": ""
       },
       "gallery": [
-        "https://www.morsecodemedia.com/site/assets/files/1024/epp-responsive-website-1.jpg",
-        "https://www.morsecodemedia.com/site/assets/files/1024/epp-responsive-website-2.jpg",
-        "https://www.morsecodemedia.com/site/assets/files/1024/epp-responsive-website-3.jpg",
-        "https://www.morsecodemedia.com/site/assets/files/1024/epp-responsive-website-4-1.jpg"
+        "/web-epp/web-epp-homepage-desktop-01.jpg",
+        "/web-epp/web-epp-properties-desktop-01.jpg",
+        "/web-epp/web-epp-applications-mobile-01.jpg",
+        "/web-epp/web-epp-contact-tablet-01.jpg"
       ],
       "overview": {
         "description": "Expanding lightweight material solutions, globally.",
