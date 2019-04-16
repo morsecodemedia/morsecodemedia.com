@@ -66,15 +66,9 @@
 </script>
 
 <style lang="scss" scoped>
-  .homepage-hero{
-    background: #485563;
-    background: -moz-radial-gradient(center, ellipse cover, #485563, #29323C);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #485563), color-stop(100%, #29323C));
-    background: -webkit-radial-gradient(center, ellipse cover, #485563, #29323C);
-    background: -o-radial-gradient(center, ellipse cover, #485563, #29323C);
-    background: -ms-radial-gradient(center, ellipse cover, #485563, #29323C);
-    background: radial-gradient(ellipse at center, #485563, #29323C);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#485563', endColorstr='#29323C', GradientType=1 );
+  .homepage-hero {
+    min-height: 75vh;
+    background: #fff;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto auto 40px 60px auto 60px auto;
@@ -126,7 +120,7 @@
         }
       }
       .hero-copy__large {
-        color: white;
+        color: $dk-grey;
         font-family: 'Montserrat', sans-serif;
         font-size: 52px;
         font-weight: normal;
@@ -136,7 +130,7 @@
         margin: 0 0 0 -5px;
       }
       .hero-copy__normal {
-        color: white;
+        color: $dk-grey;
         font-family: 'Montserrat', sans-serif;
         font-size: 32px;
         font-weight: 400;
@@ -149,10 +143,11 @@
         }
 
         .hero-copy__link {
-          display: block;
+          display: inline-block;
           font-size: 26px;
           margin-top: 10px;
-          color: white;
+          color: $dk-grey;
+          text-decoration: underline #54bad8;
         }
       }
     }
@@ -166,12 +161,12 @@
     .homepage-hero {
       grid-template-rows: repeat(4, 1fr);
       grid-template-areas:
-      "hs hs hs hs hs hs hs hs . . . ."
-      "hs hs hs hs hs hs hs hs . . . ."
-      "hs hs hs hs hs hs hs hs . . . ."
-      "hs hs hs hs hs hs hs hs . . . .";
+      "hs hs hs hs hs hs hs . . . . ."
+      "hs hs hs hs hs hs hs . . . . ."
+      "hs hs hs hs hs hs hs . . . . ."
+      "hs hs hs hs hs hs hs . . . . .";
       .hero-copy {
-        z-index: 10;
+        z-index: 1;
         grid-row-start: 1;
         grid-row-end: 5;
         grid-column-start: 7;

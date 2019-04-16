@@ -128,17 +128,21 @@
 <style lang="scss" scoped>
 
   header {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
+    width: 360px;
     .masthead {
+      z-index: 3;
+      position: fixed;
+      right: 0;
       background: $dk-grey;
       display: grid;
-      grid-template-columns: repeat(12, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-template-rows: auto auto;
       grid-template-areas:
-      "logo logo logo logo logo logo logo logo logo logo logo mbtn";
+      ". . . . . . . . logo logo logo mbtn";
       .logo {
         background: $dk-grey;
         color: $white;
@@ -256,12 +260,13 @@
     }
     .main-nav {
       display: none;
-      position: sticky;
+      position: fixed;
       height: 100vh;
       width: 100vw;
       align-items: center;
       justify-content: center;
       background: $dk-grey;
+      top: 0;
       &.open {
         display: flex;
         align-content: space-between;

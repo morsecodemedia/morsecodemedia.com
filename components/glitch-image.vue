@@ -70,14 +70,15 @@
     justify-self: center;
     height: 100%;
     width: 100%;
-    background: #485563;
-    background: -moz-radial-gradient(center, ellipse cover, #485563, #29323C);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #485563), color-stop(100%, #29323C));
-    background: -webkit-radial-gradient(center, ellipse cover, #485563, #29323C);
-    background: -o-radial-gradient(center, ellipse cover, #485563, #29323C);
-    background: -ms-radial-gradient(center, ellipse cover, #485563, #29323C);
-    background: radial-gradient(ellipse at center, #485563, #29323C);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#485563', endColorstr='#29323C', GradientType=1 );
+    background: #fff;
+    // background: #485563;
+    // background: -moz-radial-gradient(center, ellipse cover, #485563, #29323C);
+    // background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #485563), color-stop(100%, #29323C));
+    // background: -webkit-radial-gradient(center, ellipse cover, #485563, #29323C);
+    // background: -o-radial-gradient(center, ellipse cover, #485563, #29323C);
+    // background: -ms-radial-gradient(center, ellipse cover, #485563, #29323C);
+    // background: radial-gradient(ellipse at center, #485563, #29323C);
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#485563', endColorstr='#29323C', GradientType=1 );
   }
 
   @media (min-width: 768px) {

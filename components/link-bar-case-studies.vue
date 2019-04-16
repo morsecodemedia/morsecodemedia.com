@@ -28,7 +28,7 @@
     a {
       color: $dk-grey;
       font-size: 24px;
-      text-decoration: none;
+      text-decoration: underline #54bad8;
       text-transform: uppercase;
     }
   }
