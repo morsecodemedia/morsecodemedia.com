@@ -68,7 +68,7 @@
 <style lang="scss" scoped>
   .homepage-hero {
     min-height: 75vh;
-    background: #fff;
+    background: #fefefe;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto auto 40px 60px auto 60px auto;

@@ -247,32 +247,114 @@
     }
   ],
   "clients": [
-    "Inter IKEA Systems B.V.",
-    "Walmart",
-    "The Children's Hospital of Philadelphia",
-    "John Hopkins",
-    "Endo Pharmaceuticals Inc.",
-    "Shire",
-    "Lenovo Health",
-    "Novartis International AG",
-    "Gilead Sciences, Inc.",
-    "Johnson and Johnson",
-    "Merck & Co., Inc.",
-    "Mitsubishi Tanabe Pharma America, Inc.",
-    "Joe Hand Promotions, Inc.",
-    "Merion Commercial Realty, Inc.",
-    "Quench USA, Inc.",
-    "Tunnell Consulting, Inc.",
-    "Internet Pipeline, Inc.",
-    "GeoBlue Travel Health Insurance",
-    "PA Travel, Inc.",
-    "USA Rugby League",
-    "GSW Advertising",
-    "inVentiv Health",
-    "JSP",
-    "Aerie Pharmaceuticals, Inc.",
-    "Secant Group, LLC",
-    "Entellus Medical, Inc."
+    {
+      "name": "Inter IKEA Systems B.V.",
+      "logo": ""
+    },
+    {
+      "name": "Walmart",
+      "logo": ""
+    },
+    {
+      "name": "The Children's Hospital of Philadelphia",
+      "logo": ""
+    },
+    {
+      "name": "John Hopkins",
+      "logo": ""
+    },
+    {
+      "name": "Endo Pharmaceuticals Inc.",
+      "logo": ""
+    },
+    {
+      "name": "Shire",
+      "logo": ""
+    },
+    {
+      "name": "Lenovo Health",
+      "logo": ""
+    },
+    {
+      "name": "Novartis International AG",
+      "logo": ""
+    },
+    {
+      "name": "Gilead Sciences, Inc.",
+      "logo": ""
+    },
+    {
+      "name": "Johnson and Johnson",
+      "logo": ""
+    },
+    {
+      "name": "Merck & Co., Inc.",
+      "logo": ""
+    },
+    {
+      "name": "Mitsubishi Tanabe Pharma America, Inc.",
+      "logo": ""
+    },
+    {
+      "name": "Joe Hand Promotions, Inc.",
+      "logo": ""
+    },
+    {
+      "name": "Merion Commercial Realty, Inc.",
+      "logo": ""
+    },
+    {
+      "name": "Quench USA, Inc.",
+      "logo": ""
+    },
+    {
+      "name": "Tunnell Consulting, Inc.",
+      "logo": ""
+    },
+    {
+      "name": "Internet Pipeline, Inc.",
+      "logo": ""
+    },
+    {
+      "name": "GeoBlue Travel Health Insurance",
+      "logo": ""
+    },
+    {
+      "name": "PA Travel, Inc.",
+      "logo": ""
+    },
+    {
+      "name": "USA Rugby League",
+      "logo": ""
+    },
+    {
+      "name": "GSW Advertising",
+      "logo": ""
+    },
+    {
+      "name": "inVentiv Health",
+      "logo": ""
+    },
+    {
+      "name": "JSP",
+      "logo": ""
+    },
+    {
+      "name": "Aerie Pharmaceuticals, Inc.",
+      "logo": ""
+    },
+    {
+      "name": "Secant Group, LLC",
+      "logo": ""
+    },
+    {
+      "name": "Entellus Medical, Inc.",
+      "logo": ""
+    },
+    {
+      "name": "Metuchen Pharmaceuticals LLC.",
+      "logo": ""
+    }
   ],
   "caseStudies": [
     {
