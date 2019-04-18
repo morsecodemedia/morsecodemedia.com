@@ -53,6 +53,10 @@
 </script>
 
 <style lang="scss">
+  .killscroll {
+    overflow: hidden;
+  }
+
   .badges {
     position: absolute;
     bottom: 5px;

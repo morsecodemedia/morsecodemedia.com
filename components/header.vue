@@ -92,13 +92,21 @@
 
   export default {
     name: 'Header',
+    head () {
+      return {
+        bodyAttrs: {
+          class: (this.killScroll) ? 'killscroll' : ''
+        }
+      }
+    },
     data() {
       return {
         viewMenu: false,
         top: '0px',
         left: '0px',
         navigation: navigation,
-        socialMedia: about.socialMedia
+        socialMedia: about.socialMedia,
+        killScroll: false
       }
     },
     computed: {
@@ -112,10 +120,12 @@
           document.querySelector('.menu-icon').classList.remove('open')
           document.querySelector('.main-nav').classList.remove('open')
           document.querySelector('.menu-label').innerHTML = 'menu'
+          this.killScroll = false
         } else {
           document.querySelector('.menu-icon').classList.add('open')
           document.querySelector('.main-nav').classList.add('open')
           document.querySelector('.menu-label').innerHTML = 'close'
+          this.killScroll = true
         }
       },
       ...mapMutations('casestudies', [
@@ -126,7 +136,6 @@
 </script>
 
 <style lang="scss" scoped>
-
   header {
     position: fixed;
     top: 0;
