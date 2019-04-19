@@ -1,6 +1,7 @@
 <template>
   <section
     v-lazy-container="{ selector: 'img' }"
+    :class="glitchClass"
     class="homepage-hero">
     <article class="hero-copy">
       <header>
@@ -23,7 +24,7 @@
       class="headshot hero-image"
       alt="A headshot of Brandon Morse"
       role="presentation">
-    <glitch />
+    <glitch @updatedGlitch="whichGlitch" />
   </section>
 </template>
 
@@ -46,6 +47,7 @@
     data() {
       return {
         headshotImg: about.headshot,
+        glitchClass: '',
         loadingColors: [
           'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQYV2PQ09P7DwACogGKJIM9sQAAAABJRU5ErkJggg=='
         ]
@@ -60,6 +62,9 @@
             return require(`../assets/images${imageSrc}`)
           }
         }
+      },
+      whichGlitch(event) {
+        this.glitchClass = event
       }
     }
   }
@@ -68,7 +73,6 @@
 <style lang="scss" scoped>
   .homepage-hero {
     min-height: 75vh;
-    background: #fefefe;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto auto 40px 60px auto 60px auto;
@@ -80,6 +84,7 @@
     "hs hs hs hs hs hs hs hs hs hs hs hs"
     "hs hs hs hs hs hs hs hs hs hs hs hs"
     ".  .  .  .  .  .  .  .  .  .  .  . ";
+
     .hero-image,
     .glitch-image-container {
       grid-area: hs;
@@ -148,6 +153,81 @@
           margin-top: 10px;
           color: $dk-grey;
           text-decoration: underline #54bad8;
+        }
+      }
+    }
+    &.glitch-0 {
+      .hero-copy {
+        .hero-copy__small {
+          color: salmon;
+        }
+        .hero-copy__normal {
+          strong {
+            color: salmon;
+          }
+          .hero-copy__link {
+            text-decoration: underline salmon;
+          }
+        }
+      }
+    }
+    &.glitch-1 {
+      .hero-copy {
+        .hero-copy__small {
+          color: pink;
+        }
+        .hero-copy__normal {
+          strong {
+            color: pink;
+          }
+          .hero-copy__link {
+            text-decoration: underline pink;
+          }
+        }
+      }
+    }
+    &.glitch-2 {
+      .hero-copy {
+        .hero-copy__small {
+          color: yellow;
+        }
+        .hero-copy__normal {
+          strong {
+            color: yellow;
+          }
+          .hero-copy__link {
+            text-decoration: underline yellow;
+          }
+        }
+      }
+    }
+    &.glitch-3 {
+      .hero-copy {
+        .hero-copy__small {
+          color: lime;
+        }
+        .hero-copy__normal {
+          strong {
+            color: lime;
+          }
+          .hero-copy__link {
+            text-decoration: underline lime;
+          }
+        }
+      }
+    }
+    &.glitch-4 {
+      .hero-copy {
+        .hero-copy__small {
+          color: aqua;
+        }
+        .hero-copy__normal {
+          strong {
+            color: aqua;
+          }
+          .hero-copy__link {
+            text-decoration: underline aqua;
+          }
         }
       }
     }

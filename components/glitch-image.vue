@@ -43,6 +43,7 @@
             clearInterval(this.glitchInterval)
             this.displaySlide = this.currentSlide
             this.glitchAnimate = false
+            this.$emit('updatedGlitch', 'glitch-'+this.displaySlide)
           }
         }, this.glitchSpeed)
       }
