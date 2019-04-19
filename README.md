@@ -5,9 +5,9 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/morsecodemedia/morsecodemedia.svg) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/morsecodemedia/morsecodemedia.svg)
 
 # Brandon Morse
-**Website:** https://www.morsecodemedia.com
-**Email:** brandon@morsecodemedia.com
-**LinkedIn:** https://www.linkedin.com/in/brandonmorse/
+**Website:** https://www.morsecodemedia.com    
+**Email:** brandon@morsecodemedia.com   
+**LinkedIn:** https://www.linkedin.com/in/brandonmorse/   
 
 ## Work History
 **Lead Architect**
@@ -65,37 +65,37 @@ Philadelphia, PA 2002-2005
 ### Certifications
 **Amazon Web Services**
 
-AWS Certified Alexa Skill Builder - Specialty
+AWS Certified Alexa Skill Builder - Specialty  
 January 2019-January 2022
 
 **Google DoubleClick**
 
-Custom Lightbox Ads Badge Certification
+Custom Lightbox Ads Badge Certification  
 March 2016-Current
 
-Dynamic Creative Badge Certification
+Dynamic Creative Badge Certification  
 March 2016-Current
 
-VPAID Badge Certification
+VPAID Badge Certification  
 March 2016-Current
 
-YouTube Masthead Badge Certification
+YouTube Masthead Badge Certification  
 March 2016-Current
 
-HTML5 Studio Certification
+HTML5 Studio Certification  
 February 2016-Current
 
 **Veeva**
 
-Veeva MyInsights
+Veeva MyInsights  
 May 2017-May 2018
 
 **HubSpot**
 
-Inbound Certification
+Inbound Certification  
 February 2015-March 2016
 
-HubSpot Design Certification
+HubSpot Design Certification  
 January 2015-February 2016
 
 ----
@@ -114,14 +114,12 @@ PageSpeed: A, 98%
 YSlow: B, 87%
 
 ## Todo Notes & Cleanup
-- ALT tag images
 - Homepage
-- Photo shoot
 - Case Study Content
   - Copy
   - Screenshots
   - Device Insitu
-  - move images that are from old site that are still being used over
 - Vuex store
   - low animation options
 - Update Resume/LinkedIn
+- Page Transitions
