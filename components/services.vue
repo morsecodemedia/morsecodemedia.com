@@ -39,8 +39,8 @@
         background: $offwhite;
       }
       &:nth-of-type(even) {
-        // background: $eggshell;
-        background: blue;
+        background: $eggshell;
+        // background: blue;
       }
       h2 {
         font-size: 36px;
