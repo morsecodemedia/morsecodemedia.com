@@ -106,6 +106,13 @@
     ],
     "certifications": [
       {
+        "certification": "AWS Certified ALexa Skill Builder - Specialty",
+        "organization": "Amazon Web Services",
+        "organizationLogo": "",
+        "certificationStart": "January 2019",
+        "certificationEnd": "January 2022"
+      },
+      {
         "certification": "Custom Lightbox Ads Badge Certification",
         "organization": "DoubleClick",
         "organizationLogo": "",

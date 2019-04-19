@@ -63,6 +63,11 @@ The Art Institute of Philadelphia
 Philadelphia, PA 2002-2005
 
 ### Certifications
+**Amazon Web Services**
+
+AWS Certified Alexa Skill Builder - Specialty
+January 2019-January 2022
+
 **Google DoubleClick**
 
 Custom Lightbox Ads Badge Certification
