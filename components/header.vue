@@ -12,18 +12,26 @@
         class="menu-btn"
         aria-label="Menu"
         role="button"
-        @click="toggleMenu">
-        <div class="menu-icon">
+        @click="viewMenu = !viewMenu">
+        <div
+          :class="{open:viewMenu}"
+          class="menu-icon">
           <span />
           <span />
           <span />
           <span />
         </div>
-        <div class="menu-label">Menu</div>
+        <div
+          v-if="!viewMenu"
+          class="menu-label">Menu</div>
+        <div
+          v-else
+          class="menu-label">Close</div>
       </div>
     </div>
     <nav
       v-if="navigation.length > 0"
+      :class="{open:viewMenu}"
       class="main-nav"
       role="menu">
       <ul
@@ -92,13 +100,6 @@
 
   export default {
     name: 'Header',
-    head () {
-      return {
-        bodyAttrs: {
-          class: (this.killScroll) ? 'killscroll' : ''
-        }
-      }
-    },
     data() {
       return {
         viewMenu: false,
@@ -106,7 +107,7 @@
         left: '0px',
         navigation: navigation,
         socialMedia: about.socialMedia,
-        killScroll: false
+        bodyTag: ''
       }
     },
     computed: {
@@ -114,20 +115,19 @@
         'showPwdProjects'
       ])
     },
-    methods: {
-      toggleMenu: function() {
-        if ( document.querySelector('.menu-icon').classList.contains('open') ) {
-          document.querySelector('.menu-icon').classList.remove('open')
-          document.querySelector('.main-nav').classList.remove('open')
-          document.querySelector('.menu-label').innerHTML = 'menu'
-          this.killScroll = false
+    watch: {
+      viewMenu: function(val) {
+        if (val) {
+          this.bodyTag.classList.add('killscroll')
         } else {
-          document.querySelector('.menu-icon').classList.add('open')
-          document.querySelector('.main-nav').classList.add('open')
-          document.querySelector('.menu-label').innerHTML = 'close'
-          this.killScroll = true
+          this.bodyTag.classList.remove('killscroll')
         }
-      },
+      }
+    },
+    mounted() {
+      this.bodyTag = document.getElementsByTagName('body')[0]
+    },
+    methods: {
       ...mapMutations('casestudies', [
         'toggleProjects'
       ])
