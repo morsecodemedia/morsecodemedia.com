@@ -94,7 +94,7 @@ module.exports = {
 
   webfontloader: {
     google: {
-      families: ['Karla','Montserrat']
+      families: ['Karla','Montserrat:400,700']
     }
   },
 

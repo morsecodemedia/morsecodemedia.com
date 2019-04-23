@@ -79,7 +79,6 @@
         setTimeout(() => {
           this.showHeadshot = false
         }, 5000)
-        console.log('i made it here')
       }
     }
   }
@@ -87,11 +86,12 @@
 
 <style lang="scss" scoped>
   .homepage-hero {
+    background: #303970;
     min-height: 75vh;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    margin-top: 75px;
+    margin-top: 72px;
     .hero-image,
     .glitch-image-container {
       display: none;
@@ -115,10 +115,10 @@
         }
       }
       .hero-copy__small {
-        color: #54bad8;
+        color: #56A68D;
         font-family: 'Montserrat', sans-serif;
         font-size: 18px;
-        font-weight: bold;
+        font-weight: 700;
         text-transform: uppercase;
         margin-bottom: 20px;
         &:after {
@@ -127,17 +127,17 @@
         }
       }
       .hero-copy__large {
-        color: $dk-grey;
+        color: white;
         font-family: 'Montserrat', sans-serif;
         font-size: 46px;
-        font-weight: normal;
+        font-weight: 400;
         line-height: 52px;
         margin-bottom: 0px;
         padding: 0;
         margin: 0 0 0 -5px;
       }
       .hero-copy__normal {
-        color: $dk-grey;
+        color: white;
         font-family: 'Montserrat', sans-serif;
         font-size: 26px;
         font-weight: 400;
@@ -146,15 +146,15 @@
 
         strong {
           font-weight: 700;
-          color: #54bad8;
+          color: #56A68D;
         }
 
         .hero-copy__link {
           display: inline-block;
           font-size: 26px;
           margin-top: 10px;
-          color: $dk-grey;
-          text-decoration: underline #54bad8;
+          color: white;
+          text-decoration: underline #56A68D;
         }
       }
     }
@@ -193,22 +193,8 @@
         grid-column-end: 13;
         padding: 25px;
         padding: 45px 10px;
-        h1 {
-          &.empty-styles {
-            margin: 0;
-            padding: 0;
-            font-weight: 400;
-            line-height: 0;
-            display: inline-grid;
-            display: -ms-inline-grid;
-          }
-        }
         .hero-copy__small {
-          color: #54bad8;
-          font-family: 'Montserrat', sans-serif;
           font-size: 18px;
-          font-weight: bold;
-          text-transform: uppercase;
           margin-bottom: 20px;
           &:after {
             content: "\A";
@@ -216,101 +202,29 @@
           }
         }
         .hero-copy__large {
-          color: $dk-grey;
-          font-family: 'Montserrat', sans-serif;
           font-size: 52px;
-          font-weight: normal;
           line-height: 66px;
           margin-bottom: 0px;
           padding: 0;
           margin: 0 0 0 -5px;
         }
         .hero-copy__normal {
-          color: $dk-grey;
-          font-family: 'Montserrat', sans-serif;
           font-size: 32px;
-          font-weight: 400;
           line-height: 46px;
           margin-bottom: 0px;
-
-          strong {
-            font-weight: 700;
-            color: #54bad8;
-          }
 
           .hero-copy__link {
             display: inline-block;
             font-size: 26px;
             margin-top: 10px;
-            color: $dk-grey;
-            text-decoration: underline #54bad8;
           }
         }
       }
-      &.glitch-0 { // Endo Men's Health Desktop
-        background-color: #6F86D6;
-        .hero-copy {
-          .hero-copy__small {
-            color: #48C6EF;
-          }
-          .hero-copy__large {
-            color: white;
-          }
-          .hero-copy__normal {
-            color: white;
-            strong {
-              color: #48C6EF;
-            }
-            .hero-copy__link {
-              color: white;
-              text-decoration: underline #48C6EF;
-            }
-          }
-        }
-      }
-      &.glitch-1 { // Endo Video Library iPad
-        background-color: #ECA5B3;
-        .hero-copy {
-          .hero-copy__small {
-            color: #256EB0;
-          }
-          .hero-copy__large {
-            color: white;
-          }
-          .hero-copy__normal {
-            color: white;
-            strong {
-              color: #256EB0;
-            }
-            .hero-copy__link {
-              color: white;
-              text-decoration: underline #256EB0;
-            }
-          }
-        }
-      }
-      &.glitch-2 { // Merion Commercial
-        background-color: #9D50BB;
-        .hero-copy {
-          .hero-copy__small {
-            color: #560678;
-          }
-          .hero-copy__large {
-            color: white;
-          }
-          .hero-copy__normal {
-            color: white;
-            strong {
-              color: #560678;
-            }
-            .hero-copy__link {
-              color: white;
-              text-decoration: underline #560678;
-            }
-          }
-        }
-      }
-      &.glitch-3 { // Xtra Kickstarts iPad
+      &.glitch-0, // Endo Men's Health Desktop
+      &.glitch-1, // Endo Video Library iPad
+      &.glitch-2, // Merion Commercial
+      &.glitch-3,  // Xtra Kickstarts iPad
+      &.glitch-4 { // USARL Desktop
         background-color: #303970;
         .hero-copy {
           .hero-copy__small {
@@ -331,32 +245,12 @@
           }
         }
       }
-      &.glitch-4 { // USARL Desktop
-        background-color: #fA709A;
-        .hero-copy {
-          .hero-copy__small {
-            color: #FEE140;
-          }
-          .hero-copy__large {
-            color: white;
-          }
-          .hero-copy__normal {
-            color: white;
-            strong {
-              color: #FEE140;
-            }
-            .hero-copy__link {
-              color: white;
-              text-decoration: underline #FEE140;
-            }
-          }
-        }
-      }
     }
   }
 
   @media (min-width: 992px) {
     .homepage-hero {
+      min-height: 80vh;
       grid-template-rows: repeat(4, 1fr);
       grid-template-areas:
       "hs hs hs hs hs hs hs . . . . ."
