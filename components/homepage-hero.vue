@@ -247,82 +247,107 @@
           }
         }
       }
-      &.glitch-0 {
-        background-color: #fe787780;
+      &.glitch-0 { // Endo Men's Health Desktop
+        background-color: #6F86D6;
         .hero-copy {
           .hero-copy__small {
-            color: #fe7877;
+            color: #48C6EF;
+          }
+          .hero-copy__large {
+            color: white;
           }
           .hero-copy__normal {
+            color: white;
             strong {
-              color: #fe7877;
+              color: #48C6EF;
             }
             .hero-copy__link {
-              text-decoration: underline #fe7877;
+              color: white;
+              text-decoration: underline #48C6EF;
             }
           }
         }
       }
-      &.glitch-1 {
-        background-color: #f7ddfa80;
+      &.glitch-1 { // Endo Video Library iPad
+        background-color: #ECA5B3;
         .hero-copy {
           .hero-copy__small {
-            color: #f7ddfa;
+            color: #256EB0;
+          }
+          .hero-copy__large {
+            color: white;
           }
           .hero-copy__normal {
+            color: white;
             strong {
-              color: #f7ddfa;
+              color: #256EB0;
             }
             .hero-copy__link {
-              text-decoration: underline #f7ddfa;
+              color: white;
+              text-decoration: underline #256EB0;
             }
           }
         }
       }
-      &.glitch-2 {
-        background-color: #ffe87880;
+      &.glitch-2 { // Merion Commercial
+        background-color: #9D50BB;
         .hero-copy {
           .hero-copy__small {
-            color: #ffe878;
+            color: #560678;
+          }
+          .hero-copy__large {
+            color: white;
           }
           .hero-copy__normal {
+            color: white;
             strong {
-              color: #ffe878;
+              color: #560678;
             }
             .hero-copy__link {
-              text-decoration: underline #ffe878;
+              color: white;
+              text-decoration: underline #560678;
             }
           }
         }
       }
-      &.glitch-3 {
-        background-color: #8ffba580;
+      &.glitch-3 { // Xtra Kickstarts iPad
+        background-color: #303970;
         .hero-copy {
           .hero-copy__small {
-            color: #8ffba5;
+            color: #56A68D;
+          }
+          .hero-copy__large {
+            color: white;
           }
           .hero-copy__normal {
+            color: white;
             strong {
-              color: #8ffba5;
+              color: #56A68D;
             }
             .hero-copy__link {
-              text-decoration: underline #8ffba5;
+              color: white;
+              text-decoration: underline #56A68D;
             }
           }
         }
       }
-      &.glitch-4 {
-        background-color: #78daff80;
+      &.glitch-4 { // USARL Desktop
+        background-color: #fA709A;
         .hero-copy {
           .hero-copy__small {
-            color: #78daff;
+            color: #FEE140;
+          }
+          .hero-copy__large {
+            color: white;
           }
           .hero-copy__normal {
+            color: white;
             strong {
-              color: #78daff;
+              color: #FEE140;
             }
             .hero-copy__link {
-              text-decoration: underline #78daff;
+              color: white;
+              text-decoration: underline #FEE140;
             }
           }
         }
