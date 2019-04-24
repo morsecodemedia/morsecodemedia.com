@@ -256,6 +256,7 @@
           font-family: 'Montserrat', sans-serif;
           font-size: 18px;
           margin-top: 30px;
+          width: 77px;
           text-transform: uppercase;
           pointer-events: none;
           -webkit-touch-callout: none;

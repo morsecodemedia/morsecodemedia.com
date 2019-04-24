@@ -54,7 +54,7 @@
         headshotImg: about.headshot,
         glitchClass: '',
         loadingColors: [
-          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQYV2PQ09P7DwACogGKJIM9sQAAAABJRU5ErkJggg=='
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWMwsCz4DwADTwHZh1oY 1gAAAABJRU5ErkJggg== '
         ]
       }
     },
@@ -91,7 +91,9 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    margin-top: 72px;
+    margin-top: -72px;
+    position: relative;
+    padding-top: 142px;
     .hero-image,
     .glitch-image-container {
       display: none;

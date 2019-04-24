@@ -41,8 +41,21 @@
         password: '',
         myProps: this.info,
         validatedClass: '',
-        showOverlay: true
+        showOverlay: true,
+        bodyTag: ''
       }
+    },
+    watch: {
+      showOverlay: function(val) {
+        if (val) {
+          this.bodyTag.classList.add('killscroll')
+        } else {
+          this.bodyTag.classList.remove('killscroll')
+        }
+      }
+    },
+    mounted() {
+      this.bodyTag = document.getElementsByTagName('body')[0]
     },
     methods: {
       timeout: function(delay, args) {
@@ -59,6 +72,7 @@
           this.validatedClass = 'validated'
           await this.timeout(1000)
           this.showOverlay = false
+          this.bodyTag.classList.remove('killscroll')
         } else {
           this.validatedClass = 'error'
           await this.timeout(1500)
@@ -85,7 +99,7 @@
     color: $white;
     top: 0px;
     left: 0px;
-    z-index: 1;
+    z-index: 10;
     &.show {
       visibility: visible;
       opacity: 1;
@@ -202,17 +216,6 @@
     .password-overlay {
       .password-overlay-container {
         width: 50vw;
-        p {
-
-        }
-      }
-    }
-  }
-
-  @media (min-width: 992px) {
-    .password-overlay {
-      .password-overlay-container {
-
       }
     }
   }
@@ -221,9 +224,6 @@
     .password-overlay {
       .password-overlay-container {
         width: 35vw;
-        p {
-
-        }
       }
     }
   }

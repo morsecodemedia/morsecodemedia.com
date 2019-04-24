@@ -38,6 +38,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -72px;
+    position: relative;
+    padding-top: 142px;
     div {
       width: 75vw;
       h1 {
