@@ -175,6 +175,10 @@
         }
       }
     }
+    a {
+      color: $dk-grey;
+      text-decoration: underline #56A68D;
+    }
   }
 
   @media (min-width: 768px) {
