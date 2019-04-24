@@ -23,10 +23,10 @@
 <style lang="scss" scoped>
 
   .link-bar {
-    background: $white;
+    background: #303970;
     padding: 45px 25px;
     a {
-      color: $dk-grey;
+      color: $white;
       font-size: 24px;
       text-decoration: underline #54bad8;
       text-transform: uppercase;
