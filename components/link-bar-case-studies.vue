@@ -3,7 +3,7 @@
     v-if="caseStudies"
     class="link-bar">
     <a
-      href="/case-studies/">See More Work &gt;</a>
+      href="/case-studies/">See More Work &raquo;</a>
   </section>
 </template>
 
@@ -28,7 +28,7 @@
     a {
       color: $white;
       font-size: 24px;
-      text-decoration: underline #54bad8;
+      text-decoration: underline #56a68d;
       text-transform: uppercase;
     }
   }

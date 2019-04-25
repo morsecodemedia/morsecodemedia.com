@@ -55,7 +55,6 @@
       }
       &:nth-of-type(even) {
         background: $eggshell;
-        // background: blue;
       }
       h2 {
         font-size: 36px;
@@ -71,7 +70,7 @@
         max-width: 75px;
         object-position: center;
         display: flex;
-        margin: 10px auto;
+        margin: 10px;
       }
     }
   }
@@ -96,6 +95,9 @@
         }
         p {
           text-align: center;
+        }
+        img {
+          margin: 10px auto;
         }
       }
     }
