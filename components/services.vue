@@ -6,6 +6,10 @@
       v-for="service in services"
       :key="service.id">
       <header>
+        <img
+          :src="buildImage(service.icon)"
+          alt=""
+          role="img">
         <h2>{{ service.title }}</h2>
       </header>
       <p>{{ service.description }}</p>
@@ -21,6 +25,17 @@
     data() {
       return {
         services: services
+      }
+    },
+    methods: {
+      buildImage(imageSrc) {
+        if (imageSrc) {
+          if (imageSrc.substr(0,4) === 'http') {
+            return imageSrc
+          } else {
+            return require(`../assets/images${imageSrc}`)
+          }
+        }
       }
     }
   }
@@ -51,6 +66,12 @@
       p {
         font-size: 18px;
         line-height: 26px;
+      }
+      img {
+        max-width: 75px;
+        object-position: center;
+        display: flex;
+        margin: 10px auto;
       }
     }
   }

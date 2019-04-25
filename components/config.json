@@ -231,26 +231,32 @@
   "services": [
     {
       "title": "Web Development",
-      "description": "I approach every web design project with passion and determination, from initial research and data analysis to post-launch support. I deliver smooth, mobile-friendly customer experiences, and yield strong results in improved website performance, SEO, and conversions."
+      "description": "I approach every web design project with passion and determination, from initial research and data analysis to post-launch support. I deliver smooth, mobile-friendly customer experiences, and yield strong results in improved website performance, SEO, and conversions.",
+      "icon": "/services/coding.svg"
     },
     {
       "title": "Voice Assistants",
-      "description": "Want to know about local school closings, have Alexa control your smart home, or even tell you horrible Dad jokes? If you have an idea for a custom Alexa skill, I can help bring that idea to reality and get it published to the Amazon marketplace."
+      "description": "Want to know about local school closings, have Alexa control your smart home, or even tell you horrible Dad jokes? If you have an idea for a custom Alexa skill, I can help bring that idea to reality and get it published to the Amazon marketplace.",
+      "icon": "/services/echo-dot.svg"
     },
     {
       "title": "Consultation",
-      "description": "Need someone to provide recommendations and guidance on technologies, services, and systems? My guidance can range from improving IT policies through training to implementing entirely new systems and servers to address your organization’s current and future IT needs."
+      "description": "Need someone to provide recommendations and guidance on technologies, services, and systems? My guidance can range from improving IT policies through training to implementing entirely new systems and servers to address your organization’s current and future IT needs.",
+      "icon": "/services/meeting.svg"
     },
     {
       "title": "Touch Panels",
-      "description": "Are you in need of an touch screen presentation for your store front or conference booth? I can help you engage your customers with an interactive touch panel experience."
+      "description": "Are you in need of an touch screen presentation for your store front or conference booth? I can help you engage your customers with an interactive touch panel experience.",
+      "icon": "/services/tablet.svg"
     },
     {
       "title": "Email Marketing",
-      "description": "Email marketing is a cheap and effective way to reach your customers, build a community and increase sales. Engage subscribers, nurture leads and track results with beautiful, responsive emails."
+      "description": "Email marketing is a cheap and effective way to reach your customers, build a community and increase sales. Engage subscribers, nurture leads and track results with beautiful, responsive emails.",
+      "icon": "/services/mail.svg"
     },{
       "title": "Let's Work Together",
-      "description": "Looking for a website? Need an engaging email to drive customers to your site? Just asking for advice? I can't wait to tackle whatever challenge you are having."
+      "description": "Looking for a website? Need an engaging email to drive customers to your site? Just asking for advice? I can't wait to tackle whatever challenge you are having.",
+      "icon": "/services/team.svg"
     }
   ],
   "clients": [
