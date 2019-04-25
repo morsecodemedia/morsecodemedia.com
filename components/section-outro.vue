@@ -35,11 +35,11 @@
     background: -ms-radial-gradient(center, ellipse cover, #485563, #29323C);
     background: radial-gradient(ellipse at center, #485563, #29323C);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#485563', endColorstr='#29323C', GradientType=1 );
-
     color: $white;
     padding: 80px 125px 80px 40px;
+    min-height: 50vh;
     h4 {
-      border-bottom: 4px solid $white;
+      border-bottom: 2px solid $white;
       display: inline-block;
       font-size: 32px;
       margin: 0 0 45px 0;
@@ -47,9 +47,12 @@
       text-transform: uppercase;
     }
     p {
+      font-weight: 400;
       font-size: 26px;
+      line-height: 36px;
       a {
         color: inherit;
+        text-decoration: underline #56a68d;
       }
     }
   }
