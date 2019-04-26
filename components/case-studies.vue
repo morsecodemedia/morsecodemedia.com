@@ -5,17 +5,6 @@
       class="case-studies-filter"
       role="menu">
       <dt @click="toggleFilters">Filters:</dt>
-      <!-- <dd
-        v-show="showFilters"
-        role="switch"
-        @click="toggleProjects">
-        <font-awesome-icon
-          v-if="!showPwdProjects"
-          icon="lock" />
-        <font-awesome-icon
-          v-else
-          icon="lock-open" />
-      </dd> -->
       <dd
         v-show="showFilters"
         :class="{ active: (activeCaseStudyCategory === 'all') }"

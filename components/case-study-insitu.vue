@@ -1,6 +1,5 @@
 <template>
   <div
-    :style="{background: 'linear-gradient' + '(135deg, ' + insitu.color1 + ' 0%, ' + insitu.color2 + ' 100%)'}"
     class="case-study-insitu">
     <img
       :src="buildImage(insitu.img)"

@@ -493,6 +493,7 @@
     },
     {
       "id": "usarl001",
+      "client": "USA Rugby League",
       "title": "USA Rugby League",
       "url": "http://www.usarl.org/",
       "yearStart": "2012",
@@ -510,8 +511,10 @@
       "overview": {
         "description": "The official website of the US Association of Rugby League.",
         "bgColor": "#1A1B69",
+        "clientColor": "#FFFFFF",
         "titleColor": "#E5002E",
-        "descriptionColor": "#FFFFFF"
+        "descriptionColor": "#FFFFFF",
+        "copyColor": "#FFFFFF"
       },
       "description": [
         {

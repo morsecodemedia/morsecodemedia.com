@@ -2,95 +2,142 @@
   <section class="container">
     <siteHeader />
     <main
+      v-lazy-container="{ selector: 'img' }"
       v-for="(cs, index) in activeCaseStudy"
       :key="index">
 
+      <div class="case-study-campaign-hero">
+        <div class="case-study-campaign-hero-gradient" />
+      </div>
       <div
         :style="{'background-color': cs.overview.bgColor}"
-        class="case-study-intro">
-        <div class="case-study-intro-copy">
-          <header>
-            <h1 :style="{color: cs.overview.titleColor}">{{ cs.title }}</h1>
-            <h2
-              v-if="cs.overview.description"
-              :style="{color: cs.overview.descriptionColor}"
-              v-html="cs.overview.description" />
-          </header>
-          <p><a
+        class="case-study-details">
+        <header class="case-study-intro-copy">
+          <p
+            v-if="cs.client"
+            :style="{color: cs.overview.clientColor}"
+            class="client-name">{{ cs.client }}</p>
+          <h1
             :style="{color: cs.overview.titleColor}"
-            :href="cs.url"
-            target="_blank"
-            rel="noopener">{{ cs.url }}</a></p>
+            class="case-study-title">{{ cs.title }}</h1>
+          <h2
+            v-if="cs.overview.description"
+            :style="{color: cs.overview.descriptionColor}"
+            class="case-study-overview"
+            v-html="cs.overview.description" />
           <p
             :style="{color: cs.overview.descriptionColor}"
             class="case-study-meta">
             {{ cs.category }} //
-            {{ cs.yearStart }} - <span
+            {{ cs.yearStart }} -
+            <span
               v-if="cs.yearEnd !== ''"
-              :style="{color: cs.overview.descriptionColor}">{{ cs.yearEnd }}</span><span
-                v-else
-                :style="{color: cs.overview.descriptionColor}">Present</span>
+              :style="{color: cs.overview.descriptionColor}">{{ cs.yearEnd }}</span>
+            <span
+              v-else
+              :style="{color: cs.overview.descriptionColor}">Present</span>
           </p>
-          <div class="scroll-downs">
-            <div
-              :style="{border: '2px ' + 'solid ' + cs.overview.titleColor}"
-              class="mousey">
-              <div
-                :style="{'background-color': cs.overview.titleColor}"
-                class="scroller"/>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <videoPlayer
-        v-if="cs.video && cs.video.src"
-        :style="{'background-color': cs.video.bgColor}"
-        :video="cs.video.src"/>
-
-      <div
-        :style="{'background-color': cs.overview.bgColor}"
-        class="description-container">
-        <div
-          v-lazy-container="{ selector: 'img' }"
-          v-for="(des, index) in activeDescription"
-          :key="index"
-          :class="(des.type === 'description') ? 'text-block' : 'img-block'"
-          :style="{color: des.fontColor, 'background-color': des.bgColor}">
-          <header
-            v-if="des.type === 'description' && des.title">
-            <h3
-              :style="{'border-bottom': '4px ' + 'solid ' + des.fontColor}">{{ des.title }} </h3>
+          <p>
+            <a
+              :style="{color: cs.overview.titleColor}"
+              :href="cs.url"
+              target="_blank"
+              rel="noopener">{{ cs.url }}</a>
+          </p>
+        </header>
+        <article>
+          <header>
+            <h3 :style="{color: cs.overview.titleColor}">Challenge</h3>
           </header>
-          <article
-            v-if="des.type === 'description' && des.description"
-            v-html="des.description" />
+          <div class="content-container">
+            <p>The original website was built as a WordPress site. Unfortunately, the way in which it was built included altering the 'core system', leaving it unable to be updated. This meant security vulnerabilities were unable to be addressed causing the site to be hacked multiple times over the years. The fragile state of the site also meant that making minor content updates (ie, creating new pages) a more cumbersome task than it needed to be.</p>
+            <p>Another challenge with the website was the 'League Manager', was a partially built out plugin that required the deletion of the prior year's teams, conferences, standings, etc. to set up the upcoming season's game management.</p>
+            <p>The last challenge was that the site was not responsive.</p>
+          </div>
+        </article>
 
+        <videoPlayer
+          v-if="cs.video && cs.video.src"
+          :video="cs.video.src"/>
+        <div
+          v-else
+          style="overflow:hidden; margin: 20px auto;">
           <img
-            v-if="des.type === 'image' && des.src"
-            :data-src="buildImage(des.src)"
+            :data-src="buildImage(cs.gallery[0])"
             :data-loading="loadingColors[Math.floor(Math.random()*loadingColors.length)]"
+            style="width: 100%; object-fit: contain;"
             alt=""
             role="img">
         </div>
-      </div>
 
-      <div
-        v-if="cs.awards.length"
-        class="case-study-awards">
-        <h3>Awards</h3>
-        <ul>
-          <li
-            v-for="(award, index) in cs.awards"
-            :key="index">
-            {{ award.year }} {{ award.award }} <nobr>from {{ award.organization }}</nobr>
-          </li>
-        </ul>
-      </div>
+        <article
+          style="margin: 45px 0;">
+          <header>
+            <h3 :style="{color: cs.overview.titleColor}">Solution</h3>
+          </header>
+          <div class="content-container">
+            <p>First and foremost, we addressed the security concerns, moving the site into ProcessWire. We created a new League Manager to be an integral part of the site's content and structure. It all starts with the teams. Each team has their own page, with history, plater roster, schedule and more. Due to the scalability of league, the number of teams and conferences varied from season to season. We took this into consideration, allowing admins to define the conferences and which teams were in each for each year. By using the teams' 'ids' as references, we were able to create a history of previous years, despite if a team didn't play certain years, or was zoned into a different conference.</p>
+            <p>The system also allowed for News and Video Library sections, complete with tag management. This tagging system allowed for relevant articles and videos to be dynamically pulled into the team pages as well.</p>
+            <p>Another new offering provided, was a portal for users to find out how to get involved with the league, as well as current members to be able to pay their membership dues.</p>
+          </div>
+        </article>
 
-      <caseStudyInsitu
-        v-if="cs.insitu.img.length && breakPoint === 'desktop'"
-        :insitu="cs.insitu" />
+        <article>
+          <header>
+            <h3 :style="{color: cs.overview.titleColor}">Results</h3>
+          </header>
+          <div class="content-container">
+            <p>Since the launch of the site, it is no longer a victim of malicious attacks. Updates are able to be managed by content administrations, and no longer require a developer. Users have a more complete and engaging experience no matter which device or browser they are viewing the site.</p>
+          </div>
+        </article>
+
+        <article
+          v-if="cs.awards.length">
+          <header>
+            <h3 :style="{color: cs.overview.titleColor}">Accolades</h3>
+          </header>
+          <div class="content-container">
+            <p
+              v-for="(award, index) in cs.awards"
+              :key="index"
+              class="accolades">
+            <span class="award-organization">{{ award.organization }}</span> {{ award.year }} {{ award.award }}</p>
+          </div>
+        </article>
+
+        <div
+          style="overflow:hidden; margin: 20px auto;">
+          <img
+            :data-src="buildImage(cs.gallery[0])"
+            :data-loading="loadingColors[Math.floor(Math.random()*loadingColors.length)]"
+            style="width: 100%; object-fit: contain;"
+            alt=""
+            role="img">
+        </div>
+        <div
+          style="overflow:hidden; margin: 20px auto;">
+          <img
+            :data-src="buildImage(cs.gallery[1])"
+            :data-loading="loadingColors[Math.floor(Math.random()*loadingColors.length)]"
+            style="width: 100%; object-fit: contain;"
+            alt=""
+            role="img">
+        </div>
+        <div
+          style="overflow:hidden; margin: 20px auto;">
+          <img
+            :data-src="buildImage(cs.gallery[2])"
+            :data-loading="loadingColors[Math.floor(Math.random()*loadingColors.length)]"
+            style="width: 100%; object-fit: contain;"
+            alt=""
+            role="img">
+        </div>
+
+        <caseStudyInsitu
+          v-if="cs.insitu.img.length && breakPoint === 'desktop'"
+          :insitu="cs.insitu" />
+
+      </div>
 
       <passwordProject
         v-if="cs.needsPassword"
@@ -107,7 +154,6 @@
   import config from '~/components/config.json'
   import siteHeader from '~/components/header'
   import siteFooter from '~/components/footer'
-  import videoPlayer from '~/components/video-player'
   import passwordProject from '~/components/password-project'
   import caseStudyInsitu from '~/components/case-study-insitu'
 
@@ -119,7 +165,6 @@
   export default {
     components: {
       siteHeader,
-      videoPlayer,
       caseStudyInsitu,
       passwordProject,
       siteFooter
@@ -140,51 +185,12 @@
             this.$route.params.title === caseStudy.title.toLowerCase()
               .replace(/[.\s]/g, '-')
               .replace(/[&#,+()$~%'":*?<>{}]/g, '' ))
-      },
-      activeDescription() {
-        let description = this.activeCaseStudy[0].description || []
-        let images = this.activeCaseStudy[0].gallery || []
-        let returnArray = []
-        for (var i=0; i < Math.max(description.length, images.length); ++i) {
-          if (description[i] && description[i].description !== '') {
-            returnArray.push({
-              'type': 'description',
-              'title': description[i].title,
-              'description': description[i].description,
-              'fontColor': description[i].fontColor,
-              'bgColor': description[i].bgColor
-              })
-          }
-          if (images[i]) {
-            if (description[i]) {
-              returnArray.push({
-                'type': 'image',
-                'src': images[i],
-                'fontColor': description[i].fontColor,
-                'bgColor': description[i].bgColor
-              })
-            } else {
-              let newi = i - 2
-              returnArray.push({
-                'type': 'image',
-                'src': images[i],
-                'fontColor': description[newi].fontColor,
-                'bgColor': description[newi].bgColor
-              })
-            }
-          }
-        }
-        return returnArray
       }
     },
     mounted() {
       this.checkBreakpoint()
     },
     methods: {
-      nextCaseStudy: function() {
-        router.go(1)
-        next()
-      },
       buildImage(imageSrc) {
         if (imageSrc) {
           if (imageSrc.substr(0,4) === 'http') {
@@ -208,234 +214,106 @@
   }
 </script>
 
-<style lang="scss">
-
-  .case-study-intro {
-    width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .case-study-intro-copy {
-      text-align: center;
-      padding: 0 40px;
-      h1 {
-        font-size: calc(72px/1.5);
-        margin-bottom: 25px;
-      }
-      h2 {
-        font-size: calc(48px/1.5);
-        margin-bottom: 25px;
-      }
-      p {
-        margin-bottom: 25px;
-        &.case-study-meta {
-          font-size: 14px;
-          opacity: .5;
-          span {
-            font-size: 14px;
-          }
-        }
-      }
-      .scroll-downs {
-        width: 34px;
-        height: 55px;
-        position: relative;
-        margin: auto;
-        top: 0;
-        left: 0;
-        bottom: -650px;
-        right: 0px;
-        .mousey {
-          width: 3px;
-          padding: 10px 15px;
-          height: 35px;
-          border-radius: 25px;
-          opacity: 0.75;
-          box-sizing: content-box;
-          .scroller {
-            width: 3px;
-            height: 10px;
-            border-radius: 25%;
-            animation-name: scroll;
-            animation-duration: 2.2s;
-            animation-timing-function: cubic-bezier(.15,.41,.69,.94);
-            animation-iteration-count: infinite;
-          }
-        }
-      }
-
-      @keyframes scroll {
-        0% { opacity: 0; }
-        10% { transform: translateY(0); opacity: 1; }
-        100% { transform: translateY(15px); opacity: 0;}
-      }
-    }
+<style lang="scss" scoped>
+  .case-study-details {
+    // background-color: rgb(26, 27, 105);
+    padding: 20px;
   }
-
-  .description-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    min-height: 50vh;
-    div {
-      grid-column: span 1;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: start;
-      &.img-block {
-        height: 50vh;
-      }
-      h3 {
-        text-transform: uppercase;
-        font-size: 32px;
-        padding: 0 0 15px 0;
-        margin: 20px 0 15px 0;
-        text-transform: uppercase;
-      }
+  .case-study-campaign-hero {
+    position: relative;
+    height: 75vh;
+    background: url('http://images.performgroup.com/di/library/sportal_com_au/f8/be/tonga-rlwc_12djhscro2zgt1lgcakr0g00z3.jpg') right top no-repeat;
+    background-size: cover;
+    margin: -20px 0;
+  }
+  .case-study-campaign-hero-gradient {
+    background: rgba(26,27,105,1);
+    background: -moz-linear-gradient(45deg, rgba(26,27,105,1) 0%, rgba(26,27,105,0.49) 61%, rgba(26,27,105,0.18) 86%, rgba(26,27,105,0) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(26,27,105,1)), color-stop(61%, rgba(26,27,105,0.49)), color-stop(86%, rgba(26,27,105,0.18)), color-stop(100%, rgba(26,27,105,0)));
+    background: -webkit-linear-gradient(45deg, rgba(26,27,105,1) 0%, rgba(26,27,105,0.49) 61%, rgba(26,27,105,0.18) 86%, rgba(26,27,105,0) 100%);
+    background: -o-linear-gradient(45deg, rgba(26,27,105,1) 0%, rgba(26,27,105,0.49) 61%, rgba(26,27,105,0.18) 86%, rgba(26,27,105,0) 100%);
+    background: -ms-linear-gradient(45deg, rgba(26,27,105,1) 0%, rgba(26,27,105,0.49) 61%, rgba(26,27,105,0.18) 86%, rgba(26,27,105,0) 100%);
+    background: linear-gradient(45deg, rgba(26,27,105,1) 0%, rgba(26,27,105,0.49) 61%, rgba(26,27,105,0.18) 86%, rgba(26,27,105,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a1b69', endColorstr='#1a1b69', GradientType=1 );
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+  h1 {
+    // color: rgb(229, 0, 46);
+    font-size: calc(72px/1.5);
+    margin-bottom: 15px;
+  }
+  h2 {
+    // color: $white;
+    font-size: calc(48px/1.5);
+    margin-bottom: 15px;
+  }
+  h3 {
+    // color: rgb(229, 0, 46);
+  }
+  p {
+    color: white;
+    &.client-name {
+      margin-bottom: 10px;
+    }
+    &.case-study-meta {
+      font-size: .9em;
+      opacity: .5;
+      margin-bottom: unset;
       span {
+        font-size: .9em;
+      }
+    }
+    &.accolades {
+      font-size: .9em;
+      .award-organization {
         display: block;
-        padding: 0 20px;
-        p {
-          margin-bottom: 20px;
+        font-weight: 700;
+        &:after {
+          content: "\A";
+          white-space: pre;
         }
       }
-      p {
-        padding: 0 20px;
-        margin-bottom: 20px;
-        a {
-          color: inherit;
-        }
-      }
-      img {
-        justify-self: center;
-        object-fit: cover;
-        object-position: center center;
-        height: 100%;
-        width: 100vw;
-      }
     }
-  }
-
-  .case-study-awards {
-    background: $eggshell;
-    padding: 35px 15px;
-    text-align: center;
-    h3 {
-      border-bottom: 4px solid $dk-grey;
-      display: inline-block;
-      font-size: 32px;
-      padding: 0 0 15px 0;
-      margin: 0 0 15px 0;
-      text-transform: uppercase;
-      text-align: center;
-    }
-    ul {
-      list-style: none;
-      li {
-        margin: 0 0 15px;
-        text-align: center;
-      }
+    a {
+      font-size: 14px;
+      // color: rgb(229, 0, 46);
     }
   }
 
   @media (min-width: 768px) {
-    .case-study-intro {
-      .case-study-intro-copy {
-        padding: 0 40px;
-        h1 {
-          font-size: 72px;
-          margin-bottom: 25px;
-        }
-        h2 {
-          font-size: 48px;
-          margin-bottom: 25px;
-        }
-        p {
-          margin-bottom: 25px;
-          &.case-study-meta {
-            font-size: 14px;
-            span {
-              font-size: 14px;
-            }
-          }
-        }
-      }
-    }
-    .description-container {
-      div {
-        p {
-          padding: 0 40px;
-        }
-        img {
-          object-fit: cover;
-        }
-      }
+    h2 {
+      max-width: 75vw;
     }
   }
-
   @media (min-width: 992px) {
-    .description-container {
-      display: grid;
-      grid-template-columns: repeat(2, 50%);
-      grid-auto-rows: 1fr;
-      div {
-        grid-column: span 1;
-        grid-row: span 1;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        &:nth-of-type(1) {
-          order: 1;
-        }
-        &:nth-of-type(2) {
-          order: 1;
-        }
-        &:nth-of-type(3) {
-          order: 4;
-        }
-        &:nth-of-type(4) {
-          order: 3;
-        }
-        &:nth-of-type(5) {
-          order: 5;
-        }
-        &:nth-of-type(6) {
-          order: 6;
-        }
-        &:nth-of-type(7) {
-          order: 8;
-        }
-        &:nth-of-type(8) {
-          order: 7;
-        }
-        &:nth-of-type(9) {
-          order: 9;
-        }
-        &:nth-of-type(10) {
-          order: 10;
-        }
-        &.img-block {
-          min-height: 100vh;
-        }
-        img {
-          object-fit: cover;
-        }
+    .case-study-details {
+      padding: 20px 4rem;
+    }
+    h2 {
+      max-width: 55vw;
+    }
+    article {
+      display: inline-flex;
+      header {
+        width: 25vw;
+      }
+      .content-container {
+        max-width: 65vw;
       }
     }
   }
-
   @media (min-width: 1200px) {
-    .description-container {
-      div {
-        img {
-          object-fit: contain;
-        }
+    h2 {
+      max-width: 40vw;
+    }
+    article {
+      .content-container {
+        max-width: 50vw;
       }
     }
   }
-
 </style>
