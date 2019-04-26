@@ -61,7 +61,8 @@ module.exports = {
   */
   plugins: [
     { src: '~/plugins/localStorage', ssr: false },
-    { src: '~/plugins/axe', ssr: false }
+    { src: '~/plugins/axe', ssr: false },
+    { src: '~/plugins/siema', ssr: false}
   ],
 
   /*

@@ -105,33 +105,25 @@
           </div>
         </article>
 
-        <div
-          style="overflow:hidden; margin: 20px auto;">
-          <img
-            :data-src="buildImage(cs.gallery[0])"
-            :data-loading="loadingColors[Math.floor(Math.random()*loadingColors.length)]"
-            style="width: 100%; object-fit: contain;"
-            alt=""
-            role="img">
-        </div>
-        <div
-          style="overflow:hidden; margin: 20px auto;">
-          <img
-            :data-src="buildImage(cs.gallery[1])"
-            :data-loading="loadingColors[Math.floor(Math.random()*loadingColors.length)]"
-            style="width: 100%; object-fit: contain;"
-            alt=""
-            role="img">
-        </div>
-        <div
-          style="overflow:hidden; margin: 20px auto;">
-          <img
-            :data-src="buildImage(cs.gallery[2])"
-            :data-loading="loadingColors[Math.floor(Math.random()*loadingColors.length)]"
-            style="width: 100%; object-fit: contain;"
-            alt=""
-            role="img">
-        </div>
+        <no-ssr>
+          <siema
+            ref="siema"
+            :options="siemaOptions"
+            auto-play
+            class="siema">
+
+            <div
+              v-for="(img, index) in cs.gallery"
+              :key="index"
+              class="slide">
+              <img
+                :src="buildImage(img)"
+                style="width: 100%; object-fit: contain;"
+                alt=""
+                role="img">
+            </div>
+          </siema>
+        </no-ssr>
 
         <caseStudyInsitu
           v-if="cs.insitu.img.length && breakPoint === 'desktop'"
@@ -175,7 +167,18 @@
         loadingColors: [
           'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQYV2PQ09P7DwACogGKJIM9sQAAAABJRU5ErkJggg=='
         ],
-        breakPoint: ''
+        breakPoint: '',
+        siemaOptions: {
+          duration: 200,
+          easing: 'ease-out',
+          perPage: 1,
+          startIndex: 0,
+          draggable: true,
+          multipleDrag: true,
+          threshold: 20,
+          loop: true,
+          rtl: false
+        }
       }
     },
     computed: {
@@ -216,7 +219,6 @@
 
 <style lang="scss" scoped>
   .case-study-details {
-    // background-color: rgb(26, 27, 105);
     padding: 20px;
   }
   .case-study-campaign-hero {
@@ -242,17 +244,12 @@
     height: 100%;
   }
   h1 {
-    // color: rgb(229, 0, 46);
     font-size: calc(72px/1.5);
     margin-bottom: 15px;
   }
   h2 {
-    // color: $white;
     font-size: calc(48px/1.5);
     margin-bottom: 15px;
-  }
-  h3 {
-    // color: rgb(229, 0, 46);
   }
   p {
     color: white;
@@ -280,8 +277,11 @@
     }
     a {
       font-size: 14px;
-      // color: rgb(229, 0, 46);
     }
+  }
+
+  .siema {
+    margin: 20px auto;
   }
 
   @media (min-width: 768px) {
@@ -305,6 +305,10 @@
         max-width: 65vw;
       }
     }
+    .siema {
+      max-width: 900px;
+      margin: 20px auto 40px;
+    }
   }
   @media (min-width: 1200px) {
     h2 {
@@ -314,6 +318,9 @@
       .content-container {
         max-width: 50vw;
       }
+    }
+    .siema {
+      max-width: 1100px;
     }
   }
 </style>
