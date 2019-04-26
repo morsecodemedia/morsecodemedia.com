@@ -6,13 +6,15 @@
       v-for="(cs, index) in activeCaseStudy"
       :key="index">
 
-      <div class="case-study-campaign-hero">
-        <div class="case-study-campaign-hero-gradient" />
-      </div>
+      <div
+        :style="{'background-image': 'url('+buildImage(cs.campaignImg)+')'}"
+        class="case-study-campaign-hero" />
       <div
         :style="{'background-color': cs.overview.bgColor}"
         class="case-study-details">
-        <header class="case-study-intro-copy">
+        <header
+          style="margin-top: -100px; position: relative;"
+          class="case-study-intro-copy">
           <p
             v-if="cs.client"
             :style="{color: cs.overview.clientColor}"
@@ -45,15 +47,15 @@
               rel="noopener">{{ cs.url }}</a>
           </p>
         </header>
-        <article>
+        <article
+          v-if="cs.description.length">
           <header>
-            <h3 :style="{color: cs.overview.titleColor}">Challenge</h3>
+            <h3 :style="{color: cs.overview.titleColor}">{{ cs.description[0].title }}</h3>
           </header>
-          <div class="content-container">
-            <p>The original website was built as a WordPress site. Unfortunately, the way in which it was built included altering the 'core system', leaving it unable to be updated. This meant security vulnerabilities were unable to be addressed causing the site to be hacked multiple times over the years. The fragile state of the site also meant that making minor content updates (ie, creating new pages) a more cumbersome task than it needed to be.</p>
-            <p>Another challenge with the website was the 'League Manager', was a partially built out plugin that required the deletion of the prior year's teams, conferences, standings, etc. to set up the upcoming season's game management.</p>
-            <p>The last challenge was that the site was not responsive.</p>
-          </div>
+          <div
+            :style="{color: cs.overview.copyColor}"
+            class="content-container"
+            v-html="cs.description[0].description" />
         </article>
 
         <videoPlayer
@@ -61,7 +63,7 @@
           :video="cs.video.src"/>
         <div
           v-else
-          style="overflow:hidden; margin: 20px auto;">
+          style="overflow:hidden; max-width: 900px; margin: 40px auto;">
           <img
             :data-src="buildImage(cs.gallery[0])"
             :data-loading="loadingColors[Math.floor(Math.random()*loadingColors.length)]"
@@ -71,24 +73,19 @@
         </div>
 
         <article
+          v-for="(des, index) in activeDescription"
+          :key="index"
           style="margin: 45px 0;">
           <header>
-            <h3 :style="{color: cs.overview.titleColor}">Solution</h3>
+            <h3
+              v-if="des.type === 'description' && des.title"
+              :style="{color: cs.overview.titleColor}">{{ des.title }}</h3>
           </header>
-          <div class="content-container">
-            <p>First and foremost, we addressed the security concerns, moving the site into ProcessWire. We created a new League Manager to be an integral part of the site's content and structure. It all starts with the teams. Each team has their own page, with history, plater roster, schedule and more. Due to the scalability of league, the number of teams and conferences varied from season to season. We took this into consideration, allowing admins to define the conferences and which teams were in each for each year. By using the teams' 'ids' as references, we were able to create a history of previous years, despite if a team didn't play certain years, or was zoned into a different conference.</p>
-            <p>The system also allowed for News and Video Library sections, complete with tag management. This tagging system allowed for relevant articles and videos to be dynamically pulled into the team pages as well.</p>
-            <p>Another new offering provided, was a portal for users to find out how to get involved with the league, as well as current members to be able to pay their membership dues.</p>
-          </div>
-        </article>
-
-        <article>
-          <header>
-            <h3 :style="{color: cs.overview.titleColor}">Results</h3>
-          </header>
-          <div class="content-container">
-            <p>Since the launch of the site, it is no longer a victim of malicious attacks. Updates are able to be managed by content administrations, and no longer require a developer. Users have a more complete and engaging experience no matter which device or browser they are viewing the site.</p>
-          </div>
+          <div
+            v-if="des.type === 'description' && des.description"
+            :style="{color: cs.overview.copyColor}"
+            class="content-container"
+            v-html="des.description" />
         </article>
 
         <article
@@ -107,6 +104,7 @@
 
         <no-ssr>
           <siema
+            v-if="cs.gallery.length"
             ref="siema"
             :options="siemaOptions"
             auto-play
@@ -188,6 +186,22 @@
             this.$route.params.title === caseStudy.title.toLowerCase()
               .replace(/[.\s]/g, '-')
               .replace(/[&#,+()$~%'":*?<>{}]/g, '' ))
+      },
+      activeDescription() {
+        let description = this.activeCaseStudy[0].description || []
+        let returnArray = []
+        for (var i=0; i < Math.max(description.length); ++i) {
+          if (description[i] && description[i].description !== '') {
+            returnArray.push({
+              'type': 'description',
+              'title': description[i].title,
+              'description': description[i].description,
+              'fontColor': description[i].fontColor,
+              'bgColor': description[i].bgColor
+              })
+          }
+        }
+        return returnArray
       }
     },
     mounted() {
@@ -224,24 +238,10 @@
   .case-study-campaign-hero {
     position: relative;
     height: 75vh;
-    background: url('http://images.performgroup.com/di/library/sportal_com_au/f8/be/tonga-rlwc_12djhscro2zgt1lgcakr0g00z3.jpg') right top no-repeat;
+    background-position: right center;
+    background-repeat: no-repeat;
     background-size: cover;
     margin: -20px 0;
-  }
-  .case-study-campaign-hero-gradient {
-    background: rgba(26,27,105,1);
-    background: -moz-linear-gradient(45deg, rgba(26,27,105,1) 0%, rgba(26,27,105,0.49) 61%, rgba(26,27,105,0.18) 86%, rgba(26,27,105,0) 100%);
-    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(26,27,105,1)), color-stop(61%, rgba(26,27,105,0.49)), color-stop(86%, rgba(26,27,105,0.18)), color-stop(100%, rgba(26,27,105,0)));
-    background: -webkit-linear-gradient(45deg, rgba(26,27,105,1) 0%, rgba(26,27,105,0.49) 61%, rgba(26,27,105,0.18) 86%, rgba(26,27,105,0) 100%);
-    background: -o-linear-gradient(45deg, rgba(26,27,105,1) 0%, rgba(26,27,105,0.49) 61%, rgba(26,27,105,0.18) 86%, rgba(26,27,105,0) 100%);
-    background: -ms-linear-gradient(45deg, rgba(26,27,105,1) 0%, rgba(26,27,105,0.49) 61%, rgba(26,27,105,0.18) 86%, rgba(26,27,105,0) 100%);
-    background: linear-gradient(45deg, rgba(26,27,105,1) 0%, rgba(26,27,105,0.49) 61%, rgba(26,27,105,0.18) 86%, rgba(26,27,105,0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a1b69', endColorstr='#1a1b69', GradientType=1 );
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
   }
   h1 {
     font-size: calc(72px/1.5);
@@ -252,7 +252,6 @@
     margin-bottom: 15px;
   }
   p {
-    color: white;
     &.client-name {
       margin-bottom: 10px;
     }
@@ -311,6 +310,9 @@
     }
   }
   @media (min-width: 1200px) {
+    .case-study-campaign-hero {
+      height: 80vh;
+    }
     h2 {
       max-width: 40vw;
     }

@@ -372,6 +372,7 @@
   "caseStudies": [
     {
       "id": "wal001",
+      "client": "Walmart",
       "title": "Walmart Baby Subscription Box",
       "url": "https://babybox.walmart.com/",
       "yearStart": "2014",
@@ -381,14 +382,17 @@
         "color1": "#e0e6f2",
         "color2": "#0076BE"
       },
+      "campaignImg": "",
       "gallery": [
         "/web-babybox-walmart/babybox-walmart-homepage-desktop-01.jpg"
       ],
       "overview": {
         "description": "Subscription box website for baby products for new and expecting mothers.",
+        "clientColor": "",
         "bgColor": "#e0e6f2",
         "titleColor": "#FDB72B",
-        "descriptionColor": "#0076BE"
+        "descriptionColor": "#0076BE",
+        "copyColor": ""
       },
       "description": [
         {
@@ -411,6 +415,7 @@
     },
     {
       "id": "wal002",
+      "client": "Walmart",
       "title": "Walmart Beauty Subscription Box",
       "url": "https://beautybox.walmart.com/",
       "yearStart": "2014",
@@ -420,12 +425,15 @@
         "color1": "#f79d3c",
         "color2": "#b93b61"
       },
+      "campaignImg": "",
       "gallery": [],
       "overview": {
         "description": "Subscription box website for beauty products for women of all ages.",
+        "clientColor": "",
         "bgColor": "#FFFFFF",
         "titleColor": "#f79d3c",
-        "descriptionColor": "#b93b61"
+        "descriptionColor": "#b93b61",
+        "copyColor": ""
       },
       "description": [
         {
@@ -448,6 +456,7 @@
     },
     {
       "id": "pat001",
+      "client": "Pennsylvania Travel",
       "title": "PA Travel",
       "url": "http://patravel.com/",
       "yearStart": "2012",
@@ -457,14 +466,17 @@
         "color1": "#19AFE1",
         "color2": "#00539A"
       },
+      "campaignImg": "",
       "gallery": [
         "/web-patravel/patravel-homepage-desktop-01.jpg"
       ],
       "overview": {
         "description": "Pennsylvania Travel is a travel agency for unique global vacation deals.",
+        "clientColor": "",
         "bgColor": "#00539A",
         "titleColor": "#19AFE1",
-        "descriptionColor": "#FFFFFF"
+        "descriptionColor": "#FFFFFF",
+        "copyColor": ""
       },
       "description": [
         {
@@ -503,6 +515,7 @@
         "color1": "#E5002E",
         "color2": "#1A1B69"
       },
+      "campaignImg": "/web-usarl/usarl-campaign-test.png",
       "gallery": [
         "/web-usarl/usarl-homepage-desktop-01.jpg",
         "/web-usarl/usarl-clubs-desktop-01.jpg",
@@ -543,6 +556,7 @@
     },
     {
       "id": "tnl001",
+      "client": "",
       "title": "Tunnell Consulting",
       "url": "http://www.tunnellconsulting.com/",
       "yearStart": "2015",
@@ -552,6 +566,7 @@
         "color1": "#254e99",
         "color2": "#099ed6"
       },
+      "campaignImg": "",
       "gallery": [
         "/web-tunnell-consulting/tunnell-consulting-contact-desktop-01.jpg",
         "/web-tunnell-consulting/tunnell-consulting-homepage-desktop-01.jpg",
@@ -559,9 +574,11 @@
       ],
       "overview": {
         "description": "A global pharmaceutical and biotechnology consulting company.",
+        "clientColor": "",
         "bgColor": "#099ed6",
         "titleColor": "#FFFFFF",
-        "descriptionColor": "#092e6e"
+        "descriptionColor": "#092e6e",
+        "copyColor": ""
       },
       "description": [
         {
@@ -601,6 +618,7 @@
     },
     {
       "id": "xdc001",
+      "client": "Endo Pharmaceuticals",
       "title": "Xiaflex for Dupuytren's Contracture",
       "url": "https://dupuytrens-contracture.xiaflex.com/",
       "yearStart": "2015",
@@ -610,15 +628,17 @@
         "color1": "",
         "color2": ""
       },
-      "needsPassword": true,
+      "campaignImg": "",
       "gallery": [
         "/web-xiaflex-dc/hcp/xiaflex-dc-homepage-desktop-01.jpg"
       ],
       "overview": {
         "description": "Website for both HCPs and Patients to learn about Dupuytren's contracture and XIAFLEX<sup>&reg;</sup>.",
+        "clientColor": "",
         "bgColor": "#eb5903",
         "titleColor": "#FFFFFF",
-        "descriptionColor": "#002e5d"
+        "descriptionColor": "#002e5d",
+        "copyColor": ""
       },
       "description": [
         {
@@ -641,11 +661,13 @@
         }
       ],
       "category": "Websites",
+      "needsPassword": true,
       "active": false,
       "awards": []
     },
     {
       "id": "xpd001",
+      "client": "Endo Pharmaceuticals",
       "title": "Xiaflex for Peyronie's Disease",
       "url": "https://peyronies-disease.xiaflex.com/",
       "yearStart": "2015",
@@ -655,15 +677,17 @@
         "color1": "",
         "color2": ""
       },
-      "needsPassword": true,
+      "campaignImg": "",
       "gallery": [
         "/web-xiaflex-pd/hcp/xiaflex-pd-homepage-desktop-01.jpg"
       ],
       "overview": {
         "description": "Website for both HCPs and Patients to learn about Peyronie's Disease and Xiaflex.",
+        "clientColor": "",
         "bgColor": "#002e5d",
         "titleColor": "#FFFFFF",
-        "descriptionColor": "#818181"
+        "descriptionColor": "#818181",
+        "copyColor": ""
       },
       "description": [
         {
@@ -686,11 +710,13 @@
         }
       ],
       "category": "Websites",
+      "needsPassword": true,
       "active": false,
       "awards": []
     },
     {
       "id": "mcr001",
+      "client": "Merion Commercial Realty",
       "title": "Merion Commercial Realty",
       "url": "http://www.merioncommercial.com/",
       "yearStart": "2015",
@@ -700,6 +726,7 @@
         "color1": "#093956",
         "color2": "#0669A5"
       },
+      "campaignImg": "",
       "gallery": [
         "/web-merion-commercial/merion-commercial-homepage-desktop-01.jpg",
         "/web-merion-commercial/merion-commercial-homepage-mobile-01.jpg",
@@ -707,9 +734,11 @@
       ],
       "overview": {
         "description": "Commercial real estate services and solutions.",
+        "clientColor": "",
         "bgColor": "#064870",
         "titleColor": "#FFFFFF",
-        "descriptionColor": "#edc315"
+        "descriptionColor": "#edc315",
+        "copyColor": ""
       },
       "description": [
         {
@@ -738,6 +767,7 @@
     },
     {
       "id": "rad001",
+      "client": "Mitsubishi Tanabe Pharma America",
       "title": "Radicava.com",
       "url": "https://www.radicava.com/",
       "yearStart": "2016",
@@ -747,15 +777,17 @@
         "color1": "",
         "color2": ""
       },
-      "needsPassword": true,
+      "campaignImg": "",
       "gallery": [
         "/web-radicava/patient/radicava-homepage-desktop-01.jpg"
       ],
       "overview": {
         "description": "A branded website for RADICAVA<sup>&reg</sup>.",
+        "clientColor": "",
         "bgColor": "#d9deed",
         "titleColor": "#3c5daa",
-        "descriptionColor": "#484848"
+        "descriptionColor": "#484848",
+        "copyColor": ""
       },
       "description": [
         {
@@ -778,6 +810,7 @@
         }
       ],
       "category": "Websites",
+      "needsPassword": true,
       "active": true,
       "awards": [
         {
@@ -794,6 +827,7 @@
     },
     {
       "id": "emh001",
+      "client": "Endo Pharmaceuticals",
       "title": "Endo Men's Health",
       "url": "https://endomenshealth.com/",
       "yearStart": "2018",
@@ -808,15 +842,18 @@
         "color1": "#435564",
         "color2": "#efefef"
       },
+      "campaignImg": "",
       "gallery": [
         "/web-endomenshealth/endomenshealth-desktop-01.jpg",
         "/web-endomenshealth/endomenshealth-mobile-01.jpg"
       ],
       "overview": {
         "description": "A landing page to engage urologists to help shape awareness of men's health.",
+        "clientColor": "",
         "bgColor": "#435564",
         "titleColor": "#f0b433",
-        "descriptionColor": "#FFFFFF"
+        "descriptionColor": "#FFFFFF",
+        "copyColor": ""
       },
       "description": [
         {
@@ -845,6 +882,7 @@
     },
     {
       "id": "ipl001",
+      "client": "Internet Pipeline",
       "title": "iPipeline",
       "url": "https://www.ipipeline.com/",
       "yearStart": "2014",
@@ -854,14 +892,17 @@
         "color1": "",
         "color2": ""
       },
+      "campaignImg": "",
       "gallery": [
         "/web-ipipeline/web-ipipeline-responsive-display-01.jpg"
       ],
       "overview": {
         "description": "iPipeline is a technology provider of SaaS solutions that drives straight-through processing for the insurance and financial services industry.",
+        "clientColor": "",
         "bgColor": "#FFFFFF",
         "titleColor": "#2483b3",
-        "descriptionColor": "#3b4141"
+        "descriptionColor": "#3b4141",
+        "copyColor": ""
       },
       "description": [
         {
@@ -901,6 +942,7 @@
     },
     {
       "id": "hth001",
+      "client": "HTH Worldwide",
       "title": "GeoBlue Travel Health Insurance (Desktop)",
       "url": "https://www.geobluetravelinsurance.com/",
       "yearStart": "2012",
@@ -910,6 +952,7 @@
         "color1": "#00aedb",
         "color2": "#c2e6e1"
       },
+      "campaignImg": "",
       "gallery": [
         "/web-geoblue/web-geoblue-travel-insurance-why-geoblue-desktop-01.jpg",
         "/web-geoblue/web-geoblue-travel-insurance-quote-desktop-01.jpg",
@@ -917,9 +960,11 @@
       ],
       "overview": {
         "description": "",
+        "clientColor": "",
         "bgColor": "#c2e6e1",
         "titleColor": "#00aedb",
-        "descriptionColor": "#00a0af"
+        "descriptionColor": "#00a0af",
+        "copyColor": ""
       },
       "description": [
         {
@@ -954,6 +999,7 @@
     },
     {
       "id": "hth002",
+      "client": "HTH Worldwide",
       "title": "GeoBlue Travel Health Insurance (Mobile)",
       "url": "https://www.geobluetravelinsurance.com/mobile/index-2.cfm",
       "yearStart": "2015",
@@ -963,6 +1009,7 @@
         "color1": "#00aedb",
         "color2": "#c2e6e1"
       },
+      "campaignImg": "",
       "gallery": [
         "/web-geoblue/web-geoblue-travel-insurance-multi-trip-mobile-01.jpg",
         "/web-geoblue/web-geoblue-travel-insurance-homepage-mobile-01.jpg",
@@ -970,9 +1017,11 @@
       ],
       "overview": {
         "description": "",
+        "clientColor": "",
         "bgColor": "#c2e6e1",
         "titleColor": "#00aedb",
-        "descriptionColor": "#00a0af"
+        "descriptionColor": "#00a0af",
+        "copyColor": ""
       },
       "description": [
         {
@@ -1001,6 +1050,7 @@
     },
     {
       "id": "jsp001",
+      "client": "JSP",
       "title": "EPP.com",
       "url": "http://epp.com/",
       "yearStart": "2014",
@@ -1010,6 +1060,7 @@
         "color1": "",
         "color2": ""
       },
+      "campaignImg": "",
       "gallery": [
         "/web-epp/web-epp-homepage-desktop-01.jpg",
         "/web-epp/web-epp-properties-desktop-01.jpg",
@@ -1018,9 +1069,11 @@
       ],
       "overview": {
         "description": "Expanding lightweight material solutions, globally.",
+        "clientColor": "",
         "bgColor": "#ed008c",
         "titleColor": "#FFFFFF",
-        "descriptionColor": "#FFFFFF"
+        "descriptionColor": "#FFFFFF",
+        "copyColor": ""
       },
       "description": [
         {
@@ -1055,6 +1108,7 @@
     },
     {
       "id": "xdc002",
+      "client": "Endo Pharmaceuticals",
       "title": "Xiaflex for DC 2018 Conference Panel",
       "url": "",
       "yearStart": "2018",
@@ -1064,6 +1118,7 @@
         "color1": "",
         "color2": ""
       },
+      "campaignImg": "",
       "gallery": [
         "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-01.jpg",
         "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-02.jpg",
@@ -1075,9 +1130,11 @@
       },
       "overview": {
         "description": "Interactive Touch Screen for XIAFLEX<sup>&reg;</sup> for <nobr>Dupuytren's contracture.</nobr>",
+        "clientColor": "",
         "bgColor": "#eb5903",
         "titleColor": "#FFFFFF",
-        "descriptionColor": "#002e5d"
+        "descriptionColor": "#002e5d",
+        "copyColor": ""
       },
       "description": [
         {
@@ -1106,6 +1163,7 @@
     },
     {
       "id": "xdc003",
+      "client":"Endo Pharmaceuticals",
       "title": "Xiaflex for DC 2017 Conference Panel",
       "url": "",
       "yearStart": "2017",
@@ -1115,6 +1173,7 @@
         "color1": "",
         "color2": ""
       },
+      "campaignImg": "",
       "gallery": [],
       "video": {
         "src": "",
@@ -1122,9 +1181,11 @@
       },
       "overview": {
         "description": "A touchscreen expereience for the 2017 ASSH Conference. This conference panel showcases procedure videos, treatment efficacy and patient profiles of those treated with XIAFLEX<sup>&reg;</sup> for Dupuytren's contracture.",
+        "clientColor": "",
         "bgColor": "#eb5903",
         "titleColor": "#FFFFFF",
-        "descriptionColor": "#002e5d"
+        "descriptionColor": "#002e5d",
+        "copyColor": ""
       },
       "description": [
         {
@@ -1153,6 +1214,7 @@
     },
     {
       "id": "rad002",
+      "client": "Mitsubishi Tanabe Pharma America",
       "title": "HQBlitz",
       "url": "",
       "yearStart": "2018",
@@ -1162,6 +1224,7 @@
         "color1": "",
         "color2": ""
       },
+      "campaignImg": "",
       "gallery": [
         "/web-app-hqblitz/hqblitz-login.jpg",
         "/web-app-hqblitz/hqblitz-manage-lists.jpg",
@@ -1169,9 +1232,11 @@
       ],
       "overview": {
         "description": "A web-based app, for sales reps to send SMS messages to teams.",
+        "clientColor": "",
         "bgColor": "#d9deed",
         "titleColor": "#3c5daa",
-        "descriptionColor": "#484848"
+        "descriptionColor": "#484848",
+        "copyColor": ""
       },
       "description": [
         {
@@ -1200,6 +1265,7 @@
     },
     {
       "id": "rad003",
+      "client":"Mitsubishi Tanabe Pharma America",
       "title": "ALSFRS-R Interactive Human Body Detail Aid",
       "url": "",
       "yearStart": "2016",
@@ -1209,6 +1275,7 @@
         "color1": "",
         "color2": ""
       },
+      "campaignImg": "",
       "gallery": [],
       "video": {
         "src": "",
@@ -1216,9 +1283,11 @@
       },
       "overview": {
         "description": "",
+        "clientColor": "",
         "bgColor": "",
         "titleColor": "",
-        "descriptionColor": ""
+        "descriptionColor": "",
+        "copyColor": ""
       },
       "description": [
         {
@@ -1247,6 +1316,7 @@
     },
     {
       "id": "alexa001",
+      "client": "GSW Advertising",
       "title": "GSW Speak People Alexa Skill",
       "url": "https://www.amazon.com/morsecodemedia-Speak-People/dp/B07JJ1D2LW/",
       "yearStart": "2018",
@@ -1256,12 +1326,15 @@
         "color1": "",
         "color2": ""
       },
+      "campaignImg": "",
       "gallery": [],
       "overview": {
         "description": "",
+        "clientColor": "",
         "bgColor": "",
         "titleColor": "",
-        "descriptionColor": ""
+        "descriptionColor": "",
+        "copyColor": ""
       },
       "description": [
         {
@@ -1290,6 +1363,7 @@
     },
     {
       "id": "alexa002",
+      "client": "morsecodemedia",
       "title": "Atlantic County Attractions Alexa Skill",
       "url": "https://www.amazon.com/morsecodemedia-Atlantic-County-Attractions/dp/B074TPLK6R/",
       "yearStart": "2018",
@@ -1299,12 +1373,15 @@
         "color1": "",
         "color2": ""
       },
+      "campaignImg": "",
       "gallery": [],
       "overview": {
         "description": "",
+        "clientColor": "",
         "bgColor": "",
         "titleColor": "",
-        "descriptionColor": ""
+        "descriptionColor": "",
+        "copyColor": ""
       },
       "description": [
         {
@@ -1333,6 +1410,7 @@
     },
     {
       "id": "ikea001",
+      "client": "Ikea",
       "title": "IKEA Emails",
       "url": "",
       "yearStart": "2010",
@@ -1342,12 +1420,15 @@
         "color1": "",
         "color2": ""
       },
+      "campaignImg": "",
       "gallery": [],
       "overview": {
         "description": "",
+        "clientColor": "",
         "bgColor": "",
         "titleColor": "",
-        "descriptionColor": ""
+        "descriptionColor": "",
+        "copyColor": ""
       },
       "description": [
         {
