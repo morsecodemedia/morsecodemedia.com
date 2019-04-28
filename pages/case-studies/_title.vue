@@ -89,7 +89,8 @@
         </article>
 
         <article
-          v-if="cs.awards.length">
+          v-if="cs.awards.length"
+          style="margin: 45px 0;">
           <header>
             <h3 :style="{color: cs.overview.titleColor}">Accolades</h3>
           </header>
@@ -190,7 +191,7 @@
       activeDescription() {
         let description = this.activeCaseStudy[0].description || []
         let returnArray = []
-        for (var i=0; i < Math.max(description.length); ++i) {
+        for (var i=1; i < Math.max(description.length); ++i) {
           if (description[i] && description[i].description !== '') {
             returnArray.push({
               'type': 'description',
@@ -275,7 +276,13 @@
       }
     }
     a {
+      color: inherit;
       font-size: 14px;
+      &:visited,
+      &:active,
+      &:hover {
+        color: inherit;
+      }
     }
   }
 

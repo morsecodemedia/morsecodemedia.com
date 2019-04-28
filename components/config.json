@@ -388,11 +388,11 @@
       ],
       "overview": {
         "description": "Subscription box website for baby products for new and expecting mothers.",
-        "clientColor": "",
+        "clientColor": "#0076BE",
         "bgColor": "#e0e6f2",
         "titleColor": "#FDB72B",
         "descriptionColor": "#0076BE",
-        "copyColor": ""
+        "copyColor": "#0076BE"
       },
       "description": [
         {
@@ -429,11 +429,11 @@
       "gallery": [],
       "overview": {
         "description": "Subscription box website for beauty products for women of all ages.",
-        "clientColor": "",
+        "clientColor": "#0076BE",
         "bgColor": "#FFFFFF",
         "titleColor": "#f79d3c",
         "descriptionColor": "#b93b61",
-        "copyColor": ""
+        "copyColor": "#222222"
       },
       "description": [
         {
@@ -472,11 +472,11 @@
       ],
       "overview": {
         "description": "Pennsylvania Travel is a travel agency for unique global vacation deals.",
-        "clientColor": "",
+        "clientColor": "#FFFFFF",
         "bgColor": "#00539A",
         "titleColor": "#19AFE1",
         "descriptionColor": "#FFFFFF",
-        "copyColor": ""
+        "copyColor": "#FFFFFF"
       },
       "description": [
         {
@@ -515,7 +515,7 @@
         "color1": "#E5002E",
         "color2": "#1A1B69"
       },
-      "campaignImg": "/web-usarl/usarl-campaign-test.png",
+      "campaignImg": "/web-usarl/usarl-campaign-01.png",
       "gallery": [
         "/web-usarl/usarl-homepage-desktop-01.jpg",
         "/web-usarl/usarl-clubs-desktop-01.jpg",
@@ -842,18 +842,18 @@
         "color1": "#435564",
         "color2": "#efefef"
       },
-      "campaignImg": "",
+      "campaignImg": "/web-endomenshealth/endomenshealth-campaign-01.png",
       "gallery": [
         "/web-endomenshealth/endomenshealth-desktop-01.jpg",
         "/web-endomenshealth/endomenshealth-mobile-01.jpg"
       ],
       "overview": {
         "description": "A landing page to engage urologists to help shape awareness of men's health.",
-        "clientColor": "",
+        "clientColor": "#222222",
         "bgColor": "#435564",
         "titleColor": "#f0b433",
         "descriptionColor": "#FFFFFF",
-        "copyColor": ""
+        "copyColor": "#FFFFFF"
       },
       "description": [
         {
@@ -1457,6 +1457,7 @@
     },
     {
       "id": "jakfri001",
+      "client": "Inriki",
       "title": "Jakfri Emails",
       "url": "",
       "yearStart": "2018",
@@ -1466,12 +1467,15 @@
         "color1": "",
         "color2": ""
       },
+      "campaignImg": "",
       "gallery": [],
       "overview": {
         "description": "",
+        "clientColor": "",
         "bgColor": "",
         "titleColor": "",
-        "descriptionColor": ""
+        "descriptionColor": "",
+        "copyColor": ""
       },
       "description": [
         {
@@ -1500,6 +1504,7 @@
     },
     {
       "id": "rad004",
+      "client": "Mitsubishi Tanabe Pharma America",
       "title": "Radicava Emails",
       "url": "",
       "yearStart": "2016",
@@ -1509,12 +1514,15 @@
         "color1": "",
         "color2": ""
       },
+      "campaignImg": "",
       "gallery": [],
       "overview": {
         "description": "",
+        "clientColor": "",
         "bgColor": "",
         "titleColor": "",
-        "descriptionColor": ""
+        "descriptionColor": "",
+        "copyColor": ""
       },
       "description": [
         {
@@ -1543,6 +1551,7 @@
     },
     {
       "id": "rad005",
+      "client": "Mitsubishi Tanabe Pharma America",
       "title": "Radicava Patient Profiles",
       "url": "",
       "yearStart": "2019",
@@ -1552,6 +1561,7 @@
         "color1": "",
         "color2": ""
       },
+      "campaignImg": "",
       "gallery": [],
       "video": {
         "src": "https://www.youtube.com/embed/ODBRrHXin1A",
@@ -1559,9 +1569,11 @@
       },
       "overview": {
         "description": "",
+        "clientColor": "",
         "bgColor": "#6a86c2",
         "titleColor": "#d6d6d6",
-        "descriptionColor": "#FFFFFF"
+        "descriptionColor": "#FFFFFF",
+        "copyColor": ""
       },
       "description": [
         {
@@ -1590,6 +1602,7 @@
     },
     {
       "id": "aerie001",
+      "client": "Aerie Phamaceuticals",
       "title": "Aerie MyInsights Dashboard",
       "url": "",
       "yearStart": "2018",
@@ -1599,7 +1612,7 @@
         "color1": "",
         "color2": ""
       },
-      "needsPassword": true,
+      "campaignImg": "",
       "gallery": [],
       "video": {
         "src": "",
@@ -1607,9 +1620,11 @@
       },
       "overview": {
         "description": "",
+        "clientColor": "",
         "bgColor": "",
         "titleColor": "",
-        "descriptionColor": ""
+        "descriptionColor": "",
+        "copyColor": ""
       },
       "description": [
         {
@@ -1632,11 +1647,13 @@
         }
       ],
       "category": "Reporting Dashboards",
+      "needsPassword": true,
       "active": false,
       "awards": []
     },
     {
       "id": "ent001",
+      "client": "Entellus Medicical",
       "title": "Sinus Surgery Options",
       "url": "",
       "yearStart": "2012",
@@ -1646,13 +1663,15 @@
         "color1": "",
         "color2": ""
       },
-      "needsPassword": false,
+      "campaignImg": "",
       "gallery": [],
       "overview": {
         "description": "",
+        "clientColor": "",
         "bgColor": "",
         "titleColor": "",
-        "descriptionColor": ""
+        "descriptionColor": "",
+        "copyColor": ""
       },
       "description": [
         {
@@ -1675,11 +1694,13 @@
         }
       ],
       "category": "Websites",
+      "needsPassword": false,
       "active": false,
       "awards": []
     },
     {
       "id": "xdc004",
+      "client":"Endo Pharmaceuticals",
       "title": "XTRA Kick-starts",
       "url": "http://www.xtra-kickstarts.com/",
       "yearStart": "2018",
@@ -1689,7 +1710,7 @@
         "color1": "#eb5903",
         "color2": "#FFFFFF"
       },
-      "needsPassword": true,
+      "campaignImg": "",
       "gallery": [
         "/ipad-xtra-kickstarts/xtra-kickstarts-01.jpg",
         "/ipad-xtra-kickstarts/xtra-kickstarts-02.jpg",
@@ -1703,9 +1724,11 @@
       },
       "overview": {
         "description": "",
+        "clientColor": "",
         "bgColor": "#eb5903",
         "titleColor": "#FFFFFF",
-        "descriptionColor": "#002e5d"
+        "descriptionColor": "#002e5d",
+        "copyColor": ""
       },
       "description": [
         {
@@ -1728,11 +1751,13 @@
         }
       ],
       "category": "Conference Pieces",
+      "needsPassword": true,
       "active": true,
       "awards": []
     },
     {
       "id": "endo001",
+      "client": "Endo Pharmaceuticals",
       "title": "Endo Video Library",
       "url": "",
       "yearStart": "",
@@ -1742,7 +1767,7 @@
         "color1": "",
         "color2": ""
       },
-      "needsPassword": true,
+      "campaignImg": "",
       "gallery": [
         "/native-endo-video-library/native-endo-video-library-video-listing-01.jpg",
         "/native-endo-video-library/native-endo-video-library-downloading-01.jpg"
@@ -1753,9 +1778,11 @@
       },
       "overview": {
         "description": "",
+        "clientColor": "",
         "bgColor": "",
         "titleColor": "",
-        "descriptionColor": ""
+        "descriptionColor": "",
+        "copyColor": ""
       },
       "description": [
         {
@@ -1778,11 +1805,13 @@
         }
       ],
       "category": "Native Apps",
+      "needsPassword": true,
       "active": true,
       "awards": []
     },
     {
       "id": "jhp001",
+      "client": "Joe Hand Promotions",
       "title": "Joe Hand Promotions",
       "url": "https://www.joehandpromotions.com/",
       "yearStart": "2013",
@@ -1792,7 +1821,7 @@
         "color1": "",
         "color2": ""
       },
-      "needsPassword": false,
+      "campaignImg": "",
       "gallery": [],
       "video": {
         "src": "",
@@ -1800,9 +1829,11 @@
       },
       "overview": {
         "description": "",
+        "clientColor": "",
         "bgColor": "",
         "titleColor": "",
-        "descriptionColor": ""
+        "descriptionColor": "",
+        "copyColor": ""
       },
       "description": [
         {
@@ -1825,6 +1856,7 @@
         }
       ],
       "category": "Websites",
+      "needsPassword": false,
       "active": true,
       "awards": [
         {
