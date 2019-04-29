@@ -382,7 +382,7 @@
         "color1": "#e0e6f2",
         "color2": "#0076BE"
       },
-      "campaignImg": "",
+      "campaignImg": "/web-babybox-walmart/babybox-walmart-campaign-01.png",
       "gallery": [
         "/web-babybox-walmart/babybox-walmart-homepage-desktop-01.jpg"
       ],
@@ -425,7 +425,7 @@
         "color1": "#f79d3c",
         "color2": "#b93b61"
       },
-      "campaignImg": "",
+      "campaignImg": "/web-beautybox-walmart/beautybox-walmart-campaign-01.png",
       "gallery": [],
       "overview": {
         "description": "Subscription box website for beauty products for women of all ages.",
@@ -457,7 +457,7 @@
     {
       "id": "pat001",
       "client": "Pennsylvania Travel",
-      "title": "PA Travel",
+      "title": "PA Travel Website",
       "url": "http://patravel.com/",
       "yearStart": "2012",
       "yearEnd": "2015",
@@ -466,7 +466,7 @@
         "color1": "#19AFE1",
         "color2": "#00539A"
       },
-      "campaignImg": "",
+      "campaignImg": "/web-patravel/patravel-campaign-01.png",
       "gallery": [
         "/web-patravel/patravel-homepage-desktop-01.jpg"
       ],
@@ -506,7 +506,7 @@
     {
       "id": "usarl001",
       "client": "USA Rugby League",
-      "title": "USA Rugby League",
+      "title": "USA Rugby League Website",
       "url": "http://www.usarl.org/",
       "yearStart": "2012",
       "yearEnd": "2016",
@@ -556,8 +556,8 @@
     },
     {
       "id": "tnl001",
-      "client": "",
-      "title": "Tunnell Consulting",
+      "client": "Tunnell Consulting",
+      "title": "Tunnell Consulting Corporate Website",
       "url": "http://www.tunnellconsulting.com/",
       "yearStart": "2015",
       "yearEnd": "2015",
@@ -566,7 +566,7 @@
         "color1": "#254e99",
         "color2": "#099ed6"
       },
-      "campaignImg": "",
+      "campaignImg": "/web-tunnell-consulting/tunnell-consulting-campaign-01.png",
       "gallery": [
         "/web-tunnell-consulting/tunnell-consulting-contact-desktop-01.jpg",
         "/web-tunnell-consulting/tunnell-consulting-homepage-desktop-01.jpg",
@@ -574,11 +574,11 @@
       ],
       "overview": {
         "description": "A global pharmaceutical and biotechnology consulting company.",
-        "clientColor": "",
+        "clientColor": "#092e6e",
         "bgColor": "#099ed6",
         "titleColor": "#FFFFFF",
         "descriptionColor": "#092e6e",
-        "copyColor": ""
+        "copyColor": "#092e6e"
       },
       "description": [
         {
@@ -619,8 +619,57 @@
     {
       "id": "xdc001",
       "client": "Endo Pharmaceuticals",
-      "title": "Xiaflex for Dupuytren's Contracture",
-      "url": "https://dupuytrens-contracture.xiaflex.com/",
+      "title": "Xiaflex for Dupuytren's Contracture HCP Website",
+      "url": "https://dupuytrens-contracture.xiaflex.com/hcp/",
+      "yearStart": "2015",
+      "yearEnd": "",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "/web-xiaflex-dc/hcp/xiaflex-dc-campaign-01.png",
+      "gallery": [
+        "/web-xiaflex-dc/hcp/xiaflex-dc-homepage-desktop-01.jpg"
+      ],
+      "overview": {
+        "description": "Website for HCPs to learn about Dupuytren's contracture and XIAFLEX<sup>&reg;</sup>.",
+        "clientColor": "#FFFFFF",
+        "bgColor": "#eb5903",
+        "titleColor": "#FFFFFF",
+        "descriptionColor": "#002e5d",
+        "copyColor": "#002E5D"
+      },
+      "description": [
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#eb5903",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#002e5d",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#ebebeb",
+          "fontColor": "#585757"
+        }
+      ],
+      "category": "Websites",
+      "needsPassword": true,
+      "active": true,
+      "awards": []
+    },
+    {
+      "id": "xdc005",
+      "client": "Endo Pharmaceuticals",
+      "title": "Xiaflex for Dupuytren's Contracture Patient Website",
+      "url": "https://dupuytrens-contracture.xiaflex.com/patient/",
       "yearStart": "2015",
       "yearEnd": "",
       "insitu": {
@@ -630,15 +679,15 @@
       },
       "campaignImg": "",
       "gallery": [
-        "/web-xiaflex-dc/hcp/xiaflex-dc-homepage-desktop-01.jpg"
+        ""
       ],
       "overview": {
-        "description": "Website for both HCPs and Patients to learn about Dupuytren's contracture and XIAFLEX<sup>&reg;</sup>.",
-        "clientColor": "",
+        "description": "Website for Patients to learn about Dupuytren's contracture and XIAFLEX<sup>&reg;</sup>.",
+        "clientColor": "#FFFFFF",
         "bgColor": "#eb5903",
         "titleColor": "#FFFFFF",
         "descriptionColor": "#002e5d",
-        "copyColor": ""
+        "copyColor": "#002E5D"
       },
       "description": [
         {
@@ -668,8 +717,57 @@
     {
       "id": "xpd001",
       "client": "Endo Pharmaceuticals",
-      "title": "Xiaflex for Peyronie's Disease",
-      "url": "https://peyronies-disease.xiaflex.com/",
+      "title": "Xiaflex for Peyronie's Disease HCP Website",
+      "url": "https://peyronies-disease.xiaflex.com/hcp/",
+      "yearStart": "2015",
+      "yearEnd": "",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "/web-xiaflex-pd/hcp/xiaflex-pd-campaign-01.png",
+      "gallery": [
+        "/web-xiaflex-pd/hcp/xiaflex-pd-homepage-desktop-01.jpg"
+      ],
+      "overview": {
+        "description": "Website for HCPs to learn about Peyronie's Disease and Xiaflex.",
+        "clientColor": "#FFFFFF",
+        "bgColor": "#002e5d",
+        "titleColor": "#FFFFFF",
+        "descriptionColor": "#818181",
+        "copyColor": "#818181"
+      },
+      "description": [
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#002e5d",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#818181",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#FFFFFF",
+          "fontColor": "#002e5d"
+        }
+      ],
+      "category": "Websites",
+      "needsPassword": true,
+      "active": true,
+      "awards": []
+    },
+    {
+      "id": "xpd002",
+      "client": "Endo Pharmaceuticals",
+      "title": "Xiaflex for Peyronie's Disease Patient Website",
+      "url": "https://peyronies-disease.xiaflex.com/patient/",
       "yearStart": "2015",
       "yearEnd": "",
       "insitu": {
@@ -679,15 +777,15 @@
       },
       "campaignImg": "",
       "gallery": [
-        "/web-xiaflex-pd/hcp/xiaflex-pd-homepage-desktop-01.jpg"
+        ""
       ],
       "overview": {
-        "description": "Website for both HCPs and Patients to learn about Peyronie's Disease and Xiaflex.",
-        "clientColor": "",
+        "description": "Website for Patients to learn about Peyronie's Disease and Xiaflex.",
+        "clientColor": "#FFFFFF",
         "bgColor": "#002e5d",
         "titleColor": "#FFFFFF",
         "descriptionColor": "#818181",
-        "copyColor": ""
+        "copyColor": "#818181"
       },
       "description": [
         {
@@ -717,7 +815,7 @@
     {
       "id": "mcr001",
       "client": "Merion Commercial Realty",
-      "title": "Merion Commercial Realty",
+      "title": "Merion Commercial Realty Website",
       "url": "http://www.merioncommercial.com/",
       "yearStart": "2015",
       "yearEnd": "2015",
@@ -726,7 +824,7 @@
         "color1": "#093956",
         "color2": "#0669A5"
       },
-      "campaignImg": "",
+      "campaignImg": "/web-merion-commercial/merion-commercial-campaign-01.png",
       "gallery": [
         "/web-merion-commercial/merion-commercial-homepage-desktop-01.jpg",
         "/web-merion-commercial/merion-commercial-homepage-mobile-01.jpg",
@@ -734,11 +832,11 @@
       ],
       "overview": {
         "description": "Commercial real estate services and solutions.",
-        "clientColor": "",
+        "clientColor": "#FFFFFF",
         "bgColor": "#064870",
-        "titleColor": "#FFFFFF",
-        "descriptionColor": "#edc315",
-        "copyColor": ""
+        "titleColor": "#edc315",
+        "descriptionColor": "#FFFFFF",
+        "copyColor": "#FFFFFF"
       },
       "description": [
         {
@@ -828,7 +926,7 @@
     {
       "id": "emh001",
       "client": "Endo Pharmaceuticals",
-      "title": "Endo Men's Health",
+      "title": "Endo Men's Health Website",
       "url": "https://endomenshealth.com/",
       "yearStart": "2018",
       "yearEnd": "",
@@ -883,7 +981,7 @@
     {
       "id": "ipl001",
       "client": "Internet Pipeline",
-      "title": "iPipeline",
+      "title": "iPipeline Corporate Website",
       "url": "https://www.ipipeline.com/",
       "yearStart": "2014",
       "yearEnd": "2014",
@@ -892,17 +990,17 @@
         "color1": "",
         "color2": ""
       },
-      "campaignImg": "",
+      "campaignImg": "/web-ipipeline/ipipeline-campaign-01.png",
       "gallery": [
         "/web-ipipeline/web-ipipeline-responsive-display-01.jpg"
       ],
       "overview": {
         "description": "iPipeline is a technology provider of SaaS solutions that drives straight-through processing for the insurance and financial services industry.",
-        "clientColor": "",
+        "clientColor": "#3b4141",
         "bgColor": "#FFFFFF",
         "titleColor": "#2483b3",
         "descriptionColor": "#3b4141",
-        "copyColor": ""
+        "copyColor": "#3b4141"
       },
       "description": [
         {
@@ -952,19 +1050,19 @@
         "color1": "#00aedb",
         "color2": "#c2e6e1"
       },
-      "campaignImg": "",
+      "campaignImg": "/web-geoblue/web-geoblue-travel-insurance-campaign-desktop-01.png",
       "gallery": [
         "/web-geoblue/web-geoblue-travel-insurance-why-geoblue-desktop-01.jpg",
         "/web-geoblue/web-geoblue-travel-insurance-quote-desktop-01.jpg",
         "/web-geoblue/web-geoblue-travel-insurance-homepage-desktop-01.jpg"
       ],
       "overview": {
-        "description": "",
-        "clientColor": "",
+        "description": "A Blue Cross Blue Shield affiliated brand for travel health insurance.",
+        "clientColor": "#FFFFFF",
         "bgColor": "#c2e6e1",
         "titleColor": "#00aedb",
         "descriptionColor": "#00a0af",
-        "copyColor": ""
+        "copyColor": "#222222"
       },
       "description": [
         {
@@ -1009,35 +1107,35 @@
         "color1": "#00aedb",
         "color2": "#c2e6e1"
       },
-      "campaignImg": "",
+      "campaignImg": "/web-geoblue/web-geoblue-travel-insurance-campaign-mobile-01.png",
       "gallery": [
         "/web-geoblue/web-geoblue-travel-insurance-multi-trip-mobile-01.jpg",
         "/web-geoblue/web-geoblue-travel-insurance-homepage-mobile-01.jpg",
         "/web-geoblue/web-geoblue-travel-insurance-expat-mobile-01.jpg"
       ],
       "overview": {
-        "description": "",
-        "clientColor": "",
+        "description": "A Blue Cross Blue Shield affiliated brand for travel health insurance.",
+        "clientColor": "#FFFFFF",
         "bgColor": "#c2e6e1",
         "titleColor": "#00aedb",
         "descriptionColor": "#00a0af",
-        "copyColor": ""
+        "copyColor": "#222222"
       },
       "description": [
         {
-          "title": "challenge",
+          "title": "",
           "description": "",
           "bgColor": "#00aedb",
           "fontColor": "#FFFFFF"
         },
         {
-          "title": "solution",
+          "title": "",
           "description": "",
           "bgColor": "#00a0af",
           "fontColor": "#FFFFFF"
         },
         {
-          "title": "results",
+          "title": "",
           "description": "",
           "bgColor": "#c2e6e1",
           "fontColor": "#0c95b9"
@@ -1060,7 +1158,7 @@
         "color1": "",
         "color2": ""
       },
-      "campaignImg": "",
+      "campaignImg": "/web-epp/epp-campaign-01.png",
       "gallery": [
         "/web-epp/web-epp-homepage-desktop-01.jpg",
         "/web-epp/web-epp-properties-desktop-01.jpg",
@@ -1069,11 +1167,11 @@
       ],
       "overview": {
         "description": "Expanding lightweight material solutions, globally.",
-        "clientColor": "",
-        "bgColor": "#ed008c",
-        "titleColor": "#FFFFFF",
+        "clientColor": "#FFFFFF",
+        "bgColor": "#0047ba",
+        "titleColor": "#ED008C",
         "descriptionColor": "#FFFFFF",
-        "copyColor": ""
+        "copyColor": "#FFFFFF"
       },
       "description": [
         {
@@ -1215,7 +1313,7 @@
     {
       "id": "rad002",
       "client": "Mitsubishi Tanabe Pharma America",
-      "title": "HQBlitz",
+      "title": "HQBlitz Web App",
       "url": "",
       "yearStart": "2018",
       "yearEnd": "2018",
@@ -1812,7 +1910,7 @@
     {
       "id": "jhp001",
       "client": "Joe Hand Promotions",
-      "title": "Joe Hand Promotions",
+      "title": "Joe Hand Promotions Website",
       "url": "https://www.joehandpromotions.com/",
       "yearStart": "2013",
       "yearEnd": "2015",

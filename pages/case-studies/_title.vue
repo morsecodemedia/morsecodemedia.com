@@ -62,7 +62,7 @@
           v-if="cs.video && cs.video.src"
           :video="cs.video.src"/>
         <div
-          v-else
+          v-else-if="cs.gallery.length > 0"
           style="overflow:hidden; max-width: 900px; margin: 40px auto;">
           <img
             :data-src="buildImage(cs.gallery[0])"
@@ -105,7 +105,7 @@
 
         <no-ssr>
           <siema
-            v-if="cs.gallery.length"
+            v-if="cs.gallery.length > 2"
             ref="siema"
             :options="siemaOptions"
             auto-play
