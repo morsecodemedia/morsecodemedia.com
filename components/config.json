@@ -1216,7 +1216,7 @@
         "color1": "",
         "color2": ""
       },
-      "campaignImg": "",
+      "campaignImg": "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-campaign-01.png",
       "gallery": [
         "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-01.jpg",
         "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-02.jpg",
@@ -1228,16 +1228,16 @@
       },
       "overview": {
         "description": "Interactive Touch Screen for XIAFLEX<sup>&reg;</sup> for <nobr>Dupuytren's contracture.</nobr>",
-        "clientColor": "",
-        "bgColor": "#eb5903",
-        "titleColor": "#FFFFFF",
-        "descriptionColor": "#002e5d",
-        "copyColor": ""
+        "clientColor": "#eb5903",
+        "bgColor": "#dfdfdf",
+        "titleColor": "#002e5d",
+        "descriptionColor": "#eb5903",
+        "copyColor": "#eb5903"
       },
       "description": [
         {
-          "title": "challenge",
-          "description": "<p>this is a challenge</p>",
+          "title": "",
+          "description": "",
           "bgColor": "#eb5903",
           "fontColor": "#FFFFFF"
         },
