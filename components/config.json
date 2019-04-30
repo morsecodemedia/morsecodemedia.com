@@ -866,8 +866,8 @@
     {
       "id": "rad001",
       "client": "Mitsubishi Tanabe Pharma America",
-      "title": "Radicava.com",
-      "url": "https://www.radicava.com/",
+      "title": "Radicava.com HCP Website",
+      "url": "https://www.radicava.com/hcp/",
       "yearStart": "2016",
       "yearEnd": "",
       "insitu": {
@@ -875,17 +875,17 @@
         "color1": "",
         "color2": ""
       },
-      "campaignImg": "",
+      "campaignImg": "/web-radicava/hcp/radicava-hcp-campaign-01.png",
       "gallery": [
-        "/web-radicava/patient/radicava-homepage-desktop-01.jpg"
+        "/web-radicava/hcp/radicava-homepage-desktop-01.jpg"
       ],
       "overview": {
-        "description": "A branded website for RADICAVA<sup>&reg</sup>.",
-        "clientColor": "",
-        "bgColor": "#d9deed",
+        "description": "A branded HCP website for RADICAVA<sup>&reg</sup>.",
+        "clientColor": "#FFFFFF",
+        "bgColor": "#314163",
         "titleColor": "#3c5daa",
-        "descriptionColor": "#484848",
-        "copyColor": ""
+        "descriptionColor": "#FFFFFF",
+        "copyColor": "#D9DEED"
       },
       "description": [
         {
@@ -922,6 +922,55 @@
           "year": "2017"
         }
       ]
+    },
+    {
+      "id": "rad006",
+      "client": "Mitsubishi Tanabe Pharma America",
+      "title": "Radicava.com Patient Website",
+      "url": "https://www.radicava.com/patient/",
+      "yearStart": "2016",
+      "yearEnd": "",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [
+        "/web-radicava/patient/radicava-homepage-desktop-01.jpg"
+      ],
+      "overview": {
+        "description": "A branded Patient website for RADICAVA<sup>&reg</sup>.",
+        "clientColor": "",
+        "bgColor": "#d9deed",
+        "titleColor": "#3c5daa",
+        "descriptionColor": "#484848",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "overview",
+          "description": "<p>RADICAVA<sup>&reg</sup> (edaravone) is the only FDA-approved treatment option for amyotrophic lateral sclerosis (ALS) in the last 20 years.</p>",
+          "bgColor": "#d6d6d6",
+          "fontColor": "#3c5daa"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#d9deed",
+          "fontColor": "#484848"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#6a86c2",
+          "fontColor": "#FFFFFF"
+        }
+      ],
+      "category": "Websites",
+      "needsPassword": true,
+      "active": true,
+      "awards": []
     },
     {
       "id": "emh001",
@@ -1322,7 +1371,7 @@
         "color1": "",
         "color2": ""
       },
-      "campaignImg": "",
+      "campaignImg": "/web-app-hqblitz/hqblitz-campaign-02.png",
       "gallery": [
         "/web-app-hqblitz/hqblitz-login.jpg",
         "/web-app-hqblitz/hqblitz-manage-lists.jpg",
@@ -1330,11 +1379,11 @@
       ],
       "overview": {
         "description": "A web-based app, for sales reps to send SMS messages to teams.",
-        "clientColor": "",
+        "clientColor": "#484848",
         "bgColor": "#d9deed",
         "titleColor": "#3c5daa",
         "descriptionColor": "#484848",
-        "copyColor": ""
+        "copyColor": "#484848"
       },
       "description": [
         {
@@ -1808,7 +1857,7 @@
         "color1": "#eb5903",
         "color2": "#FFFFFF"
       },
-      "campaignImg": "",
+      "campaignImg": "/ipad-xtra-kickstarts/xtra-kickstarts-campaign-01.png",
       "gallery": [
         "/ipad-xtra-kickstarts/xtra-kickstarts-01.jpg",
         "/ipad-xtra-kickstarts/xtra-kickstarts-02.jpg",
@@ -1822,11 +1871,11 @@
       },
       "overview": {
         "description": "",
-        "clientColor": "",
-        "bgColor": "#eb5903",
-        "titleColor": "#FFFFFF",
-        "descriptionColor": "#002e5d",
-        "copyColor": ""
+        "clientColor": "#eb5903",
+        "bgColor": "#dfdfdf",
+        "titleColor": "#002e5d",
+        "descriptionColor": "#eb5903",
+        "copyColor": "#eb5903"
       },
       "description": [
         {
@@ -1919,7 +1968,7 @@
         "color1": "",
         "color2": ""
       },
-      "campaignImg": "",
+      "campaignImg": "/web-joe-hand-promotions/joe-hand-promotions-campaign-01.png",
       "gallery": [],
       "video": {
         "src": "",
@@ -1927,11 +1976,11 @@
       },
       "overview": {
         "description": "",
-        "clientColor": "",
-        "bgColor": "",
-        "titleColor": "",
-        "descriptionColor": "",
-        "copyColor": ""
+        "clientColor": "#F95F1F",
+        "bgColor": "#000000",
+        "titleColor": "#FFFFFF",
+        "descriptionColor": "#F95F1F",
+        "copyColor": "#F95F1F"
       },
       "description": [
         {
