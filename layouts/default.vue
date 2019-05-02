@@ -53,6 +53,7 @@
 </script>
 
 <style lang="scss">
+
   .killscroll {
     overflow: hidden;
   }

@@ -112,7 +112,6 @@
 </script>
 
 <style lang="scss" scoped>
-
   .about-1up {
     display: flex;
     width: 100vw;

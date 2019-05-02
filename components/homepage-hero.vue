@@ -12,9 +12,9 @@
             class="hero-copy__large">Brandon Morse</span>
           <span
             class="hero-copy__normal">I have a <strong>passion to innovate</strong> and bring beautifully designed <strong>experiences to life</strong> through coding, testing, and <strong>just the right amount of technical magic.</strong>
-            <a
-              href="/about/"
-              class="hero-copy__link">More about me &raquo;</a></span>
+            <nuxt-link
+              to="/about/"
+              class="hero-copy__link">More about me &raquo;</nuxt-link></span>
         </h1>
       </header>
     </article>

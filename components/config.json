@@ -382,7 +382,7 @@
         "color1": "#e0e6f2",
         "color2": "#0076BE"
       },
-      "campaignImg": "/web-babybox-walmart/babybox-walmart-campaign-01.png",
+      "campaignImg": "/web-babybox-walmart/babybox-walmart-campaign-01.jpg",
       "gallery": [
         "/web-babybox-walmart/babybox-walmart-homepage-desktop-01.jpg"
       ],
@@ -425,7 +425,7 @@
         "color1": "#f79d3c",
         "color2": "#b93b61"
       },
-      "campaignImg": "/web-beautybox-walmart/beautybox-walmart-campaign-01.png",
+      "campaignImg": "/web-beautybox-walmart/beautybox-walmart-campaign-01.jpg",
       "gallery": [],
       "overview": {
         "description": "Subscription box website for beauty products for women of all ages.",
@@ -466,7 +466,7 @@
         "color1": "#19AFE1",
         "color2": "#00539A"
       },
-      "campaignImg": "/web-patravel/patravel-campaign-01.png",
+      "campaignImg": "/web-patravel/patravel-campaign-01.jpg",
       "gallery": [
         "/web-patravel/patravel-homepage-desktop-01.jpg"
       ],
@@ -515,7 +515,7 @@
         "color1": "#E5002E",
         "color2": "#1A1B69"
       },
-      "campaignImg": "/web-usarl/usarl-campaign-01.png",
+      "campaignImg": "/web-usarl/usarl-campaign-01.jpg",
       "gallery": [
         "/web-usarl/usarl-homepage-desktop-01.jpg",
         "/web-usarl/usarl-clubs-desktop-01.jpg",
@@ -566,7 +566,7 @@
         "color1": "#254e99",
         "color2": "#099ed6"
       },
-      "campaignImg": "/web-tunnell-consulting/tunnell-consulting-campaign-01.png",
+      "campaignImg": "/web-tunnell-consulting/tunnell-consulting-campaign-01.jpg",
       "gallery": [
         "/web-tunnell-consulting/tunnell-consulting-contact-desktop-01.jpg",
         "/web-tunnell-consulting/tunnell-consulting-homepage-desktop-01.jpg",
@@ -824,7 +824,7 @@
         "color1": "#093956",
         "color2": "#0669A5"
       },
-      "campaignImg": "/web-merion-commercial/merion-commercial-campaign-01.png",
+      "campaignImg": "/web-merion-commercial/merion-commercial-campaign-01.jpg",
       "gallery": [
         "/web-merion-commercial/merion-commercial-homepage-desktop-01.jpg",
         "/web-merion-commercial/merion-commercial-homepage-mobile-01.jpg",
@@ -989,7 +989,7 @@
         "color1": "#435564",
         "color2": "#efefef"
       },
-      "campaignImg": "/web-endomenshealth/endomenshealth-campaign-01.png",
+      "campaignImg": "/web-endomenshealth/endomenshealth-campaign-01.jpg",
       "gallery": [
         "/web-endomenshealth/endomenshealth-desktop-01.jpg",
         "/web-endomenshealth/endomenshealth-mobile-01.jpg"
@@ -1039,7 +1039,7 @@
         "color1": "",
         "color2": ""
       },
-      "campaignImg": "/web-ipipeline/ipipeline-campaign-01.png",
+      "campaignImg": "/web-ipipeline/ipipeline-campaign-01.jpg",
       "gallery": [
         "/web-ipipeline/web-ipipeline-responsive-display-01.jpg"
       ],
@@ -1099,7 +1099,7 @@
         "color1": "#00aedb",
         "color2": "#c2e6e1"
       },
-      "campaignImg": "/web-geoblue/web-geoblue-travel-insurance-campaign-desktop-01.png",
+      "campaignImg": "/web-geoblue/web-geoblue-travel-insurance-campaign-desktop-01.jpg",
       "gallery": [
         "/web-geoblue/web-geoblue-travel-insurance-why-geoblue-desktop-01.jpg",
         "/web-geoblue/web-geoblue-travel-insurance-quote-desktop-01.jpg",
@@ -1156,7 +1156,7 @@
         "color1": "#00aedb",
         "color2": "#c2e6e1"
       },
-      "campaignImg": "/web-geoblue/web-geoblue-travel-insurance-campaign-mobile-01.png",
+      "campaignImg": "/web-geoblue/web-geoblue-travel-insurance-campaign-mobile-01.jpg",
       "gallery": [
         "/web-geoblue/web-geoblue-travel-insurance-multi-trip-mobile-01.jpg",
         "/web-geoblue/web-geoblue-travel-insurance-homepage-mobile-01.jpg",
@@ -1207,7 +1207,7 @@
         "color1": "",
         "color2": ""
       },
-      "campaignImg": "/web-epp/epp-campaign-01.png",
+      "campaignImg": "/web-epp/epp-campaign-01.jpg",
       "gallery": [
         "/web-epp/web-epp-homepage-desktop-01.jpg",
         "/web-epp/web-epp-properties-desktop-01.jpg",
@@ -1968,14 +1968,16 @@
         "color1": "",
         "color2": ""
       },
-      "campaignImg": "/web-joe-hand-promotions/joe-hand-promotions-campaign-01.png",
-      "gallery": [],
+      "campaignImg": "/web-joe-hand-promotions/joe-hand-promotions-campaign-01.jpg",
+      "gallery": [
+        "/web-joe-hand-promotions/joe-hand-promotions-homepage-desktop-01.jpg"
+      ],
       "video": {
         "src": "",
         "bgColor": ""
       },
       "overview": {
-        "description": "",
+        "description": "Joe Hand Promotions is the proud distributor of pay-per-view UFC, Showtime Boxing, and WWE Wrestling events for commercial locations.",
         "clientColor": "#F95F1F",
         "bgColor": "#000000",
         "titleColor": "#FFFFFF",
@@ -1985,19 +1987,19 @@
       "description": [
         {
           "title": "challenge",
-          "description": "Joe Hand Promotions is the official promoter of UFC fights to bars, restaurants, and other large commercial establishments. We were hired to refresh their brand, redesign their website, and increase their visibility online when they realized previous offline marketing efforts were no longer driving sales.",
+          "description": "<p>Joe Hand Promotions is the official promoter of UFC fights to bars, restaurants, and other large commercial establishments. We were hired to refresh their brand, redesign their website, and increase their visibility online when they realized previous offline marketing efforts were no longer driving sales.</p>",
           "bgColor": "",
           "fontColor": ""
         },
         {
           "title": "solution",
-          "description": "We created a new brand identity and logo. In order to architect an intelligent user experience on the website, personas were created to map out the buying journey and trigger points for conversion. Content Marketing tactics including landing pages and blog articles are routinely created to increase the SEO rankings and overall marketshare.",
+          "description": "<p>We created a new brand identity and logo. In order to architect an intelligent user experience on the website, personas were created to map out the buying journey and trigger points for conversion. Content Marketing tactics including landing pages and blog articles are routinely created to increase the SEO rankings and overall marketshare.</p>",
           "bgColor": "",
           "fontColor": ""
         },
         {
           "title": "results",
-          "description": "Since launching the website in May 2013, their website traffic has doubled and organic visits have increasing by 72%. Overall, fight night sales goals have been exceeded consistently. Joe Hand Jr. has expressed that the brand evolution and digital presence have really changed and improved his business.",
+          "description": "<p>Since launching the website in May 2013, their website traffic has doubled and organic visits have increasing by 72%. Overall, fight night sales goals have been exceeded consistently. Joe Hand Jr. has expressed that the brand evolution and digital presence have really changed and improved his business.</p>",
           "bgColor": "",
           "fontColor": ""
         }

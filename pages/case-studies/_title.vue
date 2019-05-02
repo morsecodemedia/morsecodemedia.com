@@ -98,6 +98,7 @@
             <p
               v-for="(award, index) in cs.awards"
               :key="index"
+              :style="{color: cs.overview.copyColor}"
               class="accolades">
             <span class="award-organization">{{ award.organization }}</span> {{ award.year }} {{ award.award }}</p>
           </div>
