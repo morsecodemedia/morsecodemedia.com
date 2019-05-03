@@ -146,6 +146,7 @@
   import config from '~/components/config.json'
   import siteHeader from '~/components/header'
   import siteFooter from '~/components/footer'
+  import videoPlayer from '~/components/video-player'
   import passwordProject from '~/components/password-project'
   import caseStudyInsitu from '~/components/case-study-insitu'
 
@@ -157,6 +158,7 @@
   export default {
     components: {
       siteHeader,
+      videoPlayer,
       caseStudyInsitu,
       passwordProject,
       siteFooter

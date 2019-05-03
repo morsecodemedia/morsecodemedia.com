@@ -935,17 +935,17 @@
         "color1": "",
         "color2": ""
       },
-      "campaignImg": "",
+      "campaignImg": "/web-radicava/patient/radicava-patient-campaign-01.jpg",
       "gallery": [
         "/web-radicava/patient/radicava-homepage-desktop-01.jpg"
       ],
       "overview": {
         "description": "A branded Patient website for RADICAVA<sup>&reg</sup>.",
-        "clientColor": "",
-        "bgColor": "#d9deed",
+        "clientColor": "#FFFFFF",
+        "bgColor": "#314163",
         "titleColor": "#3c5daa",
-        "descriptionColor": "#484848",
-        "copyColor": ""
+        "descriptionColor": "#FFFFFF",
+        "copyColor": "#D9DEED"
       },
       "description": [
         {
@@ -1272,7 +1272,7 @@
         "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-03.jpg"
       ],
       "video": {
-        "src": "",
+        "src": "https://www.youtube.com/embed/W9im4dVB9kQ",
         "bgColor": ""
       },
       "overview": {
@@ -1323,7 +1323,7 @@
       "campaignImg": "",
       "gallery": [],
       "video": {
-        "src": "",
+        "src": "https://www.youtube.com/embed/qRMIbh6w7ZI",
         "bgColor": ""
       },
       "overview": {
@@ -1914,7 +1914,7 @@
         "color1": "",
         "color2": ""
       },
-      "campaignImg": "",
+      "campaignImg": "/native-endo-video-library/native-endo-video-library-campaign-01.jpg",
       "gallery": [
         "/native-endo-video-library/native-endo-video-library-video-listing-01.jpg",
         "/native-endo-video-library/native-endo-video-library-downloading-01.jpg"
@@ -1924,12 +1924,12 @@
         "bgColor": ""
       },
       "overview": {
-        "description": "",
-        "clientColor": "",
-        "bgColor": "",
-        "titleColor": "",
-        "descriptionColor": "",
-        "copyColor": ""
+        "description": "An iOS Native app for sales reps to detail videos to HCPs in office.",
+        "clientColor": "#FFCE00",
+        "bgColor": "#FFFFFF",
+        "titleColor": "#DD8200",
+        "descriptionColor": "#585B5C",
+        "copyColor": "#585B5C"
       },
       "description": [
         {
