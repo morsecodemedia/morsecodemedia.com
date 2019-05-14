@@ -3,9 +3,15 @@
     v-show="showOverlay"
     class="password-overlay show">
     <div class="password-overlay-container">
-      <p class="password-overlay-header">Password Required</p>
-      <p>Due to contractual restrictions, I am obligated to inform you that the work for this project was done while working for an pharmaceutical advertising agency.</p>
-      <p>Please enter <code>{{ info.id }}</code> into the field below to continue on viewing <span class="project-title">{{ info.title }}</span>.</p>
+      <p class="password-overlay-header">
+        Password Required
+      </p>
+      <p>
+        Due to contractual restrictions, I am obligated to inform you that the work for this project was done while working for an pharmaceutical advertising agency.
+      </p>
+      <p>
+        Please enter <code>{{ info.id }}</code> into the field below to continue on viewing <span class="project-title">{{ info.title }}</span>.
+      </p>
       <form
         class="password-overlay-form"
         @submit.prevent="checkPassword">
@@ -16,11 +22,13 @@
           id="submit-password"
           :class="validatedClass"
           class="submit"
-          type="submit"/>
+          type="submit" />
       </form>
-      <p class="abort-action">Otherwise, <span
-        class="link"
-        @click="$router.go(-1)">click here to go back</span>, way back, back into time.</p>
+      <p class="abort-action">
+        Otherwise, <span
+          class="link"
+          @click="$router.go(-1)">click here to go back</span>, way back, back into time.
+      </p>
     </div>
   </div>
 </template>

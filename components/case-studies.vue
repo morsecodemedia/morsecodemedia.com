@@ -4,19 +4,25 @@
       :class="breakPoint"
       class="case-studies-filter"
       role="menu">
-      <dt @click="toggleFilters">Filters:</dt>
+      <dt @click="toggleFilters">
+        Filters:
+      </dt>
       <dd
         v-show="showFilters"
         :class="{ active: (activeCaseStudyCategory === 'all') }"
         role="switch"
-        @click="activeCaseStudyCategory = 'all'">All Projects</dd>
+        @click="activeCaseStudyCategory = 'all'">
+        All Projects
+      </dd>
       <dd
         v-for="(cat, index) in activeCategories"
         v-show="showFilters"
         :key="index"
         :class="{ active: (activeCaseStudyCategory === cat.toLowerCase().replace(/\s/g, '-')) }"
         role="switch"
-        @click="activeCaseStudyCategory = cat.toLowerCase().replace(/\s/g, '-')">{{ cat }}</dd>
+        @click="activeCaseStudyCategory = cat.toLowerCase().replace(/\s/g, '-')">
+        {{ cat }}
+      </dd>
     </dl>
     <article
       v-if="filteredCaseStudies.length > 0 && displayCaseStudies"

@@ -9,7 +9,7 @@
             v-for="index in totalGlitchs"
             :key="index"
             :class="[{'glitch': (index >= glitchStep)}, 'slide'+currentSlide]"
-            class="glitch__img"/>
+            class="glitch__img" />
         </div>
       </div>
     </div>

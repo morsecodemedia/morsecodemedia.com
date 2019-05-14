@@ -23,10 +23,14 @@
         </div>
         <div
           v-if="!viewMenu"
-          class="menu-label">Menu</div>
+          class="menu-label">
+          Menu
+        </div>
         <div
           v-else
-          class="menu-label">Close</div>
+          class="menu-label">
+          Close
+        </div>
       </div>
     </div>
     <nav

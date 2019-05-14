@@ -7,7 +7,6 @@
         <form
           v-if="!showThankYou"
           @submit.prevent="validateForm">
-
           <span
             :class="[{'input--filled': name.length !== 0}, {'name-error': nameError}]"
             class="input">
@@ -51,7 +50,7 @@
               id="input-message"
               v-model="message"
               :disabled="formDisabled"
-              class="input-field input-textarea"/>
+              class="input-field input-textarea" />
             <label
               class="input-label input-label-textarea"
               for="input-message">
@@ -65,13 +64,13 @@
             id="submit-form"
             :class="validatedClass"
             class="submit"
-            type="submit"/>
-
+            type="submit" />
         </form>
+
         <div
           v-else
           class="thank-you-msg">
-          <p v-html="thankYouMsg"/>
+          <p v-html="thankYouMsg" />
         </div>
       </div>
     </main>
