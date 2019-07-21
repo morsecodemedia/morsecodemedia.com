@@ -32,9 +32,17 @@
       {
         "company": "GSW Advertising",
         "location": "Newtown, PA",
+        "title": "Technology Director",
+        "yearStart": "2019",
+        "yearEnd": "",
+        "notableSuccesses": []
+      },
+      {
+        "company": "GSW Advertising",
+        "location": "Newtown, PA",
         "title": "Lead Architect",
         "yearStart": "2018",
-        "yearEnd": "",
+        "yearEnd": "2019",
         "notableSuccesses": [
           "Works with clients such as, Endo Pharmacueticals, Mitsubishi Tanabe Pharmaceuticals America, Johnson and Johnson, Aerie Pharmaceuticals."
         ]
