@@ -8,6 +8,7 @@
         <div class="content-block">
           <h2>My Story</h2>
           <p v-html="about.aboutQuote" />
+          <div v-html="about.aboutDetails" />
           <p v-html="about.trackRecordQuote" />
         </div>
       </div>
