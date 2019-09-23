@@ -10,9 +10,13 @@
 **LinkedIn:** https://www.linkedin.com/in/brandonmorse/
 
 ## Work History
+**Technology Director**
+GSW Advertising, a Syneos Health Company
+Newtown, PA 2019-Present
+
 **Lead Architect**
 GSW Advertising, a Syneos Health Company
-Newtown, PA 2018-Present
+Newtown, PA 2018-2019
 
 **Associate Technology Director**
 GSW Advertising, a Syneos Health Company
@@ -63,6 +67,10 @@ The Art Institute of Philadelphia
 Philadelphia, PA 2002-2005
 
 ### Certifications
+**MIT Sloan School of Management**
+Digital Marketing Analytics
+August 2019-Present
+
 **Amazon Web Services**
 
 AWS Certified Alexa Skill Builder - Specialty

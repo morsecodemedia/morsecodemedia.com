@@ -115,6 +115,13 @@
     ],
     "certifications": [
       {
+        "certification": "Digital Marketing Analytics",
+        "organization": "MIT Sloan School of Management",
+        "organizationLogo": "",
+        "certificationStart": "August 2019",
+        "certificationEnd": ""
+      },
+      {
         "certification": "AWS Certified ALexa Skill Builder - Specialty",
         "organization": "Amazon Web Services",
         "organizationLogo": "",
