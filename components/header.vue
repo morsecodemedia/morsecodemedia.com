@@ -95,11 +95,11 @@
   import { mapGetters, mapMutations } from 'vuex'
   import { navigation, about } from '~/components/config.json'
   import { library } from '@fortawesome/fontawesome-svg-core'
-  import { faGithub, faLinkedin, faStackOverflow } from '@fortawesome/free-brands-svg-icons'
+  import { faGithub, faLinkedin, faStackOverflow, faSalesforce } from '@fortawesome/free-brands-svg-icons'
   import { faLock, faLockOpen } from '@fortawesome/free-solid-svg-icons'
   import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-  library.add(faGithub, faLinkedin, faStackOverflow, faLock, faLockOpen)
+  library.add(faGithub, faLinkedin, faStackOverflow, faSalesforce, faLock, faLockOpen)
   Vue.component('font-awesome-icon', FontAwesomeIcon)
 
   export default {

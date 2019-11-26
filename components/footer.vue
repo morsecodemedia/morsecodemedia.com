@@ -26,10 +26,10 @@
   import Vue from 'vue'
   import { about } from '~/components/config.json'
   import { library } from '@fortawesome/fontawesome-svg-core'
-  import { faGithub, faLinkedin, faStackOverflow } from '@fortawesome/free-brands-svg-icons'
+  import { faGithub, faLinkedin, faStackOverflow, faSalesforce } from '@fortawesome/free-brands-svg-icons'
   import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-  library.add(faGithub, faLinkedin, faStackOverflow)
+  library.add(faGithub, faLinkedin, faStackOverflow, faSalesforce)
   Vue.component('font-awesome-icon', FontAwesomeIcon)
 
   export default {
