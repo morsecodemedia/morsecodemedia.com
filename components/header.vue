@@ -43,11 +43,11 @@
         <li
           v-for="nav in navigation"
           :key="nav.index">
-          <a
-            :href="nav.url"
+          <nuxt-link
+            :to="nav.url"
             role="menuitem">
             {{ nav.text }}
-          </a>
+          </nuxt-link>
         </li>
       </ul>
       <ul

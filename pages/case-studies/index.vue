@@ -34,9 +34,9 @@
             content: "I have a proven track record of quality web development backed by some award winning work."
           },
           { hid: 'ogtitle', property: 'og:title', content: "Case Studies | morsecodemedia.com" },
-          { hid: 'ogurl', property: 'og:url', content: 'https://www.morsecodemedia.com/contact/' },
+          { hid: 'ogurl', property: 'og:url', content: 'https://www.morsecodemedia.com/case-studies/' },
           { hid: 'ogdescription', property: 'og:description', content: 'I have a proven track record of quality web development backed by some award winning work.' },
-          { hid: 'twsite', name: 'twitter:site', content: 'https://www.morsecodemedia.com/contact/' },
+          { hid: 'twsite', name: 'twitter:site', content: 'https://www.morsecodemedia.com/case-studies/' },
           { hid: 'twtitle', name: 'twitter:title', content: "Case Studies | morsecodemedia.com" },
           { hid: 'twdescription', name: 'twitter:description', content: 'I have a proven track record of quality web development backed by some award winning work.' },
           { hid: 'googlename', itemprop: 'name', content: "Case Studies | morsecodemedia.com" },

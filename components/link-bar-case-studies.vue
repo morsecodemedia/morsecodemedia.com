@@ -2,8 +2,8 @@
   <section
     v-if="caseStudies"
     class="link-bar">
-    <a
-      href="/case-studies/">See More Work &raquo;</a>
+    <nuxt-link
+      to="/case-studies/">See More Work &raquo;</nuxt-link>
   </section>
 </template>
 
