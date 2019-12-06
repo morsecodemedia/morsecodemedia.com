@@ -392,6 +392,14 @@
     {
       "name": "Metuchen Pharmaceuticals LLC.",
       "logo": ""
+    },
+    {
+      "name": "Legend Biotech",
+      "logo": ""
+    },
+    {
+      "name": "Amneal Pharmaceuticals LLC.",
+      "logo": ""
     }
   ],
   "caseStudies": [
@@ -2037,6 +2045,120 @@
           "award": "W3 Silver Award",
           "organization": "W3 Awards",
           "year": "2013"
+        }
+      ]
+    },
+    {
+      "id": "xpd003",
+      "client":"Endo Pharmaceuticals",
+      "title": "Normal 'Guess Who' 2019 Conference Panel",
+      "url": "",
+      "yearStart": "2019",
+      "yearEnd": "2019",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "video": {
+        "src": "",
+        "bgColor": ""
+      },
+      "overview": {
+        "description": "",
+        "clientColor": "",
+        "bgColor": "#eb5903",
+        "titleColor": "#FFFFFF",
+        "descriptionColor": "#002e5d",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>this is a challenge</p>",
+          "bgColor": "#eb5903",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "solution",
+          "description": "<p>this is a solution</p>",
+          "bgColor": "#002e5d",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "results",
+          "description": "<p>this is a result</p>",
+          "bgColor": "#ebebeb",
+          "fontColor": "#585757"
+        }
+      ],
+      "needsPassword": true,
+      "category": "Conference Pieces",
+      "active": false,
+      "awards": [
+        {
+          "award": "MM&M Silver Award for Best Disease Education Campaign",
+          "organization": "MM&M Awards",
+          "year": "2019"
+        }
+      ]
+    },
+    {
+      "id": "xpd003",
+      "client":"Endo Pharmaceuticals",
+      "title": "Normal 'Bar Chart' 2019 Conference Panel",
+      "url": "",
+      "yearStart": "2019",
+      "yearEnd": "2019",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "video": {
+        "src": "",
+        "bgColor": ""
+      },
+      "overview": {
+        "description": "",
+        "clientColor": "",
+        "bgColor": "#eb5903",
+        "titleColor": "#FFFFFF",
+        "descriptionColor": "#002e5d",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>this is a challenge</p>",
+          "bgColor": "#eb5903",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "solution",
+          "description": "<p>this is a solution</p>",
+          "bgColor": "#002e5d",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "results",
+          "description": "<p>this is a result</p>",
+          "bgColor": "#ebebeb",
+          "fontColor": "#585757"
+        }
+      ],
+      "needsPassword": true,
+      "category": "Conference Pieces",
+      "active": false,
+      "awards": [
+        {
+          "award": "MM&M Silver Award for Best Disease Education Campaign",
+          "organization": "MM&M Awards",
+          "year": "2019"
         }
       ]
     }
