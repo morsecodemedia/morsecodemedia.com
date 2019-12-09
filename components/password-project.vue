@@ -1,7 +1,8 @@
 <template>
   <div
     v-show="showOverlay"
-    class="password-overlay show">
+    class="password-overlay show"
+  >
     <div class="password-overlay-container">
       <p class="password-overlay-header">
         Password Required
@@ -14,20 +15,24 @@
       </p>
       <form
         class="password-overlay-form"
-        @submit.prevent="checkPassword">
+        @submit.prevent="checkPassword"
+      >
         <input
           v-model="password"
-          type="password">
+          type="password"
+        >
         <button
           id="submit-password"
           :class="validatedClass"
           class="submit"
-          type="submit" />
+          type="submit"
+        />
       </form>
       <p class="abort-action">
         Otherwise, <span
           class="link"
-          @click="$router.go(-1)">click here to go back</span>, way back, back into time.
+          @click="$router.go(-1)"
+        >click here to go back</span>, way back, back into time.
       </p>
     </div>
   </div>

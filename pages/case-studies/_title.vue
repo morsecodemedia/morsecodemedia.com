@@ -4,54 +4,66 @@
     <main
       v-for="(cs, index) in activeCaseStudy"
       :key="index"
-      v-lazy-container="{ selector: 'img' }">
+      v-lazy-container="{ selector: 'img' }"
+    >
       <div
         :style="{'background-image': 'url('+buildImage(cs.campaignImg)+')'}"
-        class="case-study-campaign-hero" />
+        class="case-study-campaign-hero"
+      />
       <div
         :style="{'background-color': cs.overview.bgColor}"
-        class="case-study-details">
+        class="case-study-details"
+      >
         <header
           style="margin-top: -100px; position: relative;"
-          class="case-study-intro-copy">
+          class="case-study-intro-copy"
+        >
           <p
             v-if="cs.client"
             :style="{color: cs.overview.clientColor}"
-            class="client-name">
+            class="client-name"
+          >
             {{ cs.client }}
           </p>
           <h1
             :style="{color: cs.overview.titleColor}"
-            class="case-study-title">
+            class="case-study-title"
+          >
             {{ cs.title }}
           </h1>
           <h2
             v-if="cs.overview.description"
             :style="{color: cs.overview.descriptionColor}"
             class="case-study-overview"
-            v-html="cs.overview.description" />
+            v-html="cs.overview.description"
+          />
           <p
             :style="{color: cs.overview.descriptionColor}"
-            class="case-study-meta">
+            class="case-study-meta"
+          >
             {{ cs.category }} //
             {{ cs.yearStart }} -
             <span
               v-if="cs.yearEnd !== ''"
-              :style="{color: cs.overview.descriptionColor}">{{ cs.yearEnd }}</span>
+              :style="{color: cs.overview.descriptionColor}"
+            >{{ cs.yearEnd }}</span>
             <span
               v-else
-              :style="{color: cs.overview.descriptionColor}">Present</span>
+              :style="{color: cs.overview.descriptionColor}"
+            >Present</span>
           </p>
           <p>
             <a
               :style="{color: cs.overview.titleColor}"
               :href="cs.url"
               target="_blank"
-              rel="noopener">{{ cs.url }}</a>
+              rel="noopener"
+            >{{ cs.url }}</a>
           </p>
         </header>
         <article
-          v-if="cs.description.length">
+          v-if="cs.description.length"
+        >
           <header>
             <h3 :style="{color: cs.overview.titleColor}">
               {{ cs.description[0].title }}
@@ -60,31 +72,37 @@
           <div
             :style="{color: cs.overview.copyColor}"
             class="content-container"
-            v-html="cs.description[0].description" />
+            v-html="cs.description[0].description"
+          />
         </article>
 
         <videoPlayer
           v-if="cs.video && cs.video.src"
-          :video="cs.video.src" />
+          :video="cs.video.src"
+        />
         <div
           v-else-if="cs.gallery.length > 0"
-          style="overflow:hidden; max-width: 900px; margin: 40px auto;">
+          style="overflow:hidden; max-width: 900px; margin: 40px auto;"
+        >
           <img
             :data-src="buildImage(cs.gallery[0])"
             :data-loading="loadingColors[Math.floor(Math.random()*loadingColors.length)]"
             style="width: 100%; object-fit: contain;"
             alt=""
-            role="img">
+            role="img"
+          >
         </div>
 
         <article
           v-for="(des, descriptionIndex) in activeDescription"
           :key="descriptionIndex"
-          style="margin: 45px 0;">
+          style="margin: 45px 0;"
+        >
           <header>
             <h3
               v-if="des.type === 'description' && des.title"
-              :style="{color: cs.overview.titleColor}">
+              :style="{color: cs.overview.titleColor}"
+            >
               {{ des.title }}
             </h3>
           </header>
@@ -92,12 +110,14 @@
             v-if="des.type === 'description' && des.description"
             :style="{color: cs.overview.copyColor}"
             class="content-container"
-            v-html="des.description" />
+            v-html="des.description"
+          />
         </article>
 
         <article
           v-if="cs.awards.length"
-          style="margin: 45px 0;">
+          style="margin: 45px 0;"
+        >
           <header>
             <h3 :style="{color: cs.overview.titleColor}">
               Accolades
@@ -108,7 +128,8 @@
               v-for="(award, awardIndex) in cs.awards"
               :key="awardIndex"
               :style="{color: cs.overview.copyColor}"
-              class="accolades">
+              class="accolades"
+            >
               <span class="award-organization">{{ award.organization }}</span> {{ award.year }} {{ award.award }}
             </p>
           </div>
@@ -120,28 +141,33 @@
             ref="siema"
             :options="siemaOptions"
             auto-play
-            class="siema">
+            class="siema"
+          >
             <div
               v-for="(img, galleryIndex) in cs.gallery"
               :key="galleryIndex"
-              class="slide">
+              class="slide"
+            >
               <img
                 :src="buildImage(img)"
                 style="width: 100%; object-fit: contain;"
                 alt=""
-                role="img">
+                role="img"
+              >
             </div>
           </siema>
         </no-ssr>
 
         <caseStudyInsitu
           v-if="cs.insitu.img.length && breakPoint === 'desktop'"
-          :insitu="cs.insitu" />
+          :insitu="cs.insitu"
+        />
       </div>
 
       <passwordProject
         v-if="cs.needsPassword"
-        :info="{id:cs.id,title:cs.title}" />
+        :info="{id:cs.id,title:cs.title}"
+      />
     </main>
     <siteFooter />
   </section>

@@ -3,7 +3,8 @@
     <dl
       :class="breakPoint"
       class="case-studies-filter"
-      role="menu">
+      role="menu"
+    >
       <dt @click="toggleFilters">
         Filters:
       </dt>
@@ -11,7 +12,8 @@
         v-show="showFilters"
         :class="{ active: (activeCaseStudyCategory === 'all') }"
         role="switch"
-        @click="activeCaseStudyCategory = 'all'">
+        @click="activeCaseStudyCategory = 'all'"
+      >
         All Projects
       </dd>
       <dd
@@ -20,18 +22,21 @@
         :key="index"
         :class="{ active: (activeCaseStudyCategory === cat.toLowerCase().replace(/\s/g, '-')) }"
         role="switch"
-        @click="activeCaseStudyCategory = cat.toLowerCase().replace(/\s/g, '-')">
+        @click="activeCaseStudyCategory = cat.toLowerCase().replace(/\s/g, '-')"
+      >
         {{ cat }}
       </dd>
     </dl>
     <article
       v-if="filteredCaseStudies.length > 0 && displayCaseStudies"
-      class="case-studies">
+      class="case-studies"
+    >
       <caseStudyListing
         v-for="(cs, i) in filteredCaseStudies"
         :key="cs.id"
         :style-classes="filteredCaseStudiesClasses[i]"
-        :cs="cs" />
+        :cs="cs"
+      />
     </article>
   </section>
 </template>

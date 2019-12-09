@@ -1,6 +1,8 @@
 <template>
   <section class="track-record">
-    <p class="tr-quote">{{ quote }}</p>
+    <p class="tr-quote">
+      {{ quote }}
+    </p>
   </section>
 </template>
 

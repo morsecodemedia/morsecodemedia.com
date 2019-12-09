@@ -1,13 +1,15 @@
 <template>
   <section
     v-lazy-container="{ selector: 'img' }"
-    class="about-intro">
+    class="about-intro"
+  >
     <img
       :data-src="headshotImg"
       :data-loading="loadingColors[Math.floor(Math.random()*loadingColors.length)]"
       class="headshot"
       alt="A headshot of Brandon Morse"
-      role="presentation">
+      role="presentation"
+    >
     <blockquote class="intro-quote">
       <p v-html="quote" />
     </blockquote>

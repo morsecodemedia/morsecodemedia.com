@@ -1,7 +1,8 @@
 <template>
   <section
     v-if="caseStudies"
-    class="case-studies">
+    class="case-studies"
+  >
     <nuxt-link
       v-for="(cs, index) in featuredCaseStudies.splice(0,5)"
       :key="index"
@@ -9,11 +10,13 @@
       :to="'/case-studies/' + cs.title | lowerKebab"
       :class="(index === 0) ? 'regular-1 regular-2 double-3 double-4 double-5' : (index === 2) ? 'vertical-4' : (index === 3) ? 'regular-1 horizonal-2 regular-3 regular-4 vertical-5' : (index === 4) ? 'regular-1 horizontal-2 horizontal-3 landscape-4 horizontal-5' : 'regular-1 regular-2 regular-3 regular-4 regular-5'"
       class="case-study"
-      role="link">
+      role="link"
+    >
       <img
         :data-src="buildImage((cs.gallery.length) ? cs.gallery[Math.floor(Math.random()*cs.gallery.length)] : null)"
         :data-loading="loadingColors[Math.floor(Math.random()*loadingColors.length)]"
-        role="presentation">
+        role="presentation"
+      >
       <div class="overlay">
         <h3>
           {{ cs.title }}
@@ -24,13 +27,15 @@
       <div class="badges">
         <span
           v-if="cs.awards.length > 0"
-          class="has-award">
+          class="has-award"
+        >
           <font-awesome-icon icon="trophy" />
         </span>
 
         <span
           v-if="cs.needsPassword"
-          class="requires-password">
+          class="requires-password"
+        >
           <font-awesome-icon icon="lock" />
         </span>
       </div>

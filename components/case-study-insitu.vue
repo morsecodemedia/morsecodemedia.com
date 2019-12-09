@@ -1,10 +1,12 @@
 <template>
   <div
-    class="case-study-insitu">
+    class="case-study-insitu"
+  >
     <img
       :src="buildImage(insitu.img)"
       alt=""
-      role="img">
+      role="img"
+    >
   </div>
 </template>
 

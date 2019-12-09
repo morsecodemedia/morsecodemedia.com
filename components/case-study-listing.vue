@@ -4,11 +4,13 @@
     :to="'/case-studies/' + cs.title | lowerKebab"
     :class="styleClasses"
     class="case-study"
-    role="link">
+    role="link"
+  >
     <img
       :data-src="buildImage(cs.img)"
       :data-loading="loadingColors[Math.floor(Math.random()*loadingColors.length)]"
-      role="presentation">
+      role="presentation"
+    >
     <div class="overlay">
       <h3>
         {{ cs.title }}
@@ -19,13 +21,15 @@
     <div class="badges">
       <span
         v-if="cs.awards.length > 0"
-        class="has-award">
+        class="has-award"
+      >
         <font-awesome-icon icon="trophy" />
       </span>
 
       <span
         v-if="cs.needsPassword"
-        class="requires-password">
+        class="requires-password"
+      >
         <font-awesome-icon icon="lock" />
       </span>
     </div>

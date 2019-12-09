@@ -4,12 +4,14 @@
       <div class="slide slide--current">
         <div
           :class="[{'glitch--animate': glitchAnimate}, 'slide' + displaySlide]"
-          class="slide__img glitch">
+          class="slide__img glitch"
+        >
           <div
             v-for="index in totalGlitchs"
             :key="index"
             :class="[{'glitch': (index >= glitchStep)}, 'slide'+currentSlide]"
-            class="glitch__img" />
+            class="glitch__img"
+          />
         </div>
       </div>
     </div>

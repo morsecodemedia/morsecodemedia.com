@@ -2,19 +2,24 @@
   <section
     v-lazy-container="{ selector: 'img' }"
     :class="glitchClass"
-    class="homepage-hero">
+    class="homepage-hero"
+  >
     <article class="hero-copy">
       <header>
         <h1 class="empty-styles">
           <span
-            class="hero-copy__small">Award-winning developer</span>
+            class="hero-copy__small"
+          >Award-winning developer</span>
           <span
-            class="hero-copy__large">Brandon Morse</span>
+            class="hero-copy__large"
+          >Brandon Morse</span>
           <span
-            class="hero-copy__normal">I have a <strong>passion to innovate</strong> and bring beautifully designed <strong>experiences to life</strong> through coding, testing, and <strong>just the right amount of technical magic.</strong>
+            class="hero-copy__normal"
+          >I have a <strong>passion to innovate</strong> and bring beautifully designed <strong>experiences to life</strong> through coding, testing, and <strong>just the right amount of technical magic.</strong>
             <nuxt-link
               to="/about/"
-              class="hero-copy__link">More about me &raquo;</nuxt-link></span>
+              class="hero-copy__link"
+            >More about me &raquo;</nuxt-link></span>
         </h1>
       </header>
     </article>
@@ -24,10 +29,12 @@
       :data-loading="loadingColors[Math.floor(Math.random()*loadingColors.length)]"
       class="headshot hero-image"
       alt="A headshot of Brandon Morse"
-      role="presentation">
+      role="presentation"
+    >
     <glitch
       v-else
-      @updatedGlitch="whichGlitch" />
+      @updatedGlitch="whichGlitch"
+    />
   </section>
 </template>
 

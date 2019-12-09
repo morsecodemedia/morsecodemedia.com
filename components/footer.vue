@@ -2,18 +2,22 @@
   <footer>
     <div class="footer-copyright">
       <ul
-        v-if="about.socialMedia.length">
+        v-if="about.socialMedia.length"
+      >
         <li
           v-for="(sm, index) in about.socialMedia.filter((sm)=>sm.url)"
-          :key="index">
+          :key="index"
+        >
           <a
             :href="sm.url"
             :aria-label="'morsecodemedia on ' + sm.title.toLowerCase()"
             target="_blank"
             rel="noopener"
-            role="link">
+            role="link"
+          >
             <font-awesome-icon
-              :icon="['fab', sm.title.toLowerCase()]" />
+              :icon="['fab', sm.title.toLowerCase()]"
+            />
           </a>
         </li>
       </ul>

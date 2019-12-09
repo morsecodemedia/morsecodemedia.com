@@ -1,15 +1,18 @@
 <template>
   <section
     v-if="services"
-    class="services">
+    class="services"
+  >
     <article
       v-for="service in services"
-      :key="service.id">
+      :key="service.id"
+    >
       <header>
         <img
           :src="buildImage(service.icon)"
           alt=""
-          role="img">
+          role="img"
+        >
         <h2>{{ service.title }}</h2>
       </header>
       <p>{{ service.description }}</p>

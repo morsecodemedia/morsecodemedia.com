@@ -6,57 +6,70 @@
       <div class="form-container">
         <form
           v-if="!showThankYou"
-          @submit.prevent="validateForm">
+          @submit.prevent="validateForm"
+        >
           <span
             :class="[{'input--filled': name.length !== 0}, {'name-error': nameError}]"
-            class="input">
+            class="input"
+          >
             <input
               id="input-name"
               v-model="name"
               :disabled="formDisabled"
               class="input-field"
-              type="text">
+              type="text"
+            >
             <label
               class="input-label"
-              for="input-name">
+              for="input-name"
+            >
               <span
                 class="input-label-content"
-                data-content="Name">Name</span>
+                data-content="Name"
+              >Name</span>
             </label>
           </span>
 
           <span
             :class="[{'input--filled': email.length !== 0}, {'email-error': emailError}]"
-            class="input">
+            class="input"
+          >
             <input
               id="input-email"
               v-model="email"
               :disabled="formDisabled"
               class="input-field"
-              type="email">
+              type="email"
+            >
             <label
               class="input-label"
-              for="input-email">
+              for="input-email"
+            >
               <span
                 class="input-label-content"
-                data-content="Email Address">Email Address</span>
+                data-content="Email Address"
+              >Email Address</span>
             </label>
           </span>
 
           <span
             :class="[{'input--filled': message.length !== 0}, {'message-error': messageError}]"
-            class="input textarea">
+            class="input textarea"
+          >
             <textarea
               id="input-message"
               v-model="message"
               :disabled="formDisabled"
-              class="input-field input-textarea" />
+              class="input-field input-textarea"
+            />
             <label
               class="input-label input-label-textarea"
-              for="input-message">
+              for="input-message"
+            >
               <span
                 class="input-label-content input-label-content-textarea"
-                data-content="Message">Message</span>
+                data-content="Message"
+              >Message</span>
             </label>
           </span>
 
@@ -64,12 +77,14 @@
             id="submit-form"
             :class="validatedClass"
             class="submit"
-            type="submit" />
+            type="submit"
+          />
         </form>
 
         <div
           v-else
-          class="thank-you-msg">
+          class="thank-you-msg"
+        >
           <p v-html="thankYouMsg" />
         </div>
       </div>

@@ -4,7 +4,8 @@
       <div class="logo">
         <a
           href="/"
-          role="link">
+          role="link"
+        >
           <span>&lt;</span>morsecodemedia<span>&gt;</span>
         </a>
       </div>
@@ -12,10 +13,12 @@
         class="menu-btn"
         aria-label="Menu"
         role="button"
-        @click="viewMenu = !viewMenu">
+        @click="viewMenu = !viewMenu"
+      >
         <div
           :class="{open:viewMenu}"
-          class="menu-icon">
+          class="menu-icon"
+        >
           <span />
           <span />
           <span />
@@ -23,12 +26,14 @@
         </div>
         <div
           v-if="!viewMenu"
-          class="menu-label">
+          class="menu-label"
+        >
           Menu
         </div>
         <div
           v-else
-          class="menu-label">
+          class="menu-label"
+        >
           Close
         </div>
       </div>
@@ -37,50 +42,64 @@
       v-if="navigation.length > 0"
       :class="{open:viewMenu}"
       class="main-nav"
-      role="menu">
+      role="menu"
+    >
       <ul
-        class="site-nav">
+        class="site-nav"
+      >
         <li
           v-for="nav in navigation"
-          :key="nav.index">
+          :key="nav.index"
+        >
           <nuxt-link
             :to="nav.url"
-            role="menuitem">
+            role="menuitem"
+          >
             {{ nav.text }}
           </nuxt-link>
         </li>
       </ul>
       <ul
         v-if="socialMedia.length"
-        class="social-nav">
+        class="social-nav"
+      >
         <li
           v-for="(sm, index) in socialMedia.filter((sm)=>sm.url)"
-          :key="index">
+          :key="index"
+        >
           <a
             :href="sm.url"
             target="_blank"
-            rel="noopener">
+            rel="noopener"
+          >
             <font-awesome-icon
-              :icon="['fab', sm.title.toLowerCase()]" />
+              :icon="['fab', sm.title.toLowerCase()]"
+            />
           </a>
         </li>
       </ul>
       <ul
-        class="user-pref">
+        class="user-pref"
+      >
         <li
           role="switch"
-          @click="toggleProjects">
+          @click="toggleProjects"
+        >
           <span
-            v-if="!showPwdProjects">
+            v-if="!showPwdProjects"
+          >
             <font-awesome-icon
-              icon="lock" />
+              icon="lock"
+            />
             &nbsp;
             Show Protected Case Studies
           </span>
           <span
-            v-else>
+            v-else
+          >
             <font-awesome-icon
-              icon="lock-open" />
+              icon="lock-open"
+            />
             &nbsp;
             Hide Protected Case Studies
           </span>

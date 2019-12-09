@@ -1,16 +1,19 @@
 <template>
   <section
     v-lazy-container="{ selector: 'img' }"
-    class="bq-w-img">
+    class="bq-w-img"
+  >
     <img
       :data-src="buildImage(bqwi.image)"
       :data-loading="loadingColors[Math.floor(Math.random()*loadingColors.length)]"
       class="bqwi-image"
       role="presentation"
-      alt="">
+      alt=""
+    >
     <blockquote
       class="bqwi-quote"
-      v-html="bqwi.quote" />
+      v-html="bqwi.quote"
+    />
   </section>
 </template>
 

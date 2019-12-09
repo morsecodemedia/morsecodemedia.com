@@ -19,7 +19,8 @@
           <ul>
             <li
               v-for="(work, index) in about.workHistory"
-              :key="index">
+              :key="index"
+            >
               <span class="dates">{{ work.yearStart }}-<span v-if="work.yearEnd">{{ work.yearEnd }}</span><span v-else>Present</span></span><br>
               {{ work.title }} at {{ work.company }}
             </li>
@@ -28,7 +29,8 @@
             More about my career on <a
               href="https://www.linkedin.com/in/brandonmorse"
               target="_blank"
-              rel="noopener">LinkedIn</a>
+              rel="noopener"
+            >LinkedIn</a>
           </p>
         </div>
         <div class="content-block content-block--right">
@@ -36,7 +38,8 @@
           <ul>
             <li
               v-for="(award, index) in about.awards"
-              :key="index">
+              :key="index"
+            >
               <span class="awardOrg">{{ award.organization }}</span>
               <br>
               {{ award.count }} {{ award.award }}
@@ -51,7 +54,8 @@
           <ul>
             <li
               v-for="(cert, index) in about.certifications"
-              :key="index">
+              :key="index"
+            >
               <span class="dates">{{ cert.certificationStart }}-<span v-if="cert.certificationEnd">{{ cert.certificationEnd }}</span><span v-else>Current</span></span>
               <br>
               {{ cert.certification }}

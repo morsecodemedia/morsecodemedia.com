@@ -2,10 +2,12 @@
   <section class="section-outro">
     <header>
       <h4
-        v-html="outro.header" />
+        v-html="outro.header"
+      />
     </header>
     <div
-      v-html="outro.body" />
+      v-html="outro.body"
+    />
   </section>
 </template>
 

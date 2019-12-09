@@ -5,7 +5,8 @@
         :src="video"
         title="Video demo"
         class="embed-responsive-item"
-        allowfullscreen />
+        allowfullscreen
+      />
     </div>
   </div>
 </template>
