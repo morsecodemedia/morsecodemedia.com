@@ -5,11 +5,13 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/morsecodemedia/morsecodemedia.svg) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/morsecodemedia/morsecodemedia.svg)
 
 # Brandon Morse
+
 **Website:** https://www.morsecodemedia.com
 **Email:** brandon@morsecodemedia.com
 **LinkedIn:** https://www.linkedin.com/in/brandonmorse/
 
 ## Work History
+
 **Technology Director**
 GSW Advertising, a Syneos Health Company
 Newtown, PA 2019-Present
@@ -39,6 +41,7 @@ morsecodemedia
 2005-Present
 
 ## Awards
+
 **W3 Awards**
 
 4 - W3 Silver Awards
@@ -66,11 +69,13 @@ morsecodemedia
 1 - Communicator Award of Distinction
 
 ## Education
+
 **BSc in Multimedia and Web Design**
 The Art Institute of Philadelphia
 Philadelphia, PA 2002-2005
 
 ### Certifications
+
 **MIT Sloan School of Management**
 Digital Marketing Analytics
 August 2019-Present
