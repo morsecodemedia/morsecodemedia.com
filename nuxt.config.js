@@ -1,5 +1,12 @@
 const pkg = require('./package')
 
+import { caseStudies } from './components/config.json'
+let dynamicRoutes = () => {
+  return new Promise(resolve => {
+    resolve(caseStudies.map(el => `case-studies/${el.title.toLowerCase().replace(/[.\s]/g, '-').replace(/[&#,+()$~%'":*?<>{}]/g, '' )}`))
+  })
+}
+
 module.exports = {
   mode: 'universal',
 
@@ -41,6 +48,14 @@ module.exports = {
       { rel: 'apple-touch-icon-precomposed', sizes: '152x152', href: '/favicon/apple-touch-icon-152x152.png' }
     ]
   },
+
+  /*
+  ** Generate Dynamic Routes for Static Build
+  */
+  generate: {
+    routes: dynamicRoutes
+  },
+
   /*
   ** Customize the progress-bar color
   */
