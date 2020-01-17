@@ -1,0 +1,62 @@
+{
+  "jspCaseStudies": [
+    {
+      "id": "jsp001",
+      "client": "JSP",
+      "title": "EPP.com",
+      "url": "http://epp.com/",
+      "yearStart": "2014",
+      "yearEnd": "2015",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "/web-epp/epp-campaign-01.jpg",
+      "gallery": [
+        "/web-epp/web-epp-homepage-desktop-01.jpg",
+        "/web-epp/web-epp-properties-desktop-01.jpg",
+        "/web-epp/web-epp-applications-mobile-01.jpg",
+        "/web-epp/web-epp-contact-tablet-01.jpg"
+      ],
+      "overview": {
+        "description": "Expanding lightweight material solutions, globally.",
+        "clientColor": "#FFFFFF",
+        "bgColor": "#0047ba",
+        "titleColor": "#ED008C",
+        "descriptionColor": "#FFFFFF",
+        "copyColor": "#FFFFFF"
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>ARPRO<sup>&reg</sup> is JSP International's brand name for a premium Expanded Polypropylene (EPP) product. EPP is an impact energy management material with a unique combination of properties including energy absorption, structural strength, low weight, chemical resistance, and both thermal and acoustical insulation. While ARPRO<sup>&reg</sup> is the leading brand of EPP, there are many generic offerings, making it difficult for ARPRO<sup>&reg</sup> to rank organically for non-branded keywords and attributes of EPP.</p>",
+          "bgColor": "#0047ba",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "solution",
+          "description": "<p>We collaborated with JSP to create personas around potential customers that would not be familiar with ARPRO<sup>&reg</sup>. Then crafted an interactive experience and content targeted towards those users, around EPP and other keywords identified in the persona exercise; allowing ARPRO<sup>&reg</sup> to compete with organic rankings against \"generic\" EPP products.</p>",
+          "bgColor": "#FFFFFF",
+          "fontColor": "#000000"
+        },
+        {
+          "title": "results",
+          "description": "<p>EPP has been well-received and achieved page one rankings for core keywords and increased website visit duration by 190%. Bounce rate was decreased by 19% and is now acting as an effective lead generation website.</p>",
+          "bgColor": "#ed008c",
+          "fontColor": "#FFFFFF"
+        }
+      ],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": true,
+      "awards": [
+        {
+          "award": "W3 Silver Award",
+          "organization": "W3 Awards",
+          "year": "2014"
+        }
+      ]
+    }
+  ]
+}

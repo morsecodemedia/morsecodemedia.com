@@ -1,0 +1,106 @@
+{
+  "metuchenCaseStudies": [
+    {
+      "id": "met001",
+      "client":"Metuchen Pharmaceuticals",
+      "title": "Stendra HCP Website",
+      "url": "https://www.stendrahcp.com/",
+      "yearStart": "2019",
+      "yearEnd": "",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "video": {
+        "src": "",
+        "bgColor": ""
+      },
+      "overview": {
+        "description": "",
+        "clientColor": "",
+        "bgColor": "#FFFFFF",
+        "titleColor": "#F1B906",
+        "descriptionColor": "#333D46",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>this is a challenge</p>",
+          "bgColor": "#FFFFFF",
+          "fontColor": "#333D46"
+        },
+        {
+          "title": "solution",
+          "description": "<p>this is a solution</p>",
+          "bgColor": "#FFFFFF",
+          "fontColor": "#333D46"
+        },
+        {
+          "title": "results",
+          "description": "<p>this is a result</p>",
+          "bgColor": "#FFFFFF",
+          "fontColor": "#333D46"
+        }
+      ],
+      "needsPassword": true,
+      "category": "Websites",
+      "active": false,
+      "awards": []
+    },
+    {
+      "id": "met002",
+      "client":"Metuchen Pharmaceuticals",
+      "title": "Stendra Patient Website",
+      "url": "https://www.stendra.com/",
+      "yearStart": "2019",
+      "yearEnd": "",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "video": {
+        "src": "",
+        "bgColor": ""
+      },
+      "overview": {
+        "description": "",
+        "clientColor": "",
+        "bgColor": "#eb5903",
+        "titleColor": "#FFFFFF",
+        "descriptionColor": "#002e5d",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>this is a challenge</p>",
+          "bgColor": "#eb5903",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "solution",
+          "description": "<p>this is a solution</p>",
+          "bgColor": "#002e5d",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "results",
+          "description": "<p>this is a result</p>",
+          "bgColor": "#ebebeb",
+          "fontColor": "#585757"
+        }
+      ],
+      "needsPassword": true,
+      "category": "Websites",
+      "active": false,
+      "awards": []
+    }
+  ]
+}

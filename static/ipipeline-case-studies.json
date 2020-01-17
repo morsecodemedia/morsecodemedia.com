@@ -1,0 +1,64 @@
+{
+  "ipipelineCaseStudies": [
+    {
+      "id": "ipl001",
+      "client": "Internet Pipeline",
+      "title": "iPipeline Corporate Website",
+      "url": "https://www.ipipeline.com/",
+      "yearStart": "2014",
+      "yearEnd": "2014",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "/web-ipipeline/ipipeline-campaign-01.jpg",
+      "gallery": [
+        "/web-ipipeline/web-ipipeline-responsive-display-01.jpg"
+      ],
+      "overview": {
+        "description": "iPipeline is a technology provider of SaaS solutions that drives straight-through processing for the insurance and financial services industry.",
+        "clientColor": "#3b4141",
+        "bgColor": "#FFFFFF",
+        "titleColor": "#2483b3",
+        "descriptionColor": "#3b4141",
+        "copyColor": "#3b4141"
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>iPipeline, a B2B technology provider offering web-based software tools that streamline processing for the insurance industry, hired us to modernize their brand, create a responsive website or multiple platforms, and enhance their offline collateral.</p>",
+          "bgColor": "#3b4141",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "solution",
+          "description": "<p>We conducted a series of interviews to create a brand playbook that established a positioning statement, brand identity and creative mood boards to communicate the brand's message. A website 'proof of concept' was delivered to present content drivers, user experience, responsive design and a grey box prototype. The website was developed using the ExpressionEngine CMS and launched with multiple languages.</p>",
+          "bgColor": "#5c6164",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "results",
+          "description": "<p>The website hosts a blog, news, webinars, events and a careers portal, as well as a series of 'explanamation' videos to help guide users to their product offerings. The end result is a website that is modern and fresh, works seamlessly across multiple screen sizes or devices and that weill help iPipeline's new brand stand out within its industry with content marketing.</p>",
+          "bgColor": "#FFFFFF",
+          "fontColor": "#2483b3"
+        }
+      ],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": true,
+      "awards": [
+        {
+          "award": "Summit International Leader Award",
+          "organization": "Summit International Awards",
+          "year": "2014"
+        },
+        {
+          "award": "Communicator Award of Distinction",
+          "organization": "Communicator Awards",
+          "year": "2015"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "merionRealtyCaseStudies": [
+    {
+      "id": "mcr001",
+      "client": "Merion Commercial Realty",
+      "title": "Merion Commercial Realty Website",
+      "url": "http://www.merioncommercial.com/",
+      "yearStart": "2015",
+      "yearEnd": "2015",
+      "insitu": {
+        "img": "/web-merion-commercial/merion-commercial-insitu-01.png",
+        "color1": "#093956",
+        "color2": "#0669A5"
+      },
+      "campaignImg": "/web-merion-commercial/merion-commercial-campaign-01.jpg",
+      "gallery": [
+        "/web-merion-commercial/merion-commercial-homepage-desktop-01.jpg",
+        "/web-merion-commercial/merion-commercial-homepage-mobile-01.jpg",
+        "/web-merion-commercial/merion-commercial-clients-desktop-01.jpg"
+      ],
+      "overview": {
+        "description": "Commercial real estate services and solutions.",
+        "clientColor": "#FFFFFF",
+        "bgColor": "#064870",
+        "titleColor": "#edc315",
+        "descriptionColor": "#FFFFFF",
+        "copyColor": "#FFFFFF"
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>Client didn't have an online presence.</p>",
+          "bgColor": "#093956",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "solution",
+          "description": "<p>Developed a small, responsive, brochure site that highlights the client's services and some various properties.</p>",
+          "bgColor": "#064870",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#0669A5",
+          "fontColor": "#FFFFFF"
+        }
+      ],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": true,
+      "awards": []
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "joeHandCaseStudies": [
+    {
+      "id": "jhp001",
+      "client": "Joe Hand Promotions",
+      "title": "Joe Hand Promotions Website",
+      "url": "https://www.joehandpromotions.com/",
+      "yearStart": "2013",
+      "yearEnd": "2015",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "/web-joe-hand-promotions/joe-hand-promotions-campaign-01.jpg",
+      "gallery": [
+        "/web-joe-hand-promotions/joe-hand-promotions-homepage-desktop-01.jpg"
+      ],
+      "video": {
+        "src": "",
+        "bgColor": ""
+      },
+      "overview": {
+        "description": "Joe Hand Promotions is the proud distributor of pay-per-view UFC, Showtime Boxing, and WWE Wrestling events for commercial locations.",
+        "clientColor": "#F95F1F",
+        "bgColor": "#000000",
+        "titleColor": "#FFFFFF",
+        "descriptionColor": "#F95F1F",
+        "copyColor": "#F95F1F"
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>Joe Hand Promotions is the official promoter of UFC fights to bars, restaurants, and other large commercial establishments. We were hired to refresh their brand, redesign their website, and increase their visibility online when they realized previous offline marketing efforts were no longer driving sales.</p>",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "solution",
+          "description": "<p>We created a new brand identity and logo. In order to architect an intelligent user experience on the website, personas were created to map out the buying journey and trigger points for conversion. Content Marketing tactics including landing pages and blog articles are routinely created to increase the SEO rankings and overall marketshare.</p>",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "results",
+          "description": "<p>Since launching the website in May 2013, their website traffic has doubled and organic visits have increasing by 72%. Overall, fight night sales goals have been exceeded consistently. Joe Hand Jr. has expressed that the brand evolution and digital presence have really changed and improved his business.</p>",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "category": "Websites",
+      "needsPassword": false,
+      "active": true,
+      "awards": [
+        {
+          "award": "W3 Silver Award",
+          "organization": "W3 Awards",
+          "year": "2013"
+        }
+      ]
+    }
+  ]
+}

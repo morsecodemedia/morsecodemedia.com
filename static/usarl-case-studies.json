@@ -1,0 +1,55 @@
+{
+  "usarlCaseStudies": [
+    {
+      "id": "usarl001",
+      "client": "USA Rugby League",
+      "title": "USA Rugby League Website",
+      "url": "http://www.usarl.org/",
+      "yearStart": "2012",
+      "yearEnd": "2016",
+      "insitu": {
+        "img": "/web-usarl/usarl-insitu-01.png",
+        "color1": "#E5002E",
+        "color2": "#1A1B69"
+      },
+      "campaignImg": "/web-usarl/usarl-campaign-01.jpg",
+      "gallery": [
+        "/web-usarl/usarl-homepage-desktop-01.jpg",
+        "/web-usarl/usarl-clubs-desktop-01.jpg",
+        "/web-usarl/usarl-conference-listings-desktop-01.jpg"
+      ],
+      "overview": {
+        "description": "The official website of the US Association of Rugby League.",
+        "bgColor": "#1A1B69",
+        "clientColor": "#FFFFFF",
+        "titleColor": "#E5002E",
+        "descriptionColor": "#FFFFFF",
+        "copyColor": "#FFFFFF"
+      },
+      "description": [
+        {
+          "title": "Challenge",
+          "description": "<p>The original website was built as a WordPress site. Unfortunately, the way in which it was built included altering the 'core system', leaving it unable to be updated. This meant security vulnerabilities were unable to be addressed causing the site to be hacked multiple times over the years. The fragile state of the site also meant that making minor content updates (ie, creating new pages) a more cumbersome task than it needed to be.</p><p>Another challenge with the website was the 'League Manager', was a partially built out plugin that required the deletion of the prior year's teams, conferences, standings, etc. to set up the upcoming season's game management.</p><p>The last challenge was that the site was not responsive.</p>",
+          "bgColor": "#E5002E",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "Solution",
+          "description": "<p>First and foremost, we addressed the security concerns, moving the site into ProcessWire. We created a new League Manager to be an integral part of the site's content and structure. It all starts with the teams. Each team has their own page, with history, plater roster, schedule and more. Due to the scalability of league, the number of teams and conferences varied from season to season. We took this into consideration, allowing admins to define the conferences and which teams were in each for each year. By using the teams' 'ids' as references, we were able to create a history of previous years, despite if a team didn't play certain years, or was zoned into a different conference.</p><p>The system also allowed for News and Video Library sections, complete with tag management. This tagging system allowed for relevant articles and videos to be dynamically pulled into the team pages as well.</p><p>Another new offering provided, was a portal for users to find out how to get involved with the league, as well as current members to be able to pay their membership dues.</p>",
+          "bgColor": "#FFFFFF",
+          "fontColor": "#444444"
+        },
+        {
+          "title": "Results",
+          "description": "<p>Since the launch of the site, it is no longer a victim of malicious attacks. Updates are able to be managed by content administrations, and no longer require a developer. Users have a more complete and engaging experience no matter which device or browser they are viewing the site.</p>",
+          "bgColor": "#1A1B69",
+          "fontColor": "#FFFFFF"
+        }
+      ],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": true,
+      "awards": []
+    }
+  ]
+}

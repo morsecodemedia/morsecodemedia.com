@@ -1,0 +1,98 @@
+{
+  "alexaCaseStudies": [
+    {
+      "id": "alexa001",
+      "client": "GSW Advertising",
+      "title": "GSW Speak People Alexa Skill",
+      "url": "https://www.amazon.com/morsecodemedia-Speak-People/dp/B07JJ1D2LW/",
+      "yearStart": "2018",
+      "yearEnd": "2018",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "overview": {
+        "description": "",
+        "clientColor": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": "",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "solution",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "results",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "needsPassword": false,
+      "category": "Alexa Skills",
+      "active": false,
+      "awards": []
+    },
+    {
+      "id": "alexa002",
+      "client": "morsecodemedia",
+      "title": "Atlantic County Attractions Alexa Skill",
+      "url": "https://www.amazon.com/morsecodemedia-Atlantic-County-Attractions/dp/B074TPLK6R/",
+      "yearStart": "2018",
+      "yearEnd": "2017",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "overview": {
+        "description": "",
+        "clientColor": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": "",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "solution",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "results",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "needsPassword": false,
+      "category": "Alexa Skills",
+      "active": false,
+      "awards": []
+    }
+  ]
+}

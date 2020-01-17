@@ -1,0 +1,59 @@
+{
+  "endoMensHealthCaseStudies": [
+    {
+      "id": "emh001",
+      "client": "Endo Pharmaceuticals",
+      "title": "Endo Men's Health Website",
+      "url": "https://endomenshealth.com/",
+      "yearStart": "2018",
+      "yearEnd": "",
+      "brandColors": {
+        "color1": "#f0b433",
+        "color2": "#435564",
+        "color3": "#efefef"
+      },
+      "insitu": {
+        "img": "/web-endomenshealth/endomenshealth-insitu-01.png",
+        "color1": "#435564",
+        "color2": "#efefef"
+      },
+      "campaignImg": "/web-endomenshealth/endomenshealth-campaign-01.jpg",
+      "gallery": [
+        "/web-endomenshealth/endomenshealth-desktop-01.jpg",
+        "/web-endomenshealth/endomenshealth-mobile-01.jpg"
+      ],
+      "overview": {
+        "description": "A landing page to engage urologists to help shape awareness of men's health.",
+        "clientColor": "#222222",
+        "bgColor": "#435564",
+        "titleColor": "#f0b433",
+        "descriptionColor": "#FFFFFF",
+        "copyColor": "#FFFFFF"
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>Create brand awareness for the Endo Men's Health product lineup.</p>",
+          "bgColor": "#f0b433",
+          "fontColor": "#000000"
+        },
+        {
+          "title": "solution",
+          "description": "<p>Developed a landing page with communications opt-in, inviting HCPs to join the charge for men's health advocacy.</p>",
+          "bgColor": "#435564",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#efefef",
+          "fontColor": "#000000"
+        }
+      ],
+      "category": "Websites",
+      "needsPassword": true,
+      "active": true,
+      "awards": []
+    }
+  ]
+}

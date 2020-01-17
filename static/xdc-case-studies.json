@@ -1,0 +1,265 @@
+{
+  "xdcCaseStudies" : [
+    {
+      "id": "xdc001",
+      "client": "Endo Pharmaceuticals",
+      "title": "Xiaflex for Dupuytren's Contracture HCP Website",
+      "url": "https://dupuytrens-contracture.xiaflex.com/hcp/",
+      "yearStart": "2015",
+      "yearEnd": "",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "/web-xiaflex-dc/hcp/xiaflex-dc-campaign-01.png",
+      "gallery": [
+        "/web-xiaflex-dc/hcp/xiaflex-dc-homepage-desktop-01.jpg"
+      ],
+      "overview": {
+        "description": "Website for HCPs to learn about Dupuytren's contracture and XIAFLEX<sup>&reg;</sup>.",
+        "clientColor": "#FFFFFF",
+        "bgColor": "#eb5903",
+        "titleColor": "#FFFFFF",
+        "descriptionColor": "#002e5d",
+        "copyColor": "#002E5D"
+      },
+      "description": [
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#eb5903",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#002e5d",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#ebebeb",
+          "fontColor": "#585757"
+        }
+      ],
+      "category": "Websites",
+      "needsPassword": true,
+      "active": true,
+      "awards": []
+    },
+    {
+      "id": "xdc002",
+      "client": "Endo Pharmaceuticals",
+      "title": "Xiaflex for DC 2018 Conference Panel",
+      "url": "",
+      "yearStart": "2018",
+      "yearEnd": "2018",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-campaign-01.png",
+      "gallery": [
+        "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-01.jpg",
+        "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-02.jpg",
+        "/conference-panel-xiaflex-dc-2018/xiaflex-dc-2018-conference-panel-03.jpg"
+      ],
+      "video": {
+        "src": "https://www.youtube.com/embed/W9im4dVB9kQ",
+        "bgColor": ""
+      },
+      "overview": {
+        "description": "Interactive Touch Screen for XIAFLEX<sup>&reg;</sup> for <nobr>Dupuytren's contracture.</nobr>",
+        "clientColor": "#eb5903",
+        "bgColor": "#dfdfdf",
+        "titleColor": "#002e5d",
+        "descriptionColor": "#eb5903",
+        "copyColor": "#eb5903"
+      },
+      "description": [
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#eb5903",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "solution",
+          "description": "<p>At the 2018 American Society for Surgery of the Hand (ASSH) conference, we created a convention booth experience unlike any other. We literally brought our latest campaign to life and invited hand surgeons to enter the interactive world of a patient with DC&mdash;the XIAFLEX<sup>&reg;</sup> \"garage.\" To help hand surgeons become more comfortable with using XIAFLEX<sup>&reg;</sup> and gain a deeper understanding of their patients' challenges, this garage provided several dynamic, self-navigated opportunities for training and learning.</p><p>iPads with preloaded modules offered individual on-the-spot training on treating with XIAFLEX<sup>&reg;</sup>, while touch panels peppered throughout the booth allowed hand surgeons to view clinical data and patient profiles. Hand surgeons could also step directly into their patients' shoes by wearing a special motorcycle glove we helped design that simulated what it feels like to have DC. They could even hop onto an actual motorcycle we parked in the booth.</p>",
+          "bgColor": "#002e5d",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "results",
+          "description": "<p>Our interactive, in-your-face efforts to reach HCPs in a meaningful way were a hands-down success. Not only did we engage about 2,145 HCPs attending ASSH&mdash;sourcing nearly 50 high-quality leads at the XIAFLEX<sup>&reg;</sup> booth&mdash;but the ASSH board of directors deemed the experience we created \"the new gold standard.\"</p><p>See the <a href=\"/case-studies/xtra-kick-starts/\">iPad presentations</a> that were also installed in the booth.</p>",
+          "bgColor": "#ebebeb",
+          "fontColor": "#585757"
+        }
+      ],
+      "needsPassword": true,
+      "category": "Conference Pieces",
+      "active": true,
+      "awards": []
+    },
+    {
+      "id": "xdc003",
+      "client":"Endo Pharmaceuticals",
+      "title": "Xiaflex for DC 2017 Conference Panel",
+      "url": "",
+      "yearStart": "2017",
+      "yearEnd": "2017",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "video": {
+        "src": "https://www.youtube.com/embed/qRMIbh6w7ZI",
+        "bgColor": ""
+      },
+      "overview": {
+        "description": "A touchscreen expereience for the 2017 ASSH Conference. This conference panel showcases procedure videos, treatment efficacy and patient profiles of those treated with XIAFLEX<sup>&reg;</sup> for Dupuytren's contracture.",
+        "clientColor": "",
+        "bgColor": "#eb5903",
+        "titleColor": "#FFFFFF",
+        "descriptionColor": "#002e5d",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>this is a challenge</p>",
+          "bgColor": "#eb5903",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "solution",
+          "description": "<p>this is a solution</p>",
+          "bgColor": "#002e5d",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "results",
+          "description": "",
+          "bgColor": "#ebebeb",
+          "fontColor": "#585757"
+        }
+      ],
+      "needsPassword": true,
+      "category": "Conference Pieces",
+      "active": false,
+      "awards": []
+    },
+    {
+      "id": "xdc004",
+      "client":"Endo Pharmaceuticals",
+      "title": "XTRA Kick-starts",
+      "url": "http://www.xtra-kickstarts.com/",
+      "yearStart": "2018",
+      "yearEnd": "2018",
+      "insitu": {
+        "img": "",
+        "color1": "#eb5903",
+        "color2": "#FFFFFF"
+      },
+      "campaignImg": "/ipad-xtra-kickstarts/xtra-kickstarts-campaign-01.png",
+      "gallery": [
+        "/ipad-xtra-kickstarts/xtra-kickstarts-01.jpg",
+        "/ipad-xtra-kickstarts/xtra-kickstarts-02.jpg",
+        "/ipad-xtra-kickstarts/xtra-kickstarts-03.jpg",
+        "/ipad-xtra-kickstarts/xtra-kickstarts-04.jpg",
+        "/ipad-xtra-kickstarts/xtra-kickstarts-05.jpg"
+      ],
+      "video": {
+        "src": "",
+        "bgColor": ""
+      },
+      "overview": {
+        "description": "",
+        "clientColor": "#eb5903",
+        "bgColor": "#dfdfdf",
+        "titleColor": "#002e5d",
+        "descriptionColor": "#eb5903",
+        "copyColor": "#eb5903"
+      },
+      "description": [
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#eb5903",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "solution",
+          "description": "<p>At the 2018 American Society for Surgery of the Hand (ASSH) conference, we created a convention booth experience unlike any other. We literally brought our latest campaign to life and invited hand surgeons to enter the interactive world of a patient with DC&mdash;the XIAFLEX<sup>&reg;</sup> \"garage.\" To help hand surgeons become more comfortable with using XIAFLEX<sup>&reg;</sup> and gain a deeper understanding of their patients' challenges, this garage provided several dynamic, self-navigated opportunities for training and learning.</p><p>iPads with preloaded modules offered individual on-the-spot training on treating with XIAFLEX<sup>&reg;</sup>, while touch panels peppered throughout the booth allowed hand surgeons to view clinical data and patient profiles. Hand surgeons could also step directly into their patients' shoes by wearing a special motorcycle glove we helped design that simulated what it feels like to have DC. They could even hop onto an actual motorcycle we parked in the booth.</p>",
+          "bgColor": "#002e5d",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "results",
+          "description": "<p>Our interactive, in-your-face efforts to reach HCPs in a meaningful way were a hands-down success. Not only did we engage about 2,145 HCPs attending ASSH&mdash;sourcing nearly 50 high-quality leads at the XIAFLEX<sup>&reg;</sup> booth&mdash;but the ASSH board of directors deemed the experience we created \"the new gold standard.\"</p><p>See the <a href=\"/case-studies/xiaflex-for-dc-2018-conference-panel/\">interactive touch-screen</a> displays that were also installed in the booth.</p>",
+          "bgColor": "#ebebeb",
+          "fontColor": "#585757"
+        }
+      ],
+      "category": "Conference Pieces",
+      "needsPassword": true,
+      "active": true,
+      "awards": []
+    },
+    {
+      "id": "xdc005",
+      "client": "Endo Pharmaceuticals",
+      "title": "Xiaflex for Dupuytren's Contracture Patient Website",
+      "url": "https://dupuytrens-contracture.xiaflex.com/patient/",
+      "yearStart": "2015",
+      "yearEnd": "",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [
+        ""
+      ],
+      "overview": {
+        "description": "Website for Patients to learn about Dupuytren's contracture and XIAFLEX<sup>&reg;</sup>.",
+        "clientColor": "#FFFFFF",
+        "bgColor": "#eb5903",
+        "titleColor": "#FFFFFF",
+        "descriptionColor": "#002e5d",
+        "copyColor": "#002E5D"
+      },
+      "description": [
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#eb5903",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#002e5d",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#ebebeb",
+          "fontColor": "#585757"
+        }
+      ],
+      "category": "Websites",
+      "needsPassword": true,
+      "active": false,
+      "awards": []
+    }
+  ]
+}

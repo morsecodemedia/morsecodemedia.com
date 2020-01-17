@@ -1,0 +1,51 @@
+{
+  "entellusCaseStudies": [
+    {
+      "id": "ent001",
+      "client": "Entellus Medicical",
+      "title": "Sinus Surgery Options",
+      "url": "",
+      "yearStart": "2012",
+      "yearEnd": "2014",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "overview": {
+        "description": "",
+        "clientColor": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": "",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "solution",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "results",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "category": "Websites",
+      "needsPassword": false,
+      "active": false,
+      "awards": []
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "endoCaseStudies": [
+    {
+      "id": "endo001",
+      "client": "Endo Pharmaceuticals",
+      "title": "Endo Video Library",
+      "url": "",
+      "yearStart": "",
+      "yearEnd": "2018",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "/native-endo-video-library/native-endo-video-library-campaign-01.jpg",
+      "gallery": [
+        "/native-endo-video-library/native-endo-video-library-video-listing-01.jpg",
+        "/native-endo-video-library/native-endo-video-library-downloading-01.jpg"
+      ],
+      "video": {
+        "src": "",
+        "bgColor": ""
+      },
+      "overview": {
+        "description": "An iOS Native app for sales reps to detail videos to HCPs in office.",
+        "clientColor": "#FFCE00",
+        "bgColor": "#FFFFFF",
+        "titleColor": "#DD8200",
+        "descriptionColor": "#585B5C",
+        "copyColor": "#585B5C"
+      },
+      "description": [
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "category": "Native Apps",
+      "needsPassword": true,
+      "active": true,
+      "awards": []
+    }
+  ]
+}
