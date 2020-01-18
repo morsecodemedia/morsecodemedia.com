@@ -78,7 +78,7 @@
           if (imageSrc.substr(0,4) === 'http') {
             return imageSrc
           } else {
-            return require(`../assets/images${imageSrc}`)
+            return require(`~/static/images${imageSrc}`)
           }
         }
       }
