@@ -3,7 +3,8 @@
     class="case-study-insitu"
   >
     <img
-      :src="buildImage(insitu.img)"
+      :data-src="buildImage(insitu.img)"
+      :data-loading="loadingColors[Math.floor(Math.random()*loadingColors.length)]"
       alt=""
       role="img"
     >
@@ -11,6 +12,14 @@
 </template>
 
 <script>
+  import Vue from 'vue'
+  import VueLazyload from 'vue-lazyload'
+
+  Vue.use(VueLazyload, {
+    preLoad: 1.3,
+    attempt: 1
+  })
+
   export default {
     name: 'CaseStudyInsitu',
     props: {
@@ -19,6 +28,13 @@
         required: true,
         twoWay: true,
         default: () => {}
+      }
+    },
+    data() {
+      return {
+        loadingColors: [
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQYV2PQ09P7DwACogGKJIM9sQAAAABJRU5ErkJggg=='
+        ]
       }
     },
     methods: {

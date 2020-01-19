@@ -152,7 +152,7 @@
                 :data-src="buildImage(img)"
                 :data-loading="loadingColors[Math.floor(Math.random()*loadingColors.length)]"
                 style="width: 100%; object-fit: contain;"
-                :alt="img"
+                alt=""
                 role="img"
               >
             </div>
@@ -177,7 +177,6 @@
 <script>
   import Vue from 'vue'
   import VueLazyload from 'vue-lazyload'
-  // import config from '~/components/config.json'
   import { aerieCaseStudies } from '~/assets/configs/aerie-case-studies.json'
   import { alexaCaseStudies } from '~/assets/configs/alexa-case-studies.json'
   import { endoMensHealthCaseStudies } from '~/assets/configs/emh-case-studies.json'
