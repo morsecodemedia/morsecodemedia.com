@@ -44,7 +44,27 @@
 <script>
   import Vue from 'vue'
   import { mapGetters, mapMutations } from 'vuex'
-  import { caseStudies, landingPages } from '~/components/config.json'
+  import { landingPages } from '~/components/config.json'
+  import { aerieCaseStudies } from '~/assets/configs/aerie-case-studies.json'
+  import { alexaCaseStudies } from '~/assets/configs/alexa-case-studies.json'
+  import { endoMensHealthCaseStudies } from '~/assets/configs/emh-case-studies.json'
+  import { endoCaseStudies } from '~/assets/configs/endo-case-studies.json'
+  import { entellusCaseStudies } from '~/assets/configs/entellus-case-studies.json'
+  import { geoblueCaseStudies } from '~/assets/configs/geoblue-case-studies.json'
+  import { ikeaCaseStudies } from '~/assets/configs/ikea-case-studies.json'
+  import { inrikiCaseStudies } from '~/assets/configs/inriki-case-studies.json'
+  import { ipipelineCaseStudies } from '~/assets/configs/ipipeline-case-studies.json'
+  import { joeHandCaseStudies } from '~/assets/configs/joe-hand-case-studies.json'
+  import { jspCaseStudies } from '~/assets/configs/jsp-case-studies.json'
+  import { merionRealtyCaseStudies } from '~/assets/configs/mcr-case-studies.json'
+  import { metuchenCaseStudies } from '~/assets/configs/metuchen-case-studies.json'
+  import { patravelCaseStudies } from '~/assets/configs/patravel-case-studies.json'
+  import { radicavaCaseStudies } from '~/assets/configs/radicava-case-studies.json'
+  import { tunnellCaseStudies } from '~/assets/configs/tunnell-case-studies.json'
+  import { usarlCaseStudies } from '~/assets/configs/usarl-case-studies.json'
+  import { walmartCaseStudies } from '~/assets/configs/walmart-case-studies.json'
+  import { xdcCaseStudies } from '~/assets/configs/xdc-case-studies.json'
+  import { xpdCaseStudies } from '~/assets/configs/xpd-case-studies.json'
   import caseStudyListing from '~/components/case-study-listing'
   import { library } from '@fortawesome/fontawesome-svg-core'
   import { faLock, faLockOpen } from '@fortawesome/free-solid-svg-icons'
@@ -60,7 +80,7 @@
     data() {
       return {
         displayCaseStudies: false,
-        caseStudies: caseStudies,
+        caseStudies: [],
         landingPages: landingPages,
         activeCaseStudyCategory: 'all',
         twoUpClasses: ['horizontal-2'],
@@ -79,7 +99,8 @@
           'regular': 0
         },
         showFilters: false,
-        breakPoint: ''
+        breakPoint: '',
+        testMe: []
       }
     },
     computed: {
@@ -303,6 +324,7 @@
     mounted() {
       this.displayCaseStudies = true
       this.checkBreakpoint()
+      this.concatCaseStudies()
     },
     methods: {
       shuffleArray: function(array) {
@@ -332,6 +354,9 @@
           this.breakPoint = 'desktop'
           this.showFilters = true
         }
+      },
+      concatCaseStudies: function() {
+        this.caseStudies = aerieCaseStudies.concat(alexaCaseStudies, endoMensHealthCaseStudies, endoCaseStudies, entellusCaseStudies, geoblueCaseStudies, ikeaCaseStudies, inrikiCaseStudies, ipipelineCaseStudies, joeHandCaseStudies, jspCaseStudies, merionRealtyCaseStudies, metuchenCaseStudies, patravelCaseStudies, radicavaCaseStudies, tunnellCaseStudies, usarlCaseStudies, walmartCaseStudies, xdcCaseStudies, xpdCaseStudies)
       }
     }
   }

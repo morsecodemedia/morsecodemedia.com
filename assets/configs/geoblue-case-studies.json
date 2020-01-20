@@ -1,0 +1,112 @@
+{
+  "geoblueCaseStudies": [
+    {
+      "id": "hth001",
+      "client": "HTH Worldwide",
+      "title": "GeoBlue Travel Health Insurance (Desktop)",
+      "url": "https://www.geobluetravelinsurance.com/",
+      "yearStart": "2012",
+      "yearEnd": "2012",
+      "insitu": {
+        "img": "",
+        "color1": "#00aedb",
+        "color2": "#c2e6e1"
+      },
+      "campaignImg": "/web-geoblue/web-geoblue-travel-insurance-campaign-desktop-01.jpg",
+      "gallery": [
+        "/web-geoblue/web-geoblue-travel-insurance-why-geoblue-desktop-01.jpg",
+        "/web-geoblue/web-geoblue-travel-insurance-quote-desktop-01.jpg",
+        "/web-geoblue/web-geoblue-travel-insurance-homepage-desktop-01.jpg"
+      ],
+      "overview": {
+        "description": "A Blue Cross Blue Shield affiliated brand for travel health insurance.",
+        "clientColor": "#FFFFFF",
+        "bgColor": "#c2e6e1",
+        "titleColor": "#00aedb",
+        "descriptionColor": "#00a0af",
+        "copyColor": "#222222"
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>GeoBlue (a Blue Cross Blue Shield affiliated brand) is a leader in the travel health insurance industry. We were hired by GeoBlue to develop an all-new website experience that seamlessly integrated with their complex back-end quoting tool; and upon launch, build out a digital strategy to support the site.</p>",
+          "bgColor": "#00aedb",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "solution",
+          "description": "<p>We utilized a persona based methodology to identify content drivers that would inform the strategy for both web experience and online marketing plan. Additionally, the website launch was supported by an advertising campaign alerting their broker network of the new members tools and online resources.</p>",
+          "bgColor": "#00a0af",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "results",
+          "description": "<p>A silver winner at the 2013 W3 Awards, the GeoBlue travel health insurance website has recorded increased conversion rates through the introduction of 'Find your Plan' and Dynamic Quoting results features. Content Marketing through organic traffic (SEO) and targeted PPC campaigns have generated over 20,000 visitors a month.</p>",
+          "bgColor": "#c2e6e1",
+          "fontColor": "#0c95b9"
+        }
+      ],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": true,
+      "awards": [
+        {
+          "award": "W3 Silver Award",
+          "organization": "W3 Awards",
+          "year": "2013"
+        }
+      ]
+    },
+    {
+      "id": "hth002",
+      "client": "HTH Worldwide",
+      "title": "GeoBlue Travel Health Insurance (Mobile)",
+      "url": "https://www.geobluetravelinsurance.com/mobile/index-2.cfm",
+      "yearStart": "2015",
+      "yearEnd": "2015",
+      "insitu": {
+        "img": "",
+        "color1": "#00aedb",
+        "color2": "#c2e6e1"
+      },
+      "campaignImg": "/web-geoblue/web-geoblue-travel-insurance-campaign-mobile-01.jpg",
+      "gallery": [
+        "/web-geoblue/web-geoblue-travel-insurance-multi-trip-mobile-01.jpg",
+        "/web-geoblue/web-geoblue-travel-insurance-homepage-mobile-01.jpg",
+        "/web-geoblue/web-geoblue-travel-insurance-expat-mobile-01.jpg"
+      ],
+      "overview": {
+        "description": "A Blue Cross Blue Shield affiliated brand for travel health insurance.",
+        "clientColor": "#FFFFFF",
+        "bgColor": "#c2e6e1",
+        "titleColor": "#00aedb",
+        "descriptionColor": "#00a0af",
+        "copyColor": "#222222"
+      },
+      "description": [
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#00aedb",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#00a0af",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#c2e6e1",
+          "fontColor": "#0c95b9"
+        }
+      ],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": true,
+      "awards": []
+    }
+  ]
+}

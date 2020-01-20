@@ -1,0 +1,88 @@
+{
+  "walmartCaseStudies": [
+    {
+      "id": "wal001",
+      "client": "Walmart",
+      "title": "Walmart Baby Subscription Box",
+      "url": "https://babybox.walmart.com/",
+      "yearStart": "2014",
+      "yearEnd": "2014",
+      "insitu": {
+        "img": "",
+        "color1": "#e0e6f2",
+        "color2": "#0076BE"
+      },
+      "campaignImg": "/web-babybox-walmart/babybox-walmart-campaign-01.jpg",
+      "gallery": [
+        "/web-babybox-walmart/babybox-walmart-homepage-desktop-01.jpg"
+      ],
+      "overview": {
+        "description": "Subscription box website for baby products for new and expecting mothers.",
+        "clientColor": "#0076BE",
+        "bgColor": "#e0e6f2",
+        "titleColor": "#FDB72B",
+        "descriptionColor": "#0076BE",
+        "copyColor": "#0076BE"
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>Walmart approached us about creating two subscription box model sites, one for new and expecting mothers, and the other for <a href=\"/case-studies/walmart-beauty-subscription-box/\">women's beauty products</a>. While these are two completely separate sites, the core functionality was the same. We had to create an architecture that was sophisticated enough to know the user and where they were on their personal buyer's journey, but efficient enough to not duplicate efforts on shared functionality.</p>",
+          "bgColor": "#FDB72B",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "results",
+          "description": "<p>Combine with the <a href=\"/case-studies/walmart-beauty-subscription-box/\">Beauty Box Subscription Site</a>, generated over 188k users and $2.1M in less than a year.</p>",
+          "bgColor": "#0076BE",
+          "fontColor": "#FDB72B"
+        }
+      ],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": true,
+      "awards": []
+    },
+    {
+      "id": "wal002",
+      "client": "Walmart",
+      "title": "Walmart Beauty Subscription Box",
+      "url": "https://beautybox.walmart.com/",
+      "yearStart": "2014",
+      "yearEnd": "2014",
+      "insitu": {
+        "img": "",
+        "color1": "#f79d3c",
+        "color2": "#b93b61"
+      },
+      "campaignImg": "/web-beautybox-walmart/beautybox-walmart-campaign-01.jpg",
+      "gallery": [],
+      "overview": {
+        "description": "Subscription box website for beauty products for women of all ages.",
+        "clientColor": "#0076BE",
+        "bgColor": "#FFFFFF",
+        "titleColor": "#f79d3c",
+        "descriptionColor": "#b93b61",
+        "copyColor": "#222222"
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>Walmart approached us about creating two subscription box model sites, one for <a href=\"/case-studies/walmart-baby-subscription-box/\">new and expecting mothers</a>, and the other for women's beauty products. While these are two completely separate sites, the core functionality was the same. We had to create an architecture that was sophisticated enough to know the user and where they were on their personal buyer's journey, but efficient enough to not duplicate efforts on shared functionality.</p>",
+          "bgColor": "#FDB72B",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "results",
+          "description": "<p>Combine with the <a href=\"/case-studies/walmart-baby-subscription-box/\">Baby Box Subscription Site</a>, generated over 188k users and $2.1M in less than a year.</p>",
+          "bgColor": "#0076BE",
+          "fontColor": "#FDB72B"
+        }
+      ],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": true,
+      "awards": []
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "tunnellCaseStudies" : [
+    {
+      "id": "tnl001",
+      "client": "Tunnell Consulting",
+      "title": "Tunnell Consulting Corporate Website",
+      "url": "http://www.tunnellconsulting.com/",
+      "yearStart": "2015",
+      "yearEnd": "2015",
+      "insitu": {
+        "img": "",
+        "color1": "#254e99",
+        "color2": "#099ed6"
+      },
+      "campaignImg": "/web-tunnell-consulting/tunnell-consulting-campaign-01.jpg",
+      "gallery": [
+        "/web-tunnell-consulting/tunnell-consulting-contact-desktop-01.jpg",
+        "/web-tunnell-consulting/tunnell-consulting-homepage-desktop-01.jpg",
+        "/web-tunnell-consulting/tunnell-consulting-manufacturing-mobile-01.jpg"
+      ],
+      "overview": {
+        "description": "A global pharmaceutical and biotechnology consulting company.",
+        "clientColor": "#092e6e",
+        "bgColor": "#099ed6",
+        "titleColor": "#FFFFFF",
+        "descriptionColor": "#092e6e",
+        "copyColor": "#092e6e"
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>Tunnell engaged us to update their website to a modernized and responsive design. Their updated web presence was to communicate Tunnell's story in a way that conveys the impact their services have on the life sciences industry at large. In addition, the website was meant to draw new organizational talent and communicate Tunnell's evolving services.</p>",
+          "bgColor": "#254e99",
+          "fontColor": "#FFFFFF"
+        },
+        {
+        "title": "solution",
+        "description": "<p>Before approaching the website redesign, we developed buyer personas, a positioning statement, and a Brand Playbook that worked to inform the website architecture and user experience. The homepage story and internal pages were heavily based on feedback received in the client and customer interviews that made up the Brand Playbook.</p>",
+        "bgColor": "#099ed6",
+        "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "results",
+          "description": "<p>We created a fresh, modern design that is simple to use and easy to navigate. With an emphasis placed on SEO and responsive design, the new website is set to perform and behave significantly better across all devices. It tells the Tunnell story effectively, positioning them as a professional and reputable consulting firm within the life sciences industry.</p>",
+          "bgColor": "#FFFFFF",
+          "fontColor": "#092e6e"
+        }
+      ],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": true,
+      "awards": [
+        {
+          "award": "Davey Silver Award",
+          "organization": "Davey Awards",
+          "year": "2015"
+        },
+        {
+          "award": "W3 Silver Award",
+          "organization": "W3 Awards",
+          "year": "2015"
+        }
+      ]
+    }
+  ]
+}

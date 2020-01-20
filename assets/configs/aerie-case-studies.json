@@ -1,0 +1,157 @@
+{
+  "aerieCaseStudies": [
+    {
+      "id": "aerie001",
+      "client": "Aerie Phamaceuticals",
+      "title": "Aerie MyInsights Dashboard",
+      "url": "",
+      "yearStart": "2018",
+      "yearEnd": "2019",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "video": {
+        "src": "",
+        "bgColor": ""
+      },
+      "overview": {
+        "description": "",
+        "clientColor": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": "",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "solution",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "results",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "category": "Reporting Dashboards",
+      "needsPassword": true,
+      "active": false,
+      "awards": []
+    },
+    {
+      "id": "aerie002",
+      "client": "Aerie Phamaceuticals",
+      "title": "Rhopressa Veeva CLM Presentation",
+      "url": "",
+      "yearStart": "2019",
+      "yearEnd": "2019",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "video": {
+        "src": "",
+        "bgColor": ""
+      },
+      "overview": {
+        "description": "",
+        "clientColor": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": "",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "solution",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "results",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "category": "iPad Presentations",
+      "needsPassword": true,
+      "active": false,
+      "awards": []
+    },
+    {
+      "id": "aerie003",
+      "client": "Aerie Phamaceuticals",
+      "title": "Rocklatan Veeva CLM Presentation",
+      "url": "",
+      "yearStart": "2019",
+      "yearEnd": "2019",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "video": {
+        "src": "",
+        "bgColor": ""
+      },
+      "overview": {
+        "description": "",
+        "clientColor": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": "",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "solution",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "results",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "category": "iPad Presentations",
+      "needsPassword": true,
+      "active": false,
+      "awards": []
+    }
+  ]
+}

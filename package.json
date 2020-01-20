@@ -1,6 +1,10 @@
 {
   "name": "morsecodemedia.com",
+<<<<<<< HEAD
   "version": "2020.01.03",
+=======
+  "version": "2020.01.19",
+>>>>>>> stage
   "description": "morsecodemedia.com - the portfolio of Brandon G. Morse",
   "author": "Brandon Morse (brandon@morsecodemedia.com)",
   "private": false,

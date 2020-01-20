@@ -1,0 +1,51 @@
+{
+  "inrikiCaseStudies": [
+    {
+      "id": "jakfri001",
+      "client": "Inriki",
+      "title": "Jakfri Emails",
+      "url": "",
+      "yearStart": "2018",
+      "yearEnd": "2018",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "overview": {
+        "description": "",
+        "clientColor": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": "",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "solution",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "results",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "needsPassword": true,
+      "category": "Email Campaigns",
+      "active": false,
+      "awards": []
+    }
+  ]
+}

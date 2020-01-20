@@ -1,0 +1,313 @@
+{
+  "radicavaCaseStudies": [
+    {
+      "id": "rad001",
+      "client": "Mitsubishi Tanabe Pharma America",
+      "title": "Radicava.com HCP Website",
+      "url": "https://www.radicava.com/hcp/",
+      "yearStart": "2016",
+      "yearEnd": "",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "/web-radicava/hcp/radicava-hcp-campaign-01.png",
+      "gallery": [
+        "/web-radicava/hcp/radicava-homepage-desktop-01.jpg"
+      ],
+      "overview": {
+        "description": "A branded HCP website for RADICAVA<sup>&reg</sup>.",
+        "clientColor": "#FFFFFF",
+        "bgColor": "#314163",
+        "titleColor": "#3c5daa",
+        "descriptionColor": "#FFFFFF",
+        "copyColor": "#D9DEED"
+      },
+      "description": [
+        {
+          "title": "overview",
+          "description": "<p>RADICAVA<sup>&reg</sup> (edaravone) is the only FDA-approved treatment option for amyotrophic lateral sclerosis (ALS) in the last 20 years.</p>",
+          "bgColor": "#d6d6d6",
+          "fontColor": "#3c5daa"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#d9deed",
+          "fontColor": "#484848"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#6a86c2",
+          "fontColor": "#FFFFFF"
+        }
+      ],
+      "category": "Websites",
+      "needsPassword": true,
+      "active": true,
+      "awards": [
+        {
+          "award": "Creative Excellence Award for Healthcare Professional Website",
+          "organization": "The RX Club",
+          "year": "2017"
+        },
+        {
+          "award": "1:1 Product Website",
+          "organization": "The RX Club",
+          "year": "2017"
+        }
+      ]
+    },
+    {
+      "id": "rad002",
+      "client": "Mitsubishi Tanabe Pharma America",
+      "title": "HQBlitz Web App",
+      "url": "",
+      "yearStart": "2018",
+      "yearEnd": "2018",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "/web-app-hqblitz/hqblitz-campaign-02.png",
+      "gallery": [
+        "/web-app-hqblitz/hqblitz-login.jpg",
+        "/web-app-hqblitz/hqblitz-manage-lists.jpg",
+        "/web-app-hqblitz/hqblitz-edit-list.jpg"
+      ],
+      "overview": {
+        "description": "A web-based app, for sales reps to send SMS messages to teams.",
+        "clientColor": "#484848",
+        "bgColor": "#d9deed",
+        "titleColor": "#3c5daa",
+        "descriptionColor": "#484848",
+        "copyColor": "#484848"
+      },
+      "description": [
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#d6d6d6",
+          "fontColor": "#3c5daa"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#d9deed",
+          "fontColor": "#484848"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#6a86c2",
+          "fontColor": "#FFFFFF"
+        }
+      ],
+      "needsPassword": true,
+      "category": "Web Apps",
+      "active": true,
+      "awards": []
+    },
+    {
+      "id": "rad003",
+      "client":"Mitsubishi Tanabe Pharma America",
+      "title": "ALSFRS-R Interactive Human Body Detail Aid",
+      "url": "",
+      "yearStart": "2016",
+      "yearEnd": "2016",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "video": {
+        "src": "",
+        "bgColor": ""
+      },
+      "overview": {
+        "description": "",
+        "clientColor": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": "",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#d6d6d6",
+          "fontColor": "#3c5daa"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#d9deed",
+          "fontColor": "#484848"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#6a86c2",
+          "fontColor": "#FFFFFF"
+        }
+      ],
+      "needsPassword": true,
+      "category": "iPad Presentations",
+      "active": false,
+      "awards": []
+    },
+    {
+      "id": "rad004",
+      "client": "Mitsubishi Tanabe Pharma America",
+      "title": "Radicava Emails",
+      "url": "",
+      "yearStart": "2016",
+      "yearEnd": "",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "overview": {
+        "description": "",
+        "clientColor": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": "",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>this is a challenge</p>",
+          "bgColor": "#d6d6d6",
+          "fontColor": "#3c5daa"
+        },
+        {
+          "title": "solution",
+          "description": "<p>this is a solution</p>",
+          "bgColor": "#d9deed",
+          "fontColor": "#484848"
+        },
+        {
+          "title": "results",
+          "description": "",
+          "bgColor": "#6a86c2",
+          "fontColor": "#FFFFFF"
+        }
+      ],
+      "needsPassword": true,
+      "category": "Email Campaigns",
+      "active": false,
+      "awards": []
+    },
+    {
+      "id": "rad005",
+      "client": "Mitsubishi Tanabe Pharma America",
+      "title": "Radicava Patient Profiles",
+      "url": "",
+      "yearStart": "2019",
+      "yearEnd": "2019",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "video": {
+        "src": "https://www.youtube.com/embed/ODBRrHXin1A",
+        "bgColor": "#d6d6d6"
+      },
+      "overview": {
+        "description": "",
+        "clientColor": "",
+        "bgColor": "#6a86c2",
+        "titleColor": "#d6d6d6",
+        "descriptionColor": "#FFFFFF",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#d6d6d6",
+          "fontColor": "#3c5daa"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#d9deed",
+          "fontColor": "#484848"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#6a86c2",
+          "fontColor": "#FFFFFF"
+        }
+      ],
+      "needsPassword": true,
+      "category": "Conference Pieces",
+      "active": true,
+      "awards": []
+    },
+    {
+      "id": "rad006",
+      "client": "Mitsubishi Tanabe Pharma America",
+      "title": "Radicava.com Patient Website",
+      "url": "https://www.radicava.com/patient/",
+      "yearStart": "2016",
+      "yearEnd": "2020",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "/web-radicava/patient/radicava-patient-campaign-01.jpg",
+      "gallery": [
+        "/web-radicava/patient/radicava-homepage-desktop-01.jpg"
+      ],
+      "overview": {
+        "description": "A branded Patient website for RADICAVA<sup>&reg</sup>.",
+        "clientColor": "#FFFFFF",
+        "bgColor": "#314163",
+        "titleColor": "#3c5daa",
+        "descriptionColor": "#FFFFFF",
+        "copyColor": "#D9DEED"
+      },
+      "description": [
+        {
+          "title": "overview",
+          "description": "<p>RADICAVA<sup>&reg</sup> (edaravone) is the only FDA-approved treatment option for amyotrophic lateral sclerosis (ALS) in the last 20 years.</p>",
+          "bgColor": "#d6d6d6",
+          "fontColor": "#3c5daa"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#d9deed",
+          "fontColor": "#484848"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#6a86c2",
+          "fontColor": "#FFFFFF"
+        }
+      ],
+      "category": "Websites",
+      "needsPassword": true,
+      "active": true,
+      "awards": []
+    }
+  ]
+}

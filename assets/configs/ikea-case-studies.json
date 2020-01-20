@@ -1,0 +1,51 @@
+{
+  "ikeaCaseStudies": [
+    {
+      "id": "ikea001",
+      "client": "Ikea",
+      "title": "IKEA Emails",
+      "url": "",
+      "yearStart": "2010",
+      "yearEnd": "2010",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "overview": {
+        "description": "",
+        "clientColor": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": "",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "solution",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "results",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "needsPassword": false,
+      "category": "Email Campaigns",
+      "active": false,
+      "awards": []
+    }
+  ]
+}

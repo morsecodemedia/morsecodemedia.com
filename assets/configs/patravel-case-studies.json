@@ -1,0 +1,53 @@
+{
+  "patravelCaseStudies" : [
+    {
+      "id": "pat001",
+      "client": "Pennsylvania Travel",
+      "title": "PA Travel Website",
+      "url": "http://patravel.com/",
+      "yearStart": "2012",
+      "yearEnd": "2015",
+      "insitu": {
+        "img": "",
+        "color1": "#19AFE1",
+        "color2": "#00539A"
+      },
+      "campaignImg": "/web-patravel/patravel-campaign-01.jpg",
+      "gallery": [
+        "/web-patravel/patravel-homepage-desktop-01.jpg"
+      ],
+      "overview": {
+        "description": "Pennsylvania Travel is a travel agency for unique global vacation deals.",
+        "clientColor": "#FFFFFF",
+        "bgColor": "#00539A",
+        "titleColor": "#19AFE1",
+        "descriptionColor": "#FFFFFF",
+        "copyColor": "#FFFFFF"
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "<p>PATravel is a small boutique travel agency. Their original site was running on many legacy technologies and was not responsive. A large portion of the site's content was driven by a 3rd-part feed that would be scraped on page load. Unfortunately, the feel often results in broken images, and error pages, which would result in broken pages on PATravel's website.</p><p>They also had a CMS to allow custom additions of vacation packages, however it was constantly broken, and wasn't intuitive for the client to use. There wasn't an option to manage their blog via the CMS either, which resulted in the weekly blog posts to be manually added.</p>",
+          "bgColor": "#19AFE1",
+          "fontColor": "#FFFFFF"
+        },
+        {
+          "title": "solution",
+          "description": "<p>We rebuilt the site from the ground up, starting with a mobile-first design. Using analytics and an updated brand strategy, we enhanced the user experience across all browsers and devices, allowing users to get to the information they wanted with ease.</p><p>We replaced the custom CMS with ProcessWire, a PHP-based, secure content management system and framework. Management of the blog was built into the system along with the ability to manage call-tracking phone numbers for custom landing pages to align with the content marketing strategy we put together.<p><p>We updated the way the 3rd-party feed provided content for the website. The feed is now parsed as an automated system task, that loads the information into the CMS. This allows system admins to update or remove any information as needed, to keep a clean and consistent experience for PATravel's users.</p>",
+          "bgColor": "#FFFFFF",
+          "fontColor": "#222222"
+        },
+        {
+          "title": "results",
+          "description": "<p>Client is able to manage 100% of the content displayed on the site, regardless the original source of the data. With all data in the CMS, site is now able to have a more robust search integrated throughout the site. Regular blog articles are no longer a sore issue and are able to be added freely though the CMS. Landing pages with call tracking have the ability to display an unlimited set of numbers, allowing scalability in their content marketing strategy.</p>",
+          "bgColor": "#00539A",
+          "fontColor": "#FFFFFF"
+        }
+      ],
+      "needsPassword": false,
+      "category": "Websites",
+      "active": true,
+      "awards": []
+    }
+  ]
+}
