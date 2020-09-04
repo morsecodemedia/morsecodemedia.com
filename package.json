@@ -32,7 +32,7 @@
     "body-parser": "^1.18.3",
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "nodemailer": "^6.1.1",
     "nodemailer-postmark-transport": "^2.1.1",
     "nuxt": "^2.0.0",
