@@ -40,6 +40,7 @@
     "nuxt-webfontloader": "^1.1.0",
     "postmark": "^2.2.5",
     "sass-loader": "^7.1.0",
+    "serialize-javascript": "^3.1.0",
     "vue-axe": "^1.0.7",
     "vue-lazyload": "^1.2.6",
     "vue2-siema": "^0.2.2",
