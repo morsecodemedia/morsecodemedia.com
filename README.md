@@ -6,38 +6,38 @@
 
 # Brandon Morse
 
-**Website:** https://www.morsecodemedia.com
-**Email:** brandon@morsecodemedia.com
+**Website:** https://www.morsecodemedia.com <br>
+**Email:** brandon@morsecodemedia.com <br>
 **LinkedIn:** https://www.linkedin.com/in/brandonmorse/
 
 ## Work History
 
-**Technology Director**
-GSW Advertising, a Syneos Health Company
+**Technology Director** <br>
+GSW Advertising, a Syneos Health Company <br>
 Newtown, PA 2019-Present
 
-**Lead Architect**
-GSW Advertising, a Syneos Health Company
+**Lead Architect** <br>
+GSW Advertising, a Syneos Health Company <br>
 Newtown, PA 2018-2019
 
-**Associate Technology Director**
-GSW Advertising, a Syneos Health Company
+**Associate Technology Director** <br>
+GSW Advertising, a Syneos Health Company <br>
 Newtown, PA 2016-2018
 
-**Technology Manager**
-inVentiv Creative Studios, a Syneos Health Company
+**Technology Manager** <br>
+inVentiv Creative Studios, a Syneos Health Company <br>
 Newtown, PA 2015-2016
 
-**Director of Technology and Development**
-allwebcafe
+**Director of Technology and Development** <br>
+allwebcafe <br>
 Berwyn, PA 2014-2015
 
-**Senior Web Developer**
-allwebcafe
+**Senior Web Developer** <br>
+allwebcafe <br>
 Berwyn, PA 2012-2014
 
-**Freelance Web Developer**
-morsecodemedia
+**Freelance Web Developer** <br>
+morsecodemedia <br>
 2005-Present
 
 ## Awards
@@ -70,43 +70,46 @@ morsecodemedia
 
 ## Education
 
-**BSc in Multimedia and Web Design**
-The Art Institute of Philadelphia
+**BSc in Multimedia and Web Design** <br>
+The Art Institute of Philadelphia <br>
 Philadelphia, PA 2002-2005
 
 ### Certifications
 
-**MIT Sloan School of Management**
-Digital Marketing Analytics
+**MIT Sloan School of Management** <br>
+Digital Marketing Analytics <br>
 August 2019-Present
 
-**Amazon Web Services**
-AWS Certified Alexa Skill Builder - Specialty
+**Amazon Web Services** <br>
+AWS Certified Alexa Skill Builder - Specialty <br>
 January 2019-January 2022
 
-**Google DoubleClick**
-Custom Lightbox Ads Badge Certification
-March 2016-Current
+**Veeva Systems** <br>
+CLM Technical Certification <br>
+September 2020-September 2021
 
-Dynamic Creative Badge Certification
-March 2016-Current
-
-VPAID Badge Certification
-March 2016-Current
-
-YouTube Masthead Badge Certification
-March 2016-Current
-
-HTML5 Studio Certification
-February 2016-Current
-
-**Veeva**
-Veeva MyInsights
+Veeva MyInsights <br>
 May 2017-May 2018
 
-**HubSpot**
-Inbound Certification
+**Google DoubleClick** <br>
+Custom Lightbox Ads Badge Certification <br>
+March 2016-Current
+
+Dynamic Creative Badge Certification <br>
+March 2016-Current
+
+VPAID Badge Certification <br>
+March 2016-Current
+
+YouTube Masthead Badge Certification <br>
+March 2016-Current
+
+HTML5 Studio Certification <br>
+February 2016-Current
+
+**HubSpot** <br>
+Inbound Certification <br>
 February 2015-March 2016
 
-HubSpot Design Certification
+HubSpot Design Certification <br>
 January 2015-February 2016

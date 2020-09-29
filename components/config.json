@@ -25,7 +25,7 @@
     "headshot": "/headshots/brandon-morse-01.png",
     "homeQuote": "Bringing beautifully designed experiences to life through coding, testing, and just the right amount of technical magic. <a href=\"/about/\">More about me &raquo;</a>",
     "aboutQuote": "My name is Brandon Morse. I am a New Jersey-based, developer with a passion to innovate and to create a better web. I've worked with many great clients, such as: Walmart, Ikea, Lenovo, The Children's Hospital of Philadelphia, and more! Pushing the digital envelope, my analytical and creative thinking drives me to bridge the gap between client fantasies and digital realities to bring incredible interactive experiences to life.",
-    "aboutDetails": "<p>I am currently working as the Technology Director at GSW Advertising, a Syneos Health company, based in Newtown, PA. As Technology Director, I oversee the code and system architecture, build strategy, and best practices for the execution of developmental projects as well. While I oversee a team in the Newtown office, I also consult on development needs across all agencies in the Syneos network.</p><p>I graduated from The Art Institute of Philadelphia with a Bachelor of Science in Multimedia and Web Design in 2005. My education didn't end there. Since then I've obtained various certifications from Google, Veeva, HubSpot and most recently the AWS Alexa Skill Builder certification. With the digital landscape growing at such a rapid pace, I am always reading articles, taking courses, and learning new technologies and methodologies to stay up-to-date on the latest things. The ongoing education fuels my passion to innovate and create a better web.</p><p>Over the course of my career, I've lead many teams of developers of various sizes, both in-house as well as located throughout the world. Collaborating with many teams such as Design, Strategy, UX, QA, and even Operations has been instrumental in my success. Understanding each domain's goals allows me to scope, communicate risk and deliver within the timeline defined.</p>",
+    "aboutDetails": "<p>I am currently working as the Technology Director at GSW Advertising, a Syneos Health company, based in Newtown, PA. As Technology Director, I oversee the code and system architecture, build strategy, and best practices for the execution of developmental projects as well. While I oversee a team in the Newtown office, I also consult on development needs across all agencies in the Syneos network.</p><p>I graduated from The Art Institute of Philadelphia with a Bachelor of Science in Multimedia and Web Design in 2005. My education didn't end there. Since then I've obtained various certifications from Google, AWS, Veeva Systems, HubSpot and MIT. With the digital landscape growing at such a rapid pace, I am always reading articles, taking courses, and learning new technologies and methodologies to stay up-to-date on the latest things. The ongoing education fuels my passion to innovate and create a better web.</p><p>Over the course of my career, I've lead many teams of developers of various sizes, both in-house as well as located throughout the world. Collaborating with many teams such as Design, Strategy, UX, QA, and even Operations has been instrumental in my success. Understanding each domain's goals allows me to scope, communicate risk and deliver within the timeline defined.</p>",
     "caseStudiesQuote": "Bridging the gap between client fantasies and digital realities.",
     "contactQuote": "Contact Quote Goes Here",
     "trackRecordQuote": "With over 15 years of experience, I have demonstrated success in communicating technical/complex information in understandable language to non-technical and technical personnel; plan and execute presentations, write proposals, system documentation and client reference materials.",
@@ -115,6 +115,13 @@
     ],
     "certifications": [
       {
+        "certification": "CLM Technical Certification",
+        "organization": "Veeva Systems",
+        "organizationLogo": "",
+        "certificationStart": "August 2020",
+        "certificationEnd": "September 2021"
+      },
+      {
         "certification": "Digital Marketing Analytics",
         "organization": "MIT Sloan School of Management",
         "organizationLogo": "",
@@ -165,7 +172,7 @@
       },
       {
         "certification": "Veeva MyInsights",
-        "organization": "Veeva",
+        "organization": "Veeva Systems",
         "organizationLogo": "",
         "certificationStart": "May 2017",
         "certificationEnd": "May 2018"
