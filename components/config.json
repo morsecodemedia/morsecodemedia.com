@@ -115,6 +115,13 @@
     ],
     "certifications": [
       {
+        "certification": "Certified Professional in Accessibility Core Competencies (CPACC)",
+        "organization": "IAAP",
+        "organizationLogo": "",
+        "certificationStart": "October 2020",
+        "certificationEnd": "October 2023"
+      },
+      {
         "certification": "CLM Technical Certification",
         "organization": "Veeva Systems",
         "organizationLogo": "",
