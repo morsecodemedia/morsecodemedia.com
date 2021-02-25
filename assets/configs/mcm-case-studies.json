@@ -1,0 +1,333 @@
+{
+  "morsecodemediaCaseStudies": [
+    {
+      "id": "mcm001",
+      "client": "Solá Therapy",
+      "title": "Solá Therapy Website",
+      "url": "https://www.solatherapy.com",
+      "yearStart": "2020",
+      "yearEnd": "2020",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "overview": {
+        "description": "",
+        "clientColor": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": "",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "overview",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "category": "Websites",
+      "needsPassword": false,
+      "active": true,
+      "awards": []
+    },
+    {
+      "id": "mcm002",
+      "client": "Blink Device Company",
+      "title": "BlinkDC Product Website",
+      "url": "https://www.blinkdc.com/",
+      "yearStart": "2020",
+      "yearEnd": "2020",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "overview": {
+        "description": "GelAuto and TwitchView product site built in HubSpot",
+        "clientColor": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": "",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "overview",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "category": "Websites",
+      "needsPassword": false,
+      "active": true,
+      "awards": []
+    },
+    {
+      "id": "mcm003",
+      "client": "VoluMetrix",
+      "title": "VoluMetrix Website",
+      "url": "https://www.volumetrix.com/",
+      "yearStart": "2020",
+      "yearEnd": "2020",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "overview": {
+        "description": "",
+        "clientColor": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": "",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "overview",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "category": "Websites",
+      "needsPassword": false,
+      "active": true,
+      "awards": []
+    },
+    {
+      "id": "mcm004",
+      "client": "Recordati Rare Diseases",
+      "title": "Life With Cushing's Disease Website",
+      "url": "https://www.cushingsdisease.com/",
+      "yearStart": "2020",
+      "yearEnd": "2021",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "overview": {
+        "description": "",
+        "clientColor": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": "",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "overview",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "category": "Websites",
+      "needsPassword": false,
+      "active": true,
+      "awards": []
+    },
+    {
+      "id": "mcm005",
+      "client": "Prugen",
+      "title": "Hello Treaty Website",
+      "url": "https://www.hellotreaty.com/",
+      "yearStart": "2020",
+      "yearEnd": "2021",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "overview": {
+        "description": "",
+        "clientColor": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": "",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "overview",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "category": "Websites",
+      "needsPassword": false,
+      "active": true,
+      "awards": []
+    },
+    {
+      "id": "mcm006",
+      "client": "Ruthless Spine",
+      "title": "Ruthless Spine Website",
+      "url": "https://www.ruthlessspine.com/",
+      "yearStart": "2020",
+      "yearEnd": "2020",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "overview": {
+        "description": "",
+        "clientColor": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": "",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "overview",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "category": "Websites",
+      "needsPassword": false,
+      "active": true,
+      "awards": []
+    },
+    {
+      "id": "mcm001",
+      "client": "",
+      "title": "",
+      "url": "",
+      "yearStart": "2020",
+      "yearEnd": "",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "overview": {
+        "description": "",
+        "clientColor": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": "",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "overview",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "category": "Websites",
+      "needsPassword": false,
+      "active": true,
+      "awards": []
+    }
+  ]
+}

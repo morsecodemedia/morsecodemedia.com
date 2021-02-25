@@ -1,0 +1,98 @@
+{
+  "agileCaseStudies": [
+    {
+      "id": "agile001",
+      "client": "Agile Therapeutics",
+      "title": "Twirla Veeva CLM Presentation",
+      "url": "",
+      "yearStart": "2020",
+      "yearEnd": "2021",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "overview": {
+        "description": "",
+        "clientColor": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": "",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "overview",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "category": "iPad Presentations",
+      "needsPassword": true,
+      "active": true,
+      "awards": []
+    },
+    {
+      "id": "agile002",
+      "client": "Agile Therapeutics",
+      "title": "Twirla Veeva CLM Resources Library",
+      "url": "",
+      "yearStart": "2020",
+      "yearEnd": "2021",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "overview": {
+        "description": "",
+        "clientColor": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": "",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "overview",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "category": "iPad Presentations",
+      "needsPassword": true,
+      "active": true,
+      "awards": []
+    }
+  ]
+}

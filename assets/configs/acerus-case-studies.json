@@ -1,0 +1,145 @@
+{
+  "acerusCaseStudies": [
+    {
+      "id": "acr001",
+      "client": "Acerus Pharmaceuticals",
+      "title": "Natesto HCP Website",
+      "url": "https://www.natestohcp.com",
+      "yearStart": "2020",
+      "yearEnd": "2021",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "overview": {
+        "description": "",
+        "clientColor": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": "",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "overview",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "category": "Websites",
+      "needsPassword": true,
+      "active": true,
+      "awards": []
+    },
+    {
+      "id": "acr002",
+      "client": "Acerus Pharmaceuticals",
+      "title": "Natesto Patient Website",
+      "url": "https://www.natesto.com",
+      "yearStart": "2020",
+      "yearEnd": "2021",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "overview": {
+        "description": "",
+        "clientColor": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": "",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "overview",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "category": "Websites",
+      "needsPassword": true,
+      "active": true,
+      "awards": []
+    },
+    {
+      "id": "acr003",
+      "client": "Acerus Pharmaceuticals",
+      "title": "Natesto IVA",
+      "url": "",
+      "yearStart": "2020",
+      "yearEnd": "2021",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "overview": {
+        "description": "",
+        "clientColor": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": "",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "overview",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "category": "iPad Presentations",
+      "needsPassword": true,
+      "active": true,
+      "awards": []
+    }
+  ]
+}

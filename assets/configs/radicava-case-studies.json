@@ -66,7 +66,7 @@
       "title": "HQBlitz Web App",
       "url": "",
       "yearStart": "2018",
-      "yearEnd": "2018",
+      "yearEnd": "",
       "insitu": {
         "img": "",
         "color1": "",
@@ -288,6 +288,100 @@
         {
           "title": "overview",
           "description": "<p>RADICAVA<sup>&reg</sup> (edaravone) is the only FDA-approved treatment option for amyotrophic lateral sclerosis (ALS) in the last 20 years.</p>",
+          "bgColor": "#d6d6d6",
+          "fontColor": "#3c5daa"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#d9deed",
+          "fontColor": "#484848"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#6a86c2",
+          "fontColor": "#FFFFFF"
+        }
+      ],
+      "category": "Websites",
+      "needsPassword": true,
+      "active": true,
+      "awards": []
+    },
+    {
+      "id": "rad007",
+      "client": "Mitsubishi Tanabe Pharma America",
+      "title": "ALS Webinars Registration Website",
+      "url": "https://www.alswebinars.com/",
+      "yearStart": "2020",
+      "yearEnd": "",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "overview": {
+        "description": "",
+        "clientColor": "#FFFFFF",
+        "bgColor": "#314163",
+        "titleColor": "#3c5daa",
+        "descriptionColor": "#FFFFFF",
+        "copyColor": "#D9DEED"
+      },
+      "description": [
+        {
+          "title": "overview",
+          "description": "",
+          "bgColor": "#d6d6d6",
+          "fontColor": "#3c5daa"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#d9deed",
+          "fontColor": "#484848"
+        },
+        {
+          "title": "",
+          "description": "",
+          "bgColor": "#6a86c2",
+          "fontColor": "#FFFFFF"
+        }
+      ],
+      "category": "Websites",
+      "needsPassword": true,
+      "active": true,
+      "awards": []
+    },
+    {
+      "id": "rad008",
+      "client": "Mitsubishi Tanabe Pharma America",
+      "title": "Radicava Webinars Registration Website",
+      "url": "https://www.radicavawebinar.com/",
+      "yearStart": "2020",
+      "yearEnd": "",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "overview": {
+        "description": "",
+        "clientColor": "#FFFFFF",
+        "bgColor": "#314163",
+        "titleColor": "#3c5daa",
+        "descriptionColor": "#FFFFFF",
+        "copyColor": "#D9DEED"
+      },
+      "description": [
+        {
+          "title": "overview",
+          "description": "",
           "bgColor": "#d6d6d6",
           "fontColor": "#3c5daa"
         },

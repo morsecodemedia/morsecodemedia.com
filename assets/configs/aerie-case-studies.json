@@ -6,7 +6,7 @@
       "title": "Aerie MyInsights Dashboard",
       "url": "",
       "yearStart": "2018",
-      "yearEnd": "2019",
+      "yearEnd": "2020",
       "insitu": {
         "img": "",
         "color1": "",
@@ -57,7 +57,7 @@
       "title": "Rhopressa Veeva CLM Presentation",
       "url": "",
       "yearStart": "2019",
-      "yearEnd": "2019",
+      "yearEnd": "",
       "insitu": {
         "img": "",
         "color1": "",
@@ -70,7 +70,7 @@
         "bgColor": ""
       },
       "overview": {
-        "description": "",
+        "description": "originally built in 2019. in 2020 revamped in new graphical style and updated date. 2021 updated data",
         "clientColor": "",
         "bgColor": "",
         "titleColor": "",
@@ -108,7 +108,7 @@
       "title": "Rocklatan Veeva CLM Presentation",
       "url": "",
       "yearStart": "2019",
-      "yearEnd": "2019",
+      "yearEnd": "",
       "insitu": {
         "img": "",
         "color1": "",
@@ -121,7 +121,58 @@
         "bgColor": ""
       },
       "overview": {
-        "description": "",
+        "description": "originally built in 2019. in 2020 revamped in new graphical style and updated date. 2021 updated data",
+        "clientColor": "",
+        "bgColor": "",
+        "titleColor": "",
+        "descriptionColor": "",
+        "copyColor": ""
+      },
+      "description": [
+        {
+          "title": "challenge",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "solution",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        },
+        {
+          "title": "results",
+          "description": "",
+          "bgColor": "",
+          "fontColor": ""
+        }
+      ],
+      "category": "iPad Presentations",
+      "needsPassword": true,
+      "active": false,
+      "awards": []
+    },
+    {
+      "id": "aerie004",
+      "client": "Aerie Phamaceuticals",
+      "title": "FormulAerie Tool",
+      "url": "",
+      "yearStart": "2020",
+      "yearEnd": "",
+      "insitu": {
+        "img": "",
+        "color1": "",
+        "color2": ""
+      },
+      "campaignImg": "",
+      "gallery": [],
+      "video": {
+        "src": "",
+        "bgColor": ""
+      },
+      "overview": {
+        "description": "Formulary Tool for Rhopressa and Rocklatan",
         "clientColor": "",
         "bgColor": "",
         "titleColor": "",
