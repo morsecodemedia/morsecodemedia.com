@@ -38,7 +38,7 @@ Berwyn, PA 2012-2014
 
 **Freelance Web Developer** <br>
 morsecodemedia <br>
-2005-Present
+2003-Present
 
 ## Awards
 
@@ -75,6 +75,10 @@ The Art Institute of Philadelphia <br>
 Philadelphia, PA 2002-2005
 
 ### Certifications
+
+**IAAP** <br>
+Certified Professional in Accessibility Core Competencies (CPACC) <br>
+October 2020-October 2023"
 
 **MIT Sloan School of Management** <br>
 Digital Marketing Analytics <br>
