@@ -78,7 +78,7 @@ Philadelphia, PA 2002-2005
 
 **IAAP** <br>
 Certified Professional in Accessibility Core Competencies (CPACC) <br>
-October 2020-October 2023"
+October 2020-October 2023
 
 **MIT Sloan School of Management** <br>
 Digital Marketing Analytics <br>
