@@ -1,8 +1,8 @@
-# morsecodemedia.com ![Website](https://img.shields.io/website/https/morsecodemedia.com.svg) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/morsecodemedia/morsecodemedia/master.svg)
+# morsecodemedia.com ![Website](https://img.shields.io/website/https/morsecodemedia.com.svg) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/morsecodemedia/morsecodemedia.com/master.svg)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/aac81670-2474-406b-969e-a525d5c52177/deploy-status)](https://app.netlify.com/sites/amazing-spence-42c2d5/deploys) [![Build Status](https://travis-ci.com/morsecodemedia/morsecodemedia.svg?branch=master)](https://travis-ci.com/morsecodemedia/morsecodemedia) [![Maintainability](https://api.codeclimate.com/v1/badges/696dcda43da5eec4c967/maintainability)](https://codeclimate.com/github/morsecodemedia/morsecodemedia/maintainability) ![GitHub](https://img.shields.io/github/license/morsecodemedia/morsecodemedia.svg?color=green&label=license)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/aac81670-2474-406b-969e-a525d5c52177/deploy-status)](https://app.netlify.com/sites/amazing-spence-42c2d5/deploys) [![Build Status](https://travis-ci.com/morsecodemedia/morsecodemedia.com.svg?branch=master)](https://travis-ci.com/morsecodemedia/morsecodemedia.com) [![Maintainability](https://api.codeclimate.com/v1/badges/696dcda43da5eec4c967/maintainability)](https://codeclimate.com/github/morsecodemedia/morsecodemedia.com/maintainability) ![GitHub](https://img.shields.io/github/license/morsecodemedia/morsecodemedia.com.svg?color=green&label=license)
 
-![GitHub top language](https://img.shields.io/github/languages/top/morsecodemedia/morsecodemedia.svg) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/morsecodemedia/morsecodemedia.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/morsecodemedia/morsecodemedia.com.svg) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/morsecodemedia/morsecodemedia.com.svg)
 
 # Brandon Morse
 
