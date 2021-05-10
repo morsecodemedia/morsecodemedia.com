@@ -52,11 +52,19 @@
           :key="nav.index"
         >
           <nuxt-link
+            v-if="nav.url.substr(0,4) !== 'http'"
             :to="nav.url"
             role="menuitem"
           >
             {{ nav.text }}
           </nuxt-link>
+          <a
+            v-if="nav.url.substr(0,4) === 'http'"
+            :href="nav.url"
+            role="menuitem"
+          >
+            {{ nav.text }}
+          </a>
         </li>
       </ul>
       <ul
