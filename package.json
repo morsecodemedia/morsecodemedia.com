@@ -32,14 +32,12 @@
     "body-parser": "^1.18.3",
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
-    "node-sass": "^4.13.1",
     "nodemailer": "^6.4.16",
     "nodemailer-postmark-transport": "^2.1.1",
     "nuxt": "^2.0.0",
     "nuxt-imagemin": "^1.0.0",
     "nuxt-webfontloader": "^1.1.0",
     "postmark": "^2.2.5",
-    "sass-loader": "^7.1.0",
     "serialize-javascript": "^3.1.0",
     "vue-axe": "^1.0.7",
     "vue-lazyload": "^1.2.6",
@@ -53,6 +51,8 @@
     "eslint-loader": "^2.0.0",
     "eslint-plugin-prettier": "3.1.0",
     "eslint-plugin-vue": "^5.2.2",
-    "nodemon": "^1.19.0"
+    "nodemon": "^1.19.0",
+    "sass": "^1.39.0",
+    "sass-loader": "^12.1.0"
   }
 }
