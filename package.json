@@ -53,6 +53,6 @@
     "eslint-plugin-vue": "^5.2.2",
     "nodemon": "^1.19.0",
     "sass": "^1.39.0",
-    "sass-loader": "^12.1.0"
+    "sass-loader": "^10"
   }
 }
