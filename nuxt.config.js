@@ -28,6 +28,7 @@ const pkg = require('./package')
 // }
 
 module.exports = {
+  target: 'server',
   /*
   ** Headers of the page
   */
