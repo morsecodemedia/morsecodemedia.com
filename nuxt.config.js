@@ -169,7 +169,6 @@ module.exports = {
     baseURL: 'http://localhost:3000',
     debug: true
   },
-
   /*
   ** Build configuration
   */

@@ -1,32 +1,32 @@
 <template>
   <section>
-    <dl
+    <ul
       :class="breakPoint"
       class="case-studies-filter"
-      role="menu"
     >
-      <dt @click="toggleFilters">
+      <li
+        class="label"
+        @click="toggleFilters"
+      >
         Filters:
-      </dt>
-      <dd
+      </li>
+      <li
         v-show="showFilters"
         :class="{ active: (activeCaseStudyCategory === 'all') }"
-        role="switch"
         @click="activeCaseStudyCategory = 'all'"
       >
         All Projects
-      </dd>
-      <dd
+      </li>
+      <li
         v-for="(cat, index) in activeCategories"
         v-show="showFilters"
         :key="index"
         :class="{ active: (activeCaseStudyCategory === cat.toLowerCase().replace(/\s/g, '-')) }"
-        role="switch"
         @click="activeCaseStudyCategory = cat.toLowerCase().replace(/\s/g, '-')"
       >
         {{ cat }}
-      </dd>
-    </dl>
+      </li>
+    </ul>
     <article
       v-if="filteredCaseStudies.length > 0 && displayCaseStudies"
       class="case-studies"
@@ -371,16 +371,17 @@
     -ms-user-select: none;
     user-select: none;
     text-align: center;
-    dt {
-      margin: 10px 0 10px 10px;
-      padding: 0;
-      display: block;
+    margin: 10px;
+    li {
+      &.label {
+        margin: 10px 0 10px 10px;
+        padding: 0;
+        display: inline;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
       cursor: pointer;
-      text-transform: uppercase;
-    }
-    dd {
-      cursor: pointer;
-      display: block;
+      display: inline;
       margin: 0 10px 10px;
       &:before,
       &:after {
