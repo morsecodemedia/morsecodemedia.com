@@ -43,7 +43,11 @@
           { hid: 'canonical', rel: 'canonical', href: 'https://www.morsecodemedia.com/' }
         ]
       }
-    }
+    },
+    mounted() {
+      this.bodyTag = document.getElementsByTagName('body')[0]
+      this.bodyTag.classList.remove('killscroll')
+    },
   }
 </script>
 
