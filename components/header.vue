@@ -13,10 +13,10 @@
         class="menu-btn"
         aria-label="Menu"
         role="button"
-        @click="viewMenu = !viewMenu"
+        @click="toggleMenu"
       >
         <div
-          :class="{open:viewMenu}"
+          :class="{open:showMenu}"
           class="menu-icon"
         >
           <span />
@@ -25,7 +25,7 @@
           <span />
         </div>
         <div
-          v-if="!viewMenu"
+          v-if="!showMenu"
           class="menu-label"
         >
           Menu
@@ -40,7 +40,7 @@
     </div>
     <nav
       v-if="navigation.length > 0"
-      :class="{open:viewMenu}"
+      :class="{open:showMenu}"
       class="main-nav"
       role="menu"
     >
@@ -55,6 +55,7 @@
             v-if="nav.url.substr(0,4) !== 'http'"
             :to="nav.url"
             role="menuitem"
+            @click.native="setMenu(false)"
           >
             {{ nav.text }}
           </nuxt-link>
@@ -133,35 +134,19 @@
     name: 'Header',
     data() {
       return {
-        viewMenu: false,
         top: '0px',
         left: '0px',
         navigation: navigation,
-        socialMedia: about.socialMedia,
-        bodyTag: ''
+        socialMedia: about.socialMedia
       }
     },
     computed: {
-      ...mapGetters('casestudies', [
-        'showPwdProjects'
-      ])
-    },
-    watch: {
-      viewMenu: function(val) {
-        if (val) {
-          this.bodyTag.classList.add('killscroll')
-        } else {
-          this.bodyTag.classList.remove('killscroll')
-        }
-      }
-    },
-    mounted() {
-      this.bodyTag = document.getElementsByTagName('body')[0]
+      ...mapGetters('casestudies', ['showPwdProjects']),
+      ...mapGetters('menu', ['showMenu'])
     },
     methods: {
-      ...mapMutations('casestudies', [
-        'toggleProjects'
-      ])
+      ...mapMutations('casestudies', ['toggleProjects']),
+      ...mapMutations('menu', ['toggleMenu', 'setMenu'])
     }
   }
 </script>

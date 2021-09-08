@@ -6,12 +6,15 @@
 
 <script>
   import Vue from 'vue'
+  import { mapGetters, mapMutations } from 'vuex'
   import { library } from '@fortawesome/fontawesome-svg-core'
   import { faLock, faLockOpen, faTrophy } from '@fortawesome/free-solid-svg-icons'
   import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
   library.add(faLock, faLockOpen, faTrophy)
   Vue.component('font-awesome-icon', FontAwesomeIcon)
+
+  let bodyTag = null
 
   export default {
     name: 'App',
@@ -44,10 +47,26 @@
         ]
       }
     },
-    mounted() {
-      this.bodyTag = document.getElementsByTagName('body')[0]
-      this.bodyTag.classList.remove('killscroll')
+    computed: {
+      ...mapGetters('menu', ['showMenu'])
     },
+    watch: {
+      showMenu: function(val) {
+        if (val) {
+          bodyTag.classList.add('killscroll')
+        } else {
+          bodyTag.classList.remove('killscroll')
+        }
+      }
+    },
+    mounted() {
+      this.setMenu(false)
+      bodyTag = document.getElementsByTagName('body')[0]
+      bodyTag.classList.remove('killscroll')
+    },
+    methods: {
+      ...mapMutations('menu', ['setMenu'])
+    }
   }
 </script>
 
