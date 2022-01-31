@@ -11,10 +11,13 @@
 **LinkedIn:** https://www.linkedin.com/in/brandonmorse/
 
 ## Work History
+**VP, Technology Director, Creative Technology** <br>
+GSW Advertising, a Syneos Health Company <br>
+Remote 2021-Present
 
 **Technology Director** <br>
 GSW Advertising, a Syneos Health Company <br>
-Newtown, PA 2019-Present
+Newtown, PA 2019-2021
 
 **Lead Architect** <br>
 GSW Advertising, a Syneos Health Company <br>
