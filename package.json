@@ -34,7 +34,7 @@
     "express": "^4.17.3",
     "nodemailer": "^6.4.16",
     "nodemailer-postmark-transport": "^2.1.1",
-    "nuxt": "^2.0.0",
+    "nuxt": "^3.4.3",
     "nuxt-imagemin": "^1.0.0",
     "nuxt-webfontloader": "^1.1.0",
     "postmark": "^2.2.5",
